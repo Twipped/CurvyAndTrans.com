@@ -1,0 +1,12 @@
+{
+	"extends": "twipped/node8",
+	"env": {"es6": true},
+    "parserOptions": {"ecmaVersion": 2018},
+	"rules": {
+		"node/no-unpublished-require": 0,
+		"promise/no-native": 0,
+    'indent': [ 2, 2, {
+      'MemberExpression': 1,
+    } ],
+	}
+}
