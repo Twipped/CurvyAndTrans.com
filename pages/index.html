@@ -3,6 +3,7 @@
   {{#content "bodyAttributes"}}class="page-index"{{/content}}
 	{{#content "body"}}
 
+    <div class="top-row">
     {{#with posts.first}}
     <article class="prime post" style="background-image: url({{this.poster}})">
         <div class="filler">
@@ -17,9 +18,8 @@
     </article>
     {{/with}}
 
-    <div class="top-row">
       <aside>
-        {{#each (slice posts.interleaved.left 0 2)}}
+        {{#each (slice posts.interleaved.left 0 10)}}
         <section class="post">
           <div class="post-date">{{date 'MMM Do, YYYY' this.date}}</div> - {{#first tags}}<div class="post-tag">{{this}}</div>{{/first}}
           <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%">
@@ -33,7 +33,7 @@
         {{/each}}
       </aside>
       <aside>
-        {{#each (slice posts.interleaved.right 0 2)}}
+        {{#each (slice posts.interleaved.right 0 10)}}
         <section class="post">
           <div class="post-date">{{date 'MMM Do, YYYY' this.date}}</div> - {{#first tags}}<div class="post-tag">{{this}}</div>{{/first}}
           <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%">

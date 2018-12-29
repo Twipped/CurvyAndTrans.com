@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5,
   }
 
   .post.prime {
+    flex: 2;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +116,6 @@ h1, h2, h3, h4, h5,
 
   .top-row {
     display: flex;
-    padding-left: 50%;
 
     aside {
       flex: 1;
@@ -149,7 +149,6 @@ h1, h2, h3, h4, h5,
 
         .post-poster {
           width: 100%;
-
         }
 
         .post-title {
@@ -163,7 +162,7 @@ h1, h2, h3, h4, h5,
 
         .post-description {
           font-size: 12px;
-          padding: 0 10px;
+          padding: 10px 10px 0 10px;
         }
       }
     }
