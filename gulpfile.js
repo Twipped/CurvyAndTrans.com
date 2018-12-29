@@ -24,7 +24,7 @@ const rename      = require('gulp-rename');
 const frontmatter = require('gulp-front-matter');
 const scss        = require('gulp-sass');
 // const minifyCSS   = require('gulp-minify-css');
-// const clean       = require('gulp-clean');
+const clean       = require('gulp-clean');
 
 
 var through = require('through2');
@@ -68,6 +68,12 @@ function interleave (input) {
   // }
   return { left, right };
 }
+
+
+exports.clean = function distclean () {
+  return src('docs', { read: false })
+    .pipe(clean());
+};
 
 /** **************************************************************************************************************** **/
 
