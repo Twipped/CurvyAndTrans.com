@@ -227,7 +227,7 @@ exports.pages = function pages () {
     };
   }
 
-  console.log(posts);
+  // console.log(posts);
 
   return src([ 'pages/*', '!pages/*.md' ])
     .pipe(frontmatter({

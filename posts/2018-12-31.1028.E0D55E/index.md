@@ -1,6 +1,6 @@
 ---
 id: "E0D55E"
-date: "2018-12-21T18:28:59.006Z"
+date: "2018-12-31T18:28:59.006Z"
 title: "Confidently Visible"
 tags:
   - Body Positivity
