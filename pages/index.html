@@ -1,0 +1,54 @@
+{{#extend "layout"}}
+
+  {{#content "bodyAttributes"}}class="page-index"{{/content}}
+	{{#content "body"}}
+
+    {{#with posts.first}}
+    <article class="prime post" style="background-image: url({{this.poster}})">
+        <div class="filler">
+          <h1 class="logo">curvy and trans</h1>
+        </div>
+        <a class="shade" href="{{this.url}}">
+          <div class="post-date">{{date 'MMMM Do, YYYY' this.date}}</div>
+          {{#each tags}}<div class="post-tag">{{this}}</div>{{/each}}
+          <h2 class="post-title">{{this.title}}</h2>
+          <div class="post-description">{{{this.description}}}</div>
+        </a>
+    </article>
+    {{/with}}
+
+    <div class="top-row">
+      <aside>
+        {{#each (slice posts.interleaved.left 0 2)}}
+        <section class="post">
+          <div class="post-date">{{date 'MMM Do, YYYY' this.date}}</div> - {{#first tags}}<div class="post-tag">{{this}}</div>{{/first}}
+          <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%">
+            <a href="{{this.url}}">
+              <div class="post-poster"></div>
+              <h2 class="post-title">{{this.title}}</h2>
+            </a>
+          </div>
+          <div class="post-description">{{{this.description}}}</div>
+        </section>
+        {{/each}}
+      </aside>
+      <aside>
+        {{#each (slice posts.interleaved.right 0 2)}}
+        <section class="post">
+          <div class="post-date">{{date 'MMM Do, YYYY' this.date}}</div> - {{#first tags}}<div class="post-tag">{{this}}</div>{{/first}}
+          <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%">
+            <a href="{{this.url}}">
+
+              <div class="post-poster"></div>
+              <h2 class="post-title">{{this.title}}</h2>
+            </a>
+          </div>
+          <div class="post-description">{{{this.description}}}</div>
+        </section>
+        {{/each}}
+      </aside>
+    </div>
+
+	{{/content}}
+
+{{/extend}}

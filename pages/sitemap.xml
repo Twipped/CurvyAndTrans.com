@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    {{#each posts}}
+    <url>
+        <loc>https://curvyandtrans.com{{this.url}}</loc>
+        <lastmod>{{date 'YYYY-MM-DDTHH:mm:ssZ' this.date}}</lastmod>
+    </url>
+    {{/each}}
+    <url>
+        <loc>https://curvyandtrans.com/</loc>
+        <lastmod>{{#with posts.first}}{{date 'YYYY-MM-DDTHH:mm:ssZ' this.date}}{{/with}}</lastmod>
+    </url>
+</urlset>

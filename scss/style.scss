@@ -1,0 +1,172 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/variables';
+
+$font-primary: 'Work Sans',Arial, sans-serif;
+$font-secondary: 'Montserrat', 'Helvetica Neue', Helvetica, serif;
+
+$white: #fff;
+$black: #000;
+$primary: #ee76ad;
+
+html {
+	// overflow-x: hidden;
+}
+
+body {
+	font-family: $font-primary;
+	background: $white;
+	font-size: 18px;
+	line-height: 1.8;
+	font-weight: 300;
+	color: lighten($black,45%);
+}
+
+a {
+	transition: .3s all ease;
+	color: $primary;
+	&:hover {
+		text-decoration: none;
+		color: $primary;
+	}
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.5;
+	color: $black;
+	font-weight: 300;
+	font-family: $font-secondary;
+}
+
+
+
+.page-index {
+
+  .prime {
+
+  }
+
+  .post {
+     a {
+      color: $black;
+    }
+  }
+
+  .post.prime {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+
+    .logo {
+      // font-family: 'Major Mono Display';
+      font-family: Charm, cursive;
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: capitalize;
+      letter-spacing: 0.1em;
+      line-height: 26px;
+      color: white;
+      text-shadow: 1px 1px 2px black, 1px 1px 1px white, -1px -1px 1px white, 0 0 1em white, 0 0 0.2em white;
+    }
+
+    .filler {
+      flex: 10;
+      padding: 10px;
+    }
+
+    .shade {
+      flex: 1;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.5);
+      padding: 10px 10px 10px 10px;
+      margin: 0px 10px 10% 10px;
+    }
+
+    .post-date, .post-tag {
+      display: inline;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 400;
+
+      padding: 5px 8px;
+      color: white;
+      border-radius: 0.75em;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .post-title {
+      margin: 0;
+    }
+
+    .post-description {
+      font-size: 16px;
+    }
+  }
+
+  .top-row {
+    display: flex;
+    padding-left: 50%;
+
+    aside {
+      flex: 1;
+
+      .post {
+        margin-top: 10px;
+        padding: 0 10px;
+
+        .post-poster {
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          position: relative;
+        }
+
+        a {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+
+        .post-date, .post-tag {
+          display: inline-block;
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-weight: 400;
+        }
+
+        .post-poster {
+          width: 100%;
+
+        }
+
+        .post-title {
+          font-size: 18px;
+          background: rgba(255,255,255,0.5);
+          margin: 0;
+          padding: 0.2em 0.5em;
+          text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
+          font-weight: 400;
+        }
+
+        .post-description {
+          font-size: 12px;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
