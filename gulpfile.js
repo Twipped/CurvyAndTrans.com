@@ -153,6 +153,7 @@ exports.posts = function buildPosts () {
       }
       const { width, height } = file.meta.dimensions;
       file.meta.dimensions.ratio = Math.round((height / width) * 100);
+      file.meta.span = Math.ceil((height / width) * 10);
 
       file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
       stream.push(file);
@@ -221,9 +222,8 @@ exports.pages = function buildPages () {
     const ordered = without(postIndex, pinned);
     posts = {
       all: postIndex,
-      ordered: [ pinned, ordered ],
+      ordered: [ pinned, ...ordered ],
       first: pinned,
-      interleaved: interleave(ordered),
     };
   } else {
     const ordered = postIndex.slice(1);
@@ -231,7 +231,6 @@ exports.pages = function buildPages () {
       all: postIndex,
       ordered,
       first: postIndex[0],
-      interleaved: interleave(ordered),
     };
   }
 

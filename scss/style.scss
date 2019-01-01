@@ -42,8 +42,8 @@ h1, h2, h3, h4, h5,
 
 .page-index {
 
-  .prime {
-
+  .top-row {
+    display: flex;
   }
 
   .post {
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5,
   }
 
   .post.prime {
-    flex: 2;
+    flex: 1;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,62 +114,61 @@ h1, h2, h3, h4, h5,
     }
   }
 
-  .top-row {
-    display: flex;
+  aside {
+    flex: 1;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr 1fr;
 
-    aside {
-      flex: 1;
+    .post {
+      padding: 0 10px;
 
-      .post {
-        margin-top: 10px;
-        padding: 0 10px;
+      .post-poster {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
 
-        .post-poster {
-          background-size: contain;
-          background-position: center center;
-          background-repeat: no-repeat;
-          position: relative;
-        }
+      a {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-end;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
 
-        a {
-          display: flex;
-          position: absolute;
-          flex-direction: column;
-          justify-content: flex-end;
-          bottom: 0;
-          top: 0;
-          left: 0;
-          right: 0;
-        }
+      .post-date, .post-tag {
+        display: inline-block;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
+      }
 
-        .post-date, .post-tag {
-          display: inline-block;
-          font-size: 12px;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          font-weight: 400;
-        }
+      .post-poster {
+        width: 100%;
+      }
 
-        .post-poster {
-          width: 100%;
-        }
+      .post-title {
+        flex: 1;
+        flex-grow: 0;
+        font-size: 18px;
+        background: rgba(255,255,255,0.7);
+        margin: 0;
+        padding: 0.2em 0.5em;
+        text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
+        font-weight: 400;
+      }
 
-        .post-title {
-          flex: 1;
-          flex-grow: 0;
-          font-size: 18px;
-          background: rgba(255,255,255,0.7);
-          margin: 0;
-          padding: 0.2em 0.5em;
-          text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
-          font-weight: 400;
-        }
-
-        .post-description {
-          font-size: 12px;
-          padding: 10px 10px 0 10px;
-        }
+      .post-description {
+        font-size: 12px;
+        padding: 10px 10px 0 10px;
       }
     }
   }
+
 }
