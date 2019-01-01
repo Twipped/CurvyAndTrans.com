@@ -353,7 +353,8 @@ exports.new = async function newPost () {
     ---
     id: "${id}"
     date: "${date.toISOString()}"
-    title: "${date.format('ddd, MMM Do, YYYY')}: Outfit of the Day"
+    title: "Outfit of the Day for ${date.format('MMM Do, YYYY')}"
+    description:
     tags:
       - OOTD
     products:
