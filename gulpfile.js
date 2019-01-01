@@ -207,12 +207,12 @@ exports.posts = function buildPosts () {
 /** **************************************************************************************************************** **/
 
 
-exports.pages = function pages () {
+exports.pages = function buildPages () {
   var postIndex;
   try {
-    postIndex = require('./posts.json');
+    postIndex = JSON.parse(fs.readFileSync(path.join(__dirname, '/posts.json')));
   } catch (e) {
-    postIndex = false;
+    postIndex = [];
   }
 
   var posts;
