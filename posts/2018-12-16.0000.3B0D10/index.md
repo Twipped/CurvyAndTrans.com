@@ -2,6 +2,7 @@
 id: "3B0D10"
 date: "2018-12-16T08:00:00.000Z"
 title: "Baking Bacon"
+draft: true
 tags:
   - Cooking
 ---

@@ -1,9 +1,8 @@
 ---
 id: "EB0790"
 date: "2018-12-17T08:00:00.000Z"
-title: "Monday, December 17th, 2018: Outfit of the Day"
-description: ""
-draft: false
+title: "Into the Flow, with pockets"
+description: "Outfit of the Day for Dec 17th, 2018"
 tags:
   - OOTD
 products:

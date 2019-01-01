@@ -1,9 +1,10 @@
 ---
 id: "3B1D89"
 date: "2018-12-09T08:00:00.000Z"
-title: "Sun, Dec 9th, 2018: Outfit of the Day"
+title: "A More Powerful Battlestation"
+description: Improving upon my home vanity.
 tags:
-  - OOTD
+  - Makeup
 products:
   "IKEA SKÅDIS Pegboard Storage System": https://www.ikea.com/us/en/catalog/categories/departments/small_storage/37900/
   "IKEA VÄRDE Wall Shelf": https://www.ikea.com/us/en/catalog/products/10241339/

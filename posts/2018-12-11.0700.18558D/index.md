@@ -2,6 +2,7 @@
 id: "18558D"
 date: "2018-12-11T08:00:00.000Z"
 title: "Rainbowblue"
+description: Outfit of the Day for Dec 11th, 2018
 tags:
   - OOTD
 products:

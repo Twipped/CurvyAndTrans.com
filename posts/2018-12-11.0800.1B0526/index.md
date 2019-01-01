@@ -2,6 +2,7 @@
 id: "1B0526"
 date: "2018-12-11T08:00:00.000Z"
 title: "Transformation Tuesday: Belly Edition"
+description: Christmas 2016 to 2018
 tags:
   - Transgender
   - Transition Tuesday

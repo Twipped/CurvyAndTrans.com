@@ -2,11 +2,14 @@
 id: "E0D55E"
 date: "2018-12-31T18:28:59.006Z"
 title: "Confidently Visible"
+description: Where confidence comes from.
 tags:
   - Body Positivity
+products:
+  "SHEIN Plus Drop Shoulder Dolman Sleeve T-Shirt": https://us.shein.com/Plus-Drop-Shoulder-Dolman-Sleeve-T-shirt-p-592546-cat-1890.html
 ---
 
-Last Monday I wrote about body confidence. I’ve since then had several very good conversations that have made me realize that I had completely the wrong idea about what my friend meant when she said she wasn’t confident enough to post photos of herself online.
+A couple weeks ago [I wrote about finding body confidence](/p/3331DE/finding-confidence/). I’ve since then had several very good conversations that have made me realize that I had completely the wrong idea about what my friend meant when she said she wasn’t confident enough to post photos of herself online.
 
 I was viewing body confidence as a sense of feeling comfortable in your skin, a self confidence of knowing what your shape is and not being bothered by the ways it isn’t perfect. This meaning leapt out to me first and foremost because for most of my life I had ZERO confidence in my shape, I hated my body. When my friend told me she lacked confidence, I thought she meant she was feeling sensitive about her weight. But I was wrong, because there’s another kind of confidence: confidence against judgment.
 

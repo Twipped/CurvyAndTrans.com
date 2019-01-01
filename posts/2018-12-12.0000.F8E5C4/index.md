@@ -1,7 +1,8 @@
 ---
 id: "F8E5C4"
 date: "2018-12-12T08:00:00.000Z"
-title: "Wed, Dec 12th, 2018: Outfit of the Day"
+title: "Petticoat Express"
+description: "Outfit of the Day for Dec 12th, 2018"
 tags:
   - OOTD
 products:

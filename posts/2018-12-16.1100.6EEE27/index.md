@@ -1,9 +1,8 @@
 ---
 id: "6EEE27"
 date: "2018-12-16T08:00:00.000Z"
-title: "Sun, Dec 16th, 2018: Outfit of the Day"
-description: ""
-draft: false
+title: "Shiny and Blue"
+description: "Outfit of the Day for Dec 16th, 2018"
 tags:
   - OOTD
 products:
