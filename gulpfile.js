@@ -6,7 +6,7 @@ const moment = require('moment');
 const random = require('./lib/random');
 const { stripIndent } = require('common-tags');
 var { promisify } = require('util');
-var { first, without } = require('lodash');
+var { first, without, sortBy } = require('lodash');
 const log = require('fancy-log');
 const globo = require('glob');
 const glob = function (pattern, options) {
@@ -190,6 +190,8 @@ exports.posts = function posts () {
     next();
   }, function flush (next) {
     if (!indexFile) return next();
+
+    posts = sortBy(posts, 'date');
     posts.reverse();
     indexFile.path = path.join(ROOT, 'posts.json');
     indexFile.base = ROOT;
