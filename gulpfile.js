@@ -94,7 +94,7 @@ exports.loadLayout = function loadLayout (cb) {
   cb();
 };
 
-exports.posts = function posts () {
+exports.posts = function buildPosts () {
 
   var template = handlebars.compile(String(fs.readFileSync(path.join(__dirname, '/templates/post.hbs.html'))));
 
@@ -244,8 +244,6 @@ exports.pages = function pages () {
     .pipe(through.obj(function (file, enc, next) {
       var template = handlebars.compile(String(file.contents));
 
-
-
       var data = {
         ...file.meta,
         page: { title: file.meta.title ? file.meta.title + ' :: Curvy and Trans' : 'Curvy and Trans' },
@@ -268,7 +266,14 @@ exports.pages = function pages () {
 
 
 exports.imageScale = function imageScale () {
-  var fullsize = src('posts/**/{1..9,poster}.{jpeg,jpg,png,gif}')
+  var fullsize = src('posts/**/{1..9}.{jpeg,jpg,png,gif}')
+    .pipe(resizer({
+      format: 'jpeg',
+      width: 1000,
+      crop: false,
+    }));
+
+  var posters = src('posts/**/poster.{jpeg,jpg,png,gif}')
     .pipe(resizer({
       format: 'jpeg',
       width: 1000,
@@ -310,7 +315,7 @@ exports.imageScale = function imageScale () {
       file.basename = 'titlecard-thumb';
     }));
 
-  return merge(fullsize, titlecardNorth, titlecardCenter, thumbnail)
+  return merge(fullsize, posters, titlecardNorth, titlecardCenter, thumbnail)
     .pipe(rename((file) => {
       const hash = file.dirname.split('.')[2];
       file.dirname = hash;
@@ -326,7 +331,8 @@ exports.default = parallel(
   series(
     exports.loadLayout, exports.posts, exports.pages
   ),
-  exports.imageScale
+  exports.imageScale,
+  exports.sass
 );
 
 
