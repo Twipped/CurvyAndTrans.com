@@ -132,9 +132,12 @@ h1, h2, h3, h4, h5,
         }
 
         a {
-          display: block;
+          display: flex;
           position: absolute;
+          flex-direction: column;
+          justify-content: flex-end;
           bottom: 0;
+          top: 0;
           left: 0;
           right: 0;
         }
@@ -152,8 +155,10 @@ h1, h2, h3, h4, h5,
         }
 
         .post-title {
+          flex: 1;
+          flex-grow: 0;
           font-size: 18px;
-          background: rgba(255,255,255,0.5);
+          background: rgba(255,255,255,0.7);
           margin: 0;
           padding: 0.2em 0.5em;
           text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
