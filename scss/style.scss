@@ -231,22 +231,15 @@ h1, h2, h3, h4, h5,
 .page-post {
 
   article {
-    display: flex;
-    flex-direction: row;
-
-    section {
-      flex: 2;
-    }
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
     section.contents {
-      flex: 2;
       padding: 20px;
     }
 
     &.long {
-      section.contents {
-        flex: 4;
-      }
+      grid-template-columns: 1fr 2fr;
     }
   }
 
