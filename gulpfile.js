@@ -6,7 +6,7 @@ const moment = require('moment');
 const random = require('./lib/random');
 const { stripIndent } = require('common-tags');
 var { promisify } = require('util');
-var { first, without, sortBy } = require('lodash');
+var { find, without, sortBy } = require('lodash');
 const log = require('fancy-log');
 const globo = require('glob');
 const glob = function (pattern, options) {
@@ -153,7 +153,16 @@ exports.posts = function buildPosts () {
       }
       const { width, height } = file.meta.dimensions;
       file.meta.dimensions.ratio = Math.round((height / width) * 100);
-      file.meta.span = Math.ceil((height / width) * 10);
+      if (!file.meta.span) {
+        file.meta.span = Math.ceil((height / width) * 10);
+      }
+      if (!file.meta.spanLarge) {
+        file.meta.spanLarge = Math.ceil((height / width) * 10) * 2;
+      }
+
+      if (contents.length > 1000) {
+        file.meta.long = true;
+      }
 
       file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
       stream.push(file);
@@ -217,7 +226,7 @@ exports.pages = function buildPages () {
   }
 
   var posts;
-  var pinned = first(postIndex, 'pinned');
+  var pinned = find(postIndex, 'pinned');
   if (pinned) {
     const ordered = without(postIndex, pinned);
     posts = {
@@ -226,15 +235,13 @@ exports.pages = function buildPages () {
       first: pinned,
     };
   } else {
-    const ordered = postIndex.slice(1);
+    const [ first, ...ordered ] = postIndex;
     posts = {
       all: postIndex,
       ordered,
-      first: postIndex[0],
+      first,
     };
   }
-
-  // console.log(posts);
 
   return src([ 'pages/*', '!pages/*.md' ])
     .pipe(frontmatter({
@@ -247,7 +254,6 @@ exports.pages = function buildPages () {
         ...file.meta,
         page: { title: file.meta.title ? file.meta.title + ' :: Curvy and Trans' : 'Curvy and Trans' },
         posts,
-        pinned: postIndex.filter((p) => p.pinned)[0],
       };
 
       var html = template(data);

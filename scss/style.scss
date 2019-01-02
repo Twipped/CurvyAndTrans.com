@@ -40,135 +40,239 @@ h1, h2, h3, h4, h5,
 
 
 
+.logo {
+  background: linear-gradient(-60deg, rgba(41,186,228,1) 10%, rgb(255,255,255) 50%, rgba(238,118,173,1) 90%);
+
+  font-family: Charm, cursive;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  color: #222;
+  padding: 10px;
+  text-shadow:  1px 1px 1px white, -1px -1px 1px white, 0 0 1em white, 0 0 0.2em white;
+  margin: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+
+  @include media-breakpoint-up(md) {
+    font-size: 42px;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a.external {
+    float: right;
+    color: black;
+    font-weight: 400;
+
+  }
+}
+
+
 .page-index {
 
   .top-row {
-    display: flex;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+
+    @include media-breakpoint-up(sm) {
+      grid-template-columns: repeat( auto-fill, minmax( 300px, 1fr ) );
+
+      .post:first-child {
+        grid-column-end: span 2;
+        grid-row-end: span 25;
+      }
+    }
   }
 
   .post {
-     a {
-      color: $black;
+
+
+
+    .post-poster {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+
+      > div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        a { color: inherit; }
+      }
     }
   }
 
-  .post.prime {
-    flex: 1;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 50vw;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  .post.previous {
+    padding: 0 10px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-end;
-
-    .logo {
-      font-family: Charm, cursive;
-      font-size: 32px;
-      font-weight: 700;
-      text-transform: capitalize;
-      letter-spacing: 0.1em;
-      line-height: 26px;
-      color: white;
-      text-shadow: 1px 1px 2px black, 1px 1px 1px white, -1px -1px 1px white, 0 0 1em white, 0 0 0.2em white;
-    }
-
-    .filler {
-      flex: 10;
-      padding: 10px;
-    }
-
-    .shade {
-      flex: 1;
-      border-radius: 20px;
-      background: rgba(255,255,255,0.5);
-      padding: 10px 10px 10px 10px;
-      margin: 0px 10px 10% 10px;
+    a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
     .post-date, .post-tag {
-      display: inline;
+      display: inline-block;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 400;
+      white-space: nowrap;
+    }
 
-      padding: 5px 8px;
-      color: white;
-      border-radius: 0.75em;
-      background: rgba(0,0,0,0.3);
+    .post-title {
+      flex: 1;
+      flex-grow: 0;
+      font-size: 18px;
+      background: rgba(255,255,255,0.8);
+      margin: 0;
+      padding: 1em 0.7em;
+      text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
+      font-weight: 500;
+    }
+
+    .post-description {
+      font-size: 12px;
+      padding: 10px 10px 0 10px;
+    }
+  }
+
+  .post.prime {
+
+    .post-poster > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .shade {
+      flex: 0;
+      background: rgba(255,255,255,0.5);
+      padding: 1em 0.7em;
+
+      @include media-breakpoint-up (md) {
+        border-radius: 15px;
+        padding: 5px 10px 5px 10px;
+        margin: 0 10px 10%;
+      }
+    }
+
+    .post-date {
+      flex: 0;
+      font-family: $font-secondary;
+      text-transform: uppercase;
+      line-height: 1.8;
+      font-size: 14px;
+      color: black;
+      padding-left: 20px;
+      text-shadow: 0 0 1em rgba(255,255,255,0.7), 0 0 0.2em white;
+
+      strong {
+        font-weight: 700;
+      }
+
+      span {
+        font-family: $font-secondary;
+        letter-spacing: 2px;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-left: 10px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 15px;
+
+        strong {
+          display: block;
+        }
+        span {
+          font-size: 12px;
+          margin: 0;
+        }
+        .emdash {
+          // display: none;
+        }
+      }
     }
 
     .post-title {
       margin: 0;
+      font-family: $font-secondary;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 20px;
+      }
     }
 
     .post-description {
       font-size: 16px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+      }
     }
   }
+}
 
-  aside {
-    flex: 1;
-    display: grid;
-    grid-gap: 0;
-    grid-template-columns: 1fr 1fr;
+.page-post {
 
-    .post {
-      padding: 0 10px;
+  article {
+    display: flex;
+    flex-direction: row;
 
-      .post-poster {
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        position: relative;
-      }
+    section {
+      flex: 2;
+    }
 
-      a {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        justify-content: flex-end;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-      }
+    section.contents {
+      flex: 2;
+      padding: 20px;
+    }
 
-      .post-date, .post-tag {
-        display: inline-block;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-weight: 400;
-      }
-
-      .post-poster {
-        width: 100%;
-      }
-
-      .post-title {
-        flex: 1;
-        flex-grow: 0;
-        font-size: 18px;
-        background: rgba(255,255,255,0.7);
-        margin: 0;
-        padding: 0.2em 0.5em;
-        text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
-        font-weight: 400;
-      }
-
-      .post-description {
-        font-size: 12px;
-        padding: 10px 10px 0 10px;
+    &.long {
+      section.contents {
+        flex: 4;
       }
     }
   }
 
+  .images img {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .products {
+
+    padding: 0;
+    border-radius: 10px;
+    font-size: 14px;
+
+    font-family: $font-secondary;
+    font-weight: 600;
+
+    li {
+      background: rgba(60, 0, 0, 0.1);
+      display: block;
+      padding: 0.5em 0.8em;
+      margin: 10px 0;
+
+      border: 1px solid rgba(60, 0, 0, 0.2);
+      border-left: 8px solid rgba(60, 0, 0, 0.3);
+    }
+  }
 }
