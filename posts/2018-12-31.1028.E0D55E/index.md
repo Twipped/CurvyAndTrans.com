@@ -2,7 +2,8 @@
 id: "E0D55E"
 date: "2018-12-31T18:28:59.006Z"
 title: "Confidently Visible"
-description: Where confidence comes from.
+description: Where does confidence come from?
+spanLarge: 23
 tags:
   - Body Positivity
 products:

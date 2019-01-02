@@ -7,7 +7,7 @@ tags:
   - OOTD
 products:
   "Vialumi Women's Junior Plus Size Spaghetti Strap Cropped Strappy Camisole": https://www.amazon.com/exec/obidos/ASIN/B07J5F2CYQ/curvyandtrans-20
-  "MSBASIC Snowflake Dress, Women Green Christmas Party Dress Santa &amp; Snowman XXL": https://www.amazon.com/exec/obidos/ASIN/B07KP1VMNC/curvyandtrans-20
+  "MSBASIC Snowflake Dress, Women Green Christmas Party Dress Santa & Snowman XXL": https://www.amazon.com/exec/obidos/ASIN/B07KP1VMNC/curvyandtrans-20
   "Elomi Women's Plus Size Anushka Padded Half Cup Bra": https://www.amazon.com/exec/obidos/ASIN/B06XVXSM3W/curvyandtrans-20
   
 ---
