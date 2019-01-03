@@ -5,20 +5,15 @@ $font-primary: 'Lato',Arial, sans-serif;
 $font-secondary: 'Montserrat', 'Helvetica Neue', Helvetica, serif;
 
 $white: #fff;
-$black: #000;
 $primary: #ee76ad;
-
-html {
-	// overflow-x: hidden;
-}
 
 body {
 	font-family: $font-primary;
-	background: $white;
+	background: white;
 	font-size: 18px;
 	line-height: 1.8;
-	font-weight: 300;
-	color: lighten($black,45%);
+	font-weight: 400;
+	color: lighten(#000,45%);
 }
 
 a {
@@ -33,7 +28,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	line-height: 1.5;
-	color: $black;
+	color: black;
 	font-weight: 300;
 	font-family: $font-secondary;
 }
@@ -232,25 +227,92 @@ h1, h2, h3, h4, h5,
 
   article {
     display: grid;
-    grid-template-columns: 1fr 1fr;
 
-    section.contents {
-      padding: 20px;
+    @include media-breakpoint-up(md) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "images title"
+        "images datetags"
+        "images products"
+        "images contents"
+        "images ."
+      ;
+      grid-column-gap: 20px;
+      grid-row-gap: 10px;
+
+      padding-right: 20px;
+
+      &.long {
+        grid-template-columns: 1fr 2fr;
+      }
     }
 
-    &.long {
-      grid-template-columns: 1fr 2fr;
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "title"
+        "datetags"
+        "images"
+        "products"
+        "contents"
+      ;
+      grid-row-gap: 5px;
     }
   }
 
-  .images img {
+  .post-images {
+    grid-area: images;
+  }
+
+  .post-title {
+    grid-area: title;
+    margin: 10px 0 0 0;
+    line-height: 1;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px;
+    }
+  }
+
+  .post-date {
+    grid-area: datetags;
+    font-family: $font-secondary;
+    letter-spacing: 1px;
+    font-size:10px;
+    line-height: 1;
+    font-weight: 400;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px;
+    }
+
+    span {
+      display: inline-block;
+      white-space: nowrap;
+      margin-right: 10px;
+      background: lighten($primary, 20%);
+      color: darken($primary, 20%);
+      padding: 0.4em 0.5em;
+    }
+  }
+
+  .post-content {
+    grid-area: contents;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px;
+    }
+  }
+
+  .post-images img {
     display: block;
     width: 100%;
     margin-bottom: 5px;
   }
 
-  .products {
-
+  .post-products {
+    grid-area: products;
+    margin: 0;
     padding: 0;
     border-radius: 10px;
     font-size: 14px;
@@ -258,14 +320,26 @@ h1, h2, h3, h4, h5,
     font-family: $font-secondary;
     font-weight: 600;
 
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px 10px;
+    }
+
     li {
       background: rgba(60, 0, 0, 0.1);
       display: block;
       padding: 0.5em 0.8em;
-      margin: 10px 0;
+      margin-top: 5px;
 
       border: 1px solid rgba(60, 0, 0, 0.2);
       border-left: 8px solid rgba(60, 0, 0, 0.3);
+    }
+
+    li:first-child {
+      border: none;
+      background: none;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: -5px;
     }
   }
 }

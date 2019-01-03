@@ -14,20 +14,20 @@
     <a href="http://www.instagram.com/curvyandtrans" class="external" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
 	<article class="{{#if long}}long{{/if}}">
-    <section class="images">
+    <h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>
+    <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<span>{{this}}</span>{{/each}}</div>
+    <div class="post-images">
       {{#each images}}<img src="{{this}}" alt="">{{/each}}
-    </section>
-		<section class="contents">
-			<h1 class="post-title">
-			 <a href="{{this.url}}">{{this.title}}</a>
-				<small class="post-date">{{date 'MMMM Do, YYYY' this.date}}</small>
-			</h1>
-      {{#if products}}
-      <ul class="products" rel="nofollow">{{#each products}}<li><a href={{this}}>{{@key}}</a></li>{{/each}}</ul>
-      {{/if}}
-      <div class="post-content">{{{this.contents}}}</div>
-		</section>
-	</article>
+    </div>
+
+    {{#if products}}
+    <ul class="post-products">
+      <li>Products:</li>
+      {{#each products}}<li><a href="{{this}}" rel="nofollow">{{@key}}</a></li>{{/each}}
+    </ul>
+    {{/if}}
+    <div class="post-content">{{{this.contents}}}</div>
+  </article>
 	{{/content}}
 
 {{/extend}}
