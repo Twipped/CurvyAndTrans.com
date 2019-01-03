@@ -3,28 +3,31 @@
   {{#content "bodyAttributes"}}class="page-index"{{/content}}
 	{{#content "body"}}
 
-  <h1 class="logo">
-    <a href="/">curvy and trans</a>
+  <header>
+    <a href="mailto:media@curvyandtrans.com" class="external"><i class="fas fa-envelope"></i></a>
     <a href="http://www.instagram.com/curvyandtrans" class="external" target="_blank"><i class="fab fa-instagram"></i></a>
-  </h1>
+    <h1><a href="/">curvy and trans</a></h1>
+    <div class="catchphrase">Just a plus size trans girl in a straight size cis world.</div>
+  </header>
+
   <div class="top-row">
     {{#with posts.first}}
     <section class="post prime" style="grid-row-end: span {{this.spanLarge}};" data-id="{{id}}">
       <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%">
-        <div>
+        <a href="{{this.url}}">
           <div class="post-date">
             <strong>Latest Post: </strong>
             <span>{{date 'MMM Do, YYYY' this.date}}</span>
             <span class="emdash">&mdash;</span>
             {{#first tags}}<span>{{this}}</span>{{/first}}
           </div>
-          <a class="shade" href="{{this.url}}">
+          <div class="shade">
             <h2 class="post-title">{{this.title}}</h2>
             <div class="post-description">{{{this.description}}}</div>
-          </a>
+          </div>
         </div>
 
-      </div>
+      </a>
     </section>
     {{/with}}
     {{#each posts.ordered}}

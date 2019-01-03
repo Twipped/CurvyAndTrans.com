@@ -6,6 +6,8 @@ $font-secondary: 'Montserrat', 'Helvetica Neue', Helvetica, serif;
 
 $white: #fff;
 $primary: #ee76ad;
+$pink: rgb(238,118,173);
+$blue: rgb(41,186,228);
 
 body {
 	font-family: $font-primary;
@@ -33,36 +35,67 @@ h1, h2, h3, h4, h5,
 	font-family: $font-secondary;
 }
 
+footer {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #ccc;
+}
 
+header {
+  position: relative;
+  background: linear-gradient(-60deg, $pink 10%, $white 50%, $blue 90%);
 
-.logo {
-  background: linear-gradient(-60deg, rgba(41,186,228,1) 10%, rgb(255,255,255) 50%, rgba(238,118,173,1) 90%);
+  h1 {
+    font-family: Charm, cursive;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    color: #222;
 
-  font-family: Charm, cursive;
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: capitalize;
-  letter-spacing: 0.1em;
-  line-height: 1.2em;
-  color: #222;
+    @include media-breakpoint-up(md) {
+      font-size: 42px;
+    }
+  }
+
   padding: 10px;
   text-shadow:  1px 1px 1px white, -1px -1px 1px white, 0 0 1em white, 0 0 0.2em white;
   margin: 0;
   border-bottom: 1px solid rgba(0,0,0,0.3);
 
-  @include media-breakpoint-up(md) {
-    font-size: 42px;
-  }
-
   a {
     color: inherit;
+    z-index: 2;
   }
 
   a.external {
     float: right;
     color: black;
     font-weight: 400;
+    margin-left: 10px;
+    line-height: 1;
 
+    font-size: 24px;
+    @include media-breakpoint-up(md) {
+      font-size: 42px;
+    }
+  }
+
+  i.fa-envelope {
+    font-size: 0.8em;
+    line-height: 1em;
+    top: -0.1em;
+    position: relative;
+  }
+
+  .catchphrase {
+    font-family: $font-primary;
+    color: darken($pink, 10%);
+    font-size: 14px;
+    line-height: 1;
+    z-index: 1;
   }
 }
 
@@ -86,22 +119,20 @@ h1, h2, h3, h4, h5,
 
   .post {
 
-
-
     .post-poster {
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
       position: relative;
 
-      > div {
+      > * {
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
 
-        a { color: inherit; }
+        &, a { color: inherit; }
       }
     }
   }
@@ -148,7 +179,14 @@ h1, h2, h3, h4, h5,
 
   .post.prime {
 
-    .post-poster > div {
+    .post-poster {
+      @include media-breakpoint-down (sm) {
+        height: 100vw;
+        padding-top: 0 !important;
+      }
+    }
+
+    .post-poster > * {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
