@@ -2,46 +2,29 @@
 const path = require('path');
 const fs = require('fs-extra');
 const moment = require('moment');
-var { promisify } = require('util');
-var { find, without, sortBy } = require('lodash');
+const { find, without, sortBy } = require('lodash');
 const log = require('fancy-log');
-const globo = require('glob');
-const glob = function (pattern, options) {
-  return new Promise((resolve, reject) => {
-    globo(pattern, options, (err, files) => (err ? reject(err) : resolve(files)));
-  });
-};
+const glob = require('./lib/glob');
 const slugify = require('slugify');
-var dimensions = promisify(require('image-size'));
+const dimensions = require('./lib/dimensions');
 
 const { src, dest } = require('gulp');
 const merge       = require('merge-stream');
 const frontmatter = require('gulp-front-matter');
 
-var through = require('through2');
-var md     = require('markdown-it')({
+const asyncthrough = require('./lib/through');
+
+const md     = require('markdown-it')({
   html: true,
   linkify: true,
   typographer: true,
 }).enable('image');
 
-const asyncthrough = function (fn) {
-  return through.obj(function (file, enc, next) {
-    fn(this, file, enc).then(() => next(), (err) => { log.error(err, 'Error thrown'); next(err); });
-  });
-};
-
-var handlebars = require('handlebars');
+const handlebars = require('handlebars');
 require('helper-hoard').load(handlebars);
 
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
-
-
-/** **************************************************************************************************************** **/
-
-
-/** **************************************************************************************************************** **/
 
 exports.loadLayout = function loadLayout (cb) {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
@@ -135,7 +118,7 @@ exports.posts = function buildPosts () {
   ;
 
   var postFiles = readPosts
-    .pipe(through.obj(function (file, enc, next) {
+    .pipe(asyncthrough(async (stream, file) => {
       if (!file.meta.ignore) {
         file.contents = Buffer.from(template({
           page: {
@@ -143,18 +126,17 @@ exports.posts = function buildPosts () {
           },
           ...file.meta,
         }));
-        this.push(file);
+        stream.push(file);
       }
-      next();
     }))
     .pipe(dest(`${DEST}/p/`));
   ;
 
   var posts = [];
   var indexFile = null;
-  var indexStream = postFiles.pipe(through.obj(function transform (file, enc, next) {
+  var indexStream = postFiles.pipe(asyncthrough(async (stream, file) => {
 
-    if (!file) return next();
+    if (!file) return;
     if (!indexFile) {
       indexFile = file.clone();
     }
@@ -162,17 +144,17 @@ exports.posts = function buildPosts () {
     if (!file.meta.ignore && !file.meta.draft) {
       posts.push(file.meta);
     }
-    next();
-  }, function flush (next) {
-    if (!indexFile) return next();
+
+  }, async (stream) => {
+    if (!indexFile) return;
 
     posts = sortBy(posts, 'date');
     posts.reverse();
     indexFile.path = path.join(ROOT, 'posts.json');
     indexFile.base = ROOT;
     indexFile.contents = Buffer.from(JSON.stringify(posts, null, '  '));
-    this.push(indexFile);
-    next();
+    stream.push(indexFile);
+
   })).pipe(dest('./'));
 
   return merge(postFiles, indexStream);
@@ -212,7 +194,7 @@ exports.pages = function buildPages () {
     .pipe(frontmatter({
       property: 'meta',
     }))
-    .pipe(through.obj(function (file, enc, next) {
+    .pipe(asyncthrough(async (stream, file) => {
       var template = handlebars.compile(String(file.contents));
 
       var data = {
@@ -226,8 +208,7 @@ exports.pages = function buildPages () {
       html = String(html);
 
       file.contents = Buffer.from(html);
-      this.push(file);
-      next();
+      stream.push(file);
     }))
     .pipe(dest('docs'));
 };
