@@ -5,9 +5,9 @@ $font-primary: 'Lato',Arial, sans-serif;
 $font-secondary: 'Montserrat', 'Helvetica Neue', Helvetica, serif;
 
 $white: #fff;
-$primary: #ee76ad;
 $pink: rgb(238,118,173);
 $blue: rgb(41,186,228);
+$primary: #ee76ad;
 
 body {
 	font-family: $font-primary;
@@ -21,9 +21,10 @@ body {
 a {
 	transition: .3s all ease;
 	color: $primary;
+
 	&:hover {
 		text-decoration: none;
-		color: $primary;
+		color: #e84992;
 	}
 }
 
@@ -108,7 +109,7 @@ header {
     grid-template-columns: 1fr;
 
     @include media-breakpoint-up(sm) {
-      grid-template-columns: repeat( auto-fill, minmax( 300px, 1fr ) );
+      grid-template-columns: repeat( auto-fill, minmax( 250px, 1fr ) );
 
       .post:first-child {
         grid-column-end: span 2;
@@ -316,7 +317,7 @@ header {
     grid-area: datetags;
     font-family: $font-secondary;
     letter-spacing: 1px;
-    font-size:10px;
+    font-size:12px;
     line-height: 1;
     font-weight: 400;
 
@@ -336,9 +337,27 @@ header {
 
   .post-content {
     grid-area: contents;
+    position: relative;
 
     @include media-breakpoint-down(sm) {
       padding: 0 10px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .pull-right {
+      margin: 0 auto;
+
+      @include media-breakpoint-up(md) {
+        float: right;
+        margin-right: 5px;
+      }
     }
   }
 
@@ -378,6 +397,35 @@ header {
       padding: 0;
       margin-top: 0;
       margin-bottom: -5px;
+    }
+  }
+
+  blockquote {
+    font-family: 'Georgia';
+    font-weight: 200;
+    font-size: 1.1em;
+    line-height: 1.4;
+    background: #f0f8ff;
+    border: 1px solid darken(#f0f8ff, 10%);
+    padding: 15px;
+
+    position: relative;
+
+    &::before {
+      font-family: "Charm", cursive;
+      font-weight: 700;
+      display: block;
+      padding-left: 10px;
+      content: "\201C";
+      font-size: 80px;
+      position: absolute;
+      left: -30px;
+      top: -20px;
+      // color: #7a7a7a;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
   }
 }
