@@ -3,7 +3,6 @@ const awspublish  = require('gulp-awspublish');
 const awsrouter   = require('gulp-awspublish-router');
 const parallelize = require('concurrent-transform');
 const cloudfront  = require('gulp-cloudfront-invalidate-aws-publish');
-const g2r         = require('glob-to-regexp');
 const path = require('path');
 
 const ROOT = path.dirname(__dirname);
@@ -48,7 +47,7 @@ const routes = {
 
 module.exports = exports = function s3deploy () {
   var publisher = awspublish.create(credentials);
-  console.log(routes);
+
   return src(`${DEST}/**/*`)
     .pipe(awsrouter({
       cache: {
@@ -62,7 +61,7 @@ module.exports = exports = function s3deploy () {
     .pipe(parallelize(publisher.publish(), 10))
     .pipe(publisher.sync())
     // .pipe(cloudfront(credentials))
+    .pipe(publisher.cache())
     .pipe(awspublish.reporter());
 };
 
-console.log(g2r('**/*.html', { globstar: true, extended: true }));
