@@ -23,8 +23,8 @@ module.exports = exports = async function newPost () {
     ---
     id: "${id}"
     date: "${date.toISOString()}"
-    title: "Outfit of the Day for ${date.format('MMM Do, YYYY')}"
-    description:
+    title: ""
+    description: "Outfit of the Day for ${date.format('MMM Do, YYYY')}"
     tags:
       - OOTD
     products:
