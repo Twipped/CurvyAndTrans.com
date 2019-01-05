@@ -9,8 +9,8 @@
   <meta property="og:site_name" content="Curvy and Trans">{{block "meta"}}
   <title>{{page.title}}</title>
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link rel='alternate' type='application/atom+xml' title='Atom 0.3' href='https://curvyandtrans.com/atom.xml'>
-  <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <!-- <link rel='alternate' type='application/atom+xml' title='Atom 0.3' href='https://curvyandtrans.com/atom.xml'> -->
+  <link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link href="//fonts.googleapis.com/css?family=Charm:400,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Lato:100,200,300,400,700,800" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700" rel="stylesheet">
@@ -36,11 +36,15 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
   {{#block "postscripts"}}{{/block}}
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4767790-14"></script>
   <script>
-  window.dataLayer = (window.dataLayer || []).push('js', new Date(), 'config', 'UA-4767790-14');
-  window.gtag = function gtag() {dataLayer.push(arguments);}
+    window.dataLayer = window.dataLayer || [];
+    function gtag () { window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-4767790-14');
   </script>
+
 </body>
 </html>
