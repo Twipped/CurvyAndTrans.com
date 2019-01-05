@@ -26,7 +26,7 @@ const scss        = require('gulp-sass');
 // const minifyCSS   = require('gulp-minify-css');
 const clean       = require('gulp-clean');
 var awspublish    = require('gulp-awspublish');
-var parallelize   = require("concurrent-transform");
+var parallelize   = require('concurrent-transform');
 
 var credentials = require('./aws.json');
 
@@ -36,11 +36,12 @@ var md     = require('markdown-it')({
   linkify: true,
   typographer: true,
 }).enable('image');
-var debug = through.obj(function (file, end, next) {
-  log({ ...file, path: file.path, relative: file.relative, base: file.base });
-  this.push(file);
-  next();
-});
+
+// var debug = through.obj(function (file, end, next) {
+//   log({ ...file, path: file.path, relative: file.relative, base: file.base });
+//   this.push(file);
+//   next();
+// });
 
 const asyncthrough = function (fn) {
   return through.obj(function (file, enc, next) {
@@ -53,25 +54,6 @@ require('helper-hoard').load(handlebars);
 
 const ROOT = __dirname;
 const DEST = './docs';
-
-function interleave (input) {
-  const left = [];
-  const right = [];
-  // const uneven = input.length % 2;
-  // const oddduck = Math.ceil(input.length / 2);
-  input.forEach((item, index) => {
-    if (index % 2) {
-      right.push(item);
-    } else {
-      left.push(item);
-    }
-  });
-  // if (left.length < right.length) {
-  //   right.unshift(left.pop());
-  // }
-  return { left, right };
-}
-
 
 exports.clean = function distclean () {
   return src('docs', { read: false })
@@ -86,7 +68,7 @@ exports.sass = function sass () {
     .pipe(scss({
       includePaths: [ path.join(__dirname, 'node_modules') ],
     }).on('error', log.error))
-    .pipe(dest('docs/css'));
+    .pipe(dest(DEST));
 };
 
 
