@@ -1,7 +1,8 @@
 ---
 id: "852F82"
 date: "2018-12-19T08:00:00.000Z"
-title: "Wednesday, December 19th, 2018: Outfit of the Day"
+title: Tee Time
+description: Outfit of the Day for Dec 19th, 2018
 tags:
   - OOTD
 products:

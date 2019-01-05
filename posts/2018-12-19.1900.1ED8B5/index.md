@@ -1,7 +1,7 @@
 ---
 id: "1ED8B5"
 date: "2018-12-19T08:00:00.000Z"
-title: "Wed, Dec 19th, 2018: A Good Hair Day"
+title: "A Good Hair Day"
 ignore: true
 tags:
   - Hair
