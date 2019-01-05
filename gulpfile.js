@@ -334,7 +334,13 @@ exports.imageScale = function imageScale () {
       file.basename = 'titlecard-thumb';
     }));
 
-  return merge(fullsize, posters, titlecardNorth, titlecardCenter, thumbnail)
+  var other = src([
+    'posts/**/*.{jpeg,jpg,png,gif}',
+    '!posts/**/poster.{jpeg,jpg,png,gif}',
+    '!posts/**/{1..9}.{jpeg,jpg,png,gif}'
+  ]);
+
+  return merge(fullsize, posters, titlecardNorth, titlecardCenter, thumbnail, other)
     .pipe(rename((file) => {
       const hash = file.dirname.split('.')[2];
       file.dirname = hash;
