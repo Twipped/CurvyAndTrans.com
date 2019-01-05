@@ -25,7 +25,10 @@ const frontmatter = require('gulp-front-matter');
 const scss        = require('gulp-sass');
 // const minifyCSS   = require('gulp-minify-css');
 const clean       = require('gulp-clean');
+var awspublish    = require('gulp-awspublish');
+var parallelize   = require("concurrent-transform");
 
+var credentials = require('./aws.json');
 
 var through = require('through2');
 var md     = require('markdown-it')({
@@ -342,15 +345,15 @@ exports.imageScale = function imageScale () {
 
 /** **************************************************************************************************************** **/
 
+exports.content = series(
+  exports.loadLayout, exports.posts, exports.pages
+);
 
-exports.default = parallel(
-  series(
-    exports.loadLayout, exports.posts, exports.pages
-  ),
+exports.build = parallel(
+  exports.content,
   exports.imageScale,
   exports.sass
 );
-
 
 /** **************************************************************************************************************** **/
 
@@ -386,7 +389,19 @@ exports.new = async function newPost () {
 
 /** **************************************************************************************************************** **/
 
-exports.watch = series(exports.loadLayout, exports.posts, exports.pages, function watcher () {
+exports.deploy = function s3deploy () {
+  var publisher = awspublish.create(credentials);
+
+  return src(`${DEST}/**/*`)
+    .pipe(awspublish.gzip())
+    .pipe(parallelize(publisher.publish(), 10))
+    .pipe(publisher.sync())
+    .pipe(awspublish.reporter());
+};
+
+/** **************************************************************************************************************** **/
+
+exports.watcher = function watcher () {
 
   watch([ 'posts/**/index.md', 'posts/**/{1..9}.{jpeg,jpg,png,gif}', 'templates/*.html' ], series(exports.loadLayout, exports.posts, exports.pages));
   watch([ 'pages/*', '!pages/*.md', 'templates/*.html' ], series(exports.loadLayout, exports.pages));
@@ -397,4 +412,11 @@ exports.watch = series(exports.loadLayout, exports.posts, exports.pages, functio
   srv.start();
   forever.startServer(srv);
 
-});
+};
+
+
+exports.watch = series(exports.loadLayout, exports.posts, exports.pages, exports.watcher);
+
+/** **************************************************************************************************************** **/
+
+exports.default = series(exports.clean, exports.build, exports.watcher);
