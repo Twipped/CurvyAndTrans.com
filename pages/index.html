@@ -21,10 +21,10 @@
             <span class="emdash">&mdash;</span>
             {{#first tags}}<span>{{this}}</span>{{/first}}
           </div>
-          <div class="shade">
-            <h2 class="post-title">{{this.title}}</h2>
-            <div class="post-description">{{{this.description}}}</div>
-          </div>
+          {{#and title description}}<div class="shade">
+            {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
+            {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
+          </div>{{/and}}
         </div>
 
       </a>
@@ -35,10 +35,10 @@
       <div class="post-date"><span>{{date 'MMM Do, YYYY' this.date}}</span> &mdash; {{#first tags}}<span>{{this}}</span></div>{{/first}}
       <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%"><div>
         <a href="{{this.url}}">
-          <h2 class="post-title">{{this.title}}</h2>
+          {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
         </a>
       </div></div>
-      <div class="post-description">{{{this.description}}}</div>
+      {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
     </section>
     {{/each}}
   </div>
