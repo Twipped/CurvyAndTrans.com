@@ -8,6 +8,6 @@ const DEST = 'docs';
 
 
 module.exports = exports = function cleanDistribution () {
-  return src(DEST, { read: false, allowEmpty: true })
+  return src([ DEST, 'rev-manifest.json', 'posts.json' ], { read: false, allowEmpty: true })
     .pipe(clean());
 };
