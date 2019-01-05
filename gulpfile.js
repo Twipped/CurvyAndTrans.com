@@ -117,11 +117,22 @@ exports.posts = function buildPosts () {
       file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
       file.meta.fullurl = 'http://curvyandtrans.com' + file.meta.url;
       file.meta.originalpath = path.relative(file.cwd, file.path);
-      file.meta.description = file.meta.description || original.split(/\r?\n/)[0];
+      file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
+
+      if (!file.meta.slug) {
+        log.error(`Post could not produce a slug. (${cwd})`);
+        return;
+      }
 
       const images = await glob('{1..9}.{jpeg,jpg,png,gif}', {
         cwd: path.dirname(file.path),
       });
+
+      if (!images.length) {
+        log.error(`Post is missing images, skipping. (${cwd})`);
+        return;
+      }
+
       file.meta.images = images.map((imgpath) => {
         const basename = path.basename(imgpath, path.extname(imgpath));
         return `/p/${file.meta.id}/${basename}.jpeg`;
@@ -142,7 +153,7 @@ exports.posts = function buildPosts () {
         break;
       }
 
-      const poster = await glob('poster.{jpeg,jpg,png,gif}', { cwd })[0];
+      const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
 
       if (poster) {
         file.meta.poster = `/p/${file.meta.id}/poster.jpeg`;
