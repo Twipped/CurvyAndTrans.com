@@ -25,8 +25,9 @@ const frontmatter = require('gulp-front-matter');
 const scss        = require('gulp-sass');
 // const minifyCSS   = require('gulp-minify-css');
 const clean       = require('gulp-clean');
-var awspublish    = require('gulp-awspublish');
-var parallelize   = require('concurrent-transform');
+const awspublish  = require('gulp-awspublish');
+const parallelize = require('concurrent-transform');
+const cloudfront  = require('gulp-cloudfront-invalidate-aws-publish');
 
 var credentials = require('./aws.json');
 
@@ -377,13 +378,28 @@ exports.new = async function newPost () {
 
 /** **************************************************************************************************************** **/
 
-exports.deploy = function s3deploy () {
+exports.publish = function s3deploy () {
   var publisher = awspublish.create(credentials);
 
-  return src(`${DEST}/**/*`)
+  var htmlFiles = src(`${DEST}/**/*.html`)
     .pipe(awspublish.gzip())
-    .pipe(parallelize(publisher.publish(), 10))
+    .pipe(parallelize(publisher.publish({
+      'Cache-Control': 'max-age=1800, public',
+    }), 5));
+
+  var images = src(`${DEST}/**/*.{jpeg,jpg,png,gif}`)
+    .pipe(awspublish.gzip())
+    .pipe(parallelize(publisher.publish({
+      'Cache-Control': 'max-age=315360000, no-transform, public',
+    }), 5));
+
+  var everythingElse = src([ `${DEST}/**/*`, `${DEST}/**/*.{jpeg,jpg,png,gif}`, `!${DEST}/**/*.html` ])
+    .pipe(awspublish.gzip())
+    .pipe(parallelize(publisher.publish(), 5));
+
+  return merge(htmlFiles, images, everythingElse)
     .pipe(publisher.sync())
+    // .pipe(cloudfront(credentials))
     .pipe(awspublish.reporter());
 };
 
