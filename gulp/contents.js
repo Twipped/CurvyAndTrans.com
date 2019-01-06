@@ -26,9 +26,29 @@ require('helper-hoard').load(handlebars);
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
 
-exports.loadLayout = function loadLayout (cb) {
+exports.loadLayout = async function loadLayout () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
-  cb();
+  handlebars.registerHelper('rev', (url) => {
+    if (url[0] === '/') url = url.substr(1);
+    return '/' + url;
+  });
+};
+
+exports.loadLayout.prod = async function loadLayoutForProd () {
+  var manifest;
+  try {
+    manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'rev-manifest.json')));
+  } catch (e) {
+    manifest = {};
+  }
+
+  handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
+  handlebars.registerHelper('rev', (url) => {
+    if (url[0] === '/') url = url.substr(1);
+
+    if (manifest[url]) return '/' + manifest[url];
+    return '/' + url;
+  });
 };
 
 exports.posts = function buildPosts () {
@@ -167,7 +187,7 @@ exports.posts = function buildPosts () {
 exports.pages = function buildPages () {
   var postIndex;
   try {
-    postIndex = JSON.parse(fs.readFileSync(path.join(ROOT, '/posts.json')));
+    postIndex = JSON.parse(fs.readFileSync(path.join(ROOT, 'posts.json')));
   } catch (e) {
     postIndex = [];
   }

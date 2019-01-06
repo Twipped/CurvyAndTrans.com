@@ -7,8 +7,14 @@ var { loadLayout, posts, pages } = require('./contents');
 var contentTask = series( loadLayout, posts, pages );
 exports.content = contentTask;
 
+const rssTask = require('./atom');
+exports.atom = rssTask;
+
 var imagesTask = require('./images');
 exports.images = imagesTask;
+
+const filesTask = require('./files');
+exports.files = filesTask;
 
 var scssTask = require('./scss');
 exports.scss = scssTask;
@@ -16,19 +22,46 @@ exports.scss = scssTask;
 var cleanTask = require('./clean');
 exports.clean = cleanTask;
 
+const pushToProd = require('./publish');
+exports.push = pushToProd;
+
 /** **************************************************************************************************************** **/
 
-
-var buildTask = parallel(
-  contentTask,
-  imagesTask,
-  scssTask
-);
-exports.build = buildTask;
-
-exports.images = imagesTask;
 exports.new = require('./new');
-exports.publish = require('./publish');
+
+var buildTask = series(
+  cleanTask,
+  parallel(
+    imagesTask.prod,
+    scssTask.prod,
+    filesTask.prod
+  ),
+  loadLayout.prod,
+  posts,
+  pages,
+  rssTask
+);
+
+var devBuildTask = series(
+  cleanTask,
+  parallel(
+    imagesTask,
+    scssTask,
+    filesTask
+  ),
+  loadLayout,
+  posts,
+  pages,
+  rssTask
+);
+
+exports.dev = devBuildTask;
+exports.build = buildTask;
+exports.publish = series(
+  buildTask,
+  pushToProd
+);
+exports.testpush = pushToProd.dryrun;
 
 /** **************************************************************************************************************** **/
 
@@ -55,4 +88,4 @@ exports.watch = series(contentTask, watcher);
 
 /** **************************************************************************************************************** **/
 
-exports.default = series(cleanTask, buildTask, watcher);
+exports.default = series(devBuildTask, watcher);

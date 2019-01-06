@@ -1,9 +1,11 @@
 
-const path = require('path');
-const resizer     = require('gulp-image-resize');
-const merge       = require('merge-stream');
-const rename      = require('gulp-rename');
+const path          = require('path');
+const resizer       = require('gulp-image-resize');
+const merge         = require('merge-stream');
+const rename        = require('gulp-rename');
 const { src, dest } = require('gulp');
+const rev           = require('gulp-rev');
+const asyncthrough  = require('./lib/through');
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
@@ -69,5 +71,27 @@ module.exports = exports = function imageScale () {
       const hash = file.dirname.split('.')[2];
       file.dirname = hash;
     }))
-    .pipe(dest(`${DEST}/p/`));
+    .pipe(dest(`${DEST}/p/`))
+  ;
 };
+
+exports.prod = function imageScaleForProd () {
+  return exports()
+    .pipe(rev())
+    .pipe(dest(`${DEST}/p/`))
+    .pipe(asyncthrough(async (stream, file) => {
+      // Change rev's original base path back to the public root so that it uses the full
+      // path as the original file name key in the manifest
+      var base = path.resolve(ROOT, DEST);
+      file.revOrigBase = base;
+      file.base = base;
+
+      stream.push(file);
+    }))
+    .pipe(rev.manifest({
+      // base: `${DEST}/p/`,
+      merge: true, // Merge with the existing manifest if one exists
+    }))
+    .pipe(dest('.'))
+  ;
+}

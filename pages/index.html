@@ -13,7 +13,7 @@
   <div class="top-row">
     {{#with posts.first}}
     <section class="post prime" style="grid-row-end: span {{this.spanLarge}};" data-id="{{id}}">
-      <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%">
+      <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%">
         <a href="{{this.url}}">
           <div class="post-date">
             <strong>Latest Post: </strong>
@@ -33,7 +33,7 @@
     {{#each posts.ordered}}
     <section class="post previous" style="grid-row-end: span {{this.span}};" data-id="{{id}}">
       <div class="post-date"><span>{{date 'MMM Do, YYYY' this.date}}</span> &mdash; {{#first tags}}<span>{{this}}</span></div>{{/first}}
-      <div class="post-poster" style="background-image: url({{this.poster}}); padding-top:{{this.dimensions.ratio}}%"><div>
+      <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%"><div>
         <a href="{{this.url}}">
           {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
         </a>

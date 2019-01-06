@@ -1,33 +1,22 @@
 
 const path          = require('path');
 const { src, dest } = require('gulp');
-const scss          = require('gulp-sass');
 const rev           = require('gulp-rev');
 const asyncthrough  = require('./lib/through');
-
-// const minifyCSS     = require('gulp-minify-css');
-
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
 
-module.exports = exports = function buildScss () {
-  return src('scss/*.scss')
-    .pipe(scss({
-      includePaths: [ path.join(ROOT, 'node_modules') ],
-    }))
-    .pipe(dest(DEST));
+module.exports = exports = function fileCopy () {
+  return src('files/**/*')
+    .pipe(dest(`${DEST}`))
+  ;
 };
 
-exports.prod = function buildScssForProd () {
-  return src('scss/*.scss')
-    .pipe(scss({
-      outputStyle: 'compressed',
-      includePaths: [ path.join(ROOT, 'node_modules') ],
-    }))
-    .pipe(dest(DEST))
+exports.prod = function fileCopyForProd () {
+  return exports()
     .pipe(rev())
-    .pipe(dest(DEST))
+    .pipe(dest(`${DEST}`))
     .pipe(asyncthrough(async (stream, file) => {
       // Change rev's original base path back to the public root so that it uses the full
       // path as the original file name key in the manifest

@@ -3,7 +3,7 @@
 	{{#content "meta"}}
 	<meta property="og:title" content="{{this.title}}">
 	<meta property="og:description" content="{{this.description}}">
-	<meta property="og:image" content="{{this.poster}}">
+	<meta property="og:image" content="{{rev this.poster}}">
 	<meta property="og:url" content="{{this.url}}">
 	<meta name="twitter:card" content="summary_large_image">{{/content}}
 
@@ -18,7 +18,7 @@
     <h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<span>{{this}}</span>{{/each}}</div>
     <div class="post-images">
-      {{#each images}}<a href="{{this}}"><img src="{{this}}" alt=""></a>{{/each}}
+      {{#each images}}<a href="{{rev this}}"><img src="{{rev this}}" alt=""></a>{{/each}}
     </div>
 
     {{#if products}}
