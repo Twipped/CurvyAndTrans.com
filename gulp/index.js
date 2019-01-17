@@ -30,7 +30,6 @@ exports.push = pushToProd;
 exports.new = require('./new');
 
 var buildTask = series(
-  cleanTask,
   parallel(
     imagesTask.prod,
     scssTask.prod,
@@ -43,7 +42,6 @@ var buildTask = series(
 );
 
 var devBuildTask = series(
-  cleanTask,
   parallel(
     imagesTask,
     scssTask,
@@ -56,8 +54,9 @@ var devBuildTask = series(
 );
 
 exports.dev = devBuildTask;
-exports.build = buildTask;
+exports.prod = buildTask;
 exports.publish = series(
+  cleanTask,
   buildTask,
   pushToProd
 );

@@ -6,12 +6,16 @@ const rename        = require('gulp-rename');
 const { src, dest } = require('gulp');
 const rev           = require('gulp-rev');
 const asyncthrough  = require('./lib/through');
+const buildsaver    = require('./lib/buildsaver');
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
 
 module.exports = exports = function imageScale () {
+  var bs = buildsaver();
+
   var fullsize = src('posts/**/{1..9}.{jpeg,jpg,png,gif}')
+    .pipe(bs.source())
     .pipe(resizer({
       format: 'jpeg',
       width: 1000,
@@ -19,6 +23,7 @@ module.exports = exports = function imageScale () {
     }));
 
   var posters = src('posts/**/poster.{jpeg,jpg,png,gif}')
+    .pipe(bs.source('poster'))
     .pipe(resizer({
       format: 'jpeg',
       width: 1000,
@@ -26,6 +31,7 @@ module.exports = exports = function imageScale () {
     }));
 
   var titlecardNorth = src('posts/**/1.{jpeg,jpg,png,gif}')
+    .pipe(bs.source('titlecard-north'))
     .pipe(resizer({
       format: 'png',
       width: 1000,
@@ -38,6 +44,7 @@ module.exports = exports = function imageScale () {
     }));
 
   var titlecardCenter = src('posts/**/1.{jpeg,jpg,png,gif}')
+    .pipe(bs.source('titlecard-center'))
     .pipe(resizer({
       format: 'png',
       width: 1000,
@@ -50,6 +57,7 @@ module.exports = exports = function imageScale () {
     }));
 
   var thumbnail = src('posts/**/1.{jpeg,jpg,png,gif}')
+    .pipe(bs.source('titlecard-thumb'))
     .pipe(resizer({
       format: 'png',
       width: 400,
@@ -72,6 +80,7 @@ module.exports = exports = function imageScale () {
       file.dirname = hash;
     }))
     .pipe(dest(`${DEST}/p/`))
+    .pipe(bs.finish())
   ;
 };
 
