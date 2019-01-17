@@ -306,6 +306,7 @@ header {
     display: grid;
 
     @include media-breakpoint-up(md) {
+      // grid-template-rows: min-content 1fr
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "images title"
@@ -313,9 +314,11 @@ header {
         "images products"
         "images contents"
         "images ."
+        "images ."
       ;
       grid-column-gap: 20px;
       grid-row-gap: 10px;
+      grid-template-rows: min-content min-content min-content min-content 1fr;
 
       padding-right: 20px;
 
