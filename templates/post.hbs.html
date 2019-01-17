@@ -15,7 +15,7 @@
     <h1><a href="/">curvy and trans</a></h1>
   </header>
 	<article class="{{#if long}}long{{/if}}">
-    <h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>
+    {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>{{/if}}
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<span>{{this}}</span>{{/each}}</div>
     <div class="post-images">
       {{#each images}}<a href="{{rev this}}"><img src="{{rev this}}" alt=""></a>{{/each}}
