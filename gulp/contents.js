@@ -128,7 +128,7 @@ exports.posts = function buildPosts () {
         file.meta.spanLarge = Math.ceil((height / width) * 10) * 2;
       }
 
-      if (contents.length > 1000) {
+      if (contents.length > 2000) {
         file.meta.long = true;
       }
 
