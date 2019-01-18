@@ -9,7 +9,7 @@ const asyncthrough  = require('./lib/through');
 
 
 const ROOT = path.dirname(__dirname);
-const DEST = 'docs';
+const DEST = 'docs/css';
 
 module.exports = exports = function buildScss () {
   return src('scss/*.scss')
