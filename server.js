@@ -5,9 +5,16 @@ const log = require('fancy-log');
 
 var app = express();
 
+app.disable('etag');
 app.use(morgan('dev'));
 
-app.use(express.static('docs'));
+app.use((req, res, next) => {
+  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
+  req.headers['if-none-match'] = 'no-match-for-this';
+  next();
+});
+
+app.use(express.static('docs', { etag: false, maxAge: 5 }));
 
 app.use(directory('docs', { 'icons': true }));
 
