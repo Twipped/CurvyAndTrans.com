@@ -3,6 +3,7 @@ id: "6EEE27"
 date: "2018-12-16T08:00:00.000Z"
 title: "Shiny and Blue"
 description: "Outfit of the Day for Dec 16th, 2018"
+span: 11
 tags:
   - OOTD
 products:

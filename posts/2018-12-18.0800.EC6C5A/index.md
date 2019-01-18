@@ -4,6 +4,7 @@ date: "2018-12-18T08:08:00.000Z"
 title: "Feeling Basic"
 description: ""
 draft: false
+span: 12
 tags:
   - OOTD
 products:
