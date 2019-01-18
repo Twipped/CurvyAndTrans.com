@@ -19,6 +19,9 @@ exports.files = filesTask;
 var scssTask = require('./scss');
 exports.scss = scssTask;
 
+var jsTask = require('./scripts');
+exports.js = jsTask;
+
 var cleanTask = require('./clean');
 exports.clean = cleanTask;
 
@@ -33,6 +36,7 @@ var buildTask = series(
   parallel(
     imagesTask.prod,
     scssTask.prod,
+    jsTask.prod,
     filesTask.prod
   ),
   loadLayout.prod,
@@ -45,6 +49,7 @@ var devBuildTask = series(
   parallel(
     imagesTask,
     scssTask,
+    jsTask,
     filesTask
   ),
   loadLayout,
@@ -75,6 +80,7 @@ function watcher () {
   ], contentTask);
 
   watch('scss/*.scss', scssTask);
+  watch('js/*.js', jsTask);
 
   var forever = require('forever');
   var srv = new forever.Monitor('server.js');

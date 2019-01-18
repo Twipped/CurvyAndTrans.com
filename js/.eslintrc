@@ -1,0 +1,10 @@
+{
+  "extends": "twipped/browser",
+  "env": {"es6": true},
+  "rules": {
+    'indent': [ 2, 2, {
+      'MemberExpression': 1,
+    } ],
+    'prefer-arrow-callback': 0
+  }
+}
