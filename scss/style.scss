@@ -10,7 +10,7 @@
 // @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
-// @import "bootstrap/scss/buttons";
+@import "bootstrap/scss/buttons";
 // @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
@@ -140,7 +140,7 @@ header {
 
 .page-index {
 
-  .top-row {
+  .post-grid {
     display: grid;
     grid-gap: 0;
     grid-template-columns: 1fr;
@@ -296,6 +296,15 @@ header {
       @include media-breakpoint-down(sm) {
         font-size: 14px;
       }
+    }
+  }
+
+  .load-more {
+    text-align: center;
+    padding: 20px;
+
+    .btn {
+      width: 60vw;
     }
   }
 }

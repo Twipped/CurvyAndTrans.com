@@ -10,7 +10,7 @@
     <div class="catchphrase">Just a plus size trans girl in a straight size cis world.</div>
   </header>
 
-  <div class="top-row">
+  <div class="post-grid">
     {{#with posts.first}}
     <section class="post prime" style="grid-row-end: span {{this.spanLarge}};" data-id="{{id}}">
       <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%">
@@ -30,7 +30,7 @@
       </a>
     </section>
     {{/with}}
-    {{#each posts.ordered}}
+    {{#each (slice posts.ordered 0 14)}}
     <section class="post previous" style="grid-row-end: span {{this.span}};" data-id="{{id}}">
       <div class="post-date"><span>{{date 'MMM Do, YYYY' this.date}}</span> &mdash; {{#first tags}}<span>{{this}}</span></div>{{/first}}
       <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%"><div>
@@ -42,6 +42,14 @@
     </section>
     {{/each}}
   </div>
+
+  <div class="load-more">
+    <button class="btn btn-primary btn-info btn-lg js-load-more" type="button">Load More</button>
+  </div>
+
 	{{/content}}
+  {{#content "postscripts"}}
+  <script src="{{rev '/js/index.js'}}"></script>
+  {{/content}}
 
 {{/extend}}
