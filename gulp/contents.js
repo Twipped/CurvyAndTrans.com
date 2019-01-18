@@ -210,7 +210,7 @@ exports.pages = function buildPages () {
     };
   }
 
-  return src([ 'pages/*', '!pages/*.md' ])
+  return src([ 'pages/*.html' ])
     .pipe(frontmatter({
       property: 'meta',
     }))
