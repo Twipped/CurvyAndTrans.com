@@ -24,13 +24,14 @@
             <span class="emdash">&mdash;</span>
             {{#first tags}}<span>{{this}}</span>{{/first}}
           </div>
-          {{#and title description}}<div class="shade">
+          {{#and title description}}
+          <div class="shade">
             {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
             {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
-          </div>{{/and}}
-        </div>
-
-      </a>
+          </div>
+          {{/and}}
+        </a>
+      </div>
     </section>
     {{/with}}
     {{#each (slice posts.ordered 0 14)}}
