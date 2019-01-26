@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const moment = require('moment');
-const { find, without, sortBy } = require('lodash');
+const { find, without, sortBy, groupBy, reduce } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
 const slugify = require('slugify');
@@ -193,23 +193,40 @@ exports.pages = function buildPages () {
     postIndex = [];
   }
 
+  const byState = groupBy(postIndex, (p) => (p.draft ? 'draft' : 'final'));
   postIndex = postIndex.filter((p) => !p.draft);
 
+  const pinned = find(postIndex, 'pinned');
+  const byTag = reduce(byState.final, (results, p) => {
+    const tags = p.tags || [];
+    tags.forEach((tag) => {
+      if (!results[tag]) results[tag] = [];
+      results[tag].push(p);
+    });
+    return results;
+  }, {});
+  const tags = Object.keys(byTag).sort();
+
   var posts;
-  var pinned = find(postIndex, 'pinned');
   if (pinned) {
-    const ordered = without(postIndex, pinned);
+    const ordered = without(byState.final, pinned);
     posts = {
       all: postIndex,
       ordered: [ pinned, ...ordered ],
       first: pinned,
+      drafts: byState.draft,
+      tags,
+      byTag,
     };
   } else {
-    const [ first, ...ordered ] = postIndex;
+    const [ first, ...ordered ] = byState.final;
     posts = {
       all: postIndex,
       ordered,
       first,
+      drafts: byState.draft,
+      tags,
+      byTag,
     };
   }
 

@@ -1,0 +1,53 @@
+{{#extend "layout"}}
+
+  {{#content "bodyAttributes"}}class="page-index"{{/content}}
+  {{#content "body"}}
+
+  <header>
+    <a href="mailto:media@curvyandtrans.com" class="external"><i class="fas fa-envelope"></i></a>
+    <a href="http://www.instagram.com/curvyandtrans" class="external" target="_blank"><i class="fab fa-instagram"></i></a>
+    <h1><a href="/">curvy and trans</a></h1>
+  </header>
+
+  <div class="tag-list">
+    <h3>Posts By Tag</h3>
+    <div class="nav nav-pills" role="tablist">
+      {{#each posts.tags}}
+        <a
+          class="nav-link {{#unless @index}}active{{/unless}}"
+          data-toggle="pill"
+          role="tab"
+          id="{{slugify this}}-tab"
+          href="#{{slugify this}}-pane"
+          aria-controls="{{slugify this}}-pane"
+          aria-selected="{{#if @index}}true{{else}}false{{/if}}"
+        >{{this}}</a>
+      {{/each}}
+    </div>
+  </div>
+
+
+  <div class="tab-content">
+    {{#each posts.tags}}
+    <div class="tab-pane fade {{#unless @index}}show active{{/unless}}" role="tabpanel" id="{{slugify this}}-pane" aria-labelledby="{{slugify this}}-tab">
+      <div class="post-grid">
+      {{#each (get ../posts.byTag this)}}
+        <section class="post previous" style="grid-row-end: span {{this.span}};" data-id="{{id}}">
+          <div class="post-date"><span>{{date 'MMM Do, YYYY' this.date}}</span> &mdash; {{#first tags}}<span>{{this}}</span></div>{{/first}}
+          <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%"><div>
+            <a href="{{this.url}}">
+              {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
+            </a>
+          </div></div>
+          {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
+        </section>
+      {{/each}}
+      </div>
+    </div>
+    {{/each}}
+
+  </div>
+
+  {{/content}}
+
+{{/extend}}

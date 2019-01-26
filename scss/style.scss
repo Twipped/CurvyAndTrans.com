@@ -16,8 +16,8 @@
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group";
 // @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
@@ -131,11 +131,28 @@ header {
   }
 
   .catchphrase {
+    float: left;
     font-family: $font-primary;
     color: darken($pink, 10%);
     font-size: 14px;
     line-height: 1;
     z-index: 1;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .nav-bar {
+    text-align: right;
+    line-height: 1;
+    font-size: 14px;
+    font-family: $font-primary;
+
+    a {
+      text-shadow: 0 0 0.2em white;
+      color: black;
+      font-weight: 700;
+      white-space: nowrap;
+    }
   }
 }
 
@@ -150,7 +167,7 @@ header {
     @include media-breakpoint-up(sm) {
       grid-template-columns: repeat( auto-fill, minmax( 250px, 1fr ) );
 
-      .post:first-child {
+      .post.prime {
         grid-column-end: span 2;
         grid-row-end: span 25;
       }
@@ -317,6 +334,16 @@ header {
 
     .btn {
       width: 60vw;
+    }
+  }
+
+  .tag-list {
+    padding: 10px;
+
+    .nav {
+      border: 1px solid $blue;
+      padding: 5px;
+      border-radius: 3px;
     }
   }
 }
