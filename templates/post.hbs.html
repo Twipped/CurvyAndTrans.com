@@ -14,12 +14,12 @@
     <a href="http://www.instagram.com/curvyandtrans" class="external" target="_blank"><i class="fab fa-instagram"></i></a>
     <h1><a href="/">curvy and trans</a></h1>
   </header>
-	<article class="{{#if long}}long{{/if}}">
+	<article class="{{#if long}}long{{/if}} {{#if noimages}}noimages{{/if}}">
     {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>{{/if}}
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<span>{{this}}</span>{{/each}}</div>
-    <div class="post-images">
+    {{#unless noimages}}<div class="post-images">
       {{#each images}}<a href="{{rev this}}"><img src="{{rev this}}" alt="">{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>{{/each}}
-    </div>
+    </div>{{/unless}}
 
     {{#if products}}
     <ul class="post-products">
@@ -27,7 +27,10 @@
       {{#each products}}<li><a href="{{this}}" rel="nofollow">{{@key}}</a></li>{{/each}}
     </ul>
     {{/if}}
-    <div class="post-content">{{{this.contents}}}</div>
+    <div class="post-content">
+      {{#if hero}}<a href="{{{hero}}}" class="hero right"><img src="{{{hero}}}" alt=""></a>{{/if}}
+      {{{this.contents}}}
+    </div>
   </article>
 	{{/content}}
 

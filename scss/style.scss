@@ -18,7 +18,7 @@
 // @import "bootstrap/scss/custom-forms";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
-// @import "bootstrap/scss/card";
+@import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
@@ -353,38 +353,57 @@ header {
   article {
     display: grid;
 
-    @include media-breakpoint-up(md) {
-      // grid-template-rows: min-content 1fr
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "images title"
-        "images datetags"
-        "images products"
-        "images contents"
-        "images ."
-        "images ."
-      ;
-      grid-column-gap: 20px;
-      grid-row-gap: 10px;
-      grid-template-rows: min-content min-content min-content min-content 1fr;
+    &:not(.noimages) {;
+      @include media-breakpoint-up(md) {
+        // grid-template-rows: min-content 1fr
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "images title"
+          "images datetags"
+          "images products"
+          "images contents"
+          "images ."
+          "images ."
+        ;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        grid-template-rows: min-content min-content min-content min-content 1fr;
 
-      padding-right: 20px;
+        padding-right: 20px;
 
-      &.long {
-        grid-template-columns: 1fr 2fr;
+        &.long {
+          grid-template-columns: 1fr 2fr;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "title"
+          "datetags"
+          "images"
+          "products"
+          "contents"
+        ;
+        grid-row-gap: 5px;
       }
     }
 
-    @include media-breakpoint-down(sm) {
+    &.noimages {
       grid-template-columns: 1fr;
       grid-template-areas:
         "title"
         "datetags"
-        "images"
         "products"
         "contents"
       ;
       grid-row-gap: 5px;
+
+      padding: 0 20px;
+
+      @include media-breakpoint-down(sm) {
+        padding: 0 5px;
+      }
     }
   }
 
@@ -439,10 +458,12 @@ header {
     span {
       display: inline-block;
       white-space: nowrap;
-      margin-right: 10px;
+      margin-right: 5px;
+      margin-bottom: 4px;
       background: lighten($primary, 20%);
       color: darken($primary, 20%);
       padding: 0.4em 0.5em;
+
     }
   }
 
@@ -470,7 +491,67 @@ header {
         margin-right: 5px;
       }
     }
+
+    .hero {
+
+      @include media-breakpoint-up(md) {
+        &.right {
+          float: right;
+          margin: 0 0 10px 10px;
+        }
+
+        img {
+          max-width: 35vw;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        display: block;
+        margin: 0 -15px 10px -15px;
+      }
+    }
+
+    h2, h3, h4 {
+      clear: left;
+    }
+
+    .card {
+      text-decoration: none;
+      background: $lightPink;
+      .card-body {
+        padding: 7px 5px 5px;
+        line-height: 1;
+        color: #333;
+        font-size: 12px;
+        font-family: $font-secondary;
+      }
+
+      @include media-breakpoint-up(md) {
+
+        &.left {
+          float: left;
+          margin-right: 10px;
+        }
+
+        &.right {
+          float: right;
+          margin-left: 10px;
+        }
+
+        &.span3, &.span4, &.span5, &.span6 {
+          margin-top: 0.5em;
+        }
+
+        &.span1 { width: 100%; }
+        &.span2 { width: 25%; }
+        &.span3 { width: 33%; }
+        &.span4 { width: 25%; }
+        &.span5 { width: 20%; }
+        &.span6 { width: 15%; }
+      }
+    }
   }
+
 
   .post-products {
     grid-area: products;
