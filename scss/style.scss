@@ -502,6 +502,7 @@ header {
 
         img {
           max-width: 35vw;
+          max-height: 50vh;
         }
       }
 
@@ -512,7 +513,7 @@ header {
     }
 
     h2, h3, h4 {
-      clear: left;
+      clear: both;
     }
 
     .card {
@@ -540,14 +541,15 @@ header {
 
         &.span3, &.span4, &.span5, &.span6 {
           margin-top: 0.5em;
+          clear:both;
         }
 
-        &.span1 { width: 100%; }
-        &.span2 { width: 25%; }
-        &.span3 { width: 33%; }
-        &.span4 { width: 25%; }
-        &.span5 { width: 20%; }
-        &.span6 { width: 15%; }
+        &.span1 { width: 100vh; }
+        &.span2 { width:  25vh; }
+        &.span3 { width:  33vh; }
+        &.span4 { width:  25vh; }
+        &.span5 { width:  20vh; }
+        &.span6 { width:  15vh; }
       }
     }
   }
