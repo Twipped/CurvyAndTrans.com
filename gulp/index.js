@@ -73,7 +73,7 @@ function watcher () {
 
   watch([
     'posts/**/index.md',
-    'posts/**/{1..9}.{jpeg,jpg,png,gif}',
+    'posts/**/+({1..9}|{01..20}).{jpeg,jpg,png,gif}',
     'templates/*.html',
     'pages/*',
     '!pages/*.md',

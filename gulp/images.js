@@ -14,7 +14,7 @@ const DEST = 'docs';
 module.exports = exports = function imageScale () {
   var bs = buildsaver();
 
-  var fullsize = src('posts/**/{1..9}.{jpeg,jpg,png,gif}')
+  var fullsize = src('posts/**/+({1..9}|{01..20}).{jpeg,jpg,png,gif}')
     .pipe(bs.source())
     .pipe(resizer({
       format: 'jpeg',
@@ -30,7 +30,7 @@ module.exports = exports = function imageScale () {
       crop: false,
     }));
 
-  var titlecardNorth = src('posts/**/1.{jpeg,jpg,png,gif}')
+  var titlecardNorth = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
     .pipe(bs.source('titlecard-north'))
     .pipe(resizer({
       format: 'png',
@@ -43,7 +43,7 @@ module.exports = exports = function imageScale () {
       file.basename = 'titlecard-north';
     }));
 
-  var titlecardCenter = src('posts/**/1.{jpeg,jpg,png,gif}')
+  var titlecardCenter = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
     .pipe(bs.source('titlecard-center'))
     .pipe(resizer({
       format: 'png',
@@ -56,7 +56,7 @@ module.exports = exports = function imageScale () {
       file.basename = 'titlecard-center';
     }));
 
-  var thumbnail = src('posts/**/1.{jpeg,jpg,png,gif}')
+  var thumbnail = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
     .pipe(bs.source('titlecard-thumb'))
     .pipe(resizer({
       format: 'png',
@@ -71,7 +71,7 @@ module.exports = exports = function imageScale () {
   var other = src([
     'posts/**/*.{jpeg,jpg,png,gif}',
     '!posts/**/poster.{jpeg,jpg,png,gif}',
-    '!posts/**/{1..9}.{jpeg,jpg,png,gif}',
+    '!posts/**/+({1..9}|{01..20}).{jpeg,jpg,png,gif}',
   ]);
 
   return merge(fullsize, posters, titlecardNorth, titlecardCenter, thumbnail, other)
