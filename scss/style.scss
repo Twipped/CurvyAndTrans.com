@@ -49,12 +49,16 @@ $lightBlue: lighten($blue, 30%);
 $primary: #ee76ad;
 
 body {
-	font-family: $font-primary;
-	background: white;
-	font-size: 18px;
-	line-height: 1.8;
-	font-weight: 400;
-	color: lighten(#000,45%);
+  font-family: $font-primary;
+  background: white;
+  line-height: 1.8;
+  font-weight: 400;
+  color: lighten(#000,45%);
+
+  font-size: 14px;
+  @media (min-width: 400px) {
+    font-size: 18px;
+  }
 }
 
 a {
