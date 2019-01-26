@@ -161,7 +161,7 @@ exports.posts = function buildPosts () {
       indexFile = file.clone();
     }
 
-    if (!file.meta.ignore && !file.meta.draft) {
+    if (!file.meta.ignore) {
       posts.push(file.meta);
     }
 
@@ -191,6 +191,8 @@ exports.pages = function buildPages () {
   } catch (e) {
     postIndex = [];
   }
+
+  postIndex = postIndex.filter((p) => !p.draft);
 
   var posts;
   var pinned = find(postIndex, 'pinned');
