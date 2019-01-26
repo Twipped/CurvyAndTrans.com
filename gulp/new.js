@@ -12,6 +12,12 @@ const ROOT = path.dirname(__dirname);
 module.exports = exports = async function newPost () {
   var date = argv.date ? moment(argv.date) : moment();
 
+  if (!date.hour()) {
+    const now = moment();
+    date.hour(now.hour());
+    date.minute(now.minute());
+  }
+
   var id = random.id().substr(-6).toUpperCase();
   var fname = date.format('YYYY-MM-DD.HHmm.') + id;
 
