@@ -22,6 +22,7 @@ const md     = require('markdown-it')({
 
 const handlebars = require('handlebars');
 require('helper-hoard').load(handlebars);
+handlebars.registerHelper('get', (target, key) => (target ? target[key] : undefined));
 
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
