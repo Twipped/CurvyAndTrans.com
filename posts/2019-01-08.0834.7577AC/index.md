@@ -1,8 +1,9 @@
 ---
 id: "7577AC"
 date: "2019-01-08T16:34:23.037Z"
-title: "Two Year Transiversary"
-description: "It feels like an eternity ago..."
+title: "Self Discovery"
+slug: two-year-transiversary
+description: "Two years ago today I realized I was trans"
 tags:
   - Transition Tuesday
   - Transgender
@@ -29,6 +30,6 @@ Then I found a post by a woman that had been written a year prior, where she des
 
 My wife sent me out that night to get chinese takeout, and when I left the house I put on Green Day's Insomniac (specifically [Panic Song](https://www.youtube.com/watch?v=fPN-vp-quOs) and [Brain Stew](https://www.youtube.com/watch?v=UNq9gmY_Oz4)), and just cranked it. During that five minute drive I felt energized, reinvigorated, I felt more alive than I had in a decade. I sang at the top of my lungs the entire drive to the restaurant and back, and when I got home I was in the best mood I'd been in ages. I was calm and cheerful, extremely patient with my daughter, loving to my wife. I gave my daughter a bath that night, something which _always_ resulted in raised voices and tears, but this time was calm and happy. My wife said it was like I was a completely different person.
 
-That's when it hit me... how the fuck was I going to explain this to her?
+That's when it hit me... [how the fuck was I going to explain this to her](/p/040E24/opening-the-closet/)?
 
-That story I will tell on Thursday.
+

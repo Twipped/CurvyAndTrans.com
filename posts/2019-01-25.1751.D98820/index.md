@@ -1,0 +1,79 @@
+---
+id: "D98820"
+date: "2019-01-25T17:51:11.325Z"
+title: "The Way We Were"
+description: "In the beginning..."
+spanLarge: 22
+tags:
+  - Family
+  - Transgender
+captions:
+  - ''
+  - San Diego Comic Con 2006
+  - Disneyland, 2006
+  - July 2008, Two months after we were engaged
+  - May 2009, Engagement photos
+  - October 10th, 2009. Our Wedding
+  - September 2012. Less than one month before Samantha's birth
+  - September 2013
+  - July 2015, San Diego Comic Con
+  - October 2015, Celebrating our 6th wedding anniversary
+  - June 2016, Disney's California Adventure
+---
+_This is the first in a series of posts about how my relationship with my wife evolved over the course of my gender transition._
+
+I knew on the first date that I was going to quickly fall in love with Katharine. It was intended to be a trip out to Cabrillo National Monument in Point Loma, San Diego. It’s a national park high up on the peak of the peninsula that overlooks San Diego Bay. I wanted to take her there because it is one of my favorite places in the city, the views are just gorgeous, you can see the entire urban center from that peak, and far out to sea. On good days you can see whale pods breaching far off shore. There is always a strong ocean breeze, and it just struck me as a very romantic place to spend some time together.
+
+Katharine at the time was living in Carlsbad, 37 miles north along the I-5 freeway. I drove to her house to pick her up, endured a thorough interview by her parents (they even photographed my car!) and then we headed out. I think I picked her up at 2pm, giving us plenty of time to get down to the park before it closed at 5, hang out for a bit, and then go grab some dinner in Mission Bay. Unfortunately, an accident on the freeway turned I-5 into a parking lot for 20 miles, and we ended up spending three hours just sitting in my car on the road, talking. We literally spent the entire time deep in conversation.
+
+Eventually the traffic cleared and we got down to San Diego proper, but by then it was already 5pm and the park was closed, so we just went to dinner. I took her to a little hole in the wall seafood place that I loved. She hated it, but we still had a good time together, and she suggested we should go back to my house for a bit. Cue another hour of driving and talking, followed by several more hours of just hanging out at my house before I took her home.
+
+It was the first of many really great nights, we had a bit of a whirlwind romance over the next six months. We attended San Diego Comic Con together two months after our first date, and it was there that I got the seal of approval from her best friend (who has now also become one of my best friends). It was at that convention that she told me she loved me for the first time. I know exactly the place we were standing when she said it, and I’ve looked towards that place every time I’ve returned there.
+
+### The beginning of a beautiful relationship
+
+By six months I knew that I was going to marry this woman, and the reason I knew that was because I had never heard of a relationship as stable as ours. We didn’t fight, ever. We didn’t even bicker. Most of the time we were both on the same wavelength, and when we weren’t we always kept calm until we found a center. The worst fight we had the entirety of our courtship was a night that I just kept repeatedly sticking my foot in my mouth over and over again, making her more and more upset, until I decided I just needed to leave. I went out to my car, sat on the hood, and just started crying. After a few minutes she came running out of the house, grabbed me with her arms, and we both just cried together there in her driveway.
+
+This had to be the person I would spend the rest of my life with, we were too perfect together. In addition to that, however, she gave me something that I needed: someone to protect. A big part of my man mask required taking up traditional gender roles. She wanted to become a stay at home mom, and I “wanted” to be the bread winner (in reality, I wanted to be a stay at home mom too, but there was no way for me to achieve that, so I clung to the mask). Kat also has had chronic depression ever since she was a teenager, which would sometimes spike in waves that left her needing someone to take care of her. I needed to be that someone, for the sake of my own protective illusion. She was also very much, well, not an adult, by her own admission. She had lived a very sheltered and protected life under her parents. She didn’t even know how to boil water when we started dating!
+
+We were engaged on the two year anniversary of our first date, and married a year and a half later on the day after my birthday. My wedding was simultaneously the happiest and (to that point) hardest day of my life. Happy because I was marrying this absolutely gorgeous woman who I was madly in love with, and our wedding was beautiful. Hard, because I was ludicrously dysphoric for the entire day, without a doubt the most dysphoric I had ever felt to that point, and the most dysphoric I would be for a long time. Katharine says she could tell that something was wrong with me that day. I was as joyful and exuberant as I should be, but it was all dampened. It was reserved, restrained, like my mind was somewhere else all day (it was, I was massively disassociating). Our photographer had us do a first reveal shoot, where I waited with my face away from her as she came out behind me. I turned around and saw her for the first time and she was just stunning, the most beautiful I had ever seen her in my entire life. But deep down I was screaming in agony, because all I wanted at that moment was to be her.
+
+I wanted to be a bride, I wanted to be in a dress. I was miserable that I had to wear a suit, even tho it was the best fitting suit I’d had in a very long time (the only suit I’d had in a very long time). It felt completely wrong on me, binding and squeezing me in uncomfortable places, hugging my skin in ways that reminded me just how wrong my shape was. I’m standing awkwardly in every single photo because I was incapable of relaxing. My anxiety was through the roof and my body confidence was in the toilet.
+
+I remember standing at the alter, saying our vows, and committing the cliche mistake of saying "bed" instead of "wed". It wasn't even a Freudian slip, I just fumbled the words (thankfully the mic was really low and nobody in the audience could hear what either of us were saying, not even our wedding party heard it). When we got to the I Do's, Kat and I both started crying during the exchange. The minister pronounced us husband and wife, we kissed, and then stepped down from the alter. In the moment I had completely forgotten that we had chosen the Star Wars Throne Room theme as our recessional music, and when the opening notes kicked in I burst into crying laughter.
+
+### The Nuclear Family
+
+We started trying for our first child a year later... and continued to try for two years, the last of which was a grueling cycle of ovulation monitoring and mechanical sex. It was an extremely hard drain on our intimacy, further amplified by my own undiscovered dysphoria with penetrative sex. We had nearly given up and were taking a break from it when Samantha was finally conceived. We were going to take a vacation and spend three days at Disneyland Resort, I had the hotel and the tickets booked. The test came back positive two weeks before our stay, and a week later the morning sickness kicked in. Disney’s customer service, bless them, understood and eventually refunded my visit.
+
+The morning sickness didn’t stop until the very moment that Samantha exited Katharine’s womb. Eight horrifying months of punishment while Kat was bedridden and had to be hospitalized three times for dehydration, before having to have an emergency cesarean due to preeclampsia. I also was stabbed in the back by my employer, who had promised me a month off for the birth, but when it came due accused me of using the pregnancy as an excuse to slack off my work. That first pregnancy gave me a clear understanding of why so many couples fall apart when they have their first kids, it was an extremely taxing experience, by far the hardest thing we had endured as a couple so far. Yet, we survived.
+
+After the birth, Kat grew up overnight. She made changes to her lifestyle, took charge of keeping up our house, started meal planning and cooking dinners, lost a TON of weight, and really came in to her own. We became a proper little nuclear family, in every sense of the word, and this is where the problems started.
+
+### Traditional Gender Roles
+
+I didn’t have good role models growing up. I had my father, an angry and abusive misogynist who beat his wife, and the men in the church. The JW faith is deeply, DEEPLY, patriarchal. We’re talking the full “wifely subservience” attitude, where women were meant to marry, take care of the house and kids, make the meals and tend to their husbands, while the husbands earned the daily bread and then got to relax after a hard days work. This is what I grew up listening to, this is what I had been taught was expected of me, and so this is the mold I thought I had to fill. I knew it was bullshit, I had been a feminist since I was a teenager, but I fell into the trap all the same. It was all I knew.
+
+I completely detached from parenting, leaving Kat to handle raising our daughter. I was still the dutiful husband, I did what was expected of me. I changed the diapers, I washed the bottles, I did the things that I was asked, but never more than that. I had a part to play, and I was going to play it. By that point I was working remotely full time, so I spent 90% of my waking hours in my office either coding or gaming, from the moment I woke up to often right before I went to bed. I felt guilty for it, but not so guilty as to make a change, because after all, this seemed to be what Kat wanted. [She would tell me if she didn’t, right?](https://english.emmaclit.com/2017/05/20/you-shouldve-asked/)
+
+Now I look back on these times and feel a great amount of guilt for the way I behaved. I dumped _all_ the emotional labor on Katharine, all of it. I knew what I was doing, I felt bad for doing it, but I did it anyway because it left me free to distract myself. Not being engaged allowed me to pour myself into coding projects and gaming, distracting myself from an increasingly powerful sense of depersonalization. I wanted to be detached.
+
+Kat, for her part didn't fight it. She had her own systemic expectations for how heterosexual married life was supposed to go. Men are like this, right? Every woman knows it, this is how guys are, and you can't change it. Trying to change it just makes things worse. Even with me, when she had tried to influence my behavior I would fall apart, become completely self absorbed in the guilt of how much I was failing as a parent and spouse. Other times I would drop into angry skulking at the inconvenience of having been disturbed (this is a classic ADHD symptom that I didn't learn until last year). It was easier for Kat to just let me be, to do things herself, rather than weather whatever storm would come from my disturbance.
+
+### The Good Life?
+
+And still, I thought we were doing great. People said at our wedding that it was clear just how much love we had for each other, a love that was uncanny in its stability. The night that I came out, we both agreed that of all of the couples in our social circle, ours was the most likely to be able to survive this. We never went to bed angry, we never fought in public, it was pretty rare for us to even raise our voices at each other.
+
+From 2012 through 2015 we had a pretty great life. Our finances were very stable, to the point we never felt like we were struggling for money, or even had to think too much about what we were spending for things. Sam went through her terrible twos, threenagehood, and feisty fours. In 2015 I took a job working on a team based in Denver and had to spend the first week there, giving us an opportunity to travel as a family for the first time. The entire experience was delightful, and it led to us taking two more real family vacations to Disneyland and to San Francisco in 2016. For three years life felt really great, and some times I even found myself thinking "wow, I feel really happy." But there were darker things brewing under the surface.
+
+Kat was down to her lowest weight since she was a teenager, and she looked _fantastic_, but I completely failed to appreciate this because I was far too caught up in my own body issues. Her losing weight made me feel even worse about my own fat. I started to subconsciously pressure her to put weight back on, never through anything said directly, but she could tell that I missed her curves. I gave less compliments than I had before she lost the weight, didn't shower her with as much attention. I was extremely envious that she had been able to muster the will power to drop all that weight. I felt weak and worthless, afraid not only that people would judge us when they saw us, but that she would eventually leave me because of the differential. It was a ridiculous paranoia, but that's what a low self esteem does to you. I was also thoroughly tied up in denial of my gender feelings and believed that my body hatred was all centered in being overweight.
+
+### Trauma and Grief
+
+2016 opened with a massive loss. After a nearly a year of trying for our second child, we had finally gotten a positive pregnancy test two weeks into January 2016 (almost exactly one year before I came out). Two days later, Katharine miscarried. It destroyed her, she was gutted from head to toe. The loss critically damaged her self confidence, and she quickly slid into depression. Eventually we did conceive again in July, but the loss of that potential baby still sits with her to this day. I did what I could to try to help her grieve, but there was only so much I could do.
+
+The second major blow came in November when Hillary lost the election to quite literally her polar opposite. The loss struck Kat like a punch to the face. For her, Hillary had been the avatar of womanhood, the best possible first female president that we could possibly have. She _loved_ HRC, and it seemed like a total shoe-in that she would win. When Trump came out ahead, it was like the entire country had collectively stood up and spit on womankind. She cried that night, and many nights after that. I, for my part, was simply in shock. Surely this couldn’t be, surely it would be found that something had been miscounted, or that a blue district had been missed. Then I held out hope for the electoral college enforcing the popular vote, but that didn’t happen either. Katharine’s depression deepened.
+
+Over the course of 2016 I progressively became more and more unstable. My anger would spike in unpredictable ways, my patience continued to degrade and weaken, and more and more I was having outbursts. Bath times with my daughter became dangerous moments for all of us, as I would so frequently burst into fits of rage. Samantha's very typical misbehavior for a four year would drive me mad, and for a while Kat was afraid to leave me alone with her. As the year came to a close, it got so bad that I even started yelling at Kat, which I had never done in 10 years of being together. Something was very very wrong.
+
+Then, one week into 2017, we discovered what it was. You can read that story in two of my older posts: [Here](/p/7577AC/two-year-transiversary/) and [Here](/p/040E24/opening-the-closet/). My next post will be about what happened _after_ I came out.
