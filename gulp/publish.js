@@ -2,7 +2,7 @@ const { src } = require('gulp');
 const awspublish  = require('gulp-awspublish');
 const awsrouter   = require('gulp-awspublish-router');
 const parallelize = require('concurrent-transform');
-const cloudfront  = require('gulp-cloudfront-invalidate-aws-publish');
+// const cloudfront  = require('gulp-cloudfront-invalidate-aws-publish');
 const debug       = require('./lib/debug');
 const path = require('path');
 
@@ -13,13 +13,13 @@ var credentials = require('../aws.json');
 
 const routes = {
   'p\\/.*\\.(?:jpeg|jpg|png|gif)$': {
-    cacheTime: 604800, // one week on client
+    cacheTime: 86400, // one day on client
     sharedCacheTime: 2592000, // 30 days on server
   },
 
-  '^index\\.html$': {
+  '^(?:index|tags|drafts)\\.html$': {
     cacheTime: 60, // one minute on client
-    sharedCacheTime: 1800, // 30 minutes on server
+    sharedCacheTime: 900, // 15 minutes on server
   },
 
   '^(?:sitemap|atom)\\.xml$': {
@@ -33,13 +33,13 @@ const routes = {
   },
 
   '\\.html$': {
-    cacheTime: 604800, // one week on client
-    sharedCacheTime: 2592000, // 30 days on server
+    cacheTime: 3600, // 1 hour on client
+    sharedCacheTime: 3600, // 1 hour on server
   },
 
   '\\.(?:js|css)$': {
-    cacheTime: 86400, // one day on client
-    sharedCacheTime: 604800, // one week on server
+    cacheTime: 604800, // one week on client
+    sharedCacheTime: 2592000, // one month on server
   },
 
   // pass-through for anything that wasn't matched by routes above, to be uploaded with default options
