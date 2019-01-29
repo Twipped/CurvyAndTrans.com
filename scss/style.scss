@@ -513,7 +513,7 @@ header {
       padding: 0 10px;
     }
 
-    span {
+    span, a {
       display: inline-block;
       white-space: nowrap;
       margin-right: 5px;
@@ -521,7 +521,10 @@ header {
       background: lighten($primary, 20%);
       color: darken($primary, 20%);
       padding: 0.4em 0.5em;
+    }
 
+    a {
+      text-decoration: underline;
     }
   }
 
