@@ -9,11 +9,6 @@
 
   {{#content "bodyAttributes"}}class="page-post"{{/content}}
 	{{#content "body"}}
-  <header>
-    <a href="mailto:media@curvyandtrans.com" class="external"><i class="fas fa-envelope"></i></a>
-    <a href="http://www.instagram.com/curvyandtrans" class="external" target="_blank"><i class="fab fa-instagram"></i></a>
-    <h1><a href="/">curvy and trans</a></h1>
-  </header>
 	<article class="{{#if long}}long{{/if}} {{#if noimages}}noimages{{/if}}">
     {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>{{/if}}
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<span>{{this}}</span>{{/each}}</div>
