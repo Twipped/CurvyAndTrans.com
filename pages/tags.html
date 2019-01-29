@@ -3,12 +3,6 @@
   {{#content "bodyAttributes"}}class="page-index"{{/content}}
   {{#content "body"}}
 
-  <header>
-    <a href="mailto:media@curvyandtrans.com" class="external"><i class="fas fa-envelope"></i></a>
-    <a href="http://www.instagram.com/curvyandtrans" class="external" target="_blank"><i class="fab fa-instagram"></i></a>
-    <h1><a href="/">curvy and trans</a></h1>
-  </header>
-
   <div class="tag-list">
     <h3>Posts By Tag</h3>
     <div class="nav nav-pills" role="tablist">
@@ -18,8 +12,8 @@
           data-toggle="pill"
           role="tab"
           id="{{slugify this}}-tab"
-          href="#{{slugify this}}-pane"
-          aria-controls="{{slugify this}}-pane"
+          href="#{{slugify this}}"
+          aria-controls="{{slugify this}}"
           aria-selected="{{#if @index}}true{{else}}false{{/if}}"
         >{{this}}</a>
       {{/each}}
@@ -29,7 +23,7 @@
 
   <div class="tab-content">
     {{#each posts.tags}}
-    <div class="tab-pane fade {{#unless @index}}show active{{/unless}}" role="tabpanel" id="{{slugify this}}-pane" aria-labelledby="{{slugify this}}-tab">
+    <div class="tab-pane fade {{#unless @index}}show active{{/unless}}" role="tabpanel" id="{{slugify this}}" aria-labelledby="{{slugify this}}-tab">
       <div class="post-grid">
       {{#each (get ../posts.byTag this)}}
         <section class="post previous" style="grid-row-end: span {{this.span}};" data-id="{{id}}">
