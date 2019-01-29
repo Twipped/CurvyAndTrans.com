@@ -5,8 +5,9 @@ title: "Self Discovery"
 slug: two-year-transiversary
 description: "Two years ago today I realized I was trans"
 tags:
-  - Transition Tuesday
   - Transgender
+  - Transition Timeline
+  - Coming Out
 ---
 Two years ago today I realized I was trans.
 
@@ -32,4 +33,5 @@ My wife sent me out that night to get chinese takeout, and when I left the house
 
 That's when it hit me... [how the fuck was I going to explain this to her](/p/040E24/opening-the-closet/)?
 
+_If you appreciated this post, please consider making a small pledge [towards my Patreon](https://patreon.com/curvyandtrans) in support of my work._
 

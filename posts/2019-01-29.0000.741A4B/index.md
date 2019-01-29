@@ -7,6 +7,7 @@ noimages: true
 tags:
   - Transgender
   - Family
+  - Coming Out
 captions:
   - March 8th, 2017. Taken on our way into the maternity ward for Ben's birth.
   - Ben's Birth

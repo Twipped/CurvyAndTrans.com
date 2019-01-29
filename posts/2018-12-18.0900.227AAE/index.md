@@ -5,7 +5,7 @@ title: "I Have the Power"
 description: "Trans Timeline: Jan 2005 to Dec 2018"
 tags:
   - Transgender
-  - Transformation Tuesday
+  - Transition Timeline
 ---
 
 How’s this for a Transformation Tuesday glow up? The left photo is from January 2005. I was a very angry 24 years old, deeply depressed, and frequently having dysphoric anxiety attacks (tho I didn’t know thats what they were), but believed most of it was because I was so lonely. My evangelical religious upbringing kept me from ever dating anyone, and I was convinced that there was a woman shaped hole in my life (I was right, just not the way I thought). I remember feeling very wronged by the world back then, and refused to accept responsibility for anything bad that happened to me. In some ways I could see my then-self demonstrating some incel-like attitudes, which really disturbs me. I don't think I ever would have slid that far, but just having peripheral connections to that ideology makes me feel revolted by myself.

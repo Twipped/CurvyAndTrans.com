@@ -5,7 +5,7 @@ title: "Transformation Tuesday: Dec 25th, 2018"
 description: What a difference a year can make.
 tags:
   - Transgender
-  - Transformation Tuesday
+  - Transition Timeline
 ---
 What a difference a year can make. Both photos were taken on December 23rd, 2017 to 2018. Seven months on HRT vs 19.
 
