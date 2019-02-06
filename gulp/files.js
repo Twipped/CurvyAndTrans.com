@@ -16,7 +16,7 @@ module.exports = exports = function fileCopy () {
 exports.prod = function fileCopyForProd () {
   return exports()
     .pipe(rev())
-    .pipe(dest(`${DEST}`))
+    .pipe(dest(DEST))
     .pipe(asyncthrough(async (stream, file) => {
       // Change rev's original base path back to the public root so that it uses the full
       // path as the original file name key in the manifest
