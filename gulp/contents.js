@@ -134,8 +134,12 @@ exports.posts = function buildPosts () {
         file.meta.spanLarge = Math.ceil((height / width) * 10) * 2;
       }
 
-      if (contents.length > 2000) {
+      if (contents.length > 2000 && typeof file.meta.long === 'undefined') {
         file.meta.long = true;
+      }
+
+      if (images.length === 1) {
+        file.meta.single = true;
       }
 
       file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
