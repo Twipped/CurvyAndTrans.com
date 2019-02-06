@@ -152,7 +152,7 @@ exports.posts = function buildPosts () {
       if (!file.meta.ignore) {
         file.contents = Buffer.from(template({
           page: {
-            title: file.meta.title + ' :: Curvy and Trans',
+            title: file.meta.title + ' :: Curvy & Trans',
           },
           ...file.meta,
         }));
@@ -248,7 +248,7 @@ exports.pages = function buildPages () {
 
       var data = {
         ...file.meta,
-        page: { title: file.meta.title ? file.meta.title + ' :: Curvy and Trans' : 'Curvy and Trans' },
+        page: { title: file.meta.title ? file.meta.title + ' :: Curvy & Trans' : 'Curvy & Trans' },
         posts,
       };
 
