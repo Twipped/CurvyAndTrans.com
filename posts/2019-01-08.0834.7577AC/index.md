@@ -8,6 +8,7 @@ tags:
   - Transgender
   - Transition Timeline
   - Coming Out
+  - Essays
 ---
 Two years ago today I realized I was trans.
 

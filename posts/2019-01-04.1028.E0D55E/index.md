@@ -6,6 +6,7 @@ description: Where does confidence come from?
 spanLarge: 23
 tags:
   - Body Positivity
+  - Essays
 ---
 
 A couple weeks ago [I wrote about finding body confidence](/p/3331DE/finding-confidence/). I’ve since then had several very good conversations that have made me realize that I had completely the wrong idea about what my friend meant when she said she wasn’t confident enough to post photos of herself online.
@@ -44,7 +45,7 @@ I made my Instagram account for a bunch of reasons, but one was because I wanted
 
 By doing!
 
-<img src="../tweet1.jpeg" alt="Tweet by @lilah_sturges about Carrie Fisher" style="max-height: 50vh;display:block;" class="pull-right">
+<img src="../tweet1.jpeg" alt="Tweet by @lilah_sturges about Carrie Fisher" class="card right span2">
 
 Confidence comes from experience, it comes from doing something and receiving reinforcement that it was the right thing to do. Take note, _confidence comes after doing_, it will never come first. Confidence without precedence is [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect), and is an undesirable personality trait. The only way you can boost your confidence is by "doing it anyway", as Carrie Fisher put it. Confidence will follow through.
 

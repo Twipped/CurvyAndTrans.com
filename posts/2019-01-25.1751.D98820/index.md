@@ -9,6 +9,7 @@ tags:
   - Family
   - Transgender
   - Coming Out
+  - Essays
 captions:
   - ''
   - San Diego Comic Con 2006

@@ -5,6 +5,7 @@ title: "A Trans Explosion"
 description: This is why the trans population has surged in growth recently.
 tags:
   - Transgender
+  - Essays
 products:
   "Original Twitter Thread by @YuusuiWaltz": https://twitter.com/YuusuiWaltz/status/1077179357104353280
 ---

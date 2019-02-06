@@ -7,6 +7,7 @@ tags:
   - Transgender
   - Feminism
   - Sex Positivity
+  - Essays
 products:
   "Pictured tweet by Faith Naff": https://twitter.com/FaithNaff/status/1073412031154479105
   "NBC News Story about Pornhub and YouPorn": https://www.nbcnews.com/feature/nbc-out/lesbian-most-searched-term-year-two-world-s-biggest-porn-n947216
