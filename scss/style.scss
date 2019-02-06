@@ -286,6 +286,22 @@ header {
       font-weight: 500;
     }
 
+    .post-title.for-short {
+      display: none;
+      background: #eee;
+      padding: 0.2em 0.5em;
+    }
+
+    &.short {
+      .post-title {
+        display: none;
+      }
+
+      .post-title.for-short {
+        display: block;
+      }
+    }
+
     .post-description {
       font-size: 12px;
       padding: 10px 10px 0 10px;

@@ -140,6 +140,10 @@ exports.posts = function buildPosts () {
         file.meta.spanLarge = Math.ceil((height / width) * 10) * 2;
       }
 
+      if (file.meta.span < 8 && typeof file.meta.shortCard === 'undefined') {
+        file.meta.shortCard = true;
+      }
+
       if (contents.length > 2000 && typeof file.meta.long === 'undefined') {
         file.meta.long = true;
       }
