@@ -24,6 +24,7 @@ exports.js = jsTask;
 
 var cleanTask = require('./clean');
 exports.clean = cleanTask;
+exports['clean-cache'] = cleanTask.cache;
 
 const pushToProd = require('./publish');
 exports.push = pushToProd;

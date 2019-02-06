@@ -3,11 +3,12 @@ const path    = require('path');
 const { src } = require('gulp');
 const clean   = require('gulp-clean');
 
-const ROOT = path.dirname(__dirname);
-const DEST = 'docs';
-
-
 module.exports = exports = function cleanDistribution () {
-  return src([ DEST, 'rev-manifest.json', 'posts.json' ], { read: false, allowEmpty: true })
+  return src([ 'docs', 'rev-manifest.json', 'posts.json' ], { read: false, allowEmpty: true })
+    .pipe(clean());
+};
+
+exports.cache = function cleanCache () {
+  return src([ 'bs-cache' ], { read: false, allowEmpty: true })
     .pipe(clean());
 };
