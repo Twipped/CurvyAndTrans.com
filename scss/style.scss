@@ -422,8 +422,11 @@ header {
 
   article {
     display: grid;
-    max-width: 1000px;
     margin: 0 auto;
+
+    &.single, &.noimages {
+      max-width: 1000px;
+    }
 
     &:not(.noimages) {;
       @include media-breakpoint-up(md) {
