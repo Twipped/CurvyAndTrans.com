@@ -11,8 +11,8 @@ const buildsaver    = require('./lib/buildsaver');
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
 
-module.exports = exports = function imageScale () {
-  var bs = buildsaver();
+module.exports = exports = function imageScale (noskip) {
+  var bs = buildsaver({ skip: !noskip });
 
   var fullsize = src('posts/**/+({1..9}|{01..20}).{jpeg,jpg,png,gif}')
     .pipe(bs.source())
@@ -86,7 +86,7 @@ module.exports = exports = function imageScale () {
 };
 
 exports.prod = function imageScaleForProd () {
-  return exports()
+  return exports(true)
     .pipe(rev())
     .pipe(dest(`${DEST}/p/`))
     .pipe(asyncthrough(async (stream, file) => {

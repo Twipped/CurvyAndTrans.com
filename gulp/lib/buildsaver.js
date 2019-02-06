@@ -25,11 +25,12 @@ function relPath (base, filePath) {
 
 module.exports = exports = function (options) {
   options = {
+    skip: true,
     manifest: 'bs-manifest.json',
     cache: 'bs-cache',
     dest: 'docs',
     base: process.cwd(),
-    log: true,
+    log: false,
     ...options,
   };
 
@@ -96,7 +97,7 @@ module.exports = exports = function (options) {
     file.buildSaver.cachePath = cachePath;
     file.buildSaver.cacheTarget = cacheTarget;
 
-    if (await fs.pathExists(file.buildSaver.destPath)) {
+    if (options.skip && await fs.pathExists(file.buildSaver.destPath)) {
       // The file is unchanged and already exists, skip it.
       if (options.log) log('[skipped]', sourcePath, destkey);
       return;
@@ -135,13 +136,13 @@ module.exports = exports = function (options) {
 
       const destPath = relPath(file.buildSaver.cwd, file.path);
       const cachePath = path.resolve(options.cache, relPath(destinationPath, file.path));
-      log('written to', cachePath);
+      // log('written to', cachePath);
 
       file.buildSaver.destPath = destPath;
+      stream.push(file);
+
       await fs.ensureDir(path.dirname(cachePath));
       await fs.writeFile(cachePath, file.contents);
-
-      stream.push(file);
     },
     async () => {
       await fs.writeFile(manifestPath, JSON.stringify(manifest, null, '  '));
