@@ -2,6 +2,7 @@
 const path = require('path');
 const fs   = require('fs-extra');
 const RSS  = require('rss');
+const { groupBy } = require('lodash');
 
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
@@ -14,6 +15,8 @@ module.exports = exports = async function buildAtomFeed () {
     postIndex = [];
   }
 
+  const byState = groupBy(postIndex, (p) => (p.draft ? 'draft' : 'final'));
+
   var feed = new RSS({
     title: 'Twipped: Jocelyn Badgley',
     feed_url: 'https://curvyandtrans.com/atom.xml',
@@ -21,7 +24,7 @@ module.exports = exports = async function buildAtomFeed () {
     image_url: 'https://curvyandtrans.com/images/avi.png',
   });
 
-  postIndex.forEach((post) => {
+  byState.final.forEach((post) => {
     feed.item({
       title: post.title,
       date: post.date,
