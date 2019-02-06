@@ -9,11 +9,15 @@
 
   {{#content "bodyAttributes"}}class="page-post"{{/content}}
 	{{#content "body"}}
-	<article class="{{#if long}}long{{/if}} {{#if noimages}}noimages{{/if}}">
+	<article class="{{#if long}}long{{/if}} {{#if noimages}}noimages{{/if}} {{#if single}}single{{/if}}">
     {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>{{/if}}
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<a href="/tags.html#{{slugify this}}">{{this}}</a>{{/each}}</div>
     {{#unless noimages}}<div class="post-images">
-      {{#each images}}<a href="{{rev this}}"><img src="{{rev this}}" alt="">{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>{{/each}}
+      {{#each images}}{{#endsWith this 'm4v'}}
+      <a href="{{rev this}}"><video autoplay muted loop><source src="{{this}}" type="video/mp4"></video>{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
+      {{else}}
+      <a href="{{rev this}}"><img src="{{rev this}}" alt="">{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
+      {{/endsWith}}{{/each}}
     </div>{{/unless}}
 
     {{#if products}}

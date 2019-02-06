@@ -82,7 +82,7 @@ exports.posts = function buildPosts () {
         return;
       }
 
-      const images = await glob('+({1..9}|{01..20}).{jpeg,jpg,png,gif}', {
+      const images = await glob('+({1..9}|{01..20}).{jpeg,jpg,png,gif,m4v}', {
         cwd: path.dirname(file.path),
       });
 
@@ -92,7 +92,12 @@ exports.posts = function buildPosts () {
       }
 
       file.meta.images = images.map((imgpath) => {
-        const basename = path.basename(imgpath, path.extname(imgpath));
+        const ext = path.extname(imgpath);
+        const basename = path.basename(imgpath, ext);
+        if (ext === '.m4v') {
+          return `/p/${file.meta.id}/${basename}.m4v`;
+        }
+
         return `/p/${file.meta.id}/${basename}.jpeg`;
       });
 

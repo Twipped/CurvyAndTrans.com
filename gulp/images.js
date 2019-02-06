@@ -69,7 +69,7 @@ module.exports = exports = function imageScale () {
     }));
 
   var other = src([
-    'posts/**/*.{jpeg,jpg,png,gif}',
+    'posts/**/*.{jpeg,jpg,png,gif,m4v}',
     '!posts/**/poster.{jpeg,jpg,png,gif}',
     '!posts/**/+({1..9}|{01..20}).{jpeg,jpg,png,gif}',
   ]);
