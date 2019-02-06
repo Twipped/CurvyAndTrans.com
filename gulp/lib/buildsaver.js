@@ -4,7 +4,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const revHash = require('rev-hash');
 const log = require('fancy-log');
-
+const Promise = require('bluebird');
 
 function relPath (base, filePath) {
   filePath = filePath.replace(/\\/g, '/');
@@ -26,8 +26,10 @@ function relPath (base, filePath) {
 module.exports = exports = function (options) {
   options = {
     manifest: 'bs-manifest.json',
+    cache: 'bs-cache',
+    dest: 'docs',
     base: process.cwd(),
-    log: false,
+    log: true,
     ...options,
   };
 
@@ -38,6 +40,10 @@ module.exports = exports = function (options) {
   } catch (e) {
     manifest = {};
   }
+
+  const destinationPath = path.resolve(options.base, options.dest);
+
+  const cacheQueue = [];
 
   const source = (destkey) => through(async (stream, file) => {
     if (!file) return;
@@ -76,16 +82,47 @@ module.exports = exports = function (options) {
       return;
     }
 
-    if (!file.buildSaver.destPath || !(await fs.pathExists(file.buildSaver.destPath))) {
-      // this file has never received a destination or doesn't exist
+    if (!file.buildSaver.destPath) {
+      // this file has never received a destination
       if (options.log) log('[build]', sourcePath, destkey);
       stream.push(file);
       return;
     }
 
-    // The file is unchanged and already exists, skip it.
-    if (options.log) log('[skipped]', sourcePath, destkey);
+    // const cachePath = path.resolve(options.cache, relPath(destinationPath, file.buildSaver.destPath));
+    const cachePath = relPath(destinationPath, path.resolve(options.base, file.buildSaver.destPath));
+    const cacheTarget = path.resolve(options.base, options.cache, cachePath);
+
+    file.buildSaver.cachePath = cachePath;
+    file.buildSaver.cacheTarget = cacheTarget;
+
+    if (await fs.pathExists(file.buildSaver.destPath)) {
+      // The file is unchanged and already exists, skip it.
+      if (options.log) log('[skipped]', sourcePath, destkey);
+      return;
+    }
+
+    if (await fs.pathExists(cacheTarget)) {
+      cacheQueue.push(file);
+      // The file will be read from cache.
+      if (options.log) log('[cached]', sourcePath, destkey);
+      return;
+    }
+
+    // the file does not exist and is not in cache, build it
+    if (options.log) log('[build]', sourcePath, destkey);
+    stream.push(file);
   });
+
+  const cache = () => through(
+    async (stream, file) => stream.push(file),
+    (stream) => Promise.each(cacheQueue, async (file) => {
+      file.contents = await fs.readFile(file.buildSaver.cacheTarget);
+      file.path = file.buildSaver.cachePath;
+      file.buildSaver = null;
+      stream.push(file);
+    })
+  );
 
   const finish = () => through(
     async (stream, file) => {
@@ -97,8 +134,12 @@ module.exports = exports = function (options) {
       }
 
       const destPath = relPath(file.buildSaver.cwd, file.path);
+      const cachePath = path.resolve(options.cache, relPath(destinationPath, file.path));
+      log('written to', cachePath);
 
       file.buildSaver.destPath = destPath;
+      await fs.ensureDir(path.dirname(cachePath));
+      await fs.writeFile(cachePath, file.contents);
 
       stream.push(file);
     },
@@ -107,6 +148,6 @@ module.exports = exports = function (options) {
     }
   );
 
-  return { source, finish };
+  return { source, cache, finish };
 };
 

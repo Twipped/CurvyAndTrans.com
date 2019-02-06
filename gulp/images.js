@@ -79,6 +79,7 @@ module.exports = exports = function imageScale () {
       const hash = file.dirname.split('.')[2];
       file.dirname = hash;
     }))
+    .pipe(bs.cache())
     .pipe(dest(`${DEST}/p/`))
     .pipe(bs.finish())
   ;
