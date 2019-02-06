@@ -635,6 +635,14 @@ header {
           margin-left: 10px;
         }
 
+        &.natural {
+          .card-img-top {
+            width: unset;
+            max-height: 50vh;
+            margin: 0 auto;
+          }
+        }
+
         &.span3, &.span4, &.span5, &.span6 {
 
           &.left { clear: left; }
