@@ -166,6 +166,7 @@ header {
       white-space: nowrap;
       font-size: 16px;
       line-height: 1.6;
+      background: rgba(255,255,255,0.6);
     }
 
     @include media-breakpoint-up(md) {
@@ -313,13 +314,12 @@ header {
 
     .shade {
       flex: 0;
-      background: rgba(255,255,255,0.5);
+      background: rgba(200,200,200,0.7);
       padding: 1em 0.7em;
 
       @include media-breakpoint-up (md) {
-        border-radius: 15px;
         padding: 5px 10px 5px 10px;
-        margin: 0 10px 10%;
+        margin: 0;
       }
     }
 
@@ -365,6 +365,7 @@ header {
     .post-title {
       margin: 0;
       font-family: $font-secondary;
+      text-shadow: 1px 1px 2px rgba(255,255,255,1), 0 0 1em rgba(255,255,255,0.7), 0 0 2px rgba(255,255,255,1);
 
       @include media-breakpoint-down(sm) {
         font-size: 20px;
@@ -373,6 +374,7 @@ header {
 
     .post-description {
       font-size: 16px;
+      text-shadow: 1px 1px 2px rgba(255,255,255,1), 0 0 1em rgba(255,255,255,0.7), 0 0 2px rgba(255,255,255,1);
 
       @include media-breakpoint-down(sm) {
         font-size: 14px;
