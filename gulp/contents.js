@@ -101,19 +101,25 @@ exports.posts = function buildPosts () {
         return `/p/${file.meta.id}/${basename}.jpeg`;
       });
 
-      file.meta.thumbnail = `/p/${file.meta.id}/titlecard-thumb.png`;
+      const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
 
-      switch (file.meta.titlecard) {
-      case 'top':
-        file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.png`;
-        break;
-      case 'thumb':
-        file.meta.titlecard = `/p/${file.meta.id}/titlecard-thumb.png`;
-        break;
-      case 'center':
-      default:
-        file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.png`;
-        break;
+      if (titlecard) {
+        file.meta.thumbnail = `/p/${file.meta.id}/${path.basename(titlecard)}`;
+      } else {
+        file.meta.thumbnail = `/p/${file.meta.id}/titlecard-thumb.png`;
+
+        switch (file.meta.titlecard) {
+        case 'top':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.png`;
+          break;
+        case 'thumb':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-thumb.png`;
+          break;
+        case 'center':
+        default:
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.png`;
+          break;
+        }
       }
 
       const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
