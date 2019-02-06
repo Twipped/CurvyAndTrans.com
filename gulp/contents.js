@@ -148,7 +148,7 @@ exports.posts = function buildPosts () {
         file.meta.long = true;
       }
 
-      if (images.length === 1) {
+      if (images.length === 1 && typeof file.meta.single === 'undefined') {
         file.meta.single = true;
       }
 
