@@ -12,6 +12,7 @@
   "author": "Jocelyn Badgley <joc@twipped.com> (http://twipped.com/)",
   "license": "MIT",
   "devDependencies": {
+    "bluebird": "~3.5.3",
     "bootstrap": "~4.2.1",
     "common-tags": "~1.8.0",
     "concurrent-transform": "~1.0.0",
