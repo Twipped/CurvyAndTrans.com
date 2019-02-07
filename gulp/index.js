@@ -34,12 +34,10 @@ exports.push = pushToProd;
 exports.new = require('./new');
 
 var buildTask = series(
-  parallel(
-    imagesTask.prod,
-    scssTask.prod,
-    jsTask.prod,
-    filesTask.prod
-  ),
+  imagesTask.prod,
+  scssTask.prod,
+  jsTask.prod,
+  filesTask.prod,
   loadLayout.prod,
   posts,
   pages,
