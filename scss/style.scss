@@ -609,6 +609,15 @@ header {
       clear: left;
     }
 
+    li p {
+      margin-bottom: 0;
+      margin-top: 0.5em;
+    }
+
+    li p + ul {
+      margin-bottom: 0.5em;
+    }
+
     .card {
       text-decoration: none;
       background: $lightPink;
@@ -711,6 +720,8 @@ header {
       margin-bottom: -5px;
     }
   }
+
+
 
   blockquote {
     font-family: 'Georgia';
