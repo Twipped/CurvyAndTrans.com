@@ -8,6 +8,7 @@ draft: false
 single: true
 fill: true
 tags:
+  - Coming Out
   - Transgender
   - Family
   - Essays

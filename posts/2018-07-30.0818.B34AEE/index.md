@@ -6,6 +6,7 @@ description: "An account of my experience with my first gender confirming surger
 slug: drop-it-like-its-hot
 noimages: true
 tags:
+  - Medical
   - Transgender
   - Coming Out
   - Essays
@@ -108,7 +109,7 @@ The above tweet was on day 2. It wasn't placebo, my skin really had suddenly got
 
 One evening as I laid in the recliner in our livingroom I suddenly felt my entire body go rigid and tense up. The sensation was not all that dissimilar to the feeling I get as I build up to an orgasm; my arms and legs started twitching very very slightly. This lasted for a good 5 or 10 minutes, and when it passed I suddenly felt full of energy. It is my belief that this was my body crossing a threshold on withdrawal from either the testosterone or the spiro. Unfortunately, since both were dropped at the same time, it's impossible for me to say.
 
-[![float:right](/p/drop-it-like-its-hot/7t.jpg)](/p/drop-it-like-its-hot/7.jpg) It was after the second week that I started noticing fat changes. My waist started slimming out, as belly fat migrated away from my underbust, which itself dropped 2 inches in a week, taking me from a 44DD to a 42DDD. My belly got softer and started to change shape some, expanding out more to the sides and less in front. At San Diego Trans Pride, two and a half weeks post-op, my wife took a photo of me from behind as we walked across the park, and in it you can clearly see how I was suddenly developing a much more feminine waist.
+<a href="../7.jpeg" class="card right span4"><img src="../7.jpeg" alt="Jocelyn from behind, carrying her son on her shoulder." class="card-img-top"><span class="card-body">July 13th, 2018. San Diego Trans Pride</span></a> It was after the second week that I started noticing fat changes. My waist started slimming out, as belly fat migrated away from my underbust, which itself dropped 2 inches in a week, taking me from a 44DD to a 42DDD. My belly got softer and started to change shape some, expanding out more to the sides and less in front. At San Diego Trans Pride, two and a half weeks post-op, my wife took a photo of me from behind as we walked across the park, and in it you can clearly see how I was suddenly developing a much more feminine waist.
 
 Fat migration has continued; back fat has been decreasing steadily, and the side fat along my bust is rapidly creeping away, giving me a nice flat area under my arms and providing much more shape to my breasts. I expect within the next few weeks I'll lose another band size and will be forced to buy new bras. The reduction around my waist has also had the benefit of making my busy much more proportional and I no longer feel such a strong desire for them to be larger.
 
@@ -122,8 +123,8 @@ Three weeks and three days after surgery I suddenly found myself feeling _really
 
 ### Update: Six months post-op
 
-I cannot begin to express just how much an orchi has improved my own sense of self image and confidence with my body. This week I purchased my first swim suit bottom that does not have a skirt or any other mechanism of obscuring my crotch. After six months, my genitals have changed appearance so much that from most angles you cannot tell I still have a penis. It just looks like I've got an abnormally large clitoris and labia. Granted, a lot of that is because I'm fat and my FUPA obscures it all, but I don't care, I look like I have a vagina! My wife keeps commenting on how feminine my groin looks, she's thrilled by it. I'm no longer scared somebody might peek through a gap in a bathroom stall and see a protuberance.
+I cannot begin to express just how much an orchi has improved my own sense of self image and confidence with my body. This week I purchased my first swim suit bottom that does not have a skirt or any other mechanism of obscuring my crotch. After six months, my genitals have changed appearance so much that from most angles you cannot tell I still have a penis. It just looks like I've got an abnormally large clitoris and labia. Granted, a lot of that is because I'm fat and my FUPA obscures it all, but I don't care, I look like I have a vagina! My wife keeps commenting on how feminine my genitals look, she's thrilled by it. I'm no longer scared somebody might peek through a gap in a bathroom stall and see a protuberance.
 
-I still significantly want GRS some day, but my genital dysphoria has shifted to being more centered on just wanting the correct parts for my fulfillment, not because it could give me away as trans.
+I still significantly want GRS some day, but my genital dysphoria has shifted to being more centered on just wanting the correct parts for my fulfillment, not because it could give me away as trans. Weight migration has continued to occur; I'm now a 42F/G cup and am really close to a 40 band, my curves have fleshed out a LOT, and there is no longer anything about my shape that appears male. With that change has come a HUGE surge in body confidence, I'm finally happy in my skin.
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
