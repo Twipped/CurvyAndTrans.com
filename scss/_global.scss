@@ -1,0 +1,161 @@
+
+body {
+  font-family: $font-primary;
+  background: white;
+  line-height: 1.8;
+  font-weight: 400;
+  color: lighten(#000,45%);
+
+  font-size: 14px;
+  @media (min-width: 400px) {
+    font-size: 18px;
+  }
+}
+
+a {
+  transition: .3s all ease;
+  color: $primary;
+
+  &:hover {
+    text-decoration: none;
+    color: #e84992;
+  }
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+  line-height: 1.5;
+  color: black;
+  font-weight: 300;
+  font-family: $font-secondary;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+header {
+  position: relative;
+  background: linear-gradient(-60deg, $pink 10%, $white 50%, $blue 90%);
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-areas:
+      "logo nav-external nav-external"
+      "catchphrase catchphrase nav-internal"
+    ;
+    grid-template-rows: 1fr min-content;
+  }
+
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "catchphrase"
+      "nav-external"
+      "nav-internal"
+    ;
+  }
+
+  h1, .catchphrase {
+    text-shadow:  1px 1px 1px white, -1px -1px 1px white, 0 0 1em white, 0 0 0.2em white;
+  }
+
+  h1 {
+    grid-area: logo;
+    font-family: Montez, cursive;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    color: #222;
+    margin: 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: 42px;
+    }
+  }
+
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+
+  a {
+    color: inherit;
+    z-index: 2;
+  }
+
+  .nav-external {
+    grid-area: nav-external;
+    color: black;
+    font-weight: 400;
+    line-height: 1;
+
+    // text-align: right;
+    @include media-breakpoint-down(sm) {
+      padding: 10px 0;
+    }
+
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: stretch;
+
+    .btn {
+      // max-width: 125px;
+      min-width: 100px;
+
+      white-space: nowrap;
+      font-size: 16px;
+      line-height: 1.6;
+      background: rgba(255,255,255,0.6);
+    }
+
+    @include media-breakpoint-up(md) {
+      display: block;
+      align-self: center;
+      text-align: right;
+    }
+  }
+
+  i.fa-envelope {
+    font-size: 0.8em;
+    line-height: 1em;
+    top: -0.1em;
+    position: relative;
+  }
+
+  .catchphrase {
+    grid-area: catchphrase;
+    font-family: $font-primary;
+    color: darken($pink, 10%);
+    font-size: 14px;
+    line-height: 1;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .nav-internal {
+    grid-area: nav-internal;
+    text-align: right;
+    line-height: 1;
+    font-size: 14px;
+    font-family: $font-primary;
+
+    a {
+      text-shadow: 0 0 0.2em white;
+      color: black;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+}
