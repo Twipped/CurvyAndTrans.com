@@ -143,6 +143,9 @@ exports.posts = function buildPosts () {
 
       if (file.meta.span < 8 && typeof file.meta.shortCard === 'undefined') {
         file.meta.shortCard = true;
+      }
+
+      if (file.meta.shortCard) {
         file.meta.span += 2;
       }
 

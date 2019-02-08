@@ -3,10 +3,14 @@
   .post-grid {
     display: grid;
     grid-gap: 0;
+    grid-column-gap: 10px;
     grid-template-columns: 1fr;
+    padding: 0 10px;
 
+    grid-auto-rows: 8vw;
     @include media-breakpoint-up(sm) {
       grid-template-columns: repeat( auto-fill, minmax( 250px, 1fr ) );
+      grid-auto-rows: 30px;
 
       .post.prime {
         grid-column-end: span 2;
@@ -17,173 +21,103 @@
 
   .post {
 
-    .post-poster {
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      position: relative;
-
-      > * {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-
-        &, a { color: black; }
-      }
-    }
-  }
-
-  .post.previous {
-    padding: 0 10px;
-
-    a {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.6em 4fr min-content min-content;
+    grid-auto-flow: column;
+    padding-bottom: 10px;
 
     .post-date {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      font-size: 12px;
+      align-self: center;
+      line-height: 1;
+
+      grid-row: 1 / 1;
+      grid-column: 1 / 1;
 
       span {
         display: inline-block;
-        font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 400;
       }
     }
 
+    .post-poster {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column: 1 / 1;
+      z-index: -1;
+    }
+
     .post-title {
       flex: 1;
       flex-grow: 0;
       font-size: 18px;
-      background: rgba(255,255,255,0.8);
       margin: 0;
-      padding: 1em 0.7em;
-      text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
+      padding: 0.5em 0.7em;
       font-weight: 500;
+
+      grid-row: 3 / 3;
+      grid-column: 1 / 1;
     }
 
-    .post-title.for-short {
+    .post-title, .post-description {
+      background: rgba(255,255,255,0.8);
+      text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
+    }
+
+    &.short .post-title {
+      grid-row: 4 / 4;
+    }
+
+    .post-description {
       display: none;
-      background: #eee;
-      padding: 0.2em 0.5em;
-    }
-
-    &.short {
-      .post-title {
-        display: none;
-      }
-
-      .post-title.for-short {
-        display: block;
-      }
-    }
-
-    .post-description {
       font-size: 12px;
-      padding: 10px 10px 0 10px;
-    }
-  }
-
-  .post.prime {
-
-    @include media-breakpoint-up (md) {
-      padding:10px;
+      padding: 0 0 10px 15px;
+      grid-row: 4 / 4;
+      grid-column: 1 / 1;
     }
 
-    .post-poster {
-      @include media-breakpoint-down (sm) {
-        height: 100vw;
-        padding-top: 0 !important;
+    &.prime {
+
+      .post-poster {
+        grid-row: 2 / 5;
       }
 
-    }
-
-    .post-poster > * {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
-
-    .shade {
-      flex: 0;
-      background: rgba(200,200,200,0.7);
-      padding: 1em 0.7em;
-
-      @include media-breakpoint-up (md) {
-        padding: 5px 10px 5px 10px;
-        margin: 0;
-      }
-    }
-
-    .post-date {
-      flex: 0;
-      font-family: $font-secondary;
-      text-transform: uppercase;
-      line-height: 1.8;
-      font-size: 14px;
-      color: white;
-      padding-left: 20px;
-      text-shadow: 1px 1px 2px rgba(0,0,0,1), 0 0 1em rgba(0,0,0,0.7), 0 0 2px rgba(0,0,0,1);
-
-      strong {
-        font-weight: 700;
-        letter-spacing: 0.1em;
-      }
-
-      span {
+      .post-date {
+        grid-row: 1 / 1;
         font-family: $font-secondary;
-        letter-spacing: 2px;
-        font-weight: 400;
-        white-space: nowrap;
-        margin-left: 10px;
-      }
+        text-transform: uppercase;
 
-      @include media-breakpoint-down(sm) {
-        padding-left: 15px;
-
-        strong {
-          display: block;
-        }
-        span {
-          font-size: 12px;
-          margin: 0;
-        }
-        .emdash {
-          // display: none;
+        @include media-breakpoint-up(md) {
+          font-size: 14px;
         }
       }
-    }
 
-    .post-title {
-      margin: 0;
-      font-family: $font-secondary;
-      text-shadow: 1px 1px 2px rgba(255,255,255,1), 0 0 1em rgba(255,255,255,0.7), 0 0 2px rgba(255,255,255,1);
+      .post-title {
+        grid-row: 3 / 3;
 
-      @include media-breakpoint-down(sm) {
+        font-family: $font-secondary;
         font-size: 20px;
+        text-shadow: 1px 1px 2px rgba(255,255,255,1), 0 0 1em rgba(255,255,255,0.7), 0 0 2px rgba(255,255,255,1);
+        padding: 0.5em 0.7em 0 0.7em;
+      }
+
+      .post-description {
+        display: block;
+        grid-row: 4 / 4;
       }
     }
 
-    .post-description {
-      font-size: 16px;
-      text-shadow: 1px 1px 2px rgba(255,255,255,1), 0 0 1em rgba(255,255,255,0.7), 0 0 2px rgba(255,255,255,1);
-
-      @include media-breakpoint-down(sm) {
-        font-size: 14px;
-      }
-    }
   }
 
   .load-more {

@@ -19,24 +19,7 @@
 	{{#content "body"}}
   <div class="post-grid">
     {{#with posts.first}}
-    <section class="post prime" style="grid-row-end: span {{this.spanLarge}};" data-id="{{id}}">
-      <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%">
-        <a href="{{this.url}}">
-          <div class="post-date">
-            <strong>Latest Post: </strong>
-            <span>{{date 'MMM Do, YYYY' this.date}}</span>
-            <span class="emdash">&mdash;</span>
-            {{#first tags}}<span>{{this}}</span>{{/first}}
-          </div>
-          {{#and title description}}
-          <div class="shade">
-            {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
-            {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
-          </div>
-          {{/and}}
-        </a>
-      </div>
-    </section>
+      {{> cell prime=true}}
     {{/with}}
     {{#each (slice posts.ordered 0 14)}}
       {{> cell}}
