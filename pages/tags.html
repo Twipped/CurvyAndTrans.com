@@ -26,16 +26,7 @@
     <div class="tab-pane fade {{#unless @index}}show active{{/unless}}" role="tabpanel" id="{{slugify this}}" aria-labelledby="{{slugify this}}-tab">
       <div class="post-grid">
       {{#each (get ../posts.byTag this)}}
-        <section class="post previous {{#if shortCard}}short{{/if}}" style="grid-row-end: span {{this.span}};" data-id="{{id}}">
-          <div class="post-date"><span>{{date 'MMM Do, YYYY' this.date}}</span> &mdash; {{#first tags}}<span>{{this}}</span></div>{{/first}}
-          <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%"><div>
-            <a href="{{this.url}}">
-              {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
-            </a>
-          </div></div>
-          {{#if title}}<h2 class="post-title for-short">{{title}}</h2>{{/if}}
-          {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
-        </section>
+        {{> cell}}
       {{/each}}
       </div>
     </div>

@@ -12,15 +12,7 @@
   <div class="post-grid">
 
     {{#each posts.drafts}}
-    <section class="post previous" style="grid-row-end: span {{this.span}};" data-id="{{id}}">
-      <div class="post-date"><span>{{date 'MMM Do, YYYY' this.date}}</span> &mdash; {{#first tags}}<span>{{this}}</span></div>{{/first}}
-      <div class="post-poster" style="background-image: url({{rev this.poster}}); padding-top:{{this.dimensions.ratio}}%"><div>
-        <a href="{{this.url}}">
-          {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
-        </a>
-      </div></div>
-      {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
-    </section>
+      {{> cell}}
     {{/each}}
 
   </div>
