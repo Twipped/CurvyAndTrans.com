@@ -45,6 +45,7 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
   }
 
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
+  handlebars.registerPartial('cell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/cell.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
     if (url[0] === '/') url = url.substr(1);
 
