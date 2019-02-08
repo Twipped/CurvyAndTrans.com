@@ -12,6 +12,8 @@ tags:
   - Transgender
   - Family
   - Essays
+captions:
+  - Summer of 1992
 ---
 
 By and large, the vast majority of the people I have come out to have been supportive and accepting. The one huge exception has been my own mother. From the first day she made it very clear that she disapproves of my transition and refuses to acknowledge my gender identity.

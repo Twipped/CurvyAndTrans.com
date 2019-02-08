@@ -5,6 +5,7 @@ title: "Managing my curls"
 description: "My regular hair care routine"
 tags:
   - OOTD
+single: false
 products:
   "Clairol Hair Food Hair Milk": https://www.amazon.com/exec/obidos/ASIN/B073ZNRZP2/curvyandtrans-20
   "DevaCurl One Condition Original, Hair Conditioner": https://www.amazon.com/exec/obidos/ASIN/B000TK99NU/curvyandtrans-20

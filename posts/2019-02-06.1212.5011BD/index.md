@@ -188,7 +188,7 @@ Some of these may simply be the brain getting what it finally wants.
       - Increased dysphoria
       - Irritability (PMS)
     - Muscle aches and pains
-    - Beast engorgement and nipple tenderness
+    - Breast engorgement and nipple tenderness
     - Fatigue
     - Appetite changes
 
