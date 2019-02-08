@@ -2,7 +2,7 @@
 id: "8B7BD6"
 date: "2018-03-04T17:27:00.000Z"
 title: "How I Came Out at Work"
-description: "This is the story of how I came out at my workplace"
+description: "In which I am a total drama queen."
 slug: how-I-came-out-at-work
 single: false
 tags:

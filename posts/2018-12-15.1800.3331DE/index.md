@@ -2,6 +2,7 @@
 id: "3331DE"
 date: "2018-12-15T08:00:00.000Z"
 title: "Finding Confidence"
+description: ""
 tags:
   - Body Positivity
 ---
