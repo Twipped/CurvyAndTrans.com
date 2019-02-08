@@ -18,7 +18,7 @@ module.exports = exports = async function buildAtomFeed () {
   const byState = groupBy(postIndex, (p) => (p.draft ? 'draft' : 'final'));
 
   var feed = new RSS({
-    title: 'Twipped: Jocelyn Badgley',
+    title: 'Curvy & Trans',
     feed_url: 'https://curvyandtrans.com/atom.xml',
     site_url: 'https://curvyandtrans.com',
     image_url: 'https://curvyandtrans.com/images/avi.png',
