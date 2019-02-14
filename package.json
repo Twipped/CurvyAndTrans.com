@@ -15,7 +15,6 @@
     "aws-sdk": "~2.402.0",
     "bluebird": "~3.5.3",
     "bootstrap": "~4.2.1",
-    "common-tags": "~1.8.0",
     "concurrent-transform": "~1.0.0",
     "eslint": "~5.10.0",
     "eslint-config-twipped": "~2.6.0",
