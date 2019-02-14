@@ -10,7 +10,7 @@ const DEST = './docs';
 module.exports = exports = async function buildAtomFeed () {
   var postIndex;
   try {
-    postIndex = JSON.parse(fs.readFileSync(path.join(ROOT, 'posts.json')));
+    postIndex = JSON.parse(fs.readFileSync(path.join(DEST, 'posts.json')));
   } catch (e) {
     postIndex = [];
   }

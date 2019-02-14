@@ -196,7 +196,7 @@ exports.posts = function buildPosts () {
 
     posts = sortBy(posts, 'date');
     posts.reverse();
-    indexFile.path = path.join(ROOT, 'posts.json');
+    indexFile.path = path.join(DEST, 'posts.json');
     indexFile.base = ROOT;
     indexFile.contents = Buffer.from(JSON.stringify(posts, null, '  '));
     stream.push(indexFile);
@@ -213,7 +213,7 @@ exports.posts = function buildPosts () {
 exports.pages = function buildPages () {
   var postIndex;
   try {
-    postIndex = JSON.parse(fs.readFileSync(path.join(ROOT, 'posts.json')));
+    postIndex = JSON.parse(fs.readFileSync(path.join(DEST, 'posts.json')));
   } catch (e) {
     postIndex = [];
   }
