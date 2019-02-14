@@ -1,5 +1,5 @@
 
-Gulp.js Codebase for my [Curvy & Trans](https://www.curvyandtrans.com) Trans and Fashion blog.
+Gulp.js Codebase for my [Curvy & Trans](https://www.curvyandtrans.com) Fashion and Transgender topics blog.
 
 This repo is on github mainly to serve as an offsite backup, but also because I'm rather proud of the gulp processes that I've constructed here and I want to be able to link to them.
 
@@ -11,7 +11,9 @@ Blog content such as essays and photo materials are copyright Jocelyn Badgley, 2
 
 ## Usage
 
-If you wish to re-used this blogging engine, download this repository and run `npm install` from inside the project root. You _must_ remove the contents of the `posts` folder, as this content is not licensed for reuse. You will also need to edit the `package.json` with the relevant site info.
+This readme assumes that you are already familiar with Node.js and the NPM ecosystem.
+
+If you wish to re-used this blogging engine, download this repository and run `npm install` from inside the project root. You will need to have the `gulp-cli` utility installed via `npm install -g gulp-cli`. You _must_ remove the contents of the `posts` folder, as this content is not licensed for reuse. You will also need to edit the `package.json` with the relevant site info.
 
 **Commands:**
 
@@ -66,4 +68,4 @@ Create an `asw.json` file in the project root with the following structure:
 }
 ```
 
-The IAM account must have full access to the specified S3 bucket, and invalidation read/write access to cloudfront.
+The IAM account must have full access to the specified S3 bucket, and invalidation read/write access to cloudfront. This readme assumes you know how to configure an S3 bucket for site hosting, and how to link it to cloudfront for SSL and caching. If you don't, google is your friend.
