@@ -29,6 +29,9 @@ exports['clean-cache'] = cleanTask.cache;
 const pushToProd = require('./publish');
 exports.push = pushToProd;
 
+const cloudfront = require('./cloudfront');
+exports.cloudfront = cloudfront;
+
 /** **************************************************************************************************************** **/
 
 exports.new = require('./new');
