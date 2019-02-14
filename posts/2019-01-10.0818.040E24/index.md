@@ -3,9 +3,11 @@ id: "040E24"
 date: "2019-01-10T16:18:18.119Z"
 title: "Opening the closet"
 description: "How do you tell your spouse that you've been living a lie?"
+single: false
 tags:
   - Transgender
   - Coming Out
+  - Essays
 ---
 _This is the second part of a [two part post](/p/7577AC/two-year-transiversary/) for the second anniversary of when I came out as transgender_
 
