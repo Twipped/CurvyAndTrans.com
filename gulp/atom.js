@@ -6,6 +6,7 @@ const { groupBy } = require('lodash');
 
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
+const { siteInfo } = require('../package.json');
 
 module.exports = exports = async function buildAtomFeed () {
   var postIndex;
@@ -17,19 +18,14 @@ module.exports = exports = async function buildAtomFeed () {
 
   const byState = groupBy(postIndex, (p) => (p.draft ? 'draft' : 'final'));
 
-  var feed = new RSS({
-    title: 'Curvy & Trans',
-    feed_url: 'https://curvyandtrans.com/atom.xml',
-    site_url: 'https://curvyandtrans.com',
-    image_url: 'https://curvyandtrans.com/images/avi.png',
-  });
+  var feed = new RSS(siteInfo.rss);
 
   byState.final.forEach((post) => {
     feed.item({
       title: post.title,
       date: post.date,
       description: post.content,
-      url: 'https://curvyandtrans.com' + post.url,
+      url: siteInfo.rss.site_url + post.url,
     });
   });
 

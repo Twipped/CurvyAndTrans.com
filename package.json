@@ -10,6 +10,14 @@
     "node": ">=8.14.0"
   },
   "author": "Jocelyn Badgley <joc@twipped.com> (http://twipped.com/)",
+  "siteInfo": {
+    "rss": {
+      "title": "Curvy & Trans",
+      "feed_url": "https://curvyandtrans.com/atom.xml",
+      "site_url": "https://curvyandtrans.com",
+      "image_url": "https://curvyandtrans.com/images/avi.png"
+    }
+  },
   "license": "MIT",
   "devDependencies": {
     "aws-sdk": "~2.402.0",
