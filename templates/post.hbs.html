@@ -9,7 +9,7 @@
 
   {{#content "bodyAttributes"}}class="page-post"{{/content}}
 	{{#content "body"}}
-	<article class="{{#if long}}long{{/if}} {{#if noimages}}noimages{{/if}} {{#if single}}single{{/if}}">
+	<article class="{{#if long}}long {{/if}}{{#if noimages}}noimages {{/if}}{{#if single}}single {{/if}}{{#each classes}}{{this}} {{/each}}">
     {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{this.title}}</a></h1>{{/if}}
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<a href="/tags.html#{{slugify this}}">{{this}}</a>{{/each}}</div>
     {{#unless noimages}}<div class="post-images">
