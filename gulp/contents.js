@@ -18,7 +18,9 @@ const md     = require('markdown-it')({
   html: true,
   linkify: true,
   typographer: true,
-}).enable('image');
+}).enable('image')
+  .use(require('markdown-it-div'))
+;
 
 const handlebars = require('handlebars');
 require('helper-hoard').load(handlebars);
