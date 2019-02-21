@@ -19,7 +19,7 @@ const routes = {
 
   '^(?:index|tags|drafts)\\.html$': {
     cacheTime: 60, // one minute on client
-    sharedCacheTime: 900, // 15 minutes on server
+    sharedCacheTime: 60, // one minute on server
   },
 
   '^(?:sitemap|atom)\\.xml$': {

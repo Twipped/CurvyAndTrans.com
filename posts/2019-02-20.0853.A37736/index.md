@@ -24,7 +24,7 @@ If you’ve seen Jurassic Park then you may remember this scene:
 
 [![All vertebrate embryos are inherently female anyway. They just require an extra hormone given at the right developmental stage to make them male.](../jp.jpg)](../jp.jpg)
 
-In human males the SRY gene on the Y chromosome initiates a Testosterone surge starting during the 8th week and then falling off by week 24. This surge is responsible for the development of primary sexual characteristics in the fetus. Genital formation starts around week 10 and becomes identifiable in the 11th week. The strength of that surge affects how strongly the masculinization occurs, and if the surge is not strong enough then the genitals feminize.
+In human male fetuses the SRY gene on the Y chromosome initiates a Testosterone surge starting during the 8th week of pregnancy, and then falling off by week 24. This surge is responsible for the development of primary sexual characteristics in the fetus. Genital formation starts around week 10 and becomes identifiable in the 11th week. The strength of that surge affects how strongly the masculinization occurs, and if the surge is not strong enough then the genitals feminize.
 
 If there is an interference in this process then you can end up with the “wrong” bits. Sometimes this is a partial formation and you get intersex people, but we’re starting to discover that an unknown percentage of the population experienced this fully.
 
