@@ -34,6 +34,7 @@ exports.cloudfront = cloudfront;
 
 /** **************************************************************************************************************** **/
 
+exports.sprite = require('./sprite');
 exports.new = require('./new');
 
 var buildTask = series(
