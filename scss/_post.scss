@@ -118,6 +118,7 @@
         font-size: 16px;
       }
     }
+
   }
 
   .post-images {
@@ -216,23 +217,43 @@
       }
     }
 
-    blockquote.twitter-tweet, blockquote.cite {
-      margin: 5px;
-      padding: 10px;
-      font-size: 12px;
+    blockquote {
+      font-family: 'Georgia';
+      font-weight: 200;
+      font-size: 1.1em;
+      line-height: 1.4;
+      background: #f0f8ff;
+      border: 1px solid darken(#f0f8ff, 10%);
+      padding: 15px;
 
-      p {
-        font-size: 16px;
-        margin-bottom: 5px;
+      position: relative;
+
+      &::before {
+        font-family: "Montez", cursive;
+        font-weight: 700;
+        display: block;
+        padding-left: 10px;
+        content: "\201C";
+        font-size: 80px;
+        position: absolute;
+        left: -30px;
+        top: -20px;
+        // color: #7a7a7a;
       }
-    }
 
-    .pull-right {
-      margin: 0 auto;
+      p:last-child {
+        margin-bottom: 0;
+      }
 
-      @include media-breakpoint-up(md) {
-        float: right;
-        margin-right: 5px;
+      &.twitter-tweet, &.cite {
+        margin: 5px;
+        padding: 10px;
+        font-size: 12px;
+
+        p {
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
       }
     }
 
@@ -320,15 +341,15 @@
       }
     }
 
-    .grid {
+    .grid-row {
       display: grid;
+      grid-template-rows: 1fr;
+      grid-gap: 10px;
+      grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
 
-      &.grid-row {
-        grid-template-rows: 1fr;
-        grid-column-gap: 10px;
-        grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
-      }
+      margin-bottom: 1rem;
 
+      .double { grid-row-end: span 2; }
     }
 
     .cw {
@@ -357,7 +378,6 @@
       }
     }
   }
-
 
   .post-products {
     grid-area: products;
@@ -392,34 +412,4 @@
     }
   }
 
-
-
-  blockquote {
-    font-family: 'Georgia';
-    font-weight: 200;
-    font-size: 1.1em;
-    line-height: 1.4;
-    background: #f0f8ff;
-    border: 1px solid darken(#f0f8ff, 10%);
-    padding: 15px;
-
-    position: relative;
-
-    &::before {
-      font-family: "Montez", cursive;
-      font-weight: 700;
-      display: block;
-      padding-left: 10px;
-      content: "\201C";
-      font-size: 80px;
-      position: absolute;
-      left: -30px;
-      top: -20px;
-      // color: #7a7a7a;
-    }
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
