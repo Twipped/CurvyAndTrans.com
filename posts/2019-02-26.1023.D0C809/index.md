@@ -120,6 +120,8 @@ Neo is a programmer who has problems with authority figures. Now, in the 90s thi
 
 Personally, computing gave me the opportunity to escape, to zone out and stop thinking about my life. I could delve into a problem and become absorbed by it, leaving my physical body behind. It was freeing.
 
+Neo works for a company named Metacortex. Meta, meaning "self-referential" and Cortex being the outer layer of the brain which houses conscious thought and human identity. Transition involves a deep introspection of who you are and how you interact with the world, as well as an interrogation of your past behaviors and present desires.
+
 ::: grid-row
 ![](../35.jpeg)
 ::: double
@@ -182,7 +184,7 @@ Living part time is exhausting.
 ::: grid-row
 ![](../67.jpeg)
 ::: double
-I just wanted to point this out from this scene:
+I just wanted to point this out from this shot:
 
 > Anderson excelled in the sciences, mathematics and computer courses. He also displayed apex aptitude for English and History. After some trouble with discipline at the age of 13-15, Anderson settled down to being a fairly well-regarded member of the school.
 
