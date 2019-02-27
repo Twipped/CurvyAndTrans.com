@@ -86,7 +86,7 @@ exports.posts = function buildPosts () {
         return;
       }
 
-      const images = await glob('+({1..9}|{01..20}).{jpeg,jpg,png,gif,m4v}', {
+      const images = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', {
         cwd: path.dirname(file.path),
       });
 

@@ -14,7 +14,7 @@ const DEST = 'docs';
 module.exports = exports = function imageScale (noskip) {
   var bs = buildsaver({ skip: !noskip });
 
-  var fullsize = src('posts/**/+({1..9}|{01..20}).{jpeg,jpg,png,gif}')
+  var fullsize = src('posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}')
     .pipe(bs.source())
     .pipe(resizer({
       format: 'jpeg',
@@ -71,7 +71,7 @@ module.exports = exports = function imageScale (noskip) {
   var other = src([
     'posts/**/*.{jpeg,jpg,png,gif,m4v}',
     '!posts/**/poster.{jpeg,jpg,png,gif}',
-    '!posts/**/+({1..9}|{01..20}).{jpeg,jpg,png,gif}',
+    '!posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}',
   ]);
 
   return merge(fullsize, posters, titlecardNorth, titlecardCenter, thumbnail, other)
@@ -104,4 +104,4 @@ exports.prod = function imageScaleForProd () {
     }))
     .pipe(dest('.'))
   ;
-}
+};
