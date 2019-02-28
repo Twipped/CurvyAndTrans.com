@@ -3,11 +3,13 @@ const path          = require('path');
 const resizer       = require('gulp-image-resize');
 const merge         = require('merge-stream');
 const rename        = require('gulp-rename');
+const filter        = require('./lib/filter');
 const { src, dest } = require('gulp');
 const rev           = require('gulp-rev');
 const asyncthrough  = require('./lib/through');
 const buildsaver    = require('./lib/buildsaver');
 const parallelize   = require('concurrent-transform');
+const clone         = require('gulp-clone');
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
@@ -15,7 +17,11 @@ const DEST = 'docs';
 module.exports = exports = function imageScale (noskip) {
   var bs = buildsaver({ skip: !noskip });
 
-  var fullsize = src('posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}')
+  var images = src('posts/*/*.{jpeg,jpg,png,gif,m4v}', { read: true });
+
+  var fullsize = images
+    .pipe(clone())
+    .pipe(filter(/\/\d?\d?\d(?:-\d?\d)?.(?:jpe?g|png|gif)$/))
     .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'jpeg',
@@ -23,7 +29,8 @@ module.exports = exports = function imageScale (noskip) {
       crop: false,
     })), 10);
 
-  var posters = src('posts/**/poster.{jpeg,jpg,png,gif}')
+  var posters = images.pipe(filter(/\/poster.(?:jpe?g|png|gif)$/))
+    .pipe(clone())
     .pipe(bs.source('poster'))
     .pipe(parallelize(resizer({
       format: 'jpeg',
@@ -31,7 +38,10 @@ module.exports = exports = function imageScale (noskip) {
       crop: false,
     })), 10);
 
-  var titlecardNorth = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
+  var titlecardSource = images.pipe(filter(/\/0?0?1.(?:jpe?g|png|gif)$/));
+
+  var titlecardNorth = titlecardSource
+    .pipe(clone())
     .pipe(bs.source('titlecard-north'))
     .pipe(parallelize(resizer({
       format: 'png',
@@ -44,7 +54,8 @@ module.exports = exports = function imageScale (noskip) {
       file.basename = 'titlecard-north';
     }));
 
-  var titlecardCenter = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
+  var titlecardCenter = titlecardSource
+    .pipe(clone())
     .pipe(bs.source('titlecard-center'))
     .pipe(parallelize(resizer({
       format: 'png',
@@ -57,7 +68,8 @@ module.exports = exports = function imageScale (noskip) {
       file.basename = 'titlecard-center';
     }));
 
-  var thumbnail = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
+  var thumbnail = titlecardSource
+    .pipe(clone())
     .pipe(bs.source('titlecard-thumb'))
     .pipe(parallelize(resizer({
       format: 'png',
@@ -69,13 +81,16 @@ module.exports = exports = function imageScale (noskip) {
       file.basename = 'titlecard-thumb';
     }));
 
-  var other = src([
-    'posts/**/*.{jpeg,jpg,png,gif,m4v}',
-    '!posts/**/poster.{jpeg,jpg,png,gif}',
-    '!posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}',
-  ]);
+  var other = images.pipe(filter.not(/\/(?:\d?\d?\d(?:-\d?\d)?|poster)\.(?:jpe?g|png|gif)$/));
 
-  return merge(fullsize, posters, titlecardNorth, titlecardCenter, thumbnail, other)
+  return merge(
+    fullsize
+    , posters
+    , titlecardNorth
+    , titlecardCenter
+    , thumbnail
+    , other
+  )
     .pipe(rename((file) => {
       const hash = file.dirname.split('.')[2];
       file.dirname = hash;
