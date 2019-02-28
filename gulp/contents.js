@@ -25,6 +25,16 @@ const md     = require('markdown-it')({
 const handlebars = require('handlebars');
 require('helper-hoard').load(handlebars);
 handlebars.registerHelper('get', (target, key) => (target ? target[key] : undefined));
+handlebars.registerHelper('odd', (value, options) => {
+  const result = !!value % 2;
+  if (!options.fn) return result;
+  return result ? options.fn(this) : options.inverse(this);
+});
+handlebars.registerHelper('even', (value, options) => {
+  const result = !(value % 2);
+  if (!options.fn) return result;
+  return result ? options.fn(this) : options.inverse(this);
+});
 
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';

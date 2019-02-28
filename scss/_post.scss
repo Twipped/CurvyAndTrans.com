@@ -151,6 +151,18 @@
     }
   }
 
+  article.double-column .post-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    grid-column-gap: 5px;
+    align-self: flex-start;
+
+    .even:last-child {
+      grid-column-end: span 2;
+    }
+  }
+
   .post-title {
     grid-area: title;
     margin: 10px 0 0 0;
