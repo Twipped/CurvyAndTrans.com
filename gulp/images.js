@@ -7,6 +7,7 @@ const { src, dest } = require('gulp');
 const rev           = require('gulp-rev');
 const asyncthrough  = require('./lib/through');
 const buildsaver    = require('./lib/buildsaver');
+const parallelize   = require('concurrent-transform');
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
@@ -16,54 +17,54 @@ module.exports = exports = function imageScale (noskip) {
 
   var fullsize = src('posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}')
     .pipe(bs.source())
-    .pipe(resizer({
+    .pipe(parallelize(resizer({
       format: 'jpeg',
       width: 1000,
       crop: false,
-    }));
+    })), 10);
 
   var posters = src('posts/**/poster.{jpeg,jpg,png,gif}')
     .pipe(bs.source('poster'))
-    .pipe(resizer({
+    .pipe(parallelize(resizer({
       format: 'jpeg',
       width: 1000,
       crop: false,
-    }));
+    })), 10);
 
   var titlecardNorth = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
     .pipe(bs.source('titlecard-north'))
-    .pipe(resizer({
+    .pipe(parallelize(resizer({
       format: 'png',
       width: 1000,
       height: 525,
       gravity: 'North',
       crop: true,
-    }))
+    })), 10)
     .pipe(rename((file) => {
       file.basename = 'titlecard-north';
     }));
 
   var titlecardCenter = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
     .pipe(bs.source('titlecard-center'))
-    .pipe(resizer({
+    .pipe(parallelize(resizer({
       format: 'png',
       width: 1000,
       height: 525,
       gravity: 'Center',
       crop: true,
-    }))
+    })), 10)
     .pipe(rename((file) => {
       file.basename = 'titlecard-center';
     }));
 
   var thumbnail = src('posts/**/+(01|1).{jpeg,jpg,png,gif}')
     .pipe(bs.source('titlecard-thumb'))
-    .pipe(resizer({
+    .pipe(parallelize(resizer({
       format: 'png',
       width: 400,
       height: 400,
       crop: true,
-    }))
+    })), 10)
     .pipe(rename((file) => {
       file.basename = 'titlecard-thumb';
     }));
