@@ -49,16 +49,17 @@ module.exports = exports = function (options) {
   const source = (destkey) => through(async (stream, file) => {
     if (!file) return;
 
-    if (file.buildSaver) {
-      // this has been handled somehow already?
-      stream.push(file);
-      return;
-    }
-
     if (destkey === undefined) destkey = '';
     const sourcePath = relPath(file.cwd, file.path);
     const key = destkey ? sourcePath + ':' + destkey : sourcePath;
     const rev = revHash(file.contents);
+
+    if (file.buildSaver) {
+      // this has been handled somehow already?
+      if (options.log) log('[skip]', sourcePath, destkey);
+      stream.push(file);
+      return;
+    }
 
     if (!manifest[key]) {
       // have not seen this file before
