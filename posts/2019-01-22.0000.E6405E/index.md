@@ -5,6 +5,8 @@ title: "Happy Selfies"
 description: "Outfit of the Day for Jan 22nd, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 ---
 So apparently the secret to getting really great smiles out of me is to get me singing while I shoot.
 

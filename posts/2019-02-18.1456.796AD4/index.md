@@ -5,6 +5,8 @@ title: "Elegance In Dry Weather"
 description: "Outfit of the Day for Feb 18th, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "SHEIN Plus Two Tone Batwing Kimono": https://us.shein.com/Plus-Two-Tone-Batwing-Kimono-p-536991-cat-2050.html
   "Isabella Maternity Plus Size Smocked Maxi Dress": https://www.target.com/p/maternity-plus-size-smocked-maxi-dress-isabel-maternity-by-ingrid-isabel-153-black/-/A-53417205

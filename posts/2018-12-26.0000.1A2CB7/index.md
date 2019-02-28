@@ -5,6 +5,7 @@ title: "I woke up in a mood"
 description: Outfit of the Day for Dec 26th, 2018
 tags:
   - OOTD
+single: false
 products:
   "SHEIN Plus Lace Hem Sheer Kimono": https://us.shein.com/Plus-Lace-Hem-Sheer-Kimono-p-574568-cat-1940.html
   "Isabella Maternity Plus Size Smocked Maxi Dress": https://www.target.com/p/maternity-plus-size-smocked-maxi-dress-isabel-maternity-by-ingrid-isabel-153-black/-/A-53417205

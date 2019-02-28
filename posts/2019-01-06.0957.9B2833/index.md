@@ -5,6 +5,8 @@ title: "The Cool Aunt"
 description: "Outfit of the Day for Jan 6th, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Stretch is Comfort Women's Plus Size Metallic Foil Leggings, Black 3X": https://www.amazon.com/exec/obidos/ASIN/B07HB6RF5L/curvyandtrans-20
   "SHEIN Plus Two Tone Batwing Kimono": https://us.shein.com/Plus-Two-Tone-Batwing-Kimono-p-536991-cat-2050.html

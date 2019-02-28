@@ -5,6 +5,8 @@ title: "Petticoat Express"
 description: "Outfit of the Day for Dec 12th, 2018"
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Nemidor Women's V-Neckline Stretchy Casual Midi Plus Size Bridesmaid Dress": https://www.amazon.com/exec/obidos/ASIN/B01HUNEIGQ/curvyandtrans-20
   "Grace Karin Women 50s Petticoat Skirt, Tutu Crinoline Underskirt CL8922": https://www.amazon.com/exec/obidos/ASIN/B075VMWX7X/curvyandtrans-20

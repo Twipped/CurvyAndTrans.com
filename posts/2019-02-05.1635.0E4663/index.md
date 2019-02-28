@@ -3,6 +3,8 @@ id: "0E4663"
 date: "2019-02-06T00:35:00.000Z"
 title: "Wowing the Gatekeepers"
 description: "Outfit of the Day for Feb 5th, 2019"
+classes:
+  - double-column
 tags:
   - OOTD
   - Transgender

@@ -3,6 +3,8 @@ id: "0D35EB"
 date: "2019-02-14T18:12:00.906Z"
 title: "The Judgemental Librarian"
 description: "Outfit of the Day for Feb 13th, 2019"
+classes:
+  - double-column
 tags:
   - OOTD
 products:

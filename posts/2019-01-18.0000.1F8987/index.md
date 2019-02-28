@@ -6,6 +6,8 @@ description: "The Happiest Place on Earth"
 tags:
   - OOTD
   - Family
+classes:
+  - double-column
 products:
   "Annabelle Women's 3/4 Sleeve Empire Waist Babydoll Pocket Swing Dress (2X, Mustard)": https://www.amazon.com/exec/obidos/ASIN/B07BXFSDPT/curvyandtrans-20
   "Vialumi Women's Junior Plus Size Cropped Strappy Camisole (2X/3X, White)": https://www.amazon.com/exec/obidos/ASIN/B07GQ11R9P/curvyandtrans-20

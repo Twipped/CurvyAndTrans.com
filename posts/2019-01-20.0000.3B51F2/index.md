@@ -5,6 +5,8 @@ title: "Bananarama"
 description: "Outfit of the Day for Jan 20th, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Annabelle Women's Short Sleeve Scoop Neck Empire Waist Mini Dress with Pockets (2X, Banana)": https://www.amazon.com/exec/obidos/ASIN/B07BGWZ7B6/curvyandtrans-20
   "SHEIN Plus See Through Mesh Longline Kimono": https://us.shein.com/Plus-See-Through-Mesh-Longline-Kimono-p-447628-cat-1940.html

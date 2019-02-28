@@ -5,6 +5,7 @@ title: "Christmas Witch"
 description: Witchy Wednesday, featuring Shein
 tags:
   - OOTD
+single: false
 products:
   "Stretch Is Comfort Flowy Tunic Dress with Pockets, 3X": https://www.amazon.com/exec/obidos/ASIN/B01N28LNQA/curvyandtrans-20
   "SHEIN Plus Lace Hem Sheer Kimono": https://us.shein.com/Plus-Lace-Hem-Sheer-Kimono-p-574568-cat-1940.html

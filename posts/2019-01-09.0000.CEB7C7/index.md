@@ -6,6 +6,8 @@ description: "Outfit of the Day for Jan 9th, 2019"
 span: 13
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Ingrid & Isabel Maternity Floral Print Short Sleeve Faux Wrap Belted Knit Dress": https://www.target.com/p/maternity-plus-size-floral-print-short-sleeve-faux-wrap-belted-knit-dress-isabel-maternity-by-ingrid-isabel-153-navy/-/A-53622269?preselect=53447765#lnk=sametab
   "Vialumi Women's Plus Size Spaghetti Strap Cropped Strappy Camisole Navy 2X/3X": https://www.amazon.com/exec/obidos/ASIN/B01DFXZHTW/curvyandtrans-20

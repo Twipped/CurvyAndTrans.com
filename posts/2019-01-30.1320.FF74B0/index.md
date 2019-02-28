@@ -3,6 +3,8 @@ id: "FF74B0"
 date: "2019-01-30T21:20:00.000Z"
 title: "Twirl Twirl Twirl"
 description: "Outfit of the Day for Jan 30th, 2019"
+classes:
+  - double-column
 tags:
   - OOTD
 products:

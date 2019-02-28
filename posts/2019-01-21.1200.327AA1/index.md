@@ -6,6 +6,8 @@ description: "Moments of joy after all the excitement dies down."
 tags:
   - Transgender
   - Body Positivity
+classes:
+  - double-column
 products:
   "Vialumi Women's Plus Size Spaghetti Strap Cropped Strappy Camisole Navy 2X/3X": https://www.amazon.com/exec/obidos/ASIN/B01DFXZHTW/curvyandtrans-20
   "Neewer 18-inch LED Ring Light with Top/Bottom Dual Hot Shoe": https://www.amazon.com/exec/obidos/ASIN/B07F252MH2/curvyandtrans-20

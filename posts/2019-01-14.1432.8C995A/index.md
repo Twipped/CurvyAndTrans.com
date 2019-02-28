@@ -4,6 +4,8 @@ date: "2019-01-14T22:32:20.565Z"
 title: "Fierce Curves"
 description: "Outfit of the Day for Jan 14th, 2019"
 span: 13
+classes:
+  - double-column
 tags:
   - OOTD
   - Body Positivity

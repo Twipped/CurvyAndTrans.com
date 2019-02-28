@@ -5,6 +5,8 @@ title: "Waking up sexy"
 description: Do you ever wake up in the morning and just need to feel sexy today?
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Vialumi Women's Plus Size Spaghetti Strap Cropped Strappy Camisole Navy 2X/3X": https://www.amazon.com/exec/obidos/ASIN/B01DFXZHTW/curvyandtrans-20
   "SHEIN Plus See Through Mesh Longline Kimono": https://us.shein.com/Plus-See-Through-Mesh-Longline-Kimono-p-447628-cat-1940.html

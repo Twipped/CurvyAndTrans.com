@@ -5,6 +5,8 @@ title: "Off to get my blood sucked"
 description: "Outfit of the Day for Jan 21st, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 ---
 Hastily put together look this morning so I could get out the door to have my blood sucked for labs.
 It was just supposed to be a thyroid and lipid test but my doc decided to toss a hormone check on there too which means I have to get labs done on the day of my E injection. That means today, a holiday, or Saturday, which is worse. LabCorp is busy as hell right now, I’m gonna be here all morning. We Bought A Zoo is playing in the lobby. It was playing when I was here three months ago, and two months before that. You’d think they could change the DVD every so often.

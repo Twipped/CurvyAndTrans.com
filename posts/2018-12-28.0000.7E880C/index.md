@@ -5,6 +5,8 @@ title: "Gone BoHo"
 description: Outfit of the Day for Dec 28th, 2018
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Aesthetica Matte Lip Contour Kit": https://www.amazon.com/exec/obidos/ASIN/B017MPRAOO/curvyandtrans-20
   "BYS 5 Shade Neons Eyeshadow Compact": https://www.amazon.com/exec/obidos/ASIN/B074QVCYV5/curvyandtrans-20

@@ -5,6 +5,8 @@ title: "Berry Disgruntled"
 description: "Outfit of the Day for Jan 7th, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Annabelle Pleated Empire Waist Scoop Neck Short Dress with Pockets, Berry 2X": https://www.amazon.com/exec/obidos/ASIN/B07CKM3ST4/curvyandtrans-20
   "SHEIN Plus See Through Mesh Longline Kimono": https://us.shein.com/Plus-See-Through-Mesh-Longline-Kimono-p-447628-cat-1940.html

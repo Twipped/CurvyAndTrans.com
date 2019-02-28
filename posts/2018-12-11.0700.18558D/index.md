@@ -5,6 +5,8 @@ title: "Rainbowblue"
 description: Outfit of the Day for Dec 11th, 2018
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Tarte Tarteist Shimmering Lip Paint": https://tartecosmetics.com/en_US/makeup/lips/tarteist-shimmering-lip-paint/1547.html
   "Bodyography Lip Pencil": https://www.bodyography.com/products/lip-pencil?variant=7163520516156

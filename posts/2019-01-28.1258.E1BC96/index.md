@@ -5,6 +5,8 @@ title: "Musical Energy"
 description: "Outfit of the Day for Jan 28th, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 ---
 Music packs the soul with energy. I felt very alive this morning. . .
 

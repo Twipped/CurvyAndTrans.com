@@ -3,6 +3,8 @@ id: "D9585F"
 date: "2019-01-24T22:17:00.000Z"
 title: "True Blue"
 description: "Outfit of the Day for Jan 24th, 2019"
+classes:
+  - double-column
 tags:
   - OOTD
 ---

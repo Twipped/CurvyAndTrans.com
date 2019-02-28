@@ -3,6 +3,8 @@ id: "A7A315"
 date: "2019-02-05T00:19:00.000Z"
 title: "Black and gold and full of fire"
 description: "Outfit of the Day for Feb 4th, 2019"
+classes:
+  - double-column
 tags:
   - OOTD
   - Makeup

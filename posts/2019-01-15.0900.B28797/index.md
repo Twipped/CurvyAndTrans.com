@@ -5,6 +5,8 @@ title: "Where's the hate?"
 description: "Outfit of the Day for Jan 15th, 2019"
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Stretch Is Comfort Plus Size Pocket Skirt, Black 2X": https://www.amazon.com/exec/obidos/ASIN/B06XK9X45Y/curvyandtrans-20
   "VIV Collection Plus Size Leggings (Nature)": https://www.amazon.com/exec/obidos/ASIN/B01MTYKYKC/curvyandtrans-20

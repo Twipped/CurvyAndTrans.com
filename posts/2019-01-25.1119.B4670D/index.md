@@ -3,6 +3,8 @@ id: "B4670D"
 date: "2019-01-25T11:11:48.535Z"
 title: "Poofy Floral"
 description: "Outfit of the Day for Jan 25th, 2019"
+classes:
+  - double-column
 tags:
   - OOTD
 products:

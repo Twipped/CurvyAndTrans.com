@@ -5,6 +5,8 @@ title: "Elomi Anushka"
 description: There are mornings where I just get up and know I want to wear this bra.
 tags:
   - Bra Review
+classes:
+  - double-column
 products:
   "Elomi Women's Plus Size Anushka Padded Half Cup Bra": https://www.amazon.com/exec/obidos/ASIN/B06XVXSM3W/curvyandtrans-20
 ---

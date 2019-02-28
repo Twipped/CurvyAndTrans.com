@@ -5,6 +5,8 @@ title: "The best clothes are stolen"
 description: What do you do when your wife takes your new dress? Steal one of hers, of course.
 tags:
   - OOTD
+classes:
+  - double-column
 products:
   "Ms Basic Vintage Long Sleeve Round Neck Casual Flared Midi Dress": https://www.amazon.com/exec/obidos/ASIN/B075M7T4MM/curvyandtrans-20
   "Terra & Sky Extra Long Tunic Cami": https://www.walmart.com/ip/Terra-Sky-Women-s-Plus-Extra-Long-Tunic-Cami/168116568
