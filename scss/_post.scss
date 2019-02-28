@@ -133,7 +133,7 @@
       display: block;
       margin-top: 5px;
       border: 1px solid $pink;
-      // border-left: none;
+      align-self: center;
     }
 
     img, video {
@@ -355,6 +355,7 @@
     }
 
     .grid-row {
+      clear: both;
       display: grid;
       grid-template-rows: 1fr;
       grid-gap: 10px;
