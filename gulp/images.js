@@ -1,4 +1,5 @@
 
+const argv = require('minimist')(process.argv.slice(2));
 const path          = require('path');
 const resizer       = require('gulp-image-resize');
 const merge         = require('merge-stream');
@@ -15,13 +16,13 @@ const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
 
 module.exports = exports = function imageScale (noskip) {
-  var bs = buildsaver({ skip: !noskip });
+  var bs = buildsaver({ skip: !noskip, log: !!argv.verbose });
 
   var images = src('posts/*/*.{jpeg,jpg,png,gif,m4v}', { read: true });
 
   var fullsize = images
-    .pipe(clone())
     .pipe(filter(/\/\d?\d?\d(?:-\d?\d)?.(?:jpe?g|png|gif)$/))
+    .pipe(clone())
     .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'jpeg',
