@@ -9,9 +9,10 @@
       max-width: 1000px;
     }
 
-    &.horizontal {
+    &.single, &.noimages, &.horizontal {
       @include media-breakpoint-up(md) {
         padding-left: 20px;
+        padding-right: 20px;
       }
     }
 
