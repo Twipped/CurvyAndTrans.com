@@ -178,13 +178,17 @@ exports.posts = function buildPosts () {
   var postFiles = readPosts
     .pipe(asyncthrough(async (stream, file) => {
       if (!file.meta.ignore) {
-        file.contents = Buffer.from(template({
-          page: {
-            title: file.meta.title + ' :: Curvy & Trans',
-          },
-          ...file.meta,
-        }));
-        stream.push(file);
+        try {
+          file.contents = Buffer.from(template({
+            page: {
+              title: file.meta.title + ' :: Curvy & Trans',
+            },
+            ...file.meta,
+          }));
+          stream.push(file);
+        } catch (err) {
+          log.error('Encountered a crash while compiling ' + file.path, err);
+        }
       }
     }))
     .pipe(dest(`${DEST}/p/`));
@@ -280,12 +284,13 @@ exports.pages = function buildPages () {
         posts,
       };
 
-      var html = template(data);
+      try {
+        file.contents = Buffer.from(String(template(data)));
+        stream.push(file);
+      } catch (err) {
+        log.error('Encountered a crash while compiling ' + file.path, err);
+      }
 
-      html = String(html);
-
-      file.contents = Buffer.from(html);
-      stream.push(file);
     }))
     .pipe(dest('docs'));
 };
