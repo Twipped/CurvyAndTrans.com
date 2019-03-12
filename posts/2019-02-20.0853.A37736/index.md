@@ -7,6 +7,7 @@ tags:
   - Transgender
   - Essays
 noimages: true
+instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 ---
 <div class="grid grid-row">
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Trans women are biological women.</p>&mdash; IAM (@IndyaMoore) <a href="https://twitter.com/IndyaMoore/status/1096816028200460290?ref_src=twsrc%5Etfw">February 16, 2019</a></blockquote>

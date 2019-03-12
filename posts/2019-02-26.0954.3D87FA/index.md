@@ -4,8 +4,10 @@ date: "2019-02-26T17:54:00.000Z"
 title: "Do you appreciate your gender?"
 slug: gender-appreciation
 description: "A question for my cis female followers"
+instagram: https://www.instagram.com/p/BuWlw5QnaVR/
 tags:
-  - Transition Timelines
+  - Transition Timeline
+  - Transgender
   - Essays
 classes:
   - horizontal

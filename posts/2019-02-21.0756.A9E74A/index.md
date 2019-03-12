@@ -3,6 +3,7 @@ id: "A9E74A"
 date: "2019-02-21T15:56:00.000Z"
 title: "Rusty Comfort"
 description: "Outfit of the Day for Feb 21st, 2019"
+instagram: https://www.instagram.com/p/BuJ_PgyHM2t/
 tags:
   - OOTD
 classes:

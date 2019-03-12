@@ -3,6 +3,7 @@ id: "796AD4"
 date: "2019-02-18T22:56:00.000Z"
 title: "Elegance In Dry Weather"
 description: "Outfit of the Day for Feb 18th, 2019"
+instagram: https://www.instagram.com/p/BuCJ__UnYYt/
 tags:
   - OOTD
 classes:

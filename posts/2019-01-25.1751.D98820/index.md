@@ -79,5 +79,3 @@ The second major blow came in November when Hillary lost the election to quite l
 Over the course of 2016 I progressively became more and more unstable. My anger would spike in unpredictable ways, my patience continued to degrade and weaken, and more and more I was having outbursts. Bath times with my daughter became dangerous moments for all of us, as I would so frequently burst into fits of rage. Samantha's very typical misbehavior for a four year would drive me mad, and for a while Kat was afraid to leave me alone with her. As the year came to a close, it got so bad that I even started yelling at Kat, which I had never done in 10 years of being together. Something was very very wrong.
 
 Then, one week into 2017, we discovered what it was. You can read that story in two of my older posts: [Here](/p/7577AC/two-year-transiversary/) and [Here](/p/040E24/opening-the-closet/). My next post will be about what happened _after_ I came out.
-
-_If you appreciated this post, please consider making a small pledge [towards my Patreon](https://patreon.com/curvyandtrans) in support of my work._

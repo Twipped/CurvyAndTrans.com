@@ -3,6 +3,7 @@ id: "EE5842"
 date: "2019-02-27T18:00:00.000Z"
 title: "Back to Black"
 description: "Outfit of the Day for Feb 27th, 2019"
+instagram: https://www.instagram.com/p/BuZYiLPnU2l/
 tags:
   - OOTD
 classes:

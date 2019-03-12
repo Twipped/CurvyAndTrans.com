@@ -56,5 +56,3 @@ We could not have done any of that, however, without our absolutely amazing coup
 Katharine confessed to me late last year that for a long time her expectation had been that I would die young from something related to my obesity, like a heart attack or diabetes, and that she would be left to remarry. She fully expected that her second spouse would be a woman. Astonishingly, that's pretty much how it went down; her husband died, and then she fell in love with the woman who killed him.
 
 I am not the man she married. He never existed, he was an illusion, a shield created to protect the girl inside. I feared that she only loved that man, but I was wrong. She appreciates the woman I have become, she likes the changes that transition has brought, and she loves me for me, not the man I had pretended to be.
-
-_If you appreciated this post, please consider making a small pledge [towards my Patreon](https://patreon.com/curvyandtrans) in support of my work._
