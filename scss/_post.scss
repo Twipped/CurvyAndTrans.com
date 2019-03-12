@@ -391,6 +391,32 @@
         margin-bottom: 0;
       }
     }
+
+    a.instagram {
+      text-decoration: none;
+      border-color: $blue;
+      color: $darkBlue;
+      background-color: $lightBlue;
+      margin: 0 auto;
+      display: block;
+      max-width: 350px;
+
+      .fab {
+        font-size: 25px;
+        vertical-align: sub;
+        line-height: 25px;
+        margin-right: 5px;
+      }
+    }
+
+    .plug {
+      font-style: italic;
+      font-size: 10px;
+      margin-top: 30px;
+      color: #999;
+
+      a { color: #999; }
+    }
   }
 
   .post-products {
@@ -425,5 +451,7 @@
       margin-bottom: -5px;
     }
   }
+
+
 
 }
