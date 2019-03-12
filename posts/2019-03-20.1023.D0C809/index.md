@@ -1,6 +1,6 @@
 ---
 id: "D0C809"
-date: "2019-03-05T18:23:36.623Z"
+date: "2019-20-05T18:23:36.623Z"
 title: "Welcome to the Desert of the Real"
 description: "How The Matrix is an allegory for gender transition"
 slug: transmatrix
