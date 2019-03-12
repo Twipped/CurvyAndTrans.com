@@ -2,7 +2,7 @@
   <div class="post-date">
     {{#if prime}}<strong>Latest Post: </strong>{{/if}}
     <span>{{date 'MMM Do, YYYY' this.date}}</span> <span class="emdash">&mdash;</span>
-    {{#first tags}}<span>{{this}}</span>{{/first}}
+    {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
   </div>
   <div class="post-poster" style="background-image: url({{rev this.poster}});"></div>
   {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
