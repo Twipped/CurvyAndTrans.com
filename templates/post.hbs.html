@@ -23,7 +23,7 @@
 
     {{#if products}}
     <ul class="post-products">
-      <li>Products:</li>
+      <li class="title"><span class="disclosure">Disclosure: Amazon links are affiliate URLs</span>Products:</li>
       {{#each products}}<li><a href="{{this}}" rel="nofollow">{{@key}}</a></li>{{/each}}
     </ul>
     {{/if}}

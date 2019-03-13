@@ -443,12 +443,19 @@
       border-left: 8px solid rgba(60, 0, 0, 0.3);
     }
 
-    li:first-child {
+    li.title {
       border: none;
       background: none;
       padding: 0;
       margin-top: 0;
       margin-bottom: -5px;
+    }
+
+    .disclosure {
+      float: right;
+      font-size: 10px;
+      color: #ccc;
+      line-height: 1.8rem;
     }
   }
 
