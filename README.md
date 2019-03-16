@@ -50,7 +50,7 @@ If you wish to re-used this blogging engine, download this repository and run `n
 
 - `docs` this is the output of the build process, and is used for uploading to S3. If you are using this code to generate a Github Pages site, this will be your GHP source, and should be removed from `.gitignore`. The `gulp clean` process erases the entire contents of this folder.
 
-- `docs/posts.json` is an index of all posts on the site, containing the post text, all metadata, a list of the numbered images, and various computed values. This is the file used when generating the site index.
+- `posts.json` is an index of all posts on the site, containing the post text, all metadata, a list of the numbered images, and various computed values. This is the file used when generating the site index.
 
 ## Configuring AWS
 

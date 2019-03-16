@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const moment = require('moment');
-const { find, without, sortBy, groupBy, reduce } = require('lodash');
+const { find, without, sortBy, groupBy, reduce, omit } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
 const slugify = require('slugify');
@@ -51,7 +51,7 @@ exports.loadLayout = async function loadLayout () {
 exports.loadLayout.prod = async function loadLayoutForProd () {
   var manifest;
   try {
-    manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'rev-manifest.json')));
+    manifest = JSON.parse(await fs.readFile(path.join(ROOT, 'rev-manifest.json')));
   } catch (e) {
     manifest = {};
   }
@@ -90,6 +90,11 @@ exports.posts = function buildPosts () {
       file.meta.fullurl = 'http://curvyandtrans.com' + file.meta.url;
       file.meta.originalpath = path.relative(file.cwd, file.path);
       file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
+
+      file.meta.tags = (file.meta.tags || []).reduce((result, tag) => {
+        result[slugify(tag).toLowerCase()] = tag;
+        return result;
+      }, {});
 
       if (!file.meta.slug) {
         log.error(`Post could not produce a slug. (${cwd})`);
@@ -210,12 +215,41 @@ exports.posts = function buildPosts () {
   }, async (stream) => {
     if (!indexFile) return;
 
+    var manifest;
+    try {
+      manifest = JSON.parse(await fs.readFileSync(path.join(ROOT, 'rev-manifest.json')));
+    } catch (e) {
+      manifest = {};
+    }
+
     posts = sortBy(posts, 'date');
     posts.reverse();
-    indexFile.path = path.join(DEST, 'posts.json');
+
+    function revmatch (url) {
+      if (url[0] === '/') url = url.substr(1);
+
+      if (manifest[url]) return '/' + manifest[url];
+      return '/' + url;
+    };
+
+    const indexSans = indexFile.clone();
+    const postsSans = posts.map((p) => {
+      p = omit(p, [ 'markdown', 'contents', 'images', 'products' ]);
+      p.poster = revmatch(p.poster);
+      return p;
+    });
+
+    indexFile.path = path.join(ROOT, 'posts.json');
     indexFile.base = ROOT;
     indexFile.contents = Buffer.from(JSON.stringify(posts, null, '  '));
+
+    indexSans.path = path.join(ROOT, 'posts-sans.json');
+    indexSans.base = ROOT;
+    indexSans.contents = Buffer.from(JSON.stringify(postsSans, null, '  '));
+
     stream.push(indexFile);
+    stream.push(indexSans);
+
 
   })).pipe(dest('./'));
 
@@ -229,7 +263,7 @@ exports.posts = function buildPosts () {
 exports.pages = function buildPages () {
   var postIndex;
   try {
-    postIndex = JSON.parse(fs.readFileSync(path.join(DEST, 'posts.json')));
+    postIndex = JSON.parse(fs.readFileSync(path.join(ROOT, 'posts.json')));
   } catch (e) {
     postIndex = [];
   }
@@ -238,15 +272,25 @@ exports.pages = function buildPages () {
   postIndex = postIndex.filter((p) => !p.draft);
 
   const pinned = find(postIndex, 'pinned');
+  const tagMap = {};
   const byTag = reduce(byState.final, (results, p) => {
-    const tags = p.tags || [];
-    tags.forEach((tag) => {
-      if (!results[tag]) results[tag] = [];
-      results[tag].push(p);
+    const pTags = p.tags || {};
+    Object.keys(pTags).forEach((tagslug) => {
+      const tag = pTags[tagslug];
+      if (!results[tagslug]) {
+        results[tagslug] = [];
+        tagMap[tagslug] = tag;
+      }
+      results[tagslug].push(p);
     });
     return results;
   }, {});
-  const tags = Object.keys(byTag).sort();
+
+  // generate a sorted tag map
+  const tags = Object.keys(tagMap).sort().reduce((result, tagslug) => {
+    result[tagslug] = tagMap[tagslug];
+    return result;
+  }, {});
 
   var posts;
   if (pinned) {

@@ -1,6 +1,6 @@
 {
   "extends": "twipped/browser",
-  "env": {"es6": true},
+  "env": {"es6": true, "jquery": true},
   "rules": {
     'indent': [ 2, 2, {
       'MemberExpression': 1,

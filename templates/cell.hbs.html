@@ -1,6 +1,5 @@
 <a href="{{this.url}}" class="post {{#if prime}}prime{{/if}} {{#if shortCard}}short{{/if}}" style="grid-row-end: span {{#if prime}}{{this.spanLarge}}{{else}}{{this.span}}{{/if}};" data-id="{{id}}">
   <div class="post-date">
-    {{#if prime}}<strong>Latest Post: </strong>{{/if}}
     <span>{{date 'MMM Do, YYYY' this.date}}</span> <span class="emdash">&mdash;</span>
     {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
   </div>

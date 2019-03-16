@@ -22,9 +22,9 @@ title: 'Tagged Posts'
           class="nav-link {{#unless @index}}active{{/unless}}"
           data-toggle="pill"
           role="tab"
-          id="{{slugify this}}-tab"
-          href="#{{slugify this}}"
-          aria-controls="{{slugify this}}"
+          id="{{@key}}-tab"
+          href="#{{@key}}"
+          aria-controls="{{@key}}"
           aria-selected="{{#if @index}}true{{else}}false{{/if}}"
         >{{this}}</a>
       {{/each}}
@@ -34,7 +34,7 @@ title: 'Tagged Posts'
 
   <div class="tab-content">
     {{#each posts.tags}}
-    <div class="tab-pane fade {{#unless @index}}show active{{/unless}}" role="tabpanel" id="{{slugify this}}" aria-labelledby="{{slugify this}}-tab">
+    <div class="tab-pane fade {{#unless @index}}show active{{/unless}}" role="tabpanel" id="{{@key}}" aria-labelledby="{{@key}}-tab">
       <div class="post-grid">
       {{#each (get ../posts.byTag this)}}
         {{> cell}}

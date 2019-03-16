@@ -21,7 +21,7 @@
 
 </head>
 <body {{block "bodyAttributes"}}>
-
+  {{block "preRoot"}}
   <div class="root">
     <header>
       <h1><a href="/">curvy & trans</a></h1>
@@ -43,8 +43,6 @@
     </footer>
   </div>
 
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
   {{#block "postscripts"}}{{/block}}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4767790-14"></script>

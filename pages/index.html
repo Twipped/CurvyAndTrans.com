@@ -5,23 +5,53 @@
   <meta property="og:description" content="Just a plus size trans girl in a straight size cis world.">
   <meta property="og:image" content="{{rev '/images/avi.jpeg'}}">
   <meta property="og:url" content="https://curvyandtrans.com">
-  <meta name="twitter:card" content="summary_large_image">{{/content}}
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous" defer></script>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" defer></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-drawer/1.0.6/js/drawer.min.js" integrity="sha256-gkLCbEVrapr+n/GpvVr8mZaTI0txLypy6Y7k9KwAtCc=" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-drawer/1.0.6/css/bootstrap-drawer.min.css" integrity="sha256-KGQ0bEM3bg6H/uspaY0GUNMXX5VgdfyAqPk2TmO/2HI=" crossorigin="anonymous" />
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js" crossorigin="anonymous" defer></script>
+  <script type="text/javascript" src="{{rev '/js/index.js'}}" defer></script>
+  {{/content}}
 
 
   {{#content "bodyAttributes"}}class="page-index"{{/content}}
 
-  {{#content "header"}}
-  <span class="catchphrase">Just a plus size trans girl in a straight size cis world.</span>
-  <div class="nav-internal">
-    <a class="" href="/tags.html">View Posts By Tag</a>
+  {{#content "preRoot"}}
+  <div id="drawer" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
+    <div class="drawer-contents">
+      <div class="drawer-heading">
+        <h2 class="drawer-title">View Posts By Tag</h2>
+      </div>
+      <ul class="drawer-fullnav">
+        <li role="presentation"><a href="#">All Posts</a></li>
+        <li><hr style="margin: 0"></li>
+        {{#each posts.tags}}
+        <li role="presentation"><a href="#{{@key}}">{{this}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
   </div>
   {{/content}}
+
+  {{#content "header"}}
+  <span class="catchphrase">Just a plus size trans girl in a straight size cis world.</span>
+  {{/content}}
+
 	{{#content "body"}}
+  <h3 class="tagged-header">
+    <span>Latest Posts</span>
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i></button>
+
+  </h3>
   <div class="post-grid">
     {{#with posts.first}}
       {{> cell prime=true}}
     {{/with}}
-    {{#each (slice posts.ordered 0 14)}}
+    {{#each (slice posts.ordered 0 8)}}
       {{> cell}}
     {{/each}}
   </div>
@@ -32,7 +62,6 @@
 
 	{{/content}}
   {{#content "postscripts"}}
-  <script src="{{rev '/js/index.js'}}"></script>
   {{/content}}
 
 {{/extend}}

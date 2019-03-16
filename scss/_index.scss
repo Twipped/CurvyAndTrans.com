@@ -1,5 +1,16 @@
 .page-index {
 
+  .tagged-header {
+    margin: 5px;
+    border-bottom: 1px solid $border-color;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    span { flex: 1; }
+    .btn { flex: 0; }
+  }
+
   .post-grid {
     display: grid;
     grid-gap: 0;
@@ -11,7 +22,9 @@
     @include media-breakpoint-up(sm) {
       grid-template-columns: repeat( auto-fill, minmax( 250px, 1fr ) );
       grid-auto-rows: 30px;
+    }
 
+    @include media-breakpoint-up(md) {
       .post.prime {
         grid-column-end: span 2;
         grid-row-end: span 25;

@@ -1,7 +1,7 @@
 
 const path          = require('path');
 const { src, dest } = require('gulp');
-const uglify        = require('gulp-uglify');
+const minify        = require('gulp-minify');
 const rev           = require('gulp-rev');
 const asyncthrough  = require('./lib/through');
 
@@ -9,14 +9,17 @@ const asyncthrough  = require('./lib/through');
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs/js';
 
-module.exports = exports = function buildScss () {
+module.exports = exports = function sourceJS () {
   return src('js/*.js')
     .pipe(dest(DEST));
 };
 
-exports.prod = function buildScssForProd () {
+exports.prod = function sourceJSForProd () {
   return src('js/*.js')
-    .pipe(uglify())
+    .pipe(minify({
+      ext: { min: '.js' },
+      noSource: true,
+    }))
     .pipe(dest(DEST))
     .pipe(rev())
     .pipe(dest(DEST))

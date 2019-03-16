@@ -22,6 +22,10 @@ exports.scss = scssTask;
 var jsTask = require('./scripts');
 exports.js = jsTask;
 
+var jsRollupTask = require('./rollup');
+exports.jsr = jsRollupTask;
+
+
 var cleanTask = require('./clean');
 exports.clean = cleanTask;
 exports['clean-cache'] = cleanTask.cache;
@@ -44,6 +48,8 @@ var buildTask = series(
   filesTask.prod,
   loadLayout.prod,
   posts,
+  jsRollupTask.prod,
+  loadLayout.prod,
   pages,
   rssTask
 );
@@ -57,6 +63,7 @@ var devBuildTask = series(
   ),
   loadLayout,
   posts,
+  jsRollupTask,
   pages,
   rssTask
 );
@@ -84,6 +91,16 @@ function watcher () {
 
   watch('scss/*.scss', scssTask);
   watch('js/*.js', jsTask);
+  watch([ 'js-rollup/*.js', 'templates/cell.hbs.html' ], jsRollupTask);
+
+  var forever = require('forever');
+  var srv = new forever.Monitor('server.js');
+  srv.start();
+  forever.startServer(srv);
+
+};
+
+function server () {
 
   var forever = require('forever');
   var srv = new forever.Monitor('server.js');
@@ -93,6 +110,7 @@ function watcher () {
 };
 
 exports.watch = series(contentTask, watcher);
+exports.uat = series(cleanTask, buildTask, server);
 
 /** **************************************************************************************************************** **/
 
