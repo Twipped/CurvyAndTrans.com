@@ -7,9 +7,9 @@ instagram: https://www.instagram.com/p/Buua2HsnYHk/
 classes:
   - double-column
 tags:
-  - OOTD
   - Body Positivity
   - Transgender
+  - OOTD
   - Essays
 ---
 Why is my hair always the most amazing on days I don’t care? Anyway, I’m trying to chase away the dysphoria blues, so here’s some unaltered no-makeup photos, guest starring my toddler in the background. It’s been two weeks since my laser session so most of my facial hair has fallen out now, and that helps a lot.
