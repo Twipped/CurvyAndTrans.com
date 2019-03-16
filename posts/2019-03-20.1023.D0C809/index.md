@@ -19,7 +19,7 @@ For me, however, the film tickled something inside me, something I would not und
 
 The Matrix is a trans allegory, depicting numerous metaphors for the experience of going through a gender transition. Now, you might be saying to me "Jocelyn, that sure seems like a stretch." After all, they made the film almost a decade before transitioning, how could that be true? Well, as they say, you cannot be told what The Matrix is, you can only be shown.
 
-Credit where due, a lot of this post is inspired by [this fantastic twitter thread](https://twitter.com/glitchliz/status/966061698837876736) by Liz Bell.
+Credit where due, a lot of this post is inspired by [this fantastic twitter thread](https://twitter.com/glitchliz/status/966061698837876736) by Elizabeth Bell.
 
 <div class="grid-row">
   <a href="../01-1.jpeg"><img src="../01-1.jpeg" alt="SMITH: The orders were for your protection."></a>
