@@ -4,9 +4,9 @@ const awsrouter   = require('gulp-awspublish-router');
 const parallelize = require('concurrent-transform');
 // const cloudfront  = require('gulp-cloudfront-invalidate-aws-publish');
 const debug       = require('./lib/debug');
-const path = require('path');
 
-const ROOT = path.dirname(__dirname);
+// const path = require('path');
+// const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
 
 var credentials = require('../aws.json');
