@@ -3,11 +3,11 @@ const aws = require('aws-sdk');
 var credentials = require('../aws.json');
 var Promise = require('bluebird');
 
-module.exports = exports = async function invalidateCloudfront () {
+async function invalidate (wait) {
   var cloudfront = new aws.CloudFront();
   cloudfront.config.update({ credentials });
 
-  var wait = async function (id) {
+  var poll = async function (id) {
     const res = await cloudfront.getInvalidation({
       DistributionId: credentials.distribution,
       Id: id,
@@ -17,7 +17,7 @@ module.exports = exports = async function invalidateCloudfront () {
       return;
     }
 
-    return Promise.delay(5000).then(() => wait(id));
+    return Promise.delay(5000).then(() => poll(id));
   };
 
   const { Invalidation } = await cloudfront.createInvalidation({
@@ -35,6 +35,14 @@ module.exports = exports = async function invalidateCloudfront () {
 
   log('Invalidation created, waiting for it to complete.', id);
 
-  await wait(id);
+  if (wait) await poll(id);
+};
+
+module.exports = exports = function invalidateCloudfrontAndWait () {
+  return invalidate(true);
+};
+
+exports.prod = function invalidateCloudfront () {
+  return invalidate(false);
 };
 

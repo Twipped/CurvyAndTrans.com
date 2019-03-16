@@ -73,7 +73,8 @@ exports.prod = buildTask;
 exports.publish = series(
   cleanTask,
   buildTask,
-  pushToProd
+  pushToProd,
+  cloudfront.prod
 );
 exports.testpush = pushToProd.dryrun;
 
