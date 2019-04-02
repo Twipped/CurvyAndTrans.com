@@ -34,6 +34,24 @@ module.exports = exports = function (options) {
     ...options,
   };
 
+  if (options.log === true) {
+    options.log = {
+      'new':    true,
+      'update': true,
+      'skip':   true,
+      'build':  true,
+      'cached': true,
+    };
+  } else if (!options.log) {
+    options.log = {
+      'new':    false,
+      'update': false,
+      'skip':   false,
+      'build':  false,
+      'cached': false,
+    };
+  }
+
   const manifestPath = path.resolve(options.base, options.manifest);
   var manifest;
   try {
@@ -56,7 +74,7 @@ module.exports = exports = function (options) {
 
     if (file.buildSaver) {
       // this has been handled somehow already?
-      if (options.log) log('[skip]', sourcePath, destkey);
+      if (options.log.skip) log('[skip]', sourcePath, destkey);
       stream.push(file);
       return;
     }
@@ -69,7 +87,7 @@ module.exports = exports = function (options) {
         rev,
         cwd: file.cwd,
       };
-      if (options.log) log('[new]', sourcePath, destkey);
+      if (options.log.new) log('[new]', sourcePath, destkey);
       stream.push(file);
       return;
     }
@@ -79,14 +97,14 @@ module.exports = exports = function (options) {
     if (file.buildSaver.rev !== rev) {
       // file has changed, log hash and let file process
       file.buildSaver.rev = rev;
-      if (options.log) log('[update]', sourcePath, destkey);
+      if (options.log.update) log('[update]', sourcePath, destkey);
       stream.push(file);
       return;
     }
 
     if (!file.buildSaver.destPath) {
       // this file has never received a destination
-      if (options.log) log('[build]', sourcePath, destkey);
+      if (options.log.build) log('[build]', sourcePath, destkey);
       stream.push(file);
       return;
     }
@@ -100,19 +118,19 @@ module.exports = exports = function (options) {
 
     if (options.skip && await fs.pathExists(file.buildSaver.destPath)) {
       // The file is unchanged and already exists, skip it.
-      if (options.log) log('[skipped]', sourcePath, destkey);
+      if (options.log.skip) log('[skip]', sourcePath, destkey);
       return;
     }
 
     if (await fs.pathExists(cacheTarget)) {
       cacheQueue.push(file);
       // The file will be read from cache.
-      if (options.log) log('[cached]', sourcePath, destkey);
+      if (options.log.cached) log('[cached]', sourcePath, destkey);
       return;
     }
 
     // the file does not exist and is not in cache, build it
-    if (options.log) log('[build]', sourcePath, destkey);
+    if (options.log.build) log('[build]', sourcePath, destkey);
     stream.push(file);
   });
 

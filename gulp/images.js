@@ -16,7 +16,8 @@ const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
 
 module.exports = exports = function imageScale (noskip) {
-  var bs = buildsaver({ skip: !noskip, log: !!argv.verbose });
+  const log = argv.verbose ? true : { build: true, update: true };
+  var bs = buildsaver({ skip: !noskip, log });
 
   var images = src('posts/*/*.{jpeg,jpg,png,gif,m4v}', { read: true });
 
