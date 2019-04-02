@@ -31,6 +31,20 @@ module.exports = exports = function imageScale (noskip) {
       crop: false,
     })), 10);
 
+  var halfsize = images
+    .pipe(filter(/\/\d?\d?\d-\d?\d.(?:jpe?g|png|gif)$/))
+    .pipe(clone())
+    .pipe(bs.source('small'))
+    .pipe(parallelize(resizer({
+      format: 'jpeg',
+      width: 500,
+      crop: false,
+    })), 10)
+    .pipe(rename((file) => {
+      file.basename += '.sm';
+    }))
+  ;
+
   var posters = images.pipe(filter(/\/poster.(?:jpe?g|png|gif)$/))
     .pipe(clone())
     .pipe(bs.source('poster'))
@@ -87,6 +101,7 @@ module.exports = exports = function imageScale (noskip) {
 
   return merge(
     fullsize
+    , halfsize
     , posters
     , titlecardNorth
     , titlecardCenter
