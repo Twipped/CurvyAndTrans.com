@@ -6,7 +6,9 @@
   <meta property="og:image" content="{{rev '/images/avi.jpeg'}}">
   <meta property="og:url" content="https://curvyandtrans.com">
   <meta name="twitter:card" content="summary_large_image">
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous" defer></script>
+  {{/content}}
+
+  {{#append "prescripts"}}
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js" defer></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
  -->
@@ -15,7 +17,7 @@
 
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js" crossorigin="anonymous" defer></script>
   <script type="text/javascript" src="{{rev '/js/index.js'}}" defer></script>
-  {{/content}}
+  {{/append}}
 
 
   {{#content "bodyAttributes"}}class="page-index"{{/content}}
@@ -61,7 +63,5 @@
   </div>
 
 	{{/content}}
-  {{#content "postscripts"}}
-  {{/content}}
 
 {{/extend}}
