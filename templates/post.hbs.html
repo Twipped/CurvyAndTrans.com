@@ -8,6 +8,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{{this.url}}">{{/content}}
 
+  {{#append "prescripts"}}
+  {{#if lightbox}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer></script>
+  <script type="text/javascript" src="{{rev '/js/post-lightbox.js'}}" defer></script>
+  {{/if}}
+  {{/append}}
+
+
   {{#content "bodyAttributes"}}class="page-post"{{/content}}
   {{#content "body"}}
   <article class="{{#if long}}long {{/if}}{{#if noimages}}noimages {{/if}}{{#if single}}single {{/if}}{{#each classes}}{{this}} {{/each}}">
