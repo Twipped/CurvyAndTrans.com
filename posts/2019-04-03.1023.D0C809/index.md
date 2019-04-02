@@ -24,11 +24,15 @@ For me, however, the film tickled something inside me, something I would not und
 
 The Matrix is a trans allegory, depicting numerous metaphors for the experience of going through a gender transition. Now, you might be saying to me "Jocelyn, that sure seems like a stretch." After all, they made the film almost a decade before transitioning, how could that be true? Well, as they say, you cannot be told what The Matrix is, you can only be shown.
 
-Some of this is well known comparisons that has been pointed out by people before me. Some of it is my own interpretation of the script in a modern day context. Some of it clearly could not have been predicted ahead of time (the release date of the film occurs on Trans Day of Visibility, for example, even tho that did not start until 10 years later).
+Some of this is well known comparisons that has been pointed out by people before me. Some of it is my own interpretation of the script in a modern day context. Some of it clearly could not have been intentional, and I am most certainly reading more into it than they ever saw. In 2016, Lilly spoke about how trans people were finding so many parallels with the film.
 
-Credit where due, a lot of this post is inspired by [this fantastic twitter thread](https://twitter.com/glitchliz/status/966061698837876736) by Elizabeth Bell, and [this fantastic article](https://birthmoviesdeath.com/2019/03/26/my-name-is-neo-transgender-self-discovery-in-the-matrix) by Leigh Monson.
+> There’s a critical eye being cast back on Lana and I’s work through the lens of our transness. This is a cool thing because it’s an excellent reminder that art is never static. And while the ideas of identity and transformation are critical components in our work, the bedrock that all ideas rest upon is love.
+
+Credit where due, a lot of this post is inspired by [this fantastic twitter thread](https://twitter.com/glitchliz/status/966061698837876736) by Elizabeth Bell, and [this excellent article](https://birthmoviesdeath.com/2019/03/26/my-name-is-neo-transgender-self-discovery-in-the-matrix) by Leigh Monson.
 
 Also, I want to apologize in advance for any binary-centric trans viewpoints. I don't mean to be exclusionary, it's just that I am a binary woman and this is written from my perspective.
+
+### Hold on to your hat, Dorothy. Kansas is going bye bye.
 
 <div class="matrix-row lightbox">
   <a href="../01-1.jpeg"><img src="../01-1.sm.jpeg" alt="SMITH: The orders were for your protection."></a>
@@ -96,7 +100,7 @@ Because of complications and challenges with obtaining licensed hormone therapy,
   <a href="../07-3.jpeg"><img src="/images/filler.png" data-src="../07-3.sm.jpeg" alt="NEO: Ever have that feeling where you're not sure if you're awake or dreaming?"></a>
 </div>
 
-The book that Neo stores his money and... whatever it is he's selling, is titled Simulacra and Simulation, a 1981 philosophy book about symbolism in society and how it affects the shared human experience and how we perceive reality. When Neo opens the book, his hidden compartment is contained in the chapter on Nihilism, which is the principle of life having no intrinsic meaning or value. One aspect of Nihilism is the belief that reality does not exist. Three seconds of screen time and the movie has hit us with some very heavy principles.
+The book that Neo stores his money and... whatever it is he's selling, is titled [Simulacra and Simulation](https://en.wikipedia.org/wiki/Simulacra_and_Simulation), a 1981 philosophy book about symbolism in society and how it affects the shared human experience and how we perceive reality. When Neo opens the book, his hidden compartment is contained in the chapter on [Nihilism](https://en.wikipedia.org/wiki/Nihilism), which is the principle of life having no intrinsic meaning or value. One aspect of Nihilism is the belief that reality does not exist. Three seconds of screen time and the movie has hit us with some very heavy principles.
 
 This is the first set of references in the film to Depersonalization and Derealization, mental states where the mind disconnects from the body and the world around it. If you've ever found yourself feeling like the life you walk through isn't real, like it's all a facsimile, that is derealization. I remember having both of these feelings extremely strongly as a teenager.
 
@@ -522,8 +526,8 @@ This scene always bothers me, because the things Neo remembers did actually happ
 The Oracle represents a gender therapist. Therapists who specialize in transgender care aren't there to tell us what gender we are, they're simply trained to help us explore our own feelings and solidify our own understanding of who we are. They help us find the path, and then guide us as we walk that path. They enable us to process the trauma that we developed as children and the trauma that we experience as we transition.
 
 <div class="matrix-row lightbox">
-  <a href="../49-1.jpeg"><img src="/images/filler.png" data-src="../49-1.sm.jpeg" alt="MORPHEUS: I told you that I can only show you the door."></a>
-  <a href="../49-2.jpeg"><img src="/images/filler.png" data-src="../49-2.sm.jpeg" alt="MORPHEUS: You have to walk through it."></a>
+  <a href="../50-1.jpeg"><img src="/images/filler.png" data-src="../50-1.sm.jpeg" alt="MORPHEUS: I told you that I can only show you the door."></a>
+  <a href="../50-2.jpeg"><img src="/images/filler.png" data-src="../50-2.sm.jpeg" alt="MORPHEUS: You have to walk through it."></a>
 </div>
 
 The community can only do so much to help a person progress into and through transition, the really hard steps can only be taken by ourselves individually. This is a fundamental check and balance on the entire system, built to ensure that people who aren't actually transgender aren't tricked or manipulated into transition. No one is "transing" kids, no one ever gave a cis girl testosterone just because she's a tomboy, and nobody ever medically transitioned as part of a fad or trend, the system doesn't allow for that.
@@ -718,7 +722,7 @@ Smith knows the name Neo, he knows that this is the name Neo prefers to call him
 
 There is another symbolism of this scene that isn't obvious if you don't know Lana Wacowski's story.
 
-In 2012, at the Human Rights Campaign's annual gala, [Lana delivered a passionate speech](https://www.hollywoodreporter.com/news/lana-wachowskis-hrc-visibility-award-382177) about the story of her transition (CW: This speech is from before Lily came out, and thus deadnames her). She talks of when she was a teenager and stood in a subway station, much like this one, ready and prepared to jump out on to the tracks just as the train approached. As the train approaches, an old man comes down the ramp and just stands there and stares at her. Because he was watching, she couldn't take the step.
+In 2012, at the Human Rights Campaign's annual gala, [Lana delivered a passionate speech](https://www.hollywoodreporter.com/news/lana-wachowskis-hrc-visibility-award-382177) about the story of her transition (CW: This speech is from before Lilly came out, and thus deadnames her). She talks of when she was a teenager and stood in a subway station, much like this one, ready and prepared to jump out on to the tracks just as the train approached. As the train approaches, an old man comes down the ramp and just stands there and stares at her. Because he was watching, she couldn't take the step.
 
 > Invisibility is indivisible from visibility; for the transgender this is not simply a philosophical conundrum -- it can be the difference between life and death.
 
@@ -764,3 +768,5 @@ Neo has reached [stage three](../threeyears.jpg) of transition. He is no longer 
 </div>
 
 It must be horribly frustrating to be misgendered by your greatest work, a film loved my hundreds of millions of people. There has been a campaign to get Wikipedia to change this credit on the film's page, and the organization has repeatedly rejected the change over and over again on a basis of "Historical Accuracy". Even IMDB notes that the credit is wrong, but Wikipedia stubbornly refuses.
+
+<div class="footer">All screenshots in this article are Copyright Warner Home Video and are captured from my personal Bluray copy of The Matrix</div>
