@@ -105,20 +105,17 @@ exports.posts = function buildPosts () {
         cwd: path.dirname(file.path),
       });
 
-      if (!images.length) {
-        log.error(`Post is missing images, skipping. (${cwd})`);
-        return;
+      if (images.length) {
+        file.meta.images = images.map((imgpath) => {
+          const ext = path.extname(imgpath);
+          const basename = path.basename(imgpath, ext);
+          if (ext === '.m4v') {
+            return `/p/${file.meta.id}/${basename}.m4v`;
+          }
+
+          return `/p/${file.meta.id}/${basename}.jpeg`;
+        });
       }
-
-      file.meta.images = images.map((imgpath) => {
-        const ext = path.extname(imgpath);
-        const basename = path.basename(imgpath, ext);
-        if (ext === '.m4v') {
-          return `/p/${file.meta.id}/${basename}.m4v`;
-        }
-
-        return `/p/${file.meta.id}/${basename}.jpeg`;
-      });
 
       const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
 
@@ -146,7 +143,7 @@ exports.posts = function buildPosts () {
       if (poster) {
         file.meta.poster = `/p/${file.meta.id}/poster.jpeg`;
         file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
-      } else {
+      } else if (images.length) {
         file.meta.poster = file.meta.images[0];
         file.meta.dimensions = await dimensions(path.resolve(cwd, images[0]));
       }
