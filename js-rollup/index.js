@@ -19,7 +19,7 @@ const IndexView = Backbone.View.extend({
   template: Handlebars.compile(`
     <h3 class="tagged-header">
       <span>Latest Posts</span>
-      <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i></button>
+      <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i><span>&nbsp;Filter By Tag</span></button>
     </h3>
     <div class="post-grid">
       {{#with posts.first}}
@@ -98,7 +98,7 @@ const IndexView = Backbone.View.extend({
       html = `
         <h3 class="tagged-header">
           <span>${this.tags[this.tag]}</span>
-          <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i></button>
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i><span>&nbsp;Filter By Tag</span></button>
         </h3>
         <div class="post-grid">${html.join('')}</div>
       `;

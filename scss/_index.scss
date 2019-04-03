@@ -8,7 +8,19 @@
     align-items: center;
     justify-content: flex-start;
     span { flex: 1; }
-    .btn { flex: 0; }
+    .btn {
+      flex: 0;
+      span, i {
+        white-space: nowrap;
+        display: inline;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .btn span {
+        display: none;
+      }
+    }
   }
 
   .post-grid {
