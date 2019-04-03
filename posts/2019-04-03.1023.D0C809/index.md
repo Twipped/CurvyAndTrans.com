@@ -9,11 +9,11 @@ tags:
   - Film
   - Essays
 noimages: true
-draft: true
 span: 8
 shortCard: true
 lightbox: true
 lazy: true
+instagram: https://www.instagram.com/p/BvxxUWwHAPF/
 ---
 
 It was the spring of 1999, almost exactly twenty years ago, and I stood outside the box office at Pacific Theatre's Carmel Mountain 12 cinema, shortly before noon, having just gotten off work for the day from my job at Borders Books & Music across the street. The film I was going to see was making enormous waves online, people were raving about this incredible action blockbuster, The Matrix, a title which at the time seemed cliche to anyone who had grown up on the Internet like I had.
@@ -40,7 +40,9 @@ Also, I want to apologize in advance for any binary-centric trans viewpoints. I 
   <a href="../01-3.jpeg"><img src="../01-3.sm.jpeg" alt="SMITH: No, lieutenant, your men are already dead."></a>
 </div>
 
-The police and agents in the film represent the parents of trans people, gatekeepers, and cisgender society in general that pushes back against any gender non-conformity in a desperate attempt to maintain the status quo. Through most of the movie, Trinity represents the trans community, encouraging visibility and representation so that trans eggs can find themselves. In this scene, the cops/parents are saying to the agents "we've got this, we can keep our trans child from discovering who they are" and Smith is telling them "you have already failed, the child you thought you knew is gone." Trans kids were never their assigned gender, they are trans regardless of if they know or not, and keeping the knowledge from them will not change that.
+The police and agents in the film represent the parents of trans people, gatekeepers, and cisgender society in general that pushes back against any gender non-conformity in a desperate attempt to maintain the status quo. Through most of the movie, Trinity represents the trans community, encouraging visibility and representation so that gender questioning people can find themselves (Neo being the person who is questioning).
+
+In this scene, the cops/parents are saying to the agents "we've got this, we can keep our trans child from discovering who they are" and Smith is telling them "you have already failed, the child you thought you knew is gone." Trans kids were never their assigned gender, they are trans regardless of if they know or not, and keeping the knowledge from them will not change that.
 
 <div class="matrix-row lightbox">
   <a href="../02-1.jpeg"><img src="../02-1.sm.jpeg" alt="Trinity leaps into the air, the film pausing to pan around her frozen mid leap, preparing to kick a policeman."></a>
@@ -68,11 +70,21 @@ One of the most well known quislings is the irredeemable Blair White, a youtuber
 
 Here we see Neo searching the internet, trying to find Morpheus, knowing that Morpheus has the answers he seeks.
 
-The Internet opened up a massive gateway to trans support. Before the web exploded into mainstream use, information on trans identities was extremely hard to find and was largely religated to in-person support groups. The web was the great equalizer, however, and suddenly a wealth of data became available at your fingertips. One of the largest sites for this in the late 90s was Susan's Place, an online forum [which launched in 1995](https://planettransgender.com/susans-place-founder-susan-larson-comes-out/). If you searched google for transgender resources, Susan's Place was on page one. Even today, searching for most trans topics will still yield links forum threads on the site.
+The Internet opened up a massive gateway to trans support. Before the web exploded into mainstream use, information on trans identities was extremely hard to find and was largely religated to in-person support groups. The web was the great equalizer, however, and suddenly a wealth of data became available at your fingertips. One of the largest sites for this in the late 90s was Susan's Place, an online forum [which launched in 1995](https://planettransgender.com/susans-place-founder-susan-larson-comes-out/). If you searched the web for transgender resources, Susan's Place was on page one. Even today, searching for most trans topics will still yield links to forum threads on the site.
 
-Unfortunately, the site also tends to enable some of the less palatable sides of the trans community. I found Susan's Place when I was 16, and the conversations it held at the time only further reinforced my beliefs that my gender feelings were a fetish that I should be ashamed of. This is still sadly true of the site today, many of the site's patrons demonstrate fetishistic views on gender and transition. Thankfully, there are many other much higher ranked resources available now which are more accepting of different trans narratives, and those were the sites I found when I returned to google in 2017, sitting at a cluttered desk not that dissimilar to Neo's.
+Unfortunately, the site also tends to enable some of the less palatable sides of the trans community. I found Susan's Place when I was 16, and the conversations it held at the time only further reinforced my beliefs that my gender feelings were a fetish that I should be ashamed of. Thankfully, today there are many other much higher ranked resources available which are more accepting of different trans narratives, and those were the sites that I found when I googled again in 2017, sitting at a cluttered desk not that dissimilar to Neo's.
 
-Incidentally, the song playing on Neo's headphones in this scene is Massive Attack's [Dissolved Girl](https://www.youtube.com/watch?v=6lcZ0redg1s). [Read the lyrics](https://genius.com/Massive-attack-dissolved-girl-lyrics), this song resonates heavily with being trans.
+Incidentally, the song playing on Neo's headphones in this scene is Massive Attack's [Dissolved Girl](https://www.youtube.com/watch?v=6lcZ0redg1s).
+
+> Shame, such a shame   
+> I think I kinda lost myself again   
+> Day, yesterday   
+> Really should be leaving, but I stay   
+>
+> Say, say my name   
+> I need a little love to ease the pain   
+> I need a little love to ease the pain   
+> It's easy to remember when it came   
 
 <div class="matrix-row lightbox">
   <a href="../05-1.jpeg"><img src="/images/filler.png" data-src="../05-1.sm.jpeg" alt=""></a>
@@ -92,7 +104,7 @@ The statement is not just a command to Neo, it's a command to the viewer.  Wake 
   <a href="../06-3.jpeg"><img src="/images/filler.png" data-src="../06-3.sm.jpeg" alt=""></a>
 </div>
 
-Because of complications and challenges with obtaining licensed hormone therapy, some trans people are forced to turn towards black market sources. This was especially true in the 90s, when the requirements for recognizing gender dysphoria were so much stricter. Even today it is quite common for people to turn to "DIY" HRT, purchasing the hormones from foreign pharmacies. Guides exist all over the web to teach people how to self-medicate safely (there's even a subreddit for it). The downside is that this tends to take a lot more money (both because there is no health insurance involved, and because dealers mark up the price significantly), and is usually done through dark channels.
+Because of complications and challenges with obtaining licensed hormone therapy (or even outright bans), some trans people are forced to obtain medications from grey market sources. It is quite common for people to turn to "DIY" HRT, purchasing the hormones from foreign pharmacies. Guides exist all over the web to teach people how to self-medicate safely (there's even a subreddit for it). The downside is that this tends to take a lot more money (both because there is no health insurance involved, and because dealers mark up the price significantly), and is usually done through dark channels.
 
 <div class="matrix-row lightbox">
   <a href="../07-1.jpeg"><img src="/images/filler.png" data-src="../07-1.sm.jpeg" alt="Neo holds a book titled Simulacra and Simulation."></a>
@@ -100,7 +112,7 @@ Because of complications and challenges with obtaining licensed hormone therapy,
   <a href="../07-3.jpeg"><img src="/images/filler.png" data-src="../07-3.sm.jpeg" alt="NEO: Ever have that feeling where you're not sure if you're awake or dreaming?"></a>
 </div>
 
-The book that Neo stores his money and... whatever it is he's selling, is titled [Simulacra and Simulation](https://en.wikipedia.org/wiki/Simulacra_and_Simulation), a 1981 philosophy book about symbolism in society and how it affects the shared human experience and how we perceive reality. When Neo opens the book, his hidden compartment is contained in the chapter on [Nihilism](https://en.wikipedia.org/wiki/Nihilism), which is the principle of life having no intrinsic meaning or value. One aspect of Nihilism is the belief that reality does not exist. Three seconds of screen time and the movie has hit us with some very heavy principles.
+The book that Neo stores his money and... whatever it is he's selling, is titled [Simulacra and Simulation](https://en.wikipedia.org/wiki/Simulacra_and_Simulation), a 1981 philosophy book about symbolism in society, how it affects the shared human experience, and how we perceive reality. When Neo opens the book, his hidden compartment is contained in the chapter on [Nihilism](https://en.wikipedia.org/wiki/Nihilism), which is the principle of life having no intrinsic meaning or value. One aspect of Nihilism is the belief that reality does not exist. Three seconds of screen time and the movie has hit us with some very heavy principles.
 
 This is the first set of references in the film to Depersonalization and Derealization, mental states where the mind disconnects from the body and the world around it. If you've ever found yourself feeling like the life you walk through isn't real, like it's all a facsimile, that is derealization. I remember having both of these feelings extremely strongly as a teenager.
 
@@ -131,7 +143,7 @@ The song playing in this scene is [Rob Zombie's Dragula](https://www.youtube.com
   <a href="../09-3.jpeg"><img src="/images/filler.png" data-src="../09-3.sm.jpeg" alt="TRINITY: Most guys do."></a>
 </div>
 
-Do I have to explain this? I mean, there's the obvious factors here of how in the 90s many men believed there were "no girls on the internet", there's also the implication of how many people are surprised when a trans woman comes out because "[they had always seemed so manly](/p/047AE7/the-parts-we-play/)".
+There's the obvious sexism here of how in the 90s and 2000s many men believed there were "no girls on the internet" (see [rules 29 and 30](https://knowyourmeme.com/memes/rules-of-the-internet), there's also the implication of how many people are surprised when a trans woman comes out because "[they had always seemed so manly](/p/047AE7/the-parts-we-play/)".
 
 <div class="matrix-row lightbox">
   <a href="../10-1.jpeg"><img src="/images/filler.png" data-src="../10-1.sm.jpeg" alt="TRINITY: I know why you're here, Neo."></a>
@@ -151,7 +163,9 @@ Neo works for a company named Metacortex. Meta, meaning "self-referential" and C
 
 Neo is a programmer who has difficulty meshing with the established organizational structures. Trans deviation from social norms is seen as some kind of selfishness by gatekeepers and cishets who are comfortable within their society. We upset them, because they don't understand why we can't just "be normal", follow the rules, and stop acting so special.
 
-Now, in the 90s this wasn't as common, so I can't call this an intentional link, but today the number one trade for trans women is software engineering or other computer related careers. It's astounding just how over represented trans women are in technology. The tech industry is full of social outcasts, people who didn't fit into molds. The freaks and geeks, as it were, were strongly drawn to computer jobs because they had low requirements for socializing, and interpersonal problems were practically the norm. This is the perfect nesting ground for trans eggs. Personally, computing gave me the opportunity to escape, to zone out and stop thinking about my life. I could delve into a problem and become absorbed by it, leaving my physical body behind. It was freeing.
+Now, in the 90s this wasn't as common, so I can't call this an intentional link, but today the number one trade for trans women is software engineering or other computer related careers. It's astounding just how represented trans women are in technology. The tech industry is full of social outcasts, people who didn't fit into molds. The freaks and geeks, as it were, were strongly drawn to computer jobs because they had low requirements for socializing, and interpersonal problems were practically the norm. This is the perfect nesting ground for trans people (education is also curiously well represented).
+
+Personally, computing gave me the opportunity to escape, to zone out and stop thinking about my life. I could delve into a problem and become absorbed by it, leaving my physical body behind. It was freeing.
 
 <div class="matrix-row lightbox">
   <a href="../12-0.jpeg"><img src="/images/filler.png" data-src="../12-0.sm.jpeg" alt="RINEHEART: The time has come to make a choice, Mr. Anderson."></a>
@@ -173,9 +187,9 @@ Deadnaming sucks.
   <a href="../14-3.jpeg"><img src="/images/filler.png" data-src="../14-3.sm.jpeg" alt="MORPHEUS: I can guide you, but you must do exactly as I say."></a>
 </div>
 
-Through most of this film, Morpheus takes on the role of a transmom, a trans woman that guides other trans women through acceptance and transition. Morpheus tells Neo what he needs to know to figure out who he really is, and guides him on the path to taking control of his life.
+Through most of this film, Morpheus takes on the role of a trans mentor, a trans person that guides people through acceptance and transition. Morpheus tells Neo what he needs to know to figure out who he really is, and guides him on the path to taking control of his life.
 
-Transmoms were very important back in the 90s and earlier, because getting treatment for gender dysphoria was exceptionally difficult. The [requirements for transition](/p/25BF97/a-trans-explosion/) were extremely strict, which meant that a lot of trans women were required to lie to their therapists and doctors in order to obtain treatment. Transmoms would instruct other trans women, coaching them on what to say at these appointments in order to hit the checkmarks that would open up the gates. If you deviated from the script, or faltered in your delivery, the gatekeeper would sense the deception, and you would be banned from any further therapy.
+Trans mentors were critically important pre-WPATH, because getting treatment for gender dysphoria was exceptionally difficult. The [requirements for transition](/p/25BF97/a-trans-explosion/) were extremely strict, which meant that a lot of trans women were required to lie to their therapists and doctors in order to obtain treatment. Trans mentors would coach people new to the community on what to say at these appointments in order to hit the checkmarks that would open up the gates. If you deviated from the script, or faltered in your delivery, the gatekeeper would sense the deception, and you would be banned from any further therapy.
 
 <div class="matrix-row lightbox">
   <a href="../15-0.jpeg"><img src="/images/filler.png" data-src="../15-0.sm.jpeg" alt="MORPHEUS: They're coming for you, and I don't know what they're going to do."></a>
@@ -183,14 +197,13 @@ Transmoms were very important back in the 90s and earlier, because getting treat
 
 As of this writing only 15 states in the U.S. ban [Conversion Therapy](https://en.wikipedia.org/wiki/Conversion_therapy) programs, plus an additional 51 cities (counting the District of Columbia). Outside of those places, including the state I grew up in (Michigan), it is still fully legal to force an individual into programs designed to enforce cisgender and heterosexual behavior in children and adults. These programs typically involve practices tantamount to torture. Not only do the programs not work (one study found that 88% of surviving participants return to their natural inclinations), many subjects do not leave the programs alive.
 
-
 <div class="matrix-row lightbox">
   <a href="../16-1.jpeg"><img src="/images/filler.png" data-src="../16-1.sm.jpeg" alt="NEO: No way! No Way! This is crazy!"></a>
   <a href="../16-2.jpeg"><img src="/images/filler.png" data-src="../16-2.sm.jpeg" alt="NEO: Why is this happening to me?"></a>
   <a href="../16-3.jpeg"><img src="/images/filler.png" data-src="../16-3.sm.jpeg" alt="NEO: I can't do this."></a>
 </div>
 
-Breaking away from the cisgender heternormative lives that we grow up with is extremely hard, even painful. These principles are taught to us from the moment we can speak and we're surrounded with people who never question their position in these spaces. Even just realizing that one is gay is hard enough, but defying your assigned gender... it feels like insanity. Yet, the feelings persist, and we keep returning to it over and over again. We're left wondering why we are so strange, why we have been cursed with this affliction. Why can't we just be "normal"? We can't control if we're transgender, it just happens.
+Breaking away from the cisgender heternormative lives that we grow up with is extremely hard, even painful. These principles are taught to us before we can even speak and we're surrounded with people who never question their position in these spaces. Even just realizing that one is gay is hard enough, but defying your assigned gender... it feels like insanity. Yet, the feelings persist, and we keep returning to it over and over again. We're left wondering why we are so strange, why we have been cursed with this affliction. Why can't we just be "normal"? We can't control if we're transgender, it just happens.
 
 Many trans people give up, we try as hard as possible to forget, to ignore our feelings and to just live a normal life in the frameworks laid before us. We hide our heads in the sand and pray it will go away if we just do what we're told to do. We look across the chasm, we see an escape, but we are too afraid, the path is too dangerous, so we turn back.
 
@@ -248,7 +261,7 @@ Walking away from therapy and treatment means continuing down the path of repres
   <a href="../23-3.jpeg"><img src="/images/filler.png" data-src="../23-3.sm.jpeg" alt="Extracted bug, lying on the concrete outside the car, cast out."></a>
 </div>
 
-The bug represents internalized transphobia, preventing us from accepting who we are and/or accepting that other trans people as just like us and just as valid as us. Transphobia is instilled in everyone from childhood, our media is drenched in it, and in all likelihood we grew up with family members who reinforced those stigmas. We have to shed these beliefs before we can accept ourselves and move forward with transition.
+The bug represents internalized transphobia, preventing us from accepting who we are and/or accepting other trans people as equally valid. Transphobia is instilled in everyone from childhood, our media is drenched in it, and in all likelihood we grew up with family members who reinforced those stigmas. We have to shed these beliefs before we can accept ourselves and move forward with transition.
 
 <div class="matrix-row lightbox">
   <a href="../24-1.jpeg"><img src="/images/filler.png" data-src="../24-1.sm.jpeg" alt="MORPHEUS: I can see it in your eyes."></a>
@@ -256,7 +269,7 @@ The bug represents internalized transphobia, preventing us from accepting who we
   <a href="../24-3.jpeg"><img src="/images/filler.png" data-src="../24-3.sm.jpeg" alt="MORPHEUS: Because he's expecting to wake up."></a>
 </div>
 
-One of the most common compliments I get on transition timeline photos is how different my eyes look, how dead they looked before, and how bright with life they are now. Trans women know this look very well, we see it in most of our old photos, a loss of hope for the future because the world is what it is and we believe we cannot escape it. You can always spot a trans egg because of that look in their eyes.
+One of the most common compliments I get on transition timeline photos is how different my eyes look, how dead they looked before, and how bright with life they are now. Trans women know this look very well, we see it in most of our old photos, a loss of hope for the future because the world is what it is and we believe we cannot escape it. You can often spot a trans person experiencing depersonalization because of that look in their eyes.
 
 <div class="matrix-row lightbox">
   <a href="../25-1.jpeg"><img src="/images/filler.png" data-src="../25-1.sm.jpeg" alt="MORPHEUS: You know something."></a>
@@ -269,7 +282,7 @@ One of the most common compliments I get on transition timeline photos is how di
   <a href="../25-6.jpeg"><img src="/images/filler.png" data-src="../25-6.sm.jpeg" alt="MORPHEUS: Like a splinter in your mind."></a>
 </div>
 
-Sometimes trans folk figure themselves out young, especially if they're exposed to the knowledge that being trans is possible. But when they're not exposed, when the very idea that your gender could not be what people say it is has been kept from you, all you are left with is a constant sense of wrongness. _Something is wrong with the world._ Your story didn't take the path it was supposed to take, you're in the wrong timeline, and it hurts in a way you cannot describe.
+Sometimes trans folks figure themselves out young, especially if they're exposed to the knowledge that being trans is possible. But when they're not exposed, when the very idea that your gender could not be what people say it is has been kept from you, all you are left with is a constant sense of wrongness. _Something is wrong with the world._ Your story didn't take the path it was supposed to take, you're in the wrong timeline, and it hurts in a way you cannot describe.
 
 <div class="matrix-row lightbox">
   <a href="../26-1.jpeg"><img src="/images/filler.png" data-src="../26-1.sm.jpeg" alt="MORPHEUS: Unfortunately, no one can be..."></a>
@@ -277,7 +290,7 @@ Sometimes trans folk figure themselves out young, especially if they're exposed 
   <a href="../26-3.jpeg"><img src="/images/filler.png" data-src="../26-3.sm.jpeg" alt="MORPHEUS: You have to see it for yourself."></a>
 </div>
 
-I have used this line _so many times_ when talking about Gender Dysphoria and gender transition. The concept itself is so foreign to most cis people that it isn't really possible to describe with language. We can provide allegories, metaphors for what it's like, but it would take a hundred metaphors to even scratch the surface of the sensations and experiences that we live. Even when talking to a trans egg, you cannot explain just how relieving it feels to be on hormone therapy, just how good it feels to be called by the correct name and pronouns, to look in the mirror and to love the person looking back at you when all you've ever known is hate for your reflection, the sheer euphoria of putting on clothes that actually feel right and that fit you in the ways you know they were always supposed to fit.
+I have used this line _so many times_ when talking about Gender Dysphoria and gender transition. The concept itself is so foreign to most cis people that it isn't really possible to describe with language. We can provide allegories, metaphors for what it's like, but it would take a hundred metaphors to even scratch the surface of the sensations and experiences that we live. Even when talking to a baby trans (someone who has just recently realized they're transgender), you cannot explain just how relieving it feels to be on hormone therapy. You can't fully give the depth how good it feels to be called by the correct name and pronouns, to look in the mirror and to love the person looking back at you when all you've ever known is hate for your reflection, the sheer euphoria of putting on clothes that actually feel right and that fit you in the ways you know they were always supposed to fit.
 
 You can only know that feeling by experiencing it. [You have to be shown.](https://www.deviantart.com/translucidcomic/art/TransLucid-11-Birthday-581421027)
 
@@ -397,7 +410,7 @@ COME ON!!
 
 The entire dojo sequence is Morpheus trying to teach Neo how to believe in himself, how to unlock his potential, build his confidence, and recognize who he really is. It's about breaking doubt and denial so that Neo's powers come naturally.
 
-The comparison here is in learning how to recognize oneself not as wishing you were your true gender, or wanting to be your true gender, but rather that you already are. Only in this freedom can one express themselves genuinely. Without that freedom, everything will feel like a facsimile, an imitation, and that will harm your confidence in your presentation. One doesn't learn how to be a man/woman, one learns how to express their own manhood/womanhood, and to have confidence in that expression.
+The comparison here is in learning how to recognize oneself not as wishing you were your true gender, or wanting to be your true gender, but rather that you already are. Only in this freedom can one express themselves genuinely. Without that freedom, everything will feel like a facsimile, an imitation, and that will harm your confidence in your presentation. One doesn't learn how to be their gender, one learns how to express their gender, and to have confidence in that expression.
 
 Don't think you are, know you are.
 
@@ -494,7 +507,11 @@ TERFs and right wing media LOVE quislings, they suck them up and shower them wit
   <a href="../47-3.jpeg"><img src="/images/filler.png" data-src="../47-3.sm.jpeg" alt="MOUSE: Maybe they got it wrong?"></a>
 </div>
 
-What does it feel like to be a woman? What does it feel like to be a man? How does one know if you're one or the other. That old cliche of being "a woman trapped in a man's body" is tired and worn out, but really, how do we know what womanhood feels like? How does anyone know how their perception of reality differs from others?
+What does it feel like to be a woman? What does it feel like to be a man? What does it feel like to be neither, or both? How does one know? Even if you're cisgender, how do you know that you're cisgender?
+
+One person's perception of a taste is completely different from another's. Dozens of factors affect taste before it is even registered by the senses. Even tasting the same thing twice isn't really possible because of variations in chemical composition throughout food. Existing chemicals in the mouth alter the way different tastes are perceived, and even mixing two different flavors together creates a totally new sensation. Then, once those tastes click in to place, the way the senses process them varies from human to human. Many trans women have reported the taste of cilantro changing with their transition, because estrogen alters the gene expressions in the body that are triggered when cilantro is tasted.
+
+Gender isn't something that can be critically analyzed. That old cliche of being "a woman trapped in a man's body" is tired and worn out, but really, how do we know what womanhood feels like? How does anyone know how their perception of reality differs from others?
 
 When I was a teenager (as someone who at the time thought they were a boy) I remember pondering how women think. How do girls see the world, and how did it differ from my own perceptions.  Sure, 90% of the social differences between men and women are learned behavior, but there's still something clearly different in the way binary men see the world and binary women see the world.
 
@@ -636,7 +653,7 @@ There was an [extremely sad story](https://www.reddit.com/r/asktransgender/comme
 
 At the start of this scene Smith marvels at the beauty of the creation before them. Billions of people just living their lives day to day. He sees the Matrix as a system of organization, neatly structured and ordered. He likes the neatness of it, he values the safety of what the machines have wrought. Smith is cisheteronormativity, a structured formula where every human being falls into two buckets, and never the two shall mix. He is conservatism, never wanting any change to this neatly classified system, and Morpheus represents liberal progressives trying to wake people up from that lie.
 
-Science has revealed time and again that sexuality, gender, and even anatomical sex itself does NOT fall into neat little buckets, it's all one big spilled mess of colors on the floor, but conservatives don't want to look at that floor. They're happy with their ignorance, and willfully ignore the mess, even when they slip on it by excluding and harming cisgender heterosexuals who don't fit into the bucket. In the same way, Smith didn't what The Architect and The Oracle knew... that the entire resistance and The One themself were all part of the system, that the "chaos" as he saw it was built in on purpose.
+Science has revealed time and again that sexuality, gender, and even anatomical sex itself does NOT fall into neat little buckets, it's all one big spilled mess of colors on the floor, but conservatives don't want to look at that floor. They're happy with their ignorance, and willfully ignore the mess, even when they slip on it by excluding and harming cisgender heterosexuals who don't fit into the bucket. In the same way, Smith didn't know what The Architect and The Oracle knew... that the entire resistance and The One themself were all part of the system, that the "chaos" as he saw it was built in on purpose.
 
 Smith was just another tool in the system.
 
