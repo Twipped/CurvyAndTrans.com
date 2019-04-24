@@ -12,7 +12,7 @@ const ROOT = path.dirname(__dirname);
 const DEST = 'docs/css';
 
 module.exports = exports = function buildScss () {
-  return src([ 'scss/*.scss', 'scss/_*.scss' ])
+  return src([ 'scss/*.scss', '!scss/_*.scss' ])
     .pipe(scss({
       includePaths: [ path.join(ROOT, 'node_modules') ],
     }))
@@ -20,7 +20,7 @@ module.exports = exports = function buildScss () {
 };
 
 exports.prod = function buildScssForProd () {
-  return src([ 'scss/*.scss', 'scss/_*.scss' ])
+  return src([ 'scss/*.scss', '!scss/_*.scss' ])
     .pipe(scss({
       outputStyle: 'compressed',
       includePaths: [ path.join(ROOT, 'node_modules') ],

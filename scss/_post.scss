@@ -233,13 +233,17 @@
     blockquote {
       font-family: 'Georgia';
       font-weight: 200;
-      font-size: 1.1em;
+      font-size: 1.05em;
       line-height: 1.4;
       background: #f0f8ff;
       border: 1px solid darken(#f0f8ff, 10%);
       padding: 15px;
 
       position: relative;
+
+      strong {
+        font-weight: 600;
+      }
 
       &::before {
         font-family: "Montez", cursive;
