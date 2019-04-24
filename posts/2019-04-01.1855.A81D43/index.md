@@ -4,7 +4,7 @@ date: "2019-04-02T01:55:00.000Z"
 title: "Swim Euphoria"
 description: "A long wanted wish fulfilled"
 tags:
-  - Body Confidence
+  - Body Positivity
 products:
   "Coastal Blue Women's Plus Size Swimwear Mesh High Waist Bikini Bottom (3X)": https://www.amazon.com/exec/obidos/ASIN/B01MYO1J8C/curvyandtrans-20
   "Coastal Blue Women's Plus Size Swimwear Mesh High Neck Bikini Top (1X)": https://www.amazon.com/exec/obidos/ASIN/B01N423Y6H/curvyandtrans-20

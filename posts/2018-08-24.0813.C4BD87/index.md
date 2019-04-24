@@ -3,7 +3,8 @@ id: "C4BD87"
 date: "2018-08-24T15:13:00.000Z"
 title: "Cycle Dynamics: Why Trans Women Can Have Periods"
 description: "A dive into the endocrinology of the female hormone cycle."
-span: 7
+span: 8
+shortCard: true
 tags:
   - Transgender
   - Medical

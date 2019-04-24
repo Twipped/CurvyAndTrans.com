@@ -4,6 +4,7 @@ date: "2019-03-07T18:25:00.000Z"
 title: "Poked and Prodded"
 description: "130 injections down, 1600 to go"
 tags:
+  - Medical
   - Transgender
 single: false
 instagram: https://www.instagram.com/p/BuuU6AIn8Rb/

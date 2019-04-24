@@ -6,6 +6,7 @@ description: "It's science"
 tags:
   - Transgender
   - Essays
+  - Medical
 noimages: true
 instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 ---
