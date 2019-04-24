@@ -26,7 +26,7 @@
       {{#each images}}{{#endsWith this 'm4v'}}
       <a href="{{rev this}}" class="{{#even @index}}even{{else}}odd{{/even}}"><video autoplay muted loop><source src="{{this}}" type="video/mp4"></video>{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
       {{else}}
-      <a href="{{rev this}}" class="{{#even @index}}even{{else}}odd{{/even}}"><img src="{{rev this}}" alt="">{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
+      <a href="{{rev this}}" class="{{#even @index}}even{{else}}odd{{/even}}"><img src="{{rev this}}" alt="{{#if @first}}{{#if alt}}{{alt}}{{/if}}{{/if}}">{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
       {{/endsWith}}{{/each}}
     </div>{{/unless}}
 
