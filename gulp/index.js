@@ -92,7 +92,7 @@ function watcher () {
 
   watch('scss/*.scss', scssTask);
   watch('js/*.js', jsTask);
-  watch([ 'js-rollup/*.js', 'templates/cell.hbs.html' ], jsRollupTask);
+  watch([ 'js-rollup/*.js', 'templates/cell.hbs.html', 'posts-sans.json' ], jsRollupTask);
 
   var forever = require('forever');
   var srv = new forever.Monitor('server.js');
