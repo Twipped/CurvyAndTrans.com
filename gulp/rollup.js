@@ -2,7 +2,7 @@
 const path          = require('path');
 const { src, dest } = require('gulp');
 const rollup = require('gulp-better-rollup');
-const html = require('rollup-plugin-html');
+const { string}  = require('rollup-plugin-string');
 const resolveNodeModules = require('rollup-plugin-node-resolve');
 const commonJs = require('rollup-plugin-commonjs');
 const json = require('rollup-plugin-json');
@@ -21,7 +21,9 @@ function rollupPipe () {
     .pipe(rollup({
       // There is no `input` option as rollup integrates into the gulp pipeline
       plugins: [
-        html(),
+        string({
+          include: '**/*.html',
+        }),
         resolveNodeModules(),
         commonJs(),
         json(),
