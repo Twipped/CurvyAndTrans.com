@@ -43,6 +43,7 @@ exports.loadLayout = async function loadLayout () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('cell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/cell.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
+    if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
     return '/' + url;
   });
@@ -59,6 +60,7 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('cell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/cell.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
+    if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
 
     if (manifest[url]) return '/' + manifest[url];
@@ -115,6 +117,8 @@ exports.posts = function buildPosts () {
 
           return `/p/${file.meta.id}/${basename}.jpeg`;
         });
+      } else {
+        file.meta.noimages = true;
       }
 
       const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
@@ -147,13 +151,19 @@ exports.posts = function buildPosts () {
         file.meta.poster = file.meta.images[0];
         file.meta.dimensions = await dimensions(path.resolve(cwd, images[0]));
       }
-      const { width, height } = file.meta.dimensions;
-      file.meta.dimensions.ratio = Math.round((height / width) * 100);
-      if (!file.meta.span) {
-        file.meta.span = Math.ceil((height / width) * 10);
-      }
-      if (!file.meta.spanLarge) {
-        file.meta.spanLarge = Math.ceil((height / width) * 10) * 2;
+
+      if (file.meta.dimensions) {
+        const { width, height } = file.meta.dimensions;
+        file.meta.dimensions.ratio = Math.round((height / width) * 100);
+        if (!file.meta.span) {
+          file.meta.span = Math.ceil((height / width) * 10);
+        }
+        if (!file.meta.spanLarge) {
+          file.meta.spanLarge = Math.ceil((height / width) * 10) * 2;
+        }
+      } else {
+        file.meta.span = 10;
+        file.meta.spanLarge = 20;
       }
 
       if (file.meta.span < 8 && typeof file.meta.shortCard === 'undefined') {
@@ -223,6 +233,7 @@ exports.posts = function buildPosts () {
     posts.reverse();
 
     function revmatch (url) {
+      if (!url) return '';
       if (url[0] === '/') url = url.substr(1);
 
       if (manifest[url]) return '/' + manifest[url];
