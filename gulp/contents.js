@@ -318,7 +318,8 @@ exports.pages = function buildPages () {
       byTag,
     };
   } else {
-    const [ first, ...ordered ] = byState.final;
+    const first = find(postIndex, (p) => !p.ootd);
+    const ordered = without(byState.final, first);
     posts = {
       all: postIndex,
       ordered,
