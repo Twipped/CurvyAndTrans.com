@@ -92,11 +92,17 @@ exports.posts = function buildPosts () {
       file.meta.fullurl = 'http://curvyandtrans.com' + file.meta.url;
       file.meta.originalpath = path.relative(file.cwd, file.path);
       file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
+      file.meta.classes = file.meta.classes || [];
 
       file.meta.tags = (file.meta.tags || []).reduce((result, tag) => {
         result[slugify(tag).toLowerCase()] = tag;
         return result;
       }, {});
+
+      if (Object.keys(file.meta.tags).length === 1 && file.meta.tags.ootd) {
+        file.meta.classes.push('ootd-only');
+        file.meta.ootd = true;
+      }
 
       if (!file.meta.slug) {
         log.error(`Post could not produce a slug. (${cwd})`);
