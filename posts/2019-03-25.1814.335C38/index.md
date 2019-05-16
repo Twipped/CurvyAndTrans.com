@@ -4,9 +4,9 @@ date: "2019-03-26T01:14:00.000Z"
 title: "Club Carded"
 description: "Outfit of the Day for Mar 25th, 2019"
 tags:
-  - OOTD
   - Transgender
   - Feminism
+  - OOTD
 products:
   "Annabelle Pleated Empire Waist Scoop Neck Short Dress with Pockets, Navy Blue 2X": https://www.amazon.com/exec/obidos/ASIN/B07CKM3ST4/curvyandtrans-20
   "Vialumi Women's Junior Plus Size Cropped Strappy Camisole (2X/3X, White)": https://www.amazon.com/exec/obidos/ASIN/B07GQ11R9P/curvyandtrans-20

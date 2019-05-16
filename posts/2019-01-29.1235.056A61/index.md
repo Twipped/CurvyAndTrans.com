@@ -6,14 +6,16 @@ description: "Bodies are beautiful"
 tags:
   - Body Positivity
   - Feminism
+single: false
+instagram: https://www.instagram.com/p/BtPPzx9Hotq/
 products:
   "Elomi Sachi Strappy Underwire Plunge Bra (UK 42F)": https://www.amazon.com/exec/obidos/ASIN/B0719JSYJD/curvyandtrans-20
 ---
-So apparently posting photos to Instagram of ones self in a state of undress for purposes of body positivity is “uncalled for”, “inappropriate”, “trashy”, and “flaunting one’s self all over the internet".
+So apparently posting photos to Instagram of ones self in a state of undress for purposes of body positivity is “uncalled for”, “inappropriate”, “trashy”, and “flaunting one’s self all over the Internet".
 
 Bodies are beautiful. Confidence is beautiful. Being proud of who you are is beautiful.
 
-This post was inspired by another "body positive" poster on Instagram who went on a rant about how women can show body positivity and be confident in themselves without having to "showcase yourself for the world to see." This is sex shaming rewrapped in body positivity, and I wont stand for it. Phrases like "this is not the place for that" and "there are places on the internet for that kind of thing" are just backwards ways of saying "you are a whore and you belong in a brothel." It is attacking women for taking their own sexual agency and being proud of themselves for it. (To be clear, there is nothing wrong with sex work at all, but people like this think it's the lowest low.) Phrases like "flaunt yourself all over the internet" is just another form of "you're the town floozy", it's shaming a woman for being visible.
+This post was inspired by another "body positive" poster on Instagram who went on a rant about how women can show body positivity and be confident in themselves without having to "showcase yourself for the world to see." This is sex shaming rewrapped in body positivity, and I wont stand for it. Phrases like "this is not the place for that" and "there are places on the Internet for that kind of thing" are just backwards ways of saying "you are a whore and you belong in a brothel." It is attacking women for taking their own sexual agency and being proud of themselves for it. (To be clear, there is nothing wrong with sex work at all, but people like this think it's the lowest low.) Phrases like "flaunt yourself all over the internet" is just another form of "you're the town floozy", it's shaming a woman for being visible.
 
 Lets talk a bit about modesty.
 
