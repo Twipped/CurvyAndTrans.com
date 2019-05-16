@@ -59,6 +59,7 @@
       font-size: 12px;
       align-self: center;
       line-height: 1;
+      text-align: center;
 
       grid-row: 1 / 1;
       grid-column: 1 / 1;
@@ -88,19 +89,26 @@
       .post-poster {
         box-shadow: 0 3px 5px rgba(0,0,0,0.6);
         border-radius: 5px;
+        border: 2px solid #666;
+      }
+
+      .post-title {
+        margin: 0 2px;
       }
 
       .post-description {
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
+        margin: 0 2px 2px 2px;
       }
     }
 
     &.ootd-only {
+      padding: 0 20px 20px 20px;
       .post-title, .post-description { display: none; }
       .post-poster {
         border-radius: 15px;
-        box-shadow: 0 0px 5px rgba(255,255,255,1) inset;
+        box-shadow: 0 0px 5px rgba(255,255,255,1) inset, 0 0px 10px rgba(255,255,255,1) inset;
         opacity: 0.9;
       }
     }
@@ -123,7 +131,11 @@
     }
 
     &.short {
-      .post-poster { grid-row: 2 / 3; }
+      .post-poster {
+        grid-row: 2 / 3;
+        border-radius: 10px;
+        // border: 2px solid #333;
+      }
       .post-title { background: none; }
     }
 
