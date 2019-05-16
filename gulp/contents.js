@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const moment = require('moment');
-const { find, without, sortBy, groupBy, reduce, omit } = require('lodash');
+const { findIndex, sortBy, groupBy, reduce, omit } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
 const slugify = require('slugify');
@@ -238,6 +238,13 @@ exports.posts = function buildPosts () {
     posts = sortBy(posts, 'date');
     posts.reverse();
 
+    var firstPostIndex = findIndex(posts, 'pinned');
+    if (firstPostIndex === -1) firstPostIndex = findIndex(posts, (p) => !p.ootd);
+    if (firstPostIndex > 0) {
+      const first = posts.splice(firstPostIndex, 1)[0];
+      posts.unshift(first);
+    }
+
     function revmatch (url) {
       if (!url) return '';
       if (url[0] === '/') url = url.substr(1);
@@ -285,7 +292,6 @@ exports.pages = function buildPages () {
   const byState = groupBy(postIndex, (p) => (p.draft ? 'draft' : 'final'));
   postIndex = postIndex.filter((p) => !p.draft);
 
-  const pinned = find(postIndex, 'pinned');
   const tagMap = {};
   const byTag = reduce(byState.final, (results, p) => {
     const pTags = p.tags || {};
@@ -306,29 +312,15 @@ exports.pages = function buildPages () {
     return result;
   }, {});
 
-  var posts;
-  if (pinned) {
-    const ordered = without(byState.final, pinned);
-    posts = {
-      all: postIndex,
-      ordered: [ pinned, ...ordered ],
-      first: pinned,
-      drafts: byState.draft,
-      tags,
-      byTag,
-    };
-  } else {
-    const first = find(postIndex, (p) => !p.ootd);
-    const ordered = without(byState.final, first);
-    posts = {
-      all: postIndex,
-      ordered,
-      first,
-      drafts: byState.draft,
-      tags,
-      byTag,
-    };
-  }
+  const first = byState.final[0];
+  var posts = {
+    all: postIndex,
+    ordered: byState.final,
+    first,
+    drafts: byState.draft,
+    tags,
+    byTag,
+  };
 
   return src([ 'pages/*' ])
     .pipe(frontmatter({

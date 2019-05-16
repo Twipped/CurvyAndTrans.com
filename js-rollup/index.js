@@ -3,7 +3,7 @@ import Backbone from 'backbone';
 import Handlebars from 'handlebars/dist/handlebars';
 import postsJSON from '../posts-sans.json';
 import htmlCell from '../templates/cell.hbs.html';
-import { find, without, groupBy, reduce, debounce } from 'lodash';
+import { groupBy, reduce, debounce } from 'lodash';
 import dateFormat from 'date-fns/format';
 import hhFirst from 'helper-hoard/src/helpers/collection/first';
 
@@ -41,8 +41,7 @@ const IndexView = Backbone.View.extend({
     this.step = 14;
 
     const byState = groupBy(postsJSON, (p) => (p.draft ? 'draft' : 'final'));
-    const postIndex = postsJSON.filter((p) => !p.draft);
-    const pinned = find(postIndex, 'pinned');
+
     const tagMap = {};
     const byTag = reduce(byState.final, (results, p) => {
       const tags = p.tags || [];
@@ -66,14 +65,7 @@ const IndexView = Backbone.View.extend({
     this.tags = tags;
     this.byTag = byTag;
 
-    if (pinned) {
-      this.first = pinned;
-      this.posts = without(byState.final, pinned);
-    } else {
-      const [ first, ...ordered ] = byState.final;
-      this.first = first;
-      this.posts = ordered;
-    }
+    [ this.first, ...this.posts ] = byState.final;
 
     this.checkBottom = debounce(this.checkBottom, 100);
 
@@ -90,6 +82,7 @@ const IndexView = Backbone.View.extend({
   },
 
   render () {
+    // return;
     var html;
 
     if (this.tag) {
