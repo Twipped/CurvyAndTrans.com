@@ -11,6 +11,11 @@ tags:
   - Gender Dysphoria
 ---
 
+<ul class="post-products" style="margin-bottom: 20px;">
+  <li class="title"><span class="disclosure">Want to help? <a href="mailto:translations@curvyandtrans.com" style="color: inherit">Email me a link</a> to your translation and I will add it here.</span>Available Translations:</li>
+  <li><a href="https://transgrrrls.wordpress.com/2019/05/19/la-seconde-puberte/">Traduction Française</a></li>
+</ul>
+
 ## What to Expect When You're Expecting Boobs
 
 <a href="../1.jpeg" class="card right span4"><img src="../1.jpeg" alt="" class="card-img-top"></a>This is a compilation of reported medical transition changes collected from testimonials of trans women from various discussion forums and chat rooms, backed up by my own experiences and medical research.
