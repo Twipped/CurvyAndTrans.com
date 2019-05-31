@@ -139,6 +139,12 @@
       .post-title { background: none; }
     }
 
+    &.no-title {
+      .post-title, .post-description {
+        display: none;
+      }
+    }
+
     .post-description {
       font-size: 12px;
       padding: 0 0 10px 15px;
