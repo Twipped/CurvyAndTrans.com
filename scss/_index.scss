@@ -74,7 +74,7 @@
 
     .post-poster {
       background-size: cover;
-      background-position: center center;
+      background-position: bottom center;
       background-repeat: no-repeat;
       position: relative;
 
@@ -130,15 +130,6 @@
       text-shadow: 0 0 1em rgba(255,255,255,0.5), 0 0 0.2em white;
     }
 
-    &.short {
-      .post-poster {
-        grid-row: 2 / 3;
-        border-radius: 10px;
-        // border: 2px solid #333;
-      }
-      .post-title { background: none; }
-    }
-
     &.no-title {
       .post-title, .post-description {
         display: none;
@@ -178,6 +169,15 @@
         padding: 0.5em 0.7em 0 0.7em;
       }
 
+    }
+
+    &.short, &.short.prime {
+      .post-poster {
+        grid-row: 2 / 3;
+        border-radius: 10px;
+        // border: 2px solid #333;
+      }
+      .post-title { background: none; }
     }
 
   }
