@@ -4,7 +4,7 @@ date: "2019-02-06T09:31:00.000Z"
 title: "Managing my curls"
 description: "My regular hair care routine"
 tags:
-  - OOTD
+  - Hair Care
 single: false
 products:
   "Clairol Hair Food Hair Milk": https://www.amazon.com/exec/obidos/ASIN/B073ZNRZP2/curvyandtrans-20
@@ -12,7 +12,7 @@ products:
   "Shea Moisture Curl & Shine Hair Masque": https://www.amazon.com/exec/obidos/ASIN/B07CKGRMYM/curvyandtrans-20
   "Tinkii Argan & Marula Oil Heat Protectant": https://www.amazon.com/exec/obidos/ASIN/B015PG7I6C/curvyandtrans-20
   "TRESemmé Expert Selection Keratin Serum": https://www.amazon.com/exec/obidos/ASIN/B00AO4EBOI/curvyandtrans-20
-  "Blueberry Bliss Curl Oil": https://www.amazon.com/exec/obidos/ASIN/B01EXNIJTI/curvyandtrans-20
+  "Blueberry Bliss Hair Oil": https://www.amazon.com/exec/obidos/ASIN/B01EXNIJTI/curvyandtrans-20
   "Shae Moisture's Curl Enhancing Smoothie": https://www.amazon.com/exec/obidos/ASIN/B0038TVH3Y/curvyandtrans-20
   "Overtone Daily Conditioner, Vibrant Red": https://overtone.co/collections/shop-by-color-red/products/vibrant-red-daily-conditioner
 
