@@ -121,6 +121,7 @@ tags:
   - Skin moistening, change in odor (scrotum and penis begin to smell vaginal)
   - Coloration changes, particularly along the [perineal raphe](https://en.wikipedia.org/wiki/Perineal_raphe)
   - Skin along the shaft and glans thins and becomes more prone to tears/bruising during sex
+  - Perineum becomes very soft to the touch, velvet like
 
 - Perspiration distribution changes
   - Sweating becomes more of a full body experience, less focused on the scalp.
@@ -167,6 +168,9 @@ Some of these may simply be the brain getting what it finally wants.
 - Less likely to engage in arguments or fights, more likely to attempt to defuse or escape heated situations
 
 - Improved balance & spacial awareness (less bumping into walls or kicking doorways)
+
+- A sense of feeling smaller in the world.
+  - This is not just because of physical body changes, your perception shifts and you feel actually smaller.
 
 - Reduced tolerance of caffeine and alcohol
   - Testosterone increases body mass which increases alcohol tolerance.
