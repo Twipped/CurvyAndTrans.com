@@ -10,6 +10,14 @@ tags:
 noimages: true
 instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 ---
+<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+  twttr.events.bind(
+    'rendered', () => {
+    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
+  });
+</script>
+
 <div class="grid grid-row">
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Trans women are biological women.</p>&mdash; IAM (@IndyaMoore) <a href="https://twitter.com/IndyaMoore/status/1096816028200460290?ref_src=twsrc%5Etfw">February 16, 2019</a></blockquote>
 
@@ -85,5 +93,3 @@ Medically, my body is identical to a post-hysterectomy cis woman, save for the c
 The reality is that humans are not sexually dimorphic. The vast majority of traits that we associate as male or female are entirely flexible and dynamic. Biology is [the physiology, behavior, and other qualities of a particular organism](https://en.oxforddictionaries.com/definition/biology), and all aspects of this organism now align female.
 
 I am biologically a woman, and that’s just science.
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
