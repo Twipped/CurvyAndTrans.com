@@ -4,6 +4,6 @@
     {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
   </div>
   <div class="post-poster" style="background-image: url({{rev this.poster}});" {{#if this.alt}}aria-label="{{alt}}"{{/if}}></div>
-  {{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}
+  {{#unless notitle}}{{#if title}}<h2 class="post-title">{{title}}</h2>{{/if}}{{/unless}}
   {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
 </a>
