@@ -386,6 +386,56 @@
 
     }
 
+    .spoiler {
+      text-decoration: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content;
+      grid-template-areas:
+        "content"
+      ;
+
+      .spoiler-wrap {
+        border: 1px solid gray;
+        overflow: hidden;
+        grid-area: content;
+        justify-self: center;
+
+      }
+
+      .spoiler-target {
+        filter: blur(30px);
+        transition-property: -webkit-filter;
+        transition-duration: .2s;
+      }
+
+      .spoiler-caption {
+        grid-area: content;
+        align-self: center;
+        justify-self: center;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-shadow: 0 2px 1px rgba(0,0,0,0.8);
+        z-index: 10;
+
+        transition-property: opacity;
+        transition-duration: .2s;
+        opacity: 1;
+      }
+
+      &:target, &:target {
+        .spoiler-target {
+          filter: blur(0px);
+        }
+
+        .spoiler-caption {
+          opacity: 0;
+        }
+      }
+    }
+
+
     .matrix-row {
       clear: both;
       display: flex;
