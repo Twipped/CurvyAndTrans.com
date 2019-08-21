@@ -63,7 +63,9 @@ module.exports = exports = function s3deploy () {
     .pipe(publisher.sync())
     // .pipe(cloudfront(credentials))
     .pipe(publisher.cache())
-    .pipe(awspublish.reporter());
+    .pipe(awspublish.reporter({
+      states: [ 'create', 'update', 'delete' ],
+    }));
 };
 
 exports.dryrun = function s3DryRun () {
