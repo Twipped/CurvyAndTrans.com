@@ -86,8 +86,8 @@ module.exports = exports = function (options) {
         sourcePath,
         rev,
         cwd: file.cwd,
+        log: [ 'new', sourcePath, destkey ],
       };
-      if (options.log.new) log('[new]', sourcePath, destkey);
       stream.push(file);
       return;
     }
@@ -97,14 +97,14 @@ module.exports = exports = function (options) {
     if (file.buildSaver.rev !== rev) {
       // file has changed, log hash and let file process
       file.buildSaver.rev = rev;
-      if (options.log.update) log('[update]', sourcePath, destkey);
+      file.buildSaver.log = [ 'update', sourcePath, destkey ];
       stream.push(file);
       return;
     }
 
     if (!file.buildSaver.destPath) {
       // this file has never received a destination
-      if (options.log.build) log('[build]', sourcePath, destkey);
+      file.buildSaver.log = [ 'build', sourcePath, destkey ];
       stream.push(file);
       return;
     }
@@ -117,20 +117,20 @@ module.exports = exports = function (options) {
     file.buildSaver.cacheTarget = cacheTarget;
 
     if (options.skip && await fs.pathExists(file.buildSaver.destPath)) {
+      file.buildSaver.log = [ 'skip', sourcePath, destkey ];
       // The file is unchanged and already exists, skip it.
-      if (options.log.skip) log('[skip]', sourcePath, destkey);
       return;
     }
 
     if (await fs.pathExists(cacheTarget)) {
+      file.buildSaver.log = [ 'cached', sourcePath, destkey ];
       cacheQueue.push(file);
       // The file will be read from cache.
-      if (options.log.cached) log('[cached]', sourcePath, destkey);
       return;
     }
 
     // the file does not exist and is not in cache, build it
-    if (options.log.build) log('[build]', sourcePath, destkey);
+    file.buildSaver.log = [ '[build]', sourcePath, destkey ];
     stream.push(file);
   });
 
@@ -151,6 +151,11 @@ module.exports = exports = function (options) {
         // this was not build saved
         stream.push(file);
         return;
+      }
+
+      if (file.buildSaver.log ) {
+        log(...file.buildSaver.log);
+        file.buildSaver.log = undefined;
       }
 
       const destPath = relPath(file.buildSaver.cwd, file.path);
