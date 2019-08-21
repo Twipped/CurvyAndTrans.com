@@ -11,6 +11,8 @@ const asyncthrough  = require('./lib/through');
 const buildsaver    = require('./lib/buildsaver');
 const parallelize   = require('concurrent-transform');
 const clone         = require('gulp-clone');
+const dedupe        = require('./lib/dedupe');
+const sort          = require('./lib/sort');
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
@@ -45,24 +47,37 @@ module.exports = exports = function imageScale (noskip) {
     }))
   ;
 
+  const WIDTH = 1000;
+  const TITLECARD_WIDTH = 1200;
+  const TITLECARD_HEIGHT = Math.ceil(TITLECARD_WIDTH / 1.905);
+
   var posters = images.pipe(filter(/\/poster.(?:jpe?g|png|gif)$/))
     .pipe(clone())
     .pipe(bs.source('poster'))
     .pipe(parallelize(resizer({
       format: 'jpeg',
-      width: 1000,
+      width: WIDTH,
       crop: false,
     })), 10);
 
-  var titlecardSource = images.pipe(filter(/\/0?0?1.(?:jpe?g|png|gif)$/));
+  var titlecardSource = images.pipe(filter(/\/(?:poster|0?0?1(?:-0?1)?).(?:jpeg|jpg|png|gif)$/))
+    .pipe(sort([
+      (file) => (file.path.replace(/\/[^/]*$/)),
+      (file) => (file.path.match(/\/poster.(?:jpe?g|png|gif)$/) ? 1 : 2),
+    ]))
+    .pipe(dedupe({
+      replace: /\/[^/]*$/,
+      log: false,
+    }));
+
 
   var titlecardNorth = titlecardSource
     .pipe(clone())
     .pipe(bs.source('titlecard-north'))
     .pipe(parallelize(resizer({
       format: 'png',
-      width: 1000,
-      height: 525,
+      width: TITLECARD_WIDTH,
+      height: TITLECARD_HEIGHT,
       gravity: 'North',
       crop: true,
     })), 10)
@@ -70,13 +85,27 @@ module.exports = exports = function imageScale (noskip) {
       file.basename = 'titlecard-north';
     }));
 
+  var titlecardSouth = titlecardSource
+    .pipe(clone())
+    .pipe(bs.source('titlecard-south'))
+    .pipe(parallelize(resizer({
+      format: 'png',
+      width: TITLECARD_WIDTH,
+      height: TITLECARD_HEIGHT,
+      gravity: 'South',
+      crop: true,
+    })), 10)
+    .pipe(rename((file) => {
+      file.basename = 'titlecard-south';
+    }));
+
   var titlecardCenter = titlecardSource
     .pipe(clone())
     .pipe(bs.source('titlecard-center'))
     .pipe(parallelize(resizer({
       format: 'png',
-      width: 1000,
-      height: 525,
+      width: TITLECARD_WIDTH,
+      height: TITLECARD_HEIGHT,
       gravity: 'Center',
       crop: true,
     })), 10)
@@ -105,6 +134,7 @@ module.exports = exports = function imageScale (noskip) {
     , posters
     , titlecardNorth
     , titlecardCenter
+    , titlecardSouth
     , thumbnail
     , other
   )
