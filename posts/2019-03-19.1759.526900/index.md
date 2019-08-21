@@ -6,6 +6,7 @@ description: "What do you mean? I've just always stood this way."
 tags:
   - Transition Timeline
 instagram: https://www.instagram.com/p/BvM5GJLHivM/
+titlecard: top
 classes:
   - horizontal
 ---

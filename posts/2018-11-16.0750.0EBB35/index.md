@@ -9,6 +9,7 @@ noimages: true
 tags:
   - Transgender
   - Essays
+titlecard: center
 ---
 
 Now that I've [written about my favorite things](/p/trans-positives), it's only fair to write about the parts that really suck about being a trans woman. This article is written with the assumption that the reader is cisgender and knows nothing about trans matters, so if you are trans or know trans people, some of this is gonna be extra expository. Also, a lot of this falls into the category of just what it means to be a woman, which I'll get to in the end.

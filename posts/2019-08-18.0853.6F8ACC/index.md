@@ -6,6 +6,7 @@ description: ""
 tags:
   - Social Media
 instagram: https://www.instagram.com/p/B1UUFsKnvCL/
+titlecard: top
 ---
 This week I launched a Facebook page for Curvy and Trans. It mirrors a lot of the content here on Instagram, but also receives things that are difficult to share here (such as links to articles and videos), and resharing of any FB posts that I find pertinent to either fat positively, plus size fashion, or the trans experience.
 

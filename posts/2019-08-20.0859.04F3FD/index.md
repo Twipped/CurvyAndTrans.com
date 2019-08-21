@@ -4,6 +4,7 @@ date: "2019-08-20T15:59:00.000Z"
 title: "You Are Never Too Fat to Transition"
 slug: never-too-fat-to-transition
 description: "Transgender hormone therapy can move mountains, you do not have to be thin to transition."
+titlecard: top
 tags:
   - Transition Timeline
   - Essays

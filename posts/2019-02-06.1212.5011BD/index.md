@@ -5,6 +5,7 @@ title: "Second Puberty 101"
 description: "What to Expect When You're Expecting Boobs"
 spanLarge: 14
 noimages: true
+titlecard: top
 tags:
   - Medical
   - Transgender

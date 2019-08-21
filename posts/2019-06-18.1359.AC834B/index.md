@@ -8,6 +8,7 @@ tags:
 classes:
   - horizontal
 instagram: https://www.instagram.com/p/By3hEZQn5Yk/
+titlecard: top
 ---
 Right photo is January 2017, four months pre-HRT, and supremely miserable.
 

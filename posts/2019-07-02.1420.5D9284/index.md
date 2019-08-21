@@ -6,4 +6,5 @@ description: ""
 tags:
   - Transition Timeline
 instagram: https://www.instagram.com/p/BzbAaUKHoWE/
+titlecard: center
 ---

@@ -5,6 +5,7 @@ title: "Dropping the T(esticles)"
 description: "An account of my experience with my first gender confirming surgery, an orchiectomy."
 slug: drop-it-like-its-hot
 noimages: true
+titlecard: bottom
 tags:
   - Medical
   - Transgender

@@ -11,6 +11,7 @@ single: false
 notitle: true
 shortCard: true
 instagram: https://www.instagram.com/p/B1TzCoQH__U/
+titlecard: center
 ---
 Over the last few weeks I’ve been attempting to increase the visibility of how my hormone therapy affected my fat distribution. I’ve gotten some DMs that make me think some people may have the wrong impression about why I’m doing this, so I want to spell it out.
 

@@ -5,6 +5,7 @@ title: "A few of my favorite things."
 description: "A list of the best gifts that my transition gave to me."
 slug: trans-positives
 noimages: true
+titlecard: center
 tags:
   - Transgender
   - Essays

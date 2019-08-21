@@ -14,6 +14,7 @@ shortCard: true
 lightbox: true
 lazy: true
 instagram: https://www.instagram.com/p/BvxxUWwHAPF/
+titlecard: center
 ---
 
 It was the spring of 1999, almost exactly twenty years ago, and I stood outside the box office at Pacific Theatre's Carmel Mountain 12 cinema, shortly before noon, having just gotten off work for the day from my job at Borders Books & Music across the street. The film I was going to see was making enormous waves online, people were raving about this incredible action blockbuster, The Matrix, a title which at the time seemed cliche to anyone who had grown up on the Internet like I had.

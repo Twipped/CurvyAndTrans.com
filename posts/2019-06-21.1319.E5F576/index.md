@@ -9,6 +9,7 @@ noimages: true
 instagram: https://www.instagram.com/p/By-WICPnoaG/
 span: 9
 shortCard: true
+titlecard: top
 ---
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">There are a lot of symptoms of ADHD that are just awful to live with, but the one that takes the cake by far is rejection sensitivity dysphoria. This fucker, THIS FUCKER will fly in on a broom and shit all over your good day. It&#39;ll take a thing you love and make you loath it.</p>&mdash; Bees (@paintedbees) <a href="https://twitter.com/paintedbees/status/1141653591771320320?ref_src=twsrc%5Etfw">June 20, 2019</a></blockquote>

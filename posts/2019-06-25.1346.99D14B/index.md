@@ -6,6 +6,7 @@ description: ""
 tags:
   - Transition Timeline
 instagram: https://www.instagram.com/p/BzJda51HloV/
+titlecard: center
 ---
 Slightly different Transformation Tuesday post from my usual. Left was taken Sunday night right before my wife set to work coloring my hair. Right was taken just now after getting back from my brow appointment.
 
