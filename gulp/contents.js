@@ -138,12 +138,15 @@ exports.posts = function buildPosts () {
         case 'top':
           file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.png`;
           break;
-        case 'thumb':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-thumb.png`;
+        case 'bottom':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.png`;
           break;
         case 'center':
-        default:
           file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.png`;
+          break;
+        case 'thumb':
+        default:
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-thumb.png`;
           break;
         }
       }
