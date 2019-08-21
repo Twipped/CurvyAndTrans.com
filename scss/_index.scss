@@ -185,6 +185,13 @@
 
   }
 
+  .titlecard-preview {
+    span { font-size: 11px; }
+    img {
+      max-width: 100%;
+    }
+  }
+
   .load-more {
     text-align: center;
     padding: 20px;
