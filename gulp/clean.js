@@ -11,3 +11,8 @@ exports.cache = function cleanCache () {
   return src([ 'bs-cache' ], { read: false, allowEmpty: true })
     .pipe(clean());
 };
+
+exports.titlecard = function cleanCache () {
+  return src([ 'bs-cache/**/titlecard*' ], { read: false, allowEmpty: true })
+    .pipe(clean());
+};
