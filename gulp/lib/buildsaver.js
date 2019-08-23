@@ -71,6 +71,7 @@ module.exports = exports = function (options) {
     const sourcePath = relPath(file.cwd, file.path);
     const key = destkey ? sourcePath + ':' + destkey : sourcePath;
     const rev = revHash(file.contents);
+    const mtime = file.stat.mtime;
 
     if (file.buildSaver) {
       // this has been handled somehow already?
@@ -85,6 +86,7 @@ module.exports = exports = function (options) {
         key,
         sourcePath,
         rev,
+        mtime,
         cwd: file.cwd,
         log: [ 'new', sourcePath, destkey ],
       };
