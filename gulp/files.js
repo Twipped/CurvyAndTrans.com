@@ -3,13 +3,15 @@ const path          = require('path');
 const { src, dest } = require('gulp');
 const rev           = require('gulp-rev');
 const asyncthrough  = require('./lib/through');
+const changed       = require('gulp-changed');
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
 
 module.exports = exports = function fileCopy () {
   return src('files/**/*')
-    .pipe(dest(`${DEST}`))
+    .pipe(changed(DEST))
+    .pipe(dest(DEST))
   ;
 };
 
@@ -32,3 +34,11 @@ exports.prod = function fileCopyForProd () {
     .pipe(dest('.'))
   ;
 };
+
+exports.copyCache = function copyImagesFromCache () {
+  return src('bs-cache/p/**/*')
+    .pipe(changed(`${DEST}/p`))
+    .pipe(dest(`${DEST}/p`))
+  ;
+};
+

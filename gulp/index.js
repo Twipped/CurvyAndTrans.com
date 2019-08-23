@@ -15,6 +15,7 @@ exports.images = imagesTask;
 
 const filesTask = require('./files');
 exports.files = filesTask;
+exports['image-cache'] = filesTask.copyCache;
 
 var scssTask = require('./scss');
 exports.scss = scssTask;
@@ -56,6 +57,7 @@ var buildTask = series(
 );
 
 var devBuildTask = series(
+  filesTask.copyCache,
   parallel(
     imagesTask,
     scssTask,
@@ -89,6 +91,7 @@ function watcher () {
     'templates/*.html',
     'pages/*',
     '!pages/*.md',
+    'includes/*.md',
   ], contentTask);
 
   watch('scss/*.scss', scssTask);
