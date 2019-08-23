@@ -14,12 +14,16 @@ const frontmatter = require('gulp-front-matter');
 
 const asyncthrough = require('./lib/through');
 
+const ROOT = path.dirname(__dirname);
+const DEST = './docs';
+
 const md     = require('markdown-it')({
   html: true,
   linkify: true,
   typographer: true,
 }).enable('image')
   .use(require('markdown-it-div'))
+  .use(require('markdown-it-include'), path.join(ROOT, '/includes'));
 ;
 
 const handlebars = require('handlebars');
@@ -35,10 +39,6 @@ handlebars.registerHelper('even', (value, options) => {
   if (!options.fn) return result;
   return result ? options.fn(this) : options.inverse(this);
 });
-
-const ROOT = path.dirname(__dirname);
-const DEST = './docs';
-
 exports.loadLayout = async function loadLayout () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('cell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/cell.hbs.html')))));
