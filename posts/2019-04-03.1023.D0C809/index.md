@@ -33,6 +33,8 @@ Credit where due, a lot of this post is inspired by [this fantastic twitter thre
 
 Also, I want to apologize in advance for any binary-centric trans viewpoints. I don't mean to be exclusionary, it's just that I am a binary woman and this is written from my perspective.
 
+!!!include(adsense-in-article.md)!!!
+
 ### Hold on to your hat, Dorothy. Kansas is going bye bye.
 
 <div class="matrix-row lightbox">
@@ -86,6 +88,8 @@ Incidentally, the song playing on Neo's headphones in this scene is Massive Atta
 > I need a little love to ease the pain   
 > I need a little love to ease the pain   
 > It's easy to remember when it came   
+
+!!!include(adsense-in-article.md)!!!
 
 <div class="matrix-row lightbox">
   <a href="../05-1.jpeg"><img src="/images/filler.png" data-src="../05-1.sm.jpeg" alt=""></a>
@@ -182,6 +186,8 @@ Neo is up against a wall. He hates this existence, he hates the world he is in, 
 
 Deadnaming sucks.
 
+!!!include(adsense-in-article.md)!!!
+
 <div class="matrix-row lightbox">
   <a href="../14-1.jpeg"><img src="/images/filler.png" data-src="../14-1.sm.jpeg" alt="MORPHEUS: I don't know if you're ready to see what I want to show you."></a>
   <a href="../14-2.jpeg"><img src="/images/filler.png" data-src="../14-2.sm.jpeg" alt="MORPHEUS: But unfortunately, you and I have run out of time."></a>
@@ -248,6 +254,8 @@ Aside from the mathematics part, this describes me to a T.
 
 In the United States the primary method means of obtaining trans hormone therapy is via informed consent clinics. The clinics hand you a document that you must sign stating that you understand that the therapy you are seeking is considered experimental and has potential risks. You also often will need to have a letter from a licensed therapist stating that you have been diagnosed with Gender Dysphoria and are recommended for hormone treatment in order to relieve your symptoms. Without these things, most doctors will not be willing to prescribe hormones to you. They're too afraid of exposing themselves to litigation. Even with these things, many prescribing doctors are still extremely conservative with their dosages, often only being willing to start on very low doses and sometimes keeping their patients at or below cis female normal levels (early transition works better with higher levels because you have to counteract the first puberty).
 
+!!!include(adsense-in-article.md)!!!
+
 <div class="matrix-row lightbox">
   <a href="../22-1.jpeg"><img src="/images/filler.png" data-src="../22-1.sm.jpeg" alt="TRINITY: Please, Neo, you have to trust me."></a>
   <a href="../22-2.jpeg"><img src="/images/filler.png" data-src="../22-2.sm.jpeg" alt="NEO: Why?  TRINITY: Because you have been down that road."></a>
@@ -305,11 +313,15 @@ You can only know that feeling by experiencing it. [You have to be shown.](https
 
 Premarin is a red pill.
 
+There was also a certain blue pill that had just hit the market the year before in 1998, an erectile dysfunction drug named Sildenafil, or as it's more commonly known: Viagra.
+
 <div class="matrix-row lightbox">
   <a href="../27-5.jpeg"><img src="/images/filler.png" data-src="../27-5.sm.jpeg" alt="MORPHEUS: The pill you took is a trace program."></a>
 </div>
 
-The other estrogen that was prescribed (and has now replaced Premarin as the most common oral estrogen) is micronised estradiol, sold under the brand name of Es*trace*. Amusingly, Estrace 1mg is a blue pill (tho the green colored 2mg is more common).
+The other estrogen that was prescribed (and has now replaced Premarin as the most common oral estrogen) is micronised estradiol, sold under the brand name of Es*trace*.
+
+!!!include(adsense-in-article.md)!!!
 
 <div class="matrix-row lightbox">
   <a href="../28-0.jpeg"><img src="/images/filler.png" data-src="../28-0.sm.jpeg" alt="MORPHEUS: Time is always against us."></a>
@@ -374,6 +386,8 @@ Most of the time these thoughts are our own internalized transphobia manifesting
 
 Once you know that you're trans, once you know what all your feelings mean... you can't go back. You can't forget. You can't just ignore it. It plagues at you. Yet, would you really want to forget? I wouldn't. I was miserable, I was lost, I was confused, and I hurt in a way I did not understand. I would never want to be that person again.
 
+!!!include(adsense-in-article.md)!!!
+
 <div class="matrix-row lightbox">
   <a href="../35-1.jpeg"><img src="/images/filler.png" data-src="../35-1.sm.jpeg" alt="TANK: ...combat training?"></a>
   <a href="../35-2.jpeg"><img src="/images/filler.png" data-src="../35-2.sm.jpeg" alt="NEO: I'm going to learn Jujitsu?"></a>
@@ -437,6 +451,8 @@ Everybody falls the first time.
 </div>
 
 Sometimes when you're in this place of fear and paranoia, tiny little unintentional slights can turn into really huge things. You become convinced that someone clocked you because of a slight tone of the voice, or the way they looked at you. You get scared and infer meaning that doesn't exist. Your brain makes it real.
+
+!!!include(adsense-in-article.md)!!!
 
 <div class="matrix-row lightbox">
   <a href="../40-1.jpeg"><img src="/images/filler.png" data-src="../40-1.sm.jpeg" alt="MORPHEUS: The Matrix is a system, Neo."></a>
@@ -529,6 +545,8 @@ I have 36 years of lived experiences prior to transition. Thirty six years of me
 For example, I've said from time to time that my wedding wasn't actually _my_ wedding, because the man that stood at the alter wasn't me. Philosophically, the events did not happen with _me_ present, they aren't _my_ memories, but the events still occurred, I am still married to my wife.
 
 This scene always bothers me, because the things Neo remembers did actually happen, and they happened in realtime. His life was still lived, the events still occurred. His life was not a total facsimile, it just wasn't what he thought it was. Cypher tries to tell him this later in the film when he says "I think the Matrix is as real as we want it to be." I'm also annoyed that Trinity just lets this roll past her without saying anything.
+
+!!!include(adsense-in-article.md)!!!
 
 <div class="matrix-row lightbox">
   <a href="../49-1.jpeg"><img src="/images/filler.png" data-src="../49-1.sm.jpeg" alt="TRINITY: The Matrix cannot tell you who you are."></a>
@@ -658,6 +676,8 @@ Science has revealed time and again that sexuality, gender, and even anatomical 
 
 Smith was just another tool in the system.
 
+!!!include(adsense-in-article.md)!!!
+
 <div class="matrix-row lightbox">
   <a href="../60-1.jpeg"><img src="/images/filler.png" data-src="../60-1.sm.jpeg" alt="Neo approaches a security check point."></a>
   <a href="../60-2.jpeg"><img src="/images/filler.png" data-src="../60-2.sm.jpeg" alt="GUARD: Please remove any metallic items you might be carrying. Keys, loose change."></a>
@@ -747,6 +767,8 @@ In 2012, at the Human Rights Campaign's annual gala, [Lana delivered a passionat
 **How appropriate that the release date of The Matrix would ten years later become Transgender Day of Visibility.**
 
 Her speech here is extremely powerful, and the kind of thing that if I had actually heard it in 2012, I might have realized I was trans five years sooner. She tells several stories that mirror my own life.
+
+!!!include(adsense-in-article.md)!!!
 
 <div class="matrix-row lightbox">
   <a href="../67-1.jpeg"><img src="/images/filler.png" data-src="../67-1.sm.jpeg" alt="Smith surprises Neo as he opens the door to a room with a phone, and fires his entire clip into Neo's chest"></a>

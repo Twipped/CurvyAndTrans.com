@@ -68,6 +68,8 @@ tags:
 - Salt/Pickle cravings
   - This is specific to those on Spironolacotone, which is a diuretic that causes you to pee out all your sodium
 
+!!!include(adsense-in-article.md)!!!
+
 ### Changes attributed to Estradiol:
 
 - Breast growth
@@ -141,6 +143,8 @@ tags:
 - Changes in taste perception
   - Many people report cilantro becoming more palatable.
   - Chocolate addiction _(Only half kidding)_
+
+!!!include(adsense-in-article.md)!!!
 
 ### Changes attributed to Progesterone:
 

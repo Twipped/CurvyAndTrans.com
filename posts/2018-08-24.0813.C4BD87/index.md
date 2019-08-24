@@ -22,6 +22,8 @@ For purposes of brevity I use the terms women, men, female and male to refer to 
 
 Additionally, the use of "Trans Women" in the title and parts of this piece is a shorthand for individuals who were assigned male at birth and are now on estrogen hormone therapy. Not all transgender women take estrogen, and not all transgender people who take estrogen are women, their identities are just as valid and I do not wish to exclude them with the wording of this essay, but in some contexts it was hard to avoid. I apologize in advance for the binary-centric nature of this post.
 
+!!!include(adsense-in-article.md)!!!
+
 ### An introduction into the endocrine feedback system
 
 It all starts with the hypothalamus, the CEO of Endocrine Systems. The hypothalamus excretes [Gonadotropin-releasing hormone (GnRH)](https://en.wikipedia.org/wiki/Gonadotropin-releasing_hormone), a tropic peptide that regulates the entire process. GnRH is received by the pituitary gland, which then in turn releases two other hormones: [Luteinizing Hormone](https://en.wikipedia.org/wiki/Luteinizing_hormone) (LH) and [Follicle Stimulating Hormone](https://en.wikipedia.org/wiki/Follicle-stimulating_hormone) (FSH).
@@ -47,6 +49,8 @@ At a critical threshold of estradiol levels, [the GNRH1-5 genes activate a genom
 But here lies the rub: Trans women's estradiol and progesterone levels do not rise and fall with these cycles, they remain constant. Injection and transdermal dosages have rise and falls on the scale of 1-2 weeks, and those on pills experience it on the scale of hours, nothing approaching the rise and fall that aligns with LH and FSH shifts. This means that the hypothalamus is constantly responding to levels that rarely match what it expects for that point in the cycle (broken clock, as it were), and producing in response to what it expects vs what it find.
 
 Without ovaries, tho, there's nothing to respond to these LH and FSH fluctuations, right?  Well... not exactly.
+
+!!!include(adsense-in-article.md)!!!
 
 ### Where we're going, we don't need ovaries.
 
@@ -74,6 +78,8 @@ Ok, so what does that have to do with people who don't have uteruses? F2a is not
 
 Adrenal released prostaglandins could absolutely cause contractions in the intestines and surrounding muscles, inflammation in the abdomen from the protaglandins would induce bloating, and prostaglandin surges in mammary tissue would explain breast engorgement and sensitivity. Some may scoff at the idea that these secretions could be sufficient to produce these symptoms, but the fact is we don't know. Nobody has studied prostaglandin secretion in women who do not have ovaries. We simply do not know.
 
+!!!include(adsense-in-article.md)!!!
+
 ### Where's the beef?
 
 There's a lot about all of this that we don't know. Modern trans medical care is little more than a decade old (while trans hormone therapy has been around for well over a century, WPATH in its current incarnation has only existed since 2007, and the current Standards of Care, which were a significant improvement over previous versions, came out in 2011). Prior to that, transgender care was largely ignored, or considered a fringe practice. Additionally, the trans population is _exploding_ in size right now because stigmas are reducing and awareness is climbing, people are coming out and starting hormone therapy in record numbers. Estimates of total transgender individuals have [more than doubled](https://www.nytimes.com/2016/07/01/health/transgender-population.html?_r=0) in the last 5 years. Suddenly we're learning all sorts of new things about the medical behavior of transgender individuals, but also medical science is just starting to pay attention. The medical community [hadn't even officially recognized that trans women could breastfeed](https://www.nytimes.com/2018/02/15/health/transgender-woman-breast-feed.html) until this year, which the trans community had known for decades.
@@ -100,6 +106,8 @@ This pattern has now repeated four times since I identified my cycle using a per
 My suspicion is that medical science is totally wrong about the reception of LH and FSH in humans, especially FSH. Many of the studies into the responses of these hormones by individual parts of the body are based on observations in mice and cows, which have completely different estrous cycles from humans and massively different brain structures. Given [the way that FSH fluctuates](https://en.wikiversity.org/wiki/WikiJournal_of_Medicine/Reference_ranges_for_estradiol,_progesterone,_luteinizing_hormone_and_follicle-stimulating_hormone_during_the_menstrual_cycle) over the course of a female reproductive cycle, and how those fluctuations line up with the symptoms we experience, the correlation is just too strong to be coincidence.
 
 Unfortunately, until somebody conducts a study of LH and FSH blood levels of male-assigned individuals on estrogen therapy who experience period cycles, we can never really be sure.
+
+!!!include(adsense-in-article.md)!!!
 
 ### Update, October 21, 2018
 
