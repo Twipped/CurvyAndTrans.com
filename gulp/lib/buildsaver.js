@@ -166,10 +166,10 @@ module.exports = exports = function (options) {
         return;
       }
 
-      if (file.buildSaver.log ) {
+      if (file.buildSaver.log) {
         log(...file.buildSaver.log);
-        file.buildSaver.log = undefined;
       }
+      file.buildSaver.log = undefined;
 
       const destPath = relPath(file.buildSaver.cwd, file.path);
       const cachePath = path.resolve(options.cache, relPath(destinationPath, file.path));
