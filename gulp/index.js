@@ -57,7 +57,6 @@ var buildTask = series(
 );
 
 var devBuildTask = series(
-  filesTask.copyCache,
   parallel(
     imagesTask,
     scssTask,
