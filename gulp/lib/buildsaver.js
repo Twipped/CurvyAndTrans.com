@@ -26,6 +26,7 @@ function relPath (base, filePath) {
 module.exports = exports = function (options) {
   options = {
     skip: true,
+    rev: false,
     manifest: 'bs-manifest.json',
     cache: 'bs-cache',
     dest: 'docs',
@@ -70,8 +71,7 @@ module.exports = exports = function (options) {
     if (destkey === undefined) destkey = '';
     const sourcePath = relPath(file.cwd, file.path);
     const key = destkey ? sourcePath + ':' + destkey : sourcePath;
-    const rev = revHash(file.contents);
-    const mtime = file.stat.mtime;
+    const mtime = file.stat.mtime.toJSON();
 
     if (file.buildSaver) {
       // this has been handled somehow already?
@@ -85,10 +85,10 @@ module.exports = exports = function (options) {
       file.buildSaver = manifest[key] = {
         key,
         sourcePath,
-        rev,
+        rev: revHash(file.contents),
         mtime,
         cwd: file.cwd,
-        log: [ 'new', sourcePath, destkey ],
+        log: [ '[new]', sourcePath, destkey ],
       };
       stream.push(file);
       return;
@@ -96,12 +96,23 @@ module.exports = exports = function (options) {
 
     file.buildSaver = manifest[key];
 
-    if (file.buildSaver.rev !== rev) {
-      // file has changed, log hash and let file process
-      file.buildSaver.rev = rev;
+    if (file.buildSaver.mtime !== mtime) {
+      // file modification date changed, log new time and let file process
+      file.buildSaver.mtime = mtime;
       file.buildSaver.log = [ 'update', sourcePath, destkey ];
       stream.push(file);
       return;
+    }
+
+    if (options.rev) {
+      const rev = revHash(file.contents);
+      if (file.buildSaver.rev !== rev) {
+        // file has changed, log hash and let file process
+        file.buildSaver.rev = rev;
+        file.buildSaver.log = [ 'update', sourcePath, destkey ];
+        stream.push(file);
+        return;
+      }
     }
 
     if (!file.buildSaver.destPath) {
