@@ -13,19 +13,27 @@ const parallelize   = require('concurrent-transform');
 const clone         = require('gulp-clone');
 const dedupe        = require('./lib/dedupe');
 const sort          = require('./lib/sort');
+const changed       = require('gulp-changed');
 
 const ROOT = path.dirname(__dirname);
 const DEST = 'docs';
+const OUTPUT = `${DEST}/p/`;
 
 module.exports = exports = function imageScale (noskip) {
   const log = argv.verbose ? true : { new: true, build: true, update: true };
-  var bs = buildsaver({ skip: !noskip, log });
+  var bs = buildsaver({ skip: !noskip, rev: noskip, log });
 
-  var images = src('posts/*/*.{jpeg,jpg,png,gif,m4v}', { read: true });
+  var images = src('posts/*/*.{jpeg,jpg,png,gif,m4v}', { read: true })
+    .pipe(rename((file) => {
+      const hash = file.dirname.split('.')[2];
+      file.dirname = hash;
+    }))
+  ;
 
   var fullsize = images
     .pipe(filter(/\/\d?\d?\d(?:-\d?\d)?.(?:jpe?g|png|gif)$/))
     .pipe(clone())
+    .pipe(changed(OUTPUT, { extension: '.jpeg' }))
     .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'jpeg',
@@ -36,15 +44,16 @@ module.exports = exports = function imageScale (noskip) {
   var halfsize = images
     .pipe(filter(/\/\d?\d?\d-\d?\d.(?:jpe?g|png|gif)$/))
     .pipe(clone())
-    .pipe(bs.source('small'))
+    .pipe(rename((file) => {
+      file.basename += '.sm';
+    }))
+    .pipe(changed(OUTPUT, { extension: '.jpeg' }))
+    .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'jpeg',
       width: 500,
       crop: false,
     })), 10)
-    .pipe(rename((file) => {
-      file.basename += '.sm';
-    }))
   ;
 
   const WIDTH = 1000;
@@ -53,12 +62,14 @@ module.exports = exports = function imageScale (noskip) {
 
   var posters = images.pipe(filter(/\/poster.(?:jpe?g|png|gif)$/))
     .pipe(clone())
-    .pipe(bs.source('poster'))
+    .pipe(changed(OUTPUT, { extension: '.jpeg' }))
+    .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'jpeg',
       width: WIDTH,
       crop: false,
     })), 10);
+
 
   var titlecardSource = images.pipe(filter(/\/(?:poster|0?0?1(?:-0?1)?).(?:jpeg|jpg|png|gif)$/))
     .pipe(sort([
@@ -68,12 +79,16 @@ module.exports = exports = function imageScale (noskip) {
     .pipe(dedupe({
       replace: /\/[^/]*$/,
       log: false,
-    }));
-
+    }))
+  ;
 
   var titlecardNorth = titlecardSource
     .pipe(clone())
-    .pipe(bs.source('titlecard-north'))
+    .pipe(rename((file) => {
+      file.basename = 'titlecard-north';
+    }))
+    .pipe(changed(OUTPUT, { extension: '.jpeg' }))
+    .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'png',
       width: TITLECARD_WIDTH,
@@ -81,13 +96,15 @@ module.exports = exports = function imageScale (noskip) {
       gravity: 'North',
       crop: true,
     })), 10)
-    .pipe(rename((file) => {
-      file.basename = 'titlecard-north';
-    }));
+  ;
 
   var titlecardSouth = titlecardSource
     .pipe(clone())
-    .pipe(bs.source('titlecard-south'))
+    .pipe(rename((file) => {
+      file.basename = 'titlecard-south';
+    }))
+    .pipe(changed(OUTPUT, { extension: '.jpeg' }))
+    .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'png',
       width: TITLECARD_WIDTH,
@@ -95,13 +112,15 @@ module.exports = exports = function imageScale (noskip) {
       gravity: 'South',
       crop: true,
     })), 10)
-    .pipe(rename((file) => {
-      file.basename = 'titlecard-south';
-    }));
+  ;
 
   var titlecardCenter = titlecardSource
     .pipe(clone())
-    .pipe(bs.source('titlecard-center'))
+    .pipe(rename((file) => {
+      file.basename = 'titlecard-center';
+    }))
+    .pipe(changed(OUTPUT, { extension: '.jpeg' }))
+    .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'png',
       width: TITLECARD_WIDTH,
@@ -109,24 +128,26 @@ module.exports = exports = function imageScale (noskip) {
       gravity: 'Center',
       crop: true,
     })), 10)
-    .pipe(rename((file) => {
-      file.basename = 'titlecard-center';
-    }));
+  ;
 
   var thumbnail = titlecardSource
     .pipe(clone())
-    .pipe(bs.source('titlecard-thumb'))
+    .pipe(rename((file) => {
+      file.basename = 'titlecard-thumb';
+    }))
+    .pipe(changed(OUTPUT, { extension: '.jpeg' }))
+    .pipe(bs.source())
     .pipe(parallelize(resizer({
       format: 'png',
       width: 400,
       height: 400,
       crop: true,
     })), 10)
-    .pipe(rename((file) => {
-      file.basename = 'titlecard-thumb';
-    }));
+  ;
 
-  var other = images.pipe(filter.not(/\/(?:\d?\d?\d(?:-\d?\d)?|poster)\.(?:jpe?g|png|gif)$/));
+  var other = images
+    .pipe(filter.not(/\/(?:\d?\d?\d(?:-\d?\d)?|poster|titlecard)\.(?:jpe?g|png|gif)$/))
+    .pipe(changed(OUTPUT));
 
   return merge(
     fullsize
@@ -138,12 +159,9 @@ module.exports = exports = function imageScale (noskip) {
     , thumbnail
     , other
   )
-    .pipe(rename((file) => {
-      const hash = file.dirname.split('.')[2];
-      file.dirname = hash;
-    }))
+    // .pipe(require('./lib/debug')())
     .pipe(bs.cache())
-    .pipe(dest(`${DEST}/p/`))
+    .pipe(dest(OUTPUT))
     .pipe(bs.finish())
   ;
 };
@@ -151,7 +169,7 @@ module.exports = exports = function imageScale (noskip) {
 exports.prod = function imageScaleForProd () {
   return exports(true)
     .pipe(rev())
-    .pipe(dest(`${DEST}/p/`))
+    .pipe(dest(OUTPUT))
     .pipe(asyncthrough(async (stream, file) => {
       // Change rev's original base path back to the public root so that it uses the full
       // path as the original file name key in the manifest
@@ -162,7 +180,7 @@ exports.prod = function imageScaleForProd () {
       stream.push(file);
     }))
     .pipe(rev.manifest({
-      // base: `${DEST}/p/`,
+      // base: OUTPUT,
       merge: true, // Merge with the existing manifest if one exists
     }))
     .pipe(dest('.'))
