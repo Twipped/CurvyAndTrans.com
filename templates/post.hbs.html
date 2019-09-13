@@ -28,7 +28,7 @@
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<a href="/#{{@key}}">{{this}}</a>{{/each}}</div>
     {{#unless noimages}}<div class="post-images">
       {{#each images}}{{#compare type 'movie'}}
-      <a href="{{rev this}}" class="{{#even @index}}even{{else}}odd{{/even}}"><video autoplay muted loop><source src="{{this}}" type="video/mp4"></video>{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
+      <a href="{{rev full}}" class="{{#even @index}}even{{else}}odd{{/even}}"><video autoplay muted loop><source src="{{full}}" type="video/mp4"></video>{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
       {{else}}
       <a href="{{rev full}}" class="{{#even @index}}even{{else}}odd{{/even}}"><img src="{{rev small}}" alt="{{#if @first}}{{#if alt}}{{alt}}{{/if}}{{/if}}">{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
       {{/compare}}{{/each}}

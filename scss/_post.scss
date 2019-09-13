@@ -22,7 +22,6 @@
 
     &:not(.noimages) {;
       @include media-breakpoint-up(md) {
-        // grid-template-rows: min-content 1fr
         grid-template-columns: minmax( 1fr, 500px) 1fr;
         grid-template-areas:
           "images title"
