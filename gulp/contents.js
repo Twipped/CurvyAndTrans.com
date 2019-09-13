@@ -23,7 +23,7 @@ const md     = require('markdown-it')({
   typographer: true,
 }).enable('image')
   .use(require('markdown-it-div'))
-  .use(require('markdown-it-include'), path.join(ROOT, '/includes'));
+  .use(require('markdown-it-include'), path.join(ROOT, '/includes'))
 ;
 
 const handlebars = require('handlebars');
@@ -154,12 +154,12 @@ exports.posts = function buildPosts () {
       const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
 
       if (poster) {
-        file.meta.poster = `/p/${file.meta.id}/poster.jpeg`;
         file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
       } else if (images.length) {
-        file.meta.poster = file.meta.images[0];
         file.meta.dimensions = await dimensions(path.resolve(cwd, images[0]));
       }
+
+      file.meta.poster = `/p/${file.meta.id}/poster.jpeg`;
 
       if (file.meta.dimensions) {
         const { width, height } = file.meta.dimensions;
@@ -254,7 +254,7 @@ exports.posts = function buildPosts () {
 
       if (manifest[url]) return '/' + manifest[url];
       return '/' + url;
-    };
+    }
 
     const indexSans = indexFile.clone();
     const postsSans = posts.map((p) => {

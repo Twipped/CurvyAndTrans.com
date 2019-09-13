@@ -11,11 +11,12 @@ const rssTask = require('./atom');
 exports.atom = rssTask;
 
 var imagesTask = require('./images');
-exports.images = imagesTask;
+var imgflow = require('./imgflow');
+exports.images = imgflow;
+exports['images-prod'] = imagesTask.prod;
 
 const filesTask = require('./files');
 exports.files = filesTask;
-exports['image-cache'] = filesTask.copyCache;
 
 var scssTask = require('./scss');
 exports.scss = scssTask;
@@ -40,10 +41,10 @@ exports.cloudfront = cloudfront;
 
 /** **************************************************************************************************************** **/
 
-exports.sprite = require('./sprite');
 exports.new = require('./new');
 
 var buildTask = series(
+  imgflow,
   imagesTask.prod,
   scssTask.prod,
   jsTask.prod,
@@ -58,7 +59,7 @@ var buildTask = series(
 
 var devBuildTask = series(
   parallel(
-    imagesTask,
+    imgflow,
     scssTask,
     jsTask,
     filesTask
@@ -101,8 +102,7 @@ function watcher () {
   var srv = new forever.Monitor('server.js');
   srv.start();
   forever.startServer(srv);
-
-};
+}
 
 function server () {
 
@@ -111,7 +111,7 @@ function server () {
   srv.start();
   forever.startServer(srv);
 
-};
+}
 
 exports.watch = series(contentTask, watcher);
 exports.uat = series(cleanTask, buildTask, server);
