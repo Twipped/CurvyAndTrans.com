@@ -118,10 +118,18 @@ exports.posts = function buildPosts () {
           const ext = path.extname(imgpath);
           const basename = path.basename(imgpath, ext);
           if (ext === '.m4v') {
-            return `/p/${file.meta.id}/${basename}.m4v`;
+            return {
+              type: 'movie',
+              full: `/p/${file.meta.id}/${basename}.m4v`
+            };
           }
 
-          return `/p/${file.meta.id}/${basename}.jpeg`;
+          return {
+            type: 'image',
+            full: `/p/${file.meta.id}/${basename}.jpeg`,
+            small: `/p/${file.meta.id}/${basename}.sm.jpeg`,
+            thumb: `/p/${file.meta.id}/${basename}.thumb.jpeg`,
+          };
         });
       } else {
         file.meta.noimages = true;

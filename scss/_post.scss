@@ -9,6 +9,10 @@
       max-width: 1000px;
     }
 
+    &.horizontal {
+      max-width: 1020px;
+    }
+
     &.single, &.noimages, &.horizontal {
       @include media-breakpoint-up(md) {
         padding-left: 20px;
@@ -19,7 +23,7 @@
     &:not(.noimages) {;
       @include media-breakpoint-up(md) {
         // grid-template-rows: min-content 1fr
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax( 1fr, 500px) 1fr;
         grid-template-areas:
           "images title"
           "images datetags"
@@ -72,6 +76,8 @@
           grid-template-rows: 1fr;
           grid-column-gap: 10px;
           grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
+          max-width: 1010px;
+          margin: 0 auto;
         }
 
       }
