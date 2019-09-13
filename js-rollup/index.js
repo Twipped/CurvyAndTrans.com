@@ -37,8 +37,8 @@ const IndexView = Backbone.View.extend({
   `),
 
   initialize () {
-    this.loaded = 14;
-    this.step = 14;
+    this.loaded = 20;
+    this.step = 20;
 
     const byState = groupBy(postsJSON, (p) => (p.draft ? 'draft' : 'final'));
 
