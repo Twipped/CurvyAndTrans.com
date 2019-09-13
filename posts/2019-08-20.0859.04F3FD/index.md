@@ -11,6 +11,8 @@ tags:
   - Body Positivity
   - Fatphobia
 instagram: https://www.instagram.com/p/B1ZLWuiH4lc/
+shortCard: true
+span: 10
 ---
 
 It was somewhere around 2014 when I first learned that transgender hormone therapy was a thing. Of course, it had been a thing since the late 1920s, but this was not something that was ever discussed when people talked about trans women in the public discourse. I had grown up believing that trans women looked like women because they just were naturally feminine, or had undergone significant surgeries to make them look feminine. I had no idea what HRT could do for you.
