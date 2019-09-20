@@ -1,14 +1,15 @@
 ---
 id: "84BB42"
 date: "2000-01-01T00:00:02.000Z"
-title: "The Rise and Fall of Rage and Grace: Part 3, A Girl in Secret"
+subtitle: "The Rise and Fall of Rage and Grace, Part 3"
+title: "A Girl in Secret"
 slug: rise-fall-rage-grace-p3
 description: "Young Adulthood"
 draft: true
 tags:
+  - Memoir
   - Essays
   - Transgender
-  - Memoir
 noimages: true
 shortCard: true
 span: 10

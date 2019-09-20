@@ -25,6 +25,7 @@
         grid-template-columns: minmax( 1fr, 500px) 1fr;
         grid-template-areas:
           "images title"
+          "images subtitle"
           "images datetags"
           "images products"
           "images contents"
@@ -32,7 +33,6 @@
           "images ."
         ;
         grid-column-gap: 20px;
-        grid-row-gap: 10px;
         grid-template-rows: min-content min-content min-content min-content 1fr;
 
         padding-right: 20px;
@@ -46,24 +46,24 @@
         grid-template-columns: 1fr;
         grid-template-areas:
           "title"
+          "subtitle"
           "datetags"
           "images"
           "products"
           "contents"
         ;
-        grid-row-gap: 5px;
       }
 
       &.single, &.horizontal {
         grid-template-columns: 1fr;
         grid-template-areas:
           "title"
+          "subtitle"
           "datetags"
           "images"
           "products"
           "contents"
         ;
-        grid-row-gap: 5px;
       }
 
       &.horizontal {
@@ -108,11 +108,11 @@
       grid-template-columns: 1fr;
       grid-template-areas:
         "title"
+        "subtitle"
         "datetags"
         "products"
         "contents"
       ;
-      grid-row-gap: 5px;
 
       padding: 0 20px;
 
@@ -156,6 +156,10 @@
     }
   }
 
+  article > :first-child {
+    margin-top: 10px;
+  }
+
   article.double-column .post-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -170,8 +174,21 @@
 
   .post-title {
     grid-area: title;
-    margin: 10px 0 0 0;
+    margin: 0 0 10px 0;
     line-height: 1;
+    font-weight: 500;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px;
+    }
+  }
+
+  .post-subtitle {
+    grid-area: subtitle;
+    margin: 0 0 10px 0;
+    line-height: 1;
+    font-size: 1.6rem;
+    font-weight: 300;
 
     @include media-breakpoint-down(sm) {
       padding: 0 10px;
@@ -185,6 +202,7 @@
     font-size:12px;
     line-height: 1;
     font-weight: 400;
+    margin-bottom: 10px;
 
     @include media-breakpoint-down(sm) {
       padding: 0 10px;
@@ -535,7 +553,7 @@
 
   .post-products {
     grid-area: products;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     border-radius: 10px;
     font-size: 14px;

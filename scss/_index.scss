@@ -116,7 +116,7 @@
     .post-title {
       flex: 1;
       flex-grow: 0;
-      font-size: 18px;
+      font-size: 1.2em;
       margin: 0;
       padding: 0.5em 0.7em 0 0.7em;
       font-weight: 500;
@@ -126,6 +126,12 @@
 
       &.no-description {
         padding: 0.5em 0.7em;
+      }
+
+      .post-subtitle {
+        font-size: 0.9em;
+        font-weight: 300;
+        display: block;
       }
     }
 

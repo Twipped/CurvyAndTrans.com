@@ -1,17 +1,18 @@
 ---
 id: "84BB40"
 date: "2000-01-01T00:00:00.000Z"
-title: "The Rise and Fall of Rage and Grace: Part 1, A Girl Unknown"
+subtitle: "The Rise and Fall of Rage and Grace, Part 1"
+title: A Girl Unknown
 slug: rise-fall-rage-grace-p2
 description: "The first ten years of my childhood."
 draft: true
 tags:
+  - Memoir
   - Essays
   - Transgender
-  - Memoir
 noimages: true
 shortCard: true
-span: 10
+span: 11
 
 # 12th 98-99
 # 11th 97-98

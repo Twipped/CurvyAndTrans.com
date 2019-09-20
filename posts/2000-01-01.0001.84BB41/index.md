@@ -1,17 +1,18 @@
 ---
 id: "84BB41"
 date: "2000-01-01T00:00:01.000Z"
-title: "The Rise and Fall of Rage and Grace: Part 2, A Girl Discovered"
+subtitle: "The Rise and Fall of Rage and Grace, Part 2"
+title: "A Girl Discovered"
 slug: rise-fall-rage-grace-p2
-description: "Fourth Grade Nothing to Seventh Grade Zero"
+description: "From Fourth Grade Nothing to Seventh Grade Zero"
 draft: true
 tags:
+  - Memoir
   - Essays
   - Transgender
-  - Memoir
 noimages: true
 shortCard: true
-span: 10
+span: 12
 
 # 12th 98-99
 # 11th 97-98

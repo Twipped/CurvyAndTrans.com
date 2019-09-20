@@ -1,7 +1,7 @@
 ---
 id: "868ED9"
 date: "2019-06-26T20:54:00.000Z"
-title: ""
+title: "Studio Disappointment"
 description: "Outfit of the Day for Jun 26th, 2019"
 tags:
   - OOTD
