@@ -10,7 +10,7 @@ tags:
   - Essays
   - Top Post
 noimages: true
-span: 8
+span: 11
 shortCard: true
 lightbox: true
 lazy: true

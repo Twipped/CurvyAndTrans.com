@@ -6,6 +6,8 @@ description: "An account of my experience with my first gender confirming surger
 slug: drop-it-like-its-hot
 noimages: true
 titlecard: bottom
+span: 11
+shortCard: true
 tags:
   - Medical
   - Transgender
