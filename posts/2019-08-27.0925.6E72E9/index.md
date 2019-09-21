@@ -5,7 +5,7 @@ title: "Sex and Cats"
 description: "Outfit of the Day for Aug 27th, 2019"
 tags:
   - OOTD
-  - Sex Positive
+  - Sex Positivity
   - Mental Health
   - Cats
 classes:

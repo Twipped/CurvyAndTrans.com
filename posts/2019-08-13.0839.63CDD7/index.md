@@ -9,9 +9,7 @@ tags:
   - Transition Timeline
 instagram: https://www.instagram.com/p/B1G_V_En5Uc/
 ---
-This is not a post about weight loss.
-
-The photo on the left was taken Christmas day, 2016, two weeks before I came out as transgender to my wife. For a lot of my life I thought that the reason I hated my body so much was because I was fat, but I was too depressed to exercise, and dieting never worked, so I just continued to gain weight. I wasn’t horrifically unhealthy, I had no difficulty getting around, but my body felt like a prison that I had to carry with me.
+The photo on the left was taken Christmas day, 2016, two weeks before I came out as transgender to my wife. For a lot of my life I thought that the reason I hated my body so much was because I was fat. I tried to diet, but it never worked, I wanted to exercise, but I was too depressed go do it, so I just continued to gain weight. I wasn’t unhealthy, I had no difficulty getting around, but my body felt like a prison that I had to carry with me.
 
 Until those fateful few days when I learned what transition could mean, I had never known that hormone therapy affected fat distribution. I believed that if I ever did transition I would still always look like a fat man. That was unacceptable to me, I couldn’t do it, so I stayed in the closet. It was seeing posts like this from other fat trans women that changed my mind.
 

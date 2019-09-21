@@ -6,8 +6,7 @@ description: "How two conflicting statements of existence can be aligned."
 tags:
   - Transgender
   - Essays
-classes:
-  - no-title
+no-title: true
 instagram: https://www.instagram.com/p/ByIffJJnahs/
 ---
 

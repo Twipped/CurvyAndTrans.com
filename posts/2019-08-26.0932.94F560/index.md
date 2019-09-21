@@ -9,6 +9,6 @@ classes:
   - double-column
 instagram: https://www.instagram.com/p/B1oeQstHg5e/
 ---
-Something wicked this way comes... I started getting ads for Halloween dresses today. Fall is upon us!
+I started getting ads for Halloween dresses today. Fall is upon us!
 
 Where the hell did these hips come from?
