@@ -45,24 +45,7 @@
   {{/content}}
 
 	{{#content "body"}}
-  <h3 class="tagged-header">
-    <span>Latest Posts</span>
-    <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i><span>&nbsp;Filter By Tag</span></button>
-
-  </h3>
-  <div class="post-grid">
-    {{#with posts.first}}
-      {{> cell prime=true}}
-    {{/with}}
-    {{#each (slice posts.ordered 1 14)}}
-      {{> cell}}
-    {{/each}}
-  </div>
-
-  <div class="load-more">
-    <button class="btn btn-primary btn-info btn-lg js-load-more" type="button">Load More</button>
-  </div>
-
+    {{> indexGrid }}
 	{{/content}}
 
 {{/extend}}

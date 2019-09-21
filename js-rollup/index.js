@@ -3,6 +3,7 @@ import Backbone from 'backbone';
 import Handlebars from 'handlebars/dist/handlebars';
 import postsJSON from '../posts-sans.json';
 import htmlCell from '../templates/cell.hbs.html';
+import htmlGrid from '../templates/index-grid.hbs.html';
 import { groupBy, reduce, debounce } from 'lodash';
 import dateFormat from 'date-fns/format';
 import hhFirst from 'helper-hoard/src/helpers/collection/first';
@@ -16,25 +17,7 @@ Handlebars.registerHelper('first', hhFirst.first(Handlebars));
 
 const IndexView = Backbone.View.extend({
   el: '#body',
-  template: Handlebars.compile(`
-    <h3 class="tagged-header">
-      <span>Latest Posts</span>
-      <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i><span>&nbsp;Filter By Tag</span></button>
-    </h3>
-    <div class="post-grid">
-      {{#with posts.first}}
-        {{> cell prime=true}}
-      {{/with}}
-      {{#each posts.ordered}}
-        {{> cell}}
-      {{/each}}
-    </div>
-    {{#unless full}}
-    <div class="load-more">
-      <button class="btn btn-primary btn-info btn-lg js-load-more" type="button">Load More</button>
-    </div>
-    {{/unless}}
-  `),
+  template: Handlebars.compile(htmlGrid),
 
   initialize () {
     this.loaded = 20;

@@ -42,6 +42,7 @@ handlebars.registerHelper('even', (value, options) => {
 exports.loadLayout = async function loadLayout () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('cell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/cell.hbs.html')))));
+  handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
     if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
@@ -171,7 +172,8 @@ exports.posts = function buildPosts () {
 
       if (file.meta.dimensions) {
         const { width, height } = file.meta.dimensions;
-        file.meta.dimensions.ratio = Math.round((height / width) * 100);
+        file.meta.dimensions.ratioH = Math.round((height / width) * 100);
+        file.meta.dimensions.ratioW = Math.round((width / height) * 100);
         if (!file.meta.span) {
           file.meta.span = Math.ceil((height / width) * 10);
         }
