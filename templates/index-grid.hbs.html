@@ -2,12 +2,12 @@
   <span>Latest Posts</span>
   <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i><span>&nbsp;Filter By Tag</span></button>
 </h3>
-<div class="post-grid">
+<div class="card-grid">
   {{#with posts.first}}
-    {{> cell prime=true}}
+    {{> indexCard prime=true}}
   {{/with}}
   {{#each posts.ordered}}
-    {{> cell}}
+    {{> indexCard}}
   {{/each}}
 </div>
 {{#unless full}}

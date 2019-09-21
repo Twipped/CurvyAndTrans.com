@@ -17,13 +17,23 @@ const asyncthrough = require('./lib/through');
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
 
-const md     = require('markdown-it')({
+const markdown = require('markdown-it');
+const striptags = require('string-strip-html');
+
+const md     = markdown({
   html: true,
   linkify: true,
   typographer: true,
 }).enable('image')
   .use(require('markdown-it-div'))
   .use(require('markdown-it-include'), path.join(ROOT, '/includes'))
+;
+
+const mdPreview = markdown({
+  html: false,
+  linkify: false,
+  typographer: true,
+}).use(require('./lib/markdown-token-filter'))
 ;
 
 const handlebars = require('handlebars');
@@ -82,14 +92,18 @@ exports.posts = function buildPosts () {
       if (!file || file.meta.ignore) return;
       var original = file.contents.toString('utf8').trim();
       var contents = md.render(original);
-      file.contents = Buffer.from(contents);
+
+      var preview = striptags(original).slice(0, 1000);
+      preview = preview && mdPreview.render(preview + '…');
 
       var date = moment(file.meta.date);
       var cwd = path.dirname(file.path);
       var flags = new Set(file.meta.classes || []);
 
+      file.contents = Buffer.from(contents);
       file.meta.markdown = original;
       file.meta.contents = contents;
+      file.meta.preview = preview;
       file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || date.format('YYYY-MM-DD-HHmm');
       file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
       file.meta.fullurl = 'http://curvyandtrans.com' + file.meta.url;
@@ -202,8 +216,10 @@ exports.posts = function buildPosts () {
         file.meta.dimensions.ratioH = Math.round((height / width) * 100);
         file.meta.dimensions.ratioW = Math.round((width / height) * 100);
 
-        if (file.meta.dimensions.ratioH >= 1) {
+        if (file.meta.dimensions.ratioH > 100) {
           flags.add('is-tall');
+        } else if (file.meta.dimensions.ratioH === 100) {
+          flags.add('is-square');
         } else {
           flags.add('is-wide');
         }
@@ -250,6 +266,12 @@ exports.posts = function buildPosts () {
         flags.add('has-descrip');
       } else {
         flags.add('no-descrip');
+      }
+
+      if (preview) {
+        flags.add('has-preview');
+      } else {
+        flags.add('no-preview');
       }
 
       file.meta.classes = Array.from(flags);
@@ -436,27 +458,35 @@ exports.lists = function buildLists () {
       var contents = md.render(original);
       file.contents = Buffer.from(contents);
 
+      file.meta.markdown = original;
+      file.meta.contents = contents;
       file.meta.posts = file.meta.posts.map((id) => postMap[id]).filter(Boolean);
 
       file.path = path.join(file.base, path.basename(file.basename, file.extname), 'index.html');
+
       stream.push(file);
     }))
-    .pipe(require('./lib/debug')('contents'))
+    // .pipe(require('./lib/debug')('path'))
     .pipe(asyncthrough(async (stream, file) => {
-      if (!file.meta.ignore) {
-        try {
-          file.contents = Buffer.from(template({
-            page: {
-              title: file.meta.title + ' :: Curvy & Trans',
-            },
-            ...file.meta,
-            contents: file.contents.toString(),
-          }));
-          stream.push(file);
-        } catch (err) {
-          log.error('Encountered a crash while compiling ' + file.path, err);
-        }
+      const datajs = file.clone();
+      datajs.contents = Buffer.from(JSON.stringify(file.meta, null, 2));
+      datajs.basename = 'index.json';
+      stream.push(datajs);
+
+      try {
+        file.contents = Buffer.from(template({
+          page: {
+            title: file.meta.title + ' :: Curvy & Trans',
+          },
+          ...file.meta,
+          contents: file.contents.toString(),
+        }));
+        stream.push(file);
+      } catch (err) {
+        log.error('Encountered a crash while compiling ' + file.path, err);
       }
+
+
     }))
     .pipe(dest(`${DEST}/l/`))
   ;

@@ -2,14 +2,15 @@
 import Backbone from 'backbone';
 import Handlebars from 'handlebars/dist/handlebars';
 import postsJSON from '../posts-sans.json';
-import htmlCell from '../templates/cell.hbs.html';
 import htmlGrid from '../templates/index-grid.hbs.html';
+import htmlGridCell from '../templates/index-cell.hbs.html';
+import htmlGridCard from '../templates/index-card.hbs.html';
 import { groupBy, reduce, debounce } from 'lodash';
 import dateFormat from 'date-fns/format';
 import hhFirst from 'helper-hoard/src/helpers/collection/first';
 
-const cell = Handlebars.compile(htmlCell);
-Handlebars.registerPartial('cell', cell);
+Handlebars.registerPartial('indexCell', Handlebars.compile(htmlGridCell));
+Handlebars.registerPartial('indexCard', Handlebars.compile(htmlGridCard));
 
 Handlebars.registerHelper('rev', (url) => (url[0] === '/' ? url : '/' + url));
 Handlebars.registerHelper('date', (format, date) => dateFormat(date, format));
@@ -66,36 +67,35 @@ const IndexView = Backbone.View.extend({
 
   render () {
     // return;
-    var html;
+    var data;
 
     if (this.tag) {
-      const posts = this.byTag[this.tag] || [];
-      html = posts.map((p) => cell(p));
-      html = `
-        <h3 class="tagged-header">
-          <span>${this.tags[this.tag]}</span>
-          <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><i class="fas fa-tags"></i><span>&nbsp;Filter By Tag</span></button>
-        </h3>
-        <div class="post-grid">${html.join('')}</div>
-      `;
 
-      this.$el.html(html);
-      return;
+      data = {
+        posts: {
+          first: null,
+          ordered: this.byTag[this.tag] || [],
+        },
+        full: true,
+      };
+
+    } else {
+
+      data = {
+        posts: {
+          first: this.first,
+          ordered: this.posts.slice(0, this.loaded),
+        },
+        full: this.loaded >= this.posts.length,
+      };
+
     }
 
-    var data = {
-      posts: {
-        first: this.first,
-        ordered: this.posts.slice(0, this.loaded),
-      },
-      full: this.loaded >= this.posts.length,
-    };
-
-    html = this.template(data);
+    const html = this.template(data);
 
     this.$el.html(html);
 
-    this.checkBottom();
+    if (!data.full) this.checkBottom();
   },
 
   checkBottom () {

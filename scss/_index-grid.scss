@@ -1,6 +1,6 @@
 
 
-.post-grid {
+.cell-grid {
   display: grid;
   grid-gap: 0;
   grid-column-gap: 20px;
@@ -14,7 +14,7 @@
   }
 }
 
-.post.cell {
+.post-cell {
 
   z-index: 0;
   display: grid;
