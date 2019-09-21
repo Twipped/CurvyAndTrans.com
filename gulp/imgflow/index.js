@@ -85,22 +85,7 @@ module.exports = exports = async function imageFlow () {
     if (titlecard) {
       tasks.push({
         input: titlecard,
-        output: `docs/p/${hash}/titlecard-north.jpeg`,
-        action: actions.transcode,
-      });
-      tasks.push({
-        input: titlecard,
-        output: `docs/p/${hash}/titlecard-south.jpeg`,
-        action: actions.transcode,
-      });
-      tasks.push({
-        input: titlecard,
-        output: `docs/p/${hash}/titlecard-center.jpeg`,
-        action: actions.transcode,
-      });
-      tasks.push({
-        input: titlecard,
-        output: `docs/p/${hash}/titlecard-thumb.jpeg`,
+        output: `docs/p/${hash}/titlecard.png`,
         action: actions.transcode,
       });
     }
@@ -111,29 +96,27 @@ module.exports = exports = async function imageFlow () {
         output: `docs/p/${hash}/poster.jpeg`,
         action: actions.poster,
       });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-north.png`,
+        action: actions.titlecardNorth,
+      });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-south.png`,
+        action: actions.titlecardSouth,
+      });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-center.png`,
+        action: actions.titlecardCenter,
+      });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-square.png`,
+        action: actions.titlecardSquare,
+      });
 
-      if (!titlecard) {
-        tasks.push({
-          input: poster,
-          output: `docs/p/${hash}/titlecard-north.jpeg`,
-          action: actions.titlecardNorth,
-        });
-        tasks.push({
-          input: poster,
-          output: `docs/p/${hash}/titlecard-south.jpeg`,
-          action: actions.titlecardSouth,
-        });
-        tasks.push({
-          input: poster,
-          output: `docs/p/${hash}/titlecard-center.jpeg`,
-          action: actions.titlecardCenter,
-        });
-        tasks.push({
-          input: poster,
-          output: `docs/p/${hash}/titlecard-thumb.jpeg`,
-          action: actions.titlecardThumb,
-        });
-      }
     } else {
       log.warn('Post is missing a poster image', postKey);
     }

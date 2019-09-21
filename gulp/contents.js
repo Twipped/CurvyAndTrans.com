@@ -139,23 +139,27 @@ exports.posts = function buildPosts () {
       const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
 
       if (titlecard) {
-        file.meta.thumbnail = `/p/${file.meta.id}/${path.basename(titlecard)}`;
+        file.meta.thumbnail = `/p/${file.meta.id}/titlecard.png`;
       } else {
         file.meta.thumbnail = `/p/${file.meta.id}/titlecard-thumb.png`;
 
         switch (file.meta.titlecard) {
         case 'top':
+        case 'north':
           file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.png`;
           break;
         case 'bottom':
+        case 'south':
           file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.png`;
           break;
         case 'center':
+        case 'middle':
           file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.png`;
           break;
         case 'thumb':
+        case 'square':
         default:
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-thumb.png`;
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.png`;
           break;
         }
       }

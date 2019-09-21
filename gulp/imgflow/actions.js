@@ -106,7 +106,7 @@ const actions = {
     await fs.copy(output, cache);
   },
 
-  async titlecardThumb ({ input, output, cache }) {
+  async titlecardSquare ({ input, output, cache }) {
     await actions.image({
       input,
       output,
