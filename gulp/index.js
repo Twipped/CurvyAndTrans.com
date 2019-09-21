@@ -3,9 +3,10 @@ const { series, parallel, watch } = require('gulp');
 
 /** **************************************************************************************************************** **/
 
-var { loadLayout, posts, pages } = require('./contents');
-var contentTask = series( loadLayout, posts, pages );
+var { loadLayout, posts, pages, lists } = require('./contents');
+var contentTask = series( loadLayout, posts, pages, lists );
 exports.posts = series( loadLayout, posts );
+exports.lists = series( loadLayout, lists );
 exports.content = contentTask;
 
 const rssTask = require('./atom');
@@ -55,6 +56,7 @@ var buildTask = series(
   jsRollupTask.prod,
   loadLayout.prod,
   pages,
+  lists,
   rssTask
 );
 
@@ -69,6 +71,7 @@ var devBuildTask = series(
   posts,
   jsRollupTask,
   pages,
+  lists,
   rssTask
 );
 
@@ -95,6 +98,7 @@ function watcher () {
     'includes/*.md',
   ], contentTask);
 
+  watch('lists/*.md', exports.lists);
   watch('scss/*.scss', scssTask);
   watch('js/*.js', jsTask);
   watch([ 'js-rollup/*.js', 'templates/cell.hbs.html', 'posts-sans.json' ], jsRollupTask);

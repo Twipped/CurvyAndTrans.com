@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const moment = require('moment');
-const { findIndex, sortBy, groupBy, reduce, omit } = require('lodash');
+const { findIndex, sortBy, groupBy, keyBy, reduce, omit } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
 const slugify = require('slugify');
@@ -41,7 +41,8 @@ handlebars.registerHelper('even', (value, options) => {
 });
 exports.loadLayout = async function loadLayout () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
-  handlebars.registerPartial('cell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/cell.hbs.html')))));
+  handlebars.registerPartial('indexCell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-cell.hbs.html')))));
+  handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
   handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
     if (!url) return '';
@@ -410,4 +411,53 @@ exports.pages = function buildPages () {
 
     }))
     .pipe(dest('docs'));
+};
+
+/** **************************************************************************************************************** **/
+
+
+exports.lists = function buildLists () {
+  var template = handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/list.hbs.html'))));
+
+  var posts;
+  try {
+    posts = JSON.parse(fs.readFileSync(path.join(ROOT, 'posts.json')));
+  } catch (e) {
+    posts = [];
+  }
+
+  const postMap = keyBy(posts, 'id');
+
+  return src('lists/*.md')
+    .pipe(frontmatter({ property: 'meta' }))
+    .pipe(asyncthrough(async (stream, file) => {
+      if (!file || file.meta.ignore) return;
+      var original = file.contents.toString('utf8').trim();
+      var contents = md.render(original);
+      file.contents = Buffer.from(contents);
+
+      file.meta.posts = file.meta.posts.map((id) => postMap[id]).filter(Boolean);
+
+      file.path = path.join(file.base, path.basename(file.basename, file.extname), 'index.html');
+      stream.push(file);
+    }))
+    .pipe(require('./lib/debug')('contents'))
+    .pipe(asyncthrough(async (stream, file) => {
+      if (!file.meta.ignore) {
+        try {
+          file.contents = Buffer.from(template({
+            page: {
+              title: file.meta.title + ' :: Curvy & Trans',
+            },
+            ...file.meta,
+            contents: file.contents.toString(),
+          }));
+          stream.push(file);
+        } catch (err) {
+          log.error('Encountered a crash while compiling ' + file.path, err);
+        }
+      }
+    }))
+    .pipe(dest(`${DEST}/l/`))
+  ;
 };
