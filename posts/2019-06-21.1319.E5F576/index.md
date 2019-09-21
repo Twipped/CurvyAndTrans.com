@@ -5,7 +5,7 @@ title: "Rejection Sensitive Dysphoria will own your life"
 description: "Co-morbid with ADHD, RSD is a condition that can cause debilitating depressive episodes without notice."
 tags:
   - Mental Health
-noimages: true
+no-images: true
 instagram: https://www.instagram.com/p/By-WICPnoaG/
 span: 9
 shortCard: true

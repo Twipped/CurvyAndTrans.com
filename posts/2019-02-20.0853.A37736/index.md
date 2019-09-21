@@ -8,7 +8,7 @@ tags:
   - Essays
   - Medical
   - Top Post
-noimages: true
+no-images: true
 instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 ---
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

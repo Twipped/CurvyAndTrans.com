@@ -6,7 +6,7 @@ description: "A t-shirt through the ages"
 tags:
   - Transition Timeline
 spanLarge: 14
-noimages: true
+no-images: true
 ---
 
 <a href="../1.jpeg"><img src="../1.jpeg" alt=""></a>

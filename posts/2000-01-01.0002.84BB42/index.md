@@ -10,7 +10,7 @@ tags:
   - Memoir
   - Essays
   - Transgender
-noimages: true
+no-images: true
 shortCard: true
 span: 10
 

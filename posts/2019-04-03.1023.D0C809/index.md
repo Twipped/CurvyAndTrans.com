@@ -9,7 +9,7 @@ tags:
   - Film
   - Essays
   - Top Post
-noimages: true
+no-images: true
 span: 11
 shortCard: true
 lightbox: true

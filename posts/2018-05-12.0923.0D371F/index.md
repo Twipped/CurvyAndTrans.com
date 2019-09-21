@@ -4,7 +4,7 @@ date: "2018-05-12T16:23:00.000Z"
 title: "Come as You Are"
 description: "Uncovering My Sexual Context"
 slug: sexual-context
-noimages: true
+no-images: true
 tags:
   - Sex Positivity
   - Transgender

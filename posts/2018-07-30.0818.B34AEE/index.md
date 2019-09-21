@@ -4,7 +4,7 @@ date: "2018-07-30T15:18:00.000Z"
 title: "Dropping the T(esticles)"
 description: "An account of my experience with my first gender confirming surgery, an orchiectomy."
 slug: drop-it-like-its-hot
-noimages: true
+no-images: true
 titlecard: bottom
 span: 11
 shortCard: true

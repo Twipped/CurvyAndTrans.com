@@ -3,7 +3,7 @@ id: "741A4B"
 date: "2019-01-29T08:00:00.000Z"
 title: "The Way We Changed"
 description: "How my wife and I evolved through my transition"
-noimages: true
+no-images: true
 tags:
   - Transgender
   - Family

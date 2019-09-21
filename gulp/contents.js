@@ -85,6 +85,7 @@ exports.posts = function buildPosts () {
 
       var date = moment(file.meta.date);
       var cwd = path.dirname(file.path);
+      var flags = new Set(file.meta.classes || []);
 
       file.meta.markdown = original;
       file.meta.contents = contents;
@@ -93,21 +94,22 @@ exports.posts = function buildPosts () {
       file.meta.fullurl = 'http://curvyandtrans.com' + file.meta.url;
       file.meta.originalpath = path.relative(file.cwd, file.path);
       file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
-      file.meta.classes = file.meta.classes || [];
+
+      if (!file.meta.slug) {
+        log.error(`Post could not produce a slug. (${cwd})`);
+        return;
+      }
 
       file.meta.tags = (file.meta.tags || []).reduce((result, tag) => {
         result[slugify(tag).toLowerCase()] = tag;
         return result;
       }, {});
 
-      if (Object.keys(file.meta.tags).length === 1 && file.meta.tags.ootd) {
-        file.meta.classes.push('ootd-only');
-        file.meta.ootd = true;
-      }
 
-      if (!file.meta.slug) {
-        log.error(`Post could not produce a slug. (${cwd})`);
-        return;
+      if (Object.keys(file.meta.tags).length === 1 && file.meta.tags.ootd) {
+        flags.add('is-ootd-only');
+      } else {
+        flags.add('not-ootd-only');
       }
 
       const images = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', {
@@ -132,16 +134,30 @@ exports.posts = function buildPosts () {
             thumb: `/p/${file.meta.id}/${basename}.thumb.jpeg`,
           };
         });
+        flags.add('has-images');
+        if (file.meta['no-images']) {
+          flags.add('hide-images');
+        } else {
+          flags.add('show-images');
+        }
+
+        if (images.length === 1) {
+          flags.add('single-image');
+        }
+
       } else {
-        file.meta.noimages = true;
+        flags.add('no-images');
+        flags.add('hide-images');
       }
 
       const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
 
       if (titlecard) {
+        flags.add('has-titlecard');
         file.meta.thumbnail = `/p/${file.meta.id}/titlecard.png`;
       } else {
         file.meta.thumbnail = `/p/${file.meta.id}/titlecard-thumb.png`;
+        flags.add('no-titlecard');
 
         switch (file.meta.titlecard) {
         case 'top':
@@ -168,8 +184,14 @@ exports.posts = function buildPosts () {
 
       if (poster) {
         file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
+        flags.add('has-poster');
+        flags.add('native-poster');
       } else if (images.length) {
+        flags.add('has-poster');
+        flags.add('derived-poster');
         file.meta.dimensions = await dimensions(path.resolve(cwd, images[0]));
+      } else {
+        flags.add('no-poster');
       }
 
       file.meta.poster = `/p/${file.meta.id}/poster.jpeg`;
@@ -178,6 +200,13 @@ exports.posts = function buildPosts () {
         const { width, height } = file.meta.dimensions;
         file.meta.dimensions.ratioH = Math.round((height / width) * 100);
         file.meta.dimensions.ratioW = Math.round((width / height) * 100);
+
+        if (file.meta.dimensions.ratioH >= 1) {
+          flags.add('is-tall');
+        } else {
+          flags.add('is-wide');
+        }
+
         if (!file.meta.span) {
           file.meta.span = Math.ceil((height / width) * 10);
         }
@@ -189,21 +218,41 @@ exports.posts = function buildPosts () {
         file.meta.spanLarge = 20;
       }
 
-      // if (file.meta.span < 8 && typeof file.meta.shortCard === 'undefined') {
-      //   file.meta.shortCard = true;
-      // }
-
-      // if (file.meta.shortCard) {
-      //   file.meta.span += 2;
-      // }
-
-      if (contents.length > 2000 && typeof file.meta.long === 'undefined') {
-        file.meta.long = true;
+      if (contents.length > 2000 || file.meta.long) {
+        flags.add('is-long');
+      } else if (contents.length < 500) {
+        flags.add('is-short');
       }
 
-      if (images.length === 1 && typeof file.meta.single === 'undefined') {
-        file.meta.single = true;
+
+      if (file.meta['no-title']) {
+        flags.add('hide-title');
+      } else if (file.meta.title || file.meta.description) {
+        flags.add('show-title');
+      } else {
+        flags.add('hide-title');
       }
+
+      if (file.meta.title) {
+        flags.add('has-title');
+      } else {
+        flags.add('no-title');
+      }
+
+      if (file.meta.subtitle) {
+        flags.add('has-subtitle');
+      } else {
+        flags.add('no-subtitle');
+      }
+
+      if (file.meta.description) {
+        flags.add('has-descrip');
+      } else {
+        flags.add('no-descrip');
+      }
+
+      file.meta.classes = Array.from(flags);
+      file.meta.flags = file.meta.classes.reduce((res, item) => { res[item] = true; return res; }, {});
 
       file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
       stream.push(file);
@@ -226,7 +275,7 @@ exports.posts = function buildPosts () {
         }
       }
     }))
-    .pipe(dest(`${DEST}/p/`));
+    .pipe(dest(`${DEST}/p/`))
   ;
 
   var posts = [];

@@ -4,7 +4,7 @@ date: "2019-02-06T20:12:48.871Z"
 title: "Second Puberty 101"
 description: "What to Expect When You're Expecting Boobs"
 spanLarge: 14
-noimages: true
+no-images: true
 titlecard: top
 tags:
   - Medical

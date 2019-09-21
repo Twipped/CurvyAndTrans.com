@@ -4,7 +4,7 @@ date: "2018-11-15T15:48:00.000Z"
 title: "A few of my favorite things."
 description: "A list of the best gifts that my transition gave to me."
 slug: trans-positives
-noimages: true
+no-images: true
 titlecard: center
 tags:
   - Transgender

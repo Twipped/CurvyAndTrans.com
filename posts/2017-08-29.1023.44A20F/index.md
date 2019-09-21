@@ -7,7 +7,7 @@ description: "How I came to love Jocelyn"
 tags:
   - Transgender
   - Essays
-noimages: true
+no-images: true
 ---
 
 Alright, so, this started as a twitter thread and then I got to 40 tweets and decided it needed to be an essay instead.

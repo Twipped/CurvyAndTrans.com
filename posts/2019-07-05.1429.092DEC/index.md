@@ -9,7 +9,7 @@ tags:
 products:
   "CareTouch 1ml Luer Lock Syringes (100ct)": https://www.amazon.com/exec/obidos/ASIN/B071GZP1QP/curvyandtrans-20
   "BD Hypodermic Needles": https://www.vitalitymedical.com/bd-general-use-hypodermic-needles.html
-noimages: true
+no-images: true
 instagram: https://www.instagram.com/p/BzisIkhHxDW/
 ---
 Quick walkthrough of my weekly Estradiol Valerate injection. This is subcutaneous injection of 0.14ml of the 40mg/ml serum, so about 5mg. I inject every five days.

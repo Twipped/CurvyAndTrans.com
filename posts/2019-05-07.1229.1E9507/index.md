@@ -6,7 +6,7 @@ description: "Examining a world full of prejudices"
 tags:
   - Social Justice
   - Essays
-noimages: true
+no-images: true
 instagram: https://www.instagram.com/p/BxLfRLqHNnK/
 ---
 

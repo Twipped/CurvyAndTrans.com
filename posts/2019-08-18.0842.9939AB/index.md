@@ -8,7 +8,7 @@ tags:
   - Transgender
   - Body Positivity
 single: false
-notitle: true
+no-title: true
 shortCard: true
 instagram: https://www.instagram.com/p/B1TzCoQH__U/
 titlecard: top

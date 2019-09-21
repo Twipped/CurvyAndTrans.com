@@ -5,6 +5,7 @@ const { series, parallel, watch } = require('gulp');
 
 var { loadLayout, posts, pages } = require('./contents');
 var contentTask = series( loadLayout, posts, pages );
+exports.posts = series( loadLayout, posts );
 exports.content = contentTask;
 
 const rssTask = require('./atom');

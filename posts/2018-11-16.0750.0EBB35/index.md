@@ -5,7 +5,7 @@ title: "Welcome to the suck"
 description: "Being trans is awesome, except when it isn't."
 slug: trans-negatives
 draft: true
-noimages: true
+no-images: true
 tags:
   - Transgender
   - Essays

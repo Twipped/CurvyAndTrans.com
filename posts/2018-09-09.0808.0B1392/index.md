@@ -4,7 +4,7 @@ date: "2018-09-09T15:08:00.000Z"
 title: "It's all about my mother"
 description: "Drilling into my Rejection Sensitive Dysphoria"
 slug: rejection-study
-noimages: true
+no-images: true
 tags:
   - Essays
 ---
