@@ -211,17 +211,23 @@ exports.posts = function buildPosts () {
 
       file.meta.poster = `/p/${file.meta.id}/poster.jpeg`;
 
+      if (file.meta.orientation) {
+        flags.add('is-' + file.meta.orientation);
+      }
+
       if (file.meta.dimensions) {
         const { width, height } = file.meta.dimensions;
         file.meta.dimensions.ratioH = Math.round((height / width) * 100);
         file.meta.dimensions.ratioW = Math.round((width / height) * 100);
 
-        if (file.meta.dimensions.ratioH > 100) {
-          flags.add('is-tall');
-        } else if (file.meta.dimensions.ratioH === 100) {
-          flags.add('is-square');
-        } else {
-          flags.add('is-wide');
+        if (!file.meta.orientation) {
+          if (file.meta.dimensions.ratioH > 100) {
+            flags.add('is-tall');
+          } else if (file.meta.dimensions.ratioH === 100) {
+            flags.add('is-square');
+          } else {
+            flags.add('is-wide');
+          }
         }
 
         if (!file.meta.span) {
@@ -236,9 +242,15 @@ exports.posts = function buildPosts () {
       }
 
       if (contents.length > 2000 || file.meta.long) {
+        flags.add('is-extra-long');
+      } else if (contents.length > 1000 || file.meta.long) {
         flags.add('is-long');
       } else if (contents.length < 500) {
         flags.add('is-short');
+      }
+
+      if (!file.meta.carousel) {
+        file.meta.carousel = JSON.stringify({ groupCells: true });
       }
 
 
@@ -275,7 +287,11 @@ exports.posts = function buildPosts () {
       }
 
       file.meta.classes = Array.from(flags);
-      file.meta.flags = file.meta.classes.reduce((res, item) => { res[item] = true; return res; }, {});
+      file.meta.flags = file.meta.classes.reduce((res, item) => {
+        var camelCased = item.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+        res[camelCased] = true;
+        return res;
+      }, {});
 
       file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
       stream.push(file);
@@ -285,6 +301,11 @@ exports.posts = function buildPosts () {
   var postFiles = readPosts
     .pipe(asyncthrough(async (stream, file) => {
       if (!file.meta.ignore) {
+        const datajs = file.clone();
+        datajs.contents = Buffer.from(JSON.stringify(file.meta, null, 2));
+        datajs.basename = 'index.json';
+        stream.push(datajs);
+
         try {
           file.contents = Buffer.from(template({
             page: {
@@ -310,7 +331,7 @@ exports.posts = function buildPosts () {
       indexFile = file.clone();
     }
 
-    if (!file.meta.ignore) {
+    if (!file.meta.ignore && file.extname !== '.json') {
       posts.push(file.meta);
     }
 
