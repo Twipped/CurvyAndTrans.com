@@ -124,4 +124,4 @@ exports.uat = series(cleanTask, buildTask, server);
 
 /** **************************************************************************************************************** **/
 
-exports.default = series(devBuildTask, watcher);
+exports.default = series(cleanTask, devBuildTask, watcher);
