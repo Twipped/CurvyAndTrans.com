@@ -5,11 +5,7 @@ title: "Power Shirt"
 description: "A t-shirt through the ages"
 tags:
   - Transition Timeline
-spanLarge: 14
-no-images: true
 ---
-
-<a href="../1.jpeg"><img src="../1.jpeg" alt=""></a>
 
 January 2005, December 2018, September 2019.
 

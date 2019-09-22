@@ -7,7 +7,6 @@ description: "Am I still the person I was before transition?"
 tags:
   - Transgender
   - Essays
-single: false
 instagram: https://www.instagram.com/p/Bxn-KbonsWf/
 ---
 Am I still the person I was before transition? That’s such a hard question to answer. A co-worker commented a few months ago about just how remarkable the change in me has been over the last two years. When they compare who I am now to who I was then, the differences are so stark that I seem like a totally new person.

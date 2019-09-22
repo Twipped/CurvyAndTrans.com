@@ -1,12 +1,10 @@
 ---
 id: "CE80B3"
 date: "2019-02-11T21:48:00.000Z"
-title: ""
+title: "Crimson Air"
 description: "Outfit of the Day for Feb 11th, 2019"
 tags:
   - OOTD
-classes:
-  - double-column
 products:
   "v28 Pleated Chiffon Maxi Skirt, Red 3X": https://www.amazon.com/exec/obidos/ASIN/B01B15HNGQ/curvyandtrans-20
   "Ava & Viv Women's Plus Size Crew Neck Long Sleeve T-Shirt": https://www.target.com/p/women-s-plus-size-crew-neck-long-sleeve-t-shirt-ava-viv-153/-/A-53915057

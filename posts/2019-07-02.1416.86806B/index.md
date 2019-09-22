@@ -1,7 +1,7 @@
 ---
 id: "86806B"
 date: "2019-07-02T21:16:00.000Z"
-title: ""
+title: "Basic Edits"
 description: "Outfit of the Day for Jul 2nd, 2019"
 tags:
   - OOTD

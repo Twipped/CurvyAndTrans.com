@@ -5,7 +5,7 @@ title: "Sappho, Lesbians and Bisexual Exclusion"
 description: "The exclusion of bisexual women from lesbianism is TERF adjacent ideology."
 tags:
   - Feminism
-shortCard: true
+orientation: wide
 instagram: https://www.instagram.com/p/BzyxBOUn0Km/
 ---
 

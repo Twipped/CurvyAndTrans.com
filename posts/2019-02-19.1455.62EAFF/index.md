@@ -7,7 +7,6 @@ instagram: https://www.instagram.com/p/BuEGb9bn0Sk/
 tags:
   - Transition Timeline
   - Transgender
-classes:
-  - horizontal
+orientation: wide
 ---
 You'll be amazed where you land.

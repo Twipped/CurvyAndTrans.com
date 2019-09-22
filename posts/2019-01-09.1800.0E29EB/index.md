@@ -1,8 +1,10 @@
 ---
 id: "0E29EB"
 date: "2019-01-09T18:00:00.000Z"
-title: ""
+title: "Euphoric Dysphoria"
 description: ""
+alt: When you've lived your whole life in pitch black, you don't know your world is dark until somebody lights a match.
+no-title: true
 tags:
   - Transgender
   - Gender Dysphoria

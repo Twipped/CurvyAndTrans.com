@@ -1,17 +1,20 @@
 ---
 id: "C4BD87"
 date: "2018-08-24T15:13:00.000Z"
-title: "Cycle Dynamics: Why Trans Women Can Have Periods"
+title: "Cycle Dynamics"
+subtitle: "Why Trans Women Can Have Periods"
+slug: cycle-dynamics
 description: "A dive into the endocrinology of the female hormone cycle."
-span: 12
-shortCard: true
+no-images: true
 tags:
   - Transgender
   - Medical
   - Essays
   - Top Post
-slug: cycle-dynamics
 ---
+
+<a href="../1.jpeg"><img src="../1.jpeg" alt=""  style="margin: 0 auto;display: block;"></a>
+
 
 First lets get this out of the way... [Yes, trans women](https://theestablishment.co/yes-trans-women-can-get-period-symptoms-e43a43979e8c/) can [have periods](http://www.onwednesdays.net/trans-girl-periods/). No, [we do not menstruate](https://lifeofbria.com/tmi/), but if your definition of "period" is so narrow so as to only include a flow of blood, then you are not living in the 21st century. I'm not going to spend time justifying this, [it's been done](https://twitter.com/LifeofBria/status/1016753976211996672) better [by others](https://www.themaven.net/transgenderuniverse/articles/my-time-of-the-month-as-a-transgender-woman-s5VLSxx6Qk6Y76mGeUz_LQ/). The purpose of this post is to explain the beginnings of how and why, as I have come to understand them.
 
