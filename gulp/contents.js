@@ -252,7 +252,7 @@ exports.posts = function buildPosts () {
       }
 
       if (!file.meta.carousel) {
-        file.meta.carousel = JSON.stringify({ groupCells: true });
+        file.meta.carousel = JSON.stringify({ groupCells: true, imagesLoaded: true });
       }
 
 
