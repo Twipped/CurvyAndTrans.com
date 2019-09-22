@@ -1,138 +1,138 @@
 
-.page-post {
-
-  article {
-    display: grid;
-    margin: 0 auto;
-
-    &.single, &.noimages {
-      max-width: 1000px;
-    }
-
-    &.horizontal {
-      max-width: 1020px;
-    }
-
-    &.single, &.noimages, &.horizontal {
-      @include media-breakpoint-up(md) {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-
-    &:not(.noimages) {;
-      @include media-breakpoint-up(md) {
-        grid-template-columns: minmax( 1fr, 500px) 1fr;
-        grid-template-areas:
-          "images title"
-          "images subtitle"
-          "images datetags"
-          "images products"
-          "images contents"
-          "images ."
-          "images ."
-        ;
-        grid-column-gap: 20px;
-        grid-template-rows: min-content min-content min-content min-content 1fr;
-
-        padding-right: 20px;
-
-        &.long {
-          grid-template-columns: 1fr 2fr;
-        }
-      }
-
-      @include media-breakpoint-down(sm) {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "title"
-          "subtitle"
-          "datetags"
-          "images"
-          "products"
-          "contents"
-        ;
-      }
-
-      &.single, &.horizontal {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "title"
-          "subtitle"
-          "datetags"
-          "images"
-          "products"
-          "contents"
-        ;
-      }
-
-      &.horizontal {
-
-        .post-images {
-          padding-left: 0;
-
-          display: grid;
-          grid-template-rows: 1fr;
-          grid-column-gap: 10px;
-          grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
-          max-width: 1010px;
-          margin: 0 auto;
-        }
-
-      }
-
-      &.single {
-        .post-images {
-          padding-left: 0;
-
-          a {
-            border: none;
-          }
-          img {
-            width: auto;
-            margin: 0 auto;
-            box-shadow: 0 2px 3px rgba(0,0,0,0.5);
-            @include media-breakpoint-up(md) {
-              max-height: 70vh;
-            }
-            @include media-breakpoint-down(sm) {
-              max-width: 100vw;
-            }
-          }
-
-        }
-      }
-    }
-
-    &.noimages {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "title"
-        "subtitle"
-        "datetags"
-        "products"
-        "contents"
-      ;
-
-      padding: 0 20px;
-
-      @include media-breakpoint-down(sm) {
-        padding: 0 5px;
-      }
-
-      @include media-breakpoint-up(md) {
-        font-size: 16px;
-      }
-    }
-
+.page-post article {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1000px;
+  @include media-breakpoint-up(md) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "subtitle"
+    "datetags"
+    "images"
+    "products"
+    "contents"
+  ;
+  grid-template-rows: min-content min-content min-content min-content min-content 1fr;
+
+  // &.horizontal {
+  //   max-width: 1020px;
+  // }
+
+  // &.single, &.hide-images, &.horizontal {
+  //   @include media-breakpoint-up(md) {
+  //     padding-left: 20px;
+  //     padding-right: 20px;
+  //   }
+  // }
+
+  // &:not(.hide-images) {;
+  //   @include media-breakpoint-up(md) {
+  //     grid-template-columns: minmax( 1fr, 500px) 1fr;
+  //     grid-template-areas:
+  //       "images title"
+  //       "images subtitle"
+  //       "images datetags"
+  //       "images products"
+  //       "images contents"
+  //       "images ."
+  //       "images ."
+  //     ;
+  //     grid-column-gap: 20px;
+  //     grid-template-rows: min-content min-content min-content min-content 1fr;
+
+  //     padding-right: 20px;
+
+  //     &.long {
+  //       grid-template-columns: 1fr 2fr;
+  //     }
+  //   }
+
+  //   @include media-breakpoint-down(sm) {
+  //     grid-template-columns: 1fr;
+  //     grid-template-areas:
+  //       "title"
+  //       "subtitle"
+  //       "datetags"
+  //       "images"
+  //       "products"
+  //       "contents"
+  //     ;
+  //   }
+
+  //   &.single, &.horizontal {
+  //     grid-template-columns: 1fr;
+  //     grid-template-areas:
+  //       "title"
+  //       "subtitle"
+  //       "datetags"
+  //       "images"
+  //       "products"
+  //       "contents"
+  //     ;
+  //   }
+
+  //   &.horizontal {
+
+  //     .post-images {
+  //       padding-left: 0;
+
+  //       display: grid;
+  //       grid-template-rows: 1fr;
+  //       grid-column-gap: 10px;
+  //       grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
+  //       max-width: 1010px;
+  //       margin: 0 auto;
+  //     }
+
+  //   }
+
+  //   &.single {
+  //     .post-images {
+  //       padding-left: 0;
+
+  //       a {
+  //         border: none;
+  //       }
+  //       img {
+  //         width: auto;
+  //         margin: 0 auto;
+  //         box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  //         @include media-breakpoint-up(md) {
+  //           max-height: 70vh;
+  //         }
+  //         @include media-breakpoint-down(sm) {
+  //           max-width: 100vw;
+  //         }
+  //       }
+
+  //     }
+  //   }
+  // }
+
+  // article.double-column .post-images {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: min-content;
+  //   grid-column-gap: 5px;
+  //   align-self: flex-start;
+
+  //   .even:last-child {
+  //     grid-column-end: span 2;
+  //   }
+  // }
+
 
   .post-images {
     grid-area: images;
 
-    @include media-breakpoint-up(md) {
-      padding-left: 5px;
-    }
+    // @include media-breakpoint-up(md) {
+    //   padding-left: 5px;
+    // }
 
     a {
       display: block;
@@ -146,8 +146,9 @@
       width: 100%;
     }
 
-    span {
+    .image-caption {
       display: block;
+      text-align: center;
       background: $lightPink;
       color: #333;
       font-size: 12px;
@@ -156,19 +157,24 @@
     }
   }
 
-  article > :first-child {
-    margin-top: 10px;
-  }
+  .post-carousel {
+    grid-area: images;
 
-  article.double-column .post-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content;
-    grid-column-gap: 5px;
-    align-self: flex-start;
+    .carousel {
+      background: #EEE;
+      margin-bottom: 40px;
+    }
 
-    .even:last-child {
-      grid-column-end: span 2;
+    .carousel-cell {
+      margin: 10px;
+      img, video {
+        max-height: 370px;
+      }
+    }
+
+    .carousel:not(.flickity-enabled) {
+      height: 390px;
+      overflow: hidden;
     }
   }
 
@@ -591,7 +597,123 @@
     }
   }
 
+  > :first-child {
+    margin-top: 10px;
+  }
+
+  &.single-image.show-images {
+
+    .post-images img {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    }
+
+    .post-images a {
+      border: none;
+    }
+
+    &.is-wide, &.is-extra-long {
+      .post-images {
+        margin-bottom: 20px;
+      }
+
+      .post-images img {
+        width: unset;
+        margin: 0 auto;
+        max-width: 100%;
+        @include media-breakpoint-up(md) {
+          max-height: 60vh;
+        }
+        @include media-breakpoint-down(sm) {
+          max-width: 100vw;
+        }
+      }
+    }
+
+    &:not(.is-extra-long) { &.is-square, &.is-tall {
+      @include media-breakpoint-up(md) {
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "title title"
+          "subtitle subtitle"
+          "datetags datetags"
+          "images contents"
+          "products products"
+        ;
+        grid-column-gap: 20px;
+
+        &.is-long {
+          grid-template-columns: 1fr 2fr;
+        }
+
+        &.is-short {
+          grid-template-areas:
+            "title title"
+            "subtitle subtitle"
+            "datetags datetags"
+            "images products"
+            "images contents"
+            "images ."
+          ;
+        }
+      }
+    }}
+  }
+
+  &.horizontal.show-images {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "datetags"
+      "images"
+      "products"
+      "contents"
+    ;
+
+    @include media-breakpoint-up(md) {
+      .post-images {
+        padding-left: 0;
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+        max-width: 1010px;
+        margin: 0 auto 10px;
+      }
+    }
+  }
+
+  &.hide-images {
+    max-width: 1000px;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "datetags"
+      "products"
+      "contents"
+    ;
+
+    padding: 0 20px;
+
+    .post-images {
+      display: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 5px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+    }
+  }
+
 }
+
 
 
 .mfp-with-zoom .mfp-container,

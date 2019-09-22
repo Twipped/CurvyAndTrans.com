@@ -14,9 +14,10 @@
   <link rel="canonical" href="{{this.url}}">{{/content}}
 
   {{#append "prescripts"}}
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha256-IKIuKgYQ+ogofw+KAz4fjF+zq7fwoNUnEVts493jKKE=" crossorigin="anonymous" />
   {{#if lightbox}}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer></script>
   <script type="text/javascript" src="{{rev '/js/post-lightbox.js'}}" defer></script>
   {{/if}}
   {{/append}}
@@ -27,13 +28,52 @@
     {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{title}}</a></h1>{{/if}}
     {{#if subtitle}}<h2 class="post-subtitle"><a href="{{this.url}}">{{subtitle}}</a></h2>{{/if}}
     <div class="post-date"><span>{{date 'MMMM Do, YYYY' this.date}}</span>{{#each tags}}<a href="/#{{@key}}">{{this}}</a>{{/each}}</div>
-    {{#unless noimages}}<div class="post-images">
-      {{#each images}}{{#compare type 'movie'}}
-      <a href="{{rev full}}" class="{{#even @index}}even{{else}}odd{{/even}}"><video autoplay muted loop><source src="{{full}}" type="video/mp4"></video>{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
-      {{else}}
-      <a href="{{rev full}}" class="{{#even @index}}even{{else}}odd{{/even}}"><img src="{{rev small}}" alt="{{#if @first}}{{#if alt}}{{alt}}{{/if}}{{/if}}">{{#if (get ../captions @key)}}<span>{{get ../captions @key}}</span>{{/if}}</a>
-      {{/compare}}{{/each}}
-    </div>{{/unless}}
+
+    {{#unless flags.hideImages}}{{#if flags.singleImage}}
+    <div class="post-images">
+      {{#each images}}
+        {{#compare type 'movie'}}
+        <a class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
+          <video {{#if ../video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{full}}" type="video/mp4"></video>
+          {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
+        </a>
+        {{/compare}}
+        {{#compare type 'image'}}
+        <a href="{{rev full}}" class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
+          <img
+            src="{{rev small}}"
+            alt="{{#if @first}}{{#if alt}}{{alt}}{{/if}}{{/if}}"
+            srcset="{{rev thumb}} 100w, {{rev small}} 500w, {{rev full}} 1000w"
+          >
+          {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
+        </a>
+        {{/compare}}
+      {{/each}}
+    </div>
+    {{else}}
+    <div class="post-carousel">
+      <div class="carousel" data-flickity="{{#if carousel}}{{carousel}}{{else}}{}{{/if}}">
+      {{#each images}}
+        {{#compare type 'movie'}}
+        <a class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
+          <video {{#if video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{full}}" type="video/mp4"></video>
+          {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
+        </a>
+        {{/compare}}
+        {{#compare type 'image'}}
+        <a href="{{rev full}}" class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
+          <img
+            src="{{rev small}}"
+            alt="{{#if @first}}{{#if alt}}{{alt}}{{/if}}{{/if}}"
+            srcset="{{rev thumb}} 100w, {{rev small}} 500w, {{rev full}} 1000w"
+          >
+          {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
+        </a>
+        {{/compare}}
+      {{/each}}
+      </div>
+    </div>
+    {{/if}}{{/unless}}
 
     {{#if products}}
     <ul class="post-products">
@@ -49,8 +89,10 @@
   {{/content}}
 
   {{#append 'postscripts'}}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha256-3Maq7M1TC8sOke8B4gRkhfGtETqGWq+xenQO7k2mHjI=" crossorigin="anonymous" async></script>
+
   {{#if lazy}}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js"></script>
   <script>
     window.lozad('img[data-src]', {
       rootMargin: '50% 0px', // syntax similar to that of CSS Margin
