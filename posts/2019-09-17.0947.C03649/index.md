@@ -6,7 +6,6 @@ description: "Debunking bra myths"
 tags:
   - Lingerie
   - Bra Review
-carousel: '{ "groupCells": true }'
 ---
 
 An ad showed up on my facebook feed for one of those adhesive bras that really only work if you’re small band / small cup, and the first 10 seconds of the video were so full of lies that I became enraged. So of course I had to write a rant. 😆
