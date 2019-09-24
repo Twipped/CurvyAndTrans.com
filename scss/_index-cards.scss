@@ -197,4 +197,21 @@
     }
 
   }
+
+  &.no-images {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "datetags"
+      "title"
+      "subtitle"
+      "descrip"
+    ;
+    grid-template-rows: min-content min-content min-content 1fr;
+
+    .grid-preview > div {
+      left: 0px;
+    }
+  }
+
+
 }
