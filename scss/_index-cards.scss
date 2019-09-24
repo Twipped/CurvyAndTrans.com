@@ -19,7 +19,6 @@
   position: relative;
 
   padding: 15px 15px 15px 15px;
-
   font-size: 14px;
 
   &.not-ootd-only {
@@ -82,33 +81,31 @@
       position: absolute;
       top: 0;
       left: 0;
-      right: 20px;
+      right: 0px;
       // bottom: 0;
       overflow: hidden;
       text-overflow: ellipsis;
 
       color: $gray-600;
     }
-
-    > span {
-      position: absolute;
-      display: block;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 60px;
-      line-height: 80px;
-      font-size: 1.3em;
-      font-weight: 700;
-
-      background: linear-gradient(180deg,
-        rgba(255,255,255,0) 0%,
-        rgba(255,255,255,0.5) 10%,
-        rgba(255,255,255,1) 70%,
-      );
-    }
   }
 
+  .grid-readmore {
+    grid-area: descrip;
+    align-self: end;
+    z-index: 10;
+
+    height: 60px;
+    line-height: 80px;
+    font-size: 1.3em;
+    font-weight: 700;
+
+    background: linear-gradient(180deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.5) 10%,
+      rgba(255,255,255,1) 70%,
+    );
+  }
 
   &.is-tall {
     // display: none;
@@ -124,7 +121,6 @@
     .grid-poster img {
       max-width: 100%;
     }
-
 
   }
 
@@ -162,10 +158,6 @@
 
       .grid-preview > div {
         left: 20px;
-      }
-
-      .grid-preview > span {
-        padding-left: 20px;
       }
     }
 
