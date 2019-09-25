@@ -8,7 +8,5 @@ tags:
   - OOTD
 products:
   "Description": https://www.amazon.com/exec/obidos/ASIN/A000000000/curvyandtrans-20
-classes:
-  - double-column
 ---
 `;
