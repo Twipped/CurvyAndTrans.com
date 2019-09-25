@@ -3,11 +3,17 @@
     <span>{{date 'MMM Do, YYYY' this.date}}</span> <span class="emdash">&mdash;</span>
     {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
   </div>
-  {{#unless flags.noPoster}}<div class="grid-poster"><img src="{{rev this.poster}}" alt="{{alt}}"></div>{{/unless}}
+  {{#unless flags.noPoster}}<div class="grid-poster">
+    <img src="{{rev this.poster}}" alt="{{alt}}">
+  </div>{{/unless}}
   {{#unless notitle}}
   {{#if title}}<h2 class="grid-title {{#unless description}}no-description{{/unless}}">{{title}}</h2>{{/if}}
   {{#if subtitle}}<h3 class="grid-subtitle">{{subtitle}}</h3>{{/if}}
   {{#if description}}<div class="grid-description">{{description}}</div>{{/if}}
-  {{#if preview}}<div class="grid-preview"><div>{{{preview}}}</div></div><div class="grid-readmore">See More...</div>{{/if}}
+  {{#if preview}}
+  <div class="grid-preview"><div>{{{preview}}}</div></div>
+  <div class="grid-readmore-shade"></div>
+  <!-- <div class="grid-readmore">See More...</div> -->
+  {{/if}}
   {{/unless}}
 </a>

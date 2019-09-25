@@ -1,5 +1,16 @@
 .page-index {
 
+  #body {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 1px 12px 0px 12px;
+    background-color: rgb(240,240,240);
+
+    @include media-breakpoint-down(sm) {
+      padding: 1px 0 0 0;
+    }
+  }
+
   .tagged-header {
     margin: 5px;
     border-bottom: 1px solid $border-color;
@@ -49,6 +60,7 @@
     }
   }
 
-  @import './index-grid';
+  // @import './index-grid';
   @import './index-cards';
+
 }
