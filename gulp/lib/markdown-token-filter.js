@@ -31,6 +31,7 @@ function descend (token) {
     return token;
 
   case 'image':
+  case 'container':
     return token.children;
 
   default:

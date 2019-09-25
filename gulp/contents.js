@@ -33,7 +33,9 @@ const mdPreview = markdown({
   html: false,
   linkify: false,
   typographer: true,
-}).use(require('./lib/markdown-token-filter'))
+})
+  .use(require('markdown-it-div'))
+  .use(require('./lib/markdown-token-filter'))
 ;
 
 const handlebars = require('handlebars');
