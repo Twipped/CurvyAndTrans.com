@@ -7,7 +7,11 @@
   grid-gap: 20px;
 
   @include media-breakpoint-down(md) {
-    grid-gap: 10px;
+    // grid-gap: 10px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0;
   }
 
   @include media-breakpoint-up(lg) {
@@ -26,19 +30,35 @@
 
   padding: 15px;
   font-size: 14px;
-  @include media-breakpoint-down(xs) {
-    padding: 10px;
-    font-size: 11px;
-  }
-
-
   border-radius: 5px;
   overflow: hidden;
+
+
+  @include media-breakpoint-down(xs) {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 0;
+  }
 
   &.not-ootd-only {
     box-shadow: 0 3px 5px rgba(238,118,173,0.5);
     border: 2px solid $gray-700;
     background-color: white;
+
+    @include media-breakpoint-down(xs) {
+      border-width: 2px 0;
+    }
+  }
+
+  &.is-ootd-only {
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+
+  &.is-ootd-only + .is-ootd-only {
+    border-top: 2px solid rgb(230,230,230);
+    padding-top: 20px;
+    margin-top: 0px;
   }
 
   > * {
@@ -136,7 +156,7 @@
     background: linear-gradient(180deg,
       rgba(240,240,240,0) 0%,
       rgba(240,240,240,0.5) 10%,
-      rgba(240,240,240,1) 70%,
+      rgba(240,240,240,1) 90%,
     );
   }
 
@@ -144,7 +164,7 @@
     background: linear-gradient(180deg,
       rgba(255,255,255,0) 0%,
       rgba(255,255,255,0.5) 10%,
-      rgba(255,255,255,1) 70%,
+      rgba(255,255,255,1) 90%,
     );
   }
 
@@ -166,11 +186,11 @@
       "subtitle poster"
       "descrip poster"
     ;
-    grid-template-columns: 1fr 30%;
+    grid-template-columns: 1fr 25%;
     grid-template-rows: min-content min-content min-content 1fr;
 
     .grid-poster img {
-      max-width: 100%;
+      width: 100%;
     }
 
   }
@@ -189,7 +209,7 @@
     .grid-poster {
       padding-bottom: 10px;
       img {
-        max-width: 100%;
+        width: 100%;
       }
     }
 
@@ -231,7 +251,7 @@
   &.is-wide {
     // display: none;
     grid-template-columns: 100%;
-    grid-template-rows: 3fr min-content min-content min-content 2fr;
+    grid-template-rows: min-content min-content min-content min-content 1fr;
 
     padding: 0;
 
@@ -273,6 +293,8 @@
       border-radius: 0;
     }
 
+    .grid-preview { min-height: 10rem; }
+
     &.no-subtitle .grid-title { padding-bottom: 10px; }
     &.has-subtitle .grid-subtitle { padding-bottom: 10px; }
     .grid-preview > div { padding-top: 15px; }
@@ -283,7 +305,6 @@
       .grid-preview > div { padding-top: 10px; }
       .grid-date { padding-top: 10px; }
     }
-
   }
 
   &.no-images {
