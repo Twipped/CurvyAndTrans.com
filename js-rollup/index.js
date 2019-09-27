@@ -12,7 +12,7 @@ import hhFirst from 'helper-hoard/src/helpers/collection/first';
 Handlebars.registerPartial('indexCell', Handlebars.compile(htmlGridCell));
 Handlebars.registerPartial('indexCard', Handlebars.compile(htmlGridCard));
 
-Handlebars.registerHelper('rev', (url) => (url[0] === '/' ? url : '/' + url));
+Handlebars.registerHelper('rev', (url) => (url && (url[0] === '/' ? url : '/' + url) || ''));
 Handlebars.registerHelper('date', (format, date) => dateFormat(date, format));
 Handlebars.registerHelper('first', hhFirst.first(Handlebars));
 
