@@ -1,11 +1,15 @@
 {{#extend "layout"}}
 
   {{#content "meta"}}
-  <meta property="og:title" content="{{page.title}}">
-  <meta property="og:description" content="Just a plus size trans girl in a straight size cis world.">
-  <meta property="og:image" content="{{rev '/images/avi.jpeg'}}">
-  <meta property="og:url" content="https://curvyandtrans.com">
+  <meta property="og:title" content="{{title}}{{#if subtitle}}, {{subtitle}}{{/if}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="https://curvyandtrans.com{{rev poster}}">
+  <meta property="og:url" content="https://curvyandtrans.com{{url}}">
+  <meta name="twitter:title" content="{{title}}{{#if subtitle}}, {{subtitle}}{{/if}}">
+  <meta name="twitter:description" content="{{description}}">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://curvyandtrans.com{{rev titlecard}}">
+  <link rel="canonical" href="https://curvyandtrans.com{{url}}">
   {{/content}}
 
   {{#content "bodyAttributes"}}class="page-index page-post"{{/content}}
