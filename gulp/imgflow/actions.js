@@ -5,37 +5,104 @@ const Promise = require('bluebird');
 
 const CWD = path.resolve(__dirname, '../..');
 
-const FULL_WIDTH = 1000;
-const SMALL_WIDTH = 500;
+const MAX_WIDTH = 2048;
+const LG_WIDTH = 1024;
+const MD_WIDTH = 768;
+const SM_WIDTH = 576;
+const XS_WIDTH = 300;
+
 const THUMB_WIDTH = 100;
 const TITLECARD_WIDTH = 1200;
 const TITLECARD_HEIGHT = Math.ceil(TITLECARD_WIDTH / 1.905);
 const TITLECARD_SQUARE = 400;
+const CAROUSEL_HEIGHT = 400;
 
 const actions = {
   async copy ({ input, output }) {
     return fs.copy(input, output);
   },
 
-  async fullsize ({ input, output, cache }) {
+  async carousel1x ({ input, output, cache }) {
     await actions.image({
       input,
       output,
       format: 'jpeg',
-      width: FULL_WIDTH,
-      crop: false,
+      height: CAROUSEL_HEIGHT,
+      fill: 'contain',
+      quality: 85,
+    });
+    await fs.copy(output, cache);
+  },
+
+  async carousel2x ({ input, output, cache }) {
+    await actions.image({
+      input,
+      output,
+      format: 'jpeg',
+      height: CAROUSEL_HEIGHT * 2,
+      fill: 'contain',
+      quality: 85,
+    });
+    await fs.copy(output, cache);
+  },
+
+  async max ({ input, output, cache }) {
+    await actions.image({
+      input,
+      output,
+      format: 'jpeg',
+      width: MAX_WIDTH,
+      fill: 'contain',
       quality: 95,
     });
     await fs.copy(output, cache);
   },
 
-  async halfsize ({ input, output, cache }) {
+  async lg ({ input, output, cache }) {
     await actions.image({
       input,
       output,
       format: 'jpeg',
-      width: SMALL_WIDTH,
+      width: LG_WIDTH,
+      fill: 'contain',
+      quality: 85,
+    });
+    await fs.copy(output, cache);
+  },
+
+  async md ({ input, output, cache }) {
+    await actions.image({
+      input,
+      output,
+      format: 'jpeg',
+      width: MD_WIDTH,
+      fill: 'contain',
+      quality: 75,
+    });
+    await fs.copy(output, cache);
+  },
+
+  async sm ({ input, output, cache }) {
+    await actions.image({
+      input,
+      output,
+      format: 'jpeg',
+      width: SM_WIDTH,
       crop: false,
+      fill: 'contain',
+      quality: 75,
+    });
+    await fs.copy(output, cache);
+  },
+
+  async xs ({ input, output, cache }) {
+    await actions.image({
+      input,
+      output,
+      format: 'jpeg',
+      width: XS_WIDTH,
+      crop: false,
+      fill: 'contain',
       quality: 75,
     });
     await fs.copy(output, cache);
@@ -47,73 +114,63 @@ const actions = {
       output,
       format: 'jpeg',
       width: THUMB_WIDTH,
-      crop: false,
+      fill: 'contain',
       quality: 75,
     });
     await fs.copy(output, cache);
   },
 
-  async poster ({ input, output, cache }) {
+  async tcNorth ({ input, output, cache }) {
     await actions.image({
       input,
       output,
       format: 'jpeg',
-      width: SMALL_WIDTH,
-      crop: false,
-    });
-    await fs.copy(output, cache);
-  },
-
-  async titlecardNorth ({ input, output, cache }) {
-    await actions.image({
-      input,
-      output,
-      format: 'png',
       width: TITLECARD_WIDTH,
       height: TITLECARD_HEIGHT,
       gravity: 'North',
-      crop: true,
+      fill: 'crop',
       quality: 75,
     });
     await fs.copy(output, cache);
   },
 
-  async titlecardSouth ({ input, output, cache }) {
+  async tcSouth ({ input, output, cache }) {
     await actions.image({
       input,
       output,
-      format: 'png',
+      format: 'jpeg',
       width: TITLECARD_WIDTH,
       height: TITLECARD_HEIGHT,
       gravity: 'South',
-      crop: true,
+      fill: 'crop',
       quality: 75,
     });
     await fs.copy(output, cache);
   },
 
-  async titlecardCenter ({ input, output, cache }) {
+  async tcCenter ({ input, output, cache }) {
     await actions.image({
       input,
       output,
-      format: 'png',
+      format: 'jpeg',
       width: TITLECARD_WIDTH,
       height: TITLECARD_HEIGHT,
       gravity: 'Center',
-      crop: true,
+      fill: 'crop',
       quality: 75,
     });
     await fs.copy(output, cache);
   },
 
-  async titlecardSquare ({ input, output, cache }) {
+  async tcSquare ({ input, output, cache }) {
     await actions.image({
       input,
       output,
-      format: 'png',
+      format: 'jpeg',
       width: TITLECARD_SQUARE,
       height: TITLECARD_SQUARE,
-      crop: true,
+      fill: 'crop',
+      gravity: 'Center',
       quality: 75,
     });
     await fs.copy(output, cache);
@@ -164,22 +221,25 @@ const actions = {
         }
       }
 
-      if (options.crop) {
+      if (options.fill === 'crop') {
         gmfile = gmfile
-          .resize(options.width, options.height, '^')
+          .geometry(options.width, options.height, '^')
           .gravity(options.gravity)
           .crop(options.width, options.height);
-      } else if (options.cover) {
+      } else if (options.fill === 'cover') {
         gmfile = gmfile
-          .resize(options.width, options.height, '^');
+          .geometry(options.width, options.height, '^');
+      } else if (options.fill === 'contain') {
+        gmfile = gmfile
+          .geometry(options.width, options.height);
       } else {
         gmfile = gmfile
-          .resize(options.width, options.height);
+          .geometry(options.width, options.height, '!');
       }
 
     } else if (options.percentage) {
       gmfile = gmfile
-        .resize(options.percentage, null, '%');
+        .geometry(options.percentage, null, '%');
     }
 
     if (options.format) {

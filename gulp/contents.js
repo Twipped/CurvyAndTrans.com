@@ -14,6 +14,7 @@ const frontmatter = require('gulp-front-matter');
 
 const asyncthrough = require('./lib/through');
 
+const INITIAL_LOAD = 20;
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
 
@@ -97,8 +98,9 @@ exports.posts = function buildPosts () {
       var original = file.contents.toString('utf8').trim();
       var contents = md.render(original);
 
-      var preview = striptags(original).slice(0, 1000);
-      preview = preview && mdPreview.render(preview + '…');
+      var preview = striptags(original);
+      if (preview.length > 1000) preview = preview.slice(0, 1000) + '…';
+      preview = preview ? mdPreview.render(preview) : '';
 
       var date = moment(file.meta.date);
       var cwd = path.dirname(file.path);
@@ -142,14 +144,17 @@ exports.posts = function buildPosts () {
           if (ext === '.m4v') {
             return {
               type: 'movie',
-              full: `/p/${file.meta.id}/${basename}.m4v`
+              full: `/p/${file.meta.id}/${basename}.m4v`,
             };
           }
 
           return {
             type: 'image',
             full: `/p/${file.meta.id}/${basename}.jpeg`,
+            large: `/p/${file.meta.id}/${basename}.lg.jpeg`,
             small: `/p/${file.meta.id}/${basename}.sm.jpeg`,
+            preview: `/p/${file.meta.id}/${basename}.pre1x.jpeg`,
+            preview2x: `/p/${file.meta.id}/${basename}.pre2x.jpeg`,
             thumb: `/p/${file.meta.id}/${basename}.thumb.jpeg`,
           };
         });
@@ -173,28 +178,28 @@ exports.posts = function buildPosts () {
 
       if (titlecard) {
         flags.add('has-titlecard');
-        file.meta.thumbnail = `/p/${file.meta.id}/titlecard.png`;
+        file.meta.thumbnail = `/p/${file.meta.id}/titlecard.jpeg`;
       } else {
-        file.meta.thumbnail = `/p/${file.meta.id}/titlecard-thumb.png`;
+        file.meta.thumbnail = `/p/${file.meta.id}/titlecard-thumb.jpeg`;
         flags.add('no-titlecard');
 
         switch (file.meta.titlecard) {
         case 'top':
         case 'north':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.png`;
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.jpeg`;
           break;
         case 'bottom':
         case 'south':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.png`;
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.jpeg`;
           break;
         case 'center':
         case 'middle':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.png`;
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.jpeg`;
           break;
         case 'thumb':
         case 'square':
         default:
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.png`;
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
           break;
         }
       }
@@ -213,7 +218,14 @@ exports.posts = function buildPosts () {
         flags.add('no-poster');
       }
 
-      file.meta.poster = `/p/${file.meta.id}/poster.jpeg`;
+      file.meta.poster = {
+        max: `/p/${file.meta.id}/poster.jpeg`,
+        lg: `/p/${file.meta.id}/poster.lg.jpeg`,
+        md: `/p/${file.meta.id}/poster.md.jpeg`,
+        sm: `/p/${file.meta.id}/poster.sm.jpeg`,
+        xs: `/p/${file.meta.id}/poster.xs.jpeg`,
+        thumb: `/p/${file.meta.id}/poster.thumb.jpeg`,
+      };
 
       if (file.meta.orientation) {
         flags.add('is-' + file.meta.orientation);
@@ -370,7 +382,14 @@ exports.posts = function buildPosts () {
     const indexSans = indexFile.clone();
     const postsSans = posts.map((p) => {
       p = omit(p, [ 'markdown', 'contents', 'images', 'products' ]);
-      p.poster = revmatch(p.poster);
+      p.poster = {
+        max:   revmatch(p.poster.max),
+        lg:    revmatch(p.poster.lg),
+        md:    revmatch(p.poster.md),
+        sm:    revmatch(p.poster.sm),
+        xs:    revmatch(p.poster.xs),
+        thumb: revmatch(p.poster.thumb),
+      };
       return p;
     });
 
@@ -426,10 +445,10 @@ exports.pages = function buildPages () {
     return result;
   }, {});
 
-  const first = byState.final[0];
+  const [ first, ...ordered ] = byState.final;
   var posts = {
     all: postIndex,
-    ordered: byState.final,
+    ordered: ordered.slice(0, INITIAL_LOAD),
     first,
     drafts: byState.draft,
     tags,
@@ -445,7 +464,11 @@ exports.pages = function buildPages () {
 
       var data = {
         ...file.meta,
-        page: { title: file.meta.title ? file.meta.title + ' :: Curvy & Trans' : 'Curvy & Trans' },
+        page: {
+          title: file.meta.title
+            ? (file.meta.title + (file.meta.subtitle ? ', ' + file.meta.subtitle : '') + ' :: Curvy & Trans')
+            : 'Curvy & Trans',
+        },
         posts,
       };
 
@@ -483,11 +506,104 @@ exports.lists = function buildLists () {
       var contents = md.render(original);
       file.contents = Buffer.from(contents);
 
+      const cwd = path.join(path.dirname(file.path), path.basename(file.basename, file.extname));
+
       file.meta.markdown = original;
       file.meta.contents = contents;
+      file.meta.id = path.basename(file.basename, file.extname);
       file.meta.posts = file.meta.posts.map((id) => postMap[id]).filter(Boolean);
 
       file.path = path.join(file.base, path.basename(file.basename, file.extname), 'index.html');
+      file.meta.url = `/l/${file.meta.id}/`;
+
+      var flags = new Set(file.meta.classes || []);
+
+      const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
+      if (file.meta.titlecard) {
+        // Titlecard defined in the list metadata
+        flags.add('has-titlecard');
+        flags.add('defined-titlecard');
+      } else if (titlecard) {
+        // Poster defined in the list data folder
+        flags.add('has-titlecard');
+        file.meta.thumbnail = `/l/${file.meta.id}/titlecard.jpeg`;
+
+      } else if (file.meta.posts.length) {
+        // Titlecard pulled from first post
+        const first = file.meta.posts[0];
+        file.meta.titlecard = first.titlecard;
+      } else {
+        flags.add('no-titlecard');
+      }
+
+      const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
+      if (file.meta.poster) {
+        // Poster defined in the list metadata
+        if (typeof file.meta.poster === 'string') {
+          flags.add('has-poster');
+          flags.add('defined-poster');
+          flags.add('monosize-poster');
+          file.meta.poster = {
+            only:   file.meta.poster,
+          };
+        } else if (typeof file.meta.poster === 'object') {
+          flags.add('has-poster');
+          flags.add('defined-poster');
+        } else {
+          flags.add('no-poster');
+          file.meta.poster = null;
+        }
+
+      } else if (poster) {
+        // Poster found in a list data folder
+        file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
+        flags.add('has-poster');
+        flags.add('native-poster');
+
+        file.meta.poster = {
+          max:   `/l/${file.meta.id}/poster.jpeg`,
+          lg:    `/l/${file.meta.id}/poster.lg.jpeg`,
+          md:    `/l/${file.meta.id}/poster.md.jpeg`,
+          sm:    `/l/${file.meta.id}/poster.sm.jpeg`,
+          xs:    `/l/${file.meta.id}/poster.xs.jpeg`,
+          thumb: `/l/${file.meta.id}/poster.thumb.jpeg`,
+        };
+
+        if (file.meta.orientation) {
+          flags.add('is-' + file.meta.orientation);
+        }
+
+        if (file.meta.dimensions) {
+          const { width, height } = file.meta.dimensions;
+          file.meta.dimensions.ratioH = Math.round((height / width) * 100);
+          file.meta.dimensions.ratioW = Math.round((width / height) * 100);
+
+          if (!file.meta.orientation) {
+            if (file.meta.dimensions.ratioH > 100) {
+              flags.add('is-tall');
+            } else if (file.meta.dimensions.ratioH === 100) {
+              flags.add('is-square');
+            } else {
+              flags.add('is-wide');
+            }
+          }
+        }
+
+      } else if (file.meta.posts.length) {
+        // Poster pulled from first post
+        const first = file.meta.posts[0];
+        file.meta.poster = first.poster;
+        file.meta.dimensions = first.dimensions;
+        flags.add('has-poster');
+        flags.add('derived-poster');
+        if (first.flags.isTall) flags.add('is-tall');
+        if (first.flags.isSquare) flags.add('is-square');
+        if (first.flags.isWide) flags.add('is-wide');
+
+      } else {
+        // No Poster Found
+        flags.add('no-poster');
+      }
 
       stream.push(file);
     }))
@@ -501,7 +617,7 @@ exports.lists = function buildLists () {
       try {
         file.contents = Buffer.from(template({
           page: {
-            title: file.meta.title + ' :: Curvy & Trans',
+            title: file.meta.title + (file.meta.subtitle ? ', ' + file.meta.subtitle : '') + ' :: Curvy & Trans',
           },
           ...file.meta,
           contents: file.contents.toString(),

@@ -1,6 +1,6 @@
 const path = require('path');
 const glob = require('../lib/glob');
-const { groupBy } = require('lodash');
+const { groupBy, sortBy } = require('lodash');
 const Promise = require('bluebird');
 const fs = require('fs-extra');
 const rev = require('rev-hash');
@@ -85,7 +85,7 @@ module.exports = exports = async function imageFlow () {
     if (titlecard) {
       tasks.push({
         input: titlecard,
-        output: `docs/p/${hash}/titlecard.png`,
+        output: `docs/p/${hash}/titlecard.jpeg`,
         action: actions.transcode,
       });
     }
@@ -94,27 +94,53 @@ module.exports = exports = async function imageFlow () {
       tasks.push({
         input: poster,
         output: `docs/p/${hash}/poster.jpeg`,
-        action: actions.poster,
+        action: actions.max,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-north.png`,
-        action: actions.titlecardNorth,
+        output: `docs/p/${hash}/poster.lg.jpeg`,
+        action: actions.lg,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-south.png`,
-        action: actions.titlecardSouth,
+        output: `docs/p/${hash}/poster.md.jpeg`,
+        action: actions.md,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-center.png`,
-        action: actions.titlecardCenter,
+        output: `docs/p/${hash}/poster.sm.jpeg`,
+        action: actions.sm,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-square.png`,
-        action: actions.titlecardSquare,
+        output: `docs/p/${hash}/poster.xs.jpeg`,
+        action: actions.xs,
+      });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/poster.thumb.jpeg`,
+        action: actions.thumb,
+      });
+
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-north.jpeg`,
+        action: actions.tcNorth,
+      });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-south.jpeg`,
+        action: actions.tcSouth,
+      });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-center.jpeg`,
+        action: actions.tcCenter,
+      });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-square.jpeg`,
+        action: actions.tcSquare,
       });
 
     } else {
@@ -127,12 +153,27 @@ module.exports = exports = async function imageFlow () {
       tasks.push({
         input: f,
         output: `docs/p/${hash}/${fname}.jpeg`,
-        action: actions.fullsize,
+        action: actions.max,
+      });
+      tasks.push({
+        input: f,
+        output: `docs/p/${hash}/${fname}.lg.jpeg`,
+        action: actions.lg,
       });
       tasks.push({
         input: f,
         output: `docs/p/${hash}/${fname}.sm.jpeg`,
-        action: actions.halfsize,
+        action: actions.sm,
+      });
+      tasks.push({
+        input: f,
+        output: `docs/p/${hash}/${fname}.pre1x.jpeg`,
+        action: actions.carousel1x,
+      });
+      tasks.push({
+        input: f,
+        output: `docs/p/${hash}/${fname}.pre2x.jpeg`,
+        action: actions.carousel2x,
       });
       tasks.push({
         input: f,
@@ -155,7 +196,7 @@ module.exports = exports = async function imageFlow () {
   const pending = await Promise.filter(tasks, async (task) => {
     const hash = rev(JSON.stringify(task));
     const prev = manifest[hash];
-    const cachePath = path.join(CACHE, hash + path.extname(task.output));
+    const cachePath = path.join(CACHE, `${task.action.name}.${hash}${path.extname(task.output)}`);
     const [ inTime, outTime, cachedTime ] = await Promise.all([
       stat(path.resolve(CWD, task.input)),
       stat(path.resolve(CWD, task.output)),
@@ -215,7 +256,7 @@ module.exports = exports = async function imageFlow () {
   });
 
 
-  await Promise.map(pending, async (task) => {
+  await Promise.map(sortBy(pending, [ 'input', 'output' ]), async (task) => {
     await task.action(task);
     if (task.log && LOG[task.log[0]]) log.info(...task.log);
     manifest[task.hash].lastSeen = Date.now();
