@@ -19,11 +19,12 @@ const CAROUSEL_HEIGHT = 400;
 
 const actions = {
   async copy ({ input, output }) {
-    return fs.copy(input, output);
+    await fs.copy(input, output);
+    return fs.readFile(input);
   },
 
   async carousel1x ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -31,11 +32,12 @@ const actions = {
       fill: 'contain',
       quality: 85,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async carousel2x ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -43,11 +45,12 @@ const actions = {
       fill: 'contain',
       quality: 85,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async max ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -55,11 +58,12 @@ const actions = {
       fill: 'contain',
       quality: 95,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async lg ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -67,11 +71,12 @@ const actions = {
       fill: 'contain',
       quality: 85,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async md ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -79,11 +84,12 @@ const actions = {
       fill: 'contain',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async sm ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -92,11 +98,12 @@ const actions = {
       fill: 'contain',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async xs ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -105,11 +112,12 @@ const actions = {
       fill: 'contain',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async thumb ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -117,11 +125,12 @@ const actions = {
       fill: 'contain',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async tcNorth ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -131,11 +140,12 @@ const actions = {
       fill: 'crop',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async tcSouth ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -145,11 +155,12 @@ const actions = {
       fill: 'crop',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async tcCenter ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -159,11 +170,12 @@ const actions = {
       fill: 'crop',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async tcSquare ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
@@ -173,16 +185,18 @@ const actions = {
       gravity: 'Center',
       quality: 75,
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async transcode ({ input, output, cache }) {
-    await actions.image({
+    const result = await actions.image({
       input,
       output,
       format: 'jpeg',
     });
-    await fs.copy(output, cache);
+    await fs.writeFile(cache, result);
+    return result;
   },
 
   async image (options) {
@@ -281,7 +295,11 @@ const actions = {
     }
 
     await fs.ensureDir(path.dirname(output));
-    await Promise.fromCallback((cb) => gmfile.write(output, cb));
+
+    const result = await Promise.fromCallback((cb) => gmfile.tpBuffer(cb));
+    await fs.writeFile(output, result);
+
+    return result;
   },
 };
 

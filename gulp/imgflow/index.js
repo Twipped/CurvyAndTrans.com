@@ -3,7 +3,6 @@ const glob = require('../lib/glob');
 const { groupBy, sortBy } = require('lodash');
 const Promise = require('bluebird');
 const fs = require('fs-extra');
-const rev = require('rev-hash');
 const log = require('fancy-log');
 const actions = require('./actions');
 
@@ -11,7 +10,11 @@ const CWD = path.resolve(__dirname, '../..');
 const SOURCE = path.resolve(CWD, 'posts/*/*.{jpeg,jpg,png,gif,m4v}');
 const POST_GROUPING = /posts\/([^/]+)/;
 const MANIFEST_PATH = path.resolve(CWD, 'if-manifest.json');
+const REV_MANIFEST_PATH = path.resolve(CWD, 'rev-manifest.json');
 const CACHE = 'if-cache';
+const revHash = require('rev-hash');
+const revPath = require('rev-path');
+
 
 const LOG = {
   new:    true,
@@ -22,7 +25,7 @@ const LOG = {
   copy: false,
 };
 
-module.exports = exports = async function imageFlow () {
+module.exports = exports = async function imageFlow ({ rev = false }) {
 
   var manifest;
   try {
@@ -194,7 +197,7 @@ module.exports = exports = async function imageFlow () {
   }
 
   const pending = await Promise.filter(tasks, async (task) => {
-    const hash = rev(JSON.stringify(task));
+    const hash = revHash(JSON.stringify(task));
     const prev = manifest[hash];
     const cachePath = path.join(CACHE, `${task.action.name}.${hash}${path.extname(task.output)}`);
     const [ inTime, outTime, cachedTime ] = await Promise.all([
@@ -255,14 +258,44 @@ module.exports = exports = async function imageFlow () {
     return true;
   });
 
+  const revManifest = {};
 
   await Promise.map(sortBy(pending, [ 'input', 'output' ]), async (task) => {
-    await task.action(task);
+    const result = await task.action(task);
     if (task.log && LOG[task.log[0]]) log.info(...task.log);
     manifest[task.hash].lastSeen = Date.now();
+
+    if (rev) {
+      const rhash = revHash(result);
+      const hashedPath = revPath(task.output, rhash);
+      manifest[task.hash].revHash = rhash;
+      manifest[task.hash].revPath = hashedPath;
+
+      const rOutPath = path.relative(path.join(CWD, '/docs/'), task.output);
+      const rNewPath = path.relative(path.join(CWD, '/docs/'), hashedPath);
+
+      revManifest[rOutPath] = rNewPath;
+
+      await fs.copy(task.output, hashedPath);
+    }
   }, { concurrency: 10 });
 
   await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+
+  if (rev) {
+    let originalManifest = {};
+    try {
+      if (await fs.exists(REV_MANIFEST_PATH)) {
+        originalManifest = JSON.parse(await fs.readFile(REV_MANIFEST_PATH));
+      }
+    } catch (e) {
+      // do nothing
+    }
+
+    Object.assign(originalManifest, revManifest);
+
+    await fs.writeFile(REV_MANIFEST_PATH, JSON.stringify(originalManifest, null, 2));
+  }
 
 };
 

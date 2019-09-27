@@ -12,10 +12,12 @@ exports.content = contentTask;
 const rssTask = require('./atom');
 exports.atom = rssTask;
 
-var imagesTask = require('./images');
-var imgflow = require('./imgflow');
-exports.images = imgflow;
-exports['images-prod'] = imagesTask.prod;
+var images = require('./imgflow');
+function imagesProd () {
+  return images({ rev: true });
+}
+exports.images = images;
+exports['images-prod'] = imagesProd;
 
 const filesTask = require('./files');
 exports.files = filesTask;
@@ -46,8 +48,7 @@ exports.cloudfront = cloudfront;
 exports.new = require('./new');
 
 var buildTask = series(
-  imgflow,
-  imagesTask.prod,
+  imagesProd,
   scssTask.prod,
   jsTask.prod,
   filesTask.prod,
@@ -62,7 +63,7 @@ var buildTask = series(
 
 var devBuildTask = series(
   parallel(
-    imgflow,
+    images,
     scssTask,
     jsTask,
     filesTask
@@ -102,7 +103,7 @@ function watcher () {
   watch('scss/*.scss', scssTask);
   watch('js/*.js', jsTask);
   watch([ 'js-rollup/*.js', 'templates/cell.hbs.html', 'posts-sans.json' ], jsRollupTask);
-  watch('posts/*/*.{jpeg,jpg,png,gif}', imagesTask);
+  watch('posts/*/*.{jpeg,jpg,png,gif}', images);
 
   var forever = require('forever');
   var srv = new forever.Monitor('server.js');
@@ -124,4 +125,4 @@ exports.uat = series(cleanTask, buildTask, server);
 
 /** **************************************************************************************************************** **/
 
-exports.default = series(cleanTask, devBuildTask, watcher);
+exports.default = series(devBuildTask, watcher);
