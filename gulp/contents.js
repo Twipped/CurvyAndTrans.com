@@ -178,9 +178,9 @@ exports.posts = function buildPosts () {
 
       if (titlecard) {
         flags.add('has-titlecard');
-        file.meta.thumbnail = `/p/${file.meta.id}/titlecard.jpeg`;
+        file.meta.titlecard = `/p/${file.meta.id}/titlecard.jpeg`;
       } else {
-        file.meta.thumbnail = `/p/${file.meta.id}/titlecard-thumb.jpeg`;
+        file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
         flags.add('no-titlecard');
 
         switch (file.meta.titlecard) {
@@ -526,7 +526,7 @@ exports.lists = function buildLists () {
       } else if (titlecard) {
         // Poster defined in the list data folder
         flags.add('has-titlecard');
-        file.meta.thumbnail = `/l/${file.meta.id}/titlecard.jpeg`;
+        file.meta.titlecard = `/l/${file.meta.id}/titlecard.jpeg`;
 
       } else if (file.meta.posts.length) {
         // Titlecard pulled from first post
