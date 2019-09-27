@@ -4,7 +4,28 @@
     {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
   </div>
   {{#unless flags.noPoster}}<div class="grid-poster">
-    <img src="{{rev this.poster}}" alt="{{alt}}">
+    {{#if flags.isWide}}
+    <img
+      src="{{rev poster.sm}}"
+      alt="{{alt}}"
+      srcset="{{rev poster.xs}} 300w, {{rev poster.sm}} 576w, {{rev poster.md}} 768w, {{rev poster.lg}} 1024w, {{rev poster.max}} 2048w"
+      sizes="(max-width: 576px) 100vw, (max-width: 1024px) 100vw, 1024px"
+    >
+    {{else}}{{#if flags.isSquare}}
+    <img
+      src="{{rev poster.sm}}"
+      alt="{{alt}}"
+      srcset="{{rev poster.xs}} 300w, {{rev poster.sm}} 576w, {{rev poster.md}} 768w, {{rev poster.lg}} 1024w"
+      sizes="(max-width: 576px) 20vw, (max-width: 1024px) 25vw, 1024px"
+    >
+    {{else}}
+    <img
+      src="{{rev poster.xs}}"
+      alt="{{alt}}"
+      srcset="{{rev poster.xs}} 300w, {{rev poster.sm}} 576w, {{rev poster.md}} 768w"
+      sizes="(max-width: 576px) 40vw, (max-width: 1024px) 15vw, 576px"
+    >
+    {{/if}}{{/if}}
   </div>{{/unless}}
   {{#unless notitle}}
   {{#if title}}<h2 class="grid-title {{#unless description}}no-description{{/unless}}">{{title}}</h2>{{/if}}

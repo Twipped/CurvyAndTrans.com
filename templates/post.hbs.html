@@ -31,18 +31,28 @@
     <div class="post-images">
       {{#each images}}
         {{#compare type 'movie'}}
-        <a class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
+        <a class="{{#even @index}}even{{else}}odd{{/even}}">
           <video {{#if ../video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{full}}" type="video/mp4"></video>
           {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
         </a>
         {{/compare}}
         {{#compare type 'image'}}
-        <a href="{{rev full}}" class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
+        <a href="{{rev full}}" class="{{#even @index}}even{{else}}odd{{/even}}">
+          {{#if ../flags.isWide}}
           <img
-            src="{{rev small}}"
-            alt="{{#if @first}}{{#if alt}}{{alt}}{{/if}}{{/if}}"
-            srcset="{{rev thumb}} 100w, {{rev small}} 500w, {{rev full}} 1000w"
+            src="{{rev large}}"
+            alt="{{alt}}"
+            srcset="{{rev thumb}} 100w, {{rev small}} 576w, {{rev large}} 1024w"
+            sizes="(max-width: 576px) 100vw, (max-width: 960px) 95vw, 960px"
           >
+          {{else}}
+          <img
+            src="{{rev large}}"
+            alt="{{alt}}"
+            srcset="{{rev thumb}} 100w, {{rev small}} 576w, {{rev large}} 1024w, {{rev poster.full}} 2048w"
+            sizes="(max-width: 576px) 100vw, 576px"
+          >
+          {{/if}}
           {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
         </a>
         {{/compare}}
@@ -61,9 +71,9 @@
         {{#compare type 'image'}}
         <a href="{{rev full}}" class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
           <img
-            src="{{rev small}}"
-            alt="{{#if @first}}{{#if alt}}{{alt}}{{/if}}{{/if}}"
-            srcset="{{rev thumb}} 100w, {{rev small}} 500w, {{rev full}} 1000w"
+            src="{{rev preview}}"
+            alt="{{alt}}"
+            srcset="{{rev preview}} 1x, {{rev preview2x}} 2x"
           >
           {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
         </a>
