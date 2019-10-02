@@ -296,7 +296,7 @@ const actions = {
 
     await fs.ensureDir(path.dirname(output));
 
-    const result = await Promise.fromCallback((cb) => gmfile.tpBuffer(cb));
+    const result = await Promise.fromCallback((cb) => gmfile.toBuffer(cb));
     await fs.writeFile(output, result);
 
     return result;
