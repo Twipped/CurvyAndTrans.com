@@ -3,13 +3,11 @@ import Backbone from 'backbone';
 import Handlebars from 'handlebars/dist/handlebars';
 import postsJSON from '../posts-sans.json';
 import htmlGrid from '../templates/index-grid.hbs.html';
-import htmlGridCell from '../templates/index-cell.hbs.html';
 import htmlGridCard from '../templates/index-card.hbs.html';
 import { groupBy, reduce, debounce } from 'lodash';
 import dateFormat from 'date-fns/format';
 import hhFirst from 'helper-hoard/src/helpers/collection/first';
 
-Handlebars.registerPartial('indexCell', Handlebars.compile(htmlGridCell));
 Handlebars.registerPartial('indexCard', Handlebars.compile(htmlGridCard));
 
 Handlebars.registerHelper('rev', (url) => (url && (url[0] === '/' ? url : '/' + url) || ''));

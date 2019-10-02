@@ -54,7 +54,6 @@ handlebars.registerHelper('even', (value, options) => {
 });
 exports.loadLayout = async function loadLayout () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
-  handlebars.registerPartial('indexCell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-cell.hbs.html')))));
   handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
   handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
@@ -73,7 +72,6 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
   }
 
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
-  handlebars.registerPartial('indexCell', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-cell.hbs.html')))));
   handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
   handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
@@ -256,16 +254,6 @@ exports.posts = function buildPosts () {
             flags.add('is-wide');
           }
         }
-
-        if (!file.meta.span) {
-          file.meta.span = Math.ceil((height / width) * 10);
-        }
-        if (!file.meta.spanLarge) {
-          file.meta.spanLarge = Math.ceil((height / width) * 10) * 2;
-        }
-      } else {
-        file.meta.span = 10;
-        file.meta.spanLarge = 20;
       }
 
       if (contents.length > 2000 || file.meta.long) {
@@ -279,7 +267,6 @@ exports.posts = function buildPosts () {
       if (!file.meta.carousel) {
         file.meta.carousel = JSON.stringify({ groupCells: true, imagesLoaded: true });
       }
-
 
       if (file.meta['no-title']) {
         flags.add('hide-title');
