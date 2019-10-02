@@ -34,8 +34,6 @@ exports.jsr = jsRollupTask;
 
 var cleanTask = require('./clean');
 exports.clean = cleanTask;
-exports['clean-cache'] = cleanTask.cache;
-exports['clean-titlecards'] = cleanTask.titlecard;
 
 const pushToProd = require('./publish');
 exports.push = pushToProd;
@@ -125,4 +123,4 @@ exports.uat = series(cleanTask, buildTask, server);
 
 /** **************************************************************************************************************** **/
 
-exports.default = series(devBuildTask, watcher);
+exports.default = series(cleanTask.dev, devBuildTask, watcher);
