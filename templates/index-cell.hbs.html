@@ -1,9 +1,0 @@
-<a href="{{this.url}}" class="post-cell {{#if prime}}prime {{/if}}{{#if shortCard}}short {{/if}}{{#each classes}}{{this}} {{/each}}" style="grid-row-end: span {{#if prime}}{{this.spanLarge}}{{else}}{{this.span}}{{/if}};" data-id="{{id}}">
-  <div class="post-date">
-    <span>{{date 'MMM Do, YYYY' this.date}}</span> <span class="emdash">&mdash;</span>
-    {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
-  </div>
-  <div class="post-poster" style="background-image: url({{rev this.poster}});" {{#if this.alt}}aria-label="{{alt}}"{{/if}}></div>
-  {{#unless notitle}}{{#if title}}<h2 class="post-title {{#unless description}}no-description{{/unless}}">{{title}}{{#if subtitle}}<span class="post-subtitle">{{subtitle}}</span>{{/if}}</h2>{{/if}}{{/unless}}
-  {{#if description}}<div class="post-description">{{description}}</div>{{/if}}
-</a>

@@ -8,10 +8,16 @@ tags:
   - Feminism
   - Sex Positivity
   - Essays
-products:
-  "Pictured tweet by Faith Naff": https://twitter.com/FaithNaff/status/1073412031154479105
-  "NBC News Story about Pornhub and YouPorn": https://www.nbcnews.com/feature/nbc-out/lesbian-most-searched-term-year-two-world-s-biggest-porn-n947216
+  - Tweets
+no-images: true
+# tweet: >-
+#   <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pornhub also found a 167% year-over-year increase for the searched term &quot;trans&quot; among men and a 200% increase among people over the age of 45. - <a href="https://twitter.com/NBCOUT?ref_src=twsrc%5Etfw">@NBCOUT</a> <a href="https://t.co/BH7ECwkB63">https://t.co/BH7ECwkB63</a></p>&mdash; NBC News (@NBCNews) <a href="https://twitter.com/NBCNews/status/1073193340647206915?ref_src=twsrc%5Etfw">December 13, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
+
+<!--[-->
+<div class="card right span3"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">But straight men aren&#39;t attracted to us trans women, right?<br><br>Y&#39;all be LYING!</p>&mdash; Faith Naff 🏳️‍🌈🏳️‍⚧️🌹🦋 (@FaithNaff) <a href="https://twitter.com/FaithNaff/status/1073412031154479105?ref_src=twsrc%5Etfw">December 14, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+<!--]-->
+
 “But the fantasy!” Seriously tho, lets talk about that fantasy. Lets talk about sex, baby. Content warning: Genitals, anatomy, hormones. This one is gonna get intimate, and hopefully wont run afoul of content filters. This is a Sex Positive post.
 
 Trans porn is selling a lie.

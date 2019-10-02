@@ -5,7 +5,7 @@ title: "Managing my curls"
 description: "My regular hair care routine"
 tags:
   - Hair Care
-single: false
+no-images: true
 products:
   "Clairol Hair Food Hair Milk": https://www.amazon.com/exec/obidos/ASIN/B073ZNRZP2/curvyandtrans-20
   "DevaCurl One Condition Original, Hair Conditioner": https://www.amazon.com/exec/obidos/ASIN/B000TK99NU/curvyandtrans-20
@@ -18,7 +18,7 @@ products:
 
 ---
 
-A number of people have asked me how I take care of my curly hair to get it to look the way it does, so I figured it's time to make a blog post.  The majority of this is my own adaptation of [The CurlyGirl Method](https://www.naturallycurly.com/curlreading/no-poo/the-curly-girl-method-for-coily-hair).
+<a href="../1.jpeg" class="card right hero"><img src="../1.jpeg" alt="" class="card-img-top"></a>A number of people have asked me how I take care of my curly hair to get it to look the way it does, so I figured it's time to make a blog post.  The majority of this is my own adaptation of [The CurlyGirl Method](https://www.naturallycurly.com/curlreading/no-poo/the-curly-girl-method-for-coily-hair).
 
 ### Products
 

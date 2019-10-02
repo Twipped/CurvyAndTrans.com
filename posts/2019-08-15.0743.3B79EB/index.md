@@ -10,8 +10,11 @@ tags:
 no-images: true
 instagram: https://www.instagram.com/p/B1MDluUHVd3/
 shortCard: true
-
+tweet: >-
+  <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">My last word:<br><br>Trans women have a particular perspective on how fucking amazing it is to be a woman at all. It&#39;s something we spent our lives needing in a way we cannot describe, an irresistible draw going back often as far as we can remember.</p>&mdash; Magdalene Visaggio (@MagsVisaggs) <a href="https://twitter.com/MagsVisaggs/status/1161831278280433664?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote>
 ---
+
+<!--[-->
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
   twttr.events.bind(
@@ -19,7 +22,6 @@ shortCard: true
     jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
   });
 </script>
-
 <div class="grid grid-row">
   <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">My last word:<br><br>Trans women have a particular perspective on how fucking amazing it is to be a woman at all. It&#39;s something we spent our lives needing in a way we cannot describe, an irresistible draw going back often as far as we can remember.</p>&mdash; Magdalene Visaggio (@MagsVisaggs) <a href="https://twitter.com/MagsVisaggs/status/1161831278280433664?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote>
 
@@ -33,6 +35,7 @@ shortCard: true
 
   <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I&#39;m sorry that all you can see in this group of people just trying to figure out how to be happy is a threat.<br><br>But that&#39;s your problem, not ours.</p>&mdash; Magdalene Visaggio (@MagsVisaggs) <a href="https://twitter.com/MagsVisaggs/status/1161833146188554240?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote>
 </div>
+<!--]-->
 
 Seriously, y’all. Being a woman is some awesome shit. Like, I get that if you aren’t actually a woman it probably sucks, but theres so much about communal womanhood that masculinity simply cannot hold a candle to.
 

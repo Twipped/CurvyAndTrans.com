@@ -8,9 +8,12 @@ tags:
   - Essays
   - Medical
   - Top Post
-no-images: true
+  - Tweets
+tweet: >-
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Trans women are biological women.</p>&mdash; IAM (@IndyaMoore) <a href="https://twitter.com/IndyaMoore/status/1096816028200460290?ref_src=twsrc%5Etfw">February 16, 2019</a></blockquote>
 instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 ---
+<!--[-->
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script>
   twttr.events.bind(
@@ -24,6 +27,7 @@ instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 
   <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If a woman has a penis, her penis is a biologically female penis.</p>&mdash; IAM (@IndyaMoore) <a href="https://twitter.com/IndyaMoore/status/1097269840165904384?ref_src=twsrc%5Etfw">February 17, 2019</a></blockquote>
 </div>
+<!--]-->
 
 If your reaction to these tweets is “No they aren’t!” then check yourself, because thats transphobia talking. If your reaction is "That's not how biology works", please, stay a while and listen.
 

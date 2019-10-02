@@ -7,7 +7,8 @@ tags:
   - Transgender
   - Family
   - Tweets
-no-images: true
+tweet: >-
+  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The 1st thing my daughter does when she wakes up and sees me in the morning is runs to give me a big hug.<br><br>This never happened pre-transition, the old me was too angry, too unpredictable. She was afraid of him.<br><br>Fuck anyone who says this is bad for the children of trans parents.</p>&mdash; 𝓙𝓸𝓬𝓮𝓵𝔂𝓷 (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1098963132720963585?ref_src=twsrc%5Etfw">February 22, 2019</a></blockquote>
 ---
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The 1st thing my daughter does when she wakes up and sees me in the morning is runs to give me a big hug.<br><br>This never happened pre-transition, the old me was too angry, too unpredictable. She was afraid of him.<br><br>Fuck anyone who says this is bad for the children of trans parents.</p>&mdash; 𝓙𝓸𝓬𝓮𝓵𝔂𝓷 (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1098963132720963585?ref_src=twsrc%5Etfw">February 22, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
