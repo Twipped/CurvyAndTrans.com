@@ -98,7 +98,10 @@ exports.posts = function buildPosts () {
       var original = file.contents.toString('utf8').trim();
       var contents = md.render(original);
 
-      var preview = striptags(original);
+      var preview = original;
+      preview = preview.replace(/<!--\[[\s\S]*\]-->/g, '');
+      if (file.meta.tweet) preview = preview.replace(file.meta.tweet.trim(), '');
+      preview = striptags(preview);
       if (preview.length > 1000) preview = preview.slice(0, 1000) + '…';
       preview = preview ? mdPreview.render(preview) : '';
 
@@ -133,11 +136,19 @@ exports.posts = function buildPosts () {
         flags.add('not-ootd-only');
       }
 
+
+      if (file.meta.tweet) {
+        file.meta.tweet = file.meta.tweet
+          .replace(/<script[^>]*>(.*?)<\/script>/g, '')
+        ;
+        flags.add('has-tweet');
+      }
+
       const images = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', {
         cwd: path.dirname(file.path),
       });
 
-      if (images.length) {
+      if (!file.meta.tweet && images.length) {
         file.meta.images = images.map((imgpath) => {
           const ext = path.extname(imgpath);
           const basename = path.basename(imgpath, ext);
@@ -231,7 +242,7 @@ exports.posts = function buildPosts () {
         flags.add('is-' + file.meta.orientation);
       }
 
-      if (file.meta.dimensions) {
+      if (file.meta.dimensions && !file.meta.tweet) {
         const { width, height } = file.meta.dimensions;
         file.meta.dimensions.ratioH = Math.round((height / width) * 100);
         file.meta.dimensions.ratioW = Math.round((width / height) * 100);

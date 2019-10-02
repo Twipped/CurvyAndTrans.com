@@ -20,6 +20,11 @@
   }
 }
 
+a.grid-card, .grid-card a {
+  text-decoration: none !important;
+  color: unset;
+}
+
 .grid-card {
   width: 100%;
   display: grid;
@@ -32,7 +37,6 @@
   font-size: 14px;
   border-radius: 5px;
   overflow: hidden;
-
 
   @include media-breakpoint-down(xs) {
     padding: 10px;
@@ -50,15 +54,17 @@
     }
   }
 
-  &.is-ootd-only {
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
+  @include media-breakpoint-down(sm) {
+    &.is-ootd-only {
+      margin-top: -10px;
+      margin-bottom: -10px;
+    }
 
-  &.is-ootd-only + .is-ootd-only {
-    border-top: 2px solid rgb(230,230,230);
-    padding-top: 20px;
-    margin-top: 0px;
+    &.is-ootd-only + .is-ootd-only {
+      border-top: 2px solid rgb(230,230,230);
+      padding-top: 20px;
+      margin-top: 0px;
+    }
   }
 
   > * {
@@ -99,6 +105,7 @@
   .grid-title {
     grid-area: title;
     font-size: 1.7em;
+    line-height: 1.3;
     font-weight: 500;
     margin: 0;
 
@@ -120,6 +127,28 @@
     color: $gray-600;
   }
 
+  .grid-tweet {
+    grid-area: poster;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    twitter-widget {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+
+      @include media-breakpoint-up(lg) {
+        width: unset !important;
+      }
+    }
+
+
+  }
+
+
   .grid-preview {
     grid-area: descrip;
     position: relative;
@@ -130,14 +159,22 @@
       position: absolute;
       top: 0;
       left: 0;
-      right: 0px;
-      // bottom: 0;
+      right: 0;
       overflow: hidden;
       text-overflow: ellipsis;
 
       color: #9B9B9B;
     }
+
+    p:last-child {margin-bottom: 0;}
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 10px;
+    }
   }
+  &.short-preview .grid-preview > { min-height: unset; }
+  &.short-preview .grid-preview > div { position: relative; }
+
 
   .grid-readmore-shade {
     grid-area: descrip;
@@ -159,6 +196,8 @@
       rgba(240,240,240,1) 90%,
     );
   }
+  &.short-preview .grid-readmore-shade { display: none; }
+
 
   &.not-ootd-only .grid-readmore-shade {
     background: linear-gradient(180deg,
@@ -213,36 +252,29 @@
       }
     }
 
-    &.hide-title {
-      grid-template-areas:
-        "datetags datetags"
-        "poster title"
-        "poster subtitle"
-        "poster descrip"
-      ;
-      grid-template-columns: 1fr 1fr;
-
-
-      .grid-title, .grid-subtitle, .grid-description {
-        display: none;
-      }
-
-    }
-
-    &.hide-title.no-preview {
+    &.hide-title, &.no-preview {
       grid-template-areas:
         "datetags"
+        "title"
+        "subtitle"
         "poster"
+        "descrip"
       ;
       grid-template-columns: 1fr;
 
-      .grid-poster {
-        padding-bottom: 0px;
+      .grid-preview { min-height: 10rem; }
+
+    }
+
+    &.hide-title {
+      .grid-title, .grid-subtitle, .grid-description {
+        display: none;
       }
+    }
 
-      .grid-poster > img {
-        width: 100%;
-
+    &.no-preview {
+      .grid-preview {
+        display: none;
       }
     }
 
@@ -275,8 +307,7 @@
 
     .grid-date,
     .grid-title,
-    .grid-subtitle,
-    .grid-preview {
+    .grid-subtitle {
       background: rgba(255,255,255, 0.8);
       text-shadow: 0px 0px 5px white;
     }
@@ -293,7 +324,8 @@
       border-radius: 0;
     }
 
-    .grid-preview { min-height: 10rem; }
+    &:not(.short-preview) .grid-preview { min-height: 10rem; }
+    &.short-preview .grid-preview > div { padding-bottom: 15px; }
 
     &.no-subtitle .grid-title { padding-bottom: 10px; }
     &.has-subtitle .grid-subtitle { padding-bottom: 10px; }
@@ -305,10 +337,21 @@
       .grid-preview > div { padding-top: 10px; }
       .grid-date { padding-top: 10px; }
     }
+
+
+    &.hide-title {
+      grid-template-rows: min-content min-content 1fr;
+
+      .grid-date     { grid-row: 1/1; }
+      .grid-poster   { grid-row: 2/4; }
+      .grid-preview  { grid-row: 5/5; }
+      .grid-readmore, .grid-readmore-shade { grid-row: 5/5; }
+
+    }
   }
 
   &.no-images {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-areas:
       "datetags"
       "title"
@@ -317,8 +360,20 @@
     ;
     grid-template-rows: min-content min-content min-content 1fr;
 
-
+    .grid-preview { min-height: 8em; }
   }
+  &.short-preview.no-images .grid-preview { min-height: unset; }
 
+  &.no-images.has-tweet {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "datetags"
+      "title"
+      "subtitle"
+      "poster"
+      "descrip"
+    ;
+    grid-template-rows: min-content min-content min-content min-content 1fr;
+  }
 
 }

@@ -2,6 +2,7 @@
 title: "Test List"
 posts:
   - 86DE32
+  - 3B79EB
   - 9939AB
   - 935EB8
   - D0C809

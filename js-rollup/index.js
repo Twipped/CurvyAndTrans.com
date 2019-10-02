@@ -95,6 +95,12 @@ const IndexView = Backbone.View.extend({
 
     this.$el.html(html);
 
+    if (window.twttr) {
+      window.twttr.widgets.load(
+        this.$el[0]
+      );
+    }
+
     if (!data.full) this.checkBottom();
   },
 

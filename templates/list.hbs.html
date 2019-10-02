@@ -24,16 +24,23 @@
       {{#if subtitle}}<h2 class="post-subtitle"><a href="{{this.url}}">{{subtitle}}</a></h2>{{/if}}
       <div class="post-content">
         {{{this.contents}}}
-      <div class="card-grid">
+      <div class="card-grid" style="margin: 0 -30px 0 -30px;">
         {{#each posts}}
           {{> indexCard}}
         {{/each}}
       </div>
       </div>
     </article>
-
-
-
   {{/content}}
+
+  {{#append "postscripts"}}
+  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script>
+    twttr.events.bind(
+      'rendered', () => {
+      jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
+    });
+  </script>
+  {{/append}}
 
 {{/extend}}
