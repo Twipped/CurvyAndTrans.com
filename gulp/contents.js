@@ -309,6 +309,7 @@ exports.posts = function buildPosts () {
 
       if (preview) {
         flags.add('has-preview');
+        if (preview.length < 400) flags.add('short-preview');
       } else {
         flags.add('no-preview');
       }
