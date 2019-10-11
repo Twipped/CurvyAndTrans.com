@@ -90,6 +90,18 @@
     </ul>
     {{/if}}
     <div class="post-content">
+      {{#if hero}}<a href="{{rev full}}" class="card {{#is hero 'right'}}right{{/is}}{{#is hero 'left'}}left{{/is}} span3">
+        {{#with (first images)}}
+        <img
+          src="{{rev large}}"
+          alt="{{alt}}"
+          srcset="{{rev thumb}} 100w, {{rev small}} 576w, {{rev large}} 1024w, {{rev poster.full}} 2048w"
+          sizes="(max-width: 576px) 100vw, (max-width: 1020px) 33vw, 576px"
+          class="card-img-top"
+        >
+        {{#if (get ../captions 0)}}<span class="card-body">{{get ../captions 0}}</span>{{/if}}
+        {{/with}}
+      </a>{{/if}}
       {{{this.contents}}}
       {{#if instagram}} <a href="{{instagram}}" class="btn btn-large btn-default instagram" target="_blank"><i class="fab fa-instagram"></i> Discuss this post on Instagram</a>{{/if}}
     </div>

@@ -4,7 +4,8 @@ date: "2018-03-04T17:27:00.000Z"
 title: "How I Came Out at Work"
 description: "In which I am a total drama queen."
 slug: how-I-came-out-at-work
-single: false
+no-images: true
+hero: right
 tags:
   - Transgender
   - Coming Out

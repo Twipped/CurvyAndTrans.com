@@ -4,12 +4,13 @@ date: "2019-01-10T16:18:18.119Z"
 title: "Opening the closet"
 description: "How do you tell your spouse that you've been living a lie?"
 no-images: true
+hero: right
 tags:
   - Transgender
   - Coming Out
   - Essays
 ---
-<a href="../1.jpeg" class="card right hero"><img src="../1.jpeg" alt="" class="card-img-top"></a>How do you tell your spouse that you've been living a lie? What do you say to start that conversation? Where do you begin? "Oh, by the way, I'm actually a woman, sorry I never told you."
+How do you tell your spouse that you've been living a lie? What do you say to start that conversation? Where do you begin? "Oh, by the way, I'm actually a woman, sorry I never told you."
 
 This is the problem I faced on January 10th, 2017. I hadn't slept a wink of sleep the night before, not one bit. When my wife woke up I told her I'd had terrible insomnia and was on the verge of crashing. I blamed it on having drank a ton of iced tea the night before, but really it was just that I was too excited. I finally knew I was trans, I knew I could transition, I knew I've been a woman all along. How could I sleep during this revelation? I fell asleep finally at 8am and slept for two hours. I don't remember much of that day, I spent most of it on Reddit, trying to find how other people had solved this problem.
 

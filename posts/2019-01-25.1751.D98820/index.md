@@ -4,6 +4,7 @@ date: "2019-01-25T17:51:11.325Z"
 title: "The Way We Were"
 description: "In the beginning..."
 no-images: true
+hero: left
 tags:
   - Family
   - Transgender
@@ -22,7 +23,7 @@ captions:
   - October 2015, Celebrating our 6th wedding anniversary
   - June 2016, Disney's California Adventure
 ---
-<a href="../01.jpeg" class="card left hero"><img src="../01.jpeg" alt="" class="card-img-top"></a>_This is the first in a series of posts about how my relationship with my wife evolved over the course of my gender transition._
+_This is the first in a series of posts about how my relationship with my wife evolved over the course of my gender transition._
 
 I knew on the first date that I was going to quickly fall in love with Katharine. It was intended to be a trip out to Cabrillo National Monument in Point Loma, San Diego. It’s a national park high up on the peak of the peninsula that overlooks San Diego Bay. I wanted to take her there because it is one of my favorite places in the city, the views are just gorgeous, you can see the entire urban center from that peak, and far out to sea. On good days you can see whale pods breaching far off shore. There is always a strong ocean breeze, and it just struck me as a very romantic place to spend some time together.
 
