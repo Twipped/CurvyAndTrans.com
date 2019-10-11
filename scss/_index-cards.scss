@@ -350,7 +350,7 @@ a.grid-card, .grid-card a {
     }
   }
 
-  &.no-images {
+  &.no-images.no-poster {
     grid-template-columns: 100%;
     grid-template-areas:
       "datetags"
