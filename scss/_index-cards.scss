@@ -7,7 +7,7 @@
   grid-gap: 20px;
 
   @include media-breakpoint-down(md) {
-    // grid-gap: 10px;
+    grid-template-columns: 100%;
   }
 
   @include media-breakpoint-down(sm) {
@@ -139,6 +139,12 @@ a.grid-card, .grid-card a {
       margin-right: auto;
       margin-top: 0 !important;
       margin-bottom: 0 !important;
+      min-width: unset !important;
+      max-width: unset !important;
+
+      @include media-breakpoint-down(sm) {
+        display: unset !important;
+      }
 
       @include media-breakpoint-up(lg) {
         width: unset !important;
@@ -373,7 +379,7 @@ a.grid-card, .grid-card a {
       "poster"
       "descrip"
     ;
-    grid-template-rows: min-content min-content min-content min-content 1fr;
+    grid-template-rows: min-content min-content min-content min-content minmax(6em, 1fr);
   }
 
 }
