@@ -9,7 +9,7 @@ tags:
   - Tweets
 no-images: true
 instagram: https://www.instagram.com/p/B1MDluUHVd3/
-shortCard: true
+titlecard: top
 tweet: >-
   <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">My last word:<br><br>Trans women have a particular perspective on how fucking amazing it is to be a woman at all. It&#39;s something we spent our lives needing in a way we cannot describe, an irresistible draw going back often as far as we can remember.</p>&mdash; Magdalene Visaggio (@MagsVisaggs) <a href="https://twitter.com/MagsVisaggs/status/1161831278280433664?ref_src=twsrc%5Etfw">August 15, 2019</a></blockquote>
 ---
