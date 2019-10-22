@@ -3,10 +3,10 @@
   {{#content "bodyAttributes"}}class="page-index"{{/content}}
   {{#content "body"}}
 
-  <div class="post-grid" style="grid-auto-rows: unset;">
+  <div class="card-grid" style="grid-auto-rows: unset;">
 
     {{#each posts.all}}
-      <a class="titlecard-preview" data-id="{{id}}">
+      <a class="titlecard-preview {{#each classes}}{{this}} {{/each}}" data-id="{{id}}">
         <span>{{originalpath}}</span>
         <img src="/images/filler.png" data-src="{{rev this.titlecard}}" alt="" defer>
       </a>

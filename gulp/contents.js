@@ -444,11 +444,10 @@ exports.pages = function buildPages () {
     return result;
   }, {});
 
-  const [ first, ...ordered ] = byState.final;
   var posts = {
     all: postIndex,
-    ordered: ordered.slice(0, INITIAL_LOAD),
-    first,
+    loaded: byState.final.slice(0, INITIAL_LOAD),
+    final: byState.final,
     drafts: byState.draft,
     tags,
     byTag,

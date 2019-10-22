@@ -47,7 +47,7 @@ const IndexView = Backbone.View.extend({
     this.tags = tags;
     this.byTag = byTag;
 
-    [ this.first, ...this.posts ] = byState.final;
+    this.posts = byState.final;
 
     this.checkBottom = debounce(this.checkBottom, 100);
 
@@ -71,8 +71,7 @@ const IndexView = Backbone.View.extend({
 
       data = {
         posts: {
-          first: null,
-          ordered: this.byTag[this.tag] || [],
+          loaded: this.byTag[this.tag] || [],
         },
         full: true,
       };
@@ -81,8 +80,7 @@ const IndexView = Backbone.View.extend({
 
       data = {
         posts: {
-          first: this.first,
-          ordered: this.posts.slice(0, this.loaded),
+          loaded: this.posts.slice(0, this.loaded),
         },
         full: this.loaded >= this.posts.length,
       };
