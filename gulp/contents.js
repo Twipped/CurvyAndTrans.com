@@ -18,6 +18,8 @@ const INITIAL_LOAD = 20;
 const ROOT = path.dirname(__dirname);
 const DEST = './docs';
 
+const { siteInfo } = require('../package.json');
+
 const markdown = require('markdown-it');
 const striptags = require('string-strip-html');
 
@@ -113,7 +115,7 @@ exports.posts = function buildPosts () {
       file.meta.preview = preview;
       file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || date.format('YYYY-MM-DD-HHmm');
       file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
-      file.meta.fullurl = 'http://curvyandtrans.com' + file.meta.url;
+      file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
       file.meta.originalpath = path.relative(file.cwd, file.path);
       file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
 
@@ -183,36 +185,6 @@ exports.posts = function buildPosts () {
         flags.add('hide-images');
       }
 
-      const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
-
-      if (titlecard) {
-        flags.add('has-titlecard');
-        file.meta.titlecard = `/p/${file.meta.id}/titlecard.jpeg`;
-      } else {
-        file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
-        flags.add('no-titlecard');
-
-        switch (file.meta.titlecard) {
-        case 'top':
-        case 'north':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.jpeg`;
-          break;
-        case 'bottom':
-        case 'south':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.jpeg`;
-          break;
-        case 'center':
-        case 'middle':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.jpeg`;
-          break;
-        case 'thumb':
-        case 'square':
-        default:
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
-          break;
-        }
-      }
-
       const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
 
       if (poster) {
@@ -253,6 +225,43 @@ exports.posts = function buildPosts () {
           } else {
             flags.add('is-wide');
           }
+        }
+      }
+
+      const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
+
+      if (titlecard) {
+        flags.add('has-titlecard');
+        file.meta.titlecard = `/p/${file.meta.id}/titlecard.jpeg`;
+      } else {
+        flags.add('no-titlecard');
+
+        if (!file.meta.titlecard) {
+          if (flags.has('is-wide')) file.meta.titlecard = 'middle';
+          else if (flags.has('is-tall')) file.meta.titlecard = 'box';
+        }
+
+        switch (file.meta.titlecard) {
+        case 'top':
+        case 'north':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.jpeg`;
+          break;
+        case 'bottom':
+        case 'south':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.jpeg`;
+          break;
+        case 'center':
+        case 'middle':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.jpeg`;
+          break;
+        case 'box':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-box.jpeg`;
+          break;
+        case 'thumb':
+        case 'square':
+        default:
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
+          break;
         }
       }
 

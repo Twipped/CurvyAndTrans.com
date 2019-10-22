@@ -189,6 +189,21 @@ const actions = {
     return result;
   },
 
+  async tcBox ({ input, output, cache }) {
+    const result = await actions.image({
+      input,
+      output,
+      format: 'jpeg',
+      width: TITLECARD_SQUARE,
+      height: TITLECARD_SQUARE,
+      fill: 'box',
+      gravity: 'Center',
+      quality: 75,
+    });
+    await fs.writeFile(cache, result);
+    return result;
+  },
+
   async transcode ({ input, output, cache }) {
     const result = await actions.image({
       input,
@@ -236,13 +251,29 @@ const actions = {
       }
 
       if (options.fill === 'crop') {
-        gmfile = gmfile
-          .geometry(options.width, options.height, '^')
-          .gravity(options.gravity)
-          .crop(options.width, options.height);
+        if (size.height < options.height || size.width < options.width) {
+          gmfile = gmfile
+            .geometry(options.width, options.height, '^')
+            .borderColor(options.bgColor || '#FFFFFF')
+            .border(options.width, options.height)
+            .gravity(options.gravity)
+            .crop(options.width, options.height);
+        } else {
+          gmfile = gmfile
+            .geometry(options.width, options.height, '^')
+            .gravity(options.gravity)
+            .crop(options.width, options.height);
+        }
       } else if (options.fill === 'cover') {
         gmfile = gmfile
           .geometry(options.width, options.height, '^');
+      } else if (options.fill === 'box') {
+        gmfile = gmfile
+          .geometry(options.width, options.height)
+          .borderColor(options.bgColor || '#FFFFFF')
+          .border(options.width, options.height)
+          .gravity(options.gravity)
+          .crop(options.width, options.height);
       } else if (options.fill === 'contain') {
         gmfile = gmfile
           .geometry(options.width, options.height);

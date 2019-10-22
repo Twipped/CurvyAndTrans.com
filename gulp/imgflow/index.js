@@ -145,6 +145,11 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
         output: `docs/p/${hash}/titlecard-square.jpeg`,
         action: actions.tcSquare,
       });
+      tasks.push({
+        input: poster,
+        output: `docs/p/${hash}/titlecard-box.jpeg`,
+        action: actions.tcBox,
+      });
 
     } else {
       log.warn('Post is missing a poster image', postKey);
