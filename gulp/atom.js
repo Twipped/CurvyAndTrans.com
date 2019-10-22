@@ -21,11 +21,17 @@ module.exports = exports = async function buildAtomFeed () {
   var feed = new RSS(siteInfo.rss);
 
   byState.final.forEach((post) => {
+    const description = `<img src="${siteInfo.rss.site_url + post.poster.xs}"><br>${post.preview}`;
     feed.item({
       title: post.title,
       date: post.date,
-      description: post.content,
-      url: siteInfo.rss.site_url + post.url,
+      description,
+      url: post.fullurl,
+      categories: Object.values(post.tags),
+      guid: post.id,
+      enclosure: {
+        url: siteInfo.rss.site_url + post.poster.xs,
+      },
     });
   });
 
