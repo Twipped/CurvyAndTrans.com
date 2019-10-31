@@ -11,6 +11,15 @@ tags:
   - Medical
 draft: true
 ---
+<!--[-->
+<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+  twttr.events.bind(
+    'rendered', () => {
+    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
+  });
+</script>
+<!--]-->
 
 ### A Brief History
 
@@ -28,16 +37,16 @@ Other nations across the world have adopted their own protocols based on WPATH, 
 
 ### So What *Is* Gender Dysphoria?
 
-> **Dysphoria** - *Noun*
+> **Dysphoria** - *Noun*   
 > A state of unease or generalized dissatisfaction with life. The opposite of euphoria.
 
-There is a common misconception among both cisgender and transgender people that Gender Dysphoria refers exclusively to a physical discomfort with ones own body. Consequently, proponents of SoC 7 and DSM-5 have taken to a habit of saying that you do not have to have dysphoria to be transgender. This statement is often repeated like a mantra, as it informs people who do not feel significant body discomfort that they may also be transgender.
+<a href="../dysphoria1.jpg" class="card right span3"><img src="../dysphoria1.jpg" alt="" class="card-img-top"><span class="card-body">What Dysphoria Feels Like</span></a>There is a common misconception among both cisgender and transgender people that Gender Dysphoria refers exclusively to a physical discomfort with ones own body. Consequently, proponents of SoC 7 and DSM-5 have taken to a habit of saying that you do not have to have dysphoria to be transgender. This statement is often repeated like a mantra, as it informs people who do not feel significant body discomfort that they may also be transgender.
 
 However, this belief that body discomfort is central to Gender Dysphoria is in fact a misconception, and is not even a majority component of a Gender Dysphoria diagnoses. Gender Dysphoria crosses a large number of all aspects of life, including how you interact with others, how others interact with you, how you dress, how you behave, how you fit into society, how you perceive the world around you, and yes, how you relate to your own body.
 
 In principle, Gender Dysphoria is a feeling of wrongness intrinsic to the self. There is no logical backing to this wrongness, there is nothing which explains it, you can not describe why you feel this way, it is just there. Things in your existence are incorrect, and even knowing which things *are* incorrect can be hard to properly identify.
 
-Author Evey Winters described it extremely aptly [in her Dysphoria post](https://eveywinters.com/2019/10/14/on-dysphoria-before-enduring-and-after/). <a href="../dysphoria1.gif" class="card right span3"><img src="../scale.gif" alt="" class="card-img-top"><span class="card-body">What Dysphoria Feels Like</span></a>
+Author Evey Winters described it extremely aptly [in her Dysphoria post](https://eveywinters.com/2019/10/14/on-dysphoria-before-enduring-and-after/).
 
 > Have you ever been sitting somewhere in a public or a formal place and all of a sudden the bottom of your foot itches? It’s not like you can remove your shoes right there and scratch it, so you endure the feeling of dying inside while this itch grows and grows until you are ready to murder the next person that speaks to you.
 >
@@ -51,7 +60,7 @@ The way I used to describe it is like wearing an adult's glove when you are a ch
 
 How does this manifest? I'm going to break this down into 8 categories:
 
-1. Euphorical
+1. Euphoria
 2. Physical
 3. Biochemical
 4. Social
@@ -72,7 +81,7 @@ Ok, that disclaimer out of the way, lets get to the meat and potatoes.
 > **Euphoria** - *Noun*   
 > A feeling or state of intense excitement and happiness. Elation, joy, glee.
 
-Before I can talk about discomfort, I have to talk about relief. Gender Euphoria is itself a sign of dysphoria. You might be asking yourself, "how can happiness be sadness?" The answer to that is simple.
+Before I can talk about discomfort, I have to talk about relief. Gender Euphoria is itself a sign of Gender Dysphoria. You might be asking yourself, "how can happiness be sadness?" The answer to that is simple.
 
 Imagine a person who was born in a cave, who spent their entire life living underground, their only source of illumination being candles and oil lamps. Imagine they've never been above ground, they don't even know the surface exists. Then one day a cavein happens in a side tunnel, and reveals an opening to the surface. Sunlight pours into the opening, and at first it is blinding and the person runs away in fear. Later they return to the opening, and as the person's eyes adjust they look out through the hole and see a bright and brilliant world full of colors they didn't even know existed.
 
@@ -85,6 +94,28 @@ This is what Gender Euphoria is like, it is brief flashes of a light that may be
 Many trans people have no idea how much pain they are in until they find small bits of relief. Cosplay, stage acting, drag, role playing games, video games; small little forays into an different gender than they have lived as. They find that it feels just a little bit more comfortable. They'll make up excuses for why ("If I'm gonna be looking at this character's ass, it might as well be a girl's ass."), they'll try to convince themselves it's all just for fun, or an artistic expression. They might tell themselves that the bits of joy they feel at hearing a different pronoun are just novelty. But soon they find themselves looking for reasons to get that more often. More and more frequently they're role playing characters of a different sex, building more costumes, buying more clothes, performing more often. You find yourself wanting to do that all the time, because it just feels better than your real life, and being "you" starts to hurt. Eventually, that becomes the costume.
 
 This is the most fundamental reason why we as a community say "you do not need dysphoria to be trans", because black ink on a black canvas isn't visible without close examination and a lot of light.
+
+Anything that can be a source of dysphoria has an equal and opposite euphoria.
+
+Examples:
+
+- Being gendered correctly
+- Being addressed by your chosen name
+- Wearing correctly gendered clothing
+- Seeing and feeling changes in your body
+- Seeing yourself in the mirror (removal of depersonalization)
+- Socializing in a way that conforms with gendered expectations
+- Getting a haircut in a masculine/feminine/androgynous manner
+- Shaving your legs
+- NOT shaving your legs
+- Being included in something you wouldn't otherwise because of your assigned gender (eg, bridal party or bachelor shower)
+- Feeling sexy / having sex in a way that aligns with your gender and sexuality.
+
+Even just being out in the world as yourself and being seen as yourself can be massively euphoric.
+
+**What euphoria is NOT** is a sexual high, turn on, or fetish. Sometimes euphoria can trigger a sexual response, and there are many factors at play that cause that (feeling good about your body is a turn on, for example), but it is not a source of sexual excitement. Trans people are not "getting off" on presenting or acting like their true selves.
+
+That said, many people who have not yet realized they are trans may resort to fetishes and kinks to express their gender and/or relieve their dysphoria. They may maintain some of these kinks through transition. There is no shame in this, how they find sexual fulfillment is their own business. However, these things are *alongside* their gender. A trans person's sense of gender persists indefinitely, it does not go away when they go back to their daily lives.
 
 ### Physical Dysphoria
 
