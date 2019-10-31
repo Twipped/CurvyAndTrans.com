@@ -1,6 +1,6 @@
 ---
 id: "740D5B"
-date: "2019-09-24T14:28:29.420Z"
+date: "2000-01-01T00:00:04.000Z"
 title: "Gender Dysphoria"
 subtitle: "What it is, and what it isn't."
 slug: gender-dysphoria
