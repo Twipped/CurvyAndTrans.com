@@ -1,7 +1,37 @@
 
+
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
+
+$font-primary: 'Lato', Arial, sans-serif;
+$font-secondary: 'Montserrat', 'Helvetica Neue', Helvetica, serif;
+
+$line-height-base: 1.6;
+
+$headings-font-family:        $font-secondary;
+$headings-font-weight:        null;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.2;
+$h5-font-size:                $font-size-base * 1.15;
+$h6-font-size:                $font-size-base;
+
+h1, h2, .h1, .h2 { font-weight: 300; }
+h3, .h3 { font-weight: 400; }
+h4, h5, .h4, .h5 { font-weight: 600; }
+
+$white: #fff;
+$pink: rgb(238,118,173);
+$lightPink: lighten($pink, 30%);
+$blue: rgb(41,186,228);
+$lightBlue: lighten($blue, 30%);
+$darkBlue: darken($blue, 30%);
+$primary: #e84992;
+
+
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
@@ -36,17 +66,6 @@
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/utilities";
 @import "bootstrap/scss/print";
-
-$font-primary: 'Lato',Arial, sans-serif;
-$font-secondary: 'Montserrat', 'Helvetica Neue', Helvetica, serif;
-
-$white: #fff;
-$pink: rgb(238,118,173);
-$lightPink: lighten($pink, 30%);
-$blue: rgb(41,186,228);
-$lightBlue: lighten($blue, 30%);
-$darkBlue: darken($blue, 30%);
-$primary: #e84992;
 
 @import "./global";
 @import "./index";

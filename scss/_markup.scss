@@ -24,7 +24,7 @@ twitter-widget {
 blockquote {
   font-family: 'Georgia';
   font-weight: 200;
-  font-size: 1.05em;
+  font-size: 0.94em;
   line-height: 1.4;
   background: #f0f8ff;
   border: 1px solid darken(#f0f8ff, 10%);
@@ -42,11 +42,11 @@ blockquote {
     display: block;
     padding-left: 10px;
     content: "\201C";
-    font-size: 80px;
+    font-size: 70px;
     position: absolute;
     left: -30px;
     top: -20px;
-    // color: #7a7a7a;
+    color: $gray-600;
   }
 
   p:last-child {
@@ -71,7 +71,7 @@ blockquote {
   }
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   clear: left;
 }
 
