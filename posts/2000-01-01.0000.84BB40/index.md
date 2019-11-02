@@ -25,14 +25,6 @@ span: 11
 #  4th 90-91
 ---
 
-::: cw
-::: cw-header
-DRAFT CONTENT
-:::
-The following page is a continuing work in progress and is still far from completed. New additions are made to it as memories come to me and time allows. As such, it ends rather abruptly, and far from my current place in life. If you are reading this work, please recognize that it is a living document.
-:::
-:::
-
 ### Prelude: Summer of 1987, I am six years old.
 
 <a href="../2.jpeg" class="card right span4"><img src="../2.jpeg" alt="" class="card-img-top"><span class="card-body">My Grandmother kissing my face at the 1981 Jehovah's Witness District Convention, Pontiac Michigan.</span></a>I was raised as a Jehovah's Witness. My mother, my father, my grandmother, one of my uncles, his wife, and two of my three cousins are Witnesses. My entire social circle growing up was JWs. The only life I knew until my 20s was in the JW faith.

@@ -25,14 +25,6 @@ span: 12
 #  4th 90-91
 ---
 
-::: cw
-::: cw-header
-DRAFT CONTENT
-:::
-The following page is a continuing work in progress and is still far from completed. New additions are made to it as memories come to me and time allows. As such, it ends rather abruptly, and far from my current place in life. If you are reading this work, please recognize that it is a living document.
-:::
-:::
-
 ### A New Home
 
 <a href="../1.jpeg" class="card right span4"><img src="../1.jpeg" alt="My mother and myself sitting with our two dogs in front of a brown wall, grass around our feet." class="card-img-top"><span class="card-body">Spring 1992</span></a>With assistance from my grandfather, the money she had in savings, and the meager income from working as a cashier, my mother started taking classes at Central Michigan University with the goal of getting the basic education she needed to find better work.

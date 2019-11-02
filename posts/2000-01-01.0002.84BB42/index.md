@@ -25,14 +25,6 @@ span: 10
 #  4th 90-91
 ---
 
-::: cw
-::: cw-header
-DRAFT CONTENT
-:::
-The following page is a continuing work in progress and is still far from completed. New additions are made to it as memories come to me and time allows. As such, it ends rather abruptly, and far from my current place in life. If you are reading this work, please recognize that it is a living document.
-:::
-:::
-
 ### Enter the Internet
 
 My first exposure to the Internet was in seventh grade. The lab that my mom worked in on the college campus had a computer on the campus network, which had the only broadband connection in town. From time to time I'd be allowed on that computer and would surf around on the Gopher ecosystem, reading the various silly articles that propagated within college networks. I remember finding a file full of jokes about Bill Clinton and laughing hysterically, tho I didn't get some of the jokes.

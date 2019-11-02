@@ -22,6 +22,13 @@
 
   {{#content "bodyAttributes"}}class="page-post"{{/content}}
   {{#content "body"}}
+  {{#if draft}}
+  <div class="draft"><div>
+    <h3>DRAFT CONTENT</h3>
+    <p>The following page is a work in progress and is incomplete, with new additions made as time allows. As such, the contents will be changing before it is released live. If you are reading this work, recognize that it is a living document.</p>
+    <p>Please do not share this url without permission.</p>
+  </div></div>
+  {{/if}}
   <article class="{{#each classes}}{{this}} {{/each}}">
     {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{title}}</a></h1>{{/if}}
     {{#if subtitle}}<h2 class="post-subtitle"><a href="{{this.url}}">{{subtitle}}</a></h2>{{/if}}

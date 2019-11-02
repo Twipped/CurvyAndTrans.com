@@ -1,4 +1,19 @@
 
+.page-post .draft {
+  background: #f4f4f4;
+  padding: 10px 0 5px;
+  font-size: 14px;
+
+  > div {
+    margin: 0 auto;
+    max-width: 1000px;
+    @include media-breakpoint-up(md) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
 .page-post article {
   display: grid;
   margin: 0 auto;
