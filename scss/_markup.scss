@@ -166,6 +166,72 @@ li p + ul {
       img { border-radius: 0; }
     }
   }
+
+  &.ig-card {
+    background: white;
+    padding:12px;
+    font-size:14px;
+    line-height:17px;
+    color: rgb(38, 38, 38);
+    font-family: Roboto, Helvetica, Arial,sans-serif;
+    text-decoration:none;
+
+
+    .ig-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .ig-avatar {
+        background-color: #F4F4F4;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        flex-grow: 0;
+        height: 40px;
+        width: 40px;
+        margin: 0 14px 0 0;
+      }
+
+      .ig-name {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: flex-start;
+        font-weight: 400;
+        line-height: 1.2;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .ig-image {
+      margin: 10px 0;
+    }
+
+    .ig-caption {
+      line-height: 18px;
+      font-size: 14px;
+      font-weight: 400;
+      word-wrap:break-word;
+      margin: 0;
+    }
+
+    .ig-footer {
+      color:#c9c8cd;
+      font-size: 10px;
+      line-height: 1;
+      overflow:hidden;
+      padding:6px 0 0 0;
+      margin: 0;
+      text-overflow:ellipsis;
+      text-transform: uppercase;
+    }
+  }
 }
 
 .grid-row {

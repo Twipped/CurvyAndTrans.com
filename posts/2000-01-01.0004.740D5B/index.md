@@ -216,17 +216,40 @@ You may be unconcerned with the state of your body, perhaps not even fearing dea
 - Distortions of distance and the size and shape of objects
 - Feeling like a passive observer in the events of your life
 
+<a class="card ig-card right span3" href="https://www.instagram.com/p/B4fwhWAH2F-/">
+  <div class="ig-header">
+    <div class="ig-avatar"></div>
+    <div class="ig-name">
+      <strong>Brea</strong>
+      <span>theredgrrl</span>
+    </div>
+  </div>
+  <img class="ig-image" src="../3.lg.jpeg" alt="" srcset="../3.thumb.jpeg 100w, ../3.sm.jpeg 576w, ../3.lg.jpeg 1024w, ../3.jpeg 2048w" sizes="(max-width: 576px) 100vw, (max-width: 1020px) 30vw, 576px">
+  <p class="ig-caption">
+    #TransformationTuesday - As I’ve often said on posts like this, our eyes reflect our lives. The biggest difference I see in how trans people look after transition is always the eyes; often looking sad or distant in the past, and being bright and full of life in the present
+  </p>
+  <p class="ig-footer">
+    <time datetime="2019-11-05T19:54:45+00:00">Nov 5, 2019</time>
+  </p>
+</a>
+
 If you found yourself strongly relating to The Matrix or The Truman Show, you might be experiencing derealization. This can also manifest as a feeling of otherworldliness, like you don't belong in this society. You're just walking around waiting for your super powers to appear, or for an owl to fly up with your letter to Hogwarts. As a teen I was obsessed with an episode of The Outer Limits where a boy discovers a spaceship under his house and learns that he and his parents aren't actually human.
 
-<a href="../3.jpeg" class="card right span4" target="_break"><img src="../3.lg.jpeg" alt="" srcset="../3.thumb.jpeg 100w, ../3.sm.jpeg 576w, ../3.lg.jpeg 1024w, ../3.jpeg 2048w" sizes="(max-width: 576px) 100vw, (max-width: 1020px) 30vw, 576px" class="card-img-top"><span class="card-body">The Mile Long Stare. Then vs Now.</span></a>DPDR sometimes comes with an emotional stunting. You are able to laugh and find humor, but rarely ever genuine joy. Moments of sadness or grief cause you to just go numb, dissociated by the event that caused it. This can also go in the opposite direction, where the person is under so much anxiety that their emotional response is extremely disproportionate to the catalyst, resulting in severe crying or violent outbursts from seemingly small events.
+DPDR sometimes comes with an emotional stunting. You are able to laugh and find humor, but rarely ever genuine joy. Moments of sadness or grief cause you to just go numb, dissociated by the event that caused it. This can also go in the opposite direction, where the person is under so much anxiety that their emotional response is extremely disproportionate to the catalyst, resulting in severe crying or violent outbursts from seemingly small events.
 
 It's important to note that DPDR is not exclusive to Gender Dysphoria. This condition is co-morbid with several other mental health issues, including chronic depression, obsessive compulsive disorder and borderline personality disorder. DPDR should not be taken as a sign of Gender Dysphoria purely on its own, it's just a big alarm signal that something is very wrong. It's also usually pretty easy to spot externally, once you know how to watch for it. People with DPDR tend to have a mile long stare as they move about in the world; eyes so gloomy and dead that they look like a shell. One of the most common comments on transition timelines is how the eyes gain so much spark.
 
 ### Social Dysphoria
 
-Social Dysphoria is centered in the way the outside world perceives you and how others address you. All social gender dysphoria orbit around one central concept: Am I Seen As My Gender? Is this stranger seeing me as a man or a woman?
+Social Dysphoria is centered in the way the outside world perceives you and how others address you. All social gender dysphoria orbit around one central concept: Am I Seen As My Gender?
 
-This is where pronouns come in to play; being addressed with a gendered pronoun such as she, he, him, or her, which is not the pronoun that aligns with our gender, is extremely discomforting. This is true for *all* people, including cisgender people, but where a cis person will be insulted, a trans person will feel hurt. Hearing the wrong pronoun is a reminder that the person you are talking to does not recognize you for the gender that you are.
+For binary trans people this often is about being seen as your true gender, be in male or female. For some non-binary people this may be about not being seen as either male or female, or causing gender confusion. In all cases, however, social dysphoria comes in to play when you are incorrectly perceived as the gender you were assigned at birth, and treated as such. *Note, some genderqueer people have no social dysphoria, as they do not care what gender they are perceived as or what pronouns are used for them.*
+
+Social dysphoria is where pronouns and misgendering comes in to play; being addressed with a gendered pronoun such as she, he, him, or her which is not the pronoun that aligns with our gender is extremely discomforting. Granted, this is true for *all* people, including cisgender people, but where a cis person will be insulted by being misgendered, a trans person will feel hurt. It's like nails on a chalkboard, or steelwool across skin. Hearing the wrong pronoun is a reminder that the person you are talking to does not recognize you for the gender that you are.
+
+Gender neutral pronouns can also be unsettling for binary trans people if used in a way that make it clear the person is avoiding the pronoun that matches them. This often is an indication that a person has been read as being transgender, and the person addressing them doesn't know what pronouns they use. Asking their pronouns can resolve this situation immediately, but the paradox is that even in that scenario, having their pronouns asked may itself induce dysphoria around having been recognized as being trans. It is sort of a catch-22.
+
+Singular they can also be used maliciously when a transphobic individual refuses to use the correct pronoun, but knows they will get in trouble for using the wrong pronouns. Tone and intent matter a lot.
 
 The same also applies to names. Being called by one's given name (deadname) instead of their chosen name can feel invalidating when done ignorantly, and downright dismissive when done intentionally.
 
