@@ -148,7 +148,7 @@ exports.posts = function buildPosts () {
         cwd: path.dirname(file.path),
       });
 
-      if (!file.meta.tweet && images.length) {
+      if (images.length) {
         file.meta.images = images.map((imgpath) => {
           const ext = path.extname(imgpath);
           const basename = path.basename(imgpath, ext);

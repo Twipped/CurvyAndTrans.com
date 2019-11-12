@@ -370,7 +370,7 @@ a.grid-card, .grid-card a {
   }
   &.short-preview.no-images .grid-preview { min-height: unset; }
 
-  &.no-images.has-tweet {
+  &.has-tweet {
     grid-template-columns: 100%;
     grid-template-areas:
       "datetags"
