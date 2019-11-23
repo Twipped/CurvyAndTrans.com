@@ -4,6 +4,7 @@ date: "2019-05-26T15:03:00.000Z"
 title: "Starting Antidepressants"
 description: "To think, I used to believe I was completely neurotypical."
 tags:
+  - Drug Diary
   - Mental Health
   - OOTD
 single: false

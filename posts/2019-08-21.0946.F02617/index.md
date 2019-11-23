@@ -4,9 +4,10 @@ date: "2019-08-21T16:46:00.000Z"
 title: "Leaning Lexapro's Lamentations"
 description: "Outfit of the Day for Aug 21st, 2019"
 tags:
-  - OOTD
+  - Drug Diary
   - Sex Positivity
   - Mental Health
+  - OOTD
 classes:
   - double-column
 instagram: https://www.instagram.com/p/B1cv4NNnU_5/

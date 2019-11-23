@@ -7,6 +7,7 @@ tags:
   - Medical
   - Transgender
   - Periods
+titlecard: top
 tweet: >-
   <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hey as a reminder for national period day that people on estrogenizing hormones (particularly progesterone) can and often do experience many or all of the non-bleeding symptoms associated with periods and we get swarmed by transphobes when we try to discuss it</p>&mdash; Good Girl Energy (@Azure_Husky) <a href="https://twitter.com/Azure_Husky/status/1185686429361295360?ref_src=twsrc%5Etfw">October 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---

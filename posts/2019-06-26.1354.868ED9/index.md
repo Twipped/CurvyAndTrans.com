@@ -4,6 +4,7 @@ date: "2019-06-26T20:54:00.000Z"
 title: "Studio Disappointment"
 description: "Outfit of the Day for Jun 26th, 2019"
 tags:
+  - Drug Diary
   - OOTD
 products:
   "Torrid Black Floral Studio Knit Skater Dress": https://www.torrid.com/product/black-floral-studio-knit-skater-dress/11650842.html

@@ -6,6 +6,7 @@ description: "Two and a half years on estrogen"
 tags:
   - Transition Timeline
   - Transgender
+titlecard: top
 ---
 Doing my Transition Tuesday post a day early, because today marks 30 months since I took my first estrogen pill. Two and a half years. Fitting that today would also be a shot day, which replaced my pills four months later.
 
