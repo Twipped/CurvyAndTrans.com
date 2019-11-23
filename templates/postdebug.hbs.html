@@ -1,0 +1,58 @@
+<style>
+  .dev-mode {
+    background: #F59395;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .dev-mode h3 {
+    margin: 0;
+  }
+
+  .dev-mode > div {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .dev-mode .alert {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .dev-mode .alert img {
+    max-width: 100%;
+  }
+
+  .dev-mode .full {
+    grid-column: 1/-1
+  }
+</style>
+
+<div class="dev-mode"><div>
+  <h3 class="full">DEVELOPMENT MODE</h3>
+
+  <div class="alert alert-info full">
+    <strong>Classes</strong><br>
+    {{#each meta.classes}}<span class="badge badge-light" style="margin: 0 5px 2px 0;">{{this}}</span>{{/each}}
+  </div>
+
+  <div class="alert alert-info full">
+    <strong>Description</strong><br>
+    <p style="margin: 0;">{{meta.description}}</p>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>Poster</strong><br>
+    <img src="{{meta.poster.lg}}" alt="">
+  </div>
+
+  <div class="alert alert-info">
+    <strong>Titlecard</strong><br>
+    <img src="{{meta.titlecard}}" alt="">
+  </div>
+
+  <textarea class="full" style="width: 100%;height: 200px;display:none">{{stringify meta true}}</textarea>
+</div></div>

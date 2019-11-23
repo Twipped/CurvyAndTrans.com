@@ -55,6 +55,7 @@ handlebars.registerHelper('even', (value, options) => {
   return result ? options.fn(this) : options.inverse(this);
 });
 exports.loadLayout = async function loadLayout () {
+  handlebars.registerPartial('postdebug', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/postdebug.hbs.html')))));
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
   handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
@@ -73,6 +74,7 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
     manifest = {};
   }
 
+  handlebars.registerPartial('postdebug', handlebars.compile(''));
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
   handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
@@ -336,6 +338,7 @@ exports.posts = function buildPosts () {
               title: file.meta.title + ' :: Curvy & Trans',
             },
             ...file.meta,
+            meta: file.meta,
           }));
           stream.push(file);
         } catch (err) {
@@ -471,6 +474,7 @@ exports.pages = function buildPages () {
 
       var data = {
         ...file.meta,
+        meta: file.meta,
         page: {
           title: file.meta.title
             ? (file.meta.title + (file.meta.subtitle ? ', ' + file.meta.subtitle : '') + ' :: Curvy & Trans')
