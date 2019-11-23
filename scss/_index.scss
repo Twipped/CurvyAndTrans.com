@@ -4,7 +4,7 @@
     margin: 0 auto;
     max-width: 1024px;
     padding: 1px 12px 15px 12px;
-    background-color: rgb(240,240,240);
+    background-color: $content-bg;
 
     @include media-breakpoint-down(sm) {
       padding: 1px 0 0 0;
@@ -21,6 +21,7 @@
     span { flex: 1; }
     .btn {
       flex: 0;
+      margin: 2px 0;
       span, i {
         white-space: nowrap;
         display: inline;

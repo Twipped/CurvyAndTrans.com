@@ -3,7 +3,7 @@
   display: grid;
   padding: 0 10px;
   // place-items: start;
-  background-color: rgb(240,240,240);
+  background-color: $content-bg;
   grid-gap: 20px;
 
   @include media-breakpoint-down(md) {
@@ -197,9 +197,9 @@ a.grid-card, .grid-card a {
     }
 
     background: linear-gradient(180deg,
-      rgba(240,240,240,0) 0%,
-      rgba(240,240,240,0.5) 10%,
-      rgba(240,240,240,1) 90%,
+      rgba($content-bg,0) 0%,
+      rgba($content-bg,0.5) 10%,
+      rgba($content-bg,1) 90%,
     );
   }
   &.short-preview .grid-readmore-shade { display: none; }
