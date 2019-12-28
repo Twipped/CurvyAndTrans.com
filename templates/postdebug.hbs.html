@@ -44,15 +44,15 @@
     <p style="margin: 0;">{{meta.description}}</p>
   </div>
 
-  <div class="alert alert-info">
+  {{#if meta.poster}}<div class="alert alert-info">
     <strong>Poster</strong><br>
     <img src="{{meta.poster.lg}}" alt="">
-  </div>
+  </div>{{/if}}
 
-  <div class="alert alert-info">
+  {{#if meta.titlecard}}<div class="alert alert-info">
     <strong>Titlecard</strong><br>
     <img src="{{meta.titlecard}}" alt="">
-  </div>
+  </div>{{/if}}
 
   <textarea class="full" style="width: 100%;height: 200px;display:none">{{stringify meta true}}</textarea>
 </div></div>
