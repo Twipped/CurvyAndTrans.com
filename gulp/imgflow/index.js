@@ -7,8 +7,8 @@ const log = require('fancy-log');
 const actions = require('./actions');
 
 const CWD = path.resolve(__dirname, '../..');
-const SOURCE = path.resolve(CWD, 'posts/*/*.{jpeg,jpg,png,gif,m4v}');
-const POST_GROUPING = /posts\/([^/]+)/;
+const SOURCE = path.resolve(CWD, '{posts,lists}/*/*.{jpeg,jpg,png,gif,m4v}');
+const POST_GROUPING = /(?:posts|lists)\/([^/]+)/;
 const MANIFEST_PATH = path.resolve(CWD, 'if-manifest.json');
 const REV_MANIFEST_PATH = path.resolve(CWD, 'rev-manifest.json');
 const CACHE = 'if-cache';
@@ -52,7 +52,14 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
   const tasks = [];
 
   for (const [ postKey, files ] of Object.entries(filesByPost)) {
-    const hash = postKey.split('.')[2];
+    let hash, targetType;
+    if (files[0].substr(0, 5) === 'lists') {
+      targetType = 'l';
+      hash = postKey;
+    } else {
+      targetType = 'p';
+      hash = postKey.split('.')[2];
+    }
 
     const images = [];
     let poster = null;
@@ -88,7 +95,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     if (titlecard) {
       tasks.push({
         input: titlecard,
-        output: `docs/p/${hash}/titlecard.jpeg`,
+        output: `docs/${targetType}/${hash}/titlecard.jpeg`,
         action: actions.transcode,
       });
     }
@@ -96,58 +103,58 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     if (poster) {
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/poster.jpeg`,
+        output: `docs/${targetType}/${hash}/poster.jpeg`,
         action: actions.max,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/poster.lg.jpeg`,
+        output: `docs/${targetType}/${hash}/poster.lg.jpeg`,
         action: actions.lg,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/poster.md.jpeg`,
+        output: `docs/${targetType}/${hash}/poster.md.jpeg`,
         action: actions.md,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/poster.sm.jpeg`,
+        output: `docs/${targetType}/${hash}/poster.sm.jpeg`,
         action: actions.sm,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/poster.xs.jpeg`,
+        output: `docs/${targetType}/${hash}/poster.xs.jpeg`,
         action: actions.xs,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/poster.thumb.jpeg`,
+        output: `docs/${targetType}/${hash}/poster.thumb.jpeg`,
         action: actions.thumb,
       });
 
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-north.jpeg`,
+        output: `docs/${targetType}/${hash}/titlecard-north.jpeg`,
         action: actions.tcNorth,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-south.jpeg`,
+        output: `docs/${targetType}/${hash}/titlecard-south.jpeg`,
         action: actions.tcSouth,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-center.jpeg`,
+        output: `docs/${targetType}/${hash}/titlecard-center.jpeg`,
         action: actions.tcCenter,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-square.jpeg`,
+        output: `docs/${targetType}/${hash}/titlecard-square.jpeg`,
         action: actions.tcSquare,
       });
       tasks.push({
         input: poster,
-        output: `docs/p/${hash}/titlecard-box.jpeg`,
+        output: `docs/${targetType}/${hash}/titlecard-box.jpeg`,
         action: actions.tcBox,
       });
 
@@ -160,32 +167,32 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
       const fname = path.basename(f, ext);
       tasks.push({
         input: f,
-        output: `docs/p/${hash}/${fname}.jpeg`,
+        output: `docs/${targetType}/${hash}/${fname}.jpeg`,
         action: actions.max,
       });
       tasks.push({
         input: f,
-        output: `docs/p/${hash}/${fname}.lg.jpeg`,
+        output: `docs/${targetType}/${hash}/${fname}.lg.jpeg`,
         action: actions.lg,
       });
       tasks.push({
         input: f,
-        output: `docs/p/${hash}/${fname}.sm.jpeg`,
+        output: `docs/${targetType}/${hash}/${fname}.sm.jpeg`,
         action: actions.sm,
       });
       tasks.push({
         input: f,
-        output: `docs/p/${hash}/${fname}.pre1x.jpeg`,
+        output: `docs/${targetType}/${hash}/${fname}.pre1x.jpeg`,
         action: actions.carousel1x,
       });
       tasks.push({
         input: f,
-        output: `docs/p/${hash}/${fname}.pre2x.jpeg`,
+        output: `docs/${targetType}/${hash}/${fname}.pre2x.jpeg`,
         action: actions.carousel2x,
       });
       tasks.push({
         input: f,
-        output: `docs/p/${hash}/${fname}.thumb.jpeg`,
+        output: `docs/${targetType}/${hash}/${fname}.thumb.jpeg`,
         action: actions.thumb,
       });
     });
@@ -194,7 +201,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
       const fname = path.basename(f);
       tasks.push({
         input: f,
-        output: `docs/p/${hash}/${fname}`,
+        output: `docs/${targetType}/${hash}/${fname}`,
         action: actions.copy,
       });
     });

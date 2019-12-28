@@ -168,7 +168,7 @@ exports.posts = function buildPosts () {
           flags.add('show-images');
         }
 
-        if (images.length === 1) {
+        if (images.length === 1 && !file.meta['no-single']) {
           flags.add('single-image');
         }
 
@@ -191,14 +191,18 @@ exports.posts = function buildPosts () {
         flags.add('no-poster');
       }
 
-      file.meta.poster = {
-        max: `/p/${file.meta.id}/poster.jpeg`,
-        lg: `/p/${file.meta.id}/poster.lg.jpeg`,
-        md: `/p/${file.meta.id}/poster.md.jpeg`,
-        sm: `/p/${file.meta.id}/poster.sm.jpeg`,
-        xs: `/p/${file.meta.id}/poster.xs.jpeg`,
-        thumb: `/p/${file.meta.id}/poster.thumb.jpeg`,
-      };
+      if (flags.has('has-poster')) {
+        file.meta.poster = {
+          max: `/p/${file.meta.id}/poster.jpeg`,
+          lg: `/p/${file.meta.id}/poster.lg.jpeg`,
+          md: `/p/${file.meta.id}/poster.md.jpeg`,
+          sm: `/p/${file.meta.id}/poster.sm.jpeg`,
+          xs: `/p/${file.meta.id}/poster.xs.jpeg`,
+          thumb: `/p/${file.meta.id}/poster.thumb.jpeg`,
+        };
+      } else {
+        file.meta.poster = null;
+      }
 
       if (file.meta.orientation) {
         flags.add('is-' + file.meta.orientation);
@@ -233,27 +237,31 @@ exports.posts = function buildPosts () {
           else if (flags.has('is-tall')) file.meta.titlecard = 'box';
         }
 
-        switch (file.meta.titlecard) {
-        case 'top':
-        case 'north':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.jpeg`;
-          break;
-        case 'bottom':
-        case 'south':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.jpeg`;
-          break;
-        case 'center':
-        case 'middle':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.jpeg`;
-          break;
-        case 'box':
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-box.jpeg`;
-          break;
-        case 'thumb':
-        case 'square':
-        default:
-          file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
-          break;
+        if (file.meta.poster || images.length) {
+          switch (file.meta.titlecard) {
+          case 'top':
+          case 'north':
+            file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.jpeg`;
+            break;
+          case 'bottom':
+          case 'south':
+            file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.jpeg`;
+            break;
+          case 'center':
+          case 'middle':
+            file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.jpeg`;
+            break;
+          case 'box':
+            file.meta.titlecard = `/p/${file.meta.id}/titlecard-box.jpeg`;
+            break;
+          case 'thumb':
+          case 'square':
+          default:
+            file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
+            break;
+          }
+        } else {
+          file.meta.titlecard = null;
         }
       }
 
@@ -409,7 +417,7 @@ exports.posts = function buildPosts () {
     const indexSans = indexFile.clone();
     const postsSans = posts.map((p) => {
       p = omit(p, [ 'markdown', 'contents', 'images', 'products' ]);
-      p.poster = {
+      p.poster = p.poster && {
         max:   revmatch(p.poster.max),
         lg:    revmatch(p.poster.lg),
         md:    revmatch(p.poster.md),
@@ -538,6 +546,10 @@ exports.lists = function buildLists () {
       file.meta.markdown = original;
       file.meta.contents = contents;
       file.meta.id = path.basename(file.basename, file.extname);
+      // file.meta.postMap = file.meta.posts.reduce((o, id) => {
+      //   o[id] = postMap[id];
+      //   return o;
+      // }, {});
       file.meta.posts = file.meta.posts.map((id) => postMap[id]).filter(Boolean);
 
       file.path = path.join(file.base, path.basename(file.basename, file.extname), 'index.html');
@@ -550,6 +562,12 @@ exports.lists = function buildLists () {
         // Titlecard defined in the list metadata
         flags.add('has-titlecard');
         flags.add('defined-titlecard');
+
+        if (file.meta.title.length === 6) {
+          // pull titlecard from a post
+          const post = postMap[file.meta.titlecard];
+          file.meta.titlecard = post.titlecard;
+        }
       } else if (titlecard) {
         // Poster defined in the list data folder
         flags.add('has-titlecard');
@@ -569,10 +587,22 @@ exports.lists = function buildLists () {
         if (typeof file.meta.poster === 'string') {
           flags.add('has-poster');
           flags.add('defined-poster');
-          flags.add('monosize-poster');
-          file.meta.poster = {
-            only:   file.meta.poster,
-          };
+
+          if (file.meta.poster.length === 6) {
+            // pull poster from a post
+            const post = postMap[file.meta.poster];
+            file.meta.poster = post.poster;
+            file.meta.dimensions = post.dimensions;
+            if (post.flags.isTall) flags.add('is-tall');
+            if (post.flags.isSquare) flags.add('is-square');
+            if (post.flags.isWide) flags.add('is-wide');
+          } else {
+            // poster is a path
+            flags.add('monosize-poster');
+            file.meta.poster = {
+              only:   file.meta.poster,
+            };
+          }
         } else if (typeof file.meta.poster === 'object') {
           flags.add('has-poster');
           flags.add('defined-poster');
