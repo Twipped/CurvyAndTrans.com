@@ -243,8 +243,13 @@ li p + ul {
 
   margin-bottom: 1rem;
 
-  .double { grid-row-end: span 2; }
+  @include media-breakpoint-up(md) {
+    .double { grid-column-end: span 2; }
+  }
 
+  &.by-two {
+    grid-template-columns: repeat( auto-fit, minmax( 350px, 1fr ) );
+  }
 }
 
 .spoiler {

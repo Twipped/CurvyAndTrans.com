@@ -270,6 +270,10 @@ I, myself, have no direct physical dysphoria around my voice, I actually really 
 
 ### Societal Dysphoria
 
+Gender roles exist, and as much as we may try to buck them and point out the sexism that exists, there will always be expectations placed on people for their gender. The strongest of these are in marital and parental roles; "Husband", "Wife", "Mother", "Father", these terms come with loads of baggage attached to them, and the wrong role, or even any role at all, can feel like a lead lined straight jacket. You are given a whole book full of behaviors and actions, likes and dislikes, that you are just expected to fulfill, and if you fail to meet those requirements then you are seen as a bad spouse or a bad parent.
+
+An AFAB enby parent may face situations where cisgender moms expect them to relate to common experiences, and then create dissonance when they don't.
+
 ### Presentational Dysphoria
 
 ### Historical Dysphoria
