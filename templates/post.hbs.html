@@ -74,7 +74,7 @@
       {{#each images}}
         {{#compare type 'movie'}}
         <a class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
-          <video {{#if video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{full}}" type="video/mp4"></video>
+          <video {{#if ../video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{full}}" type="video/mp4"></video>
           {{#if (get ../captions @key)}}<span class="image-caption">{{get ../captions @key}}</span>{{/if}}
         </a>
         {{/compare}}
