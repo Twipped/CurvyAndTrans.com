@@ -23,6 +23,20 @@ const { siteInfo } = require('../package.json');
 const markdown = require('markdown-it');
 const striptags = require('string-strip-html');
 
+const handlebars = require('handlebars');
+require('helper-hoard').load(handlebars);
+handlebars.registerHelper('get', (target, key) => (target ? target[key] : undefined));
+handlebars.registerHelper('odd', (value, options) => {
+  const result = !!value % 2;
+  if (!options.fn) return result;
+  return result ? options.fn(this) : options.inverse(this);
+});
+handlebars.registerHelper('even', (value, options) => {
+  const result = !(value % 2);
+  if (!options.fn) return result;
+  return result ? options.fn(this) : options.inverse(this);
+});
+
 const md     = markdown({
   html: true,
   linkify: true,
@@ -41,24 +55,13 @@ const mdPreview = markdown({
   .use(require('./lib/markdown-token-filter'))
 ;
 
-const handlebars = require('handlebars');
-require('helper-hoard').load(handlebars);
-handlebars.registerHelper('get', (target, key) => (target ? target[key] : undefined));
-handlebars.registerHelper('odd', (value, options) => {
-  const result = !!value % 2;
-  if (!options.fn) return result;
-  return result ? options.fn(this) : options.inverse(this);
-});
-handlebars.registerHelper('even', (value, options) => {
-  const result = !(value % 2);
-  if (!options.fn) return result;
-  return result ? options.fn(this) : options.inverse(this);
-});
+
 exports.loadLayout = async function loadLayout () {
   handlebars.registerPartial('postdebug', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/postdebug.hbs.html')))));
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
   handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
+  handlebars.registerPartial('img', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/post-image.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
     if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
@@ -78,6 +81,7 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
   handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
   handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
   handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
+  handlebars.registerPartial('img', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/post-image.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
     if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
@@ -97,29 +101,15 @@ exports.posts = function buildPosts () {
     }))
     .pipe(asyncthrough(async (stream, file) => {
       if (!file || file.meta.ignore) return;
-      var original = file.contents.toString('utf8').trim();
-      var contents = md.render(original);
-
-      var preview = original;
-      preview = preview.replace(/<!--\[[\s\S]*\]-->/g, '');
-      if (file.meta.tweet) preview = preview.replace(file.meta.tweet.trim(), '');
-      preview = striptags(preview);
-      if (preview.length > 1000) preview = preview.slice(0, 1000) + '…';
-      preview = preview ? mdPreview.render(preview) : '';
 
       var date = moment(file.meta.date);
       var cwd = path.dirname(file.path);
       var flags = new Set(file.meta.classes || []);
 
-      file.contents = Buffer.from(contents);
-      file.meta.markdown = original;
-      file.meta.contents = contents;
-      file.meta.preview = preview;
       file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || date.format('YYYY-MM-DD-HHmm');
       file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
       file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
       file.meta.originalpath = path.relative(file.cwd, file.path);
-      file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
 
       if (!file.meta.slug) {
         log.error(`Post could not produce a slug. (${cwd})`);
@@ -267,14 +257,6 @@ exports.posts = function buildPosts () {
         }
       }
 
-      if (contents.length > 2000 || file.meta.long) {
-        flags.add('is-extra-long');
-      } else if (contents.length > 1000 || file.meta.long) {
-        flags.add('is-long');
-      } else if (contents.length < 500) {
-        flags.add('is-short');
-      }
-
       if (!file.meta.carousel) {
         file.meta.carousel = JSON.stringify({ groupCells: true, imagesLoaded: true });
       }
@@ -305,6 +287,46 @@ exports.posts = function buildPosts () {
         flags.add('no-descrip');
       }
 
+      file.meta.classes = Array.from(flags);
+      file.meta.flags = file.meta.classes.reduce((res, item) => {
+        var camelCased = item.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+        res[camelCased] = true;
+        return res;
+      }, {});
+
+      let original = file.contents.toString('utf8').trim();
+      original = original.replace(/\{!\{([\s\S]*?)\}!\}/mg, (match, contents) => {
+        try {
+          return handlebars.compile(contents)({ ...file.meta });
+        } catch (e) {
+          console.error(e);
+          return '';
+        }
+      });
+
+      const contents = md.render(original);
+
+      let preview = original;
+      preview = preview.replace(/<!--\[[\s\S]*\]-->/g, '');
+      if (file.meta.tweet) preview = preview.replace(file.meta.tweet.trim(), '');
+      preview = striptags(preview);
+      if (preview.length > 1000) preview = preview.slice(0, 1000) + '…';
+      preview = preview ? mdPreview.render(preview) : '';
+
+      file.contents = Buffer.from(contents);
+      file.meta.markdown = original;
+      file.meta.contents = contents;
+      file.meta.preview = preview;
+      file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
+
+      if (contents.length > 2000 || file.meta.long) {
+        flags.add('is-extra-long');
+      } else if (contents.length > 1000 || file.meta.long) {
+        flags.add('is-long');
+      } else if (contents.length < 500) {
+        flags.add('is-short');
+      }
+
       if (preview) {
         flags.add('has-preview');
         if (preview.length < 400) flags.add('short-preview');
@@ -312,12 +334,6 @@ exports.posts = function buildPosts () {
         flags.add('no-preview');
       }
 
-      file.meta.classes = Array.from(flags);
-      file.meta.flags = file.meta.classes.reduce((res, item) => {
-        var camelCased = item.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-        res[camelCased] = true;
-        return res;
-      }, {});
 
       file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
       stream.push(file);
@@ -627,6 +643,7 @@ exports.lists = function buildLists () {
 
       try {
         file.contents = Buffer.from(template({
+          meta: file.meta,
           page: {
             title: file.meta.title + (file.meta.subtitle ? ', ' + file.meta.subtitle : '') + ' :: Curvy & Trans',
           },
