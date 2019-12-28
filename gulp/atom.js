@@ -21,7 +21,7 @@ module.exports = exports = async function buildAtomFeed () {
   var feed = new RSS(siteInfo.rss);
 
   byState.final.forEach((post) => {
-    const description = `<img src="${siteInfo.rss.site_url + post.poster.xs}"><br>${post.preview}`;
+    const description = post.poster ? `<img src="${siteInfo.rss.site_url + post.poster.xs}"><br>${post.preview}` : post.preview;
     feed.item({
       title: post.title,
       date: post.date,
@@ -29,7 +29,7 @@ module.exports = exports = async function buildAtomFeed () {
       url: post.fullurl,
       categories: Object.values(post.tags),
       guid: post.id,
-      enclosure: {
+      enclosure: post.poster && {
         url: siteInfo.rss.site_url + post.poster.xs,
       },
     });
