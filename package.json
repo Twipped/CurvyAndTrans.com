@@ -49,7 +49,7 @@
     "gulp-rev": "~9.0.0",
     "gulp-sass": "~4.0.2",
     "gulp.spritesmith": "~6.10.1",
-    "handlebars": "~4.2.0",
+    "handlebars": "~4.3.0",
     "helper-hoard": "~0.2.0",
     "image-size": "~0.7.4",
     "lodash": "~4.17.15",
