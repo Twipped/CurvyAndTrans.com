@@ -262,6 +262,9 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     // target file exists, nothing to do
     if (outTime) {
       return false;
+      // task.log = [ 'skip', task.input, task.output, inTime, task.manifest.mtime ];
+      // task.action = null;
+      // return true;
     }
 
     // file exists in the cache, change the task to a copy action
