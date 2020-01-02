@@ -43,7 +43,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
 
     const p = fs.stat(path.resolve(CWD, f))
       .catch(() => null)
-      .then((stats) => (stats && stats.mtimeMs));
+      .then((stats) => (stats && Math.floor(stats.mtimeMs / 1000)));
 
     statMap.set(f, p);
     return p;
@@ -240,8 +240,8 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     }
 
     // file modification time does not match last read, rebuild
-    if (inTime !== prev.mtime) {
       prev.mtime = inTime;
+    if (inTime > task.manifest.mtime) {
       task.log = [ 'update', task.input, task.output ];
       return true;
     }
