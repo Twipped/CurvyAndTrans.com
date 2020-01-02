@@ -35,6 +35,12 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     manifest = {};
   }
 
+  let writeCounter = 0;
+  async function writeManifest () {
+    if (++writeCounter % 50) return;
+    await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+  }
+
   const allfiles = (await glob(SOURCE)).map((f) => path.relative(CWD, f));
   const filesByPost = groupBy(allfiles, (fpath) => fpath.match(POST_GROUPING)[1]);
 
@@ -301,6 +307,8 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     }
 
     manifest[task.hash] = { ...manifest[task.hash], ...apply, apply: undefined };
+    writeManifest();
+
   }, { concurrency: 10 });
 
   // filter unseen files from history
