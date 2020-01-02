@@ -27,6 +27,7 @@ const LOG = {
 
 module.exports = exports = async function imageFlow ({ rev = false }) {
 
+  const lastSeen = Math.floor(Date.now() / 1000);
   var manifest;
   try {
     manifest = JSON.parse(await fs.readFile(MANIFEST_PATH));
@@ -210,7 +211,6 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
 
   const pending = await Promise.filter(tasks, async (task) => {
     const hash = revHash(JSON.stringify(task));
-    const prev = manifest[hash];
     const cachePath = path.join(CACHE, `${task.action.name}.${hash}${path.extname(task.output)}`);
     const [ inTime, outTime, cachedTime ] = await Promise.all([
       stat(path.resolve(CWD, task.input)),
@@ -218,6 +218,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
       stat(path.resolve(CWD, cachePath)),
     ]);
 
+    task.manifest = manifest[hash];
     task.hash = hash;
     task.cache = cachePath;
 
@@ -228,8 +229,8 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     }
 
     // never seen this file before
-    if (!prev) {
-      manifest[hash] = {
+    if (!task.manifest) {
+      task.apply = {
         hash,
         input: task.input,
         output: task.output,
@@ -240,11 +241,17 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     }
 
     // file modification time does not match last read, rebuild
-      prev.mtime = inTime;
     if (inTime > task.manifest.mtime) {
       task.log = [ 'update', task.input, task.output ];
+      task.apply = {
+        mtime: inTime,
+      };
       return true;
     }
+
+    task.apply = {
+      mtime: inTime,
+    };
 
     // target file exists, nothing to do
     if (outTime) {
@@ -273,15 +280,17 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
   const revManifest = {};
 
   await Promise.map(sortBy(pending, [ 'input', 'output' ]), async (task) => {
-    const result = await task.action(task);
+    const result = task.action && await task.action(task);
+    const apply = task.apply || {};
     if (task.log && LOG[task.log[0]]) log.info(...task.log);
-    manifest[task.hash].lastSeen = Date.now();
+    apply.lastSeen = lastSeen;
+    apply.lastSeenHuman = new Date();
 
-    if (rev) {
+    if (rev && result) {
       const rhash = revHash(result);
       const hashedPath = revPath(task.output, rhash);
-      manifest[task.hash].revHash = rhash;
-      manifest[task.hash].revPath = hashedPath;
+      apply.revHash = rhash;
+      apply.revPath = hashedPath;
 
       const rOutPath = path.relative(path.join(CWD, '/docs/'), task.output);
       const rNewPath = path.relative(path.join(CWD, '/docs/'), hashedPath);
@@ -290,6 +299,8 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
 
       await fs.copy(task.output, hashedPath);
     }
+
+    manifest[task.hash] = { ...manifest[task.hash], ...apply, apply: undefined };
   }, { concurrency: 10 });
 
   await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
