@@ -1,6 +1,6 @@
 const path = require('path');
 const glob = require('../lib/glob');
-const { groupBy, sortBy } = require('lodash');
+const { groupBy, sortBy, omitBy } = require('lodash');
 const Promise = require('bluebird');
 const fs = require('fs-extra');
 const log = require('fancy-log');
@@ -302,6 +302,9 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
 
     manifest[task.hash] = { ...manifest[task.hash], ...apply, apply: undefined };
   }, { concurrency: 10 });
+
+  // filter unseen files from history
+  manifest = omitBy(manifest, (m) => m.lastSeen !== lastSeen);
 
   await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
 
