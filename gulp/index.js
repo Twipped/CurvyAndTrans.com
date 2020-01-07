@@ -93,10 +93,13 @@ function watcher () {
     'posts/**/index.md',
     // 'posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}',
     'templates/*.html',
-    'pages/*',
-    '!pages/*.md',
     'includes/*.md',
   ], contentTask);
+
+  watch([
+    'pages/*',
+    '!pages/*.md',
+  ], pages);
 
   watch('lists/*.md', exports.lists);
   watch('scss/*.scss', scssTask);
