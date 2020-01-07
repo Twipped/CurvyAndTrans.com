@@ -65,12 +65,12 @@
     <header>
       <h1><a href="/">curvy & trans</a></h1>
       <div class="nav-external">
-        <a href="mailto:media@curvyandtrans.com" class="btn btn-sm btn-outline-dark"><i class="fas fa-envelope"></i>&nbsp;Email</a>
         <a href="https://www.instagram.com/curvyandtrans" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
         <a href="https://twitter.com/CurvyAndTrans" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
         <a href="https://facebook.com/curvyandtrans" class="btn btn-sm btn-outline-dark" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>
-        <!-- <a href="https://patreon.com/curvyandtrans" class="btn btn-sm btn-outline-dark"><i class="fab fa-patreon"></i>&nbsp;Patreon</a> -->
-        <!-- <a href="https://tellonym.me/curvyandtrans" class="btn btn-sm btn-outline-dark">Send me a Tell</a> -->
+        <a href="https://patreon.com/curvyandtrans" class="btn btn-sm btn-outline-dark"><i class="fab fa-patreon"></i>&nbsp;Patreon</a>
+        <a href="mailto:media@curvyandtrans.com" class="btn btn-sm btn-outline-dark"><i class="fas fa-envelope" style="margin: 2px 0 -2px;"></i>&nbsp;Email</a>
+        <!-- <a href="/plugs.html" class="btn btn-sm btn-outline-dark"><i class="fas fa-heart"></i>&nbsp; Links</a> -->
       </div>
       {{block "header"}}
     </header>
@@ -79,7 +79,18 @@
       {{block "body"}}
     </div>
     <footer>
-      <p>All original images and text are owned and copyright &copy; {{date "YYYY"}} Jocelyn Badgley, all rights reserved.</p>
+      <div class="patreon-support">
+        <strong>
+          If you find the works on this blog to be valuable,<br>
+          please consider <a href="https://www.patreon.com/curvyandtrans">making a pledge to my patreon</a><br>
+          in support of the work I do for trans and fat activism.
+        </strong>
+        <p>Special thanks to the following supporters:</p>
+        <ul>
+          <li>Julia Hocken</li>
+        </ul>
+      </div>
+      <p>All original images and text are owned and copyright<br>&copy; {{date "yyyy"}} Jocelyn Badgley, all rights reserved.</p>
       <p><a href="https://github.com/Twipped/CurvyAndTrans.com">Site source is available for reference and reuse on GitHub</a></p>
     </footer>
   </div>

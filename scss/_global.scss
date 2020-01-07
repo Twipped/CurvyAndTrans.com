@@ -25,6 +25,36 @@ footer, .footer {
   &, a { color: #ccc; }
 }
 
+.patreon-support {
+  font-size: 12px;
+
+  strong {
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  a {
+    color: #aaa;
+    text-decoration: underline;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      display: inline;
+    }
+
+    li::after {
+      content: ", ";
+    }
+
+    li:last-child::after {
+        content: "";
+    }
+  }
+}
+
 header {
   position: relative;
   background: linear-gradient(-60deg, $pink 10%, $white 50%, $blue 90%);
@@ -33,10 +63,10 @@ header {
   grid-row-gap: 0px;
 
   @include media-breakpoint-up(md) {
-    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-columns: 2fr 0.5fr 400px;
     grid-template-areas:
-      "logo nav-external nav-external"
-      "catchphrase catchphrase nav-internal"
+      "logo . nav-external"
+      "catchphrase catchphrase nav-external"
     ;
     grid-template-rows: 1fr min-content;
   }
@@ -47,7 +77,6 @@ header {
       "logo"
       "catchphrase"
       "nav-external"
-      "nav-internal"
     ;
   }
 
@@ -86,33 +115,42 @@ header {
     font-weight: 400;
     line-height: 1;
 
-    // text-align: right;
-    @include media-breakpoint-down(sm) {
-      padding: 10px 0;
-    }
-
     display: grid;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: stretch;
 
     .btn {
-      // max-width: 125px;
       min-width: 100px;
 
       white-space: nowrap;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.6;
       background: rgba(255,255,255,0.6);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 18px;
+      }
     }
 
-    @include media-breakpoint-up(md) {
-      display: block;
-      align-self: center;
-      text-align: right;
+    @include media-breakpoint-down(sm) {
+      padding: 10px 0;
+
+      .btn {
+        font-size: 12px;
+      }
     }
+
+    // @include media-breakpoint-up(md) {
+    //   align-self: center;
+    //   text-align: right;
+    // }
   }
 
   i.fa-envelope {
