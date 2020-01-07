@@ -5,14 +5,13 @@ import postsJSON from '../posts-sans.json';
 import htmlGrid from '../templates/index-grid.hbs.html';
 import htmlGridCard from '../templates/index-card.hbs.html';
 import { groupBy, reduce, debounce } from 'lodash';
-import dateFormat from 'date-fns/format';
-import hhFirst from 'helper-hoard/src/helpers/collection/first';
+import { first, date } from 'hbs-kit';
 
 Handlebars.registerPartial('indexCard', Handlebars.compile(htmlGridCard));
 
 Handlebars.registerHelper('rev', (url) => (url && (url[0] === '/' ? url : '/' + url) || ''));
-Handlebars.registerHelper('date', (format, date) => dateFormat(date, format));
-Handlebars.registerHelper('first', hhFirst.first(Handlebars));
+Handlebars.registerHelper('date', date(Handlebars));
+Handlebars.registerHelper('first', first(Handlebars));
 
 const IndexView = Backbone.View.extend({
   el: '#body',

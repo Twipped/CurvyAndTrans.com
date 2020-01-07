@@ -3,7 +3,7 @@ module.exports = exports = ({ id, date }) => `---
 id: "${id}"
 date: "${date.toISOString()}"
 title: ""
-description: "Outfit of the Day for ${date.format('MMM Do, YYYY')}"
+description: "Outfit of the Day for ${date.format('MMM do, yyyy')}"
 tags:
   - OOTD
 products:

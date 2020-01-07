@@ -1,7 +1,7 @@
 
 const path = require('path');
 const fs = require('fs-extra');
-const moment = require('moment');
+const D = require('date-fns');
 const { findIndex, sortBy, groupBy, keyBy, reduce, omit } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
@@ -24,7 +24,7 @@ const markdown = require('markdown-it');
 const striptags = require('string-strip-html');
 
 const handlebars = require('handlebars');
-require('helper-hoard').load(handlebars);
+require('hbs-kit').load(handlebars);
 handlebars.registerHelper('get', (target, key) => (target ? target[key] : undefined));
 handlebars.registerHelper('odd', (value, options) => {
   const result = !!value % 2;
@@ -102,11 +102,11 @@ exports.posts = function buildPosts () {
     .pipe(asyncthrough(async (stream, file) => {
       if (!file || file.meta.ignore) return;
 
-      var date = moment(file.meta.date);
+      var date = new Date(file.meta.date);
       var cwd = path.dirname(file.path);
       var flags = new Set(file.meta.classes || []);
 
-      file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || date.format('YYYY-MM-DD-HHmm');
+      file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || D.format(date, 'yyyy-MM-dd-HHmm');
       file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
       file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
       file.meta.originalpath = path.relative(file.cwd, file.path);
