@@ -7,11 +7,14 @@ tags:
   - Feminism
   - LGBTQ
   - Essays
+  - Top Post
 orientation: wide
 instagram: https://www.instagram.com/p/BzyxBOUn0Km/
 ---
 
 <blockquote class="cite"><p>May you sleep on the breast of your tender woman companion.</p>&mdash; <a>Sappho, circa 600b.c.</a></blockquote>
+
+!!!include(adsense-in-article.md)!!!
 
 Saphho was a greek poet, born in 640 BC, known to have written approximately 10,000 lines of poetry, tho only about 650 survive today. Unfortunately, most of her poetry has been lost to time, but in her day she was extremely well known throughout the greek and roman empires. Her writings were among many of the great works lost in the fire of Alexandria.
 

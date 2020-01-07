@@ -7,6 +7,8 @@ no-images: true
 tags:
   - Transgender
   - Medical
+  - Top Post
+  - Sex Positivity
 tweet: >-
   <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Could you expand on that? I&#39;m curious how E horny differs from t horny</p>&mdash; Autumn caraway (@AutumnCaraway) <a href="https://twitter.com/AutumnCaraway/status/1192115970355191809?ref_src=twsrc%5Etfw">November 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ---
@@ -30,6 +32,8 @@ tweet: >-
 ***THIS POST IS NOT SAFE FOR WORK***. It features graphic sexual descriptions, and if you find these things unpleasant to read than this post is probably best left alone.
 
 The question above was posed to me today, and the answer is just too large for a twitter thread, so I figure I might as well write about it here. **The following descriptions are based on my own experience and are not universal, different people experience sex drive differently.**
+
+!!!include(adsense-in-article.md)!!!
 
 I'm going to break libido down into three distinct elements:
 
@@ -65,6 +69,8 @@ Some of this was definitely a hormonal drive, some of it was a result of gender 
 
 Climax, when it did occur naturally, always felt like a buildup of energy entirely in the groin, which would then suddenly fire off as it exploded forward through the penis. My pelvic floor would spasm repeatedly to trigger ejaculation and my legs would go rigid. Then I would fall into refractory period where everything would fall off. My sex drive would be gone, and I would be spent for at least an hour or two.
 
+!!!include(adsense-in-article.md)!!!
+
 ### Estrogen Libido (early days to present)
 
 I never actually experienced a total drop out of libido, so this will likely differ from some people. My sex drive always remained, but instead a new kind of libido grew over top of the old one, and for several weeks I didn't realize what it was I was experiencing because I was feeling both drives at the same time. Getting horny on estrogen is a totally different experience.
@@ -84,6 +90,8 @@ There are basically two kinds of estrogen orgasm, the Little O (pelvic), and the
 The big brain orgasm happens much differently, however. The more turned on I get, the tighter the spring becomes. My leg and groin muscles start to quiver, and if I'm supporting my own weight then they may drop out from under me. My fingers and toes curl, and my pelvic and abdominal muscles start to buck on their own. My breasts will swell and my nipples will become rigid. Waves of pleasure bounce through my body as I build, but the final climax sneaks up, you may not even know it's happening until suddenly all that energy crests the top of the dam and suddenly pours out into your body in a cascade. It flows through every nerve and every muscle as your entire body shakes with ecstasy.
 
 After it passes you're left stunned and immobile, trying to catch your breath, but then it starts to build again, and faster this time, and you get hit with aftershocks. It doesn't have to stop there, tho, there is no refractory period, you can just keep going until either you or your partner are exhausted. You're left in an afterglow so intense that it persists for hours, maybe even a day. The old TV trope where a woman coming to work extra bubbly because she got laid the night before? Totally real.
+
+!!!include(adsense-in-article.md)!!!
 
 ### Post-Transition
 
