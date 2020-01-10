@@ -95,6 +95,7 @@ How does this manifest? I'm going to break this down into 8 categories:
 6. Societal
 7. Presentational
 8. Historical
+9. Managed
 
 However, first I must stress something very important. So important that I am putting it into big bold letters.
 
@@ -177,6 +178,8 @@ It's ok for you to realize you need more or less than when you started.
 It's ok if you don't hate anything about your body, and just wish you looked more feminine or masculine.
 
 It's ok if you don't need medical transition *at all*. Body feelings are not the be-all-end-all of transition.
+
+**Total body physical dysphoria is not a requirement to be transgender. AFABs do not have to hate their chest, AMABs do not have to hate their penis. Every trans person's experience is different. All are valid.**
 
 ### Biochemical Dysphoria
 
@@ -283,17 +286,61 @@ Some physical traits which may cause discomfort all the time for some trans peop
 
 I, myself, have no direct physical dysphoria around my voice, I actually really enjoy singing in my natal baritone, and when I am home with just my family I let me voice relax. When out in public, however, being able to speak in a feminine voice plays a critical role in my being seen as a woman by strangers, so I put a lot of effort into training it into a feminine sound. My feminine voice turns on the instant I answer the phone or leave the house, it isn't even a conscious thing.
 
+
+
+
+
 ### Societal Dysphoria
 
 Gender roles exist, and as much as we may try to buck them and point out the sexism that exists, there will always be expectations placed on people for their gender. The strongest of these are in marital and parental roles; "Husband", "Wife", "Mother", "Father", these terms come with loads of baggage attached to them, and the wrong role, or even any role at all, can feel like a lead lined straight jacket. You are given a whole book full of behaviors and actions, likes and dislikes, that you are just expected to fulfill, and if you fail to meet those requirements then you are seen as a bad spouse or a bad parent.
 
-An AFAB enby parent may face situations where cisgender moms expect them to relate to common experiences, and then create dissonance when they don't.
+An AFAB birthing parent may experience severe dysphoria around being labeled as a mother. The vast majority of resources for birth are *extremely* female gendered, so just the very process of conceiving, carrying and giving birth is exceptionally loaded with gender expectations. If you are pregnant then you are labeled a mom, regardless of how you actually feel about your role, and with that comes a whole load of assumptions. Assumptions about caregiving, breastfeeding, and child rearing.
+
+Cis passing trans feminine individuals also run into this. If you are holding an infant or tending to a child then you are labeled a mom (unless the child is mixed race, then you're demoted to nanny, but that's a whole other topic). This can be validating, because it is a sign that you've been seen as a woman, but it can also be extremely *invalidating* when cis women start to talk about what they think are shared experiences with the birthing and post-natal process. Note, this exact same situation also happens with conversation about menstruation).
+
+
+
+#### Shame
+
 
 ***[WORK IN PROGRESS]***
+
+
+
 
 ### Presentational Dysphoria
 
-***[WORK IN PROGRESS]***
+Clothes. Hair. Makeup. Jewelry. Glasses. Piercings and other body modifications. Even personal hygiene can be a factor of presentation, such as the shaving of body hair, or how you take care of your skin. All of these things are gendered in society, clothing and hair especially.
+
+<div class="card right span3"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">If I was the mom, I come back at home and I find my husband and my son dressed in Elsa of Frozen I would file for divorce right away, the full childcare and a HUGE child alimony.</p>&mdash; Delphine972 (@delphine9721) <a href="https://twitter.com/delphine9721/status/1088500850283159552?ref_src=twsrc%5Etfw">January 24, 2019</a></p></blockquote></div>
+
+While the sexual revolution of the 1960s and the business fashion craze of the 80s did wonders for blurring the gap between masculine and feminine presentation (largely by normalizing masc fashion as androgynous), there are still enormous pressures to conform to traditional gender norms. Gender Non-Conforming dress is so instantly marked as queer that any time a woman wears a tailored suit she is marked as a lesbian, and a dad who [puts on an Elsa costume because his son wants to have a Frozen party](https://twitter.com/cbsnews/status/1088441623846023168?lang=en) is labeled as subversive and abusing his child.
+
+Long hair on men has been seen as [an act of rocker rebellion](https://www.youtube.com/watch?v=PbAoXw_DqvM) for decades, and men with long hair get discriminated against as being layabouts and bums. Short hair on women is often read as queer or butch (unless they're old, then it's expected), and women are often pressured to keep their hair long. Pierced ears on men became somewhat more normalized in the 90s, but are still seen as an act of rebellion, and some employers wont allow men to wear earrings. Makeup on men is so stigmatized by toxic masculinity that even men who *like* makeup feel pressured to avoid it.
+
+Like it or not, presentation is gendered, and it is extremely common for trans people to want to present themselves in the fashion of their true gender, and a desire to be free of the shackles of gendered presentation is common among all trans people, regardless of where they sit on the gender spectrum. For AMAB individuals they may manifest as a wish to incorporate more feminine elements, for AFABs it may manifest as a want for more masculine appearance. This may come as a full push towards the opposite of their assigned gender, or a desire to seek a middle-ground in pursuit of androgyny. It may even simply be a wish to *not* present as your assigned gender.
+
+**Not all transfemmes are feminine, not all transmascs are masculine, not all enbies seek androgyny. Butch AMAB trans people are valid, femme AFAB trans people are valid. Presentation is not gender, gender is not presentation.**
+
+#### Presentation's Affect on Physical Dysphoria.
+
+Clothing can also play a major role in the level of physical dysphoria a person experiences. Mens clothing always cut very boxy, straight up and down on the vertical and very square in the horizontal. Women's clothing is cut for more curves, accentuating waistlines and hip shape. Men's pants feature a lower crotch to make room for external genitals, and no fitting for curves, where womens bottoms are the opposite. Women's clothing is often form fitting, where Male clothing is rarely form fitting at all. Men's clothing is often made of sturdier and thicker materials, meant to be worn as a single layer. Women's clothing is often made of thinner and stretchier materials, expected to be layered together.
+
+Because these structures are meant to fit the masculine or feminine forms, they tend to amplify the sensation of wrongness. A classic affect is the way that the difference between mens and womens jeans can have a radical affect on a trans person's comfort level. Unfortunately this works both ways, as even affirming clothing can reveal how your shape is a mismatch.
+
+I, myself am very feminine in my preferred presentation, and I had a longing to wear dresses from when I was just five years old. I abhorred wearing suits, hating the way they fit on my body, since they always tugged in ways that felt very incorrect for what my body needed. I refused to wear any denim for most of my life because men's jeans always felt so incorrect (women's jeans and leggings, however, feel amazing). Then as I entered into transition and began to present more female, my dysphoria struck again in the ways my body did not conform to what womens clothing was expecting (too much in the crotch, too wide and bulky in the shoulders, too large in the waist, not large enough in the chest). It wasn't until the second year that I had experienced enough change in my shape to where womens clothing was properly affirming of my shape.
+
+What does this look like? Well, it looks a lot like other common body image issues. A tendency to avoid anything form fitting, leaning towards softer fabrics and baggier clothes. A classic gender dysphoria trope is the kid who wears nothing but sweatpants and hoodies. Clothes will be oversized in order to keep them from hugging the body. AFABs may prefer to wear compressing sports bras in order to minimize their chests, and avoid anything with a tight waistline.
+
+#### Presentation's Affect on Social Dysphoria.
+
+Presentation can be important for avoiding misgendering, especially early in transition. A lot of trans people feel a need to perform their gender in order to be accepted for who they are, leaning in to feminine or masculine presentation more than they actually would like in order to make up for their body and ensure that people gender them correctly. Those pursuing medical transition may find this need becomes less important as their bodies change and they become able to be gendered correctly without all of the performance.
+
+Performative Presentation was practically required prior to the reformation of WPATH in 2011; anyone who showed up to a doctors appointment without extreme feminine or masculine presentation risked be labeled a fake and losing their treatment under the Harry Benjamin Scale. Trans women actually would lost their estrogen simply for wearing jeans and a blouse instead of a dress, or for not putting on enough makeup. This is one of the reasons why transmedicalist ideology is so dangerous, it would see us returning to this system, labeling anyone who doesn't meet stereotypical views of femininity and masculinity as not actually transgender.
+
+Presentation is especially important among pre-pubescent children, as they lack any significant secondary sexual characteristics. Clothing and hair are the only ways we have to show the gender of a child, so much so that if a baby simply wears a pink shirt, strangers assume it is a girl. Even unisex clothing for kids is strongly gendered by way of colors and graphics. For trans children it can be extremely distressing to be either forced to cut their hair, or required to grow it out. Denying a young trans girl access to dresses, or forcing them onto a trans boy, can be debilitating to their morale.
+
+
 
 ### Historical Dysphoria
 
@@ -306,6 +353,12 @@ Sometimes historical dysphoria can manifest existentially, hitting you with all 
 Many trans people attempt to recapture some of these lost events, hosting or attending queer proms, organizing sleepovers, performing vow renewals with their spouses, and engaging in common puberty rites of passage like having a mother figure help them shop for their first bra, or having a father figure teach them to shave. However, ultimately, historical dysphoria is something that can never be relieved. You can make new experiences to replace the ones you lost, but you can never turn back the clock.
 
 This is one of many reasons why affirming trans youth is so important. Boys want to do common boy things and girls want to do common girl things, and when they miss out they will not forget.
+
+
+
+### Managed Dysphoria
+
+***WORK IN PROGRESS***
 
 ### How is Gender Dysphoria Diagnosed?
 
@@ -344,6 +397,9 @@ Now, here is the kicker. If you identify as transgender, meaning that your gende
 So, it is literally impossible for a person to identify as trans and not experience gender dysphoria. By the WPATH requirements anyone can identify as trans. Ergo, the statement "you do not have to have dysphoria to be transgender" is a logical paradox.
 
 Then why do we still say it? Because most people don't know what gender dysphoria actually is, and it is easier to repeat the mantra, than to explain the nuances and subtleties of how Gender Dysphoria manifests. But hey, look, now you've got a nice article to link to that can help people understand that.
+
+
+
 
 ### How is Gender Dysphoria Treated?
 
@@ -400,11 +456,13 @@ Transgender surgeries are typically divided into three separate categories:
 
 - **Top Surgery** (modifications to the chest)
 
-  Trans Feminine:   
-    Breast Augmentation via fat transfer or implants.
+  Trans Feminine:
+  
+  - Breast Augmentation via fat transfer or implants.
 
-  Trans Masculine:   
-    Bilateral Mastectomy (breast tissue removal) with chest reconstruction.
+  Trans Masculine:
+
+  - Bilateral Mastectomy (breast tissue removal) with chest reconstruction.
 
 - **Facial Feminizing/Masculinizing Surgery** (modifications to the skull, cartilage and skin on the face).
 
