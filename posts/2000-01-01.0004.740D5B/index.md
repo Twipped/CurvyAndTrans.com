@@ -11,30 +11,34 @@ tags:
   - Medical
 no-images: true
 draft: true
+tweets:
+  - '1088441623846023168'
+  - '1184580976581775366'
+  - '1184837108919230464'
+  - '1088500850283159552'
+  - '1215716433210105856'
+  - '1215716435068100611'
+  - '1215716435974066176'
+  - '1215716436980703233'
+  - '1215716438020849664'
+  - '1215727547780096000'
+  - '1215731319973523456'
+  - '1215716438972993536'
+  - '1215718003310039040'
+  - '1215720411788382210'
+  - '1215724301065891841'
+  - '1215727546387648517'
+  - '1215736608055537670'
+  - '1215738145473474560'
+  - '1215740224325783553'
+  - '1215746083487461379'
+  - '1215749725456125952'
 ---
-<!--[-->
-<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-  twttr.events.bind(
-    'rendered', () => {
-    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
-  });
-</script>
-<!--]-->
 
 > **Trans·gen·der** - *adjective*
 > Denoting or relating to a person whose sense of personal identity and gender does not correspond with their sex assigned at birth.
 
-<a href="https://www.instagram.com/p/Bq2uRCtFttU/" class="card right hero" target="_break">
-  <img
-    src="../1.lg.jpeg"
-    alt=""
-    srcset="../1.thumb.jpeg 100w, ../1.sm.jpeg 576w, ../1.lg.jpeg 1024w, ../1.jpeg 2048w"
-    sizes="(max-width: 576px) 100vw, (max-width: 1020px) 40vw, 576px"
-    class="card-img-top"
-  >
-  <span class="card-body">Original artwork by @jp_means_junpai</span>
-</a>
+^^^{!{ {{> img images.[0] className="card right hero" caption="Original artwork by @jp_means_junpai"}} }!}^^^
 
 Transgender people have existed as long as the human race itself, and many ancient cultures recognized more than just two genders within the human existence, but it has only been in the last 100 years that a scientific and medical understanding of trans people has become well documented, and with that a proper philosophical and psychological understanding of the transgender experience. Even the word "transgender" only dates back to 1965 when John Oliven proposed it as a more accurate alternative to David Cauldwell's term, "transsexual".
 
@@ -48,7 +52,9 @@ In 1948 a German endocrinologist named Dr. Harry Benjamin was contacted by Alfre
 
 Benjamin then went on to refine his protocol and treated thousands of patients with similar feelings over the course of his career. He refused to take payment for his work, instead taking satisfaction from the relief he granted these patients, and using their treatment to further his understanding of the condition. He coined a term for this feeling of incongruence in 1973: Gender Dysphoria. Unfortunately, this term would not be used in the United States until 2013, the American Psychiatric Association opting for the term Gender Identity Disorder instead.
 
-<a href="../scale.gif" class="card right span4"><img src="../scale.gif" alt="" class="card-img-top"><span class="card-body">Harry Benjamin Diagnostic Scale</span></a>If you are a trans person reading this, you may have heard the name Harry Benjamin before, but probably not in a favorable context. In 1979 his name was used (with permission) in the forming of the Harry Benjamin International Gender Dysphoria Association (HBIGDA), which released a Standards of Care (SoC) for transgender people. This SoC came to be known as the Harry Benjamin Rules, and were infamously limiting in regards to how Gender Dysphoria could be diagnosed. Patients were placed within a six tier scale based upon their level of misery and sexual dysfunction. If you did not land at Tier 5 or higher, classified as a "True Transexual", you were usually rejected for treatment.
+^^^{!{ {{> img images.[3] className="card right span4" caption="Harry Benjamin Diagnostic Scale"}} }!}^^^
+
+If you are a trans person reading this, you may have heard the name Harry Benjamin before, but probably not in a favorable context. In 1979 his name was used (with permission) in the forming of the Harry Benjamin International Gender Dysphoria Association (HBIGDA), which released a Standards of Care (SoC) for transgender people. This SoC came to be known as the Harry Benjamin Rules, and were infamously limiting in regards to how Gender Dysphoria could be diagnosed. Patients were placed within a six tier scale based upon their level of misery and sexual dysfunction. If you did not land at Tier 5 or higher, classified as a "True Transexual", you were usually rejected for treatment.
 
 The problem was, Tier 5 and 6 required that you had to be exclusively attracted to your own birth sex. Transition *had* to be making you straight, not gay, and bisexuals were not allowed. You also had to be experiencing severe distress with your body and genitals, and already be living as your true gender without treatment. Many trans people got around these limitations through community coaching and performative presentations, but for many people (myself included) it was believed that if you did not fit all the criteria, then you were not trans enough to transition.
 
@@ -59,16 +65,9 @@ In 2011 the HBIGDA reorganized itself to respond to mounting pressures in trans 
 > **Dys·pho·ri·a** - *Noun*   
 > A state of unease or generalized dissatisfaction with life. The opposite of euphoria.
 
-<a href="../2.jpg" class="card right span4" target="_break">
-  <img
-    src="../2.lg.jpeg"
-    alt=""
-    srcset="../2.thumb.jpeg 100w, ../2.sm.jpeg 576w, ../2.lg.jpeg 1024w, ../2.jpeg 2048w"
-    sizes="(max-width: 576px) 100vw, (max-width: 1020px) 25vw, 576px"
-    class="card-img-top"
-  >
-  <span class="card-body">What Dysphoria Feels Like</span>
-</a>There is a common misconception among both cisgender and transgender people that Gender Dysphoria refers exclusively to a physical discomfort with ones own body. Consequently, proponents of SoC 7 and DSM-5 have taken to a habit of saying that you do not have to have dysphoria to be transgender. This statement is often repeated like a mantra, as it informs people who do not feel significant body discomfort that they may also be transgender.
+^^^{!{ {{> img images.[1] className="card right span4" caption="What Dysphoria Feels Like"}} }!}^^^
+
+There is a common misconception among both cisgender and transgender people that Gender Dysphoria refers exclusively to a physical discomfort with ones own body. Consequently, proponents of SoC 7 and DSM-5 have taken to a habit of saying that you do not have to have dysphoria to be transgender. This statement is often repeated like a mantra, as it informs people who do not feel significant body discomfort that they may also be transgender.
 
 However, this belief that body discomfort is central to Gender Dysphoria is in fact a misconception, and is not even a majority component of a Gender Dysphoria diagnoses. Gender Dysphoria crosses a large number of all aspects of life, including how you interact with others, how others interact with you, how you dress, how you behave, how you fit into society, how you perceive the world around you, and yes, how you relate to your own body.
 
@@ -86,7 +85,7 @@ Evey Winters described it extremely aptly [in her Dysphoria post](https://eveywi
 
 The way I used to describe it is like wearing an adult's glove when you are a child. You can put your hand into the glove, and your fingers feed into the digits of the glove, but your dexterity with the glove is severely hindered. You might be able to pick something up, but you can not manipulate it like an adult could. Things just aren't quite right.
 
-How does this manifest? I'm going to break this down into 8 categories:
+How does this manifest? I'm going to break this down into nine categories:
 
 1. Euphoria
 2. Physical
@@ -95,7 +94,7 @@ How does this manifest? I'm going to break this down into 8 categories:
 6. Societal
 7. Presentational
 8. Historical
-9. Managed
+9. Existential
 
 However, first I must stress something very important. So important that I am putting it into big bold letters.
 
@@ -119,6 +118,10 @@ That world is scary, it's huge and full of unknowns, so they crawl back into the
 Eventually they realize that they don't want to go back into the hole any more. They have to go back, because that is where their family and friends are, but this place is so much better, they want to stay here. Going back into the hole feels wrong, it starts to hurt to be in the dark so much.
 
 This is what Gender Euphoria is like, it is brief flashes of a light that may be too bright to handle at first, too confusing to understand, but as time goes on you become more accustomed to them and you realize that this is where you belong, and the darkness becomes the dysphoria.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1215716433210105856'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
 Many trans people have no idea how much pain they are in until they find small bits of relief. Cosplay, stage acting, drag, role playing games, video games; small little forays into an different gender than they have lived as. They find that it feels just a little bit more comfortable. They'll make up excuses for why ("If I'm gonna be looking at this character's ass, it might as well be a girl's ass."), they'll try to convince themselves it's all just for fun, or an artistic expression. They might tell themselves that the bits of joy they feel at hearing a different pronoun are just novelty. But soon they find themselves looking for reasons to get that more often. More and more frequently they're role playing characters of a different sex, building more costumes, buying more clothes, performing more often. You find yourself wanting to do that all the time, because it just feels better than your real life, and being "you" starts to hurt. Eventually, that becomes the costume.
 
@@ -170,7 +173,11 @@ It can manifest as a compulsion to be rid of certain body traits, such as obsess
 
 Sometimes it may just simply be a feeling of being incorrect, which you may not even attribute to gender or sex. For most of my life I believed that the reason I hate my body was because I was fat. It wasn't until I started transition that I realized I don't hate my fat at all, I hated having *male* fat. The feminine curves that HRT gave me make me feel so much more in tune with my body.
 
-<div class="card right span3"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Me pre-hrt: I don’t hate my penis at all.<br>Me 2.5 years on hrt: GET THIS THING OFF ME.</p>&mdash; 𝓙𝓸𝓬𝓮𝓵𝔂𝓷 (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1184837108919230464?ref_src=twsrc%5Etfw">October 17, 2019</a></blockquote></div>
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1184580976581775366'
+  '1184837108919230464'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
 The dysphoria one feels about their body can and will change over time, for better and worse. Many trans women today enter into transition feeling no disconnect with their genitals, for example, but later find that changes as the other more in your face sources melt away, stimulation differs, and their genitalia itself changes shape and function. Some may assume that they will absolutely need facial feminisation surgery, but then 2 years in realize they're actually ok with how they look. I used to be terribly sensitive about my widows peak, but now that my hair has grown in I find I'm completely ok with my hair line.
 
 It's ok for you to realize you need more or less than when you started.
@@ -207,6 +214,12 @@ Zinnia Jones [gives these descriptions for Depersonalization](https://web.archiv
 You may put little care into your physical appearance, reaching for only the basic utilitarian needs in clothing and personal hygiene. Alternatively, you may hyperfocus on your appearance, attempting to try to spark some kind of joy, any kind of feeling of pride in your own body, only to be met with more hollowness.
 
 You may be unconcerned with the state of your body, perhaps not even fearing death, because you have so little attachment to your life.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1215736608055537670'
+  '1215738145473474560'
+  '1215740224325783553'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
 **Derealization** is a detachment from the world around you, a mental sense that everything you perceive is false.
 
@@ -259,6 +272,14 @@ All of this is valid, none of it means you aren't really trans.
 
 ### Social Dysphoria
 
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1215716438972993536'
+  '1215718003310039040'
+  '1215720411788382210'
+  '1215724301065891841'
+  '1215727546387648517'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
 Social Dysphoria is centered in the way the outside world perceives you and how others address you. All social gender dysphoria orbit around one central concept: Am I Seen As My Gender?
 
 For binary trans people this often is about being seen as your true gender, be in male or female. For some non-binary people this may be about not being seen as either male or female, or causing gender confusion. In all cases, however, social dysphoria comes in to play when you are incorrectly perceived as the gender you were assigned at birth, and treated as such. *Note, some genderqueer people have no social dysphoria, as they do not care what gender they are perceived as or what pronouns are used for them.*
@@ -298,7 +319,10 @@ An AFAB birthing parent may experience severe dysphoria around being labeled as 
 
 Cis passing trans feminine individuals also run into this. If you are holding an infant or tending to a child then you are labeled a mom (unless the child is mixed race, then you're demoted to nanny, but that's a whole other topic). This can be validating, because it is a sign that you've been seen as a woman, but it can also be extremely *invalidating* when cis women start to talk about what they think are shared experiences with the birthing and post-natal process. Note, this exact same situation also happens with conversation about menstruation).
 
-
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1215727547780096000'
+  '1215731319973523456'
+) tweets=meta.tweets className="grid-row" }} }!}<!--]-->^^^
 
 #### Shame
 
@@ -312,7 +336,10 @@ Cis passing trans feminine individuals also run into this. If you are holding an
 
 Clothes. Hair. Makeup. Jewelry. Glasses. Piercings and other body modifications. Even personal hygiene can be a factor of presentation, such as the shaving of body hair, or how you take care of your skin. All of these things are gendered in society, clothing and hair especially.
 
-<div class="card right span3"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">If I was the mom, I come back at home and I find my husband and my son dressed in Elsa of Frozen I would file for divorce right away, the full childcare and a HUGE child alimony.</p>&mdash; Delphine972 (@delphine9721) <a href="https://twitter.com/delphine9721/status/1088500850283159552?ref_src=twsrc%5Etfw">January 24, 2019</a></p></blockquote></div>
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1088441623846023168'
+  '1088500850283159552'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
 While the sexual revolution of the 1960s and the business fashion craze of the 80s did wonders for blurring the gap between masculine and feminine presentation (largely by normalizing masc fashion as androgynous), there are still enormous pressures to conform to traditional gender norms. Gender Non-Conforming dress is so instantly marked as queer that any time a woman wears a tailored suit she is marked as a lesbian, and a dad who [puts on an Elsa costume because his son wants to have a Frozen party](https://twitter.com/cbsnews/status/1088441623846023168?lang=en) is labeled as subversive and abusing his child.
 
@@ -323,6 +350,13 @@ Like it or not, presentation is gendered, and it is extremely common for trans p
 **Not all transfemmes are feminine, not all transmascs are masculine, not all enbies seek androgyny. Butch AMAB trans people are valid, femme AFAB trans people are valid. Presentation is not gender, gender is not presentation.**
 
 #### Presentation's Affect on Physical Dysphoria.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1215716435068100611'
+  '1215716435974066176'
+  '1215716436980703233'
+  '1215716438020849664'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
 Clothing can also play a major role in the level of physical dysphoria a person experiences. Mens clothing always cut very boxy, straight up and down on the vertical and very square in the horizontal. Women's clothing is cut for more curves, accentuating waistlines and hip shape. Men's pants feature a lower crotch to make room for external genitals, and no fitting for curves, where womens bottoms are the opposite. Women's clothing is often form fitting, where Male clothing is rarely form fitting at all. Men's clothing is often made of sturdier and thicker materials, meant to be worn as a single layer. Women's clothing is often made of thinner and stretchier materials, expected to be layered together.
 
@@ -355,10 +389,24 @@ Many trans people attempt to recapture some of these lost events, hosting or att
 This is one of many reasons why affirming trans youth is so important. Boys want to do common boy things and girls want to do common girl things, and when they miss out they will not forget.
 
 
+### Existential Dysphoria
+
+***WORK IN PROGRESS***
+
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1215740224325783553'
+) tweets=meta.tweets className="" }} }!}<!--]-->^^^
+
 
 ### Managed Dysphoria
 
 ***WORK IN PROGRESS***
+
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1215746083487461379'
+  '1215749725456125952'
+) tweets=meta.tweets className="grid-row" }} }!}<!--]-->^^^
+
 
 ### How is Gender Dysphoria Diagnosed?
 
