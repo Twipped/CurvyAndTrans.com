@@ -7,7 +7,7 @@ module.exports = exports = function (md) {
     (state) => {
       state.tokens = flatten(state.tokens.map(descend).filter(Boolean));
       return false;
-    }
+    },
   );
 };
 
@@ -16,6 +16,7 @@ function descend (token) {
   switch (token.type) {
   case 'link_open':
   case 'link_close':
+  case 'html_block':
     return false;
 
   case 'heading_open':
