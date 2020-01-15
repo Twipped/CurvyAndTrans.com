@@ -15,7 +15,7 @@ Handlebars.registerHelper('rev', (url) => (url && (url[0] === '/' ? url : '/' + 
 Handlebars.registerHelper('date', date(Handlebars));
 Handlebars.registerHelper('first', first(Handlebars));
 Handlebars.registerHelper('is', is(Handlebars));
-Handlebars.registerHelper('any', is(Handlebars));
+Handlebars.registerHelper('any', any(Handlebars));
 Handlebars.registerHelper('array', (...args) => { args.pop(); return args; });
 
 

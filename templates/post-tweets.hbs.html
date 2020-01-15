@@ -14,13 +14,13 @@
       <span>@{{quoted_status.user.screen_name}}</span>
       <div class="tweet-quoted-text">{{{quoted_status.html}}}</div>
     </a>{{/if}}
-    {{#with (any extended_entities.media entities.media)}}{{#if this.length}}
+    {{#any extended_entities.media entities.media}}
     <div class="tweet-entities"><div class="count{{this.length}}">
       {{#each this}}
-        {{#is type 'photo'}}<a class="tweet-photo" style="background-image: url({{../media_url_https}}?name=medium);" href="{{../media_url_https}}"></a>{{/is}}
+        {{#is type 'photo'}}<a class="tweet-photo" style="background-image: url({{media_url_https}}?name=medium);" href="{{media_url_https}}"></a>{{/is}}
         {{#is type 'video'}}
-          <video controls poster="{{../media_url}}" class="tweet-video">
-            {{#each ../video_info.variants}}
+          <video controls poster="{{media_url}}" class="tweet-video">
+            {{#each video_info.variants}}
             <source src="{{url}}" type="{{content_type}}">
             {{/each}}
           </video>
@@ -30,7 +30,7 @@
         {{/is}}
       {{/each}}
     </div></div>
-    {{/if}}{{/with}}
+    {{/any}}
     <div class="tweet-footer">
       <a class="tweet-date" href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}">{{date created_at "h:mm aa - LLL do, yyyy"}}</a>
     </div>
