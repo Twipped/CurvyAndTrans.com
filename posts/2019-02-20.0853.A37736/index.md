@@ -10,25 +10,17 @@ tags:
   - Top Post
   - Tweets
 no-images: true
-tweet: >-
-  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Trans women are biological women.</p>&mdash; IAM (@IndyaMoore) <a href="https://twitter.com/IndyaMoore/status/1096816028200460290?ref_src=twsrc%5Etfw">February 16, 2019</a></blockquote>
+tweet:
+  - '1096816028200460290'
+  - '1097269840165904384'
+tweets:
+  - '1091940189851643904'
 instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 ---
-<!--[-->
-<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-  twttr.events.bind(
-    'rendered', () => {
-    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
-  });
-</script>
-
-<div class="grid grid-row">
-  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Trans women are biological women.</p>&mdash; IAM (@IndyaMoore) <a href="https://twitter.com/IndyaMoore/status/1096816028200460290?ref_src=twsrc%5Etfw">February 16, 2019</a></blockquote>
-
-  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If a woman has a penis, her penis is a biologically female penis.</p>&mdash; IAM (@IndyaMoore) <a href="https://twitter.com/IndyaMoore/status/1097269840165904384?ref_src=twsrc%5Etfw">February 17, 2019</a></blockquote>
-</div>
-<!--]-->
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1096816028200460290'
+  '1097269840165904384'
+) tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
 
 If your reaction to these tweets is “No they aren’t!” then check yourself, because thats transphobia talking. If your reaction is "That's not how biology works", please, stay a while and listen.
 
@@ -89,7 +81,10 @@ And even still, just because a person's brain manifests with these traits, that 
 
 <a href="../levels.gif" class="card right span3"><img src="../levels.gif" alt="" class="card-img-top"><span class="card-body">Chart of my hormone levels over the last two years.</span></a>It has been 656 days since I started hormone therapy. Now, it took a month for my levels to normalize, so for practical purposes that means that I have been hormonally female for about 620 days. My testosterone fell to female normal levels almost immediately, and my estradiol has been over 100 pg/mL since my first blood test ([cis female normal range is 30-400](https://www.ucsfhealth.org/tests/003711.html), varying across the menstrual cycle). In September of 2017 I was practically at pregnancy levels after switching to a much too strong dose of Estradiol Valerate. This has had [significant effect on my secondary sexual characteristics](/p/5011BD/second-puberty-101/).
 
-<div class="card span2 right" style="margin-top: 3em;"><blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I mean, my body has changed SO MUCH, so saying it’s impossible to change sex is like saying it’s impossible to turn a glass of Sprite into a glass of Fanta.<br>If you pour in enough Fanta for long enough there’s going to be fuck all Sprite left in the glass. <a href="https://t.co/64T6DrenGf">https://t.co/64T6DrenGf</a></p>&mdash; 💅 Caitlin Spice 💅 (@CateSpice) <a href="https://twitter.com/CateSpice/status/1091940189851643904?ref_src=twsrc%5Etfw">February 3, 2019</a></blockquote></div>
+^^^<!--[--><div class="card borderless right span3" style="margin-top: 3em">{!{ {{> tweets ids=(array
+  '1091940189851643904'
+) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
+
 Some of these are extremely obvious: breast development, fat migrations from my waist and upper torso into my hips and butt, hair and skin changes. My hands and feet have shrank. My pelvis has rotated, making me shorter by an inch and a half and increasing the curve of my back. I’ve lost _so much strength_, and can barely lift the packs of water bottles that we buy at the store (I used to heft two at a time). Jars have become my nemesis.
 
 Changes that aren’t obvious: My prostate has shrank from the size of a golf ball down to roughly an almond, equivalent to its AFAB analog, the skene’s gland. This has eliminated my prostate cancer risk.  I have erogenous zones now, and my libido & sexual attraction has changed significantly, manifesting now as a tightness in my abdomen and an ache in my chest, where previously it was entirely centered in the genitals. My sense of smell has dramatically improved, not always for the better (male body odor is so disgusting, and it carries way too far). I feel temperature extremes much stronger, alternating from feeling cold _all the time_ to sweltering in my own flesh. I sweat differently now. Even my [bone structure will change](https://www.reddit.com/r/asktransgender/comments/9hrj9g/30_plus_years_on_hormones_what_effects_did_i/) over time.

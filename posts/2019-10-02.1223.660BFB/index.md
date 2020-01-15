@@ -5,12 +5,12 @@ title: "This is our tribe"
 description: "Kindred spirits"
 tags:
   - Transgender
-tweet: <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This. I know what it&#39;s like to hang out with men. I know what it&#39;s like to hang out with women. When I hang out with trans women, I&#39;m hanging out with women. Definitely not men. It&#39;s that simple.</p>&mdash; 🕸️🕷️🎃 Spoopy Witch 🏳️‍🌈🇪🇺🧜‍♀️ (@buttonsandfluff) <a href="https://twitter.com/buttonsandfluff/status/1179345945877721088?ref_src=twsrc%5Etfw">October 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+tweet:
+  - '1179343503345831938'
+  - '1179345945877721088'
 ---
 
-<!--[-->
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This. I know what it&#39;s like to hang out with men. I know what it&#39;s like to hang out with women. When I hang out with trans women, I&#39;m hanging out with women. Definitely not men. It&#39;s that simple.</p>&mdash; 🕸️🕷️🎃 Spoopy Witch 🏳️‍🌈🇪🇺🧜‍♀️ (@buttonsandfluff) <a href="https://twitter.com/buttonsandfluff/status/1179345945877721088?ref_src=twsrc%5Etfw">October 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<!--]-->
+^^^<!--[-->{!{ {{> tweets ids=(array '1179343503345831938' '1179345945877721088') tweets=meta.tweets className="grid-row" }} }!}<!--]-->^^^
 
 The first woman I ever dated said to me on our first date, “You are unlike any man I have ever dated before.” She could see it. She didn’t know what it was, but she could see it.
 

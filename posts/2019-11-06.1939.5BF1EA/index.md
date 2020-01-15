@@ -9,18 +9,12 @@ tags:
   - Medical
   - Top Post
   - Sex Positivity
-tweet: >-
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Could you expand on that? I&#39;m curious how E horny differs from t horny</p>&mdash; Autumn caraway (@AutumnCaraway) <a href="https://twitter.com/AutumnCaraway/status/1192115970355191809?ref_src=twsrc%5Etfw">November 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+tweet:
+  - '1192070553844113408'
+  - '1192115970355191809'
 ---
 
 <!--[-->
-<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-  twttr.events.bind(
-    'rendered', () => {
-    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
-  });
-</script>
 <div class="grid grid-row">
   <img src="../1.lg.jpeg" alt="What they tell you: Transfem HRT will lower your libido. What they don't tell you: Transfem HRT will help you develop confidence in yourself and will make your sex drive skyrocket because there's no greater aphrodisiac than finally loving yourself." srcset="../1.thumb.jpeg 100w, ../1.sm.jpeg 576w, ../1.lg.jpeg 1024w, ../1.jpeg 2048w" sizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px">
   <img src="../2.lg.jpeg" alt="TwippingVanilla: They also wont tell you that E sex drive feels so radically different from T sex drive that you may not even be aware that your libido is actually there in full force. I’ve literally had to tell girls “Honey, you’re horny” when they’ve come to me in a panic about symptoms.  AutumnCaraway: Could you expand on that? I'm curious how E horny differs from t horny." srcset="../2.thumb.jpeg 100w, ../2.sm.jpeg 576w, ../2.lg.jpeg 1024w, ../2.jpeg 2048w" sizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px">

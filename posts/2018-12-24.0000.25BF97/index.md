@@ -7,24 +7,16 @@ tags:
   - Transgender
   - Essays
   - Tweets
-tweet: >-
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The 2 biggest things that kept me from transitioning 30 years ago are that I was told I had to be attracted to men and that I had to hate my penis. Neither were true, so I left that thought behind. 3 years ago, I find out that had changed. I could still be attracted to women...</p>&mdash; Empress Michaela (@YuusuiWaltz) <a href="https://twitter.com/YuusuiWaltz/status/1077179357104353280?ref_src=twsrc%5Etfw">December 24, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+tweet:
+  - '1077179357104353280'
+  - '1077179357746135046'
 ---
 
-<!--[-->
-<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-  twttr.events.bind(
-    'rendered', () => {
-    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
-  });
-</script>
-<div class="grid grid-row">
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The 2 biggest things that kept me from transitioning 30 years ago are that I was told I had to be attracted to men and that I had to hate my penis. Neither were true, so I left that thought behind. 3 years ago, I find out that had changed. I could still be attracted to women...</p>&mdash; Empress Michaela (@YuusuiWaltz) <a href="https://twitter.com/YuusuiWaltz/status/1077179357104353280?ref_src=twsrc%5Etfw">December 24, 2018</a></blockquote>
 
-  <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">...and not hate my penis. <br><br>Now, of course I have always wanted a vagina, but that want was not tied up with the hatred of what I was born with. Sure, I have problems with my junk. It is in the way most of the time. It is frequently uncomfortable and just a nuisance.</p>&mdash; Empress Michaela (@YuusuiWaltz) <a href="https://twitter.com/YuusuiWaltz/status/1077179357746135046?ref_src=twsrc%5Etfw">December 24, 2018</a></blockquote>
-</div>
-<!--]-->
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1077179357104353280'
+  '1077179357746135046'
+) tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
 
 If you’ve found yourself wondering why there is such an explosion in the trans population recently, this is it right here. The beginning of modern transgender care is rooted in the 1948 when Alfred Kinsey (yes, that Kinsey) asked a dutch endocrinologist, Dr. William Benjamin, to assist a child who “wished to be a girl.” The mother of the girl was adamant that she wanted to help her daughter be comfortable in her skin, NOT convince them otherwise. Benjamin created a treatment program of estrogen therapy to help the girl transition, and noted just how profound of an impact it had on her behavior and well being. He continued to refine his treatment and went on to help hundreds of trans people find peace with themselves, despite laws at the time that banned transsexual reassignment.
 

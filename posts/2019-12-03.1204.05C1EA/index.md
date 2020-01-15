@@ -8,24 +8,15 @@ tags:
   - Feminism
   - Tweets
 titlecard: top
-tweet: >-
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">It took me months after coming out as &quot;not a dude&quot; before I could even claim &quot;girl&quot; and several months of being full time before I felt like I had the &quot;right&quot; to call myself a woman. <br><br>There were just too many connotations and expectations of lived experience I hadn&#39;t had.</p>&mdash; JustLaura (@laurainlaurels) <a href="https://twitter.com/laurainlaurels/status/1201525285151227905?ref_src=twsrc%5Etfw">December 2, 2019</a></blockquote>
+tweet: '1201525283997794305'
+tweets:
+  - '1201525283997794305'
+  - '1201525285151227905'
+  - '1201525286212427778'
+  - '1201527159728283648'
 ---
-<!--[-->
-<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-  twttr.events.bind(
-    'rendered', () => {
-    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
-  });
-</script>
-<div class="grid grid-row">
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you think you are a trans woman but are still uncomfortable calling yourself a woman and to claim that term for yourself, don&#39;t worry. It&#39;s pretty normal and it&#39;s no accident that so many of us use &quot;trans girl&quot; a lot. Doesn&#39;t mean you are not sure or not trans enough.</p>&mdash; JustLaura (@laurainlaurels) <a href="https://twitter.com/laurainlaurels/status/1201525283997794305?ref_src=twsrc%5Etfw">December 2, 2019</a></blockquote>
-  <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">It took me months after coming out as &quot;not a dude&quot; before I could even claim &quot;girl&quot; and several months of being full time before I felt like I had the &quot;right&quot; to call myself a woman. <br><br>There were just too many connotations and expectations of lived experience I hadn&#39;t had.</p>&mdash; JustLaura (@laurainlaurels) <a href="https://twitter.com/laurainlaurels/status/1201525285151227905?ref_src=twsrc%5Etfw">December 2, 2019</a></blockquote>
-  <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">It&#39;s ok to just go with girl for now or ever if that&#39;s how you feel. Especially early in your transition, you are basically prepubescent again, so it&#39;s quite fitting in some ways.<br><br>Don&#39;t feel pressured to claim the term &quot;woman&quot; if you don&#39;t feel it yet.</p>&mdash; JustLaura (@laurainlaurels) <a href="https://twitter.com/laurainlaurels/status/1201525286212427778?ref_src=twsrc%5Etfw">December 2, 2019</a>
-  <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">I remember knowing deep down that I was a woman and being so fucking scared of it, I couldn&#39;t even say it in my head, yet alone actually vocalize it.<br><br>I had a friend literally say &quot;I think you have an answer to your gender question, you are just not ready to say it yet&quot;.</p>&mdash; JustLaura (@laurainlaurels) <a href="https://twitter.com/laurainlaurels/status/1201527159728283648?ref_src=twsrc%5Etfw">December 2, 2019</a></blockquote>
-</div>
-<!--]-->
+
+^^^<!--[-->{!{ {{> tweets ids=(array '1201525283997794305' '1201525285151227905' '1201525286212427778' '1201527159728283648') tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
 
 The message in these tweets is awesome, but I want to unpack the “trans girl” sentiment.
 

@@ -8,22 +8,13 @@ tags:
   - Transgender
   - Periods
 titlecard: top
-tweet: >-
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hey as a reminder for national period day that people on estrogenizing hormones (particularly progesterone) can and often do experience many or all of the non-bleeding symptoms associated with periods and we get swarmed by transphobes when we try to discuss it</p>&mdash; Good Girl Energy (@Azure_Husky) <a href="https://twitter.com/Azure_Husky/status/1185686429361295360?ref_src=twsrc%5Etfw">October 19, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+tweet:
+  - '1185686429361295360'
+tweets:
+  - '1185686429361295360'
+  - '1185688500085108736'
 ---
-<!--[-->
-<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script>
-  twttr.events.bind(
-    'rendered', () => {
-    jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
-  });
-</script>
-<div class="grid grid-row">
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hey as a reminder for national period day that people on estrogenizing hormones (particularly progesterone) can and often do experience many or all of the non-bleeding symptoms associated with periods and we get swarmed by transphobes when we try to discuss it</p>&mdash; Good Girl Energy (@Azure_Husky) <a href="https://twitter.com/Azure_Husky/status/1185686429361295360?ref_src=twsrc%5Etfw">October 19, 2019</a></blockquote>
-  <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Like many parts of trans health this has gone heavily ignored by the general cis medical community due to a lack of interest and grant funding<a href="https://twitter.com/TwippingVanilla?ref_src=twsrc%5Etfw">@TwippingVanilla</a> has a pretty great research deep dive on estrogenizing hormones and periods here: <a href="https://t.co/aIwJgS3zPw">https://t.co/aIwJgS3zPw</a></p>&mdash; Good Girl Energy (@Azure_Husky) <a href="https://twitter.com/Azure_Husky/status/1185688500085108736?ref_src=twsrc%5Etfw">October 19, 2019</a></blockquote>
-</div>
-<!--]-->
+^^^<!--[-->{!{ {{> tweets ids=(array '1185686429361295360' '1185688500085108736') tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
 
 I haven’t talked about this in a few months and several hundred followers, but since today is National Period Day, it's a good day to bring it up.
 

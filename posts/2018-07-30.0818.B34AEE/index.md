@@ -13,6 +13,12 @@ tags:
   - Transgender
   - Coming Out
   - Essays
+tweets:
+  - '1011573433715458050'
+  - '1012019140175921154'
+  - '1011661491295027200'
+  - '1011632286079410176'
+  - '1011624013959979008'
 ---
 
 When my egg shattered (aka: when I accepted myself as trans) I found myself with pretty much no dysphoria surrounding my phallus. This was, in fact, one of many reasons I had convinced myself I wasn't trans for so long, I didn't hate my junk (this changed, but I'll get to that later). What I did know almost immediately, however, was that I needed to lose the testosterone factories. I _hated_ my testicles with a mad passion, they had provided me with nothing but literal pain for my entire life (also my children, but that is not a saving grace). For, you see, I had a medical condition which had never been discovered and never was treated; a testicular torsion so severe that it pulled the entire testicle up into the inguinal canal, where it could be gradually crushed by my pelvic joints.
@@ -82,7 +88,9 @@ Going to the bathroom was a challenge. I had left the hospital with the typical 
 
 Pain was surprisingly low. It was definitely present, but after a life of chronic testicle pain, this didn't seem all that worse. I felt no pain at all from the incision. The suture was small, about one inch long, starting at the base of my penis and down along the perineal raphe. A surgical glue was laid over top of the stitches, and a bandage over that. There was no blood at all, and the entire area was very clean. I also realized that my entire groin had been completely shaved. The pain I felt was much deeper, and the swelling was real.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It’s 4:30am, 13 hours since I left the hospital, and I just found another probe that the nurses forgot to remove from my body. (This makes two).</p>&mdash; Jocelyn Falling Through The Unknown (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1011573433715458050?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1011573433715458050'
+) tweets=meta.tweets className="" }} }!}<!--]-->^^^
 
 The tips of the spermatic cord swell up from blood pooling at the tips, forming balls almost as large as the testicles themselves. The inguinal canals also swell up, making things very puffy. Walking around was a slow processes for the first two days, just because everything was so sensitive and enlarged. My penis itself had completely contracted, to the point it was a solid centimeter below the surface. This made peeing difficult, as the urine just pooled in the cavity. Kat made the joke that it was in hiding after that nice couple across the street had been murdered in a brutal home invasion. This lasted for the rest of the week.
 
@@ -90,23 +98,31 @@ My aftercare instructions were that I could take a shower the next day, but not 
 
 We had also been told in aftercare instructions that I shouldn't wear any tight clothing, so I had been wearing very loose briefs. I found out that was wrong on day two, you need to keep the scrotum lifted against your body to prevent a hematoma, and switched back to my tighter panties. The aftercare instructions also failed to mention anything about icing the area, but that quickly became necessary. I had bought an [english ice pack](https://www.amazon.com/gp/product/B00389P5EQ/) way back in February in preparation, and it came very much in handy. Ice not only helped to reduce the swelling and the pain, it also reduced the fluid buildup in the scrotum.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I’m being told this may have actually been from coming off the opiates. ¯\_(ツ)_/¯ <a href="https://t.co/abpjeYXn2t">https://t.co/abpjeYXn2t</a></p>&mdash; Jocelyn Falling Through The Unknown (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1012019140175921154?ref_src=twsrc%5Etfw">June 27, 2018</a></blockquote>
+^^^<!--[--><div class="card borderless left span3">{!{ {{> tweets ids=(array
+  '1012019140175921154'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
 The doctor had prescribed me an opiate pain killer and a stool softener to counter the constipation from the opiate. Kat ran into problems getting the hospital pharmacy to fill the prescriptions, first because they had the wrong name on file, and then because she misremembered my birthday. The morning after the surgery she had me take both meds, but this was the last day I did. I just didn't need them, I was completely used to pain down there, and it was already diminishing. The next few days I got by with just tylenol and ibuprofen. I was very thankful for that, because that first bowel movement on day 2 was like giving birth.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Wife: &quot;Be sure to get up and move around more, don&#39;t spend all day sitting at your desk. I imagine that chair can&#39;t be good for your testicles.&quot;<br><br>Me: &quot;Uhm... hon...&quot;<br><br>Wife: &quot;YOU KNOW WHAT I MEAN.&quot;</p>&mdash; Jocelyn Falling Through The Unknown (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1011661491295027200?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
-
 By the fourth day I was up and walking around fine, but still not allowed to drive anywhere because I kept having lightheaded spells. I wasn't exactly dizzy, but I wasn't stable either. Eventually we realized this was because I was so dehydrated. Coming off of Spiro, combined with the shock of the surgery, had sent my body into rapid flush mode, and I was peeing out all my moisture. It took over a week before every glass of water I drank didn't get peed right back out shortly after. It wasn't until the second week that I stopped having that lightheaded feeling. I also had some compounded issues from my Concerta (ADHD medication), which may have been making the lightheadedness worse. I had to stop taking it eventually.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1011661491295027200'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
 Most of the sutures had dissolved by the second week, and all but a little of the glue had fallen off. In my follow up appointment the doctor told me that I would probably have to tug on the ends of the stitches to remove them, but they should come freely (I never actually needed to, they fell out at some point). The worst of the swelling had faded by the second week, but the "grapes" remain (and still do as I write this approaching 5 weeks). Scar tissue is present along the incision, and touch sensation there feels a little weird, but it's not all that different from the natural skin texture there, just thicker. There were also numb zones all around my scrotal tissue where I had no sensation at all. Periodically over the first two weeks I would suddenly get a sharp stabbing pain as nerves in the area reconnected. Sensation has now fully returned and all is well.
 
 ### Life after T
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My skin feels softer… my gut reaction to that is placebo effect, except that the cracks on my fingers and hand are gone.<br><br>Cracks that have been there for 9 years. I got them from working at an HP server reseller. The dust destroyed my skin.<br><br>They’re gone.</p>&mdash; Jocelyn Falling Through The Unknown (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1011632286079410176?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1011632286079410176'
+) tweets=meta.tweets className="" }} }!}<!--]-->^^^
 
 The above tweet was on day 2. It wasn't placebo, my skin really had suddenly gotten a whole lot softer. Sensation had increased too, textures became more pronounced. I remember touching my wife's leg that evening and it felt buttery smooth in a way I'd never felt before. This was the first aspect of being completely, truly free of testosterone. Even tho my blood results showed that my T had been suppressed very well (last read pre-surgery was 10.5 ng/dL), it is pretty clear to me now that the numbers Spironolactone produces were not an accurate measure of the androgens in my body.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">*removes all the spiro from her pill planner*<br><br>Never again. God what an awful drug. <a href="https://t.co/Mx0lJ4TK8o">pic.twitter.com/Mx0lJ4TK8o</a></p>&mdash; Jocelyn Falling Through The Unknown (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1011624013959979008?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
+^^^<!--[--><div class="card borderless left span3">{!{ {{> tweets ids=(array
+  '1011624013959979008'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
 [Spiro is a really garbage drug](https://moderntranshormones.com/2018/01/01/whats-wrong-with-spironolactone/) to use as an anti-androgen. Not only because it's a diuretic, but because it causes massive spikes in cortisol levels. This prevents fat from burning properly, can cause depression, and even impairs cognitive thinking. It took three weeks for my system to get used to being off the spiro, and during those three weeks my body did not know which way was up.
 

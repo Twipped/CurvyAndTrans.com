@@ -7,11 +7,12 @@ tags:
   - Transgender
   - Family
   - Tweets
-tweet: >-
-  <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The 1st thing my daughter does when she wakes up and sees me in the morning is runs to give me a big hug.<br><br>This never happened pre-transition, the old me was too angry, too unpredictable. She was afraid of him.<br><br>Fuck anyone who says this is bad for the children of trans parents.</p>&mdash; 𝓙𝓸𝓬𝓮𝓵𝔂𝓷 (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1098963132720963585?ref_src=twsrc%5Etfw">February 22, 2019</a></blockquote>
+tweet: '1098963132720963585'
 ---
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The 1st thing my daughter does when she wakes up and sees me in the morning is runs to give me a big hug.<br><br>This never happened pre-transition, the old me was too angry, too unpredictable. She was afraid of him.<br><br>Fuck anyone who says this is bad for the children of trans parents.</p>&mdash; 𝓙𝓸𝓬𝓮𝓵𝔂𝓷 (@TwippingVanilla) <a href="https://twitter.com/TwippingVanilla/status/1098963132720963585?ref_src=twsrc%5Etfw">February 22, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1098963132720963585'
+) tweets=meta.tweets className="" }} }!}<!--]-->^^^
 
 My relationship with my daughter is ten times stronger than it was in the before times. We used to have so many conflicts, so much hostility and impatience. She was legit scared of me, and with good reason. I was a powder keg with a lit fuse, read to explode at any moment. I had no tolerance for her four year old antics, and no room for providing comfort.
 

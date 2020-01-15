@@ -5,8 +5,9 @@ title: "Seeking Confidence"
 description: "Stay afraid, but do it anyway."
 tags:
   - Body Confidence
-tweet: >-
-  <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Where does the confidence to dress and present that way come from? I&#39;ve been transitioning for 7 years. How or where does that grow? I&#39;ve been looking for it since the beginning.</p>&mdash; aGhostPumpkin (@ForgetHolidays) <a href="https://twitter.com/ForgetHolidays/status/1189721696930013187?ref_src=twsrc%5Etfw">October 31, 2019</a></blockquote>
+tweet:
+  - '1189700135330164737'
+  - '1189721696930013187'
 ---
 [@magsvisaggs posted this](https://twitter.com/MagsVisaggs/status/1189700135330164737?s=20) downright inspiring timeline to twitter tonight which kicked off a whole meme across trans twitter. The pictured reply caught my attention.
 
