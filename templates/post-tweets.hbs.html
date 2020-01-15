@@ -20,7 +20,7 @@
         {{#is type 'photo'}}<a class="tweet-photo" style="background-image: url({{../media_url_https}}?name=medium);" href="{{../media_url_https}}"></a>{{/is}}
         {{#is type 'video'}}
           <video controls poster="{{../media_url}}" class="tweet-video">
-            {{#each ../video_info.variants}}{{log this}}
+            {{#each ../video_info.variants}}
             <source src="{{url}}" type="{{content_type}}">
             {{/each}}
           </video>
@@ -34,6 +34,6 @@
     <div class="tweet-footer">
       <a class="tweet-date" href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}">{{date created_at "h:mm aa - LLL do, yyyy"}}</a>
     </div>
-  {{/with}}</div>
+  {{else}}Missing tweet for {{this}}{{/with}}</div>
   {{/each}}
 </div>
