@@ -66,7 +66,6 @@ const twitter = new Twitter(require('../twitter.json'));
 
 async function reloadLayouts () {
   const layouts = {
-    postdebug: 'templates/postdebug.hbs.html',
     layout:    'templates/layout.hbs.html',
     indexCard: 'templates/index-card.hbs.html',
     indexGrid: 'templates/index-grid.hbs.html',
@@ -87,6 +86,7 @@ async function reloadLayouts () {
 
 exports.loadLayout = async function loadLayout () {
   await reloadLayouts();
+  handlebars.registerPartial('postdebug', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/postdebug.hbs.html')))));
   handlebars.registerHelper('rev', (url) => {
     if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
@@ -97,6 +97,7 @@ exports.loadLayout = async function loadLayout () {
 exports.loadLayout.prod = async function loadLayoutForProd () {
   const manifest = await fs.readJson(path.join(ROOT, 'rev-manifest.json')).catch(() => {}).then((r) => r || {});
 
+  handlebars.registerPartial('postdebug', handlebars.compile(''));
   await reloadLayouts();
 
   handlebars.registerHelper('rev', (url) => {
