@@ -356,7 +356,7 @@ async function execute (manifest, tasks, rev) {
 
       revManifest[rOutPath] = rNewPath;
 
-      await fs.copy(output, hashedPath);
+      await fs.copy(output, path.resolve(CWD, 'docs', hashedPath));
     }
 
     manifest[task.hash] = { ...manifest[task.hash], ...apply };
