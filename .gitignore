@@ -1,6 +1,7 @@
 /node_modules
 /docs
 /aws.json
+/twitter.json
 /rev-manifest.json
 /.awspublish-curvyandtrans.com
 /bs-manifest.json
@@ -10,3 +11,4 @@
 /if-cache
 /if-manifest.json
 posts/*/montage/*.jpg
+/twitter-cache.json

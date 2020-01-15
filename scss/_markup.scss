@@ -7,20 +7,6 @@ img {
   max-width: 100%;
 }
 
-twitter-widget {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card twitter-widget {
-  margin: 5px !important;
-  width: unset !important;
-
-  @include media-breakpoint-down(sm) {
-    width: 90vw !important;
-  }
-}
-
 blockquote {
   font-family: 'Georgia';
   font-weight: 200;
@@ -53,22 +39,6 @@ blockquote {
     margin-bottom: 0;
   }
 
-  &.twitter-tweet, &.cite {
-    margin: 5px;
-    padding: 10px;
-    font-size: 12px;
-
-    p {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    a[href] { text-decoration: underline; }
-  }
 }
 
 h2, h3, h4, h5 {
@@ -84,17 +54,13 @@ li p + ul {
   margin-bottom: 0.5em;
 }
 
-.twitter-tweet {
-  width: unset !important;
-}
-
-.grid-row .twitter-tweet {
-  margin: 0 !important;
-}
-
 .card {
   text-decoration: none;
   background: $lightPink;
+
+  &.borderless {
+    border: none;
+  }
 
   .card-img-top + .card-img-top {
     border-top: 1px solid $card-border-color;
@@ -248,7 +214,11 @@ li p + ul {
   }
 
   &.by-two {
-    grid-template-columns: repeat( auto-fit, minmax( 350px, 1fr ) );
+    grid-template-columns: repeat( auto-fit, minmax( 400px, 1fr ) );
+  }
+
+  &.by-three {
+    grid-template-columns: repeat( auto-fit, minmax( 325px, 1fr ) );
   }
 }
 
@@ -368,9 +338,10 @@ a.instagram {
   border-color: $blue;
   color: $darkBlue;
   background-color: $lightBlue;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   display: block;
   max-width: 350px;
+  clear: both;
 
   .fab {
     font-size: 25px;

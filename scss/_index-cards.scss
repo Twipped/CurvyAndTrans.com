@@ -22,7 +22,6 @@
 
 a.grid-card, .grid-card a {
   text-decoration: none !important;
-  color: unset;
 }
 
 .grid-card {
@@ -129,27 +128,7 @@ a.grid-card, .grid-card a {
 
   .grid-tweet {
     grid-area: poster;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-
-    twitter-widget {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-      min-width: unset !important;
-      max-width: unset !important;
-
-      @include media-breakpoint-down(sm) {
-        display: unset !important;
-      }
-
-      @include media-breakpoint-up(lg) {
-        width: unset !important;
-      }
-    }
+    margin-top: 10px;
 
 
   }

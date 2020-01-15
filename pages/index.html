@@ -52,14 +52,4 @@
     {{> indexGrid }}
 	{{/content}}
 
-  {{#append "postscripts"}}
-  <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script>
-    twttr.events.bind(
-      'rendered', () => {
-      jQuery('.twitter-tweet').map((i, e) => jQuery('.CallToAction', e.shadowRoot)).each((i, j) => j.hide());
-    });
-  </script>
-  {{/append}}
-
 {{/extend}}

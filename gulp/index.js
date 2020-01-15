@@ -14,11 +14,10 @@ const rssTask = require('./atom');
 exports.atom = rssTask;
 
 var images = require('./imgflow');
-function imagesProd () {
-  return images({ rev: true });
-}
+exports.twimages = images.twitter;
 exports.images = images;
-exports['images-prod'] = imagesProd;
+exports['images-prod'] = images.prod;
+exports['twimages-prod'] = images.twitter.prod;
 
 const filesTask = require('./files');
 exports.files = filesTask;
@@ -47,7 +46,7 @@ exports.cloudfront = cloudfront;
 exports.new = require('./new');
 
 var buildTask = series(
-  imagesProd,
+  images.prod,
   scssTask.prod,
   jsTask.prod,
   filesTask.prod,
@@ -57,7 +56,8 @@ var buildTask = series(
   loadLayout.prod,
   pages,
   lists,
-  rssTask
+  images.twitter.prod,
+  rssTask,
 );
 
 var devBuildTask = series(
@@ -65,14 +65,15 @@ var devBuildTask = series(
     images,
     scssTask,
     jsTask,
-    filesTask
+    filesTask,
   ),
   loadLayout,
   posts,
   jsRollupTask,
   pages,
   lists,
-  rssTask
+  images.twitter,
+  rssTask,
 );
 
 exports.dev = devBuildTask;
@@ -81,7 +82,7 @@ exports.publish = series(
   cleanTask,
   buildTask,
   pushToProd,
-  cloudfront.prod
+  cloudfront.prod,
 );
 exports.testpush = pushToProd.dryrun;
 
@@ -94,7 +95,7 @@ function watcher () {
     // 'posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}',
     'templates/*.html',
     'includes/*.md',
-  ], contentTask);
+  ], series(contentTask, images.twitter));
 
   watch([
     'pages/*',
@@ -104,6 +105,7 @@ function watcher () {
   watch('lists/*.md', exports.lists);
   watch('scss/*.scss', scssTask);
   watch('js/*.js', jsTask);
+  watch('files/**/*', filesTask);
   watch([ 'js-rollup/*.js', 'templates/cell.hbs.html', 'posts-sans.json' ], jsRollupTask);
   watch('posts/*/*.{jpeg,jpg,png,gif}', images);
 

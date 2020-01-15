@@ -2,15 +2,15 @@
 const path = require('path');
 const fs = require('fs-extra');
 const D = require('date-fns');
-const { findIndex, sortBy, groupBy, keyBy, reduce, omit } = require('lodash');
+const { chunk, uniq, findIndex, sortBy, groupBy, keyBy, reduce, omit } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
 const slugify = require('slugify');
 const dimensions = require('./lib/dimensions');
 
 const { src, dest } = require('gulp');
-const merge       = require('merge-stream');
 const frontmatter = require('gulp-front-matter');
+const collect     = require('gulp-collect');
 
 const asyncthrough = require('./lib/through');
 
@@ -22,10 +22,14 @@ const { siteInfo } = require('../package.json');
 
 const markdown = require('markdown-it');
 const striptags = require('string-strip-html');
+const tweetparse = require('./lib/tweetparse');
 
 const handlebars = require('handlebars');
-require('hbs-kit').load(handlebars);
+const HandlebarsKit = require('hbs-kit');
+HandlebarsKit.load(handlebars);
+handlebars.registerHelper('nl2br', (input) => String(input).replace(/(\r\n|\n\r|\r|\n)/g, '<br>'));
 handlebars.registerHelper('get', (target, key) => (target ? target[key] : undefined));
+handlebars.registerHelper('array', (...args) => { args.pop(); return args; });
 handlebars.registerHelper('odd', (value, options) => {
   const result = !!value % 2;
   if (!options.fn) return result;
@@ -44,6 +48,7 @@ const md     = markdown({
 }).enable('image')
   .use(require('markdown-it-div'))
   .use(require('markdown-it-include'), path.join(ROOT, '/includes'))
+  .use(require('./lib/markdown-raw-html'))
 ;
 
 const mdPreview = markdown({
@@ -53,15 +58,35 @@ const mdPreview = markdown({
 })
   .use(require('markdown-it-div'))
   .use(require('./lib/markdown-token-filter'))
+  .use(require('./lib/markdown-raw-html'))
 ;
+
+const Twitter = require('twitter-lite');
+const twitter = new Twitter(require('../twitter.json'));
+
+async function reloadLayouts () {
+  const layouts = {
+    postdebug: 'templates/postdebug.hbs.html',
+    layout:    'templates/layout.hbs.html',
+    indexCard: 'templates/index-card.hbs.html',
+    indexGrid: 'templates/index-grid.hbs.html',
+    img:       'templates/post-image.hbs.html',
+    tweets:    'templates/post-tweets.hbs.html',
+  };
+
+  let pending = Object.entries(layouts)
+    .map(async ([ name, file ]) =>
+      [ name, (await fs.readFile(path.resolve(ROOT, file))).toString('utf8') ],
+    );
+
+  pending = await Promise.all(pending);
+
+  pending.forEach(([ name, file ]) => handlebars.registerPartial(name, handlebars.compile(file)));
+}
 
 
 exports.loadLayout = async function loadLayout () {
-  handlebars.registerPartial('postdebug', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/postdebug.hbs.html')))));
-  handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
-  handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
-  handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
-  handlebars.registerPartial('img', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/post-image.hbs.html')))));
+  await reloadLayouts();
   handlebars.registerHelper('rev', (url) => {
     if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
@@ -70,18 +95,10 @@ exports.loadLayout = async function loadLayout () {
 };
 
 exports.loadLayout.prod = async function loadLayoutForProd () {
-  var manifest;
-  try {
-    manifest = JSON.parse(await fs.readFile(path.join(ROOT, 'rev-manifest.json')));
-  } catch (e) {
-    manifest = {};
-  }
+  const manifest = await fs.readJson(path.join(ROOT, 'rev-manifest.json')).catch(() => {}).then((r) => r || {});
 
-  handlebars.registerPartial('postdebug', handlebars.compile(''));
-  handlebars.registerPartial('layout', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/layout.hbs.html')))));
-  handlebars.registerPartial('indexCard', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-card.hbs.html')))));
-  handlebars.registerPartial('indexGrid', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/index-grid.hbs.html')))));
-  handlebars.registerPartial('img', handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/post-image.hbs.html')))));
+  await reloadLayouts();
+
   handlebars.registerHelper('rev', (url) => {
     if (!url) return '';
     if (url[0] === '/') url = url.substr(1);
@@ -91,291 +108,345 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
   });
 };
 
-exports.posts = function buildPosts () {
+function parseMeta () {
+  return asyncthrough(async (stream, file) => {
+    if (!file || file.meta.ignore) return;
 
-  var template = handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/post.hbs.html'))));
+    var date = new Date(file.meta.date);
+    var cwd = path.dirname(file.path);
+    var flags = file.flags = new Set(file.meta.classes || []);
 
-  var readPosts = src('posts/**/index.md')
-    .pipe(frontmatter({
-      property: 'meta',
-    }))
-    .pipe(asyncthrough(async (stream, file) => {
-      if (!file || file.meta.ignore) return;
+    file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || D.format(date, 'yyyy-MM-dd-HHmm');
+    file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
+    file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
+    file.meta.originalpath = path.relative(file.cwd, file.path);
 
-      var date = new Date(file.meta.date);
-      var cwd = path.dirname(file.path);
-      var flags = new Set(file.meta.classes || []);
+    if (!file.meta.slug) {
+      log.error(`Post could not produce a slug. (${cwd})`);
+      return;
+    }
 
-      file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || D.format(date, 'yyyy-MM-dd-HHmm');
-      file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
-      file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
-      file.meta.originalpath = path.relative(file.cwd, file.path);
-
-      if (!file.meta.slug) {
-        log.error(`Post could not produce a slug. (${cwd})`);
-        return;
-      }
-
-      file.meta.tags = (file.meta.tags || []).reduce((result, tag) => {
-        result[slugify(tag).toLowerCase()] = tag;
-        return result;
-      }, {});
+    file.meta.tags = (file.meta.tags || []).reduce((result, tag) => {
+      result[slugify(tag).toLowerCase()] = tag;
+      return result;
+    }, {});
 
 
-      if (Object.keys(file.meta.tags).length === 1 && file.meta.tags.ootd) {
-        flags.add('is-ootd-only');
+    if (Object.keys(file.meta.tags).length === 1 && file.meta.tags.ootd) {
+      flags.add('is-ootd-only');
+    } else {
+      flags.add('not-ootd-only');
+    }
+
+
+    if (file.meta.tweet) {
+      flags.add('has-tweet');
+    }
+
+    const images = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', {
+      cwd: path.dirname(file.path),
+    });
+
+    if (images.length) {
+      file.meta.images = images.map((imgpath) => {
+        const ext = path.extname(imgpath);
+        const basename = path.basename(imgpath, ext);
+        if (ext === '.m4v') {
+          return {
+            type: 'movie',
+            full: `/p/${file.meta.id}/${basename}.m4v`,
+          };
+        }
+
+        return {
+          type: 'image',
+          full: `/p/${file.meta.id}/${basename}.jpeg`,
+          large: `/p/${file.meta.id}/${basename}.lg.jpeg`,
+          small: `/p/${file.meta.id}/${basename}.sm.jpeg`,
+          preview: `/p/${file.meta.id}/${basename}.pre1x.jpeg`,
+          preview2x: `/p/${file.meta.id}/${basename}.pre2x.jpeg`,
+          thumb: `/p/${file.meta.id}/${basename}.thumb.jpeg`,
+        };
+      });
+      flags.add('has-images');
+      if (file.meta['no-images']) {
+        flags.add('hide-images');
       } else {
-        flags.add('not-ootd-only');
+        flags.add('show-images');
       }
 
+      if (images.length === 1 && !file.meta['no-single']) {
+        flags.add('single-image');
+      }
+
+    } else {
+      flags.add('no-images');
+      flags.add('hide-images');
+    }
+
+    const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
+
+    if (poster) {
+      file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
+      flags.add('has-poster');
+      flags.add('native-poster');
+    } else if (images.length) {
+      flags.add('has-poster');
+      flags.add('derived-poster');
+      file.meta.dimensions = await dimensions(path.resolve(cwd, images[0]));
+    } else {
+      flags.add('no-poster');
+    }
+
+    if (flags.has('has-poster')) {
+      file.meta.poster = {
+        max: `/p/${file.meta.id}/poster.jpeg`,
+        lg: `/p/${file.meta.id}/poster.lg.jpeg`,
+        md: `/p/${file.meta.id}/poster.md.jpeg`,
+        sm: `/p/${file.meta.id}/poster.sm.jpeg`,
+        xs: `/p/${file.meta.id}/poster.xs.jpeg`,
+        thumb: `/p/${file.meta.id}/poster.thumb.jpeg`,
+      };
+    } else {
+      file.meta.poster = null;
+    }
+
+    if (file.meta.orientation) {
+      flags.add('is-' + file.meta.orientation);
+    }
+
+    if (file.meta.dimensions && !file.meta.tweet) {
+      const { width, height } = file.meta.dimensions;
+      file.meta.dimensions.ratioH = Math.round((height / width) * 100);
+      file.meta.dimensions.ratioW = Math.round((width / height) * 100);
+
+      if (!file.meta.orientation) {
+        if (file.meta.dimensions.ratioH > 100) {
+          flags.add('is-tall');
+        } else if (file.meta.dimensions.ratioH === 100) {
+          flags.add('is-square');
+        } else {
+          flags.add('is-wide');
+        }
+      }
+    }
+
+    const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
+
+    if (titlecard) {
+      flags.add('has-titlecard');
+      file.meta.titlecard = `/p/${file.meta.id}/titlecard.jpeg`;
+    } else {
+      flags.add('no-titlecard');
+
+      if (!file.meta.titlecard) {
+        if (flags.has('is-wide')) file.meta.titlecard = 'middle';
+        else if (flags.has('is-tall')) file.meta.titlecard = 'box';
+      }
+
+      if (file.meta.poster || images.length) {
+        switch (file.meta.titlecard) {
+        case 'top':
+        case 'north':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.jpeg`;
+          break;
+        case 'bottom':
+        case 'south':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.jpeg`;
+          break;
+        case 'center':
+        case 'middle':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.jpeg`;
+          break;
+        case 'box':
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-box.jpeg`;
+          break;
+        case 'thumb':
+        case 'square':
+        default:
+          file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
+          break;
+        }
+      } else {
+        file.meta.titlecard = null;
+      }
+    }
+
+    if (!file.meta.carousel) {
+      file.meta.carousel = JSON.stringify({ groupCells: true, imagesLoaded: true });
+    }
+
+    if (file.meta['no-title']) {
+      flags.add('hide-title');
+    } else if (file.meta.title || file.meta.description) {
+      flags.add('show-title');
+    } else {
+      flags.add('hide-title');
+    }
+
+    if (file.meta.title) {
+      flags.add('has-title');
+    } else {
+      flags.add('no-title');
+    }
+
+    if (file.meta.subtitle) {
+      flags.add('has-subtitle');
+    } else {
+      flags.add('no-subtitle');
+    }
+
+    if (file.meta.description) {
+      flags.add('has-descrip');
+    } else {
+      flags.add('no-descrip');
+    }
+
+    if (file.meta.tweets) {
+      flags.add('has-tweets');
+    } else {
+      flags.add('no-tweets');
+    }
+
+    stream.push(file);
+  });
+}
+
+function parseTweets () {
+  const tweeturl = /https?:\/\/twitter\.com\/(?:#!\/)?(?:\w+)\/status(?:es)?\/(\d+)/i;
+  const tweetidcheck = /^\d+$/;
+  function parseTweetId (tweetid) {
+    // we can't trust an id that isn't a string
+    if (typeof tweetid !== 'string') return false;
+
+    const match = tweetid.match(tweeturl);
+    if (match) return match[1];
+    if (tweetid.match(tweetidcheck)) return tweetid;
+    return false;
+  }
+
+  return collect.list(async (files) => {
+    const twitterCache = (await fs.readJson(path.join(ROOT, 'twitter-cache.json')).catch(() => {})) || {};
+    const neededTweets = [];
+
+    // first loop through all posts and gather + validate all tweet ids
+    for (const file of files) {
+      if (!file.meta.tweets && !file.meta.tweet) continue;
+
+      const tweets = [];
 
       if (file.meta.tweet) {
-        file.meta.tweet = file.meta.tweet
-          .replace(/<script[^>]*>(.*?)<\/script>/g, '')
-        ;
-        flags.add('has-tweet');
+        file.meta.tweet = [ file.meta.tweet ].flat(1).map(parseTweetId);
+        tweets.push(...file.meta.tweet);
       }
 
-      const images = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', {
-        cwd: path.dirname(file.path),
-      });
-
-      if (images.length) {
-        file.meta.images = images.map((imgpath) => {
-          const ext = path.extname(imgpath);
-          const basename = path.basename(imgpath, ext);
-          if (ext === '.m4v') {
-            return {
-              type: 'movie',
-              full: `/p/${file.meta.id}/${basename}.m4v`,
-            };
-          }
-
-          return {
-            type: 'image',
-            full: `/p/${file.meta.id}/${basename}.jpeg`,
-            large: `/p/${file.meta.id}/${basename}.lg.jpeg`,
-            small: `/p/${file.meta.id}/${basename}.sm.jpeg`,
-            preview: `/p/${file.meta.id}/${basename}.pre1x.jpeg`,
-            preview2x: `/p/${file.meta.id}/${basename}.pre2x.jpeg`,
-            thumb: `/p/${file.meta.id}/${basename}.thumb.jpeg`,
-          };
-        });
-        flags.add('has-images');
-        if (file.meta['no-images']) {
-          flags.add('hide-images');
-        } else {
-          flags.add('show-images');
-        }
-
-        if (images.length === 1 && !file.meta['no-single']) {
-          flags.add('single-image');
-        }
-
-      } else {
-        flags.add('no-images');
-        flags.add('hide-images');
+      if (file.meta.tweets) {
+        file.meta.tweets = file.meta.tweets.map(parseTweetId);
+        tweets.push(...file.meta.tweets);
       }
 
-      const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
-
-      if (poster) {
-        file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
-        flags.add('has-poster');
-        flags.add('native-poster');
-      } else if (images.length) {
-        flags.add('has-poster');
-        flags.add('derived-poster');
-        file.meta.dimensions = await dimensions(path.resolve(cwd, images[0]));
-      } else {
-        flags.add('no-poster');
+      for (const id of tweets) {
+        if (!twitterCache[id]) neededTweets.push(id);
       }
 
-      if (flags.has('has-poster')) {
-        file.meta.poster = {
-          max: `/p/${file.meta.id}/poster.jpeg`,
-          lg: `/p/${file.meta.id}/poster.lg.jpeg`,
-          md: `/p/${file.meta.id}/poster.md.jpeg`,
-          sm: `/p/${file.meta.id}/poster.sm.jpeg`,
-          xs: `/p/${file.meta.id}/poster.xs.jpeg`,
-          thumb: `/p/${file.meta.id}/poster.thumb.jpeg`,
-        };
-      } else {
-        file.meta.poster = null;
+      file.meta.tweets = tweets;
+    }
+
+    // if we have tweets we need to add to the cache, do so
+    if (neededTweets.length) {
+      log('Fetching tweets: ' + neededTweets.join(', '));
+      const arriving = await Promise.all(chunk(uniq(neededTweets), 99).map((tweetids) =>
+        twitter.get('statuses/lookup', { id: tweetids.join(','), tweet_mode: 'extended' })
+          .catch((e) => { log.error(e); return []; }),
+      ));
+
+      for (const tweet of arriving.flat(1)) {
+        twitterCache[tweet.id_str] = tweetparse(tweet);
       }
+    }
 
-      if (file.meta.orientation) {
-        flags.add('is-' + file.meta.orientation);
-      }
+    // now loop through posts and substitute the tweet data for the ids
+    for (const file of files) {
+      if (!file.meta.tweets) continue;
 
-      if (file.meta.dimensions && !file.meta.tweet) {
-        const { width, height } = file.meta.dimensions;
-        file.meta.dimensions.ratioH = Math.round((height / width) * 100);
-        file.meta.dimensions.ratioW = Math.round((width / height) * 100);
-
-        if (!file.meta.orientation) {
-          if (file.meta.dimensions.ratioH > 100) {
-            flags.add('is-tall');
-          } else if (file.meta.dimensions.ratioH === 100) {
-            flags.add('is-square');
-          } else {
-            flags.add('is-wide');
-          }
-        }
-      }
-
-      const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
-
-      if (titlecard) {
-        flags.add('has-titlecard');
-        file.meta.titlecard = `/p/${file.meta.id}/titlecard.jpeg`;
-      } else {
-        flags.add('no-titlecard');
-
-        if (!file.meta.titlecard) {
-          if (flags.has('is-wide')) file.meta.titlecard = 'middle';
-          else if (flags.has('is-tall')) file.meta.titlecard = 'box';
-        }
-
-        if (file.meta.poster || images.length) {
-          switch (file.meta.titlecard) {
-          case 'top':
-          case 'north':
-            file.meta.titlecard = `/p/${file.meta.id}/titlecard-north.jpeg`;
-            break;
-          case 'bottom':
-          case 'south':
-            file.meta.titlecard = `/p/${file.meta.id}/titlecard-south.jpeg`;
-            break;
-          case 'center':
-          case 'middle':
-            file.meta.titlecard = `/p/${file.meta.id}/titlecard-center.jpeg`;
-            break;
-          case 'box':
-            file.meta.titlecard = `/p/${file.meta.id}/titlecard-box.jpeg`;
-            break;
-          case 'thumb':
-          case 'square':
-          default:
-            file.meta.titlecard = `/p/${file.meta.id}/titlecard-square.jpeg`;
-            break;
-          }
-        } else {
-          file.meta.titlecard = null;
-        }
-      }
-
-      if (!file.meta.carousel) {
-        file.meta.carousel = JSON.stringify({ groupCells: true, imagesLoaded: true });
-      }
-
-      if (file.meta['no-title']) {
-        flags.add('hide-title');
-      } else if (file.meta.title || file.meta.description) {
-        flags.add('show-title');
-      } else {
-        flags.add('hide-title');
-      }
-
-      if (file.meta.title) {
-        flags.add('has-title');
-      } else {
-        flags.add('no-title');
-      }
-
-      if (file.meta.subtitle) {
-        flags.add('has-subtitle');
-      } else {
-        flags.add('no-subtitle');
-      }
-
-      if (file.meta.description) {
-        flags.add('has-descrip');
-      } else {
-        flags.add('no-descrip');
-      }
-
-      file.meta.classes = Array.from(flags);
-      file.meta.flags = file.meta.classes.reduce((res, item) => {
-        var camelCased = item.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
-        res[camelCased] = true;
-        return res;
+      file.meta.tweets = file.meta.tweets.reduce((dict, tweetid) => {
+        dict[tweetid] = twitterCache[tweetid];
+        return dict;
       }, {});
 
-      let original = file.contents.toString('utf8').trim();
-      original = original.replace(/\{!\{([\s\S]*?)\}!\}/mg, (match, contents) => {
-        try {
-          return handlebars.compile(contents)({ ...file.meta });
-        } catch (e) {
-          console.error(e);
-          return '';
-        }
-      });
+    }
 
-      const contents = md.render(original);
+    await fs.writeFile(path.join(ROOT, 'twitter-cache.json'), JSON.stringify(twitterCache, null, 2));
 
-      let preview = original;
-      preview = preview.replace(/<!--\[[\s\S]*\]-->/g, '');
-      if (file.meta.tweet) preview = preview.replace(file.meta.tweet.trim(), '');
-      preview = striptags(preview);
+    return files;
+  });
+}
+
+function parseContent () {
+  return asyncthrough(async (stream, file) => {
+    const flags = file.flags;
+    let original = file.contents.toString('utf8').trim();
+    original = original.replace(/\{!\{([\s\S]*?)\}!\}/mg, (match, contents) => {
+      try {
+        const result = handlebars.compile(contents)({ ...file.meta, meta: file.meta });
+        // console.log(result);
+        return result;
+      } catch (e) {
+        log.error(e);
+        return '';
+      }
+    });
+
+    let contents, preview;
+    try {
+      contents = md.render(original.replace(/<!--[[\]]-->/g, '')).trim();
+
+      preview = striptags(original.replace(/<!--\[[\s\S]*?\]-->/g, ''));
       if (preview.length > 1000) preview = preview.slice(0, 1000) + '…';
       preview = preview ? mdPreview.render(preview) : '';
+    } catch (e) {
+      log.error(`Error while rendering ${file.path}`, e);
+      contents = preview = '';
+    }
 
-      file.contents = Buffer.from(contents);
-      file.meta.markdown = original;
-      file.meta.contents = contents;
-      file.meta.preview = preview;
-      file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
+    file.contents = Buffer.from(contents);
+    file.meta.markdown = original;
+    file.meta.contents = contents;
+    file.meta.preview = preview;
+    file.meta.description = typeof file.meta.description === 'string' ? file.meta.description : original.split(/\r?\n/)[0];
 
-      if (contents.length > 2000 || file.meta.long) {
-        flags.add('is-extra-long');
-      } else if (contents.length > 1000 || file.meta.long) {
-        flags.add('is-long');
-      } else if (contents.length < 500) {
-        flags.add('is-short');
-      }
+    if (contents.length > 2000 || file.meta.long) {
+      flags.add('is-extra-long');
+    } else if (contents.length > 1000 || file.meta.long) {
+      flags.add('is-long');
+    } else if (contents.length < 500) {
+      flags.add('is-short');
+    }
 
-      if (preview) {
-        flags.add('has-preview');
-        if (preview.length < 400) flags.add('short-preview');
-      } else {
-        flags.add('no-preview');
-      }
+    if (preview) {
+      flags.add('has-preview');
+      if (preview.length < 400) flags.add('short-preview');
+    } else {
+      flags.add('no-preview');
+    }
 
+    file.meta.classes = Array.from(flags);
+    file.meta.flags = file.meta.classes.reduce((res, item) => {
+      var camelCased = item.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+      res[camelCased] = true;
+      return res;
+    }, {});
 
-      file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
-      stream.push(file);
-    }))
-  ;
+    file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
+    stream.push(file);
+  });
+}
 
-  var postFiles = readPosts
-    .pipe(asyncthrough(async (stream, file) => {
-      if (!file.meta.ignore) {
-        const datajs = file.clone();
-        datajs.contents = Buffer.from(JSON.stringify(file.meta, null, 2));
-        datajs.basename = 'index.json';
-        stream.push(datajs);
-
-        try {
-          file.contents = Buffer.from(template({
-            page: {
-              title: file.meta.title + ' :: Curvy & Trans',
-            },
-            ...file.meta,
-            meta: file.meta,
-          }));
-          stream.push(file);
-        } catch (err) {
-          log.error('Encountered a crash while compiling ' + file.path, err);
-        }
-      }
-    }))
-    .pipe(dest(`${DEST}/p/`))
-  ;
-
+function assembleIndex () {
   var posts = [];
   var indexFile = null;
-  var indexStream = postFiles.pipe(asyncthrough(async (stream, file) => {
+
+  return asyncthrough(async (stream, file) => {
 
     if (!file) return;
     if (!indexFile) {
@@ -389,12 +460,7 @@ exports.posts = function buildPosts () {
   }, async (stream) => {
     if (!indexFile) return;
 
-    var manifest;
-    try {
-      manifest = JSON.parse(await fs.readFileSync(path.join(ROOT, 'rev-manifest.json')));
-    } catch (e) {
-      manifest = {};
-    }
+    const manifest = await fs.readJson(path.join(ROOT, 'rev-manifest.json')).catch(() => {}).then((r) => r || {});
 
     posts = sortBy(posts, 'date');
     posts.reverse();
@@ -439,10 +505,48 @@ exports.posts = function buildPosts () {
     stream.push(indexFile);
     stream.push(indexSans);
 
+  });
+}
 
-  })).pipe(dest('./'));
+function renderPosts () {
 
-  return merge(postFiles, indexStream);
+  var template = handlebars.compile(String(fs.readFileSync(path.join(ROOT, '/templates/post.hbs.html'))));
+
+  return asyncthrough(async (stream, file) => {
+    if (file.meta.ignore) return;
+
+    const datajs = file.clone();
+    datajs.contents = Buffer.from(JSON.stringify(file.meta, null, 2));
+    datajs.basename = 'index.json';
+    stream.push(datajs);
+
+    try {
+      file.contents = Buffer.from(template({
+        page: {
+          title: file.meta.title + ' :: Curvy & Trans',
+        },
+        ...file.meta,
+        meta: file.meta,
+      }));
+      stream.push(file);
+    } catch (err) {
+      log.error('Encountered a crash while compiling ' + file.path, err);
+    }
+
+  });
+}
+
+exports.posts = function buildPosts () {
+
+  return src('posts/**/index.md')
+    .pipe(frontmatter({ property: 'meta' }))
+    .pipe(parseMeta())
+    .pipe(parseTweets())
+    .pipe(parseContent())
+    .pipe(renderPosts())
+    .pipe(dest(`${DEST}/p/`))
+    .pipe(assembleIndex())
+    .pipe(dest('./'));
 };
 
 

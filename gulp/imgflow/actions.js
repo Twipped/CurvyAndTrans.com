@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs-extra');
 const gm = require('gm');
 const Promise = require('bluebird');
+const fetch = require('make-fetch-happen');
 
 const CWD = path.resolve(__dirname, '../..');
 
@@ -212,6 +213,13 @@ const actions = {
     });
     await fs.writeFile(cache, result);
     return result;
+  },
+
+  async fetch ({ input, cache }) {
+    const res = await fetch(input);
+    const body = await res.buffer();
+    await fs.writeFile(cache, body);
+    return body;
   },
 
   async image (options) {

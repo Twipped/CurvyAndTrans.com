@@ -4,14 +4,20 @@ import Handlebars from 'handlebars/dist/handlebars';
 import postsJSON from '../posts-sans.json';
 import htmlGrid from '../templates/index-grid.hbs.html';
 import htmlGridCard from '../templates/index-card.hbs.html';
+import htmlTweet from '../templates/post-tweets.hbs.html';
 import { groupBy, reduce, debounce } from 'lodash';
-import { first, date } from 'hbs-kit';
+import { first, date, is, any } from 'hbs-kit';
 
 Handlebars.registerPartial('indexCard', Handlebars.compile(htmlGridCard));
+Handlebars.registerPartial('tweets', Handlebars.compile(htmlTweet));
 
 Handlebars.registerHelper('rev', (url) => (url && (url[0] === '/' ? url : '/' + url) || ''));
 Handlebars.registerHelper('date', date(Handlebars));
 Handlebars.registerHelper('first', first(Handlebars));
+Handlebars.registerHelper('is', is(Handlebars));
+Handlebars.registerHelper('any', is(Handlebars));
+Handlebars.registerHelper('array', (...args) => { args.pop(); return args; });
+
 
 const IndexView = Backbone.View.extend({
   el: '#body',

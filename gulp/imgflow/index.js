@@ -1,6 +1,6 @@
 const path = require('path');
 const glob = require('../lib/glob');
-const { groupBy, sortBy, omitBy } = require('lodash');
+const { groupBy, sortBy, omitBy, uniqBy } = require('lodash');
 const Promise = require('bluebird');
 const fs = require('fs-extra');
 const log = require('fancy-log');
@@ -11,6 +11,7 @@ const SOURCE = path.resolve(CWD, '{posts,lists}/*/*.{jpeg,jpg,png,gif,m4v}');
 const POST_GROUPING = /(?:posts|lists)\/([^/]+)/;
 const MANIFEST_PATH = path.resolve(CWD, 'if-manifest.json');
 const REV_MANIFEST_PATH = path.resolve(CWD, 'rev-manifest.json');
+const POSTS_INDEX_PATH = path.resolve(CWD, 'posts.json');
 const CACHE = 'if-cache';
 const revHash = require('rev-hash');
 const revPath = require('rev-path');
@@ -25,9 +26,8 @@ const LOG = {
   copy: false,
 };
 
-module.exports = exports = async function imageFlow ({ rev = false }) {
+module.exports = exports = async function postImages ({ rev = false }) {
 
-  const lastSeen = Math.floor(Date.now() / 1000);
   var manifest;
   try {
     manifest = JSON.parse(await fs.readFile(MANIFEST_PATH));
@@ -35,29 +35,10 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     manifest = {};
   }
 
-  let writeCounter = 0;
-  async function writeManifest () {
-    if (++writeCounter % 10) return;
-    await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
-  }
-
   await fs.ensureDir(path.resolve(CWD, CACHE));
 
   const allfiles = (await glob(SOURCE)).map((f) => path.relative(CWD, f));
   const filesByPost = groupBy(allfiles, (fpath) => fpath.match(POST_GROUPING)[1]);
-
-  const statMap = new Map();
-  async function stat (f) {
-    if (statMap.has(f)) return statMap.get(f);
-
-    const p = fs.stat(path.resolve(CWD, f))
-      .catch(() => null)
-      .then((stats) => (stats && Math.floor(stats.mtimeMs / 1000)));
-
-    statMap.set(f, p);
-    return p;
-  }
-
   const tasks = [];
 
   for (const [ postKey, files ] of Object.entries(filesByPost)) {
@@ -104,7 +85,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     if (titlecard) {
       tasks.push({
         input: titlecard,
-        output: `docs/${targetType}/${hash}/titlecard.jpeg`,
+        output: `${targetType}/${hash}/titlecard.jpeg`,
         action: actions.transcode,
       });
     }
@@ -112,58 +93,58 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     if (poster) {
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/poster.jpeg`,
+        output: `${targetType}/${hash}/poster.jpeg`,
         action: actions.max,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/poster.lg.jpeg`,
+        output: `${targetType}/${hash}/poster.lg.jpeg`,
         action: actions.lg,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/poster.md.jpeg`,
+        output: `${targetType}/${hash}/poster.md.jpeg`,
         action: actions.md,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/poster.sm.jpeg`,
+        output: `${targetType}/${hash}/poster.sm.jpeg`,
         action: actions.sm,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/poster.xs.jpeg`,
+        output: `${targetType}/${hash}/poster.xs.jpeg`,
         action: actions.xs,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/poster.thumb.jpeg`,
+        output: `${targetType}/${hash}/poster.thumb.jpeg`,
         action: actions.thumb,
       });
 
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/titlecard-north.jpeg`,
+        output: `${targetType}/${hash}/titlecard-north.jpeg`,
         action: actions.tcNorth,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/titlecard-south.jpeg`,
+        output: `${targetType}/${hash}/titlecard-south.jpeg`,
         action: actions.tcSouth,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/titlecard-center.jpeg`,
+        output: `${targetType}/${hash}/titlecard-center.jpeg`,
         action: actions.tcCenter,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/titlecard-square.jpeg`,
+        output: `${targetType}/${hash}/titlecard-square.jpeg`,
         action: actions.tcSquare,
       });
       tasks.push({
         input: poster,
-        output: `docs/${targetType}/${hash}/titlecard-box.jpeg`,
+        output: `${targetType}/${hash}/titlecard-box.jpeg`,
         action: actions.tcBox,
       });
 
@@ -176,32 +157,32 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
       const fname = path.basename(f, ext);
       tasks.push({
         input: f,
-        output: `docs/${targetType}/${hash}/${fname}.jpeg`,
+        output: `${targetType}/${hash}/${fname}.jpeg`,
         action: actions.max,
       });
       tasks.push({
         input: f,
-        output: `docs/${targetType}/${hash}/${fname}.lg.jpeg`,
+        output: `${targetType}/${hash}/${fname}.lg.jpeg`,
         action: actions.lg,
       });
       tasks.push({
         input: f,
-        output: `docs/${targetType}/${hash}/${fname}.sm.jpeg`,
+        output: `${targetType}/${hash}/${fname}.sm.jpeg`,
         action: actions.sm,
       });
       tasks.push({
         input: f,
-        output: `docs/${targetType}/${hash}/${fname}.pre1x.jpeg`,
+        output: `${targetType}/${hash}/${fname}.pre1x.jpeg`,
         action: actions.carousel1x,
       });
       tasks.push({
         input: f,
-        output: `docs/${targetType}/${hash}/${fname}.pre2x.jpeg`,
+        output: `${targetType}/${hash}/${fname}.pre2x.jpeg`,
         action: actions.carousel2x,
       });
       tasks.push({
         input: f,
-        output: `docs/${targetType}/${hash}/${fname}.thumb.jpeg`,
+        output: `${targetType}/${hash}/${fname}.thumb.jpeg`,
         action: actions.thumb,
       });
     });
@@ -210,21 +191,74 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
       const fname = path.basename(f);
       tasks.push({
         input: f,
-        output: `docs/${targetType}/${hash}/${fname}`,
+        output: `${targetType}/${hash}/${fname}`,
         action: actions.copy,
       });
     });
 
   }
 
-  const pending = await Promise.filter(tasks, async (task) => {
+  const filtered = await filter(manifest, tasks);
+  await execute(manifest, filtered, rev);
+};
 
-    // const hash = revHash(JSON.stringify({ ...task, action: task.action.name }));
+exports.prod = function imagesProd () { return exports({ rev: true }); };
+
+exports.twitter = async function twitterImages ({ rev = false }) {
+  await fs.ensureDir(path.resolve(CWD, CACHE));
+
+  var manifest;
+  try {
+    manifest = JSON.parse(await fs.readFile(MANIFEST_PATH));
+  } catch (e) {
+    manifest = {};
+  }
+
+  var posts;
+  try {
+    posts = JSON.parse(await fs.readFile(POSTS_INDEX_PATH));
+  } catch (e) {
+    posts = {};
+  }
+
+  let media = [];
+  for (const p of posts) {
+    if (!p.tweets) continue;
+    for (const tweet of Object.values(p.tweets)) {
+      media.push(...tweet.media);
+    }
+  }
+
+  media = uniqBy(media, 'output');
+  const tasks = media.map((m) => ({ ...m, action: actions.fetch }));
+  const filtered = await filter(manifest, tasks);
+  await execute(manifest, filtered, rev);
+};
+
+exports.twitter.prod = function imagesProd () { return exports.twitter({ rev: true }); };
+
+
+async function filter (manifest, tasks) {
+  const statMap = new Map();
+  async function stat (f) {
+    if (statMap.has(f)) return statMap.get(f);
+
+    const p = fs.stat(path.resolve(CWD, f))
+      .catch(() => null)
+      .then((stats) => (stats && Math.floor(stats.mtimeMs / 1000)));
+
+    statMap.set(f, p);
+    return p;
+  }
+
+  return Promise.filter(tasks, async (task) => {
+
+    const local = task.input.slice(0, 4) !== 'http';
     const hash = task.action.name + '.' + revHash(task.input) + '|' + revHash(task.output);
     const cachePath = path.join(CACHE, `${hash}${path.extname(task.output)}`);
     const [ inTime, outTime, cachedTime ] = await Promise.all([
-      stat(path.resolve(CWD, task.input)),
-      stat(path.resolve(CWD, task.output)),
+      local && stat(path.resolve(CWD, task.input)),
+      stat(path.resolve(CWD, 'docs', task.output)),
       stat(path.resolve(CWD, cachePath)),
     ]);
 
@@ -233,7 +267,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     task.cache = cachePath;
 
     // how did this happen?
-    if (!inTime) {
+    if (local && !inTime) {
       log.error('Input file could not be found?', task.input);
       return false;
     }
@@ -251,7 +285,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     }
 
     // file modification time does not match last read, rebuild
-    if (inTime > task.manifest.mtime) {
+    if (local && inTime > task.manifest.mtime) {
       task.log = [ 'update', task.input, task.output ];
       task.apply = {
         mtime: inTime,
@@ -260,7 +294,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     }
 
     task.apply = {
-      mtime: inTime,
+      mtime: local ? inTime : Math.floor(Date.now() / 1000),
     };
 
     // target file exists, nothing to do
@@ -289,11 +323,23 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     task.log = [ 'rebuild', task.input, task.output ];
     return true;
   });
+}
 
+
+async function execute (manifest, tasks, rev) {
+  const lastSeen = Math.floor(Date.now() / 1000);
   const revManifest = {};
 
-  await Promise.map(sortBy(pending, [ 'input', 'output' ]), async (task) => {
-    const result = task.action && await task.action(task);
+  let writeCounter = 0;
+  async function writeManifest (force) {
+    if (!force && ++writeCounter % 10) return;
+    await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+  }
+
+  await Promise.map(sortBy(tasks, [ 'input', 'output' ]), async (task) => {
+    const output = path.resolve(CWD, 'docs', task.output);
+
+    const result = task.action && await task.action({ ...task, output });
     const apply = task.apply || {};
     if (task.log && LOG[task.log[0]]) log.info(...task.log);
     apply.lastSeen = lastSeen;
@@ -305,12 +351,12 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     apply.revPath = hashedPath;
 
     if (rev && rhash) {
-      const rOutPath = path.relative(path.join(CWD, '/docs/'), task.output);
-      const rNewPath = path.relative(path.join(CWD, '/docs/'), hashedPath);
+      const rOutPath = path.relative(path.resolve(CWD, 'docs'), task.output);
+      const rNewPath = path.relative(path.resolve(CWD, 'docs'), hashedPath);
 
       revManifest[rOutPath] = rNewPath;
 
-      await fs.copy(task.output, hashedPath);
+      await fs.copy(output, hashedPath);
     }
 
     manifest[task.hash] = { ...manifest[task.hash], ...apply };
@@ -321,7 +367,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
   // filter unseen files from history
   // manifest = omitBy(manifest, (m) => m.lastSeen !== lastSeen);
 
-  await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+  writeManifest(true);
 
   if (rev) {
     let originalManifest = {};
@@ -338,9 +384,7 @@ module.exports = exports = async function imageFlow ({ rev = false }) {
     await fs.writeFile(REV_MANIFEST_PATH, JSON.stringify(originalManifest, null, 2));
   }
 
-};
-
-
+}
 
 if (require.main === module) {
   exports().catch(console.error).then(() => process.exit()); // eslint-disable-line
