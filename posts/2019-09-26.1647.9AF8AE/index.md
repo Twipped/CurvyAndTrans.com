@@ -49,7 +49,7 @@ tweets:
 ) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
 
 
-This thread by LightningBug really spoke to me. I’ve written in the past about the conflicts that one can meet trying to reconcile fatness with gender dysphoria.
+This thread really spoke to me. I’ve written in the past about the conflicts that one can meet trying to reconcile fatness with gender dysphoria.
 
 Yes, there are a LOT of societal influences that affect our perceptions of our bodies, both for men and women, and trans people do internalize the messaging for our true gender long before we may even know what that gender is, but there is so much more deeply physiological beneath that psychology. What outwardly may seem like body issues from cultural indoctrination may be much deeper than that.
 

@@ -1,7 +1,7 @@
 ---
 id: "660BFB"
 date: "2019-10-02T19:23:00.000Z"
-title: "This is our tribe"
+title: "This is our clan"
 description: "Kindred spirits"
 tags:
   - Transgender
