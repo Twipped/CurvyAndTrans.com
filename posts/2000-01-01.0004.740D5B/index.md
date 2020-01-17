@@ -33,6 +33,9 @@ tweets:
   - '1215740224325783553'
   - '1215746083487461379'
   - '1215749725456125952'
+  - '1191555135756853249'
+  - '1216238489152475136'
+  - '1201138482569195526'
 ---
 
 > **Trans·gen·der** - *adjective*
@@ -85,7 +88,7 @@ Evey Winters described it extremely aptly [in her Dysphoria post](https://eveywi
 
 The way I used to describe it is like wearing an adult's glove when you are a child. You can put your hand into the glove, and your fingers feed into the digits of the glove, but your dexterity with the glove is severely hindered. You might be able to pick something up, but you can not manipulate it like an adult could. Things just aren't quite right.
 
-How does this manifest? I'm going to break this down into nine categories:
+How does this manifest? I'm going to break this down into eight categories:
 
 1. Euphoria
 2. Physical
@@ -94,7 +97,6 @@ How does this manifest? I'm going to break this down into nine categories:
 6. Societal
 7. Presentational
 8. Historical
-9. Existential
 
 However, first I must stress something very important. So important that I am putting it into big bold letters.
 
@@ -194,6 +196,23 @@ The primary sexual features of the body begin development during the 8th week of
 
 If your brain is wired for one gonadal hormones (such as testosterone) and your body produces the other hormone (such as estradiol), this can result in a biochemical malfunction within your brain chemistry. This produces a sort of brain fog, a reduction in mental capacity, and a general state of anxiety and unease. This is the source of the first two symptoms that often alleviate with medical hormonal therapy, depersonalization and derealization (DPDR).
 
+^^^<a class="card ig-card right span3" href="https://www.instagram.com/p/B4fwhWAH2F-/">
+  <div class="ig-header">
+    <div class="ig-avatar" style="background-image: url(../theredgrrl.jpg);"></div>
+    <div class="ig-name">
+      <strong>Brea</strong>
+      <span>theredgrrl</span>
+    </div>
+  </div>
+  <img class="ig-image" src="../3.lg.jpeg" alt="" srcset="../3.thumb.jpeg 100w, ../3.sm.jpeg 576w, ../3.lg.jpeg 1024w, ../3.jpeg 2048w" sizes="(max-width: 576px) 100vw, (max-width: 1020px) 30vw, 576px">
+  <p class="ig-caption">
+    #TransformationTuesday - As I’ve often said on posts like this, our eyes reflect our lives. The biggest difference I see in how trans people look after transition is always the eyes; often looking sad or distant in the past, and being bright and full of life in the present
+  </p>
+  <p class="ig-footer">
+    <time datetime="2019-11-05T19:54:45+00:00">Nov 5, 2019</time>
+  </p>
+</a>^^^
+
 **Depersonalization** is a disconnect from your own body, an inability to believe that the person you see in the mirror is actually yourself. You feel like you are watching someone else in your body. You may find yourself not caring about what happens to your body, lack of concern with weight changes or improving your fitness because you have no ownership of this fleshy vehicle that transports you around your life.
 
 Zinnia Jones [gives these descriptions for Depersonalization](https://web.archive.org/web/20190406141617/https://genderanalysis.net/2017/06/depersonalization-in-gender-dysphoria-widespread-and-widely-unrecognized/):
@@ -219,7 +238,7 @@ You may be unconcerned with the state of your body, perhaps not even fearing dea
   '1215736608055537670'
   '1215738145473474560'
   '1215740224325783553'
-) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
 
 **Derealization** is a detachment from the world around you, a mental sense that everything you perceive is false.
 
@@ -230,23 +249,6 @@ You may be unconcerned with the state of your body, perhaps not even fearing dea
 - Distortions in perception of time, such as recent events feeling like distant past.
 - Distortions of distance and the size and shape of objects
 - Feeling like a passive observer in the events of your life
-
-<a class="card ig-card right span3" href="https://www.instagram.com/p/B4fwhWAH2F-/">
-  <div class="ig-header">
-    <div class="ig-avatar"></div>
-    <div class="ig-name">
-      <strong>Brea</strong>
-      <span>theredgrrl</span>
-    </div>
-  </div>
-  <img class="ig-image" src="../3.lg.jpeg" alt="" srcset="../3.thumb.jpeg 100w, ../3.sm.jpeg 576w, ../3.lg.jpeg 1024w, ../3.jpeg 2048w" sizes="(max-width: 576px) 100vw, (max-width: 1020px) 30vw, 576px">
-  <p class="ig-caption">
-    #TransformationTuesday - As I’ve often said on posts like this, our eyes reflect our lives. The biggest difference I see in how trans people look after transition is always the eyes; often looking sad or distant in the past, and being bright and full of life in the present
-  </p>
-  <p class="ig-footer">
-    <time datetime="2019-11-05T19:54:45+00:00">Nov 5, 2019</time>
-  </p>
-</a>
 
 If you found yourself strongly relating to The Matrix or The Truman Show, you might be experiencing derealization. This can also manifest as a feeling of otherworldliness, like you don't belong in this society. You're just walking around waiting for your super powers to appear, or for an owl to fly up with your letter to Hogwarts. As a teen I was obsessed with an episode of The Outer Limits where a boy discovers a spaceship under his house and learns that he and his parents aren't actually human.
 
@@ -278,11 +280,17 @@ All of this is valid, none of it means you aren't really trans.
   '1215720411788382210'
   '1215724301065891841'
   '1215727546387648517'
-) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+  '1215727547780096000'
+  '1215731319973523456'
+) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
 
-Social Dysphoria is centered in the way the outside world perceives you and how others address you. All social gender dysphoria orbit around one central concept: Am I Seen As My Gender?
+All social gender dysphoria orbit around one central concept: What Gender do people believe me to be? Social Dysphoria is about how the outside world perceives you, how others address you, and how you are expected to address them. This applies differently prior to the trans person becoming self-aware of their own gender, versus how Social Dysphoria is experienced after a trans awakening (cracking one's shell).
 
-For binary trans people this often is about being seen as your true gender, be in male or female. For some non-binary people this may be about not being seen as either male or female, or causing gender confusion. In all cases, however, social dysphoria comes in to play when you are incorrectly perceived as the gender you were assigned at birth, and treated as such. *Note, some genderqueer people have no social dysphoria, as they do not care what gender they are perceived as or what pronouns are used for them.*
+While still in the dark, the only awareness is that something seems off about the way you interact with your interactions with other people. People of your assigned gender seem to interact with each other in ways that do not feel natural to you. Their behaviors and mannerisms feel strange and surprising, where interactions with individuals of your true gender feel easier. You relate to people closer to your own truth.
+
+For example, an AMAB trans person may find themselves very uncomfortable in groups of men. They may feel out of place and struggle to fit in among their male peers. Masculine social interactions don't come naturally to them, and trying to emulate their male friends feels awkward. They may feel themselves drawn more to friendships with women, but become frustrated at the social and heterosexual dynamics that come into play between men and women, preventing them from forming platonic relationships.
+
+This feeling of wrongness intensifies as the person becomes more and more aware of their own incongruence, and upon realizing who they really are it takes on a new shape. For binary trans people this often may be about the intense need to be seen as your true gender, be it male or female. Some non-binary people experience this more as euphoria at being seen as neither male or female and thus only being referred to in ungendered ways, or from being read as different genders by different people in the same setting. Some experience intense euphoria when people are incapable of reading their gender and become confused.
 
 Social dysphoria is where pronouns and misgendering comes in to play; being addressed with a gendered pronoun such as she, he, him, or her which is not the pronoun that aligns with our gender is extremely discomforting. Granted, this is true for *all* people, including cisgender people, but where a cis person will be insulted by being misgendered, a trans person will feel hurt. It's like nails on a chalkboard, or steelwool across skin. Hearing the wrong pronoun is a reminder that the person you are talking to does not recognize you for the gender that you are.
 
@@ -317,19 +325,35 @@ Gender roles exist, and as much as we may try to buck them and point out the sex
 
 An AFAB birthing parent may experience severe dysphoria around being labeled as a mother. The vast majority of resources for birth are *extremely* female gendered, so just the very process of conceiving, carrying and giving birth is exceptionally loaded with gender expectations. If you are pregnant then you are labeled a mom, regardless of how you actually feel about your role, and with that comes a whole load of assumptions. Assumptions about caregiving, breastfeeding, and child rearing.
 
-Cis passing trans feminine individuals also run into this. If you are holding an infant or tending to a child then you are labeled a mom (unless the child is mixed race, then you're demoted to nanny, but that's a whole other topic). This can be validating, because it is a sign that you've been seen as a woman, but it can also be extremely *invalidating* when cis women start to talk about what they think are shared experiences with the birthing and post-natal process. Note, this exact same situation also happens with conversation about menstruation).
+Cisgender [passing](https://en.wikipedia.org/wiki/Passing_(gender)) trans feminine individuals also run into this. If you are holding an infant or tending to a child then you are labeled a mom (unless the child is mixed race, then you're demoted to nanny, but that's a whole other topic). This can be validating, because it is a sign that you've been seen as a woman, but it can also be extremely *invalidating* when cis women start to talk about what they think are shared experiences with reproductive processes.
 
-^^^<!--[-->{!{ {{> tweets ids=(array
-  '1215727547780096000'
-  '1215731319973523456'
-) tweets=meta.tweets className="grid-row" }} }!}<!--]-->^^^
+#### Dating and Romantic Relationships
+
+Societal Dysphoria *strongly* comes into play with courtship rituals. Being forced into being the boyfriend or girlfriend when you are not a boy or a girl is extremely disorienting and often feels very unfair. AMABs may find themselves wishing *they* were the one being pampered, and AFABs may become uncomfortable with the amount of attention they receive from their prospective partners (beyond the discomfort that women experience, as this includes genuine attention, not just unwanted attention). The expectations placed on them by their partners to fill these courtship roles may feel like a heavy burden to bear. By contrast, dating as your true gender becomes euphoric. Buy a trans girl flowers and see how much she swoons.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1216238489152475136'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
+These obligations become downright brutal when it comes to sexual relationships. The expectation for AMABs to be the dominant sexual partner is often very off putting for trans women (there are *so many* jokes about the lack of trans girls who top), and cis expectations for AFAB trans individuals to want vaginal penetration can make for very awkward sexy times.
+
+Some closeted gay trans people may take on a pre-transition homosexual dating style (such as a closeted trans man dating women) not because they feel attraction to people of their assigned sex, but because that allows them to live the romantic and sexual role that feels correct. In the other direction, straight trans individuals may take a pre-transition relationship with someone of the opposite assigned sex (a closeted AMAB marrying a woman, for example) out of a need to repress and hide their true selves under denial. This societal performance is a common source of changes in sexual orientation during transition, as those repressive needs are relieved and the person is able to embrace their genuine attraction.
 
 #### Shame
 
+Failure to live up to these roles can manifest *intensely* as shame and humiliation. Growing up closeted and struggling to fit into common gender tropes often results in signs of disappointment from parents and peers who expected otherwise. A father may be disappointed that their AMAB child isn't willing to engage in sports or other masculine activities. Female peers may demonstrate disapproval of an AMAB teenager choosing to hang out with a male social circle. Teen boys may ostracize an AMAB trans person who doesn't join in with their humor.
 
-***[WORK IN PROGRESS]***
+These kinds of situations can lead to bullying and abuse, pushing the trans person to feel isolated, alone, and out of place. This sense of division then creates feelings of shame for failing to be the person everyone expects them to be. This then manifests as depression on top of other dysphoria, compounding their pain.
 
+The shame becomes especially intense at the moment of revealing themselves to be trans. Transphobic friends and family having negative, sometimes even violent reactions to a trans person coming out of the closet converts that shame into extreme guilt and disgrace. An adult trans person in a marriage may feel a tremendous amount of remorse at upending their spouse's life by revealing themselves. They may expect reproach from their neighbors and peers, and fear how that will affect their spouse and/or children.
 
+This too is a form of gender dysphoria, as these influences would not have been felt if the person had been cisgender.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1201138482569195526'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
+The other way shame comes in to play is in the systemic transphobia present in our society. Trans adults of today grew up watching transphobic media in their childhood. The transsexual obsession of the late 80s and early 90s was horrifically traumatic for trans kids of the time, watching all the adults and peers around them laugh, jeer and be disgusted by people who they not only identified with, but strongly empathized and looked up to. This shame sits with us for our entire lives; it is a fundamental reason for why so many trans people do not come out until their late 30s or later, because only when they reach mid-life are they able to overcome that shame.
 
 
 ### Presentational Dysphoria
@@ -356,7 +380,7 @@ Like it or not, presentation is gendered, and it is extremely common for trans p
   '1215716435974066176'
   '1215716436980703233'
   '1215716438020849664'
-) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
 
 Clothing can also play a major role in the level of physical dysphoria a person experiences. Mens clothing always cut very boxy, straight up and down on the vertical and very square in the horizontal. Women's clothing is cut for more curves, accentuating waistlines and hip shape. Men's pants feature a lower crotch to make room for external genitals, and no fitting for curves, where womens bottoms are the opposite. Women's clothing is often form fitting, where Male clothing is rarely form fitting at all. Men's clothing is often made of sturdier and thicker materials, meant to be worn as a single layer. Women's clothing is often made of thinner and stretchier materials, expected to be layered together.
 
@@ -365,6 +389,13 @@ Because these structures are meant to fit the masculine or feminine forms, they 
 I, myself am very feminine in my preferred presentation, and I had a longing to wear dresses from when I was just five years old. I abhorred wearing suits, hating the way they fit on my body, since they always tugged in ways that felt very incorrect for what my body needed. I refused to wear any denim for most of my life because men's jeans always felt so incorrect (women's jeans and leggings, however, feel amazing). Then as I entered into transition and began to present more female, my dysphoria struck again in the ways my body did not conform to what womens clothing was expecting (too much in the crotch, too wide and bulky in the shoulders, too large in the waist, not large enough in the chest). It wasn't until the second year that I had experienced enough change in my shape to where womens clothing was properly affirming of my shape.
 
 What does this look like? Well, it looks a lot like other common body image issues. A tendency to avoid anything form fitting, leaning towards softer fabrics and baggier clothes. A classic gender dysphoria trope is the kid who wears nothing but sweatpants and hoodies. Clothes will be oversized in order to keep them from hugging the body. AFABs may prefer to wear compressing sports bras in order to minimize their chests, and avoid anything with a tight waistline.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1191555135756853249'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
+Internally it most often manifests as intense jealousy of the people you wish you could be. Jealousy over an influencer's body shape, a strong desire for the outfit of a person on the street, and most especially envy of other trans people. This feeling often persists well into transition, because this sensation of wanting to be other people of your gender is actually completely natural, even for cis people.
+
 
 #### Presentation's Affect on Social Dysphoria.
 
@@ -387,15 +418,6 @@ Sometimes historical dysphoria can manifest existentially, hitting you with all 
 Many trans people attempt to recapture some of these lost events, hosting or attending queer proms, organizing sleepovers, performing vow renewals with their spouses, and engaging in common puberty rites of passage like having a mother figure help them shop for their first bra, or having a father figure teach them to shave. However, ultimately, historical dysphoria is something that can never be relieved. You can make new experiences to replace the ones you lost, but you can never turn back the clock.
 
 This is one of many reasons why affirming trans youth is so important. Boys want to do common boy things and girls want to do common girl things, and when they miss out they will not forget.
-
-
-### Existential Dysphoria
-
-***WORK IN PROGRESS***
-
-^^^<!--[-->{!{ {{> tweets ids=(array
-  '1215740224325783553'
-) tweets=meta.tweets className="" }} }!}<!--]-->^^^
 
 
 ### Managed Dysphoria
