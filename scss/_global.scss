@@ -23,6 +23,8 @@ footer, .footer {
   }
 
   &, a { color: #ccc; }
+
+  a { text-decoration: underline; }
 }
 
 .patreon-support {
@@ -35,7 +37,6 @@ footer, .footer {
 
   a {
     color: #aaa;
-    text-decoration: underline;
   }
 
   ul {
