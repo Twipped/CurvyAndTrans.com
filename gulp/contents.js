@@ -371,6 +371,7 @@ function parseTweets () {
       if (!file.meta.tweets) continue;
 
       file.meta.tweets = file.meta.tweets.reduce((dict, tweetid) => {
+        if (!twitterCache[tweetid]) log.error(`Tweet ${tweetid} is missing from the cache.`);
         dict[tweetid] = twitterCache[tweetid];
         return dict;
       }, {});
