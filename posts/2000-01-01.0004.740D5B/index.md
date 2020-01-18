@@ -34,9 +34,26 @@ tweets:
   - '1215746083487461379'
   - '1215749725456125952'
   - '1191555135756853249'
-  - '1216238489152475136'
+  - '1137399651458519040'
   - '1201138482569195526'
+  - '1216109204093722630'
+  - '1216109206509694979'
+  - '1216109207671508992'
+  - '1216109208996929539'
+  - '1216109214994747393'
+  - '1216110299285200896'
+  - '1216110666626555904'
+  - '1216111083997605888'
+  - '1216112014411599877'
 ---
+
+<style>
+  .post-content h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+  }
+</style>
 
 > **Trans·gen·der** - *adjective*
 > Denoting or relating to a person whose sense of personal identity and gender does not correspond with their sex assigned at birth.
@@ -63,7 +80,7 @@ The problem was, Tier 5 and 6 required that you had to be exclusively attracted 
 
 In 2011 the HBIGDA reorganized itself to respond to mounting pressures in trans understanding and acceptance, taking on the new name World Professional Association for Transgender Health (WPATH). Under guidance by actual transgender people (a first for the organization), WPATH then proceeded to release an entirely new Standards of Care (version 7, the first in ten years) which abandoned the Benjamin Scale, focusing on specific individual symptoms and disconnecting gender from sexuality entirely. Two years later, in 2013, the American Psychiatric Association changed their diagnostic criteria to match the WPATH SoC in their Diagnostic and Statistical Manual of Mental Disorders (DSM) version 5, replacing Gender Identity Disorder with Gender Dysphoria. With this change, medical transition became available to all trans people in the United States.
 
-### So What *Is* Gender Dysphoria?
+#### So What *Is* Gender Dysphoria?
 
 > **Dys·pho·ri·a** - *Noun*   
 > A state of unease or generalized dissatisfaction with life. The opposite of euphoria.
@@ -95,8 +112,9 @@ How does this manifest? I'm going to break this down into eight categories:
 3. Biochemical
 4. Social
 6. Societal
-7. Presentational
-8. Historical
+7. Sexual
+8. Presentational
+9. Historical
 
 However, first I must stress something very important. So important that I am putting it into big bold letters.
 
@@ -106,7 +124,7 @@ There is no one single trans experience, there is no standard set of feelings an
 
 Ok, that disclaimer out of the way, lets get to the meat and potatoes.
 
-### Euphoria
+## Euphoria
 
 > **Eu·pho·ri·a** - *Noun*   
 > A feeling or state of intense excitement and happiness. Elation, joy, glee.
@@ -151,7 +169,7 @@ Even just being out in the world as yourself and being seen as yourself can be m
 
 That said, many people who have not yet realized they are trans may resort to fetishes and kinks to express their gender and/or relieve their dysphoria. They may maintain some of these kinks through transition. There is no shame in this, how they find sexual fulfillment is their own business. However, these things are *alongside* their gender. A trans person's sense of gender persists indefinitely, it does not go away when they go back to their daily lives.
 
-### Physical Dysphoria
+## Physical Dysphoria
 
 This is the one everybody has heard of, the "born in the wrong body" narrative. So what body features are we talking about here? Thankfully, medical science breaks these down neatly for us:
 
@@ -190,7 +208,7 @@ It's ok if you don't need medical transition *at all*. Body feelings are not the
 
 **Total body physical dysphoria is not a requirement to be transgender. AFABs do not have to hate their chest, AMABs do not have to hate their penis. Every trans person's experience is different. All are valid.**
 
-### Biochemical Dysphoria
+## Biochemical Dysphoria
 
 The primary sexual features of the body begin development during the 8th week of human gestation. Typically by week 11 it is possible to determine the genitals of a uterus via ultrasound. The brain, however, forms itself in [between weeks 14 and 24](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2989000/#Sec5title). Current prevaling understanding of neurological development suggests that it is during these 10 weeks when the brain will either masculinize or feminize based upon the presense of testosterone in the infant's bloodstream (initiated by the SRY gene on the Y chromosome, or introduced from other sources). This process locks the brain into a pattern of either desiring estrogens or androgens.
 
@@ -272,7 +290,7 @@ Just because you feel very dysphoric one day and not dysphoric the next does not
 
 All of this is valid, none of it means you aren't really trans.
 
-### Social Dysphoria
+## Social Dysphoria
 
 ^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
   '1215716438972993536'
@@ -319,7 +337,7 @@ I, myself, have no direct physical dysphoria around my voice, I actually really 
 
 
 
-### Societal Dysphoria
+## Societal Dysphoria
 
 Gender roles exist, and as much as we may try to buck them and point out the sexism that exists, there will always be expectations placed on people for their gender. The strongest of these are in marital and parental roles; "Husband", "Wife", "Mother", "Father", these terms come with loads of baggage attached to them, and the wrong role, or even any role at all, can feel like a lead lined straight jacket. You are given a whole book full of behaviors and actions, likes and dislikes, that you are just expected to fulfill, and if you fail to meet those requirements then you are seen as a bad spouse or a bad parent.
 
@@ -327,36 +345,67 @@ An AFAB birthing parent may experience severe dysphoria around being labeled as 
 
 Cisgender [passing](https://en.wikipedia.org/wiki/Passing_(gender)) trans feminine individuals also run into this. If you are holding an infant or tending to a child then you are labeled a mom (unless the child is mixed race, then you're demoted to nanny, but that's a whole other topic). This can be validating, because it is a sign that you've been seen as a woman, but it can also be extremely *invalidating* when cis women start to talk about what they think are shared experiences with reproductive processes.
 
-#### Dating and Romantic Relationships
-
-Societal Dysphoria *strongly* comes into play with courtship rituals. Being forced into being the boyfriend or girlfriend when you are not a boy or a girl is extremely disorienting and often feels very unfair. AMABs may find themselves wishing *they* were the one being pampered, and AFABs may become uncomfortable with the amount of attention they receive from their prospective partners (beyond the discomfort that women experience, as this includes genuine attention, not just unwanted attention). The expectations placed on them by their partners to fill these courtship roles may feel like a heavy burden to bear. By contrast, dating as your true gender becomes euphoric. Buy a trans girl flowers and see how much she swoons.
-
-^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
-  '1216238489152475136'
-) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
-
-These obligations become downright brutal when it comes to sexual relationships. The expectation for AMABs to be the dominant sexual partner is often very off putting for trans women (there are *so many* jokes about the lack of trans girls who top), and cis expectations for AFAB trans individuals to want vaginal penetration can make for very awkward sexy times.
-
-Some closeted gay trans people may take on a pre-transition homosexual dating style (such as a closeted trans man dating women) not because they feel attraction to people of their assigned sex, but because that allows them to live the romantic and sexual role that feels correct. In the other direction, straight trans individuals may take a pre-transition relationship with someone of the opposite assigned sex (a closeted AMAB marrying a woman, for example) out of a need to repress and hide their true selves under denial. This societal performance is a common source of changes in sexual orientation during transition, as those repressive needs are relieved and the person is able to embrace their genuine attraction.
-
 #### Shame
 
 Failure to live up to these roles can manifest *intensely* as shame and humiliation. Growing up closeted and struggling to fit into common gender tropes often results in signs of disappointment from parents and peers who expected otherwise. A father may be disappointed that their AMAB child isn't willing to engage in sports or other masculine activities. Female peers may demonstrate disapproval of an AMAB teenager choosing to hang out with a male social circle. Teen boys may ostracize an AMAB trans person who doesn't join in with their humor.
 
 These kinds of situations can lead to bullying and abuse, pushing the trans person to feel isolated, alone, and out of place. This sense of division then creates feelings of shame for failing to be the person everyone expects them to be. This then manifests as depression on top of other dysphoria, compounding their pain.
 
-The shame becomes especially intense at the moment of revealing themselves to be trans. Transphobic friends and family having negative, sometimes even violent reactions to a trans person coming out of the closet converts that shame into extreme guilt and disgrace. An adult trans person in a marriage may feel a tremendous amount of remorse at upending their spouse's life by revealing themselves. They may expect reproach from their neighbors and peers, and fear how that will affect their spouse and/or children.
-
-This too is a form of gender dysphoria, as these influences would not have been felt if the person had been cisgender.
-
 ^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
   '1201138482569195526'
 ) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
+The shame becomes especially intense at the moment of revealing themselves to be trans. Transphobic friends and family having negative, sometimes even violent reactions to a trans person coming out of the closet converts that shame into extreme guilt and disgrace. An adult trans person in a marriage may feel a tremendous amount of remorse at upending their spouse's life by revealing themselves. They may expect reproach from their neighbors and peers, and fear how that will affect their spouse and/or children.
+
+This too is a form of gender dysphoria, as these influences would not have been felt if the person had been cisgender.
+
 The other way shame comes in to play is in the systemic transphobia present in our society. Trans adults of today grew up watching transphobic media in their childhood. The transsexual obsession of the late 80s and early 90s was horrifically traumatic for trans kids of the time, watching all the adults and peers around them laugh, jeer and be disgusted by people who they not only identified with, but strongly empathized and looked up to. This shame sits with us for our entire lives; it is a fundamental reason for why so many trans people do not come out until their late 30s or later, because only when they reach mid-life are they able to overcome that shame.
 
+#### Dating and Romantic Relationships
 
-### Presentational Dysphoria
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1216109204093722630'
+  '1216109206509694979'
+  '1216109207671508992'
+  '1216109214994747393'
+  '1216110299285200896'
+  '1216110666626555904'
+  '1216111083997605888'
+  '1216112014411599877'
+) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
+
+Societal Dysphoria *strongly* comes into play with courtship rituals. Being forced into being the boyfriend or girlfriend when you are not a boy or a girl is extremely disorienting and often feels very unfair. AMABs may find themselves wishing *they* were the one being pampered, and AFABs may become uncomfortable with the amount of attention they receive from their prospective partners (beyond the discomfort that women experience, as this includes genuine attention, not just unwanted attention). The expectations placed on them by their partners to fill these courtship roles may feel like a heavy burden to bear. By contrast, dating as your true gender becomes euphoric. Buy a trans girl flowers and see how much she swoons.
+
+A closeted trans person may feel so much pressure to conform to heterosexuality that they suppress their own instincts with regards to relationships and take on a performative role. Many a trans woman has attempted to play the role of a heterosexual husband to a wife, only to realize with transition that they are actually submissive themselves and would prefer to have a male partner. They may not even be attracted to women.
+
+Beyond discomfort, many trans people realize that the dynamics of relationships that they have experienced simply did not fit the shape of how they appeared. Many trans people come to realize after transition that they had never actually dated like a cis person of their assigned gender, instead always having romantic relationships that fit their true orientation. Male to male and female to female relationships have completely different patterns from heterosexual relationships; different courtship rituals, different perceptions, different communication styles. Men relate differently to men than they do to women, and women to women differently than they do to men, even when they don't know they are men or women.
+
+For example, I myself realized after coming out to my wife that all of my previous dating attempts had absolutely been sapphic in nature. My first order had always been to become good friends with them. Dates would never be labeled as dates because we would just sit and talk somewhere, hanging out together. Consequently, several of my relationships ended simply because I was too scared to make the first move out of destroying the friendship. I would spend half my waking day thinking about them and wanting to be around them, not out of sexual lust, but out of personal infatuation. My first girlfriend straight up told me on our first date that I was unlike any man she'd ever dated because I enjoyed talking instead of just trying to get physical. She broke up with me two months later because I wasn't as assertive as she wanted from a partner.
+
+This all gets even more complex for non-binary people, some of whom can at best describe their dating style as Queer.
+
+
+## Sexual Dysphoria
+
+Closely related to Societal Dysphoria is dysphoria centered around sexuality, sexual relationships, and the act of having sex. [Heteronormative](https://en.wikipedia.org/wiki/Heteronormativity) gender roles come loaded with the expectation that [AMABs will top and AFABs will bottom](https://en.wikipedia.org/wiki/Top,_bottom_and_versatile). These dynamics get reinforced by our popular media, by toxic masculinity, and especially by our pornography, even in *transgender* pornography (the bulk of trans/cis pornography involves the trans woman topping, when in reality a majority of trans women are submissive). Deviations from these roles often result in shame, both from partners and from peers.
+
+Of course, this is not an absolute, by any means, and many heterosexual cis couples do find ways out of these molds, finding a new dynamic in their relationship, or engaging in kinks to satisfy desires. Some couples find they aren't sexually compatible at all and seek other partners. However, there are many many external pressures discouraging this kind of self-awareness and discovery, and breaking away from those demands can be extremely difficult, even traumatic. This is particularly true when there is a background of conservatism or religious virtuism.
+
+Cisgender gay relationships shirk this by virtue of necessity, opening the doors for individuals to explore what role leaves them more fulfilled. Some gay couples have an established dominant/submissive dynamic, and they enter into the relationship with that already understood. Others resolve it by switching up which partner is dominant. Yet, gay relationships can still get caught up in these kinds of expectations in regards to [butch/femme](https://en.wikipedia.org/wiki/Butch_and_femme), [bear](https://en.wikipedia.org/wiki/Bear_(gay_culture)), and [twink](https://en.wikipedia.org/wiki/Twink_(gay_slang)) dynamics.
+
+What does all this mean? Trans people who enter into perceptually heterosexual relationships pre-transition sometimes find themselves losing interest in sexual intercourse, as penetrative acts do not produce the fulfillment that they would expect. In extreme cases it can feel completely wrong and trigger panic. The sensations may feel pleasurable, but the experience is out of place, and the act itself feels forced.
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1137399651458519040'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
+This can lead to one feeling less enthusiastic or even disinterested in sex, as half of what makes up sex drive is the mental context of the situation. They may still perform for the sake of their partners, but not get as much enjoyment as they could, and even end up disconnecting from reality around them in order to accomplish the task.
+
+This dysphoria may be so significant that they find themselves taking a sexual identity that they don't actually connect with. It is not unheard of for a trans person to realize after coming out that they never actually felt a connection to the sexual orientation that they had identified with previously, but were rather using it as a way to feel less dysphoric in their sex lives. Some trans women, for example, identify as gay men pre-transition out of a desire to have a partner that treats them like women during sex, but find themselves to actually be lesbians once that demand is lifted.
+
+***WORK IN PROGRESS***
+
+## Presentational Dysphoria
 
 Clothes. Hair. Makeup. Jewelry. Glasses. Piercings and other body modifications. Even personal hygiene can be a factor of presentation, such as the shaving of body hair, or how you take care of your skin. All of these things are gendered in society, clothing and hair especially.
 
@@ -373,7 +422,7 @@ Like it or not, presentation is gendered, and it is extremely common for trans p
 
 **Not all transfemmes are feminine, not all transmascs are masculine, not all enbies seek androgyny. Butch AMAB trans people are valid, femme AFAB trans people are valid. Presentation is not gender, gender is not presentation.**
 
-#### Presentation's Affect on Physical Dysphoria.
+### Presentation's Affect on Physical Dysphoria.
 
 ^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
   '1215716435068100611'
@@ -397,7 +446,7 @@ What does this look like? Well, it looks a lot like other common body image issu
 Internally it most often manifests as intense jealousy of the people you wish you could be. Jealousy over an influencer's body shape, a strong desire for the outfit of a person on the street, and most especially envy of other trans people. This feeling often persists well into transition, because this sensation of wanting to be other people of your gender is actually completely natural, even for cis people.
 
 
-#### Presentation's Affect on Social Dysphoria.
+### Presentation's Affect on Social Dysphoria.
 
 Presentation can be important for avoiding misgendering, especially early in transition. A lot of trans people feel a need to perform their gender in order to be accepted for who they are, leaning in to feminine or masculine presentation more than they actually would like in order to make up for their body and ensure that people gender them correctly. Those pursuing medical transition may find this need becomes less important as their bodies change and they become able to be gendered correctly without all of the performance.
 
@@ -407,7 +456,7 @@ Presentation is especially important among pre-pubescent children, as they lack 
 
 
 
-### Historical Dysphoria
+## Historical Dysphoria
 
 When you grow up as the wrong assigned gender, you are going to miss out on a lot of things that should have been available to you if only people had known. Sleepovers, camping trips, girl/boy scouts, shopping trips, cheerleading or sports. Events that are co-ed may have very different feelings attached to them based on how you engage with them, like going to prom, religious ceremonies (such as having a bat mitzvah instead of a bar mitzvah), and even just the act of courtship. These dysphoria may also be biological in origin, such as a sorrow over having not given birth to or breastfed your children.
 
@@ -420,17 +469,20 @@ Many trans people attempt to recapture some of these lost events, hosting or att
 This is one of many reasons why affirming trans youth is so important. Boys want to do common boy things and girls want to do common girl things, and when they miss out they will not forget.
 
 
-### Managed Dysphoria
-
-***WORK IN PROGRESS***
+## Managed Dysphoria
 
 ^^^<!--[-->{!{ {{> tweets ids=(array
   '1215746083487461379'
   '1215749725456125952'
 ) tweets=meta.tweets className="grid-row" }} }!}<!--]-->^^^
 
+***WORK IN PROGRESS***
 
-### How is Gender Dysphoria Diagnosed?
+
+
+
+
+## How is Gender Dysphoria Diagnosed?
 
 This section is going to focus on the diagnostic criteria under the American Psychiatric Association's Diagnostic and Statistical Manual of Mental Disorders, version five (DSM-5). The reason I'm focusing on this standard is because, well, nobody else has one. The UK's National Health Service basically mirrors the APA's DSM. Other countries have their own local standards, but they're all either very similar, or a lot more outdated.
 
@@ -454,7 +506,7 @@ For an adult to be diagnosed with Gender Dysphoria by a licensed mental health p
 - **A strong desire to be of another gender**
 - **A strong desire to be treated as another gender**
 
-  These are the social and societal dysphoria. They are how a person wants to interact with the world, and wants the world interacts with them.
+  These are the social and societal dysphoria. They are how a person wants to interact with the world, and wants the world to interact with them.
 
 - **A strong conviction that one has the typical feelings and reactions of another gender**
 
@@ -471,7 +523,7 @@ Then why do we still say it? Because most people don't know what gender dysphori
 
 
 
-### How is Gender Dysphoria Treated?
+## How is Gender Dysphoria Treated?
 
 Treatment options vary significantly depending on the individual person's needs. Every single transition is unique, and there is no one way to transition. This section is a list of possible pathways.
 
@@ -479,11 +531,17 @@ Treatment options vary significantly depending on the individual person's needs.
 
 A social transition is the act of stepping out of the closet, and it can relieve a lot of stress from suppression of ones self.
 
-**Legal Transition**. This is the process of changing your legal documents to reflect your true gender. This may be through a legal name and gender change issued by a court, through a change of gender marker on an official ID, or through re-issuing of birth certificates and marriage licenses.
+#### Legal Transition
 
-**Presentational Transition**. These are changes to how you style yourself, be it your clothes, your hair, or the use of makeup. Our society heavily genders all of these things, and switching presentation is both affirming to one's self and also sends cues to those around them about how they wish to be addressed.
+This is the process of changing your legal documents to reflect your true gender. This may be through a legal name and gender change issued by a court, through a change of gender marker on an official ID, or through re-issuing of birth certificates and marriage licenses.
 
-**Medical Transition.** For adults this is hormone replacement therapy and surgery. For adolescents this often means puberty blockers until the teen is old enough to be certain of which gonadal hormone they want to have. For pre-pubescents, this is nothing. Let me repeat that again, since transphobes keep getting it wrong.
+#### Presentational Transition
+
+These are changes to how you style yourself, be it your clothes, your hair, or the use of makeup. Our society heavily genders all of these things, and switching presentation is both affirming to one's self and also sends cues to those around them about how they wish to be addressed.
+
+#### Medical Transition
+
+For adults this is hormone replacement therapy and surgery. For adolescents this often means puberty blockers until the teen is old enough to be certain of which gonadal hormone they want to have. For pre-pubescents, this is nothing. Let me repeat that again, since transphobes keep getting it wrong.
 
 ***PREPUBESCENT CHILDREN DO NOT MEDICALLY TRANSITION***.
 
@@ -567,7 +625,7 @@ Other Trans Feminine Surgeries:
 - Cinderella Surgery. Bones in the foot are shortened in order to reduce foot size. EXTREMELY RISKY
 - Shoulder Reduction. The collar bone is shortened to reduce the width of the shoulders. EXTREMELY RISKY
 
-### What Causes Gender Dysphoria?
+## What Causes Gender Dysphoria?
 
 For a more in-depth coverage of this I suggest [reading my article on the subject](/p/A37736/i-am-biologically-female/).
 
@@ -579,7 +637,7 @@ Yet, progress continues, and every few years we learn a little bit more.
 
 What we know for certain is that it is not a psychological condition, it is not something caused by trauma or by any external influence, nothing can make a person transgender. It happens in the womb, and is not something that a person can choose to be, any more than they could choose their race or their eye color. It has nothing to do with sexual orientation, it has nothing to do with kinks or fetishes, it has nothing to do with social influences from their parents or from their peers. [Transgender children are as firm in their identities as cisgender children are.](https://www.forbes.com/sites/dawnstaceyennis/2020/12/29/study-transgender-children-recognize-their-authentic-gender-at-early-age-just-like-other-kids/#20bbb14526bf).
 
-### Conclusion
+## Conclusion
 
 Every single year we get new studies that show an increase in the size of the transgender population. As awareness continues to grow, more and more people are realizing what has been wrong with their lives and are coming out of the closet. People who transitioned decades ago are coming out of stealth. GLAAD estimates as much as 3% of the population could be transgender, and I have seen numbers as high as 5% or even 10% from more liberal estimations. The more we come to understand about gender, the more language we gain to describe gender, the more people realize that the rigid Male and Female sexual structure that we have been forced into is false.
 
