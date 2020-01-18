@@ -2,7 +2,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const D = require('date-fns');
-const { chunk, uniq, findIndex, sortBy, groupBy, keyBy, reduce, omit } = require('lodash');
+const { chunk, uniq, findIndex, sortBy, groupBy, keyBy, reduce, omit, difference } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
 const slugify = require('slugify');
@@ -327,8 +327,9 @@ function parseTweets () {
   }
 
   return collect.list(async (files) => {
+    const twitterBackup = (await fs.readJson(path.join(ROOT, 'twitter-backup.json')).catch(() => {})) || {};
     const twitterCache = (await fs.readJson(path.join(ROOT, 'twitter-cache.json')).catch(() => {})) || {};
-    const neededTweets = [];
+    const needed = [];
 
     // first loop through all posts and gather + validate all tweet ids
     for (const file of files) {
@@ -347,22 +348,37 @@ function parseTweets () {
       }
 
       for (const id of tweets) {
-        if (!twitterCache[id]) neededTweets.push(id);
+        if (!twitterCache[id]) {
+          needed.push(id);
+        }
       }
 
       file.meta.tweets = tweets;
     }
 
     // if we have tweets we need to add to the cache, do so
-    if (neededTweets.length) {
-      log('Fetching tweets: ' + neededTweets.join(', '));
-      const arriving = await Promise.all(chunk(uniq(neededTweets), 99).map((tweetids) =>
+    if (needed.length) {
+      log('Fetching tweets: ' + needed.join(', '));
+      const arriving = await Promise.all(chunk(uniq(needed), 99).map((tweetids) =>
         twitter.get('statuses/lookup', { id: tweetids.join(','), tweet_mode: 'extended' })
           .catch((e) => { log.error(e); return []; }),
       ));
 
+      const loaded = [];
       for (const tweet of arriving.flat(1)) {
+        if (!twitterBackup[tweet.id_str]) twitterBackup[tweet.id_str] = tweet;
         twitterCache[tweet.id_str] = tweetparse(tweet);
+        loaded.push(tweet.id_str);
+      }
+
+      const absent = difference(needed, loaded);
+      for (const id of absent) {
+        if (twitterBackup[id]) {
+          log('Pulled tweet from backup ' + id);
+          twitterCache[id] = tweetparse(twitterBackup[id]);
+          continue;
+        }
+        log.error('Could not find tweet ' + id);
       }
     }
 
@@ -379,6 +395,7 @@ function parseTweets () {
     }
 
     await fs.writeFile(path.join(ROOT, 'twitter-cache.json'), JSON.stringify(twitterCache, null, 2));
+    await fs.writeFile(path.join(ROOT, 'twitter-backup.json'), JSON.stringify(twitterBackup, null, 2));
 
     return files;
   });
