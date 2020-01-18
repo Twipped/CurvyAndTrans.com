@@ -275,6 +275,13 @@ header {
         background-size: contain;
         background-repeat: no-repeat;
       }
+
+      .tweet-protected {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
     }
 
     span {
