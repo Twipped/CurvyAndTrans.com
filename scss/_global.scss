@@ -203,6 +203,14 @@ header {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 1em;
   background-color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 700px;
+
+  @include media-breakpoint-down(sm) {
+    overflow-y: hidden;
+    max-height: unset !important;
+  }
 
   .emoji {
     height: 1.25em;
