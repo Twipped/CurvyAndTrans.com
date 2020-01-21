@@ -43,6 +43,20 @@ blockquote {
 
 h2, h3, h4, h5 {
   clear: left;
+  display: flex;
+
+  .header-link {
+    flex: 1;
+    text-decoration: none;
+    font-size: 16px;
+    align-self: center;
+    text-align: right;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 li p {

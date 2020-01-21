@@ -6,7 +6,8 @@ const { chunk, uniq, findIndex, sortBy, groupBy, keyBy, reduce, omit, difference
 const log = require('fancy-log');
 const glob = require('./lib/glob');
 const slugify = require('slugify');
-const dimensions = require('./lib/dimensions');
+const getDimensions = require('./lib/dimensions');
+const memoize = require('memoizepromise');
 
 const { src, dest } = require('gulp');
 const frontmatter = require('gulp-front-matter');
@@ -47,6 +48,11 @@ const md     = markdown({
   typographer: true,
 }).enable('image')
   .use(require('markdown-it-div'))
+  .use(require('markdown-it-anchor'), {
+    permalink: true,
+    permalinkClass: 'header-link fas fa-link',
+    permalinkSymbol: '',
+  })
   .use(require('markdown-it-include'), path.join(ROOT, '/includes'))
   .use(require('./lib/markdown-raw-html'))
 ;
@@ -110,17 +116,83 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
 };
 
 function parseMeta () {
+  const getFileData = memoize(async (id, cwd) => {
+    const imageFiles = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', { cwd });
+
+    const images = imageFiles.map((imgpath) => {
+      const ext = path.extname(imgpath);
+      const basename = path.basename(imgpath, ext);
+      if (ext === '.m4v') {
+        return {
+          type: 'movie',
+          full: `/p/${id}/${basename}.m4v`,
+        };
+      }
+
+      return {
+        type: 'image',
+        full: `/p/${id}/${basename}.jpeg`,
+        large: `/p/${id}/${basename}.lg.jpeg`,
+        small: `/p/${id}/${basename}.sm.jpeg`,
+        preview: `/p/${id}/${basename}.pre1x.jpeg`,
+        preview2x: `/p/${id}/${basename}.pre2x.jpeg`,
+        thumb: `/p/${id}/${basename}.thumb.jpeg`,
+      };
+    });
+
+    const posterFile = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
+
+    let dimensions = null;
+    if (posterFile) {
+      dimensions = await getDimensions(path.resolve(cwd, posterFile));
+    } else if (images.length) {
+      dimensions = await getDimensions(path.resolve(cwd, imageFiles[0]));
+    }
+
+    if (dimensions) {
+      const { width, height } = dimensions;
+      dimensions.ratioH = Math.round((height / width) * 100);
+      dimensions.ratioW = Math.round((width / height) * 100);
+
+      if (dimensions.ratioH > 100) {
+        dimensions.orientation = 'tall';
+      } else if (dimensions.ratioH === 100) {
+        dimensions.orientation = 'square';
+      } else {
+        dimensions.orientation = 'wide';
+      }
+    }
+
+    const poster = posterFile || images.length
+      ? {
+        max: `/p/${id}/poster.jpeg`,
+        lg: `/p/${id}/poster.lg.jpeg`,
+        md: `/p/${id}/poster.md.jpeg`,
+        sm: `/p/${id}/poster.sm.jpeg`,
+        xs: `/p/${id}/poster.xs.jpeg`,
+        thumb: `/p/${id}/poster.thumb.jpeg`,
+      }
+      : null;
+
+    const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
+
+    return { images, poster, dimensions, titlecard };
+  });
+
+
   return asyncthrough(async (stream, file) => {
     if (!file || file.meta.ignore) return;
 
     var date = new Date(file.meta.date);
     var cwd = path.dirname(file.path);
     var flags = file.flags = new Set(file.meta.classes || []);
+    var isIndexPage = path.basename(file.path) === 'index.md';
 
     file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || D.format(date, 'yyyy-MM-dd-HHmm');
     file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
     file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
     file.meta.originalpath = path.relative(file.cwd, file.path);
+    file.meta.isIndexPage = isIndexPage;
 
     if (!file.meta.slug) {
       log.error(`Post could not produce a slug. (${cwd})`);
@@ -131,6 +203,12 @@ function parseMeta () {
       result[slugify(tag).toLowerCase()] = tag;
       return result;
     }, {});
+
+    if (isIndexPage) {
+      flags.add('is-index');
+    } else {
+      flags.add('not-index');
+    }
 
 
     if (Object.keys(file.meta.tags).length === 1 && file.meta.tags.ootd) {
@@ -144,31 +222,13 @@ function parseMeta () {
       flags.add('has-tweet');
     }
 
-    const images = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', {
-      cwd: path.dirname(file.path),
-    });
+    const { images, poster, dimensions, titlecard } = await getFileData(file.meta.id, cwd);
+
+    file.meta.images = images;
+    file.meta.poster = poster;
+    file.meta.dimensions = dimensions;
 
     if (images.length) {
-      file.meta.images = images.map((imgpath) => {
-        const ext = path.extname(imgpath);
-        const basename = path.basename(imgpath, ext);
-        if (ext === '.m4v') {
-          return {
-            type: 'movie',
-            full: `/p/${file.meta.id}/${basename}.m4v`,
-          };
-        }
-
-        return {
-          type: 'image',
-          full: `/p/${file.meta.id}/${basename}.jpeg`,
-          large: `/p/${file.meta.id}/${basename}.lg.jpeg`,
-          small: `/p/${file.meta.id}/${basename}.sm.jpeg`,
-          preview: `/p/${file.meta.id}/${basename}.pre1x.jpeg`,
-          preview2x: `/p/${file.meta.id}/${basename}.pre2x.jpeg`,
-          thumb: `/p/${file.meta.id}/${basename}.thumb.jpeg`,
-        };
-      });
       flags.add('has-images');
       if (file.meta['no-images']) {
         flags.add('hide-images');
@@ -179,60 +239,29 @@ function parseMeta () {
       if (images.length === 1 && !file.meta['no-single']) {
         flags.add('single-image');
       }
-
     } else {
       flags.add('no-images');
       flags.add('hide-images');
     }
 
-    const poster = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
 
     if (poster) {
-      file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
       flags.add('has-poster');
       flags.add('native-poster');
     } else if (images.length) {
       flags.add('has-poster');
       flags.add('derived-poster');
-      file.meta.dimensions = await dimensions(path.resolve(cwd, images[0]));
     } else {
       flags.add('no-poster');
     }
 
-    if (flags.has('has-poster')) {
-      file.meta.poster = {
-        max: `/p/${file.meta.id}/poster.jpeg`,
-        lg: `/p/${file.meta.id}/poster.lg.jpeg`,
-        md: `/p/${file.meta.id}/poster.md.jpeg`,
-        sm: `/p/${file.meta.id}/poster.sm.jpeg`,
-        xs: `/p/${file.meta.id}/poster.xs.jpeg`,
-        thumb: `/p/${file.meta.id}/poster.thumb.jpeg`,
-      };
-    } else {
-      file.meta.poster = null;
-    }
-
     if (file.meta.orientation) {
       flags.add('is-' + file.meta.orientation);
+    } else if (dimensions) {
+      file.meta.orientation = dimensions.orientation;
+      flags.add('is-' + dimensions.orientation);
     }
 
-    if (file.meta.dimensions && !file.meta.tweet) {
-      const { width, height } = file.meta.dimensions;
-      file.meta.dimensions.ratioH = Math.round((height / width) * 100);
-      file.meta.dimensions.ratioW = Math.round((width / height) * 100);
-
-      if (!file.meta.orientation) {
-        if (file.meta.dimensions.ratioH > 100) {
-          flags.add('is-tall');
-        } else if (file.meta.dimensions.ratioH === 100) {
-          flags.add('is-square');
-        } else {
-          flags.add('is-wide');
-        }
-      }
-    }
-
-    const titlecard = (await glob('titlecard.{jpeg,jpg,png,gif}', { cwd }))[0];
 
     if (titlecard) {
       flags.add('has-titlecard');
@@ -245,7 +274,7 @@ function parseMeta () {
         else if (flags.has('is-tall')) file.meta.titlecard = 'box';
       }
 
-      if (file.meta.poster || images.length) {
+      if (poster || images.length) {
         switch (file.meta.titlecard) {
         case 'top':
         case 'north':
@@ -467,7 +496,7 @@ function assembleIndex () {
 
   return asyncthrough(async (stream, file) => {
 
-    if (!file) return;
+    if (!file || !file.meta.isIndexPage) return;
     if (!indexFile) {
       indexFile = file.clone();
     }
@@ -736,7 +765,7 @@ exports.lists = function buildLists () {
 
       } else if (poster) {
         // Poster found in a list data folder
-        file.meta.dimensions = await dimensions(path.resolve(cwd, poster));
+        file.meta.dimensions = await getDimensions(path.resolve(cwd, poster));
         flags.add('has-poster');
         flags.add('native-poster');
 
