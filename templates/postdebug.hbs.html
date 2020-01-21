@@ -44,14 +44,14 @@
     <p style="margin: 0;">{{meta.description}}</p>
   </div>
 
-  {{#any meta.poster meta.tweet}}<div class="alert alert-info">
+  {{#if (any meta.poster meta.tweet)}}<div class="alert alert-info">
     <strong>Poster</strong><br>
     {{#if meta.tweet}}
     {{> tweets ids=tweet tweets=meta.tweets className="grid-tweet" }}
     {{else}}
       {{#if meta.poster}}<img src="{{meta.poster.lg}}" alt="">{{/if}}
     {{/if}}
-  </div>{{/any}}
+  </div>{{/if}}
 
   {{#if meta.titlecard}}<div class="alert alert-info">
     <strong>Titlecard</strong><br>
