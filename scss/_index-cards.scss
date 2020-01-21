@@ -128,8 +128,7 @@ a.grid-card, .grid-card a {
 
   .grid-tweet {
     grid-area: poster;
-    margin-top: 10px;
-
+    margin: 10px 0;
 
   }
 
@@ -265,7 +264,7 @@ a.grid-card, .grid-card a {
 
   }
 
-  &.is-wide {
+  &.is-wide:not(.has-tweet) {
     // display: none;
     grid-template-columns: 100%;
     grid-template-rows: min-content min-content min-content min-content 1fr;
