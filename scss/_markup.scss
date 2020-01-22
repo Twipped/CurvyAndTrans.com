@@ -17,6 +17,7 @@ blockquote {
   padding: 15px;
 
   position: relative;
+  overflow: hidden;
 
   strong {
     font-weight: 600;
@@ -87,6 +88,23 @@ li p + ul {
     color: #333;
     font-size: 12px;
     font-family: $font-secondary;
+  }
+
+  .card-body.caption {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .list-group-item {
+    font-size: 12px;
+
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+
+    &.active + .active {
+      border-bottom: 1px solid lighten($list-group-active-bg, 15%);
+      background-color: lighten($list-group-active-bg, 10%);
+    }
   }
 
   @include media-breakpoint-up(md) {
