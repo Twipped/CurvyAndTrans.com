@@ -298,8 +298,10 @@ header {
       color: $textLight;
     }
 
-    img {
+    .tweet-logo {
       grid-area: logo;
+      height: 29px;
+      width: 36px;
     }
   }
 
