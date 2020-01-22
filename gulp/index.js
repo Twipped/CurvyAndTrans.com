@@ -91,7 +91,7 @@ exports.testpush = pushToProd.dryrun;
 function watcher () {
 
   watch([
-    'posts/**/index.md',
+    'posts/**/*.md',
     // 'posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}',
     'templates/*.html',
     'includes/*.md',

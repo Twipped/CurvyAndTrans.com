@@ -192,7 +192,6 @@ function parseMeta () {
     file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
     file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
     file.meta.originalpath = path.relative(file.cwd, file.path);
-    file.meta.isIndexPage = isIndexPage;
 
     if (!file.meta.slug) {
       log.error(`Post could not produce a slug. (${cwd})`);
@@ -205,9 +204,12 @@ function parseMeta () {
     }, {});
 
     if (isIndexPage) {
+      file.meta.subPage = false;
       flags.add('is-index');
     } else {
+      file.meta.subPage = path.basename(file.path, file.extname) + '.html';
       flags.add('not-index');
+      flags.add('is-subpage');
     }
 
 
@@ -485,7 +487,7 @@ function parseContent () {
       return res;
     }, {});
 
-    file.path = file.base + '/' + file.meta.id + '/' + file.meta.slug + '/index.html';
+    file.path = path.join(file.base, file.meta.id, file.meta.slug, path.basename(file.path, file.extname) + '.html');
     stream.push(file);
   });
 }
@@ -496,7 +498,7 @@ function assembleIndex () {
 
   return asyncthrough(async (stream, file) => {
 
-    if (!file || !file.meta.isIndexPage) return;
+    if (!file || file.meta.subPage) return;
     if (!indexFile) {
       indexFile = file.clone();
     }
@@ -562,10 +564,9 @@ function renderPosts () {
 
   return asyncthrough(async (stream, file) => {
     if (file.meta.ignore) return;
-
     const datajs = file.clone();
     datajs.contents = Buffer.from(JSON.stringify(file.meta, null, 2));
-    datajs.basename = 'index.json';
+    datajs.basename = path.basename(file.path, file.extname) + '.json';
     stream.push(datajs);
 
     try {
@@ -586,7 +587,7 @@ function renderPosts () {
 
 exports.posts = function buildPosts () {
 
-  return src('posts/**/index.md')
+  return src('posts/**/*.md')
     .pipe(frontmatter({ property: 'meta' }))
     .pipe(parseMeta())
     .pipe(parseTweets())
