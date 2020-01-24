@@ -36,7 +36,8 @@ draft: true
     <a class="list-group-item" href="03-social-societal.html#sexual-dysphoria">Sexual Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#presentational-dysphoria">Presentational Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#historical-dysphoria">Historical Dysphoria</a>
-    <a class="list-group-item" href="05-managed.html">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#managed-dysphoria">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#impostor-syndrome">Impostor Syndrome</a>
     <a class="list-group-item" href="06-diagnosis.html">Diagnosis</a>
     <a class="list-group-item" href="07-treatment.html">Treatment</a>
     <a class="list-group-item" href="08-causes.html">Causes</a>

@@ -28,6 +28,7 @@ tweets:
   - '1216110666626555904'
   - '1216111083997605888'
   - '1216112014411599877'
+  - '1219968711681040384'
 ---
 
 ^^^<style>
@@ -54,7 +55,8 @@ tweets:
     <a class="list-group-item active" href="03-social-societal.html#sexual-dysphoria">Sexual Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#presentational-dysphoria">Presentational Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#historical-dysphoria">Historical Dysphoria</a>
-    <a class="list-group-item" href="05-managed.html">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#managed-dysphoria">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#impostor-syndrome">Impostor Syndrome</a>
     <a class="list-group-item" href="06-diagnosis.html">Diagnosis</a>
     <a class="list-group-item" href="07-treatment.html">Treatment</a>
     <a class="list-group-item" href="08-causes.html">Causes</a>
@@ -97,6 +99,10 @@ It may also manifest as joy or embarrassment at being labeled as your true gende
 - An AMAB person being labeled a girl, intending insult, but it causing them to blush rather than get angry.
 - An AFAB person being called Sir, and feeling better for it.
 
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1219968711681040384'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
 The discomfort caused by social dysphoria can pressure a trans person to act and present in an exaggerated manner in order to try to convince the rest of the world that they really are who they say they are. Trans feminine people may concentrate on makeup and feminine clothes, and become quieter in order to seem more demure, speaking in a higher voice. Trans masculine people will lean on masculine clothing styles, stand taller, suppress displays of emotion, start speaking louder, and make their voices intentionally deeper.
 
 #### Physical vs Social Dysphoria
@@ -117,6 +123,8 @@ An AFAB birthing parent may experience severe dysphoria around being labeled as 
 
 Cisgender [passing](https://en.wikipedia.org/wiki/Passing_(gender)) trans feminine individuals also run into this. If you are holding an infant or tending to a child then you are labeled a mom (unless the child is mixed race, then you're demoted to nanny, but that's a whole other topic). This can be validating, because it is a sign that you've been seen as a woman, but it can also be extremely *invalidating* when cis women start to talk about what they think are shared experiences with reproductive processes.
 
+Some unexpected ways that Societal Dysphoria can appear are in the need to conform to the social standards of your true gender. For example, many trans women have stories about feeling the need to cover up their chest pre-transition out of an intrinsic sense of modesty. A discomfort at swimming topless is a common trait, even when there is no understanding of ones true self; something just knows.
+
 #### Shame
 
 Failure to live up to these roles can manifest *intensely* as shame and humiliation. Growing up closeted and struggling to fit into common gender tropes often results in signs of disappointment from parents and peers who expected otherwise. A father may be disappointed that their AMAB child isn't willing to engage in sports or other masculine activities. Female peers may demonstrate disapproval of an AMAB teenager choosing to hang out with a male social circle. Teen boys may ostracize an AMAB trans person who doesn't join in with their humor.
@@ -132,6 +140,8 @@ The shame becomes especially intense at the moment of revealing themselves to be
 This too is a form of gender dysphoria, as these influences would not have been felt if the person had been cisgender.
 
 The other way shame comes in to play is in the systemic transphobia present in our society. Trans adults of today grew up watching transphobic media in their childhood. The transsexual obsession of the late 80s and early 90s was horrifically traumatic for trans kids of the time, watching all the adults and peers around them laugh, jeer and be disgusted by people who they not only identified with, but strongly empathized and looked up to. This shame sits with us for our entire lives; it is a fundamental reason for why so many trans people do not come out until their late 30s or later, because only when they reach mid-life are they able to overcome that shame.
+
+Shame also tends to build up until it boils over into radical action. A very common aspect among trans people's histories are cycles where they will build up their presentation, fighting their feelings less and less, until suddenly they feel overcome with the shame and purge everything, vowing to never pursue those feelings again. This pattern repeats over and over again.
 
 #### Dating and Romantic Relationships
 
@@ -171,9 +181,9 @@ What does all this mean? Trans people who enter into perceptually heterosexual r
     '1137399651458519040'
 ) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
 
-This can lead to one feeling less enthusiastic or even disinterested in sex, as half of what makes up sex drive is the mental context of the situation. They may still perform for the sake of their partners, but not get as much enjoyment as they could, and even end up disconnecting from reality around them in order to accomplish the task.
+This can lead to one feeling less enthusiastic or even disinterested in sex, as half of what makes up sex drive is the mental context of the situation. Many trans people never even experience sex until adulthood, functionally operating as asexual due to how severely their dysphoria has shutdown all sex drive. They may still perform for the sake of their partners, but not get as much enjoyment as they could, and even end up disconnecting from reality around them in order to accomplish the task.
 
-This dysphoria may be so significant that they find themselves taking a sexual identity that they don't actually connect with. It is not unheard of for a trans person to realize after coming out that they never actually felt a connection to the sexual orientation that they had identified with previously, but were rather using it as a way to feel less dysphoric in their sex lives. Some trans women, for example, identify as gay men pre-transition out of a desire to have a partner that treats them like women during sex, but find themselves to actually be lesbians once that demand is lifted.
+This dysphoria may be so significant that they find themselves taking a sexual identity that they don't actually connect with. It is not unheard of for a trans person to realize after coming out that they never actually felt a connection to the sexual orientation that they had identified with previously, but were rather using it as a way to feel less dysphoric in their sex lives. Some trans women, for example, identify as gay men pre-transition out of a desire to have a partner that treats them like women during sex, but find themselves to actually be lesbians once that demand is lifted. Others may attempt to live as gay men, but find that the role doesn't fulfill them because they know their partners see them as men.
 
 ***WORK IN PROGRESS***
 

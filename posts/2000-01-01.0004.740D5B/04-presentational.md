@@ -42,7 +42,8 @@ tweets:
     <a class="list-group-item" href="03-social-societal.html#sexual-dysphoria">Sexual Dysphoria</a>
     <a class="list-group-item active" href="04-presentational.html#presentational-dysphoria">Presentational Dysphoria</a>
     <a class="list-group-item active" href="04-presentational.html#historical-dysphoria">Historical Dysphoria</a>
-    <a class="list-group-item" href="05-managed.html">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#managed-dysphoria">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#impostor-syndrome">Impostor Syndrome</a>
     <a class="list-group-item" href="06-diagnosis.html">Diagnosis</a>
     <a class="list-group-item" href="07-treatment.html">Treatment</a>
     <a class="list-group-item" href="08-causes.html">Causes</a>
@@ -63,6 +64,10 @@ Long hair on men has been seen as [an act of rocker rebellion](https://www.youtu
 Like it or not, presentation is gendered, and it is extremely common for trans people to want to present themselves in the fashion of their true gender, and a desire to be free of the shackles of gendered presentation is common among all trans people, regardless of where they sit on the gender spectrum. For AMAB individuals they may manifest as a wish to incorporate more feminine elements, for AFABs it may manifest as a want for more masculine appearance. This may come as a full push towards the opposite of their assigned gender, or a desire to seek a middle-ground in pursuit of androgyny. It may even simply be a wish to *not* present as your assigned gender.
 
 **Not all transfemmes are feminine, not all transmascs are masculine, not all enbies seek androgyny. Butch AMAB trans people are valid, femme AFAB trans people are valid. Presentation is not gender, gender is not presentation.**
+
+Presentational dysphoria typically appears early on in the form of a fascination with the styling of another gender, and a wish to be able to present as people of that gender do. That desire may be fulfilled somewhat by seeking out styling that is unisex, but typically that wish is self-gatekept by statements of "I'm not confident enough to attempt that." AMABs often run into issue here where this desire often gets trapped behind heteronormative expectations, causing an interest in feminine presentation to be misinterpreted as sexual desire.
+
+Post-transition presentational dysphoria is usually simply a case of high discomfort when attempt to present as one's assigned gender. It may not even be about how one looks, but just the way the clothing makes you feel. For the first year and a half of my own transition I could not bear to wear unisex t-shirts because they just made me feel more masculine. Even now I have to cut the collars out of them, because the close neck makes me feel dysphoric.
 
 ### Presentation's Affect on Physical Dysphoria.
 

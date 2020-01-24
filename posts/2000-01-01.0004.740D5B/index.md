@@ -36,7 +36,8 @@ draft: true
     <a class="list-group-item" href="03-social-societal.html#sexual-dysphoria">Sexual Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#presentational-dysphoria">Presentational Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#historical-dysphoria">Historical Dysphoria</a>
-    <a class="list-group-item" href="05-managed.html">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#managed-dysphoria">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#impostor-syndrome">Impostor Syndrome</a>
     <a class="list-group-item" href="06-diagnosis.html">Diagnosis</a>
     <a class="list-group-item" href="07-treatment.html">Treatment</a>
     <a class="list-group-item" href="08-causes.html">Causes</a>
@@ -53,6 +54,8 @@ Transgender people have existed as long as the human race itself, and many ancie
 To be transgender is to have a gender identity which does not match the gender you were presumed to have based upon your genitals. This can mean a person born with a penis is actually a girl, that a person born with a vulva is actually a boy, or that a person with either genital configuration may not fit either side of that spectrum and is non-binary.
 
 This experience of discontinuity between the internal and external self is what we describe as Gender Dysphoria. Every trans person, regardless of their position within or outside of the gender binary, experiences some form of Gender Dysphoria. This is something of a political topic within trans communities, as different groups have their own ideas of what Gender Dysphoria is, how it manifests, and what qualifies a person as being trans. By and large, however, this debate is feckless and fruitless, as the definition above encompasses the beginning and the ending of how these terms intermingle, as I hope to demonstrate in this essay.
+
+**Note:** If you find yourself struggling with any terminology in this essay, I recommend [this very detailed and handy glossary of terms](https://www.glaad.org/reference/transgender) by GLAAD.
 
 ### A Brief History of Gender Dysphoria
 
@@ -93,7 +96,11 @@ Evey Winters described it extremely aptly [in her Dysphoria post](https://eveywi
 
 The way I used to describe it is like wearing an adult's glove when you are a child. You can put your hand into the glove, and your fingers feed into the digits of the glove, but your dexterity with the glove is severely hindered. You might be able to pick something up, but you can not manipulate it like an adult could. Things just aren't quite right.
 
-This post will break down gender dysphoria into eight distinct categories of manifestation, covering both how it feels before one is aware, and how it feels after beginning transition. This is a very lengthy post, so I have separated it into multiple pages.
+Gender Dysphoria is at it's core is simply emotional reactions to the brain knowing that something does not fit. This incongruence is so deep inside the brain's subsystems that there is no obvious message of what the problem is. The only way we have to identify it is via the emotions that it triggers. Our consciousness receives either positive (euphoria) or negative (dysphoria) feedback according to how well our current environment aligns with our internal sense of self. Part of transition is learning to recognize those signals.
+
+Cisgender people receive them as well, but since the signals usually align with their environment, they take them for granted. There have been a few notable occasions, however, when a cisgender person has been [put into a situation](https://www.teenvogue.com/story/maisie-williams-arya-stark-game-of-thrones-affected-her-body-image) where they experience gender dysphoria. Attempts to raise cisgender children [as the opposite sex](https://www.nytimes.com/2004/05/12/us/david-reimer-38-subject-of-the-john-joan-case.html) (Content warning suicide) have always met with failure when the child inevitably declares themselves differently.
+
+These impulses of euphoria and dysphoria, arousal and aversion, they all manifest in many different ways, some obvious, some much more subtle. Dysphoria changes over time, as well, taking on new shapes as one moves from pre-awareness into understanding and through transition. The goal of this essay is to break down these manifestations into their distinct categories and describe them so that others may learn to recognize them. This is a very lengthy post, so I have separated it into multiple pages.
 
 However, first I must stress something very important. So important that I am putting it into big bold letters.
 

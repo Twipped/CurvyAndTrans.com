@@ -17,6 +17,7 @@ tweets:
   - '1215738145473474560'
   - '1215740224325783553'
   - '1215716438972993536'
+  - '1220143004821938176'
 ---
 
 ^^^<style>
@@ -43,7 +44,8 @@ tweets:
     <a class="list-group-item" href="03-social-societal.html#sexual-dysphoria">Sexual Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#presentational-dysphoria">Presentational Dysphoria</a>
     <a class="list-group-item" href="04-presentational.html#historical-dysphoria">Historical Dysphoria</a>
-    <a class="list-group-item" href="05-managed.html">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#managed-dysphoria">Managed Dysphoria</a>
+    <a class="list-group-item" href="05-managed.html#impostor-syndrome">Impostor Syndrome</a>
     <a class="list-group-item" href="06-diagnosis.html">Diagnosis</a>
     <a class="list-group-item" href="07-treatment.html">Treatment</a>
     <a class="list-group-item" href="08-causes.html">Causes</a>
@@ -72,7 +74,13 @@ It can be felt as a sort of *reverse* phantom effect, where the person is persis
 
 It may be felt as horror or revulsion when looking at or touching the external genitals, triggering emotional outbursts or a strong desire to remove the offending organ. AFAB (assigned female at birth) trans people may experience feelings of wrongness during menstruation, or a sense of alien disconnect from their hormone cycle.
 
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+    '1220143004821938176'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
 It can manifest as a compulsion to be rid of certain body traits, such as obsessively shaving body or facial hair. This can also manifest in the opposite compulsion, leading to meticulous grooming of those traits in order to try to control them, like maintaining a perfect beard, persistently keeping ones nails manicured and polished, or spending hours in the gym attempting to hone ones shape.
+
+Undesired physical features may prompt a person to experience envy of people who have been forced to remove those features due to illnesses, such as testicular or breast cancer. AMABs with severe genital dysphoria tend to have a wish for some kind of freak accident that would cause the loss of their phallus.
 
 Sometimes it may just simply be a feeling of being incorrect, which you may not even attribute to gender or sex. For most of my life I believed that the reason I hate my body was because I was fat. It wasn't until I started transition that I realized I don't hate my fat at all, I hated having *male* fat. The feminine curves that HRT gave me make me feel so much more in tune with my body.
 
@@ -158,21 +166,21 @@ DPDR sometimes comes with an emotional stunting. You are able to laugh and find 
 
 It's important to note that DPDR is not exclusive to Gender Dysphoria. This condition is co-morbid with several other mental health issues, including chronic depression, obsessive compulsive disorder and borderline personality disorder. DPDR should not be taken as a sign of Gender Dysphoria purely on its own, it's just a big alarm signal that something is very wrong. It's also usually pretty easy to spot externally, once you know how to watch for it. People with DPDR tend to have a mile long stare as they move about in the world; eyes so gloomy and dead that they look like a shell. One of the most common comments on transition timelines is how the eyes gain so much spark.
 
-#### The Ebb and Flow
+### The Ebb and Flow
 
-The intensity of biochemical dysphoria is highly influenced by other factors in the body. Because it is a function of endocrine balance, it is also manipulated by those balances. This means that it can rise and fall from day to day. For example:
+The intensity of physical and biochemical dysphoria is highly influenced by other factors in the body. Because it is a function of endocrine balance, it is also manipulated by those balances. This means that it can rise and fall from day to day. For example:
 
 - If your blood sugar is out of whack, or you have a thyroid condition, it could cause your dysphoria to spike.
-- If you are having dopamine withdrawl because you are off your ADHD meds, that can make it worse.
+- If you are having dopamine withdrawl because of ceasing stimulants, that can make it worse.
 - If you start on an SSRI Antidepressant and start running with more serotonin, that can make it less intense.
-- Transfeminine AMABs (people assigned male at birth, transition to female) with testicles experience surges in testosterone in relation to attraction and desire, which can make them more dysphoric.
-- Transmasculine AFABs (people assigned female at birth, transitioning to male) with unsuppressed ovaries experience rises and falls in estrogen and progesterone over the course of their menstrual cycle, making their dysphoria worsen and lesson based on what day of the cycle they are one.
+- Transfeminine AMABs (people assigned male at birth) with testicles experience surges in testosterone in relation to attraction and desire, which can make them more dysphoric.
+- Transmasculine AFABs (people assigned female at birth) with unsuppressed ovaries experience rises and falls in estrogen and progesterone over the course of their menstrual cycle, making their dysphoria worsen and lesson based on what day of the cycle they are one.
 
-There are dozens of systems in the body that all work in tandem, and they all fluctuate from day to day. This general biochemical dysphoria can amplify the affect of all other dysphoria. One day you can shrug off misgendering like it's nothing, and then the next it hurts like a stab in the heart every time.
+There are dozens of systems in the body that all work in tandem, and they all fluctuate from day to day, manipulating general mental state. This general dysphoria can amplify the affect of all other dysphoria. One day you can shrug off misgendering like it's nothing, and then the next it hurts like a stab in the heart every time. One day you see yourself in the mirror, the next you're staring at the old you.
 
-Just because you feel very dysphoric one day and not dysphoric the next does not mean you aren't really trans. Some people experience this in a genderfluid way, with some days feeling very male and others feeling very female. Others just feel it like a seasonal river; sometimes it swells because of rains up stream, sometimes it slows to a trickle because of drought.
+Some people experience this in a genderfluid way, with some days feeling very male and others feeling very female. Others just feel it like a seasonal river; sometimes it swells because of rains up stream, sometimes it slows to a trickle because of drought.
 
-All of this is valid, none of it means you aren't really trans.
+All of this is valid, and just because you feel very dysphoric one day and not dysphoric the next does not mean that you aren't really trans.
 
 ^^^<ul class="nav nav-fill pager">
   <li class="nav-item">
