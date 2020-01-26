@@ -191,13 +191,25 @@ You can just be gender-queer! Your identity is valid!
 
 #### Transmedicalism
 
-This one hits *everybody*. Transmedicalism (aka Truetrans, aka Truscum) is a transgender idology derived from the Harry Benjamin scale (ranks 6 and 7). It seeks to reinforce the pre-WPATH rules, requiring intense physical dysphoria, demanding medical transition, and invalidating all non-binary identities. At its core, transmedicalism is supremacy and a push back against the expansion of the transgender identity. They wish for more gatekeeping than we have today, and would prefer to see fewer people receive treatment for their gender dysphoria.
+This one hits *everybody*. Transmedicalism (aka Truetrans) is a transgender ideology derived from the Harry Benjamin scale (ranks 6 and 7). It seeks to reinforce the pre-WPATH rules, requiring intense physical dysphoria, demanding medical transition, and often invalidating all non-binary identities. At its core, transmedicalism is a supremacist concept, elevating binary trans people above the needs of any other gender identity, and a push back against the expansion of the transgender identity. They wish for more gatekeeping than we have today, rail against enbies using the transgender label, and would prefer to see fewer people receive treatment for their gender dysphoria.
 
-To put it succinctly, transmedicalists hate that the newer generation "has it so easy," despite the fact that many of their ranks are part of that generation. This ideology started among disgruntled trans elders, but has since spread to other binary individuals, particularly among young trans men.
+To put it succinctly, many transmedicalists hate that the newer generation "has it so easy," despite the fact that many of their ranks are part of that generation. This ideology started among disgruntled trans elders, but has since spread to other binary individuals, particularly among young trans men.
 
 If a trans person's first exposure to transness is a transmedicalist, this can severely set back their own self-acceptance and push them even further into the closet. Transmed's are well known to actually tell people "No, you are not trans."
 
-**Do not believe these lies.**
+**Do not believe these lies.** They are bully tactics explicitly designed to gaslight and dismiss people's pain for self gratification.
+
+#### Trans Exclusionary Reactionary Feminism / Gender Critical Movement / Gender Essentialism
+
+[Gender Essentialism](https://en.wikipedia.org/wiki/Gender_essentialism) is the belief that there are an innate attributes to a person's existence that are derived based on what sex organs the person is born with. TERF and GC ideology was born out of the lesbian separatist movement of second wave feminism and fully denies the existence of transgender biology or non-binary identities. The movement has been largely overtaken by right-wing reactionaries, racists and homophobes, and is now being bolstered by evangelical christian organizations.
+
+These people will stop at nothing to invalidate your existence. Do not give them the time of day.
+
+#### Gender Abolitionism / Postgenderism
+
+[Postgenderism](https://en.wikipedia.org/wiki/Postgenderism) is a [transhumanist](https://en.wikipedia.org/wiki/Transhumanism) philosophy originating in radical feminism which states that gender causes more harm than good, and seeks to eradicate it from our society. GAs believe that all gender is a construct and that anyone who feels strongly connected to a binary gender is either nefariously propagating gender stereotypes or ignorantly following systemic indoctrination.
+
+GAs do not believe in the existence of gender dysphoria, and will attempt to invalidate those who experience it. They're functionally the extreme leftist version of the Gender Critical movement.
 
 ^^^<ul class="nav nav-fill pager">
   <li class="nav-item">
