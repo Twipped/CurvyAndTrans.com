@@ -1,6 +1,6 @@
 ---
 id: "740D5B"
-date: "2000-01-01T00:00:04.000Z"
+date: "2020-01-26T20:41:55.827Z"
 title: "Gender Dysphoria"
 subtitle: "What it is, and what it isn't."
 slug: gender-dysphoria
@@ -10,8 +10,15 @@ tags:
   - Gender Dysphoria
   - Medical
 no-images: true
-draft: true
 ---
+
+::: cw
+::: cw-header
+This is a Living Document
+:::
+Please note that this post is not final and finished. The contents will change over time as I receive and think of new additions and revisions to further expand the full breadth of Gender Dysphoria. If you have contributions, suggestions, or constructive criticisms please contact me via any of the social media accounts linked at the top of the page.
+:::
+:::
 
 ^^^{!{
 <div class="card right span4" style="margin-top: 0">

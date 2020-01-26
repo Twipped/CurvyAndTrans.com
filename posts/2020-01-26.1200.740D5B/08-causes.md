@@ -1,6 +1,6 @@
 ---
 id: "740D5B"
-date: "2000-01-01T00:00:04.000Z"
+date: "2020-01-26T20:41:55.827Z"
 title: "What Causes Gender Dysphoria?"
 slug: gender-dysphoria
 description: "Enough with the gatekeeping already."
@@ -8,7 +8,6 @@ classes:
   - no-date
   - no-subtitle
 no-images: true
-draft: true
 ---
 
 ^^^{!{

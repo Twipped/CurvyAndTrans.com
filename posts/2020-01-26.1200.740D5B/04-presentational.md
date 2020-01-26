@@ -1,6 +1,6 @@
 ---
 id: "740D5B"
-date: "2000-01-01T00:00:04.000Z"
+date: "2020-01-26T20:41:55.827Z"
 title: "How Gender Dysphoria Manifests"
 subtitle: "Presentational and Historical Dysphoria"
 slug: gender-dysphoria
@@ -9,7 +9,6 @@ classes:
   - no-date
   - no-subtitle
 no-images: true
-draft: true
 tweets:
   - '1215716435068100611'
   - '1215716435974066176'
