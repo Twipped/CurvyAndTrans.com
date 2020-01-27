@@ -271,6 +271,10 @@ header {
     strong {
       grid-area: name;
       font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      align-self: flex-start;
 
       .tweet-verified {
         height: 16px;
@@ -396,26 +400,35 @@ header {
 
   &.collapse {
     .tweet-item {
-      padding-bottom: 0.5em;
-
       .tweet-footer { display: none; }
     }
 
     .tweet-item + .tweet-item {
-      padding-top: 0.5em;
-
       .tweet-header {display: none;}
     }
 
     .tweet-item:last-child {
-      padding-bottom: 20px;
-
       .tweet-footer { display: block; }
     }
   }
 
-  &.grid-row {
+  &.collapse:not(.grid-row) {
+    .tweet-item {
+      padding-bottom: 0.5em;
+    }
+
+    .tweet-item + .tweet-item {
+      padding-top: 0.5em;
+    }
+
+    .tweet-item:last-child {
+      padding-bottom: 20px;
+    }
+  }
+
+  &.grid-row:not(.collapse) {
     border: none;
+    max-height: unset;
 
     .tweet-item {
       background-color: white;
@@ -431,6 +444,61 @@ header {
         flex-grow: 1;
         flex-shrink: 1;
 
+      }
+    }
+  }
+
+  &.grid-row.collapse {
+    border: none;
+    border: 1px solid $borderColor;
+    border-radius: 0;
+    max-height: unset;
+    grid-gap: 0;
+
+    .tweet-item {
+      background-color: white;
+      border: 1px solid $borderColor;
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      margin: -1px;
+
+      .tweet-logo { display: block; }
+
+      .tweet-text {
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+
+    }
+
+    .tweet-item {
+      .tweet-footer { display: none; }
+    }
+
+    .tweet-item + .tweet-item {
+      .tweet-header {display: none;}
+    }
+
+    .tweet-item:last-child {
+      .tweet-footer { display: block; }
+    }
+
+    @include media-breakpoint-up(md) {
+      &.by-two {
+        .tweet-item:first-child {
+          .tweet-logo { display: none }
+        }
+
+        .tweet-item:nth-child(2) {
+          .tweet-header {
+            display: grid;
+
+            b, strong, span {
+              visibility: hidden;
+            }
+          }
+        }
       }
     }
   }

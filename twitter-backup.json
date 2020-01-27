@@ -12624,5 +12624,1698 @@
       }
     ],
     "html": "When my friends back in high school would discuss who their ideal woman was, they were all describing physical traits of a person they’d want to date... as I explained who I wanted to be. <br><br>I always thought everyone had a dirty little secret like mine. A bit of closet shame."
+  },
+  "1214733921545531394": {
+    "created_at": "Wed Jan 08 02:21:50 +0000 2020",
+    "id": 1214733921545531400,
+    "id_str": "1214733921545531394",
+    "full_text": "@Samwitch11 I promise you, cis women definitely say it to other, younger, cis women. And it’s SUPER patronizing.",
+    "truncated": false,
+    "display_text_range": [
+      12,
+      112
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Samwitch11",
+          "name": "Samwitch you a Merry Christmas",
+          "id": 1037056545220059100,
+          "id_str": "1037056545220059136",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1214429891656994800,
+    "in_reply_to_status_id_str": "1214429891656994816",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 2243532878,
+      "id_str": "2243532878",
+      "name": "✨Erica Goodwitch✨",
+      "screen_name": "tistheGoodwitch",
+      "location": "Jacksonville, FL",
+      "description": "She/Her | D&D Nerd Mom | Dice For Brains Network (Marceline Rosier, Lucinda Goodwitch) | Librarian Assistant | Cis/Bi/Ace | Intersectional Feminist",
+      "url": "https://t.co/vqAaIHeUfk",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/vqAaIHeUfk",
+              "expanded_url": "http://fantasticalchemy.tumblr.com",
+              "display_url": "fantasticalchemy.tumblr.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 299,
+      "friends_count": 849,
+      "listed_count": 4,
+      "created_at": "Fri Dec 13 07:44:21 +0000 2013",
+      "favourites_count": 38693,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 10556,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/2243532878/1579566403",
+      "profile_link_color": "94D487",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+        "output": "tweets/tistheGoodwitch.jpg"
+      },
+      "name_html": "<img class=\"emoji\" draggable=\"false\" alt=\"✨\" src=\"https://twemoji.maxcdn.com/v/12.1.4/72x72/2728.png\"/>Erica Goodwitch<img class=\"emoji\" draggable=\"false\" alt=\"✨\" src=\"https://twemoji.maxcdn.com/v/12.1.4/72x72/2728.png\"/>"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 21,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+        "output": "tweets/tistheGoodwitch.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/Samwitch11\">@Samwitch11</a> I promise you, cis women definitely say it to other, younger, cis women. And it’s SUPER patronizing."
+  },
+  "1214672926307274752": {
+    "created_at": "Tue Jan 07 22:19:27 +0000 2020",
+    "id": 1214672926307274800,
+    "id_str": "1214672926307274752",
+    "full_text": "@Samwitch11 I felt pretty hopeless hearing that when I was 13, that this would just be my life. So I really appreciate you and the people in this thread pointing out how terrible it is.",
+    "truncated": false,
+    "display_text_range": [
+      12,
+      185
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Samwitch11",
+          "name": "Samwitch, Human Rogue, Chaotic Good",
+          "id": 1037056545220059100,
+          "id_str": "1037056545220059136",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1214672082258161700,
+    "in_reply_to_status_id_str": "1214672082258161664",
+    "in_reply_to_user_id": 35560400,
+    "in_reply_to_user_id_str": "35560400",
+    "in_reply_to_screen_name": "astrofloof",
+    "user": {
+      "id": 35560400,
+      "id_str": "35560400",
+      "name": "Ghoulfriend",
+      "screen_name": "astrofloof",
+      "location": "s p a c e",
+      "description": "▌☆ eme/whimsy ☆ 28 ☆ any pronouns ☆ ♏ ☆ ▌ FFXIV ⇨ Ariq Dazkar (Mateus/Crystal) ⇨ Whim Sy (Gilgamesh/Aether) ▌💜 @UnderArchon 💜 & ❤️ @ladyeebs ❤️ ▌",
+      "url": "https://t.co/UKtw9f0ARk",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/UKtw9f0ARk",
+              "expanded_url": "https://astrofloof.carrd.co/",
+              "display_url": "astrofloof.carrd.co",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 190,
+      "friends_count": 310,
+      "listed_count": 0,
+      "created_at": "Sun Apr 26 20:47:09 +0000 2009",
+      "favourites_count": 2597,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 1887,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme13/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme13/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35560400/1579282268",
+      "profile_link_color": "94D487",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "can_media_tag": false,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+        "output": "tweets/astrofloof.jpg"
+      },
+      "name_html": "Ghoulfriend"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 4,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+        "output": "tweets/astrofloof.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/Samwitch11\">@Samwitch11</a> I felt pretty hopeless hearing that when I was 13, that this would just be my life. So I really appreciate you and the people in this thread pointing out how terrible it is."
+  },
+  "1214670940430204928": {
+    "created_at": "Tue Jan 07 22:11:34 +0000 2020",
+    "id": 1214670940430205000,
+    "id_str": "1214670940430204928",
+    "full_text": "@Samwitch11 The thing is women do this to young girls all the time (not that it’s alright, of course). Instead of sharing in the experience and supporting each other I’ve gotten a lot of ‘that’s just how it is, toughen up’. For context, I’m AFAB. I think the worst was when I was still (1/2)",
+    "truncated": false,
+    "display_text_range": [
+      12,
+      291
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Samwitch11",
+          "name": "Samwitch, Human Rogue, Chaotic Good",
+          "id": 1037056545220059100,
+          "id_str": "1037056545220059136",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1214438124236898300,
+    "in_reply_to_status_id_str": "1214438124236898305",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 35560400,
+      "id_str": "35560400",
+      "name": "Ghoulfriend",
+      "screen_name": "astrofloof",
+      "location": "s p a c e",
+      "description": "▌☆ eme/whimsy ☆ 28 ☆ any pronouns ☆ ♏ ☆ ▌ FFXIV ⇨ Ariq Dazkar (Mateus/Crystal) ⇨ Whim Sy (Gilgamesh/Aether) ▌💜 @UnderArchon 💜 & ❤️ @ladyeebs ❤️ ▌",
+      "url": "https://t.co/UKtw9f0ARk",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/UKtw9f0ARk",
+              "expanded_url": "https://astrofloof.carrd.co/",
+              "display_url": "astrofloof.carrd.co",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 190,
+      "friends_count": 310,
+      "listed_count": 0,
+      "created_at": "Sun Apr 26 20:47:09 +0000 2009",
+      "favourites_count": 2597,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 1887,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme13/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme13/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35560400/1579282268",
+      "profile_link_color": "94D487",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "can_media_tag": false,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+        "output": "tweets/astrofloof.jpg"
+      },
+      "name_html": "Ghoulfriend"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 4,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+        "output": "tweets/astrofloof.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/Samwitch11\">@Samwitch11</a> The thing is women do this to young girls all the time (not that it’s alright, of course). Instead of sharing in the experience and supporting each other I’ve gotten a lot of ‘that’s just how it is, toughen up’. For context, I’m AFAB. I think the worst was when I was still (1/2)"
+  },
+  "1214432759415894018": {
+    "created_at": "Tue Jan 07 06:25:07 +0000 2020",
+    "id": 1214432759415894000,
+    "id_str": "1214432759415894018",
+    "full_text": "I understand that being a woman is fraught, and that even the crappy version of a boy that I was pretending to be had privileges that are denied most women. I knew that transitioning was going to strip me of a good portion of that. \n\n3/",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      236
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214431863067963400,
+    "in_reply_to_status_id_str": "1214431863067963392",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 26,
+    "favorite_count": 1198,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "I understand that being a woman is fraught, and that even the crappy version of a boy that I was pretending to be had privileges that are denied most women. I knew that transitioning was going to strip me of a good portion of that. <br><br>3/"
+  },
+  "1214581990868959233": {
+    "created_at": "Tue Jan 07 16:18:07 +0000 2020",
+    "id": 1214581990868959200,
+    "id_str": "1214581990868959233",
+    "full_text": "@Samwitch11 It's patronizing af, implies that the trans woman has no exp w womanhood &amp; reveals the cis mindset. At best, they see us as men who've just 'turned' into women and are thus unfamiliar w all womens' experiences, and at worst they cheer on a 'man' being a victim of misogyny 🙄🙄🙄",
+    "truncated": false,
+    "display_text_range": [
+      12,
+      292
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Samwitch11",
+          "name": "Samwitch, Human Rogue, Chaotic Good",
+          "id": 1037056545220059100,
+          "id_str": "1037056545220059136",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1214438124236898300,
+    "in_reply_to_status_id_str": "1214438124236898305",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 880222151155920900,
+      "id_str": "880222151155920896",
+      "name": "Raggedy Ann + Rainbow Brite",
+      "screen_name": "hello_nbd",
+      "location": "",
+      "description": "Merci (she/they) went to public school in California and became a transgender communist\n\nLikes strawberries, MtG, D&D, toppling unjust hierarchies, strawberries",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 38,
+      "friends_count": 112,
+      "listed_count": 0,
+      "created_at": "Thu Jun 29 00:31:29 +0000 2017",
+      "favourites_count": 17828,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 1209,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1105892432514682880/U-S9NBhG_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1105892432514682880/U-S9NBhG_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/880222151155920896/1571880932",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1105892432514682880/U-S9NBhG_normal.jpg",
+        "output": "tweets/hello_nbd.jpg"
+      },
+      "name_html": "Raggedy Ann + Rainbow Brite"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 5,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1105892432514682880/U-S9NBhG_normal.jpg",
+        "output": "tweets/hello_nbd.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/Samwitch11\">@Samwitch11</a> It's patronizing af, implies that the trans woman has no exp w womanhood &amp; reveals the cis mindset. At best, they see us as men who've just 'turned' into women and are thus unfamiliar w all womens' experiences, and at worst they cheer on a 'man' being a victim of misogyny <img class=\"emoji\" draggable=\"false\" alt=\"🙄\" src=\"https://twemoji.maxcdn.com/v/12.1.4/72x72/1f644.png\"/><img class=\"emoji\" draggable=\"false\" alt=\"🙄\" src=\"https://twemoji.maxcdn.com/v/12.1.4/72x72/1f644.png\"/><img class=\"emoji\" draggable=\"false\" alt=\"🙄\" src=\"https://twemoji.maxcdn.com/v/12.1.4/72x72/1f644.png\"/>"
+  },
+  "1214438124236898305": {
+    "created_at": "Tue Jan 07 06:46:26 +0000 2020",
+    "id": 1214438124236898300,
+    "id_str": "1214438124236898305",
+    "full_text": "I would just respectfully ask you that if you're a cis woman, and you're looking to be a good ally, or even just be kind to a trans woman, your only \"Welcome to being a woman!\" should be on a card, and there should be cake. \n\n8",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      227
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214437546635100200,
+    "in_reply_to_status_id_str": "1214437546635100160",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 87,
+    "favorite_count": 1507,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "I would just respectfully ask you that if you're a cis woman, and you're looking to be a good ally, or even just be kind to a trans woman, your only \"Welcome to being a woman!\" should be on a card, and there should be cake. <br><br>8"
+  },
+  "1214437546635100160": {
+    "created_at": "Tue Jan 07 06:44:08 +0000 2020",
+    "id": 1214437546635100200,
+    "id_str": "1214437546635100160",
+    "full_text": "I dunno. I'm tired, and probably overly whingy, but I've been presenting as a woman for nearly 3 years now, and I'm well past the point of needing a welcome committee. I've been in woman-town for a while, and I've kinda learned the streets. \n\n7/",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      245
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214437023341150200,
+    "in_reply_to_status_id_str": "1214437023341150208",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 19,
+    "favorite_count": 1065,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "I dunno. I'm tired, and probably overly whingy, but I've been presenting as a woman for nearly 3 years now, and I'm well past the point of needing a welcome committee. I've been in woman-town for a while, and I've kinda learned the streets. <br><br>7/"
+  },
+  "1214431863067963392": {
+    "created_at": "Tue Jan 07 06:21:33 +0000 2020",
+    "id": 1214431863067963400,
+    "id_str": "1214431863067963392",
+    "full_text": "I mean, if I had a daughter who came to me with any of these difficulties, I would hope that I would be able to show her some empathy and kindness and try to commiserate with her pain. I don't think I'd want to just dismiss her problems with that particular phrase.\n\n2/",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      269
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214429891656994800,
+    "in_reply_to_status_id_str": "1214429891656994816",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 40,
+    "favorite_count": 1556,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "I mean, if I had a daughter who came to me with any of these difficulties, I would hope that I would be able to show her some empathy and kindness and try to commiserate with her pain. I don't think I'd want to just dismiss her problems with that particular phrase.<br><br>2/"
+  },
+  "1214435351160221696": {
+    "created_at": "Tue Jan 07 06:35:25 +0000 2020",
+    "id": 1214435351160221700,
+    "id_str": "1214435351160221696",
+    "full_text": "Talking about it wasn't me saying \"Hey! Did you know this is a thing that happens? Isn't it wild?\" It was just me sharing a yucky experience. \"Welcome to being a woman!\" feels unnecessarily dismissive of my experience, and not something I'd expect from another woman. \n\n5/",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      272
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214433715784282000,
+    "in_reply_to_status_id_str": "1214433715784282112",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 41,
+    "favorite_count": 1356,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "Talking about it wasn't me saying \"Hey! Did you know this is a thing that happens? Isn't it wild?\" It was just me sharing a yucky experience. \"Welcome to being a woman!\" feels unnecessarily dismissive of my experience, and not something I'd expect from another woman. <br><br>5/"
+  },
+  "1214672082258161664": {
+    "created_at": "Tue Jan 07 22:16:06 +0000 2020",
+    "id": 1214672082258161700,
+    "id_str": "1214672082258161664",
+    "full_text": "@Samwitch11 in junior high. I have been cursed with menstrual pain so terrible it makes me ill. And when my teacher comes up to me and she says exactly that. “Welcome to being a woman.” Not only did I not really get support from someone who should understand on something level but (2/?)",
+    "truncated": false,
+    "display_text_range": [
+      12,
+      287
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Samwitch11",
+          "name": "Samwitch, Human Rogue, Chaotic Good",
+          "id": 1037056545220059100,
+          "id_str": "1037056545220059136",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1214670940430205000,
+    "in_reply_to_status_id_str": "1214670940430204928",
+    "in_reply_to_user_id": 35560400,
+    "in_reply_to_user_id_str": "35560400",
+    "in_reply_to_screen_name": "astrofloof",
+    "user": {
+      "id": 35560400,
+      "id_str": "35560400",
+      "name": "Ghoulfriend",
+      "screen_name": "astrofloof",
+      "location": "s p a c e",
+      "description": "▌☆ eme/whimsy ☆ 28 ☆ any pronouns ☆ ♏ ☆ ▌ FFXIV ⇨ Ariq Dazkar (Mateus/Crystal) ⇨ Whim Sy (Gilgamesh/Aether) ▌💜 @UnderArchon 💜 & ❤️ @ladyeebs ❤️ ▌",
+      "url": "https://t.co/UKtw9f0ARk",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/UKtw9f0ARk",
+              "expanded_url": "https://astrofloof.carrd.co/",
+              "display_url": "astrofloof.carrd.co",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 190,
+      "friends_count": 310,
+      "listed_count": 0,
+      "created_at": "Sun Apr 26 20:47:09 +0000 2009",
+      "favourites_count": 2597,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 1887,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme13/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme13/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/35560400/1579282268",
+      "profile_link_color": "94D487",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "can_media_tag": false,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+        "output": "tweets/astrofloof.jpg"
+      },
+      "name_html": "Ghoulfriend"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 4,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1190388410755801091/dfT1sfWd_normal.jpg",
+        "output": "tweets/astrofloof.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/Samwitch11\">@Samwitch11</a> in junior high. I have been cursed with menstrual pain so terrible it makes me ill. And when my teacher comes up to me and she says exactly that. “Welcome to being a woman.” Not only did I not really get support from someone who should understand on something level but (2/?)"
+  },
+  "1214437023341150208": {
+    "created_at": "Tue Jan 07 06:42:04 +0000 2020",
+    "id": 1214437023341150200,
+    "id_str": "1214437023341150208",
+    "full_text": "Like, I couldn't imagine a cis woman saying that to another cis woman. It just wouldn't fly. \n\n6/",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      97
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214435351160221700,
+    "in_reply_to_status_id_str": "1214435351160221696",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 23,
+    "favorite_count": 1122,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "Like, I couldn't imagine a cis woman saying that to another cis woman. It just wouldn't fly. <br><br>6/"
+  },
+  "1215005216053047296": {
+    "created_at": "Wed Jan 08 20:19:51 +0000 2020",
+    "id": 1215005216053047300,
+    "id_str": "1215005216053047296",
+    "full_text": "@hello_nbd @Samwitch11 It really sucks that us cis women are so used to that phrase that we haven’t stopped to think how it sounds to trans women. Because we do say it a lot to other cis women. Sometimes it’s condescending, often it’s meant as comiseration. I’m gonna keep it in mind not to now tho.",
+    "truncated": false,
+    "display_text_range": [
+      23,
+      299
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "hello_nbd",
+          "name": "Raggedy Ann + Rainbow Brite",
+          "id": 880222151155920900,
+          "id_str": "880222151155920896",
+          "indices": [
+            0,
+            10
+          ]
+        },
+        {
+          "screen_name": "Samwitch11",
+          "name": "Samwitch, Human Rogue, Chaotic Good",
+          "id": 1037056545220059100,
+          "id_str": "1037056545220059136",
+          "indices": [
+            11,
+            22
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1214581990868959200,
+    "in_reply_to_status_id_str": "1214581990868959233",
+    "in_reply_to_user_id": 880222151155920900,
+    "in_reply_to_user_id_str": "880222151155920896",
+    "in_reply_to_screen_name": "hello_nbd",
+    "user": {
+      "id": 174418778,
+      "id_str": "174418778",
+      "name": "Majka",
+      "screen_name": "majken_aune",
+      "location": "",
+      "description": "One amnesia away from becoming a supervillain... THIS B STANDS WITH THE T!✊ https://t.co/Us4mxyhpHp",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/Us4mxyhpHp",
+              "expanded_url": "http://ko-fi.com/majkao",
+              "display_url": "ko-fi.com/majkao",
+              "indices": [
+                76,
+                99
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 2497,
+      "friends_count": 1964,
+      "listed_count": 37,
+      "created_at": "Tue Aug 03 21:59:18 +0000 2010",
+      "favourites_count": 47061,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 80241,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1017145768933777408/P226eg80_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1017145768933777408/P226eg80_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/174418778/1476123692",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1017145768933777408/P226eg80_normal.jpg",
+        "output": "tweets/majken_aune.jpg"
+      },
+      "name_html": "Majka"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1017145768933777408/P226eg80_normal.jpg",
+        "output": "tweets/majken_aune.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/hello_nbd\">@hello_nbd</a> <a href=\"http://twitter.com/Samwitch11\">@Samwitch11</a> It really sucks that us cis women are so used to that phrase that we haven’t stopped to think how it sounds to trans women. Because we do say it a lot to other cis women. Sometimes it’s condescending, often it’s meant as comiseration. I’m gonna keep it in mind not to now tho."
+  },
+  "1214429891656994816": {
+    "created_at": "Tue Jan 07 06:13:43 +0000 2020",
+    "id": 1214429891656994800,
+    "id_str": "1214429891656994816",
+    "full_text": "A trans woman shares an experience online; a brush with misogyny, a scary scenario with a man, or maybe physical discomfort due to being on estrogen.  Very often I see the comment \"Welcome to being a woman!\" show up as a response.\n\nDoes this feel patronizing to anyone else?\n\n1/",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      278
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 725,
+    "favorite_count": 5370,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "A trans woman shares an experience online; a brush with misogyny, a scary scenario with a man, or maybe physical discomfort due to being on estrogen.  Very often I see the comment \"Welcome to being a woman!\" show up as a response.<br><br>Does this feel patronizing to anyone else?<br><br>1/"
+  },
+  "1214734270708600833": {
+    "created_at": "Wed Jan 08 02:23:13 +0000 2020",
+    "id": 1214734270708600800,
+    "id_str": "1214734270708600833",
+    "full_text": "@tistheGoodwitch Oh. \n\nWell, that's just awful.",
+    "truncated": false,
+    "display_text_range": [
+      17,
+      47
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "tistheGoodwitch",
+          "name": "✨Erica Goodwitch✨",
+          "id": 2243532878,
+          "id_str": "2243532878",
+          "indices": [
+            0,
+            16
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214733921545531400,
+    "in_reply_to_status_id_str": "1214733921545531394",
+    "in_reply_to_user_id": 2243532878,
+    "in_reply_to_user_id_str": "2243532878",
+    "in_reply_to_screen_name": "tistheGoodwitch",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 7,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/tistheGoodwitch\">@tistheGoodwitch</a> Oh. <br><br>Well, that's just awful."
+  },
+  "1214735379158511616": {
+    "created_at": "Wed Jan 08 02:27:37 +0000 2020",
+    "id": 1214735379158511600,
+    "id_str": "1214735379158511616",
+    "full_text": "@Samwitch11 Yeah. It’s a brush off. In the same vein of ‘boys will be boys’ and ‘welcome to the club’.",
+    "truncated": false,
+    "display_text_range": [
+      12,
+      102
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "Samwitch11",
+          "name": "Samwitch, Human Rogue, Chaotic Good",
+          "id": 1037056545220059100,
+          "id_str": "1037056545220059136",
+          "indices": [
+            0,
+            11
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1214734270708600800,
+    "in_reply_to_status_id_str": "1214734270708600833",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 2243532878,
+      "id_str": "2243532878",
+      "name": "✨Erica Goodwitch✨",
+      "screen_name": "tistheGoodwitch",
+      "location": "Jacksonville, FL",
+      "description": "She/Her | D&D Nerd Mom | Dice For Brains Network (Marceline Rosier, Lucinda Goodwitch) | Librarian Assistant | Cis/Bi/Ace | Intersectional Feminist",
+      "url": "https://t.co/vqAaIHeUfk",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/vqAaIHeUfk",
+              "expanded_url": "http://fantasticalchemy.tumblr.com",
+              "display_url": "fantasticalchemy.tumblr.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 299,
+      "friends_count": 849,
+      "listed_count": 4,
+      "created_at": "Fri Dec 13 07:44:21 +0000 2013",
+      "favourites_count": 38693,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 10556,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/2243532878/1579566403",
+      "profile_link_color": "94D487",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+        "output": "tweets/tistheGoodwitch.jpg"
+      },
+      "name_html": "<img class=\"emoji\" draggable=\"false\" alt=\"✨\" src=\"https://twemoji.maxcdn.com/v/12.1.4/72x72/2728.png\"/>Erica Goodwitch<img class=\"emoji\" draggable=\"false\" alt=\"✨\" src=\"https://twemoji.maxcdn.com/v/12.1.4/72x72/2728.png\"/>"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 6,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1192620578122993664/2PVn5sCW_normal.jpg",
+        "output": "tweets/tistheGoodwitch.jpg"
+      }
+    ],
+    "html": "<a href=\"http://twitter.com/Samwitch11\">@Samwitch11</a> Yeah. It’s a brush off. In the same vein of ‘boys will be boys’ and ‘welcome to the club’."
+  },
+  "1214433715784282112": {
+    "created_at": "Tue Jan 07 06:28:55 +0000 2020",
+    "id": 1214433715784282000,
+    "id_str": "1214433715784282112",
+    "full_text": "When most trans women complain about experiences that are already well known to cis women, it's rarely done out of shock or surprise. The first time I was mansplained to at work was painful, but it wasn't really a shock.\n\n4/",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      224
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1214432759415894000,
+    "in_reply_to_status_id_str": "1214432759415894018",
+    "in_reply_to_user_id": 1037056545220059100,
+    "in_reply_to_user_id_str": "1037056545220059136",
+    "in_reply_to_screen_name": "Samwitch11",
+    "user": {
+      "id": 1037056545220059100,
+      "id_str": "1037056545220059136",
+      "name": "Samwitch, Human Rogue, Chaotic Good",
+      "screen_name": "Samwitch11",
+      "location": "",
+      "description": "She/her. I adore monsters, kung fu, cartoons and kindness. Trans woman who likes drawing dinosaurs. (Current header image by team Gurihiru)",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3406,
+      "friends_count": 290,
+      "listed_count": 12,
+      "created_at": "Tue Sep 04 19:15:22 +0000 2018",
+      "favourites_count": 12506,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4180,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1037056545220059136/1576381942",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "can_media_tag": true,
+      "followed_by": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "avatar": {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      },
+      "name_html": "Samwitch, Human Rogue, Chaotic Good"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 30,
+    "favorite_count": 1178,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en",
+    "media": [
+      {
+        "input": "https://pbs.twimg.com/profile_images/1048554495611875328/A4I1PvqE_normal.jpg",
+        "output": "tweets/Samwitch11.jpg"
+      }
+    ],
+    "html": "When most trans women complain about experiences that are already well known to cis women, it's rarely done out of shock or surprise. The first time I was mansplained to at work was painful, but it wasn't really a shock.<br><br>4/"
   }
 }

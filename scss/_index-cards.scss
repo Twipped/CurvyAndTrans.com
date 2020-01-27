@@ -334,7 +334,7 @@ a.grid-card, .grid-card a {
     }
   }
 
-  &.no-images.no-poster {
+  &.no-images.no-poster:not(.has-tweet) {
     grid-template-columns: 100%;
     grid-template-areas:
       "datetags"
