@@ -10,7 +10,15 @@ classes:
 no-images: true
 ---
 
-^^^{!{
+<!--[-->^^^<div class="cw living"><div class="cw-header">This is a Living Document</div>^^^
+
+Please note that this post is not finished. The contents will change over time as new additions and revisions are made to further expand the full breadth of Gender Dysphoria. If you have contributions, suggestions, or constructive criticisms please contact me via any of the social media accounts linked at the top of the page. If you are of a GitHub persuasion you may also [submit changes directly](https://github.com/Twipped/CurvyAndTrans.com/tree/master/posts/2020-01-26.1200.740D5B) via a pull request.
+
+If you wish to contribute financially to my work, please consider making a pledge to [my Patreon](https://patreon.com/curvyandtrans), or a one-time donation [via Ko-Fi](https://ko-fi.com/curvyandtrans).
+
+^^^</div>
+
+{!{
 <div class="card right span4" style="margin-top: 0; margin-bottom: 10px;">
   <div class="card-header">Article Topics</div>
   <div class="list-group list-group-flush">
@@ -31,11 +39,37 @@ no-images: true
     <a class="list-group-item" href="09-conclusion.html">Conclusion</a>
   </div>
 </div>
-}!}^^^
+}!}^^^<!--]-->
 
-For a more in-depth coverage of this I suggest [reading my article on the subject](/p/A37736/i-am-biologically-female/).
+Here is what we know today. If you’ve seen Jurassic Park then you may remember this scene:
 
-The short of it is, the brain starts out female and is masculinized via the same processes as the gonads and genitals, but it happens at a different time, and is subject to more complex influences. Sex is a spectrum, gender is a spectrum, and there is a lot of room for the two to not align. We don't yet fully know exactly why trans people end up with gender identities that don't match their genitals or their DNA, but they do.
+^^^{!{ {{> img images.[4] className="card center span2" alt="All vertebrate embryos are inherently female anyway. They just require an extra hormone given at the right developmental stage to make them male."}} }!}^^^
+
+This isn't science fiction, tho it is very dumbed down. In human fetuses the gonads initially develop in a bi-potential state, meaning they can become either ovaries or testes. The SRY gene on the Y chromosome releases a protein called [Testis Determining Factor](https://en.wikipedia.org/wiki/Testis-determining_factor) (TDF). This protein then starts a chain reaction which causes the gonadal cells to form into the Sertoli and Leydig cells that make up the testes. If TDF is never produced or is interfered with then the gonad cells form into the Theca cells and follicles which comprise the ovaries.
+
+Once formed, the testes then begin producing a testosterone surge which typically starts in the 8th week of gestation and continues until the 24th week. This surge, [combined with another hormone from the placenta](https://www.sciencedaily.com/releases/2019/02/190214153053.htm), is responsible for the development of the penis and scrotum. Genitalia formation starts around week 9 and becomes identifiable by the 11th week. If the surge does not occur, or the body does not respond to it (such as in the case of Androgen Insensitivity Syndrome) then the genitalia form into the vulva, vagina and uterus instead.
+
+If there is an interference in this process then you can end up with malformed bits, and this is the result of intersex conditions. Often times this is a partial development, where the external genitalia only partially form, but functional gonads still exist. Sometimes the child comes out with fully functional male or female genitalia, but mismatched gonads. Sometimes the TDF protein fails to release and the fetus grows completely functional female reproductive organs, despite the presence of a Y chromosome.
+
+This is known as Swyer Syndrome, and an unknown number of women may have this condition. In 2015 [an XY woman with Swyer Syndrome who was born without ovaries](https://www.independent.co.uk/news/science/mostly-male-woman-gives-birth-to-twins-in-medical-miracle-10033528.html) successfully carried and gave birth to a child via IVF. Usually Swyer Syndrome results in completely non-functional ovaries, but [in 2008 a woman was found with Swyer Syndrome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2190741/) who had gone through puberty, menstruated normally, and had two unassisted pregnancies. Her condition went undiscovered until her daughter was was found to also have it.
+
+The fact is, the vast majority of the population has never been tested for genetic karyotype, so we don’t know how common these cases actually are. Where does this come into affect for gender identity? Well, the exact same process that causes the external genitals to differentiate also occurs for the brain.
+
+#### Brain Split
+
+The prenatal brain doesn’t really start to develop until between week 12 and 24. The cerebral cortex, the thin outer layer of the brain that contains most of what we think of as consciousness, grows substantially during those periods of time. Prior to that, the structure present is more like a scaffolding, the basic parts of the nervous system necessary for bodily function. The primary sulci (the wrinkles in the cerebral cortex that allow for more surface area) [start to form at week 14](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2989000/#Sec5title), well after the genitals have developed.
+
+It [has been confirmed multiple times](https://www.the-scientist.com/features/are-the-brains-of-transgender-people-different-from-those-of-cisgender-people-30027) via MRI studies that there are small but significant differences between cis male and cis female brains, differences which align with the gender identities of trans people in the study. Note, **this does not mean that anyone with those differences will have that gender**, because gender identity isn’t that simple, but it provides evidence that there is a clear difference in masculine and feminine brains.
+
+A change in the testosterone levels in the fetus after the 11th week can directly impact the masculinization of the cerebral cortex, as well as changes in other parts of the brain structure. This has been examined [over and over again](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4350266/) in studies of female assigned children with CAH (congenital adrenal hyperplasia) and CAIS (complete androgen insensitivity syndrome).
+
+<blockquote class="cite"><p>We found a significant relationship between fetal testosterone and sexually differentiated play behavior in both girls and boys.</p>&mdash; <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2778233/">Fetal Testosterone Predicts Sexually Differentiated Childhood Behavior in Girls and in Boys</a></blockquote>
+
+An excess of testosterone in the mother’s body during the second trimester can (and does) cause masculinization of the brain in an externally female fetus, and an interference in testosterone production or uptake can (and does) cause feminisation of an externally male fetus. This interference does not have to be external in origin, either. Any number of genetic traits can cause the brain to respond differently to testosterone.
+
+A fairly large study of transgender individuals released in 2018 [found several key genes](https://academic.oup.com/jcem/article/104/2/390/5104458) which were statistically more likely to be longer among trans women (longer, as in having more repeated fragments). Individually these genes may not have an impact strong enough to cause a malfunction of masculinization, but collectively they absolutely could reduce the ability for the fetal brain to masculinize. These genes are all passed from parent to child, giving credence to a tendency for trans parents to have trans children.
+
+#### Gender is Biological
 
 Sadly, western society has actively prevented a deeper understanding of gender. Ancient civilizations understood it well, but colonialism wiped them off the map. 100 years ago, [scientists in Germany were actively studying](https://en.wikipedia.org/wiki/Institut_f%C3%BCr_Sexualwissenschaft) transgender medicine and made extraordinary advancements, until the nazis burned it all in 1933. Conservative and fascist pressures in the modern day have hindered advancements in transgender healthcare whenever possible.
 

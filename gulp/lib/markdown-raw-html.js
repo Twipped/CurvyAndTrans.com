@@ -7,8 +7,6 @@ module.exports = exports = function (md, options) {
   };
 
   const fenceLen = options.fence.length;
-  const fenceFirst = options.fence.charCodeAt(0);
-
 
 
   md.block.ruler.before('html_block', 'raw_html', (state, startLine, endLine) => {

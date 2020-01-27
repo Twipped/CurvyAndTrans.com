@@ -17,17 +17,22 @@ tweets:
   - '1191555135756853249'
 ---
 
-^^^<style>
+<!--[-->^^^<style>
   .post-content h2 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
-    margin-top: 1.5em;
-  }
-
-  .post-content h2:first-of-type {
-    margin-top: 0;
+    /*margin-top: 1.5em;*/
   }
 </style>
+
+<div class="cw living"><div class="cw-header">This is a Living Document</div>^^^
+
+Please note that this post is not finished. The contents will change over time as new additions and revisions are made to further expand the full breadth of Gender Dysphoria. If you have contributions, suggestions, or constructive criticisms please contact me via any of the social media accounts linked at the top of the page. If you are of a GitHub persuasion you may also [submit changes directly](https://github.com/Twipped/CurvyAndTrans.com/tree/master/posts/2020-01-26.1200.740D5B) via a pull request.
+
+If you wish to contribute financially to my work, please consider making a pledge to [my Patreon](https://patreon.com/curvyandtrans), or a one-time donation [via Ko-Fi](https://ko-fi.com/curvyandtrans).
+
+^^^</div>
+
 {!{
 <div class="card right span4" style="margin-top: 0; margin-bottom: 10px;">
   <div class="card-header">Article Topics</div>
@@ -49,7 +54,7 @@ tweets:
     <a class="list-group-item" href="09-conclusion.html">Conclusion</a>
   </div>
 </div>
-}!}^^^
+}!}^^^<!--]-->
 
 
 ## Presentational Dysphoria

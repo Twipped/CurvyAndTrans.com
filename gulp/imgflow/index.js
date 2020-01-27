@@ -230,6 +230,7 @@ exports.twitter = async function twitterImages ({ rev = false }) {
   }
 
   media = uniqBy(media, 'output');
+
   const tasks = media.map((m) => ({ ...m, action: actions.fetch }));
   const filtered = await filter(manifest, tasks);
   await execute(manifest, filtered, rev);
@@ -344,6 +345,8 @@ async function execute (manifest, tasks, rev) {
     if (task.log && LOG[task.log[0]]) log.info(...task.log);
     apply.lastSeen = lastSeen;
     apply.lastSeenHuman = new Date();
+
+    if (!result) log('Nothing happened?', task);
 
     const rhash = result && revHash(result);
     const hashedPath = revPath(task.output, rhash);

@@ -12,13 +12,14 @@ tags:
 no-images: true
 ---
 
-::: cw
-::: cw-header
-This is a Living Document
-:::
-Please note that this post is not final and finished. The contents will change over time as I receive and think of new additions and revisions to further expand the full breadth of Gender Dysphoria. If you have contributions, suggestions, or constructive criticisms please contact me via any of the social media accounts linked at the top of the page.
-:::
-:::
+<!--[-->
+^^^<div class="cw living"><div class="cw-header">This is a Living Document</div>^^^
+
+Please note that this post is not finished. The contents will change over time as new additions and revisions are made to further expand the full breadth of Gender Dysphoria. If you have contributions, suggestions, or constructive criticisms please contact me via any of the social media accounts linked at the top of the page. If you are of a GitHub persuasion you may also [submit changes directly](https://github.com/Twipped/CurvyAndTrans.com/tree/master/posts/2020-01-26.1200.740D5B) via a pull request.
+
+If you wish to contribute financially to my work, please consider making a pledge to [my Patreon](https://patreon.com/curvyandtrans), or a one-time donation [via Ko-Fi](https://ko-fi.com/curvyandtrans).
+
+^^^</div>^^^
 
 ^^^{!{
 <div class="card right span4" style="margin-top: 0">
@@ -52,6 +53,7 @@ Please note that this post is not final and finished. The contents will change o
   </div>
 </div>
 }!}^^^
+<!--]-->
 
 > **Trans·gen·der** - *adjective*
 > Denoting or relating to a person whose sense of personal identity and gender does not correspond with their sex assigned at birth.

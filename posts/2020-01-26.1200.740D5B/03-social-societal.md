@@ -30,17 +30,22 @@ tweets:
   - '1219968711681040384'
 ---
 
-^^^<style>
+<!--[-->^^^<style>
   .post-content h2 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
-    margin-top: 1.5em;
-  }
-
-  .post-content h2:first-of-type {
-    margin-top: 0;
+    /*margin-top: 1.5em;*/
   }
 </style>
+
+<div class="cw living"><div class="cw-header">This is a Living Document</div>^^^
+
+Please note that this post is not finished. The contents will change over time as new additions and revisions are made to further expand the full breadth of Gender Dysphoria. If you have contributions, suggestions, or constructive criticisms please contact me via any of the social media accounts linked at the top of the page. If you are of a GitHub persuasion you may also [submit changes directly](https://github.com/Twipped/CurvyAndTrans.com/tree/master/posts/2020-01-26.1200.740D5B) via a pull request.
+
+If you wish to contribute financially to my work, please consider making a pledge to [my Patreon](https://patreon.com/curvyandtrans), or a one-time donation [via Ko-Fi](https://ko-fi.com/curvyandtrans).
+
+^^^</div>
+
 {!{
 <div class="card right span4" style="margin-top: 0; margin-bottom: 10px;">
   <div class="card-header">Article Topics</div>
@@ -62,7 +67,7 @@ tweets:
     <a class="list-group-item" href="09-conclusion.html">Conclusion</a>
   </div>
 </div>
-}!}^^^
+}!}^^^<!--]-->
 
 ## Social Dysphoria
 
@@ -184,9 +189,14 @@ This can lead to one feeling less enthusiastic or even disinterested in sex, as 
 
 This dysphoria may be so significant that they find themselves taking a sexual identity that they don't actually connect with. It is not unheard of for a trans person to realize after coming out that they never actually felt a connection to the sexual orientation that they had identified with previously, but were rather using it as a way to feel less dysphoric in their sex lives. Some trans women, for example, identify as gay men pre-transition out of a desire to have a partner that treats them like women during sex, but find themselves to actually be lesbians once that demand is lifted. Others may attempt to live as gay men, but find that the role doesn't fulfill them because they know their partners see them as men.
 
-***WORK IN PROGRESS***
+^^^<div class="cw living"><div class="cw-header">This section is incomplete</div>^^^
 
-^^^<ul class="nav nav-fill pager">
+I feel there is much more that can be said about Sexual Dysphoria, but unfortunately I am at a loss. I've decided I would rather publish this incomplete than let it hold back the article. If you have more to contribute to this section, *please* contact me.
+
+^^^
+</div>
+
+<ul class="nav nav-fill pager">
   <li class="nav-item">
     <a href="02-physical-biochemical.html" class="btn btn-info btn-arrow-left">Physical &amp; Biochemical Dysphoria</a>
   </li>
