@@ -4,7 +4,7 @@
 </h3>
 <div class="card-grid">
   {{#each posts.loaded}}
-    {{> indexCard}}
+    {{#unless subPage}}{{> indexCard}}{{/unless}}
   {{/each}}
 </div>
 {{#unless full}}

@@ -498,7 +498,7 @@ function assembleIndex () {
 
   return asyncthrough(async (stream, file) => {
 
-    if (!file || file.meta.subPage) return;
+    if (!file) return;
     if (!indexFile) {
       indexFile = file.clone();
     }
