@@ -1,6 +1,7 @@
 
 const argv = require('minimist')(process.argv.slice(2));
 const format = require('date-fns/format');
+const parse = require('date-fns/parse');
 const random = require('../lib/random');
 const path = require('path');
 const fs = require('fs-extra');
@@ -10,14 +11,15 @@ const template = require('./_template');
 const ROOT = path.dirname(__dirname);
 
 module.exports = exports = async function newPost () {
-  var date = new Date(argv.date || undefined);
+  var date = parse(argv.date, 'yyyy-MM-dd', new Date());
 
-  if (!date.hour()) {
+  if (!date.getHours()) {
     const now = new Date();
     date.setHours(now.getHours());
     date.setMinutes(now.getMinutes());
   }
 
+  // console.log(date);return;
   var id = random.id().substr(-6).toUpperCase();
   var fname = format(date, 'yyyy-MM-dd.HHmm.') + id;
 
