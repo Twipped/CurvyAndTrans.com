@@ -12,48 +12,7 @@ tags:
 no-images: true
 ---
 
-<!--[-->
-^^^<div class="cw living"><div class="cw-header">This is a Living Document</div>^^^
-
-Please note that this post is not finished. The contents will change over time as new additions and revisions are made to further expand the full breadth of Gender Dysphoria. If you have contributions, suggestions, or constructive criticisms please contact me via any of the social media accounts linked at the top of the page. If you are of a GitHub persuasion you may also [submit changes directly](https://github.com/Twipped/CurvyAndTrans.com/tree/master/posts/2020-01-26.1200.740D5B) via a pull request.
-
-If you wish to contribute financially to my work, please consider making a pledge to [my Patreon](https://patreon.com/curvyandtrans), or a one-time donation [via Ko-Fi](https://ko-fi.com/curvyandtrans).
-
-^^^</div>^^^
-
-^^^{!{
-<div class="card right span4" style="margin-top: 0">
-  {{#with images.[0]}}<a href="https://www.instagram.com/p/Bq2uRCtFttU/"><img
-    src="{{rev large}}"
-    alt="{{alt}}"
-    srcset="{{rev thumb}} 100w, {{rev small}} 576w, {{rev large}} 1024w, {{rev full}} 2048w"
-    sizes="(max-width: 576px) 100vw, 576px"
-    class="card-img-top"
-  ></a>{{/with}}
-  <div class="card-body caption">
-    <a href="https://www.instagram.com/p/Bq2uRCtFttU/">Original artwork by @jp_means_junpai</a>
-  </div>
-  <div class="card-header" style="border-top: 1px solid rgba(0, 0, 0, 0.125);">Article Index</div>
-  <div class="list-group list-group-flush">
-    <a class="list-group-item active" href="index.html">Introduction</a>
-    <a class="list-group-item" href="01-euphoria.html">Euphoria</a>
-    <a class="list-group-item" href="02-physical-biochemical.html#physical-dysphoria">Physical Dysphoria</a>
-    <a class="list-group-item" href="02-physical-biochemical.html#biochemical-dysphoria">Biochemical Dysphoria</a>
-    <a class="list-group-item" href="03-social-societal.html#social-dysphoria">Social Dysphoria</a>
-    <a class="list-group-item" href="03-social-societal.html#societal-dysphoria">Societal Dysphoria</a>
-    <a class="list-group-item" href="03-social-societal.html#sexual-dysphoria">Sexual Dysphoria</a>
-    <a class="list-group-item" href="04-presentational.html#presentational-dysphoria">Presentational Dysphoria</a>
-    <a class="list-group-item" href="04-presentational.html#historical-dysphoria">Historical Dysphoria</a>
-    <a class="list-group-item" href="05-managed.html#managed-dysphoria">Managed Dysphoria</a>
-    <a class="list-group-item" href="05-managed.html#impostor-syndrome">Impostor Syndrome</a>
-    <a class="list-group-item" href="06-diagnosis.html">Diagnosis</a>
-    <a class="list-group-item" href="07-treatment.html">Treatment</a>
-    <a class="list-group-item" href="08-causes.html">Causes</a>
-    <a class="list-group-item" href="09-conclusion.html">Conclusion</a>
-  </div>
-</div>
-}!}^^^
-<!--]-->
+<!--[-->^^^{!{ {{inject '~/disclaimer'}}{{inject '~/menu' active=0}} }!}^^^<!--]-->
 
 > **Trans·gen·der** - *adjective*
 > Denoting or relating to a person whose sense of personal identity and gender does not correspond with their sex assigned at birth.
