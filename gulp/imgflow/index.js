@@ -332,8 +332,13 @@ async function execute (manifest, tasks, rev) {
   const revManifest = {};
 
   let writeCounter = 0;
+  let lastWriteTime = 0;
   async function writeManifest (force) {
-    if (!force && ++writeCounter % 10) return;
+    if (!force && rev) return; // disable interim writes during prod builds.
+    if (!force && ++writeCounter % 100) return;
+    const now = Date.now();
+    if (!force && now - lastWriteTime < 10000) return;
+    lastWriteTime = now;
     await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
   }
 
@@ -365,12 +370,12 @@ async function execute (manifest, tasks, rev) {
     manifest[task.hash] = { ...manifest[task.hash], ...apply };
     await writeManifest();
 
-  }, { concurrency: 10 });
+  }, { concurrency: rev ? 20 : 10 });
 
   // filter unseen files from history
   // manifest = omitBy(manifest, (m) => m.lastSeen !== lastSeen);
 
-  writeManifest(true);
+  await writeManifest(true);
 
   if (rev) {
     let originalManifest = {};
