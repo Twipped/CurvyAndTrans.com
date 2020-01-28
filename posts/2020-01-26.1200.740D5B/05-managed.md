@@ -195,7 +195,7 @@ You can just be gender-queer! Your identity is valid!
 
 #### Transmedicalism
 
-This one hits *everybody*. Transmedicalism (aka Truetrans) is a transgender ideology derived from the Harry Benjamin scale (ranks 6 and 7). It seeks to reinforce the pre-WPATH rules, requiring intense physical dysphoria, demanding medical transition, and often invalidating all non-binary identities. At its core, transmedicalism is a supremacist concept, elevating binary trans people above the needs of any other gender identity, and a push back against the expansion of the transgender identity. They wish for more gatekeeping than we have today, rail against enbies using the transgender label, and would prefer to see fewer people receive treatment for their gender dysphoria.
+This one hits *everybody*. Transmedicalism (aka Truetrans) is a transgender ideology derived from the Harry Benjamin scale (ranks 5 and 6). It seeks to reinforce the pre-WPATH rules, requiring intense physical dysphoria, demanding medical transition, and often invalidating all non-binary identities. At its core, transmedicalism is a supremacist concept, elevating binary trans people above the needs of any other gender identity, and a push back against the expansion of the transgender identity. They wish for more gatekeeping than we have today, rail against enbies using the transgender label, and would prefer to see fewer people receive treatment for their gender dysphoria.
 
 To put it succinctly, many transmedicalists hate that the newer generation "has it so easy," despite the fact that many of their ranks are part of that generation. This ideology started among disgruntled trans elders, but has since spread to other binary individuals, particularly among young trans men.
 
