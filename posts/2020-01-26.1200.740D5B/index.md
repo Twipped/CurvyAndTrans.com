@@ -84,6 +84,10 @@ The problem was, Tier 5 and 6 required that you had to be exclusively attracted 
 
 In 2011 the HBIGDA reorganized itself to respond to mounting pressures in trans understanding and acceptance, taking on the new name World Professional Association for Transgender Health (WPATH). Under guidance by actual transgender people (a first for the organization), WPATH then proceeded to release an entirely new Standards of Care (version 7, the first in ten years) which abandoned the Benjamin Scale, focusing on specific individual symptoms and disconnecting gender from sexuality entirely. Two years later, in 2013, the American Psychiatric Association changed their diagnostic criteria to match the WPATH SoC in their Diagnostic and Statistical Manual of Mental Disorders (DSM) version 5, replacing Gender Identity Disorder with Gender Dysphoria. With this change, medical transition became available to all trans people in the United States.
 
+This is why trans presence across the world has suddenly exploded in the last decade. With easier access comes larger numbers, with larger numbers comes more visibility, with more visibility comes more awareness, and with more awareness comes more people accessing treatment. [A study conducted in 2014](https://williamsinstitute.law.ucla.edu/wp-content/uploads/TransAgeReport.pdf) showed 0.6% of adults and 0.7% of youth in the United States identified as transgender, [a study conducted in 2016](https://www.cdc.gov/mmwr/volumes/68/wr/mm6803a3.htm) showed 1.8% of high school age students identified as transgender, and [a survey conducted by GLAAD in 2017](https://www.glaad.org/files/aa/2017_GLAAD_Accelerating_Acceptance.pdf) showed a whopping 12% of respondents 18 to 34 did not identify as cisgender.
+
+Transgender people are coming out of the woodwork, we are everywhere.
+
 #### So What Is Gender Dysphoria?
 
 > **Dys·pho·ri·a** - *Noun*   

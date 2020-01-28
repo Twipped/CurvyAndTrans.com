@@ -19,6 +19,7 @@ tweets:
   - '1153300370631741440'
   - '1153300372468801536'
   - '1153300374133981186'
+  - '1221970265862811650'
 ---
 
 <!--[-->^^^<style>
@@ -141,15 +142,21 @@ Finally, another very common coping mechanism is to find means of escapement or 
 
 Society in general is very good about making trans people doubt themselves. We receive tons and tons of subliminal messages through out our lives saying that being trans isn't normal and that anyone who is has to be exceptionally special. Cis media's obsession with the "born in the wrong body" narrative has led to a lot of false information being internalized by trans youth. Many, *many* trans kids grow up thinking they aren't actually trans because they don't *know* that they are a different gender, they just wish they were.
 
-On top of this, messages saying that trans people hate their bodies or hate their genitalia has polluted the awareness landscape, so that many people who either do not experience physical dysphoria (or simply think theirs isn't very strong) go around believing they aren't "trans enough".
+On top of this, messages saying that trans people hate their bodies or hate their genitalia have polluted the awareness landscape, so that many people who either do not experience physical dysphoria (or simply think theirs isn't very strong) go around believing they aren't "trans enough".
 
 ***[YES, YOU ARE TRANS ENOUGH](https://www.amazon.com/Yes-You-Are-Trans-Enough/dp/1785923153/)***
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1221970265862811650'
+) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
 
 On top of this, the constant messaging from transphobic media that trans people are not actually their true genders and are simply trying to trick people into believing otherwise gets internalized like a virus. This creates a lot of self doubt about the authenticity of one's gender, especially in the face of so many gender stereotypes. Seeing ones self fail to meet those stereotypes can make it very easy to convince yourself that you do not live up to your own gender (note, cis men and women get this too, far too often).
 
 Furthermore, due to a history of transphobic abuse, many trans people suffer from damaged self-esteems, and often already have difficulty with self doubts. Gender Dysphoria also causes depression, which further contributes to and reinforces those doubts. This all leads into a massive cluster of self invalidation that can lead someone to struggle over and over again to accept their own gender identity.
 
 But here's the thing... only trans people are worried about if they are actually transgender! A cisgender person does not have this obsession with their identity, they think about it, they process it, they move on. If you keep returning to these thoughts over and over again, this is your brain telling you that you took a wrong turn.
+
+The world is *full* of influences put in place to fill us with doubt and keep us from breaking outside of the established social order. These
 
 #### Autogynephilia
 
@@ -175,7 +182,6 @@ AGP had been thoroughly dismissed by modern psychology by the late 2000s, but th
 Trans women then internalize these messages, and come to the conclusion that they are not actually transgender, just fetishists. It happened to me, it's happened to nearly every millennial trans woman I know who figured themselves out as a teen.
 
 You are not a fetishist, the feeling you get from thinking of yourself as a woman is gender euphoria.
-
 
 #### Patriarchal Oppression
 
