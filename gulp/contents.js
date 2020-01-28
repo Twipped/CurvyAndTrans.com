@@ -87,6 +87,38 @@ async function reloadLayouts () {
   pending = await Promise.all(pending);
 
   pending.forEach(([ name, file ]) => handlebars.registerPartial(name, handlebars.compile(file)));
+
+  const injections = {};
+  handlebars.registerHelper('inject', function (tpath, ...args) {
+    const { hash } = args.pop();
+    const context = Object.create(args[0] || this);
+    Object.assign(context, hash || {});
+
+    if (tpath[0] === '/') tpath = path.join(context.local.root, tpath);
+    if (tpath[0] === '~') tpath = path.join(context.local.cwd, tpath.slice(2));
+    tpath += '.hbs';
+
+    if (!injections[tpath]) {
+      if (!fs.existsSync(tpath)) {
+        log.error('Template does not exist for injection ' + path.relative(ROOT, tpath));
+        return '';
+      }
+
+      try {
+        injections[tpath] = handlebars.compile(fs.readFileSync(tpath).toString('utf8'));
+      } catch (e) {
+        log.error('Could not load injection template ' + path.relative(ROOT, tpath), e);
+        return '';
+      }
+    }
+
+    try {
+      return new handlebars.SafeString(injections[tpath](context));
+    } catch (e) {
+      log.error('Could not execute injection template ' + path.relative(ROOT, tpath), e);
+      return '';
+    }
+  });
 }
 
 
@@ -434,12 +466,20 @@ function parseTweets () {
 
 function parseContent () {
   return asyncthrough(async (stream, file) => {
+    const cwd = path.dirname(file.path);
     const flags = file.flags;
     let original = file.contents.toString('utf8').trim();
     original = original.replace(/\{!\{([\s\S]*?)\}!\}/mg, (match, contents) => {
       try {
-        const result = handlebars.compile(contents)({ ...file.meta, meta: file.meta });
-        // console.log(result);
+        const result = handlebars.compile(contents)({
+          ...file.meta,
+          meta: file.meta,
+          local: {
+            cwd,
+            root: ROOT,
+            basename: file.basename,
+          },
+        });
         return result;
       } catch (e) {
         log.error(e);
