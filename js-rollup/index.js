@@ -6,7 +6,7 @@ import htmlGrid from '../templates/index-grid.hbs.html';
 import htmlGridCard from '../templates/index-card.hbs.html';
 import htmlTweet from '../templates/post-tweets.hbs.html';
 import { groupBy, reduce, debounce } from 'lodash';
-import { first, date, is, any } from 'hbs-kit';
+import { first, date, is, any, array } from 'hbs-kit';
 
 Handlebars.registerPartial('indexCard', Handlebars.compile(htmlGridCard));
 Handlebars.registerPartial('tweets', Handlebars.compile(htmlTweet));
@@ -16,7 +16,7 @@ Handlebars.registerHelper('date', date(Handlebars));
 Handlebars.registerHelper('first', first(Handlebars));
 Handlebars.registerHelper('is', is(Handlebars));
 Handlebars.registerHelper('any', any(Handlebars));
-Handlebars.registerHelper('array', (...args) => { args.pop(); return args; });
+Handlebars.registerHelper('array', array(Handlebars));
 
 
 const IndexView = Backbone.View.extend({

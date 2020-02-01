@@ -50,7 +50,7 @@
     "gulp-rev": "~9.0.0",
     "gulp-sass": "~4.0.2",
     "handlebars": "~4.5.3",
-    "hbs-kit": "~1.0.1",
+    "hbs-kit": "~1.1.0",
     "image-size": "~0.8.3",
     "lodash": "~4.17.15",
     "make-fetch-happen": "~7.1.0",

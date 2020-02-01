@@ -5,9 +5,12 @@ const D = require('date-fns');
 const { chunk, uniq, findIndex, sortBy, groupBy, keyBy, reduce, omit, difference } = require('lodash');
 const log = require('fancy-log');
 const glob = require('./lib/glob');
-const slugify = require('slugify');
 const getDimensions = require('./lib/dimensions');
 const memoize = require('memoizepromise');
+
+const slugs = require('slugify');
+const slugify = (s) => slugs(s, { remove: /[*+~.,()'"!?:@/\\]/g }).toLowerCase();
+
 
 const { src, dest } = require('gulp');
 const frontmatter = require('gulp-front-matter');
@@ -28,19 +31,6 @@ const tweetparse = require('./lib/tweetparse');
 const handlebars = require('handlebars');
 const HandlebarsKit = require('hbs-kit');
 HandlebarsKit.load(handlebars);
-handlebars.registerHelper('nl2br', (input) => String(input).replace(/(\r\n|\n\r|\r|\n)/g, '<br>'));
-handlebars.registerHelper('get', (target, key) => (target ? target[key] : undefined));
-handlebars.registerHelper('array', (...args) => { args.pop(); return args; });
-handlebars.registerHelper('odd', (value, options) => {
-  const result = !!value % 2;
-  if (!options.fn) return result;
-  return result ? options.fn(this) : options.inverse(this);
-});
-handlebars.registerHelper('even', (value, options) => {
-  const result = !(value % 2);
-  if (!options.fn) return result;
-  return result ? options.fn(this) : options.inverse(this);
-});
 
 const md     = markdown({
   html: true,
@@ -52,6 +42,7 @@ const md     = markdown({
     permalink: true,
     permalinkClass: 'header-link fas fa-link',
     permalinkSymbol: '',
+    slugify,
   })
   .use(require('markdown-it-include'), path.join(ROOT, '/includes'))
   .use(require('./lib/markdown-raw-html'))
@@ -220,7 +211,7 @@ function parseMeta () {
     var flags = file.flags = new Set(file.meta.classes || []);
     var isIndexPage = path.basename(file.path) === 'index.md';
 
-    file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title, { remove: /[*+~.,()'"!:@/\\]/g }).toLowerCase()) || D.format(date, 'yyyy-MM-dd-HHmm');
+    file.meta.slug = file.meta.slug || (file.meta.title && slugify(file.meta.title)) || D.format(date, 'yyyy-MM-dd-HHmm');
     file.meta.url = '/p/' + file.meta.id + '/' + file.meta.slug + '/';
     file.meta.fullurl = siteInfo.rss.site_url + file.meta.url;
     file.meta.originalpath = path.relative(file.cwd, file.path);
@@ -231,7 +222,7 @@ function parseMeta () {
     }
 
     file.meta.tags = (file.meta.tags || []).reduce((result, tag) => {
-      result[slugify(tag).toLowerCase()] = tag;
+      result[slugify(tag)] = tag;
       return result;
     }, {});
 
