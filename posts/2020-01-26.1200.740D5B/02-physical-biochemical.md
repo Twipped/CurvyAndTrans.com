@@ -17,6 +17,14 @@ tweets:
   - '1215740224325783553'
   - '1215716438972993536'
   - '1220143004821938176'
+  - '1222738910821978113'
+  - '1222739427312750594'
+  - '1222740261178105856'
+  - '1222742135067303937'
+  - '1222743360034758656'
+  - '1222743749920464896'
+  - '947522372315369472'
+  - '947523244948680705'
 ---
 
 <!--[-->^^^<style>
@@ -72,11 +80,24 @@ It's ok if you don't need medical transition *at all*. Body feelings are not the
 
 **Total body physical dysphoria is not a requirement to be transgender. AFABs do not have to hate their chest, AMABs do not have to hate their penis. Every trans person's experience is different. All are valid.**
 
+### Internalized Body Image Issues
+
+The world is full of subconscious messages about how men and women's bodies should be shaped. We are bombarded with advertising and media creating a normalized view of what is and is not beautiful. Don't be too fat, don't be too skiny, don't be too tall, don't be too short, don't have too broad of a chin, don't have too large of a nose, wear makeup but don't wear too much makeup, don't leave the house without a bra, but don't let the bra show. On and on and on, the constant barrage of expectations of gendered appearance.
+
+Everyone absorbs these messages, and trans people internalize the factors which matter to the gender they align with. Trans girls grow up mapping feminine standards onto themselves, trans boys map masculine standards on to themselves, and enbies often internalize shame around androgyny. This is *on top* of the shame they are loaded with for not living up to their assigned gender's standards.
+
+What is the end result of this? Kathryn said it best:
+
+^^^<!--[-->{!{ {{> tweets ids=(array
+    '947522372315369472'
+    '947523244948680705'
+) tweets=meta.tweets className="grid-row" }} }!}<!--]-->^^^
+
 ## Biochemical Dysphoria
 
-The primary sexual features of the body begin development during the 8th week of human gestation. Typically by week 11 it is possible to determine the genitals of a uterus via ultrasound. The brain, however, forms itself in [between weeks 14 and 24](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2989000/#Sec5title). Current prevaling understanding of neurological development suggests that it is during these 10 weeks when the brain will either masculinize or feminize based upon the presense of testosterone in the infant's bloodstream (initiated by the SRY gene on the Y chromosome, or introduced from other sources). This process locks the brain into a pattern of either desiring estrogens or androgens.
+The primary sexual features of the body begin development during the 8th week of human gestation. Typically by week 11 it is possible to determine the genitals of a fetus via ultrasound. The brain, however, forms itself in [between weeks 14 and 24](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2989000/#Sec5title). Current prevailing understanding of neurological development suggests that it is during these 10 weeks when the brain will either masculinize or feminize based upon the presence of testosterone in the infant's bloodstream (initiated by the SRY gene on the Y chromosome, or introduced from other sources). This process locks the brain into a pattern of either desiring estrogens or androgens.
 
-If your brain is wired for one gonadal hormones (such as testosterone) and your body produces the other hormone (such as estradiol), this can result in a biochemical malfunction within your brain chemistry. This produces a sort of brain fog, a reduction in mental capacity, and a general state of anxiety and unease. This is the source of the first two symptoms that often alleviate with medical hormonal therapy, depersonalization and derealization (DPDR).
+If your brain is wired for one gonadal hormones (such as testosterone) and your body produces the other hormone (such as estradiol), this can result in a biochemical malfunction within your brain chemistry. This produces a sort of brain fog, a reduction in mental capacity, and a general state of anxiety and unease. This is the source of the first two symptoms that often alleviate with medical hormonal therapy, Depersonalization and Derealization (DPDR).
 
 ^^^<a class="card ig-card right span3" href="https://www.instagram.com/p/B4fwhWAH2F-/">
   <div class="ig-header">
@@ -151,9 +172,30 @@ The intensity of physical and biochemical dysphoria is highly influenced by othe
 
 There are dozens of systems in the body that all work in tandem, and they all fluctuate from day to day, manipulating general mental state. This general dysphoria can amplify the affect of all other dysphoria. One day you can shrug off misgendering like it's nothing, and then the next it hurts like a stab in the heart every time. One day you see yourself in the mirror, the next you're staring at the old you.
 
-Some people experience this in a genderfluid way, with some days feeling very male and others feeling very female. Others just feel it like a seasonal river; sometimes it swells because of rains up stream, sometimes it slows to a trickle because of drought.
+Some people experience this in a genderfluid way, with some days leaning male, same days leaning female, and other days not feeling any gender, or both. Others just feel it like a seasonal river; sometimes it swells because of rains up stream, sometimes it slows to a trickle because of drought.
 
 All of this is valid, and just because you feel very dysphoric one day and not dysphoric the next does not mean that you aren't really trans.
+
+### This Happens Both Ways
+
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1222738910821978113'
+  '1222739427312750594'
+  '1222740261178105856'
+  '1222742135067303937'
+  '1222743360034758656'
+  '1222743749920464896'
+) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
+
+Sometimes you will hear naysayers suggesting that taking hormone therapy always improves mental health. I heard this myself when I came out to my mother. "Estrogen makes everyone happier." This is flat out false. When cis people are put on cross hormone therapy it always results in dysphoria. This is one reason why Spironolactone is rarely ever prescribed to men, because the anti-androgen factor causes mental instability. Five to ten percent of cis women suffer from Polycystic Ovarian Syndrome (PCOS), a condition which causes the ovaries to produce testosterone instead of estrogen. Ask any one of them how their mental health has been, and they will give you an ear full.
+
+One very potent demonstration of this is the tragic case of [David Reimer](https://en.wikipedia.org/wiki/David_Reimer). At seven months of age David and his twin brother were given circumcisions to treat a bad case of phimosis (a skin condition on the foreskin). David's went horribly wrong, and the penis was destroyed. The decision was made to perform vaginoplasty and raise him as a girl, including estrogen therapy at pubescence. By the age of 13 he was deep into suicidal depression and suffering greatly, as no amount of coaching and encouraging can make a boy enjoy being a girl. When his parents informed him of what had happened, he returned to a male presentation, switched to testosterone therapy, and over the course of his teen years had multiple operations in order to transition back to male.
+
+People know when they're living the wrong gender.
+
+Psychologist John Money oversaw David's case and was largely responsible for the decisions that were made in David's upbringing. Money, seeking to make a name for himself, massively misreported on David's case, calling it a complete success in his reports. The result of this echoes to this day, as Money's reports were used as an example of why performing genital corrective surgeries on intersex infants was an appropriate course of action. Fifty years later there are still doctors who believe that you can just change a child's genitals and raise them as that gender, and it will stick.
+
+This is the tragedy of the [intersex](https://en.wikipedia.org/wiki/Intersex) community. Roughly one in every 60 births results in some kind of intersex condition (tho not all of these are related to genitalia). Often times the "corrective" procedures used on intersex children results in a loss of function and/or sensation. Far too frequently, doctors would opt towards forced female assignment because it was easier to construct a vulva than a penis.
 
 ^^^<ul class="nav nav-fill pager">
   <li class="nav-item">

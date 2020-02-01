@@ -28,6 +28,7 @@ tweets:
   - '1216111083997605888'
   - '1216112014411599877'
   - '1219968711681040384'
+  - '1137185510793678848'
 ---
 
 <!--[-->^^^<style>
@@ -84,8 +85,17 @@ Some physical traits which may cause discomfort all the time for some trans peop
 
 I, myself, have no direct physical dysphoria around my voice, I actually really enjoy singing in my natal baritone, and when I am home with just my family I let me voice relax. When out in public, however, being able to speak in a feminine voice plays a critical role in my being seen as a woman by strangers, so I put a lot of effort into training it into a feminine sound. My feminine voice turns on the instant I answer the phone or leave the house, it isn't even a conscious thing.
 
+#### "One of us!"
 
+A very curious and surprisingly phenomenon is that closeted trans people have a tendency to find each other without ever knowing they've done it. There's a funny pattern that I have heard duplicated over and over where one person in a friend group realizes they are transgender, starts to transition, and that inspires other members of the group to also realize they are trans and come out as well.
 
+^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+  '1137185510793678848'
+) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+
+Trans people subconsciously tend to gravitate towards each others friendships, both out of a need for peers who think and act the same as us without judgments, and due to a kinship of social ostracization. This is not exclusive to trans people, of course, the same happens for all types of queers, but the way it has a rippled effect is quite powerful. It's very similar to the way an entire friend group will get married and have kids all in response to one member of the group initiating.
+
+Trans people often continue to self-select their groups post-transition as well, as we simply understand each other better than cis people can. There is an energy that occurs when a group of trans people get together in a location, the room becomes charged with camaraderie and commiseration. We all have so much in common in our histories, so many shared experiences, that short of personality conflicts we instantly bond together.
 
 
 ## Societal Dysphoria
