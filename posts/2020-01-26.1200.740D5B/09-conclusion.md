@@ -1,25 +1,14 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "Gender Dysphoria: What it is, and what it isn't."
+title: "The Gender Dysphoria Bible"
 subtitle: "Conclusion"
 slug: gender-dysphoria
 description: "Enough with the gatekeeping already."
 classes:
   - no-date
-  - no-subtitle
 no-images: true
 ---
-
-<!--[-->^^^<style>
-  .post-content h2 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-    /*margin-top: 1.5em;*/
-  }
-</style>{!{ {{inject '~/disclaimer'}}{{inject '~/menu' active=9}} }!}^^^<!--]-->
-
-## Conclusion
 
 Every single year we get new studies that show an increase in the size of the transgender population. As awareness continues to grow, more and more people are realizing what has been wrong with their lives and are coming out of the closet. People who transitioned decades ago are coming out of stealth. GLAAD estimates as much as 3% of the population could be transgender, and I have seen numbers as high as 5% or even 10% from more liberal estimations. The more we come to understand about gender, the more language we gain to describe gender, the more people realize that the rigid Male and Female sexual structure that we have been forced into is false.
 

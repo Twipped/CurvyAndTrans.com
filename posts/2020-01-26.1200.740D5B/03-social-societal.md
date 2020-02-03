@@ -1,8 +1,8 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "How Gender Dysphoria Manifests"
-subtitle: "Social, Societal and Sexual Dysphoria"
+title: "The Gender Dysphoria Bible"
+subtitle: "How Gender Dysphoria Manifests: Social, Societal and Sexual Dysphoria"
 slug: gender-dysphoria
 description: "Gender constructs, contraptions and confusions"
 classes:

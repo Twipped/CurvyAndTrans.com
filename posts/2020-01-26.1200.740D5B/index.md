@@ -1,14 +1,14 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "Gender Dysphoria"
-subtitle: "What it is, and what it isn't."
+title: "The Gender Dysphoria Bible"
 slug: gender-dysphoria
-description: "I dive into the common misconceptions about how gender dysphoria manifests and what it means to be transgender."
+description: "A dive into the multitude of ways that gender dysphoria manifests and what it means to be transgender."
 tags:
   - Transgender
   - Gender Dysphoria
   - Medical
+  - Top Post
 no-images: true
 ---
 

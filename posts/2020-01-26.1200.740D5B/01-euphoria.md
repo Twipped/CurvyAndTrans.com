@@ -1,8 +1,8 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "How Gender Dysphoria Manifests"
-subtitle: "Euphoria"
+title: "The Gender Dysphoria Bible"
+subtitle: "How Gender Dysphoria Manifests: Euphoria"
 slug: gender-dysphoria
 description: "In order for there to be shadow there must be light."
 

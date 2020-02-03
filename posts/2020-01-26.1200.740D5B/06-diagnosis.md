@@ -1,8 +1,8 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "Gender Dysphoria"
-subtitle: "Management and Diagnosis"
+title: "The Gender Dysphoria Bible"
+subtitle: "Diagnosis"
 slug: gender-dysphoria
 description: "I just hate having hair... anywhere"
 classes:

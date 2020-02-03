@@ -1,8 +1,8 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "How Gender Dysphoria Manifests"
-subtitle: "Presentational and Historical Dysphoria"
+title: "The Gender Dysphoria Bible"
+subtitle: "How Gender Dysphoria Manifests: Presentational and Historical Dysphoria"
 slug: gender-dysphoria
 description: "Hoodies and sweatpants never go out of style."
 classes:

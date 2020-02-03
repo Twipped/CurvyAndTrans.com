@@ -1,8 +1,8 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "How Gender Dysphoria Manifests"
-subtitle: "Physical Dysphoria"
+title: "The Gender Dysphoria Bible"
+subtitle: "How Gender Dysphoria Manifests: Physical Dysphoria"
 slug: gender-dysphoria
 description: "When body parts attack."
 classes:

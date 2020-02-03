@@ -1,7 +1,7 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "Gender Dysphoria"
+title: "The Gender Dysphoria Bible"
 subtitle: "Treatment"
 slug: gender-dysphoria
 description: "To medicate or not to medicate, only you can decide."

@@ -1,8 +1,8 @@
 ---
 id: "740D5B"
 date: "2020-01-26T20:41:55.827Z"
-title: "How Gender Dysphoria Manifests"
-subtitle: "Managed Dysphoria"
+title: "The Gender Dysphoria Bible"
+subtitle: "Managed Dysphoria, Impostor Syndrome and Self Doubt"
 slug: gender-dysphoria
 description: "I just hate having hair... anywhere"
 classes:
