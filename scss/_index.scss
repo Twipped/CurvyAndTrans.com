@@ -28,7 +28,7 @@
       }
     }
 
-    @include media-breakpoint-down(sm) {
+    @media (max-width: 425px) {
       .btn span {
         display: none;
       }

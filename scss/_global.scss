@@ -63,8 +63,15 @@ header {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-  @include media-breakpoint-up(md) {
-    grid-template-columns: 2fr 0.5fr 400px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "catchphrase"
+    "nav-external"
+  ;
+
+  @media (min-width: 700px) {
+    grid-template-columns: 2fr min-content min-content;
     grid-template-areas:
       "logo . nav-external"
       "catchphrase catchphrase nav-external"
@@ -72,13 +79,13 @@ header {
     grid-template-rows: 1fr min-content;
   }
 
-  @include media-breakpoint-down(sm) {
-    grid-template-columns: 1fr;
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "logo"
-      "catchphrase"
-      "nav-external"
+      "logo nav-external"
+      "catchphrase nav-external"
     ;
+    grid-template-rows: 1fr min-content;
   }
 
   h1, .catchphrase {
@@ -95,8 +102,10 @@ header {
     line-height: 1.2em;
     color: #222;
     margin: 0;
+    white-space: nowrap;
+    align-self: center;
 
-    @include media-breakpoint-up(md) {
+    @media (min-width: 700px) {
       font-size: 42px;
     }
   }
@@ -119,46 +128,57 @@ header {
     display: grid;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat( 4, 1fr );
     align-items: center;
     justify-items: stretch;
+    padding: 10px 0 0;
 
     .btn {
-      min-width: 100px;
-
       white-space: nowrap;
-      font-size: 14px;
+      font-size: 10px;
       line-height: 1.6;
       background: rgba(255,255,255,0.6);
+      transition: all linear 0.1s;
 
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
 
       i {
-        font-size: 18px;
+        font-size: 20px;
+        margin: 0.2rem 0 0 0;
+      }
+
+      &:hover {
+        color: black;
+        text-shadow: 0 1px 4px rgba($blue,0.8);
+        background-color: white;
       }
     }
 
-    @include media-breakpoint-down(sm) {
-      padding: 10px 0;
+    @media (min-width: 425px) and (max-width: 1025px) {
+      .btn {
+        flex-direction: row;
+        // font-size: 12px;
 
+        i {
+          font-size: 16px;
+          margin: 0 0.25rem 0 0;
+        }
+      }
+    }
+
+    @media (min-width: 600px) {
       .btn {
         font-size: 12px;
       }
     }
 
-    // @include media-breakpoint-up(md) {
-    //   align-self: center;
-    //   text-align: right;
-    // }
-  }
-
-  i.fa-envelope {
-    font-size: 0.8em;
-    line-height: 1em;
-    top: -0.1em;
-    position: relative;
+    @media (min-width: 1025px) {
+      grid-auto-columns: 1fr;
+      grid-auto-flow: column;
+    }
   }
 
   .catchphrase {
