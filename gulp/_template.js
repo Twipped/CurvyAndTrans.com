@@ -8,7 +8,5 @@ title: ""
 description: "Outfit of the Day for ${format(date, 'MMM do, yyyy')}"
 tags:
   - OOTD
-products:
-  "Description": https://www.amazon.com/exec/obidos/ASIN/A000000000/curvyandtrans-20
 ---
 `;

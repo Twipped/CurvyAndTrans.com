@@ -11,7 +11,7 @@ const template = require('./_template');
 const ROOT = path.dirname(__dirname);
 
 module.exports = exports = async function newPost () {
-  var date = parse(argv.date, 'yyyy-MM-dd', new Date());
+  var date = argv.date ? parse(argv.date, 'yyyy-MM-dd', new Date()) : new Date();
 
   if (!date.getHours()) {
     const now = new Date();
