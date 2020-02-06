@@ -27,7 +27,7 @@ tweet:
 
 The question above was posed to me today, and the answer is just too large for a twitter thread, so I figure I might as well write about it here. **The following descriptions are based on my own experience and are not universal, different people experience sex drive differently.**
 
-!!!include(adsense-in-article.md)!!!
+<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 I'm going to break libido down into three distinct elements:
 
@@ -63,7 +63,7 @@ Some of this was definitely a hormonal drive, some of it was a result of gender 
 
 Climax, when it did occur naturally, always felt like a buildup of energy entirely in the groin, which would then suddenly fire off as it exploded forward through the penis. My pelvic floor would spasm repeatedly to trigger ejaculation and my legs would go rigid. Then I would fall into refractory period where everything would fall off. My sex drive would be gone, and I would be spent for at least an hour or two.
 
-!!!include(adsense-in-article.md)!!!
+<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### Estrogen Libido (early days to present)
 
@@ -85,7 +85,7 @@ The big brain orgasm happens much differently, however. The more turned on I get
 
 After it passes you're left stunned and immobile, trying to catch your breath, but then it starts to build again, and faster this time, and you get hit with aftershocks. It doesn't have to stop there, tho, there is no refractory period, you can just keep going until either you or your partner are exhausted. You're left in an afterglow so intense that it persists for hours, maybe even a day. The old TV trope where a woman coming to work extra bubbly because she got laid the night before? Totally real.
 
-!!!include(adsense-in-article.md)!!!
+<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### Post-Transition
 

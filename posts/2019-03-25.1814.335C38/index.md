@@ -12,8 +12,7 @@ products:
   "Vialumi Women's Junior Plus Size Cropped Strappy Camisole (2X/3X, White)": https://www.amazon.com/exec/obidos/ASIN/B07GQ11R9P/curvyandtrans-20
   "Pretoday Women's Summer Batwing Kimono Cardigan (XXL, White)": https://www.amazon.com/exec/obidos/ASIN/B07DC96176/curvyandtrans-20
 instagram: https://www.instagram.com/p/BvdMMUInDgC/
-classes:
-  - double-column
+draft: true
 ---
 Look upon mine field and behold, for there be no fucks to dispense.
 

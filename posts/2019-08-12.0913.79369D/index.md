@@ -2,9 +2,10 @@
 id: "79369D"
 date: "2019-08-12T16:13:00.000Z"
 title: "Mauve in Movement"
-description: "Outfit of the Day for Aug 12th, 2019"
+description: "Shopping Affirmations"
 tags:
   - OOTD
+  - Transgender
 products:
   "Torrid Mauve Purple Jersey Strappy Handkerchief Dress": https://www.torrid.com/product/mauve-purple-jersey-strappy-handkerchief-dress/11926045.html
 classes:

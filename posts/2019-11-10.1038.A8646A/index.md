@@ -5,5 +5,6 @@ title: "You're gonna love the way you look"
 description: ""
 tags:
   - Transgender
+orientation: wide
 ---
 It’s moments like these when I glance in the mirror during my day to day and just love what I see that make everything so worthwhile.
