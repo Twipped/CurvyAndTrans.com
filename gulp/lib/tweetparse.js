@@ -1,75 +1,58 @@
 var twemoji = require('twemoji' );
+const { deepPick, has } = require('./util');
 
-module.exports = exports = function (tweets) {
-  return Array.isArray(tweets) ? tweets.map(parseTweet) : parseTweet(tweets);
+const schema = {
+  id_str: true,
+  created_at: true,
+  user: {
+    screen_name: true,
+    avatar: true,
+    name_html: true,
+    verified: true,
+    protected: true,
+  },
+  html: true,
+  quoted_status: {
+    user: {
+      screen_name: true,
+      avatar: true,
+      name_html: true,
+      verified: true,
+      protected: true,
+    },
+  },
+  entities: { media: [ {
+    type: true,
+    media_url_https: true,
+    video_info: { variants: [ {
+      url: true,
+      content_type: true,
+    } ] },
+  } ] },
+  media: 1,
+};
 
-  function parseTweet (tweet) {
-    var entityProcessors = {
-      hashtags: processHashTags,
-      symbols: processSymbols,
-      user_mentions: processUserMentions,
-      urls: processUrls,
-      media: processMedia,
-    };
-
-    var entities = tweet.entities;
-    var processorObj;
-
-    tweet.user.avatar = {
-      input: tweet.user.profile_image_url_https,
-      output: 'tweets/' + tweet.user.screen_name + '.jpg',
-    };
-
-    tweet.media = [
-      tweet.user.avatar,
-    ];
-
-    // Copying text value to a new property html. The final output will be set to this property
-    tweet.html = (tweet.full_text || (tweet.full_text || tweet.text)).replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
-
-    if (tweet.quoted_status) {
-      exports(tweet.quoted_status);
-    }
-
-    // Process entities
-    if (Object.getOwnPropertyNames(entities).length) {
-      Object.keys(entities).forEach((entity) => {
-        if (entities[entity].length) {
-          processorObj = entities[entity];
-
-          // Need to check if entity is media. If so, extended_entities should be used
-          processorObj = entity === 'media' ? tweet.extended_entities.media : processorObj;
-
-          entityProcessors[entity](processorObj, tweet);
-        }
-      });
-    }
-
-    // Process Emoji's
-    tweet.html = twemoji.parse(tweet.html);
-    tweet.user.name_html = twemoji.parse(tweet.user.name);
-
-    return tweet;
-  }
-
-  function processHashTags (tags, tweet) {
+var entityProcessors = {
+  hashtags (tags, tweet) {
     tags.forEach((tagObj) => {
       var anchor = ('#' + tagObj.text).link('http://twitter.com/hashtag/' + tagObj.text);
       tweet.html = tweet.html.replace('#' + tagObj.text, anchor);
     });
-  }
+  },
 
-  function processSymbols (symbols, tweet) {} // eslint-disable-line
+  symbols (/* symbols, tweet */) {
 
-  function processUserMentions (users, tweet) {
+  },
+
+  user_mentions (users, tweet) {
     users.forEach((userObj) => {
       var anchor = ('@' + userObj.screen_name).link('http://twitter.com/' + userObj.screen_name);
       var regex = new RegExp('@' + userObj.screen_name, 'gi' );
       tweet.html = tweet.html.replace(regex, anchor);
     });
-  }
+  },
 
-  function processUrls (urls, tweet) {
+  urls (urls, tweet) {
     urls.forEach((urlObj) => {
       var quotedTweetHtml = '';
       var indices = urlObj.indices;
@@ -78,9 +61,9 @@ module.exports = exports = function (tweets) {
       var finalText = quotedTweetHtml || urlObj.display_url.link(urlObj.expanded_url);
       tweet.html = tweet.html.replace(urlToReplace, finalText);
     });
-  }
+  },
 
-  function processMedia (media, tweet) {
+  media (media, tweet) {
     media.forEach((mediaObj) => {
       tweet.html = tweet.html.replace(mediaObj.url, '');
       return;
@@ -107,6 +90,49 @@ module.exports = exports = function (tweets) {
       //   tweet.html = tweet.html.replace(mediaObj.url, video);
       // }
     });
+  },
+};
+
+module.exports = exports = function (tweets) {
+  return Array.isArray(tweets) ? tweets.map(parseTweet) : parseTweet(tweets);
+
+  function parseTweet (tweet) {
+    // clone the tweet so we're not altering the original
+    tweet = JSON.parse(JSON.stringify(tweet));
+
+    tweet.user.avatar = {
+      input: tweet.user.profile_image_url_https,
+      output: 'tweets/' + tweet.user.screen_name + '.jpg',
+    };
+
+    tweet.media = [
+      tweet.user.avatar,
+    ];
+
+    // Copying text value to a new property html. The final output will be set to this property
+    tweet.html = (tweet.full_text || (tweet.full_text || tweet.text)).replace(/(\r\n|\n\r|\r|\n)/g, '<br>');
+
+    if (tweet.quoted_status) {
+      tweet.quoted_status = parseTweet(tweet.quoted_status);
+    }
+
+    if (has(tweet, 'entities.media') && has(tweet, 'extended_entities.media')) {
+      tweet.entities.media = tweet.extended_entities.media;
+      delete tweet.extended_entities;
+    }
+
+    // Process entities
+    if (Object.getOwnPropertyNames(tweet.entities).length) {
+      for (let [ entityType, entity ] of Object.entries(tweet.entities)) { // eslint-disable-line prefer-const
+        entityProcessors[entityType](entity, tweet);
+      }
+    }
+
+    // Process Emoji's
+    tweet.html = twemoji.parse(tweet.html);
+    tweet.user.name_html = twemoji.parse(tweet.user.name);
+
+    return deepPick(tweet, schema);
   }
 
 };
