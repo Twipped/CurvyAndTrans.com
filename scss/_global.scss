@@ -433,6 +433,8 @@ header {
     }
   }
 
+  &.hide-reply .tweet-text a.mention:first-child { display: none; }
+
   &.collapse:not(.grid-row) {
     .tweet-item {
       padding-bottom: 0.5em;

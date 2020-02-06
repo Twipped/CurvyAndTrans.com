@@ -29,14 +29,13 @@ const schema = {
       content_type: true,
     } ] },
   } ] },
-  media: 1,
+  media: true,
 };
 
 var entityProcessors = {
   hashtags (tags, tweet) {
     tags.forEach((tagObj) => {
-      var anchor = ('#' + tagObj.text).link('http://twitter.com/hashtag/' + tagObj.text);
-      tweet.html = tweet.html.replace('#' + tagObj.text, anchor);
+      tweet.html = tweet.html.replace('#' + tagObj.text, `<a href="https://twitter.com/hashtag/{tagObj.text}" class="hashtag">#${tagObj.text}</a>`);
     });
   },
 
@@ -46,9 +45,8 @@ var entityProcessors = {
 
   user_mentions (users, tweet) {
     users.forEach((userObj) => {
-      var anchor = ('@' + userObj.screen_name).link('http://twitter.com/' + userObj.screen_name);
       var regex = new RegExp('@' + userObj.screen_name, 'gi' );
-      tweet.html = tweet.html.replace(regex, anchor);
+      tweet.html = tweet.html.replace(regex, `<a href="https://twitter.com/${userObj.screen_name}" class="mention">@${userObj.screen_name}</a>`);
     });
   },
 
