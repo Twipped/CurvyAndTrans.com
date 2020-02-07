@@ -129,7 +129,7 @@ There are dozens of ways that chromosomes can be much more complex than XX and X
 
 - [Klinefelter Syndrome](https://en.wikipedia.org/wiki/Klinefelter_syndrome) (47,XXY) results in a phenotypically male child with more feminine traits. In extremely rare cases [it appears in female assigned children](https://www.ncbi.nlm.nih.gov/pubmed/15755052) as well, resulting in feminized testicles instead of ovaries.
 
-- [49,XXXXY Klinefelter Syndrome](https://en.wikipedia.org/wiki/49,XXXXY) is often fatal, but when not always results in a sterile child.
+- [49,XXXXY Klinefelter Syndrome](https://en.wikipedia.org/wiki/49,XXXXY) is often fatal, but when it isn't, it will always results in a sterile child.
 
 - [Trisomy X](https://en.wikipedia.org/wiki/Triple_X_syndrome) (47,XXX), [Tetrasomy X](https://en.wikipedia.org/wiki/Tetrasomy_X) (48,XXXX), and [Pentasomy X](https://en.wikipedia.org/wiki/49,_XXXXX) (49,XXXXX) all result in a female child, but with progressively more intense health issues.
 
