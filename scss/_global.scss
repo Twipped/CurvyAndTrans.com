@@ -419,7 +419,7 @@ header {
     }
   }
 
-  &.collapse {
+  &.collapse, &.oneblock {
     .tweet-item {
       .tweet-footer { display: none; }
     }
@@ -430,6 +430,21 @@ header {
 
     .tweet-item:last-child {
       .tweet-footer { display: block; }
+    }
+  }
+
+  &.oneblock {
+    padding: 20px;
+    max-height: unset;
+    &.borderless { border: none; padding: 0; }
+
+    .tweet-item {
+      border-top: none;
+      padding: 0;
+    }
+
+    .tweet-item + .tweet-item {
+      padding-top: 0.5em;
     }
   }
 
