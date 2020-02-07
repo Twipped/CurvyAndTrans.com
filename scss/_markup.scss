@@ -32,9 +32,11 @@ blockquote {
     content: "\201C";
     font-size: 70px;
     position: absolute;
-    left: -30px;
-    top: -20px;
-    color: $gray-600;
+    left: -7px;
+    top: -16px;
+    color: $blue;
+    text-shadow: 0 1px 3px rgba($blue,0.5);
+    opacity: 0.8;
   }
 
   p:last-child {
