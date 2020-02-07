@@ -50,6 +50,10 @@ The following changes that have been made to this document since release:
 - Social: Added a section about the tendency for trans folk to subconsciously self-select other trans folk.
 - Added the History and What is GD sections to the menu.
 
+**2/06/2020**
+
+- Major overhaul of the Causes of Gender Dysphoria page to include lots more information about chromosomal anomalies.
+
 :::
 
 ^^^<ul class="nav nav-fill pager">
