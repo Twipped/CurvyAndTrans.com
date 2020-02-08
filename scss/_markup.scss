@@ -261,6 +261,12 @@ li p + ul {
   &.by-three {
     grid-template-columns: repeat( auto-fit, minmax( 325px, 1fr ) );
   }
+
+  &.by-three-forced {
+    @include media-breakpoint-up(md) {
+      grid-template-columns: repeat( auto-fit, minmax( 30%, 1fr ) );
+    }
+  }
 }
 
 .spoiler {
