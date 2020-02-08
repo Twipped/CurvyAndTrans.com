@@ -9,9 +9,6 @@ classes:
   - no-date
   - no-subtitle
 no-images: true
-tweets:
-  - '1215746083487461379'
-  - '1215749725456125952'
 
 ---
 

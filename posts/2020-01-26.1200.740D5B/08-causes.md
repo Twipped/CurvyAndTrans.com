@@ -143,7 +143,7 @@ There are dozens of ways that chromosomes can be much more complex than XX and X
 
 - [Androgen Insensitivity Syndrome](https://en.wikipedia.org/wiki/Androgen_insensitivity_syndrome)(AIS) is a total or partial resistance to all androgens, preventing masculinization of all organs, save for the testicles, in an XY child. AIS subjects typically develop a female gender identity, but some partial cases may be male.
 
-- [5-alpha-reductase deficiency](https://en.wikipedia.org/wiki/5-alpha-reductase_deficiency)(5ARD) is a failure in the body's ability to metabolize testosterone into dihydrotestosterone (DHT), preventing masculinization of the genitalia until the unset of puberty, when the child suddenly grows a penis.
+- [5-alpha-reductase deficiency](https://en.wikipedia.org/wiki/5-alpha-reductase_deficiency)(5ARD) is a failure in the body's ability to metabolize testosterone into dihydrotestosterone (DHT), preventing masculinization of the genitalia until the onset of puberty, when the child suddenly grows a penis.
 
 - [Aromatase Deficiency](https://en.wikipedia.org/wiki/Aromatase_deficiency) causes masculinization of an otherwise female child due to excess levels of testosterone (and can bleed-over into the mother during gestation).
 
