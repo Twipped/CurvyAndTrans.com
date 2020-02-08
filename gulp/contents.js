@@ -140,9 +140,13 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
 
 function parseMeta () {
   const getFileData = memoize(async (id, cwd) => {
-    const imageFiles = await glob('?({0..9}){0..9}.{jpeg,jpg,png,gif,m4v}', { cwd });
+    const imageFiles = (await glob('*.{jpeg,jpg,png,gif,m4v}', { cwd }));
 
     const images = imageFiles.map((imgpath) => {
+      if (!imgpath.match(/^\d?\d?\d(?:-\d?\d)?.(?:jpe?g|png|gif|m4v)$/)) {
+        return null;
+      }
+
       const ext = path.extname(imgpath);
       const basename = path.basename(imgpath, ext);
       if (ext === '.m4v') {
@@ -161,7 +165,7 @@ function parseMeta () {
         preview2x: `/p/${id}/${basename}.pre2x.jpeg`,
         thumb: `/p/${id}/${basename}.thumb.jpeg`,
       };
-    });
+    }).filter(Boolean);
 
     const posterFile = (await glob('poster.{jpeg,jpg,png,gif}', { cwd }))[0];
 
