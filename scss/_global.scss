@@ -435,7 +435,7 @@ header {
 
   &.oneblock {
     padding: 20px;
-    max-height: unset;
+
     &.borderless { border: none; padding: 0; }
 
     .tweet-item {
@@ -445,6 +445,12 @@ header {
 
     .tweet-item + .tweet-item {
       padding-top: 0.5em;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &.oneblock:not(.right) {
+      max-height: unset;
     }
   }
 

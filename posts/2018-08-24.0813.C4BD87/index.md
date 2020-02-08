@@ -11,22 +11,58 @@ tags:
   - Medical
   - Essays
   - Top Post
+tweets:
+  - https://twitter.com/LifeofBria/status/1016753976211996672
+  - https://twitter.com/LifeofBria/status/1016832074961977345
+  - https://twitter.com/LifeofBria/status/1016842932458905600
+  - https://twitter.com/LifeofBria/status/1016845052327354368
+  - https://twitter.com/LifeofBria/status/1016848293186301953
+  - https://twitter.com/LifeofBria/status/1016849031828406272
+  - https://twitter.com/LifeofBria/status/1016850090458136578
+  - https://twitter.com/LifeofBria/status/1017114823635562496
+  - https://twitter.com/LifeofBria/status/1017115332736004096
+  - https://twitter.com/LifeofBria/status/1017116016457834496
+  - https://twitter.com/LifeofBria/status/1017116558340980736
+  - https://twitter.com/LifeofBria/status/1017117113117376512
+  - https://twitter.com/LifeofBria/status/1017117809510215680
+  - https://twitter.com/LifeofBria/status/1017119272290537474
+  - https://twitter.com/LifeofBria/status/1017161019733377024
+  - https://twitter.com/LifeofBria/status/1017181216292786177
 ---
 
-<a href="../1.jpeg"><img src="../1.jpeg" alt=""  style="margin: 0 auto;display: block;"></a>
 
+^^^<!--[-->{!{ {{> tweets ids=(array
+  '1016753976211996672'
+  '1016832074961977345'
+  '1016842932458905600'
+  '1016845052327354368'
+  '1016848293186301953'
+  '1016849031828406272'
+  '1016850090458136578'
+  '1017114823635562496'
+  '1017115332736004096'
+  '1017116016457834496'
+  '1017116558340980736'
+  '1017117113117376512'
+  '1017117809510215680'
+  '1017119272290537474'
+  '1017161019733377024'
+  '1017181216292786177'
+) tweets=meta.tweets className="oneblock card right span3" style="margin-top: 0" }} }!}<!--]-->^^^
 
-First lets get this out of the way... [Yes, trans women](https://theestablishment.co/yes-trans-women-can-get-period-symptoms-e43a43979e8c/) can [have periods](http://www.onwednesdays.net/trans-girl-periods/). No, [we do not menstruate](https://lifeofbria.com/tmi/), but if your definition of "period" is so narrow so as to only include a flow of blood, then you are not living in the 21st century. I'm not going to spend time justifying this, [it's been done](https://twitter.com/LifeofBria/status/1016753976211996672) better [by others](https://www.themaven.net/transgenderuniverse/articles/my-time-of-the-month-as-a-transgender-woman-s5VLSxx6Qk6Y76mGeUz_LQ/). The purpose of this post is to explain the beginnings of how and why, as I have come to understand them.
+^^^{!{ {{#with images.[0]}}<a href="{{rev full}}" style="display: block; overflow: hidden;margin-bottom: 0.5rem;border-radius: 5px;"><img src="{{rev large}}" alt="I'll make my own menstrual cycle, with bloating, and depression. In fact, forget the menstruation!" ></a>{{/with}} }!}^^^
+
+First lets get this out of the way... [Yes, trans women](https://theestablishment.co/yes-trans-women-can-get-period-symptoms-e43a43979e8c/) can [have periods](http://www.onwednesdays.net/trans-girl-periods/). No, [we do not menstruate](https://lifeofbria.com/tmi/), but if your definition of "period" is so narrow so as to only include a flow of blood, then you are not living in the 21st century. I'm not going to spend time justifying this, [it's been done better by others](https://www.themaven.net/transgenderuniverse/articles/my-time-of-the-month-as-a-transgender-woman-s5VLSxx6Qk6Y76mGeUz_LQ/). The purpose of this post is to explain the beginnings of how and why, as I have come to understand them.
 
 ---
 
-Disclaimer: I am not a doctor, but being trans necessitates a degree of understanding of human biology and endocrinology, and I made a hobby out of learning as much as I could about it.
+Disclaimer: I am not a doctor, but being trans necessitates a degree of understanding of human biology and endocrinology, and I have made a hobby out of learning as much about endocrinology as I can without medical school. I am constantly reading clinical and academic papers on the inner workings of the human body, and this has given me a lot of insight into how these systems function.
 
 For purposes of brevity I use the terms women, men, female and male to refer to individuals whose bodies are primarily estrogenic or androgenic, regardless of if that is by organic or artificial processes. This does not refer to the particular organs a person has, and I denote organ specific conditions were appropriate.
 
 Additionally, the use of "Trans Women" in the title and parts of this piece is a shorthand for individuals who were assigned male at birth and are now on estrogen hormone therapy. Not all transgender women take estrogen, and not all transgender people who take estrogen are women, their identities are just as valid and I do not wish to exclude them with the wording of this essay, but in some contexts it was hard to avoid. I apologize in advance for the binary-centric nature of this post.
 
-!!!include(adsense-in-article.md)!!!
+<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### An introduction into the endocrine feedback system
 
@@ -54,7 +90,7 @@ But here lies the rub: Trans women's estradiol and progesterone levels do not ri
 
 Without ovaries, tho, there's nothing to respond to these LH and FSH fluctuations, right?  Well... not exactly.
 
-!!!include(adsense-in-article.md)!!!
+<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### Where we're going, we don't need ovaries.
 
@@ -82,7 +118,7 @@ Ok, so what does that have to do with people who don't have uteruses? F2a is not
 
 Adrenal released prostaglandins could absolutely cause contractions in the intestines and surrounding muscles, inflammation in the abdomen from the protaglandins would induce bloating, and prostaglandin surges in mammary tissue would explain breast engorgement and sensitivity. Some may scoff at the idea that these secretions could be sufficient to produce these symptoms, but the fact is we don't know. Nobody has studied prostaglandin secretion in women who do not have ovaries. We simply do not know.
 
-!!!include(adsense-in-article.md)!!!
+<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### Where's the beef?
 
@@ -111,13 +147,13 @@ My suspicion is that medical science is totally wrong about the reception of LH 
 
 Unfortunately, until somebody conducts a study of LH and FSH blood levels of male-assigned individuals on estrogen therapy who experience period cycles, we can never really be sure.
 
-!!!include(adsense-in-article.md)!!!
+<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### Update, October 21, 2018
 
 Today I may have found an answer for why the cycle has such an impact on mental state, in spite of even estrogen levels, and the cause of the happy phase that I experience around day 15. Several studies have found fluctuations in plasma oxytocin levels that correlated with the rise and fall of LH levels.
 
-<a href="https://www.ejog.org/article/0028-2243(81)90077-0/pdf" class="card natural"><img src="../oxytocin.png" alt="" class="card-img-top"><span class="card-body">Oxytocin levels relative to LH peak</span></a>
+<a href="https://www.ejog.org/article/0028-2243(81)90077-0/pdf" class="card right span3" style="margin-top: 0"><img src="../oxytocin.png" alt="" class="card-img-top"><span class="card-body">Oxytocin levels relative to LH peak</span></a>
 
 > These results clearly demonstrate that, in spontaneously ovulating women, there is an approximate doubling of the circulating level of oxytocin associated with the time of ovulation. It is tempting to suggest that the elevated oxytocin concentrations play a part in the mechanism of ovulation.
 > [...]
