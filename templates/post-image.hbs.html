@@ -6,6 +6,7 @@
     srcset="{{rev thumb}} 100w, {{rev small}} 576w, {{rev large}} 1024w, {{rev full}} 2048w"
     sizes="{{#if sizes}}{{sizes}}{{else}}(max-width: 576px) 100vw, 576px{{/if}}"
     {{#includes className "card"}}class="card-img-top"{{/includes}}
+    {{#if imgStyle}}style="{{imgStyle}}"{{/if}}
   >
   {{#if caption}}<span class="card-body">{{caption}}</span>{{/if}}
 </a>
