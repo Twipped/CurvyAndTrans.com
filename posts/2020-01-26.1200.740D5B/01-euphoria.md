@@ -21,7 +21,7 @@ tweets:
     padding-bottom: 5px;
     /*margin-top: 1.5em;*/
   }
-</style>{!{ {{inject '~/disclaimer'}}{{inject '~/menu' active=1}} }!}^^^<!--]-->
+</style>{!{ {{inject '~/disclaimer'}}{{inject '~/menu' active=2}} }!}^^^<!--]-->
 
 ## Euphoria
 
