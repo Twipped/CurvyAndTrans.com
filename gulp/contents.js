@@ -121,6 +121,10 @@ exports.loadLayout = async function loadLayout () {
     if (url[0] === '/') url = url.substr(1);
     return '/' + url;
   });
+  handlebars.registerHelper('prod', function (options) {
+    if (!options.inverse) return false;
+    return options.inverse(this);
+  });
 };
 
 exports.loadLayout.prod = async function loadLayoutForProd () {
@@ -135,6 +139,10 @@ exports.loadLayout.prod = async function loadLayoutForProd () {
 
     if (manifest[url]) return '/' + manifest[url];
     return '/' + url;
+  });
+  handlebars.registerHelper('prod', function (options) {
+    if (!options.fn) return true;
+    return options.fn(this);
   });
 };
 
