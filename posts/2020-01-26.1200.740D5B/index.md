@@ -44,7 +44,7 @@ Any of these three aspects can fall into a position on a range of values. Your e
 
 ^^^<!--[-->{!{ {{> img images.[8] className="card right span3 borderless"}} }!}<!--[-->^^^
 
-Likewise, many people believe that Phenotype is also binary, but biology has recognized for hundreds of years that when you plot out all sexual characteristics across a population, you actually end up with a bimodal distribution where the majority of the population falls within a percentile of two groups.
+Likewise, many people believe that Phenotype is also binary, but biology has recognized for hundreds of years that when you plot out all sexual characteristics across a population, you actually end up with a bimodal distribution where the majority of the population falls within a percentile of two groups. This means that some people will, simply by nature of how life works, fall outside of the typical two piles. Many people fall in the middle, with characteristics of both sexes.
 
 Gender, however, is a lot more... wibbly wobbly timey wimey type stuff. There are a lot of different ways that people have attempted to illustrate the gender spectrum, but none have quite thoroughly captured it, because the spectrum is itself a very abstract concept.
 
@@ -55,6 +55,8 @@ Gender, however, is a lot more... wibbly wobbly timey wimey type stuff. There ar
 {{> img images.[7] className="" style="align-self: center;text-align: center;" imgStyle="width:75%;" link="http://www.transstudent.org/gender"}}
 </div>
 }!}<!--[-->^^^
+
+The short of it is, some people are very male, some people are very female, some people feel no gender at all, some people feel both, some are smack in the middle, some land along the edges. Some people oscillate all over the spectrum in unpredictable ways, changing like the wind. Only an individual can identify their own gender, no one else can dictate it for them.
 
 Gender is part social constructs, part learned behaviors, and part biological processes which form very early in a person's life.
 
