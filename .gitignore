@@ -12,3 +12,6 @@
 /if-manifest.json
 posts/*/montage/*.jpg
 /twitter-cache.json
+/terra/terraform.tfstate*
+/terra/.terraform
+/terra/files/folder_index_redirect.js.zip
