@@ -23,11 +23,12 @@
   };
 
   // listen for all the exit events
-  window.addEventListener('pagehide', sendSession);
-  window.addEventListener('beforeunload', sendSession);
-  window.addEventListener('unload', sendSession);
+  window.addEventListener('pagehide', endSession);
+  window.addEventListener('beforeunload', endSession);
+  window.addEventListener('unload', endSession);
   // for iOS when the focus leaves the tab
-  if (iOS) window.addEventListener('blur', sendSession);
+  if (iOS) window.addEventListener('blur', endSession);
+  window.addEventListener('load', sendSession);
 
 
   // scroll tracking
@@ -35,21 +36,17 @@
     SESSION_DATA.maxScroll = Math.max(SESSION_DATA.maxScroll, window.scrollY);
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    sendSession(true);
-  });
 
   let skip;
+  function endSession () {
+    if (skip) return;
+    skip = true;
+    SESSION_DATA.end = Date.now();
+    sendSession();
+  }
+
   // call this function on exit
-  function sendSession (ignoreSkip) {
-    // skip if the function has already been called
-    if (ignoreSkip !== true) {
-      if (skip) return;
-      skip = true;
-      SESSION_DATA.end = Date.now();
-    }
-
-
+  function sendSession () {
     const params = new URLSearchParams(SESSION_DATA);
     const data = params.toString();
 
