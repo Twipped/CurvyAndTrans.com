@@ -75,6 +75,6 @@ In generalist terms this essay will be describing gender in a sense of binary id
 ^^^<ul class="nav nav-fill pager">
   <li class="nav-item"></li>
   <li class="nav-item">
-    <a href="01-euphoria.html" class="btn btn-primary btn-arrow-right">What is Gender Dysphoria</a>
+    <a href="00-genderdysphoria.html" class="btn btn-primary btn-arrow-right">What is Gender Dysphoria</a>
   </li>
 </ul>^^^
