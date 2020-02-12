@@ -82,7 +82,7 @@ async function reloadLayouts () {
   const injections = {};
   handlebars.registerHelper('inject', function (tpath, ...args) {
     const { hash } = args.pop();
-    const context = Object.create(args[0] || this);
+    const context = handlebars.createFrame(args[0] || this);
     Object.assign(context, hash || {});
 
     if (tpath[0] === '/') tpath = path.join(context.local.root, tpath);
