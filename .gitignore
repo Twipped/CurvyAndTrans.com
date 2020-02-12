@@ -1,4 +1,4 @@
-/node_modules
+node_modules
 /docs
 /aws.json
 /twitter.json
@@ -14,4 +14,4 @@ posts/*/montage/*.jpg
 /twitter-cache.json
 /terra/terraform.tfstate*
 /terra/.terraform
-/terra/files/folder_index_redirect.js.zip
+/terra/files/*.zip

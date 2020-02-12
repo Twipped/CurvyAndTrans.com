@@ -1,10 +1,10 @@
 
-(function () {
+(function (window, document, navigator) {
   const me = document.currentScript;
   const url = me.getAttribute('data-url');
   const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 
-  const vendor = window.navigator.vendor;
+  const vendor = navigator.vendor;
   const doNotTrack = navigator.doNotTrack || navigator.msDoNotTrack || window.doNotTrack;
 
   let tid = !doNotTrack && window.localStorage.getItem('tid');
@@ -12,6 +12,9 @@
     tid = Math.round(Math.random() * 1000000000);
     window.localStorage.setItem('tid', tid);
   }
+
+  const body = document.body;
+  const html = document.documentElement;
 
   const SESSION_DATA = {
     tid,
@@ -33,7 +36,20 @@
 
   // scroll tracking
   window.addEventListener('scroll', function () {
-    SESSION_DATA.maxScroll = Math.max(SESSION_DATA.maxScroll, window.scrollY);
+    const pageHeight = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight,
+    );
+
+    const viewportHeight = Math.max(html.clientHeight, window.innerHeight || 0);
+    const maxScroll = Math.max(SESSION_DATA.maxScroll, window.scrollY);
+
+    const viewed = maxScroll === 0 ? 0 : Math.round(((maxScroll + viewportHeight) / pageHeight) * 100);
+
+    Object.assign(SESSION_DATA, { pageHeight, viewportHeight, maxScroll, viewed });
   });
 
 
@@ -72,4 +88,4 @@
       // a hack necessary for Firefox and Safari refresh / back button
     }
   }
-}());
+}(window, document, navigator));
