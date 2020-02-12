@@ -20,9 +20,10 @@
     tid,
     start: Date.now(),
     end: null,
-    maxScroll: 0,
-    href: window.location.pathname,
+    max_scroll: 0,
     language: navigator.userLanguage || navigator.language,
+    href: window.location.pathname,
+    referrer: document.referrer,
   };
 
   // listen for all the exit events
@@ -36,7 +37,7 @@
 
   // scroll tracking
   window.addEventListener('scroll', function () {
-    const pageHeight = Math.max(
+    const page_height = Math.max(
       body.scrollHeight,
       body.offsetHeight,
       html.clientHeight,
@@ -44,12 +45,12 @@
       html.offsetHeight,
     );
 
-    const viewportHeight = Math.max(html.clientHeight, window.innerHeight || 0);
-    const maxScroll = Math.max(SESSION_DATA.maxScroll, window.scrollY);
+    const viewport_height = Math.max(html.clientHeight, window.innerHeight || 0);
+    const max_scroll = Math.max(SESSION_DATA.max_scroll, window.scrollY);
 
-    const viewed = maxScroll === 0 ? 0 : Math.round(((maxScroll + viewportHeight) / pageHeight) * 100);
+    const viewed = max_scroll === 0 ? 0 : Math.round(((max_scroll + viewport_height) / page_height) * 100);
 
-    Object.assign(SESSION_DATA, { pageHeight, viewportHeight, maxScroll, viewed });
+    Object.assign(SESSION_DATA, { page_height, viewport_height, max_scroll, viewed });
   });
 
 
