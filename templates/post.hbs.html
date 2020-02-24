@@ -11,7 +11,11 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://curvyandtrans.com{{rev titlecard}}">
   {{/if}}
-  <link rel="canonical" href="https://curvyandtrans.com{{url}}">{{/content}}
+  <link rel="canonical" href="{{#if canonical}}{{canonical}}{{else}}https://curvyandtrans.com{{url}}{{/if}}">
+  {{#if redirect}}
+  <meta http-equiv="refresh" content="0;URL='{{redirect}}'" />
+  {{/if}}
+  {{/content}}
 
   {{#append "prescripts"}}
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha256-IKIuKgYQ+ogofw+KAz4fjF+zq7fwoNUnEVts493jKKE=" crossorigin="anonymous" />
