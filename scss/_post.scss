@@ -204,8 +204,8 @@
 
   .carousel-cell {
     margin: 10px;
-    img, video {
-      height: 370px;
+    video {
+      max-height: 400px;
     }
   }
 
