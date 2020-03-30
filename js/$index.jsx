@@ -24,9 +24,9 @@ class App extends Component {
         hash,
         display: INITIAL_DISPLAY,
         loading: false,
-        posts: index.posts,
-        tags: index.tags,
-        revManifest: index.rev,
+        posts: index.posts || [],
+        tags: index.tags || {},
+        revManifest: index.rev || {},
       };
     } else {
       this.state = {
@@ -50,9 +50,9 @@ class App extends Component {
     const index = await fetch(INDEX_JSON).then((res) => res.json());
     this.setState({
       loading: false,
-      posts: index.posts,
-      tags: index.tags,
-      revManifest: index.rev,
+      posts: index.posts || [],
+      tags: index.tags || {},
+      revManifest: index.rev || {},
     });
   }
 

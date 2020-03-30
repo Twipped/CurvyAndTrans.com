@@ -129,6 +129,7 @@ exports.pages = function () {
 
     const engines = await getEngines(prod);
     const postIndex = await pageWriter(engines, pages, posts, prod);
+    postIndex.rev = {};
     await fs.writeFile(resolve('dist/p/index.json'), prod ? JSON.stringify(postIndex) : JSON.stringify(postIndex, null, 2));
   }
 
