@@ -7,10 +7,16 @@ tags:
   - Drug Diary
   - Mental Health
   - OOTD
-single: false
+no-images: true
 instagram: https://www.instagram.com/p/Bx7zeRcHcLh/
 ---
-I little rainy day Sunday blue. ⁣
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
+
+A little rainy day Sunday blue. ⁣
 
 Guess who finally has started taking an antidepressant. I had my psychiatrist appointment this week and my ADHD meds are pretty well locked down, so she’s like “Well, we gotta talk about *something*, anything on your mind?”⁣
 

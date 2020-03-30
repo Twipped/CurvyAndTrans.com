@@ -16,7 +16,14 @@ tweets:
   - '1201527159728283648'
 ---
 
-^^^<!--[-->{!{ {{> tweets ids=(array '1201525283997794305' '1201525285151227905' '1201525286212427778' '1201527159728283648') tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
+{!{
+{{import '~/tweet' ids=(array
+  '1201525283997794305'
+  '1201525285151227905'
+  '1201525286212427778'
+  '1201527159728283648'
+) tweets=meta.tweets className="oneblock right" }}
+}!}
 
 The message in these tweets is awesome, but I want to unpack the “trans girl” sentiment.
 

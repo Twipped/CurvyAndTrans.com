@@ -4,9 +4,7 @@ date: "2019-02-06T16:52:00.000Z"
 title: "Losing my mother"
 slug: losing-mom
 description: "When parents abandon you"
-draft: false
-single: true
-fill: true
+no-images: true
 tags:
   - Coming Out
   - Transgender
@@ -15,6 +13,12 @@ tags:
 captions:
   - Summer of 1992
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
 
 By and large, the vast majority of the people I have come out to have been supportive and accepting. The one huge exception has been my own mother. From the first day she made it very clear that she disapproves of my transition and refuses to acknowledge my gender identity.
 

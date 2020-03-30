@@ -20,7 +20,12 @@ tags:
 
 ## What to Expect When You're Expecting Boobs
 
-<a href="../1.jpeg" class="card right span4"><img src="../1.jpeg" alt="" class="card-img-top"></a>This is a compilation of reported medical transition changes collected from testimonials of trans women from various discussion forums and chat rooms, backed up by my own experiences and medical research.
+
+{!{
+  {{import '~/img' images.[1] className="card right span4" }}
+}!}
+
+This is a compilation of reported medical transition changes collected from testimonials of trans women from various discussion forums and chat rooms, backed up by my own experiences and medical research.
 
 **Note that this is a list of _possible_ changes. There is no guarantee that a person on hormone replacement therapy will experience all of these. Your age, genetics, medical history, degree of masculinization, and hormone regimen can all have impacts on results, and some things can take years to appear.**
 
@@ -69,7 +74,7 @@ tags:
 - Salt/Pickle cravings
   - This is specific to those on Spironolacotone, which is a diuretic that causes you to pee out all your sodium
 
-!!!include(adsense-in-article.md)!!!
+
 
 ### Changes attributed to Estradiol:
 
@@ -145,7 +150,7 @@ tags:
   - Many people report cilantro becoming more palatable.
   - Chocolate addiction _(Only half kidding)_
 
-!!!include(adsense-in-article.md)!!!
+
 
 ### Changes attributed to Progesterone:
 

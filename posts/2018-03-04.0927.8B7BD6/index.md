@@ -5,7 +5,6 @@ title: "How I Came Out at Work"
 description: "In which I am a total drama queen."
 slug: how-I-came-out-at-work
 no-images: true
-hero: right
 tags:
   - Transgender
   - Coming Out
@@ -13,6 +12,12 @@ tags:
 captions:
   - January 2018, when my hair was a LOT shorter
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
 
 This is the story of how I came out at my workplace. Honestly, this is not a good example of how to do this, because it's **way over-dramatic**. If I were to do it again, I'm not sure I would have done it this way.
 
@@ -25,15 +30,15 @@ When I got to the office I pinged my boss and asked if I could meet with him and
 About an hour later everyone on our team had arrived in the office, so I pinged him and asked if it was a good time. "Go for it." I stood up, got everyone's attention, and delivered this speech. If this sounds familiar, it's because I used it as the basis for my coming-out post on this blog.
 
 > When I was 12 years old I realized something about myself. Something that made me different. I had a dream, a wish, for something very esoteric and extremely out of reach.
-
+>
 > When I was 16, I gave up on that dream. I decided it was so far out of reach that I could never have it.
-
+>
 > In the last few years I've started seeing people with the same dream who actually achieved it, and this made me realize just how much I needed it for myself. For 2017 my new years resolution was to finally reach out and take it.
-
+>
 > I am transgender. I have been my entire life.
-
+>
 > I came out to my wife on January 10th, I was officially diagnosed with gender dysphoria on February 1st, and on May 4th I started hormone replacement therapy. I am now 102 days into medical transition and have reached the point where hiding it is getting harder and harder every day.
-
+>
 > 26 years after realizing I'm not a boy, I finally get to be a girl.
 
 At this point I took off the t-shirt, stood up straight (prior to this I had been hunched forward to hide my breasts), and in my new voice said:

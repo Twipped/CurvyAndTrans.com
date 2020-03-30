@@ -11,7 +11,12 @@ tweets:
   - '1196686495098101761'
 ---
 
-^^^<!--[-->{!{ {{> tweets ids=(array '1196686382468456449' '1196686495098101761') tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
+{!{
+{{import '~/tweet' ids=(array
+  '1196686382468456449'
+  '1196686495098101761'
+) tweets=meta.tweets className="grid-row by-two" }}
+}!}
 
 I *don’t* feel like I speak girl with an accent.. My mannerisms, my speech patterns, the way I walk, everything just came back. I did have to learn some things that I didn’t get to learn young, but that was easy enough.
 

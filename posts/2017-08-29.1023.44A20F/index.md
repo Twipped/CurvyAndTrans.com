@@ -10,6 +10,12 @@ tags:
 no-images: true
 ---
 
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
+
 Alright, so, this started as a twitter thread and then I got to 40 tweets and decided it needed to be an essay instead.
 
 There were two things I was sure about when I started transitioning: I wasn't changing who I am, and I wouldn't be deadnaming my birthname.

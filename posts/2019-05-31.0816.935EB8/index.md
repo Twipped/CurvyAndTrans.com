@@ -7,13 +7,16 @@ tags:
   - Transgender
   - Essays
 no-title: true
+no-images: true
 instagram: https://www.instagram.com/p/ByIffJJnahs/
 ---
 
-<div class="grid-row" style="grid-column-gap: 40px; grid-row-gap: 0; margin-bottom: 0;">
+{!{
+<div class="grid-row" style="grid-row-gap: 0;margin-bottom: 0;">
   <blockquote><p style="text-align: center;font-weight: 600;">“I grew up wishing I was a girl.”</p></blockquote>
   <blockquote><p style="text-align: center;font-weight: 600;">“I have always been a girl.”</p></blockquote>
 </div>
+}!}
 
 Two statements, often made by same person, maybe even in the same conversation. Two statements which at first glance seem to be logically at odds with each other. Either you were always your gender, or you changed it, right? You can’t be both superpositions at the same time…
 
@@ -54,7 +57,14 @@ _Sidenote: this scene is also interesting because of what Kay says next about �
 
 ### Change Is Inevitable
 
-<a class="card right span2" href="../butterfly.jpg"><img src="../butterfly.jpg" alt="CATERPILLAR: You’ve Changed.  BUTTERFLY: We’re supposed to."></a>Human beings are supposed evolve and advance our own understanding as we age. Every person on this planet goes through multiple shifts of self understanding and self actualization. We go through five or six periods of major redefinition as we age; most of these are labeled as maturing (maiden, mother, crone, for example), while others are stigmatized as existential crises. Trans women [have their own version of this](/p/D0C809/threeyears.jpg) on top of it all.
+{!{
+{{import '~/img' images.butterfly
+  alt="CATERPILLAR: You’ve Changed.  BUTTERFLY: We’re supposed to."
+  className="card span3 right flush"
+}}
+}!}
+
+Human beings are supposed evolve and advance our own understanding as we age. Every person on this planet goes through multiple shifts of self understanding and self actualization. We go through five or six periods of major redefinition as we age; most of these are labeled as maturing (maiden, mother, crone, for example), while others are stigmatized as existential crises. Trans women [have their own version of this](/p/D0C809/threeyears.jpg) on top of it all.
 
 I do not expect my understanding of my gender to change any further. As time moves forward I am presented with more and more evidence that I am an incredibly binary woman, and I hold no affinity with non-binary identities. My views about my homosexuality are largely the same, having spent considerable time assessing if I might be bisexual, and being given plenty of evidence again and again that despite urges my body presents me with, my desire lies squarely in the feminine. What I am less certain of is my romantic attraction, as there have been signs that I may actually be demiromantic or panromantic, tho this is immaterial since I am monogamously married.
 

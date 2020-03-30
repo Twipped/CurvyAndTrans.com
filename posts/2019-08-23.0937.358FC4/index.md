@@ -14,8 +14,12 @@ I missed Throwback Thursday, but haven’t done a Flashback Friday in a while. D
 
 This was me being a mom before I was allowed to be a mom. I remember feeling slightly embarrassed at the time that I had been caught in such a non-masculine position. The mask came slamming down and I felt shame for letting myself be seen.
 
-^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+{!{
+<div class="card borderless right span3">
+{{import '~/tweet' ids=(array
   '1164927956302434306'
-) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+) tweets=meta.tweets className="" }}
+</div>
+}!}
 
 I thought of this photo this morning as our entire family was laying together on the floor of our bedroom, waiting until it was time to take Sam to school. I realized I was laying in exactly this same way, and it just felt so good to be in such a feminine pose and not have to hide, I could just enjoy it. Euphoria washed over me like a wave and I just started smiling.

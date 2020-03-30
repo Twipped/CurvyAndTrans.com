@@ -14,7 +14,13 @@ tweets:
   - '1185686429361295360'
   - '1185688500085108736'
 ---
-^^^<!--[-->{!{ {{> tweets ids=(array '1185686429361295360' '1185688500085108736') tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
+
+{!{
+{{import '~/tweet' ids=(array
+  '1185686429361295360'
+  '1185688500085108736'
+) tweets=meta.tweets className="grid-row by-two" }}
+}!}
 
 I haven’t talked about this in a few months and several hundred followers, but since today is National Period Day, it's a good day to bring it up.
 

@@ -10,11 +10,26 @@ tags:
   - Top Post
 orientation: wide
 instagram: https://www.instagram.com/p/BzyxBOUn0Km/
+no-images: true
 ---
 
-<blockquote class="cite"><p>May you sleep on the breast of your tender woman companion.</p>&mdash; <a>Sappho, circa 600b.c.</a></blockquote>
+{!{
+<div class="card right span3 flush">
+  {{import '~/img' images.[1]
+    alt=""
+    srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
+  }}
+  <div class="tumblr">
+    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <a href="https://fade-steppin.tumblr.com/post/175441448289/throwback-to-the-time-my-classics-professor-asked" class="tumblr-username">fade-steppin</a>
+    <div class="tumblr-body">
+      <p>throwback to the time my classics professor asked “does anyone know who sappho is?” and i immediately replied “she’s the OG lesbian” and my professor yelled “EXACTLY” and wrote the OG lesbian on the whiteboard</p>
+    </div>
+  </div>
+</div>
+}!}
 
-!!!include(adsense-in-article.md)!!!
+<blockquote class="cite"><p>May you sleep on the breast of your tender woman companion.</p>&mdash; <a>Sappho, circa 600b.c.</a></blockquote>
 
 Saphho was a greek poet, born in 640 BC, known to have written approximately 10,000 lines of poetry, tho only about 650 survive today. Unfortunately, most of her poetry has been lost to time, but in her day she was extremely well known throughout the greek and roman empires. Her writings were among many of the great works lost in the fire of Alexandria.
 
@@ -34,33 +49,32 @@ And no one has the right to deny them that.
 
 Further Reading:
 
-- https://en.wikipedia.org/wiki/Sappho
-- https://lgbt.wikia.org/wiki/Sappho
-- https://www.theatticoneighth.com/blog/sappho-everyones-favorite-lesbian-lesbian
-- https://www.makingqueerhistory.com/articles/sappho
-- https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1130&context=younghistorians
+- [Sappho, Everyone's Favorite Lesbian](https://www.theatticoneighth.com/blog/sappho-everyones-favorite-lesbian-lesbian)
+- [Making Queer History: Sappho the Poetess](https://www.makingqueerhistory.com/articles/sappho)
+- [Sappho's Queer Female History](https://pdxscholar.library.pdx.edu/cgi/viewcontent.cgi?article=1130&context=younghistorians)
 - https://www.etymonline.com/word/lesbian
-- https://en.wikipedia.org/wiki/Lesbian
-- https://www.liveabout.com/what-is-the-origin-of-the-word-lesbian-2171260
-- https://books.google.com/books?id=qAZ5AgAAQBAJ&ppis=_e&lpg=PA271&ots=SqJ2J_GZOV&pg=PA271
-- https://english.stackexchange.com/a/200330
-- https://slate.com/human-interest/2018/08/lesbian-history-terfs-and-queer-culture-do-queer-women-have-to-reject-all-second-wave-feminism-to-be-inclusive.html
-- https://www.advocate.com/print-issue/current-issue/2014/07/16/woman-enough
-- https://sillyolme.wordpress.com/2018/05/20/historic-transphobia-in-the-gay-lesbian-communities/
-- https://www.cheryl-morgan.com/?p=18787
-- https://en.wikipedia.org/wiki/History_of_lesbianism
-- https://en.wikipedia.org/wiki/History_of_lesbianism_in_the_United_States#1970s:_Lesbians_and_feminism
-- https://en.wikipedia.org/wiki/Political_lesbianism
-- https://en.wikipedia.org/wiki/Feminist_sex_wars
-- https://en.wikipedia.org/wiki/Feminist_separatism#Lesbian_separatism
-- https://en.wikipedia.org/wiki/Lesbian_feminism
-- https://en.wikipedia.org/wiki/Leeds_Revolutionary_Feminist_Group
-- https://en.wikipedia.org/wiki/Second-wave_feminism
-- https://en.wikipedia.org/wiki/Third-wave_feminism
-- https://en.wikipedia.org/wiki/Sandy_Stone_(artist)
+- [LiveAbout: What is the origin of the word lesbian?](https://www.liveabout.com/what-is-the-origin-of-the-word-lesbian-2171260)
+- [Encyclopedia of Lesbian and Gay Histories and Cultures](https://books.google.com/books?id=qAZ5AgAAQBAJ&ppis=_e&lpg=PA271&ots=SqJ2J_GZOV&pg=PA271)
+- [English Language Stack Exchange: When did “lesbian” become well-known as a noun, not an adjective?](https://english.stackexchange.com/a/200330)
+- [Slate: Do I Have to Give Up Lesbian History to Participate in Queer Culture?](https://slate.com/human-interest/2018/08/lesbian-history-terfs-and-queer-culture-do-queer-women-have-to-reject-all-second-wave-feminism-to-be-inclusive.html)
+- [Advocate: Woman Enough](https://www.advocate.com/print-issue/current-issue/2014/07/16/woman-enough)
+- [Historic Transphobia in the gay & lesbian communities](https://sillyolme.wordpress.com/2018/05/20/historic-transphobia-in-the-gay-lesbian-communities/)
+- [Cheryl Morgan: Origins of Feminist Transphobia](https://www.cheryl-morgan.com/?p=18787)
+- [Wikipedia: Sappho](https://en.wikipedia.org/wiki/Sappho)
+- [Wikipedia: Lesbian](https://en.wikipedia.org/wiki/Lesbian)
+- [Wikipedia: History of Lesbianism](https://en.wikipedia.org/wiki/History_of_lesbianism)
+- [Wikipedia: History of Lesbianism in the United States](https://en.wikipedia.org/wiki/History_of_lesbianism_in_the_United_States#1970s:_Lesbians_and_feminism)
+- [Wikipedia: Political Lesbianism](https://en.wikipedia.org/wiki/Political_lesbianism)
+- [Wikipedia: Feminist Sex Wars](https://en.wikipedia.org/wiki/Feminist_sex_wars)
+- [Wikipedia: Feminist Separatism](https://en.wikipedia.org/wiki/Feminist_separatism#Lesbian_separatism)
+- [Wikipedia: Lesbian Feminism](https://en.wikipedia.org/wiki/Lesbian_feminism)
+- [Wikipedia: Leeds Revolutionary Feminist Group](https://en.wikipedia.org/wiki/Leeds_Revolutionary_Feminist_Group)
+- [Wikipedia: Second-wave Feminism](https://en.wikipedia.org/wiki/Second-wave_feminism)
+- [Wikipedia: Third-wave Feminism](https://en.wikipedia.org/wiki/Third-wave_feminism)
+- [Wikipedia: Sandy Stone](https://en.wikipedia.org/wiki/Sandy_Stone_(artist))
+- [Wikipedia: Beth Elliott](https://en.wikipedia.org/wiki/Beth_Elliott)
 - Books by Julia Serano: [Whipping Girl](https://en.wikipedia.org/wiki/Whipping_Girl) (2007), Excluded (2013), Outspoken (2016)
-- http://transadvocate.com/wp-content/uploads/Radical_Inclusion_Recounting_the_Trans_I-2.pdf
-- https://en.wikipedia.org/wiki/Beth_Elliott
-- http://revolution.berkeley.edu/west-coast-lesbian-conference-feminists-split/
+- [Radical Inclusion: Recounting the Trans Inclusive History of Radical Feminism](http://transadvocate.com/wp-content/uploads/Radical_Inclusion_Recounting_the_Trans_I-2.pdf)
+- [Los Angeles Free Press: The Split Between Hetero Feminists and Lesbians](http://revolution.berkeley.edu/west-coast-lesbian-conference-feminists-split/)
 
 *Note: This article was updated on December 28th, 2019 to include citations*

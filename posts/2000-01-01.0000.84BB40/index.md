@@ -1,9 +1,9 @@
 ---
 id: "84BB40"
 date: "2000-01-01T00:00:00.000Z"
-subtitle: "The Rise and Fall of Rage and Grace, Part 1"
-title: A Girl Unknown
-slug: rise-fall-rage-grace-p2
+title: "The Rise and Fall of Rage and Grace, Part 1"
+subtitle: A Girl Unknown
+slug: rise-fall-rage-grace-p1
 description: "The first ten years of my childhood."
 draft: true
 tags:
@@ -11,8 +11,8 @@ tags:
   - Essays
   - Transgender
 no-images: true
-shortCard: true
-span: 11
+classes:
+  - no-title
 
 # 12th 98-99
 # 11th 97-98
@@ -25,21 +25,25 @@ span: 11
 #  4th 90-91
 ---
 
-### Prelude: Summer of 1987, I am six years old.
+### Prelude:
 
-<a href="../2.jpeg" class="card right span4"><img src="../2.jpeg" alt="" class="card-img-top"><span class="card-body">My Grandmother kissing my face at the 1981 Jehovah's Witness District Convention, Pontiac Michigan.</span></a>I was raised as a Jehovah's Witness. My mother, my father, my grandmother, one of my uncles, his wife, and two of my three cousins are Witnesses. My entire social circle growing up was JWs. The only life I knew until my 20s was in the JW faith.
+In May of 1989 actress Caroline Cossey married her fiance, Elias Fattal in a jewish wedding ceremony. Upon arriving home from their honeymoon they were shocked to discover that their marriage and honeymoon had been covered by News of the World, and respectively by many other tabloids around the globe. I remember seeing the headlines on the tabloid racks at the Giant supermarket that my family shopped at. "Sex Change Beauty weds her Prince Charming" said the Weekly World News.
 
-Back then the JWs had three yearly events: two circuit assemblies and one big district convention. Our district convention was held in the Pontiac Silverdome in Pontiac, Michigan (a district of Detroit). The DC is a big deal, it's one of the largest social events of the year. Since the JW faith prioritizes friendships and relationships within the church (very strongly discouraging extra-faith association), these are often the biggest opportunities for meeting new friends and for single people to find romantic interests. Thus, everybody always wears their finest (tho not too ostentatious, must remain modest and humble). That year, my mother had sewn for me a five piece child's suit. It was navy blue with vertical pin stripes, single breasted, double button, notched lapel jacket, a matching waistcoat, and shorts (because it's July in Michigan in a very large football stadium), worn over a white button up shirt with a clip on tie. I imagine I looked like quite the dapper five year old boy.
+Upon learning the nature of Caroline birth sex, Fattal's family demanded that the marriage be immediately annulled. The next year the British government successfully appealed the European Court ruling that had made Caroline to be legally female, and she began a campaign of activism to try to educate the public about transsexual individuals. Thus it was in the summer of 1990, in the living room of my father's house in Farwell, Michigan, that I found myself staring at the face of this incredibly gorgeous woman, while Phil Donahue explained that she had been born male. And I, nine years old, on the cusp of puberty, sat there in wonder.
 
-I hated that suit. I hated the way it fit my body, I hated the way it made me hot, I hated how I felt when I wore it. It constricted me when I moved, binding in my shoulders and groin, making it harder to run. It was just wrong, it felt wrong on my body. Most of my friends at the time were girls, partly because that's just how our congregation was, but also because I never got along well with any boys my age. All my friends were wearing beautiful dresses, had bows in their long hair, and just looked really pretty. That's what I wanted too; I wanted to be pretty. I remember resenting anyone who ever told me I looked handsome. I hated that word.
+You can do that? You can just... not be a boy?
 
-### A Babe With Two Names
+# The Rise and Fall of Rage and Grace
 
-I was born one month premature on October 9th, 1980, delivered by cesarean due to preeclampsia. My parents could not decide on what to name me; my father preferred the name Jarvis, but my mother wanted the name Jordan. Apparently they hadn't been putting much discussion into the topic, because my mom says they decided on these names the day I was born. I asked her what name she would have gone with had I been born female, but she didn't have an answer. Unable to reach an agreement, they went with both, and I was given the name Jarvis-Jordan Allen Badgley (Allen being my father's name). My Dad and all of his family always called me Jarvis, but my mother and her family called me Jory (one of my uncles still to this day calls me JJ). Within the JW congregation, it was split, with most of the women and kids also calling me Jory, and most of the men calling me Jarvis (how patriarchal).
+## Part 1: A Babe with Two Names.
 
-At the age of four I decided that I didn't like the name Jordan, and I definitely didn't like the name Jory; it didn't fit me right. I believe my reasoning at the time was that it was boring and the name Jarvis was much more unique and interesting (and Jory was infantizing). I suspect I may have also felt that Jarvis was less masculine, by virtue of being less common (this might just me be projecting my current feelings, however). I told everyone that I knew that I wanted to be called Jarvis from then on. Some people resisted it, but most accepted my choice, including my mother, despite being sad that I had sided with my father.
+I was born one month premature on October 9th, 1980, delivered by cesarean due to preeclampsia. My parents could not decide on what to name me; my father preferred the name Jarvis, but my mother wanted the name Jordan. They seemingly hadn't been putting much discussion into the topic, because my mom says they decided on these names the day I was born. Unable to reach an agreement, they went with both, and I was given the name Jarvis-Jordan Allen Badgley (Allen being my father's name). My father and all of his family always called me Jarvis, but my mother and her family called me Jory (one of my uncles still to this day calls me JJ). Within the JW congregation it was split, with most of the women and kids also calling me Jory, and most of the men calling me Jarvis (how patriarchal).
 
-<a href="../3.jpeg" class="card left span5"><img src="../3.jpeg" alt="Me in my backyard, playing with a set of deer antlers." class="card-img-top"><span class="card-body">Fall, 1982</span></a>When I was five years old one of my friends, a girl born the same month as me, suddenly didn't want to play with me any more. I couldn't understand why, I was worried that I had hurt her feelings some how, that I had said or did something that had upset her, and I asked my mom what I could have done to cause this. My mom explained that the girl had started attending public school, and that the kids at school believed that boys and girls didn't play together. Since I was a boy, that meant she didn't want to be around me any more.
+At the age of three I decided that I didn't like the name Jordan, and I definitely didn't like the name Jory; it didn't fit me right. I think my reasoning at the time was that it was boring and the name Jarvis was much more unique and interesting (and Jory was infanitizing). I told everyone that I knew that I wanted to be called Jarvis from then on. Some people resisted it, but most accepted my choice, including my mother, despite being sad that I had sided with my father.
+
+<a href="../3.jpeg" class="card left span5"><img src="../3.jpeg" alt="Me in my backyard, playing with a set of deer antlers." class="card-img-top"><span class="card-body">Fall, 1982</span></a>
+
+When I was five years old one of my friends, a girl born the same month as me, suddenly didn't want to play with me any more. I couldn't understand why, I was worried that I had hurt her feelings some how, that I had said or did something that had upset her, and I asked my mom what I could have done to cause this. My mom explained that the girl had started attending public school, and that the kids at school believed that boys and girls didn't play together. Since I was a boy, that meant she didn't want to be around me any more.
 
 I was so upset by this, it just didn't make any sense, I didn't see anything about me that was different from her, aside from our age. I knew that boys had penises and that girls didn't, but I didn't see why that mattered. We both enjoyed the same games, we did the same activities, why couldn't we be friends? The experience left me feeling very confused and frustrated; I didn't feel like a boy, I didn't relate to any of the boys I knew, but here I had this significant event which said undeniably that I _was_ a boy, and because of that I was being denied something I wanted very badly. The memory sat on my psyche like a cinder-block and firmly entrenched the idea that, no matter how I felt, I had to be a boy.
 
@@ -54,6 +58,12 @@ The area we lived in was predominantly farm country, and farmer kids are... a ty
 I don't remember much about how we did this. I know she obtained a school desk from the local university, which I would sit at and do worksheets. I excelled at sciences and reading (I know at 4th grade I tested at a 6th grade reading level), but struggled with writing and maths. I had a very hard time with hand writing, and to this day have dreadful penmanship. I remember that my mom would try to find real world examples of things to help me understand concepts. She also enabled my desire to conduct science experiments and learn how things work (tho she also had plenty of bad stories about this as well).
 
 She obtained a Commodore Vic-20 with a cassette tape drive when I was around 6, and showed me how you could type programs into it and make things happen. I didn't really learn how to program, however, but I loved the computer itself. Around the same time my grandmother bought her first home PC, an IBM PC that she got used from Central Michigan University. It had two 5.75" floppy drives and an orange monochrome screen. I remember playing [Castle Adventure](https://www.youtube.com/watch?v=JaKtZYMBbwM) on it, using the arrow keys to move a single character around inside a castle. I believe this was the first computer game I ever played. There probably were some arcade machines in our town at grocery stores or something, but I never got to play them.
+
+<a href="../2.jpeg" class="card right span4"><img src="../2.jpeg" alt="" class="card-img-top"><span class="card-body">My Grandmother kissing my face at the 1981 Jehovah's Witness District Convention, Pontiac Michigan.</span></a>I was raised as a Jehovah's Witness. My mother, my father, my grandmother, one of my uncles, his wife, and two of my three cousins are Witnesses. My entire social circle growing up was JWs. The only life I knew until my 20s was in the JW faith.
+
+Back then the JWs had three yearly events: two circuit assemblies and one big district convention. Our district convention was held in the Pontiac Silverdome in Pontiac, Michigan (a district of Detroit). The DC is a big deal, it's one of the largest social events of the year. Since the JW faith prioritizes friendships and relationships within the church (very strongly discouraging extra-faith association), these are often the biggest opportunities for meeting new friends and for single people to find romantic interests. Thus, everybody always wears their finest (tho not too ostentatious, must remain modest and humble). That year, my mother had sewn for me a five piece child's suit. It was navy blue with vertical pin stripes, single breasted, double button, notched lapel jacket, a matching waistcoat, and shorts (because it's July in Michigan in a very large football stadium), worn over a white button up shirt with a clip on tie. I imagine I looked like quite the dapper five year old boy.
+
+I hated that suit. I hated the way it fit my body, I hated the way it made me hot, I hated how I felt when I wore it. It constricted me when I moved, binding in my shoulders and groin, making it harder to run. It was just wrong, it felt wrong on my body. Most of my friends at the time were girls, partly because that's just how our congregation was, but also because I never got along well with any boys my age. All my friends were wearing beautiful dresses, had bows in their long hair, and just looked really pretty. That's what I wanted too; I wanted to be pretty. I remember resenting anyone who ever told me I looked handsome. I hated that word.
 
 ### Life in the Country
 
@@ -89,13 +99,12 @@ By most people's standards I had an idyllic childhood, but all such stories have
 
 ### A History of Violence
 
-::: cw
-::: cw-header
-Content Warning: Domestic Abuse, Child Abuse, Violence, Hunting
-:::
-[Skip to the next part of the story if these things are triggering for you.](/p/84BB41/rise-fall-rage-grace-p2)
-:::
-:::
+{!{
+<div class="cw">
+  <div class="cw-header">Content Warning: Domestic Abuse, Child Abuse, Violence, Hunting</div>
+  <a href="/p/84BB41/rise-fall-rage-grace-p2">Skip to the next part of the story if these things are triggering for you.</a>
+</div>
+}!}
 
 <a href="../6.jpeg" class="card right span4"><img src="../6.jpeg" alt="My father and I working in the back yard. I am shirtless and extremely skinny" class="card-img-top"><span class="card-body">Fall, 1986</span></a>My dad is a narcissist and a blatant misogynist, of the "women belong in the kitchen" variety; a full blown woman hater. The type of man that today would be labeled a Men's Rights Activist or an Incel. He was tremendously abusive to my mother, both physically and emotionally. For much of that time my father was a construction worker and usually would stay in hotels near the sites he worked on, so most of the time it was just me and my mom at home. Sometimes he would be dismissed from a work site ahead of schedule and would come home a few days before we expected him. He would go into a rage because there wouldn't be a meal waiting for him on the table, even tho we had no idea he was going to be home.
 

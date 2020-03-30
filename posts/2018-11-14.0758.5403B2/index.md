@@ -4,11 +4,17 @@ date: "2018-11-14T15:58:00.000Z"
 title: "I am a woman, and I have always been a woman"
 description: "A twitter thread"
 slug: always-a-woman
-single: false
+no-images: true
 tags:
   - Transgender
   - Essays
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
 
 _The following is a transcription of [a Twitter thread](https://twitter.com/i/moments/1017795260368367616) I wrote back in July in response to some lady that ended up being a sock puppet account._
 

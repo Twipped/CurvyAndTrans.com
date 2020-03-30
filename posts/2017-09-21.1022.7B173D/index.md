@@ -3,11 +3,18 @@ id: "7B173D"
 date: "2017-09-21T17:22:00.000Z"
 title: "Rage and Grace"
 description: "A change of peace"
-single: false
+no-images: true
 tags:
   - Family
   - Transgender
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
+
 Tomorrow is my daughter's 5th birthday. The party is on Saturday, but for tomorrow we bought this big gold mylar 5 balloon and a few small toys to give her as introductory presents. We waited until we knew she was asleep and then went out to the garage and unpacked the helium tank. The tank filled remarkably fast and I accidentally over inflated the balloon.
 
 It popped.

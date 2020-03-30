@@ -31,7 +31,7 @@ tweets:
 ---
 
 
-^^^<!--[-->{!{ {{> tweets ids=(array
+{!{ {{import '~/tweet' ids=(array
   '1016753976211996672'
   '1016832074961977345'
   '1016842932458905600'
@@ -48,9 +48,15 @@ tweets:
   '1017119272290537474'
   '1017161019733377024'
   '1017181216292786177'
-) tweets=meta.tweets className="oneblock card right span3" style="margin-top: 0" }} }!}<!--]-->^^^
+) tweets=meta.tweets className="oneblock card right span3" style="margin-top: 0" }} }!}
 
-^^^{!{ {{#with images.[0]}}<a href="{{rev full}}" style="display: block; overflow: hidden;margin-bottom: 0.5rem;border-radius: 5px;"><img src="{{rev large}}" alt="I'll make my own menstrual cycle, with bloating, and depression. In fact, forget the menstruation!" ></a>{{/with}} }!}^^^
+{!{
+{{#with images.[0]}}
+<a href="{{rev full}}" style="display: block; overflow: hidden;margin-bottom: 0.5rem;border-radius: 5px;">
+  <img src="{{rev large}}" alt="I'll make my own menstrual cycle, with bloating, and depression. In fact, forget the menstruation!" >
+</a>
+{{/with}}
+}!}
 
 First lets get this out of the way... [Yes, trans women](https://theestablishment.co/yes-trans-women-can-get-period-symptoms-e43a43979e8c/) can [have periods](http://www.onwednesdays.net/trans-girl-periods/). No, [we do not menstruate](https://lifeofbria.com/tmi/), but if your definition of "period" is so narrow so as to only include a flow of blood, then you are not living in the 21st century. I'm not going to spend time justifying this, [it's been done better by others](https://www.themaven.net/transgenderuniverse/articles/my-time-of-the-month-as-a-transgender-woman-s5VLSxx6Qk6Y76mGeUz_LQ/). The purpose of this post is to explain the beginnings of how and why, as I have come to understand them.
 
@@ -61,8 +67,6 @@ Disclaimer: I am not a doctor, but being trans necessitates a degree of understa
 For purposes of brevity I use the terms women, men, female and male to refer to individuals whose bodies are primarily estrogenic or androgenic, regardless of if that is by organic or artificial processes. This does not refer to the particular organs a person has, and I denote organ specific conditions were appropriate.
 
 Additionally, the use of "Trans Women" in the title and parts of this piece is a shorthand for individuals who were assigned male at birth and are now on estrogen hormone therapy. Not all transgender women take estrogen, and not all transgender people who take estrogen are women, their identities are just as valid and I do not wish to exclude them with the wording of this essay, but in some contexts it was hard to avoid. I apologize in advance for the binary-centric nature of this post.
-
-<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### An introduction into the endocrine feedback system
 
@@ -90,8 +94,6 @@ But here lies the rub: Trans women's estradiol and progesterone levels do not ri
 
 Without ovaries, tho, there's nothing to respond to these LH and FSH fluctuations, right?  Well... not exactly.
 
-<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
-
 ### Where we're going, we don't need ovaries.
 
 The ovaries [are far from the only point source for estradiol](https://www.ncbi.nlm.nih.gov/m/pubmed/14623515/). Numerous organs throughout the body produce both estrogen and testosterone. The adrenal gland, [adipose fat deposits](https://www.ncbi.nlm.nih.gov/pubmed/3541569), bone marrow, muscles and even the breasts themselves all produce estrogen and progesterone through various means. Most of the hormones are used up locally within the cells they're produced in, but a portion of it can and does escape into the blood stream, and the majority of adrenal production is released directly into the blood stream.
@@ -117,8 +119,6 @@ In women with ovaries, the endometrium layer of the uterus that forms during the
 Ok, so what does that have to do with people who don't have uteruses? F2a is not the only prostaglandin that causes muscle contractions. Prostaglandin E2 (PGE2) also causes muscle spasms in sufficient quantities, and is used to induce labor because of this effect. PGE2 is produced basically anywhere in the body that is under attack or has been damaged, but it is also formed in muscles, the intestines, adipose fat, and the [mammary glands](https://www.ncbi.nlm.nih.gov/pubmed/16204198). Additionally, both PGE2 and PGF2a are produced by [the thyroid and the adrenal glands](https://bpspubs.onlinelibrary.wiley.com/doi/pdf/10.1111/j.1476-5381.1967.tb02003.x). As shown above, mammary tissue and the adrenal gland have both been shown to respond to fluctuations in LH concentrations.
 
 Adrenal released prostaglandins could absolutely cause contractions in the intestines and surrounding muscles, inflammation in the abdomen from the protaglandins would induce bloating, and prostaglandin surges in mammary tissue would explain breast engorgement and sensitivity. Some may scoff at the idea that these secretions could be sufficient to produce these symptoms, but the fact is we don't know. Nobody has studied prostaglandin secretion in women who do not have ovaries. We simply do not know.
-
-<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### Where's the beef?
 
@@ -146,8 +146,6 @@ This pattern has now repeated four times since I identified my cycle using a per
 My suspicion is that medical science is totally wrong about the reception of LH and FSH in humans, especially FSH. Many of the studies into the responses of these hormones by individual parts of the body are based on observations in mice and cows, which have completely different estrous cycles from humans and massively different brain structures. Given [the way that FSH fluctuates](https://en.wikiversity.org/wiki/WikiJournal_of_Medicine/Reference_ranges_for_estradiol,_progesterone,_luteinizing_hormone_and_follicle-stimulating_hormone_during_the_menstrual_cycle) over the course of a female reproductive cycle, and how those fluctuations line up with the symptoms we experience, the correlation is just too strong to be coincidence.
 
 Unfortunately, until somebody conducts a study of LH and FSH blood levels of male-assigned individuals on estrogen therapy who experience period cycles, we can never really be sure.
-
-<!--[-->!!!include(adsense-in-article.md)!!!<!--]-->
 
 ### Update, October 21, 2018
 

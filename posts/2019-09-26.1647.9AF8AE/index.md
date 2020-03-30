@@ -31,7 +31,8 @@ tweets:
   - '1176599410832265218'
 ---
 
-^^^<!--[--><div class="card borderless left span2" style="margin-top: 0">{!{ {{> tweets ids=(array
+{!{
+{{import '~/tweet' ids=(array
   '1176557809795772417'
   '1176560687822323715'
   '1176570358469660675'
@@ -46,7 +47,8 @@ tweets:
   '1176599408265375746'
   '1176599409477525504'
   '1176599410832265218'
-) tweets=meta.tweets className="collapse" }} }!}</div><!--]-->^^^
+) tweets=meta.tweets className="oneblock left" }}
+}!}
 
 
 This thread really spoke to me. I’ve written in the past about the conflicts that one can meet trying to reconcile fatness with gender dysphoria.

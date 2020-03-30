@@ -3,12 +3,18 @@ id: "047AE7"
 date: "2019-02-12T21:03:06.350Z"
 title: "The Parts We Play"
 description: "Actors wearing masks"
-single: false
+no-images: true
 tags:
   - Transgender
   - Essays
 instagram: https://www.instagram.com/p/BtzEiPsnXAz/
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right flush"
+  }}
+}!}
 
 > “But you were always so masculine.”
 

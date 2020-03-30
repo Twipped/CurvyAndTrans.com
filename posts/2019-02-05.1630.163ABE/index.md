@@ -3,15 +3,37 @@ id: "163ABE"
 date: "2019-02-06T00:30:00.000Z"
 title: "It all comes round in the end"
 description: ""
-single: false
+no-images: true
 tags:
   - Parenting
   - Family
 products:
   "Original post by @thisisouractivism.2": https://www.instagram.com/p/BtcYcpRnQXA/
+titlecard: middle
 ---
 
-I shared this in my stories, mentioning the way my own mother gaslights me on my mental health issues because she has the same problems and never got treatment for them. I’ve already gotten so many responses from people about how their moms do the exact same thing. I’ve heard it from friends and coworkers as well. It is so common that I am starting ti think it is actually more rare for a mom to NOT be like this.
+{!{
+<div class="card right span3">
+  <div class="tumblr">
+    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <a href="https://real-pcys.tumblr.com/post/173946416783" class="tumblr-username">real-pcys</a>
+    <div class="tumblr-body">
+      <p>hot take: moms need to learn how to listen to and comfort their daughters without making everything about their own traumas</p>
+    </div>
+  </div>
+  <div class="tumblr">
+    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <a href="https://real-pcys.tumblr.com/post/173946416783" class="tumblr-username">real-pcys</a>
+    <div class="tumblr-body">
+      <p>a classic example</p>
+      <p><strong>daughter</strong>: hey this thing you do bothers me very much and i wish you wouldn’t do it</p>
+      <p><strong>mom</strong>: well my parents abused me and im not even as bad as they were and i had to sit through it so you gotta sit through whatever i do to you too</p>
+    </div>
+  </div>
+</div>
+}!}
+
+I shared this tumblr post in my stories, mentioning the way my own mother gaslights me on my mental health issues because she has the same problems and never got treatment for them. I’ve already gotten so many responses from people about how their moms do the exact same thing. I’ve heard it from friends and coworkers as well. It is so common that I am starting ti think it is actually more rare for a mom to NOT be like this.
 
 I’m wondering if it was generational. My mom was technically GenX, but she was right on the forward edge and has a lot of Baby Boomer ideologies.
 

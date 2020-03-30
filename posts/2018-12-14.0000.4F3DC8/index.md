@@ -15,10 +15,14 @@ tweet:
   - '1073412031154479105'
 ---
 
-^^^<!--[--><div class="card borderless right span3">{!{ {{> tweets ids=(array
+{!{
+<div class="card borderless right span3">
+{{import '~/tweet' ids=(array
   '1073193340647206915'
   '1073412031154479105'
-) tweets=meta.tweets className="" }} }!}</div><!--]-->^^^
+) tweets=meta.tweets className="" }}
+</div>
+}!}
 
 “But the fantasy!” Seriously tho, lets talk about that fantasy. Lets talk about sex, baby. Content warning: Genitals, anatomy, hormones. This one is gonna get intimate, and hopefully wont run afoul of content filters. This is a Sex Positive post.
 

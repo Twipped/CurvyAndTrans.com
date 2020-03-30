@@ -6,10 +6,15 @@ description: "National Coming Out Day: Oct 11th, 2019"
 tags:
   - Coming Out
 no-images: true
-hero: right
-captions:
-  - '"The Closet" by Clay Bennet'
 ---
+
+{!{
+{{import '~/img' images.[1]
+  srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
+  className="card right span3"
+  caption="\"The Closet\" by Clay Bennet"
+}}
+}!}
 
 Today is National Coming Out Day, a day to celebrate the diversity of queerness, increase visibility, and let people know they are not alone.
 

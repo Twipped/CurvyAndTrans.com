@@ -9,6 +9,7 @@ tags:
 no-images: true
 canonical: https://genderdysphoria.fyi/gdb/
 redirect: https://genderdysphoria.fyi/gdb/
+draft: true
 ---
 
 The Gender Dysphoria Bible now has a new home: [That's Gender Dysphoria, FYI](https://genderdysphoria.fyi/gdb/)

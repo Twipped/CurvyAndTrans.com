@@ -14,3 +14,4 @@ We started a memory from my childhood that immediately jumped to the fight I had
 Trauma which may itself go back even further to my dad. It’s hard to say because most of those memories of my father are still locked up tight, but there were definitely echoes of him in the memory.
 
 EMDR can be such a trip.
+

@@ -6,8 +6,16 @@ description: "Addressing a lesbian meme that has been making the rounds."
 tags:
   - Film
   - LGBTQ
-no-single: true
+no-images: true
 ---
+
+{!{
+{{import '~/img' images.[1]
+  alt="Tumblr Post: out of everything that’s come out of the past year in animation, the greatest has got to be my new favorite archetype, the Science Lesbian."
+  srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 534px"
+  className="card center natural"
+}}
+}!}
 
 Ok, so let's talk about [this meme](https://freelancecryptid.tumblr.com/post/182323492167), cuz it's gone around my feed several times and I need to get something off my chest. This isn't the queer representation you're looking for. If you aren't aware, the three characters depicted are Entrapta from She-Ra, Evelyn Deavor from Incredibles 2, and Olivia Octavius (Doc Ock) from Inter the Spider-verse.
 

@@ -7,8 +7,15 @@ description: "Am I still the person I was before transition?"
 tags:
   - Transgender
   - Essays
+no-images: true
 instagram: https://www.instagram.com/p/Bxn-KbonsWf/
 ---
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
+
 Am I still the person I was before transition? That’s such a hard question to answer. A co-worker commented a few months ago about just how remarkable the change in me has been over the last two years. When they compare who I am now to who I was then, the differences are so stark that I seem like a totally new person.
 
 I wrote about how my personality has changed in my two year anniversary post back on the 4th, but am I actually a different person? I still have all the same interests, I still geekout about the same movies and tv shows, I still read the same books, and play the same games. I’m still passionate about programming, and I get excited about the projects I’m working on. I’m still deeply connected to my wife, and more connected than ever to my kids.

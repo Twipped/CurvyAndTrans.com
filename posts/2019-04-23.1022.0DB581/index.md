@@ -6,8 +6,15 @@ description: "Rady Children's Hospital delivers a trans positive experience."
 tags:
   - Transgender
   - Medical
-single: false
+no-images: true
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
+
 This wonderful photo was taken by my two year old son today, who commandeered my iPhone while we were in a lobby at Rady Children’s Hospital. We were waiting as his eyes fully dilated so that the optometrist could determine if he needs glasses. He will, but not for a couple years.
 
 Funny thing happened during the appointment.
@@ -32,6 +39,4 @@ I’m very grateful for that moment. It was a wonderful example of how to provid
 
 Rady is in the process of forming a gender care clinic for trans youth. They’re a truly wonderful organization and I’m so thankful to have them in San Diego.
 
-::: footer
-Photo credit: The poster image for this blog post was taken from the Rady website and does not belong to me.
-:::
+{!{<div class="footer"><p>Photo credit: The poster image for this blog post was taken from the Rady website and does not belong to me.</p></div>}!}

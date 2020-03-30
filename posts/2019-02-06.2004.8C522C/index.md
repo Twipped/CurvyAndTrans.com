@@ -8,7 +8,15 @@ tags:
   - Essays
 captions:
   - The one time I ever appeared in a newspaper, and I'm stuffing my face with a burrito.
+no-images: true
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+    caption="The one time I ever appeared in a newspaper, and I'm stuffing my face with a burrito."
+  }}
+}!}
 
 Have you ever remembered something from your childhood, an event that in the moment you interpreted one way, but now as an adult you look back on it and realize that what you thought was happening isn’t what was actually happening? Now when you look back on those memories with the context of adulthood, you’re able to recognize the reality of the situation, and it changes your view of the memory.
 

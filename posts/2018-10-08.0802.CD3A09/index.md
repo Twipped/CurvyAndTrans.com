@@ -6,7 +6,28 @@ description: "In which I refute a tumblr post"
 slug: transreaction
 tags:
   - Transgender
+no-images: true
+titlecard: middle
 ---
+
+{!{
+<div class="card right span3">
+  <div class="tumblr">
+    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <a href="https://ovari3s.tumblr.com/post/130631824940" class="tumblr-username">ovari3s</a>
+    <div class="tumblr-body">
+      <p>Fun way to instantly tell how much cis women r disgusted by trans women: tell one someone thought they were a trans woman, even if u frame it as a compliment just watch their reaction, it’s unreal</p>
+    </div>
+  </div>
+  <div class="tumblr">
+    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <a href="https://ovari3s.tumblr.com/post/130632750295/ovari3s-fun-way-to-instantly-tell-how-much-cis" class="tumblr-username">ovari3s</a>
+    <div class="tumblr-body">
+      <p>It’s just heartbreaking bc there’s nothing we can do abt it and I’ve done this on literally all of my closest friends and family and they all had the same reaction and it rly fcking hurts to know that underneath all the nice words, and campaigns , that disgust of our bodies, is the underlying and ultimate truth of their allyship</p>
+    </div>
+  </div>
+</div>
+}!}
 
 This morning the tumblr post on the right came across my facebook feed, and I had simply too many thoughts about it for facebook. I reject the thesis defined in the second comment, and here's why.
 

@@ -5,9 +5,17 @@ title: "Pilled"
 description: "Prior to my transition I almost never took any medication."
 tags:
   - Medical
-single: false
 instagram: https://www.instagram.com/p/BySx21Unbqe/
+no-images: true
 ---
+{!{
+{{import '~/img' images.[1]
+  alt="Image of my hand holding seven pills of differing shapes."
+  srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
+  className="card right span3"
+}}
+}!}
+
 Prior to my transition I almost never took any medication, short of some pain killers here and there, or cold medicine. This changed dramatically the day I started hormone therapy. Not only did I need the HRT itself, I needed to start taking supplements to offset the minerals lost due to the side effects of spironolactone.
 
 I no longer take spiro, and my estrogen is provided via injections, but new medications filled in after those went away, so now every day I swallow a small handful of pills at breakfast.

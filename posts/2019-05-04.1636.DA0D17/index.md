@@ -69,31 +69,31 @@ May the fourth be with you, but especially with me. It was on this day two years
 
 <div class="square"><div>
   <div class="gridbyfive">
-    <a href="../01.jpeg" style="background-image: url(../01.sm.jpeg);"><span>May 2017      </span></a>
-    <a href="../02.jpeg" style="background-image: url(../02.sm.jpeg);"><span>June 2017     </span></a>
-    <a href="../03.jpeg" style="background-image: url(../03.sm.jpeg);"><span>July 2017     </span></a>
-    <a href="../04.jpeg" style="background-image: url(../04.sm.jpeg);"><span>August 2017   </span></a>
-    <a href="../05.jpeg" style="background-image: url(../05.sm.jpeg);"><span>September 2017</span></a>
-    <a href="../06.jpeg" style="background-image: url(../06.sm.jpeg);"><span>October 2017  </span></a>
-    <a href="../07.jpeg" style="background-image: url(../07.sm.jpeg);"><span>November 2017 </span></a>
-    <a href="../08.jpeg" style="background-image: url(../08.sm.jpeg);background-position: center;"><span>December 2017 </span></a>
-    <a href="../09.jpeg" style="background-image: url(../09.sm.jpeg);"><span>January 2018  </span></a>
-    <a href="../10.jpeg" style="background-image: url(../10.sm.jpeg);"><span>February 2018 </span></a>
-    <a href="../11.jpeg" style="background-image: url(../11.sm.jpeg);"><span>March 2018    </span></a>
-    <a href="../12.jpeg" style="background-image: url(../12.sm.jpeg);"><span>April 2018    </span></a>
-    <a href="../13.jpeg" style="background-image: url(../13.sm.jpeg);"><span>May 2018      </span></a>
-    <a href="../14.jpeg" style="background-image: url(../14.sm.jpeg);"><span>June 2018     </span></a>
-    <a href="../15.jpeg" style="background-image: url(../15.sm.jpeg);"><span>July 2018     </span></a>
-    <a href="../16.jpeg" style="background-image: url(../16.sm.jpeg);"><span>August 2018   </span></a>
-    <a href="../17.jpeg" style="background-image: url(../17.sm.jpeg);"><span>September 2018</span></a>
-    <a href="../18.jpeg" style="background-image: url(../18.sm.jpeg);"><span>October 2018  </span></a>
-    <a href="../19.jpeg" style="background-image: url(../19.sm.jpeg);"><span>November 2018 </span></a>
-    <a href="../20.jpeg" style="background-image: url(../20.sm.jpeg);"><span>December 2018 </span></a>
-    <a href="../21.jpeg" style="background-image: url(../21.sm.jpeg);"><span>January 2019  </span></a>
-    <a href="../22.jpeg" style="background-image: url(../22.sm.jpeg);"><span>February 2019 </span></a>
-    <a href="../23.jpeg" style="background-image: url(../23.sm.jpeg);"><span>March 2019    </span></a>
-    <a href="../24.jpeg" style="background-image: url(../24.sm.jpeg);"><span>April 2019    </span></a>
-    <a href="../25.jpeg" style="background-image: url(../25.sm.jpeg);"><span>May 2019      </span></a>
+    <a href="../01.jpeg" style="background-image: url(../01.576w.jpeg);"><span>May 2017      </span></a>
+    <a href="../02.jpeg" style="background-image: url(../02.576w.jpeg);"><span>June 2017     </span></a>
+    <a href="../03.jpeg" style="background-image: url(../03.576w.jpeg);"><span>July 2017     </span></a>
+    <a href="../04.jpeg" style="background-image: url(../04.576w.jpeg);"><span>August 2017   </span></a>
+    <a href="../05.jpeg" style="background-image: url(../05.576w.jpeg);"><span>September 2017</span></a>
+    <a href="../06.jpeg" style="background-image: url(../06.576w.jpeg);"><span>October 2017  </span></a>
+    <a href="../07.jpeg" style="background-image: url(../07.576w.jpeg);"><span>November 2017 </span></a>
+    <a href="../08.jpeg" style="background-image: url(../08.576w.jpeg);background-position: center;"><span>December 2017 </span></a>
+    <a href="../09.jpeg" style="background-image: url(../09.576w.jpeg);"><span>January 2018  </span></a>
+    <a href="../10.jpeg" style="background-image: url(../10.576w.jpeg);"><span>February 2018 </span></a>
+    <a href="../11.jpeg" style="background-image: url(../11.576w.jpeg);"><span>March 2018    </span></a>
+    <a href="../12.jpeg" style="background-image: url(../12.576w.jpeg);"><span>April 2018    </span></a>
+    <a href="../13.jpeg" style="background-image: url(../13.576w.jpeg);"><span>May 2018      </span></a>
+    <a href="../14.jpeg" style="background-image: url(../14.576w.jpeg);"><span>June 2018     </span></a>
+    <a href="../15.jpeg" style="background-image: url(../15.576w.jpeg);"><span>July 2018     </span></a>
+    <a href="../16.jpeg" style="background-image: url(../16.576w.jpeg);"><span>August 2018   </span></a>
+    <a href="../17.jpeg" style="background-image: url(../17.576w.jpeg);"><span>September 2018</span></a>
+    <a href="../18.jpeg" style="background-image: url(../18.576w.jpeg);"><span>October 2018  </span></a>
+    <a href="../19.jpeg" style="background-image: url(../19.576w.jpeg);"><span>November 2018 </span></a>
+    <a href="../20.jpeg" style="background-image: url(../20.576w.jpeg);"><span>December 2018 </span></a>
+    <a href="../21.jpeg" style="background-image: url(../21.576w.jpeg);"><span>January 2019  </span></a>
+    <a href="../22.jpeg" style="background-image: url(../22.576w.jpeg);"><span>February 2019 </span></a>
+    <a href="../23.jpeg" style="background-image: url(../23.576w.jpeg);"><span>March 2019    </span></a>
+    <a href="../24.jpeg" style="background-image: url(../24.576w.jpeg);"><span>April 2019    </span></a>
+    <a href="../25.jpeg" style="background-image: url(../25.576w.jpeg);"><span>May 2019      </span></a>
   </div>
 </div></div>
 
@@ -104,7 +104,12 @@ By this point all the big hitters have come and gone and life is pretty much set
 
 I remember years back how people said that even tho it isn’t always visible in timelines, there’s just as many changes in year two as there were in year one, and it is *so* true, but it was definitely helped along by the orchiectomy. The difference between May 2018 and July 2018 is *stark*, and not just because I colored my hair.
 
-<a href="../26-2.jpeg" class="card span2 center"><img src="../26-2.jpeg" alt="" class="card-img-top"><span class="card-body">2009 to 2019</span></a>
+{!{
+  {{import '~/img' images.[26-2]
+    className="card span2 center"
+    caption="2009 to 2019"
+  }}
+}!}
 
 But the thing that changed the most over the last two years wasn’t physical at all. I am not even remotely the same person that I was in 2016. I don’t even think I could enumerate all the ways that my personality has shifted. I’m *way* more vibrant in the way I interact with others, more evocative and enthusiastic. The old me was always numb, barely present, just drifting through the world from one event to another with little engagement. I wanted to be part of social gatherings, but would always find myself on the outside, unable to engage. I have more interesting conversations and feel like I’m connecting to people much more deeply.
 
@@ -112,7 +117,12 @@ While I still have retained all of the same interests I had pre-transition, many
 
 Fashion and cosmetics is definitely chief among these, and have given me *so many* new forms of expression and creativity. I used to wear the same boring clothes every single day, making slight changes for weather as the year moved through the seasons. Now… I rarely wear the exact same outfit twice, and even when I *try* to duplicate a makeup look, it comes out completely different because I approach it from a different way. I care so much more about my appearance now, and I’m *happy* that I care more. Going into my closet and saying “what the hell am I going to wear today” still makes an inner part of me leap for joy.
 
-<a href="../26-4.jpeg" class="card span2 center"><img src="../26-4.jpeg" alt="" class="card-img-top"><span class="card-body">2009 to 2019</span></a>
+{!{
+  {{import '~/img' images.[26-4]
+    className="card span2 center"
+    caption="2009 to 2019"
+  }}
+}!}
 
 The way I see the world has dramatically changed, both in good and bad ways. I was always cognoscente of how much privilege I had before, but now I can actually feel how much it is gone, and with that has come an acute awareness of just how awful most men are at wielding the power they’re granted, and how pathetic they are when they feel that power threatened. The whole experience with my boss made it so incredibly visible, and now I see it everywhere.
 
@@ -122,7 +132,12 @@ My kinship with women feels so much stronger. The feeling of pride in other wome
 
 Meanwhile, with the severing of any kind of attachment to manhood, my misandry has flourished, and it feels so freeing. Where once I might have made a defense for bad male behavior, now I have no reason to make excuses. The bar for men is set *so* incredibly low, and yet so very few are able to meet it. Where once I might have tried to argue with men over their incredibly bad perceptions, now I just dust my hands of them, expecting nothing of their self awareness. Thank *god* I am a lesbian, because if I was straight I would never be able to find a partner that wasn’t some kind of huge settlement. Seriously, straight girls, I don’t know how you do that.
 
-<a href="../26-3.jpeg" class="card span2 center"><img src="../26-3.jpeg" alt="" class="card-img-top"><span class="card-body">2015 to 2019</span></a>
+{!{
+  {{import '~/img' images.[26-3]
+    className="card span2 center"
+    caption="2009 to 2019"
+  }}
+}!}
 
 Actually, I do know how they do it, because they’re so used to it being this bad that they just accept it as normal. Katharine did it for me, and she’s not even straight. My mother totally did it, and even admitted that she married my father out of pity. That’s one of the other changes in perception that has come; I see heteronormativity *EVERYWHERE*.
 
@@ -132,5 +147,9 @@ This past year Katharine participated in an effort to get our daughter’s schoo
 
 Above all else, I feel so much more alive. Live is worth living now, and I’m soaking in it.
 
-<a href="../26-1.jpeg" class="card span2 center"><img src="../26-1.jpeg" alt="" class="card-img-top"><span class="card-body">2009 to 2019</span></a>
-
+{!{
+  {{import '~/img' images.[26-1]
+    className="card span2 center"
+    caption="2009 to 2019"
+  }}
+}!}

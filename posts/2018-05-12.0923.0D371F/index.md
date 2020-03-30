@@ -12,6 +12,12 @@ tags:
 products:
   "Come as You Are, by Emily Nagoski": https://www.amazon.com/exec/obidos/ASIN/B00LD1ORBI/curvyandtrans-20
 ---
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
+
 I’m slowly but surely working my way through this book, Come as You Are, by Emily Nagoski. The book is a guide on female sexuality, written for women who struggle with sexual intimacy. The purpose of the book is to teach women to understand their own motivations and mental barriers in order to have and enjoy better sex. The book is divided into four parts, and I just finished the first part.
 
 Part one is all about context, how the conditions of a setting and event can affect the way we respond to stimuli. In a neutral environment, positive stimuli encourages forward interest, excitement, and negative stimuli triggers backwards interest, fleeing or apprehension. However In a fully safe environment, negative stimuli can also trigger forward interest and enjoyment. This is why pain can be so pleasurable under the right settings. In a hostile environment, even pleasure can be a turn off. It triggers apprehension and disgust.

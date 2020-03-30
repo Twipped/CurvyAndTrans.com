@@ -10,9 +10,11 @@ tags:
 tweet: '1098963132720963585'
 ---
 
-^^^<!--[-->{!{ {{> tweets ids=(array
+{!{
+{{import '~/tweet' ids=(array
   '1098963132720963585'
-) tweets=meta.tweets className="" }} }!}<!--]-->^^^
+) tweets=meta.tweets className="card right span3" }}
+}!}
 
 My relationship with my daughter is ten times stronger than it was in the before times. We used to have so many conflicts, so much hostility and impatience. She was legit scared of me, and with good reason. I was a powder keg with a lit fuse, read to explode at any moment. I had no tolerance for her four year old antics, and no room for providing comfort.
 

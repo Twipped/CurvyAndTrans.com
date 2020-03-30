@@ -8,10 +8,18 @@ tags:
   - Mental Health
 tweet: '1185225928118542337'
 titlecard: middle
+tweets:
+  - '1185225928118542337'
 ---
 
-^^^<!--[-->{!{ {{> tweets ids=(array '1185225928118542337') tweets=meta.tweets className="grid-row by-two" }} }!}<!--]-->^^^
+{!{
+{{import '~/tweet' ids=(array
+  '1185225928118542337'
+) tweets=meta.tweets className="span2" }}
+}!}
 
 You go to get water and fifteen minutes later you close the now full dishwasher and you realize that you have completely failed at hydration.
 
 Then you forget to start the dishwasher.
+
+

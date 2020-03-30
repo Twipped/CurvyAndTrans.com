@@ -4,10 +4,17 @@ date: "2019-05-04T03:46:00.000Z"
 title: "Insecurities Anonymous"
 description: "We are not the product of our flaws."
 instagram: https://www.instagram.com/p/BxDoTocnve3/
-single: false
+no-images: true
 tags:
   - Body Positivity
 ---
+
+{!{
+  {{import '~/img' images.[1]
+    className="card span3 right"
+  }}
+}!}
+
 _Yesterday I made an instagram post of a photo of me fully nude (save for censorship stickers). The post has now been removed after 24 hours, because I don't want the kind of attention that photos like that receives, and I will not be posting the photo here on this blog, but below is the text of that post._
 
 ---

@@ -9,6 +9,7 @@ tags:
   - Body Positivity
 single: false
 no-title: true
+no-images: true
 instagram: https://www.instagram.com/p/B1TzCoQH__U/
 titlecard: middle
 ---
