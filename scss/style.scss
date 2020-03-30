@@ -1,10 +1,6 @@
 
 
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
-@import "bootstrap/scss/mixins";
-
-$body-bg: $gray-100;
+$body-bg: #f8f9fa;
 $content-bg: white;
 $font-primary: 'Lato', Arial, sans-serif;
 $font-secondary: 'Montserrat', 'Helvetica Neue', Helvetica, serif;
@@ -14,6 +10,7 @@ $line-height-base: 1.6;
 $headings-font-family:        $font-secondary;
 $headings-font-weight:        null;
 
+$font-size-base: 1rem;
 $h1-font-size:                $font-size-base * 2.5;
 $h2-font-size:                $font-size-base * 2;
 $h3-font-size:                $font-size-base * 1.5;
@@ -33,6 +30,9 @@ $lightBlue: lighten($blue, 30%);
 $darkBlue: darken($blue, 30%);
 $primary: #e84992;
 
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
 
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
@@ -73,4 +73,15 @@ $primary: #e84992;
 
 @import "./global";
 @import "./index";
+@import "./tweet";
+@import "./grid-row";
 @import "./post";
+@import "./pager";
+@import "./card";
+
+|node_modules/bootstrap-drawer/dist/css/bootstrap-drawer.css|
+
+|node_modules/magnific-popup/dist/magnific-popup.css|
+
+|node_modules/flickity/dist/flickity.css|
+

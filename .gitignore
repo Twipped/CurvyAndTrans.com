@@ -1,7 +1,6 @@
 node_modules
-/docs
+/dist
 /aws.json
-/twitter.json
 /rev-manifest.json
 /.awspublish-curvyandtrans.com
 /bs-manifest.json
@@ -9,9 +8,13 @@ node_modules
 /posts.json
 /posts-sans.json
 /if-cache
-/if-manifest.json
-posts/*/montage/*.jpg
+/if-cache.json
+posts/*/#*
+/twitter-config.json
 /twitter-cache.json
 /terra/terraform.tfstate*
 /terra/.terraform
 /terra/files/*.zip
+/twitter-media.json
+/assets.json
+/pages.json

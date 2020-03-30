@@ -1,0 +1,17 @@
+{{#extend "layout"}}
+
+  {{#content "bodyClass"}}page-index{{/content}}
+  {{#content "body"}}
+
+  <h3 class="tagged-header">
+    <span>Draft Posts</span>
+  </h3>
+  <div class="card-grid">
+    {{#each posts.drafts}}
+      {{#unless subPage}}{{import '~/index-card' this}}{{/unless}}
+    {{/each}}
+  </div>
+
+  {{/content}}
+
+{{/extend}}

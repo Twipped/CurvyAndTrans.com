@@ -1,0 +1,14 @@
+
+<div class="{{className}}" {{#if style}}style="{{style}}"{{/if}}>
+  <a href="{{#if link}}{{link}}{{else}}{{rev (lookup (last sizes) 'url')}}{{/if}}" class="lb" target="_break">
+    <img
+      src="{{rev sizes.0.url}}"
+      alt="{{alt}}"
+      srcset="{{#join sizes}}{{rev url}} {{width}}w{{/join}}"
+      sizes="{{#if srcSizes}}{{srcSizes}}{{else}}(max-width: 576px) 100vw, 576px{{/if}}"
+      {{#includes className "card"}}class="card-img-top"{{/includes}}
+      {{#if imgStyle}}style="{{imgStyle}}"{{/if}}
+    >
+  </a>
+  {{#if caption}}<span class="card-body">{{{caption}}}</span>{{/if}}
+</div>

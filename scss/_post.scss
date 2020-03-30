@@ -84,6 +84,7 @@
             "products products"
           ;
           grid-column-gap: 20px;
+          padding-bottom: 1em;
 
           &.is-long {
             grid-template-columns: 1fr 2fr;
@@ -102,7 +103,7 @@
         }
       }
 
-      &.no-preview.single-image {
+      &.no-preview.single-image, &.no-body {
         grid-template-columns: 100%;
         grid-template-areas:
           "title"
@@ -204,7 +205,7 @@
   .carousel-cell {
     margin: 10px;
     img, video {
-      max-height: 370px;
+      height: 370px;
     }
   }
 

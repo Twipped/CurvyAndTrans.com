@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="author" content="Jocelyn Badgley">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:site_name" content="Curvy & Trans">
+  <meta name="twitter:site" content="CurvyAndTrans">
+  <meta name="twitter:creator" content="TwippingVanilla">
+  {{block "meta"}}
+  <title>{{page.title}}</title>
+
+  <!-- generics -->
+  <link rel="icon" href="https://curvyandtrans.com{{rev '/favicon32.png'}}" sizes="32x32">
+  <link rel="icon" href="https://curvyandtrans.com{{rev '/favicon57.png'}}" sizes="57x57">
+  <link rel="icon" href="https://curvyandtrans.com{{rev '/favicon76.png'}}" sizes="76x76">
+  <link rel="icon" href="https://curvyandtrans.com{{rev '/favicon96.png'}}" sizes="96x96">
+  <link rel="icon" href="https://curvyandtrans.com{{rev '/favicon128.png'}}" sizes="128x128">
+  <link rel="icon" href="https://curvyandtrans.com{{rev '/favicon192.png'}}" sizes="192x192">
+  <link rel="icon" href="https://curvyandtrans.com{{rev '/favicon228.png'}}" sizes="228x228">
+
+  <!-- Android -->
+  <link rel="shortcut icon" sizes="196x196" href="/favicon196.png">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="https://curvyandtrans.com{{rev '/favicon120.png'}}" sizes="120x120">
+  <link rel="apple-touch-icon" href="https://curvyandtrans.com{{rev '/favicon152.png'}}" sizes="152x152">
+  <link rel="apple-touch-icon" href="https://curvyandtrans.com{{rev '/favicon180.png'}}" sizes="180x180">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://curvyandtrans.com{{rev '/favicon57.png'}}">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://curvyandtrans.com{{rev '/favicon72.png'}}">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://curvyandtrans.com{{rev '/favicon120.png'}}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://curvyandtrans.com{{rev '/favicon144.png'}}">
+
+  <!-- Windows 8 IE 10-->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="https://curvyandtrans.com{{rev '/favicon144.png'}}">
+
+  <!-- Windows 8.1 + IE11 and above -->
+  <meta name="msapplication-config" content="https://curvyandtrans.com/browserconfig.xml" />
+
+  <link rel="preconnect" href="//fonts.gstatic.com/" crossorigin>
+  <link rel="preconnect" href="//cdnjs.cloudflare.com/" crossorigin="anonymous">
+  <link rel='alternate' type='application/atom+xml' title='Atom 0.3' href='https://curvyandtrans.com/atom.xml'>
+  <link rel="stylesheet" href="{{rev '/css/style.css'}}" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link href="//fonts.googleapis.com/css?family=Montez:400,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Lato:100,200,300,400,700,800" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  {{#block "prescripts"}}
+  <script type="text/javascript" src="{{rev '/js/global.js'}}" data-i-url="{{#prod}}//t.{{page.domain}}{{/prod}}/i"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  {{/block}}
+</head>
+<body class="{{block 'bodyClass'}}" {{block 'bodyAttributes'}}>
+  {{block "preRoot"}}
+  <div class="root">
+    <header>
+      <h1><a href="/">curvy &amp; trans</a></h1>
+      <div class="nav-external">
+        <a href="https://www.instagram.com/curvyandtrans" class="btn btn-sm btn-outline-dark" target="_blank" title="Instagram">{{icon 'brands/instagram'}} Instagram</a>
+        <a href="https://twitter.com/CurvyAndTrans"       class="btn btn-sm btn-outline-dark" target="_blank" title="Twitter"  >{{icon 'brands/twitter'}} Twitter</a>
+        <a href="https://facebook.com/curvyandtrans"      class="btn btn-sm btn-outline-dark" target="_blank" title="Facebook" >{{icon 'brands/facebook-square'}} Facebook</a>
+        <a href="https://discord.gg/ttqPNfv"              class="btn btn-sm btn-outline-dark" target="_blank" title="Discord"  >{{icon 'brands/discord'}} Discord</a>
+        <a href="https://patreon.com/curvyandtrans"       class="btn btn-sm btn-outline-dark" target="_blank" title="Patreon"  >{{icon 'brands/patreon'}} Patreon</a>
+        <a href="https://ko-fi.com/curvyandtrans"         class="btn btn-sm btn-outline-dark" target="_blank" title="Ko-Fi"    >{{icon 'brands/ko-fi'}} Ko-Fi</a>
+        <a href="http://beacon.to/curvyandtrans"          class="btn btn-sm btn-outline-dark" target="_blank" title="Questions">{{icon 'comment-dots'}} Questions?</a>
+        <a href="mailto:media@curvyandtrans.com"          class="btn btn-sm btn-outline-dark"                 title="Email"    >{{icon 'envelope'}} Email</a>
+      </div>
+      {{block "header"}}
+    </header>
+
+    <div id="body">
+      {{block "body"}}
+    </div>
+    <footer>
+      <div class="patreon-support">
+        <strong>
+          If you find the works on this blog to be valuable,<br>
+          please consider <a href="https://www.patreon.com/curvyandtrans">making a pledge to my patreon</a><br>
+          in support of the work I do for trans and fat activism.
+        </strong>
+        <p>Special thanks to the following supporters:</p>
+        <ul>
+          <li>Julia Hocken</li>
+          <li>Amanda B</li>
+          <li>Brass Cowbell</li>
+        </ul>
+      </div>
+      <p>All original images and text are owned and copyright<br>&copy; {{date "yyyy"}} Jocelyn Badgley, all rights reserved. <a href="/privacy">Privacy Policy</a></p>
+      <p><a href="https://github.com/Twipped/CurvyAndTrans.com">Site source is available for reference and reuse on GitHub</a></p>
+    </footer>
+  </div>
+
+  {{#block "postscripts"}}{{/block}}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4767790-14"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag () { window.dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-4767790-14');
+  </script>
+  <noscript><img src="{{#prod}}//t.curvyandtrans.com{{/prod}}/i?stage=load" style="display: none"></noscript>
+</body>
+</html>

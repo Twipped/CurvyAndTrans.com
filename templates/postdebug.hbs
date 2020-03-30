@@ -1,0 +1,83 @@
+<style>
+  .dev-mode {
+    background: #F59395;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .dev-mode h3 {
+    margin: 0 auto;
+    max-width: 1000px;
+    cursor: pointer;
+  }
+
+  .dev-mode-content > div {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .dev-mode-content.hide {
+    display: none;
+  }
+
+  .dev-mode .alert {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .dev-mode .alert img {
+    max-width: 100%;
+  }
+
+  .dev-mode .full {
+    grid-column: 1/-1
+  }
+
+  .dev-mode code {
+    font-size: 11px;
+    font-family: monospace;
+
+  }
+</style>
+
+<div class="dev-mode">
+  <h3 class="full" onclick="$('.dev-mode-content').toggleClass('hide');">DEVELOPMENT MODE</h3>
+
+  <div class="dev-mode-content hide"><div>
+    <div class="alert alert-info full">
+      <strong>Classes</strong><br>
+      {{#each meta.classes}}<span class="badge badge-light" style="margin: 0 5px 2px 0;">{{this}}</span>{{/each}}
+    </div>
+
+    <div class="alert alert-info full">
+      <strong>Description</strong><br>
+      <p style="margin: 0;">{{meta.description}}</p>
+    </div>
+
+    {{#if (any meta.poster meta.tweet)}}<div class="alert alert-info">
+      <strong>Poster</strong><br>
+      {{#if meta.tweet}}
+      {{import '~/tweet' ids=tweet tweets=meta.tweets className="grid-tweet" }}
+      {{else}}
+        {{#if meta.poster}}
+        <img
+          src="{{rev meta.poster.0.url}}"
+          alt=""
+          srcset="{{#join meta.poster}}{{rev url}} {{width}}w{{/join}}"
+          sizes="(max-width: 576px) 100vw, 576px"
+        >
+        {{/if}}
+      {{/if}}
+    </div>{{/if}}
+
+    {{#if meta.titlecard}}<div class="alert alert-info">
+      <strong>Titlecard</strong><br>
+      <img src="{{meta.titlecard}}" alt="">
+    </div>{{/if}}
+
+    <code class="full alert alert-info"><pre>{{stringify meta 2}}</pre></code>
+  </div></div>
+</div>

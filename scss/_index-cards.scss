@@ -360,4 +360,15 @@ a.grid-card, .grid-card a {
     grid-template-rows: min-content min-content min-content min-content minmax(6em, 1fr);
   }
 
+  &.has-tweet.no-preview {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "datetags"
+      "title"
+      "subtitle"
+      "poster"
+    ;
+    grid-template-rows: min-content min-content min-content min-content;
+  }
+
 }

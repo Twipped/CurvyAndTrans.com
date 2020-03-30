@@ -49,20 +49,26 @@ blockquote {
 
 }
 
-h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   clear: left;
   display: flex;
 
+  a { text-decoration: inherit; }
+
   .header-link {
     flex: 1;
+    font-size: 0.75em;
     text-decoration: none;
-    font-size: 16px;
     align-self: center;
     text-align: right;
-    opacity: 0.3;
+    opacity: 0.15;
 
     &:hover {
       opacity: 1;
+    }
+
+    img {
+      height: 1em;
     }
   }
 }
@@ -74,307 +80,6 @@ li p {
 
 li p + ul {
   margin-bottom: 0.5em;
-}
-
-.card {
-  text-decoration: none;
-  background: $lightPink;
-
-  &.borderless {
-    border: none;
-  }
-
-  .card-img-top + .card-img-top {
-    border-top: 1px solid $card-border-color;
-    border-radius: 0
-  }
-
-  .card-body {
-    padding: 7px 5px 5px;
-    line-height: 1.3;
-    color: #333;
-    font-size: 12px;
-    font-family: $font-secondary;
-  }
-
-  .card-body.caption {
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .list-group-item {
-    font-size: 12px;
-
-    padding: 0.5rem 1.25rem;
-    text-decoration: none;
-
-    &.active + .active {
-      border-bottom: 1px solid lighten($list-group-active-bg, 15%);
-      background-color: lighten($list-group-active-bg, 10%);
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-
-    &.left {
-      float: left;
-      margin-right: 10px;
-    }
-
-    &.right {
-      float: right;
-      margin-left: 10px;
-    }
-
-    &.center {
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 1em;
-    }
-
-    &.natural {
-      .card-img-top {
-        width: unset;
-        max-height: 50vh;
-        margin: 0 auto;
-      }
-    }
-
-    &.span2, &.span3, &.span4, &.span5, &.span6 {
-
-      &.left { clear: left; }
-      &.right { clear: right; }
-
-      &:first-child {
-        margin-top: 0.5em;
-      }
-    }
-
-    &.hero  { width: 35%; }
-    &.span1 { width: 100%; }
-    &.span2 { width:  50%; }
-    &.span3 { width:  33%; }
-    &.span4 { width:  25%; }
-    &.span5 { width:  20%; }
-    &.span6 { width:  15%; }
-  }
-
-  @include media-breakpoint-down(sm) {
-    margin-top: 0 !important;
-    margin-bottom: 5px;
-
-    &.hero {
-      margin: 0 -15px 10px -15px;
-      border-left: none;
-      border-right: none;
-      border-radius: 0;
-
-      img { border-radius: 0; }
-    }
-  }
-
-  &.ig-card {
-    background: white;
-    padding:12px;
-    font-size:14px;
-    line-height:17px;
-    color: rgb(38, 38, 38);
-    font-family: Roboto, Helvetica, Arial,sans-serif;
-    text-decoration:none;
-
-
-    .ig-header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      .ig-avatar {
-        background-color: #F4F4F4;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 50%;
-        flex-grow: 0;
-        height: 40px;
-        width: 40px;
-        margin: 0 10px 0 0;
-      }
-
-      .ig-name {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: center;
-        align-items: flex-start;
-        font-weight: 400;
-        line-height: 1.2;
-
-        strong {
-          font-weight: 600;
-        }
-      }
-    }
-
-    .ig-image {
-      margin: 10px 0;
-      border-radius: 5px;
-    }
-
-    .ig-caption {
-      line-height: 18px;
-      font-size: 14px;
-      font-weight: 400;
-      word-wrap:break-word;
-      margin: 0;
-    }
-
-    .ig-footer {
-      color:#c9c8cd;
-      font-size: 10px;
-      line-height: 1;
-      overflow:hidden;
-      padding:6px 0 0 0;
-      margin: 0;
-      text-overflow:ellipsis;
-      text-transform: uppercase;
-    }
-  }
-}
-
-.grid-row {
-  clear: both;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-gap: 10px;
-  grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr ) );
-
-  margin-bottom: 1rem;
-
-  @include media-breakpoint-up(md) {
-    .double { grid-column-end: span 2; }
-  }
-
-  &.by-two {
-    grid-template-columns: repeat( auto-fit, minmax( 420px, 1fr ) );
-  }
-
-  &.by-three {
-    grid-template-columns: repeat( auto-fit, minmax( 325px, 1fr ) );
-  }
-
-  &.by-three-forced {
-    @include media-breakpoint-up(md) {
-      grid-template-columns: repeat( auto-fit, minmax( 30%, 1fr ) );
-    }
-  }
-}
-
-.spoiler {
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content;
-  grid-template-areas:
-    "content"
-  ;
-
-  .spoiler-wrap {
-    border: 1px solid gray;
-    overflow: hidden;
-    grid-area: content;
-    justify-self: center;
-
-  }
-
-  .spoiler-target {
-    filter: blur(30px);
-    transition-property: -webkit-filter;
-    transition-duration: .2s;
-  }
-
-  .spoiler-caption {
-    grid-area: content;
-    align-self: center;
-    justify-self: center;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-shadow: 0 2px 1px rgba(0,0,0,0.8);
-    z-index: 10;
-
-    transition-property: opacity;
-    transition-duration: .2s;
-    opacity: 1;
-  }
-
-  &:target, &:target {
-    .spoiler-target {
-      filter: blur(0px);
-    }
-
-    .spoiler-caption {
-      opacity: 0;
-    }
-  }
-}
-
-
-.matrix-row {
-  clear: both;
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 15px;
-  background-color: #030;
-
-  padding: 10px 5px 0px 5px;
-  > * {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-
-  img {
-    max-height: 300px;
-    outline:1px solid #676;
-  }
-
-  & + .matrix-row {
-    margin-top: -19px;
-    padding-top: 5px;
-
-    > * { margin-top: 0; }
-  }
-
-  @include media-breakpoint-down(sm) {
-    flex-wrap: wrap;
-    img { min-width: 100%; }
-  }
-}
-
-.cw {
-  $cwColor: darken($gray-100, 2%);
-  margin: 0 -20px 1rem;
-
-  padding: 10px 20px;
-  background-color: $cwColor;
-
-  font-size: 0.8rem;
-  font-weight: 300;
-
-  .cw-header {
-    font-weight: 500;
-    margin: 5px -10px;
-    padding: 0px 10px 5px;
-    font-size: 1.2rem;
-  font-family: $font-secondary;
-
-    p { margin: 0; }
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
 }
 
 a.instagram {

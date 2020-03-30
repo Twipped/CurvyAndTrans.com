@@ -1,0 +1,44 @@
+{{#extend "layout"}}
+
+  {{#content "meta"}}
+  <meta property="og:title" content="{{title}}{{#if subtitle}}, {{subtitle}}{{/if}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:image" content="https://curvyandtrans.com{{rev titlecard}}">
+  <meta property="og:url" content="https://curvyandtrans.com{{url}}">
+  <meta name="twitter:title" content="{{title}}{{#if subtitle}}, {{subtitle}}{{/if}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://curvyandtrans.com{{rev titlecard}}">
+  <link rel="canonical" href="https://curvyandtrans.com{{url}}">
+  {{/content}}
+
+  {{#content "bodyAttributes"}}class="page-index page-post page-list"{{/content}}
+
+  {{#content "header"}}
+  <span class="catchphrase">Just a plus size trans girl in a straight size cis world.</span>
+  {{/content}}
+
+  {{#content "body"}}
+    {{#if draft}}
+    <div class="draft"><div>
+      <h3>DRAFT CONTENT</h3>
+      <p>The following page is a work in progress and is incomplete, with new additions made as time allows. As such, the contents will be changing before it is released live. If you are reading this work, recognize that it is a living document.</p>
+      <p>Please do not share this url without permission.</p>
+    </div></div>
+    {{/if}}
+    {{import '~/postdebug'}}
+    <article class="">
+      {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{title}}</a></h1>{{/if}}
+      {{#if subtitle}}<h2 class="post-subtitle"><a href="{{this.url}}">{{subtitle}}</a></h2>{{/if}}
+      <div class="post-content">
+        {{{this.contents}}}
+      </div>
+    </article>
+    <div class="card-grid" style="">
+      {{#each posts}}
+        {{import '~/index-card'}}
+      {{/each}}
+    </div>
+  {{/content}}
+
+{{/extend}}
