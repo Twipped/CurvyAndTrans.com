@@ -27,7 +27,7 @@
     <p>Please do not share this url without permission.</p>
   </div></div>
   {{/if}}
-  {{import '~/postdebug'}}
+  {{#prod}}{{else}}{{import '~/postdebug'}}{{/prod}}
   <article class="{{#each classes}}{{this}} {{/each}}lightbox">
     {{#if meta.title}}<h1 class="post-title"><a href="{{meta.url}}">{{meta.title}}</a></h1>{{/if}}
     {{#if meta.subtitle}}<h2 class="post-subtitle"><a href="{{meta.url}}">{{meta.subtitle}}</a></h2>{{/if}}
