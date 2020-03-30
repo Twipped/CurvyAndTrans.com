@@ -28,7 +28,7 @@
   </div></div>
   {{/if}}
   {{import '~/postdebug'}}
-  <article class="{{#each classes}}{{this}} {{/each}}">
+  <article class="{{#each classes}}{{this}} {{/each}}lightbox">
     {{#if meta.title}}<h1 class="post-title"><a href="{{meta.url}}">{{meta.title}}</a></h1>{{/if}}
     {{#if meta.subtitle}}<h2 class="post-subtitle"><a href="{{meta.url}}">{{meta.subtitle}}</a></h2>{{/if}}
     <div class="post-date">
@@ -44,7 +44,7 @@
         </a>
         {{/compare}}
         {{#compare type 'TYPE_IMAGE'}}
-        <a href="{{rev sizes.0.url}}" class="{{#even @index}}even{{else}}odd{{/even}}">
+        <a href="{{rev url}}" class="{{#even @index}}even{{else}}odd{{/even}}">
           {{#if ../flags.isWide}}
           <img
             src="{{rev sizes.0.url}}"
@@ -76,10 +76,12 @@
         </a>
         {{/compare}}
         {{#compare type 'TYPE_IMAGE'}}
-        <a href="{{rev url}}" class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
+        <a href="{{rev url}}" class="carousel-cell lb {{#even @index}}even{{else}}odd{{/even}}">
           <img
             src="{{rev carousel.pre1x.url}}"
             alt="{{alt}}"
+            width="{{carousel.pre1x.width}}"
+            height="{{carousel.pre1x.height}}"
             srcset="{{rev carousel.pre1x.url}} 1x, {{rev carousel.pre1x.url}} 2x"
           >
         </a>

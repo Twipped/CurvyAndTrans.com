@@ -223,10 +223,11 @@ module.exports = exports = class Asset extends File {
   }
 
   get webready () {
-    const { type, name, sizes, carousel } = this;
+    const { type, name, url, sizes, carousel } = this;
     return {
       type,
       name,
+      url,
       sizes: sizes.map((s) => pick(s, [ 'url', 'width', 'height' ])),
       carousel,
     };

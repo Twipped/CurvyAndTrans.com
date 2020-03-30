@@ -1,5 +1,5 @@
 
-<div class="{{className}}" {{#if style}}style="{{style}}"{{/if}}>
+<div class="{{className}} lb" {{#if style}}style="{{style}}"{{/if}}>
   <a href="{{#if link}}{{link}}{{else}}{{rev (lookup (last sizes) 'url')}}{{/if}}" class="lb" target="_break">
     <img
       src="{{rev sizes.0.url}}"

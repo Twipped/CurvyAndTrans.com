@@ -11,7 +11,7 @@ no-images: true
 ---
 
 {!{
-{{import '~/img' images.[0] className="card right span3" alt="The Fatness Spectrum"}}
+{{import '~/img' images.[1] className="card right span3" alt="The Fatness Spectrum"}}
 }!}
 
 Let’s talk a little bit about privilege, in regards to fatness. If you've not been exposed to fat acceptance or the fat liberation movement, then some of this will seem very foreign and you may balk at it, but please keep an open mind. If you do not understand the concept of privilege, or think it’s all SJW garbage, I shall refer you to [my own post on the topic](/p/1E9507/checking-privilege/)
