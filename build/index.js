@@ -72,10 +72,11 @@ exports.everything = function (prod = false) {
     const cache = new Cache({ prod });
     await cache.load();
     await evaluate(tasks.flat(), cache);
-    await cache.save();
+    const { revManifest } = await cache.save();
 
     const engines = await getEngines(prod);
     const postIndex = await pageWriter(engines, pages, posts, prod);
+    postIndex.rev = revManifest;
     await fs.writeFile(resolve('dist/p/index.json'), prod ? JSON.stringify(postIndex) : JSON.stringify(postIndex, null, 2));
 
     var feed = new RSS(siteInfo.rss);

@@ -10,7 +10,6 @@ const INDEX_JSON = '/p/index.json';
 const INITIAL_DISPLAY = 8;
 const DISPLAY_STEP = 10;
 
-const rev = (url) => (url && (url[0] === '/' ? url : '/' + url) || '');
 
 
 class App extends Component {
@@ -27,6 +26,7 @@ class App extends Component {
         loading: false,
         posts: index.posts,
         tags: index.tags,
+        revManifest: index.rev,
       };
     } else {
       this.state = {
@@ -35,6 +35,7 @@ class App extends Component {
         loading: true,
         posts: [],
         tags: {},
+        revManifest: {},
       };
       this.loadContent().catch(console.error); // eslint-disable-line no-console
     }
@@ -51,8 +52,7 @@ class App extends Component {
       loading: false,
       posts: index.posts,
       tags: index.tags,
-      authors: index.authors,
-      latest: index.latest,
+      revManifest: index.rev,
     });
   }
 
@@ -77,7 +77,7 @@ class App extends Component {
   }
 
   render () {
-    const { loading, hash, posts: allPosts, display, tags } = this.state;
+    const { loading, hash, posts: allPosts, display, tags, revManifest } = this.state;
     const tag = hash || '';
     const posts = tag
       ? allPosts.filter((p) => p.tags[tag])
@@ -87,6 +87,14 @@ class App extends Component {
 
     if (loading) {
       return <div class="loading"><Icons.Sync /></div>;
+    }
+
+
+    function rev (url) {
+      if (!url) return '';
+      if (url[0] === '/') url = url.substr(1);
+      if (revManifest[url]) return '/' + revManifest[url];
+      return '/' + url;
     }
 
     const caption = tag
