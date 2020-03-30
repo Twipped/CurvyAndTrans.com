@@ -8,5 +8,6 @@ title: ""
 description: "Outfit of the Day for ${format(date, 'MMM do, yyyy')}"
 tags:
   - OOTD
+
 ---
 `;

@@ -231,3 +231,18 @@ header {
     }
   }
 }
+
+.loading {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: red;
+  color: $gray-400;
+
+  svg {
+    width: 80px;
+    height: 80px;
+    animation: spinner-border 1s linear infinite;
+  }
+}

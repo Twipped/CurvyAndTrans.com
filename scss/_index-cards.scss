@@ -18,6 +18,9 @@
     grid-template-columns: repeat( auto-fill, minmax( 480px, 1fr ) );
     grid-template-rows: minmax(100px, 1fr);
   }
+
+  .tweet .tweet-text, .tweet .tweet-quoted-text { line-height: 1.4em; }
+  .tweet .tweet-quoted.missing { display: none; }
 }
 
 a.grid-card, .grid-card a {
@@ -26,6 +29,7 @@ a.grid-card, .grid-card a {
 
 .grid-card {
   width: 100%;
+  max-height: 700px;
   display: grid;
   align-items: stretch;
   grid-column-gap: 10px;
@@ -87,13 +91,14 @@ a.grid-card, .grid-card a {
     padding-bottom: 5px;
 
     grid-area: datetags;
+    display: flex;
 
     span {
-      display: inline-block;
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 400;
       white-space: nowrap;
+      margin-right: 4px;
     }
 
     // @include media-breakpoint-down(xs) {
@@ -129,7 +134,6 @@ a.grid-card, .grid-card a {
   .grid-tweet {
     grid-area: poster;
     margin: 10px 0;
-
   }
 
 

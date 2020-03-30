@@ -20,11 +20,13 @@
     justify-content: flex-start;
     span { flex: 1; }
     .btn {
+      display: flex;
       flex: 0;
       margin: 2px 0;
-      span, i {
+      span, .svg-icon {
         white-space: nowrap;
-        display: inline;
+        // display: inline-block;
+        font-size: 1em;
       }
     }
 

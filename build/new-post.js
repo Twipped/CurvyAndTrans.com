@@ -6,9 +6,8 @@ const random = require('./lib/random');
 const path = require('path');
 const fs = require('fs-extra');
 const log = require('fancy-log');
-const template = require('./_template');
-
-const ROOT = path.dirname(__dirname);
+const template = require('./_post-template');
+const { resolve } = require('./resolve');
 
 module.exports = exports = async function newPost () {
   var date = argv.date ? parse(argv.date, 'yyyy-MM-dd', new Date()) : new Date();
@@ -20,16 +19,20 @@ module.exports = exports = async function newPost () {
   }
 
   // console.log(date);return;
-  var id = random.id().substr(-6).toUpperCase();
+  var id = random.id().substr(-10).toUpperCase();
   var fname = format(date, 'yyyy-MM-dd.HHmm.') + id;
 
-  var target = path.join(ROOT, 'posts', fname);
-
-  await fs.ensureDir(target);
-
+  var target = resolve('posts', fname);
   var contents = template({ id, date });
 
-  await fs.writeFile(path.join(target, 'index.md'), contents);
+  if (argv.folder === undefined) {
+    target += '.md';
+  } else {
+    await fs.ensureDir(target);
+    target += path.join(target, 'index.md');
+  }
 
-  log('Created new post at posts/' + fname);
+  await fs.writeFile(target, contents);
+
+  log('Created new post at ' + target);
 };

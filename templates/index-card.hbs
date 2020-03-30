@@ -1,8 +1,9 @@
 {{#unless flags.hasTweet}}
 <a href="{{this.url}}" class="grid-card {{#each classes}}{{this}} {{/each}}" data-id="{{id}}">
   <div class="grid-date">
-    <span>{{date this.date 'MMM do, yyyy'}}</span> <span class="emdash">&mdash;</span>
-    {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
+    <span class="grid-date-value">{{date this.date 'MMM do, yyyy'}}</span>
+    <span class="emdash">&mdash;</span>
+    {{#if tags}}{{#first tags}}<span class="grid-tag">{{this}}</span>{{/first}}{{/if}}
   </div>
 
   {{#if flags.hasPoster}}<div class="grid-poster">
@@ -14,21 +15,21 @@
       sizes="(max-width: 576px) 100vw, (max-width: 1024px) 100vw, 1024px"
     >
     {{else}}{{#if flags.isSquare}}
-    {{#unless flags.noPreview}}
+      {{#unless flags.noPreview}}
     <img
       src="{{rev poster.0.url}}"
       alt="{{alt}}"
       srcset="{{#join poster}}{{rev url}} {{width}}w{{/join}}"
       sizes="(max-width: 576px) 20vw, (max-width: 1024px) 25vw, 1024px"
     >
-    {{else}}
+      {{else}}
     <img
       src="{{rev poster.0.url}}"
       alt="{{alt}}"
       srcset="{{#join poster}}{{rev url}} {{width}}w{{/join}}"
       sizes="(max-width: 576px) 100vw, (max-width: 1024px) 50vw, 576px"
     >
-    {{/unless}}
+      {{/unless}}
     {{else}}
     <img
       src="{{rev poster.0.url}}"

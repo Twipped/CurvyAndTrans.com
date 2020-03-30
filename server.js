@@ -14,8 +14,10 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static('docs', { etag: false, maxAge: 5 }));
+app.use(express.static('dist', { etag: false, maxAge: 5 }));
 
-app.use(directory('docs', { 'icons': true }));
+app.use(directory('dist', { 'icons': true }));
+
+app.get('/i', (req, res) => res.send(''));
 
 app.listen(process.env.PORT || 8000, () => log('Listening on http://127.0.0.1:8000'));

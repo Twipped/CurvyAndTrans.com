@@ -1,36 +1,19 @@
 
-const { series, parallel, watch } = require('gulp');
+const { series, watch } = require('gulp');
 
 /** **************************************************************************************************************** **/
 
-var { loadLayout, posts, pages, lists } = require('./contents');
-var contentTask = series( loadLayout, posts, pages, lists );
-exports.posts = series( loadLayout, posts );
-exports.pages = series( loadLayout, pages );
-exports.lists = series( loadLayout, lists );
-exports.content = contentTask;
+var build = require('../build');
 
-const rssTask = require('./atom');
-exports.atom = rssTask;
+const devBuildTask  = build.everything();
+const prodBuildTask = build.everything(true);
+const pagesTask = build.pages();
+exports.pages = () => pagesTask();
 
-var images = require('./imgflow');
-exports.twimages = images.twitter;
-exports.images = images;
-exports['images-prod'] = images.prod;
-exports['twimages-prod'] = images.twitter.prod;
-
-const filesTask = require('./files');
-exports.files = filesTask;
-
-var scssTask = require('./scss');
-exports.scss = scssTask;
-
-var jsTask = require('./scripts');
-exports.js = jsTask;
-
-var jsRollupTask = require('./rollup');
-exports.jsr = jsRollupTask;
-
+const scss    = exports.scss    = build.task('scss');
+const favicon = exports.favicon = build.task('favicon');
+const svg     = exports.svg     = build.task('svg');
+const scripts = exports.scripts = build.task('scripts');
 
 var cleanTask = require('./clean');
 exports.clean = cleanTask;
@@ -41,46 +24,15 @@ exports.push = pushToProd;
 const cloudfront = require('./cloudfront');
 exports.cloudfront = cloudfront;
 
+exports.new = require('../build/new-post.js');
+
 /** **************************************************************************************************************** **/
 
-exports.new = require('./new');
-
-var buildTask = series(
-  images.prod,
-  scssTask.prod,
-  jsTask.prod,
-  filesTask.prod,
-  loadLayout.prod,
-  posts,
-  jsRollupTask.prod,
-  loadLayout.prod,
-  pages,
-  lists,
-  images.twitter.prod,
-  rssTask,
-);
-
-var devBuildTask = series(
-  parallel(
-    images,
-    scssTask,
-    jsTask,
-    filesTask,
-  ),
-  loadLayout,
-  posts,
-  jsRollupTask,
-  pages,
-  lists,
-  images.twitter,
-  rssTask,
-);
-
-exports.dev = devBuildTask;
-exports.prod = buildTask;
+exports.dev  = series(devBuildTask);
+exports.prod = series(prodBuildTask);
 exports.publish = series(
   cleanTask,
-  buildTask,
+  prodBuildTask,
   pushToProd,
   cloudfront.prod,
 );
@@ -91,41 +43,39 @@ exports.testpush = pushToProd.dryrun;
 function watcher () {
 
   watch([
-    'posts/**/*.{md,hbs}',
-    // 'posts/**/?({0..9}){0..9}.{jpeg,jpg,png,gif}',
-    'templates/*.html',
-    'includes/*.md',
-  ], series(contentTask, images.twitter));
+    'public/**/*.{md,hbs,html}',
+    'posts/**/*.{md,hbs,html}',
+    'templates/*.{md,hbs,html}',
+  ], pagesTask);
 
   watch([
-    'pages/*',
-    '!pages/*.md',
-  ], pages);
+    'scss/*.scss',
+  ], scss);
 
-  watch('lists/*.md', exports.lists);
-  watch('scss/*.scss', scssTask);
-  watch('js/*.js', jsTask);
-  watch('files/**/*', filesTask);
-  watch([ 'js-rollup/*.js', 'templates/cell.hbs.html', 'posts-sans.json' ], jsRollupTask);
-  watch('posts/*/*.{jpeg,jpg,png,gif}', images);
+  watch([
+    'js/**/*.{js,jsx}',
+  ], scripts);
 
-  var forever = require('forever');
-  var srv = new forever.Monitor('server.js');
-  srv.start();
-  forever.startServer(srv);
+  watch([
+    'svg/**/*.svg',
+  ], svg);
+
+  watch([
+    'favicon.png',
+  ], favicon);
+
+  server();
 }
 
 function server () {
-
   var forever = require('forever');
   var srv = new forever.Monitor('server.js');
   srv.start();
   forever.startServer(srv);
-
 }
 
-exports.watch = series(contentTask, watcher);
-exports.uat = series(cleanTask, buildTask, server);
+exports.watch = series(devBuildTask, watcher);
+exports.uat = series(cleanTask, prodBuildTask, server);
 
 /** **************************************************************************************************************** **/
 
