@@ -1,15 +1,20 @@
 {{#extend "layout"}}
 
   {{#content "meta"}}
-  <meta property="og:title" content="{{title}}{{#if subtitle}}, {{subtitle}}{{/if}}">
-  <meta property="og:description" content="{{description}}">
-  <meta property="og:image" content="https://curvyandtrans.com{{rev titlecard}}">
-  <meta property="og:url" content="https://curvyandtrans.com{{url}}">
-  <meta name="twitter:title" content="{{title}}{{#if subtitle}}, {{subtitle}}{{/if}}">
-  <meta name="twitter:description" content="{{description}}">
+  <meta property="og:title" content="{{meta.title}}{{#if meta.subtitle}}, {{meta.subtitle}}{{/if}}">
+  <meta property="og:description" content="{{meta.description}}">
+  {{#if titlecard}}<meta property="og:image" content="https://{{page.domain}}{{rev titlecard}}">{{/if}}
+  <meta property="og:url" content="https://{{page.domain}}{{url}}">
+  <meta name="twitter:title" content="{{meta.title}}{{#if meta.subtitle}}, {{meta.subtitle}}{{/if}}">
+  <meta name="twitter:description" content="{{meta.description}}">
+  {{#if titlecard}}
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://curvyandtrans.com{{rev titlecard}}">
-  <link rel="canonical" href="https://curvyandtrans.com{{url}}">
+  <meta name="twitter:image" content="https://{{page.domain}}{{rev titlecard}}">
+  {{/if}}
+  <link rel="canonical" href="{{#if canonical}}{{canonical}}{{else}}https://{{page.domain}}{{url}}{{/if}}">
+  {{#if redirect}}
+  <meta http-equiv="refresh" content="0;URL='{{redirect}}'" />
+  {{/if}}
   {{/content}}
 
   {{#content "bodyClass"}}page-index page-post page-list{{/content}}
