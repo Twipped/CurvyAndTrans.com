@@ -7,7 +7,7 @@ const debug       = require('./lib/debug');
 
 // const path = require('path');
 // const ROOT = path.dirname(__dirname);
-const DEST = 'docs';
+const DEST = 'dist';
 
 var credentials = require('../aws.json');
 
