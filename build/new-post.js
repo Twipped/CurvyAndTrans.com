@@ -19,18 +19,14 @@ module.exports = exports = async function newPost () {
   }
 
   // console.log(date);return;
-  var id = random.id().substr(-10).toUpperCase();
+  var id = random.id().substr(-6).toUpperCase();
   var fname = format(date, 'yyyy-MM-dd.HHmm.') + id;
 
   var target = resolve('posts', fname);
   var contents = template({ id, date });
 
-  if (argv.folder === undefined) {
-    target += '.md';
-  } else {
-    await fs.ensureDir(target);
-    target += path.join(target, 'index.md');
-  }
+  await fs.ensureDir(target);
+  target = path.join(target, 'index.md');
 
   await fs.writeFile(target, contents);
 
