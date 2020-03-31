@@ -6,6 +6,7 @@ description: "Cutting the curls."
 tags:
   - Hair Care
 instagram: https://www.instagram.com/p/B2231f3n7C0/
+orientation: wide
 ---
 Tonight I had the amazing opportunity to be a cut model for Susie Swanter ([@susieswaneratmemycurlsandi](https://instagram.com/susieswaneratmemycurlsandi)) at [Me My Curls and I](http://memycurlsandi.com/). It’s been over six months since I last had a hair cut, and never with someone who so perfectly understands curls as the women at that shop do. I learned so much tonight about managing curly hair, and Susie did an amazing job bringing life into my curls.
 

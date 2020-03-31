@@ -315,8 +315,8 @@ a.grid-card, .grid-card a {
     &:not(.short-preview) .grid-preview { min-height: 10rem; }
     &.short-preview .grid-preview > div { padding-bottom: 15px; }
 
-    &.no-subtitle .grid-title { padding-bottom: 10px; }
-    &.has-subtitle .grid-subtitle { padding-bottom: 10px; }
+    .grid-title { padding-bottom: 10px; }
+    &.has-subtitle .grid-preview > div { padding-top: 0px; }
     .grid-preview > div { padding-top: 15px; }
 
     @include media-breakpoint-down(xs) {
