@@ -3,15 +3,13 @@ const path = require('path');
 
 const fs = require('fs-extra');
 const log = require('fancy-log');
-const { minify } = require('html-minifier-terser');
 const { resolve, readFile, ENGINE, TYPE } = require('./resolve');
 
 const Handlebars = require('handlebars');
 const HandlebarsKit = require('hbs-kit');
 HandlebarsKit.load(Handlebars);
 
-const slugs = require('slugify');
-const slugify = (s) => slugs(s, { remove: /[*+~.,()'"!?:@/\\]/g }).toLowerCase();
+const slugify = require('./lib/slugify');
 const striptags = require('string-strip-html');
 
 const markdownIt = require('markdown-it');
@@ -91,16 +89,9 @@ function stripIndent (input) {
   return input;
 }
 
-const MINIFY_CONFIG = {
-  conservativeCollapse: true,
-  collapseWhitespace: true,
-  minifyCSS: true,
-  removeComments: true,
-  removeRedundantAttributes: true,
-};
-
 const HANDLEBARS_PARTIALS = {
   layout:    'templates/layout.hbs',
+  list:      'templates/list.hbs',
   page:      'templates/page.hbs',
   post:      'templates/post.hbs',
 };
@@ -127,16 +118,15 @@ module.exports = exports = async function (prod) {
   Handlebars.registerHelper('prod', helpers.production());
   Handlebars.registerHelper('rev', helpers.rev());
 
-  const shrink = (input) => (prod ? minify(input, MINIFY_CONFIG) : input);
-
   const result = {
     [TYPE.HANDLEBARS]: handlebars,
     [TYPE.MARKDOWN]:   (source, env) => markdown('full', source, env),
     [TYPE.OTHER]:      (source) => source,
 
-    [ENGINE.PAGE]:     (source, env) => shrink(templates.page({ ...env, contents: markdown('full', source, env) })),
-    [ENGINE.POST]:     (source, env) => shrink(templates.post({ ...env, contents: markdown('full', source, env) })),
-    [ENGINE.HTML]:     (source) => shrink(source),
+    [ENGINE.LIST]:     (source, env) => templates.list({ ...env, contents: markdown('full', source, env) }),
+    [ENGINE.PAGE]:     (source, env) => templates.page({ ...env, contents: markdown('full', source, env) }),
+    [ENGINE.POST]:     (source, env) => templates.post({ ...env, contents: markdown('full', source, env) }),
+    [ENGINE.HTML]:     (source) => source,
     [ENGINE.OTHER]:    (source) => source,
 
     preview: (source, env) => markdown('preview', source, env),

@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://curvyandtrans.com{{url}}">
   {{/content}}
 
-  {{#content "bodyAttributes"}}class="page-index page-post page-list"{{/content}}
+  {{#content "bodyClass"}}page-index page-post page-list{{/content}}
 
   {{#content "header"}}
   <span class="catchphrase">Just a plus size trans girl in a straight size cis world.</span>
@@ -26,7 +26,7 @@
       <p>Please do not share this url without permission.</p>
     </div></div>
     {{/if}}
-    {{import '~/postdebug'}}
+    {{#prod}}{{else}}{{import '~/postdebug'}}{{/prod}}
     <article class="">
       {{#if title}}<h1 class="post-title"><a href="{{this.url}}">{{title}}</a></h1>{{/if}}
       {{#if subtitle}}<h2 class="post-subtitle"><a href="{{this.url}}">{{subtitle}}</a></h2>{{/if}}
@@ -35,7 +35,7 @@
       </div>
     </article>
     <div class="card-grid" style="">
-      {{#each posts}}
+      {{#each meta.posts}}
         {{import '~/index-card'}}
       {{/each}}
     </div>

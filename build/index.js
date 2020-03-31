@@ -3,6 +3,7 @@ process.env.BLUEBIRD_DEBUG = true;
 
 const loadPublicFiles = require('./public');
 const loadPostFiles = require('./posts');
+const loadListFiles = require('./lists');
 const Cache = require('./cache');
 const Promise = require('bluebird');
 const fs = require('fs-extra');
@@ -30,9 +31,10 @@ exports.everything = function (prod = false) {
   async function fn () {
 
     // load a directory scan of the public and post folders
-    const [ PublicFiles, PostFiles ] = await Promise.all([
+    const [ PublicFiles, PostFiles, ListFiles ] = await Promise.all([
       loadPublicFiles(),
       loadPostFiles(),
+      loadListFiles(),
     ]);
 
     // load data for all the files in that folder
@@ -41,6 +43,9 @@ exports.everything = function (prod = false) {
 
     await Promise.map(PostFiles.assets, (p) => p.load());
     await Promise.map(PostFiles.pages, (p) => p.load(PostFiles));
+
+    await Promise.map(ListFiles.assets, (p) => p.load());
+    await Promise.map(ListFiles.pages, (p) => p.load(ListFiles));
 
 
     // prime tweet data for all pages
@@ -51,6 +56,10 @@ exports.everything = function (prod = false) {
     posts = posts.filter(Boolean);
     posts = sortBy(posts, 'date');
     posts.reverse();
+
+    let lists = ListFiles.pages.filter((p) => !p.meta.ignore);
+    lists = sortBy(lists, 'date');
+    lists.reverse();
 
     const assets = [ ...PostFiles.assets, ...PublicFiles.assets ];
 
@@ -75,12 +84,11 @@ exports.everything = function (prod = false) {
     const { revManifest } = await cache.save();
 
     const engines = await getEngines(prod);
-    const postIndex = await pageWriter(engines, pages, posts, prod);
+    const postIndex = await pageWriter(prod, engines, pages, posts, lists);
     postIndex.rev = revManifest;
     await fs.writeFile(resolve('dist/p/index.json'), prod ? JSON.stringify(postIndex) : JSON.stringify(postIndex, null, 2));
 
-    var feed = new RSS(siteInfo.rss);
-
+    const feed = new RSS(siteInfo.rss);
     postIndex.posts.forEach((post) => {
       if (post.subPage) return;
       const description = post.poster ? `<img src="${siteInfo.rss.site_url + post.poster[0].url}"><br>${post.preview}` : post.preview;
@@ -96,7 +104,6 @@ exports.everything = function (prod = false) {
         },
       });
     });
-
     await fs.writeFile(resolve('dist/atom.xml'), feed.xml());
   }
 
@@ -108,9 +115,10 @@ exports.pages = function () {
   async function fn () {
     const prod = false;
     // load a directory scan of the public and post folders
-    const [ PublicFiles, PostFiles ] = await Promise.all([
+    const [ PublicFiles, PostFiles, ListFiles ] = await Promise.all([
       loadPublicFiles(),
       loadPostFiles(),
+      loadListFiles(),
     ]);
 
     // load data for all the files in that folder
@@ -120,6 +128,9 @@ exports.pages = function () {
     await Promise.map(PostFiles.assets, (p) => p.load());
     await Promise.map(PostFiles.pages, (p) => p.load(PostFiles));
 
+    await Promise.map(ListFiles.assets, (p) => p.load());
+    await Promise.map(ListFiles.pages, (p) => p.load(ListFiles));
+
     // prime tweet data for all pages
     const pages = await primeTweets(PublicFiles.pages.filter((p) => !p.meta.ignore));
 
@@ -127,8 +138,12 @@ exports.pages = function () {
     posts = sortBy(posts, 'date');
     posts.reverse();
 
+    let lists = ListFiles.pages.filter((p) => !p.meta.ignore);
+    lists = sortBy(lists, 'date');
+    lists.reverse();
+
     const engines = await getEngines(prod);
-    const postIndex = await pageWriter(engines, pages, posts, prod);
+    const postIndex = await pageWriter(prod, engines, pages, posts, lists);
     postIndex.rev = {};
     await fs.writeFile(resolve('dist/p/index.json'), prod ? JSON.stringify(postIndex) : JSON.stringify(postIndex, null, 2));
   }

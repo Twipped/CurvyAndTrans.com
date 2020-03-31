@@ -23,7 +23,7 @@ module.exports = exports = async function scripts (prod) {
 
   const files = await Promise.map(glob('js/*.{js,jsx}', { cwd: ROOT, nodir: true }), async (filepath) => {
     const f = new ClientScript(filepath);
-    if (f.globalScript) return false;
+    if (f.preprocessed) return false;
 
     await f.load(prod);
 
@@ -33,7 +33,6 @@ module.exports = exports = async function scripts (prod) {
   const tasks = files.map((f) => f.tasks()).flat();
 
   tasks.push(...globalScript.tasks());
-
   return tasks;
 };
 
@@ -42,13 +41,6 @@ class ClientScript extends File {
 
   _basename (file) {
     super._basename(file);
-
-    this.globalScript = false;
-    if (file.name[0] === '_') {
-      this.globalScript = true;
-      file.name = file.name.slice(1);
-      file.base = file.base.slice(1);
-    }
 
     this.rollup = false;
     if (file.name[0] === '$') {
@@ -71,7 +63,7 @@ class ClientScript extends File {
 
     let contents = (await readFile(this.input).catch(() => '')).toString('utf8');
     if (prod) {
-      const { code, error } = minify(contents);
+      const { code, error } = minify(contents, { output: { comments: false } });
       if (error) throw new Error(error);
       contents = code;
     }
@@ -82,7 +74,7 @@ class ClientScript extends File {
     let contents = await Promise.map(files, readFile);
     contents = contents.join('\n\n');
     if (prod) {
-      const { code, error } = minify(contents);
+      const { code, error } = minify(contents, { output: { comments: false } });
       if (error) throw new Error(error);
       contents = code;
     }
@@ -90,7 +82,7 @@ class ClientScript extends File {
   }
 
   tasks () {
-
+    if (this.preprocessed) return [];
     return [ {
       input: this.input,
       output: this.out,

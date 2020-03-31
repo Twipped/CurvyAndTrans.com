@@ -4,10 +4,25 @@ const fs = require('fs-extra');
 const { resolve, ROOT, TYPE } = require('./resolve');
 const { siteInfo }  = require(resolve('package.json'));
 const { attachTweets } = require('./page-tweets');
+const { minify } = require('html-minifier-terser');
 
-module.exports = exports = async function writePageContent (engines, pages, posts, prod) {
+const MINIFY_CONFIG = {
+  conservativeCollapse: true,
+  collapseWhitespace: true,
+  minifyCSS: true,
+  removeComments: true,
+  removeRedundantAttributes: true,
+};
+
+module.exports = exports = async function writePageContent (prod, engines, pages, posts, lists) {
   const postIndex = index(posts, engines);
-  await processPages(engines, [ ...posts, ...pages ], postIndex, prod);
+  const postMap = Object.fromEntries(postIndex.posts.map((post) => [ post.id, post ]));
+  lists.forEach((l) => l.importPosts(postMap));
+
+  const listIndex = index(lists, engines);
+  postIndex.lists = listIndex.posts;
+  postIndex.drafts.push(listIndex.drafts);
+  await processPages(engines, [ ...posts, ...pages, ...lists ], postIndex, prod);
   return postIndex;
 };
 
@@ -100,17 +115,20 @@ function pageJSON (post) {
     description: post.meta.description,
     preview: post.preview,
     date: post.dateCreated,
+    modified: post.dateModified,
     titlecard: post.titlecard,
     tags: post.meta.tags,
     flags: post.flags,
     classes: post.classes,
     poster: post.poster,
     tweet: post.tweet,
-    tweets: attachTweets(post.tweet, post.tweets),
+    tweets: post.tweets && attachTweets(post.tweet, post.tweets),
   };
 }
 
 function processPages (engines, pages, posts, prod) {
+  const shrink = (input) => (prod ? minify(input, MINIFY_CONFIG) : input);
+
   return Promise.map(pages, async (page) => {
 
     const state = pageState(page.toJson(), posts);
@@ -119,8 +137,14 @@ function processPages (engines, pages, posts, prod) {
     try {
       var html = String(engines[page.engine](page.source, state));
     } catch (e) {
-      // throw new Error(`Error while processing page "${page.input}": ${e.message}`);
       e.message = `Error while processing page "${page.input}": ${e.message}`;
+      throw e;
+    }
+
+    try {
+      html = shrink(html);
+    } catch (e) {
+      e.message = `Error while minifying page "${page.input}": ${e.message.slice(0, 50)}`;
       throw e;
     }
 

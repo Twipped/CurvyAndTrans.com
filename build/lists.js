@@ -1,69 +1,61 @@
-
 const path = require('path');
+const glob = require('./lib/glob');
+const { ROOT, KIND, ENGINE, TYPE } = require('./resolve');
 const { without, omit } = require('lodash');
-const { resolve, isCleanUrl, TYPE, ENGINE } = require('./resolve');
+const Asset = require('./asset');
 const Page = require('./page');
-const slugify = require('./lib/slugify');
-const pkg  = require(resolve('package.json'));
-const { isString } = require('./lib/util');
-const { parseTweetId } = require('./page-tweets');
+const Files = require('./files');
 
-const POSTMATCH = /(\d{4}-\d\d-\d\d)\.\d{4}\.(\w+)/;
+class ListFiles extends Files {
+  _kindMap () {
+    return {
+      [KIND.PAGE]:  List,
+      [KIND.ASSET]: ListAsset,
+    };
+  }
+}
 
-module.exports = exports = class Post extends Page {
+module.exports = exports = async function loadListFiles () {
+  return new ListFiles(await glob('lists/**/*', { cwd: ROOT, nodir: true }));
+};
+
+class ListAsset extends Asset {
+
+  _dir (dir) {
+    dir = dir.split('/');
+    dir = without(dir, 'lists', '_images');
+    dir.unshift('l');
+    return dir;
+  }
+
+}
+
+class List extends Page {
+
+  constructor (filepath) {
+    super(filepath);
+
+    this.serializable.push(
+      'posts',
+    );
+  }
 
   _engine () {
     switch (this.type) {
     case TYPE.HANDLEBARS:
       return TYPE.HANDLEBARS;
     case TYPE.MARKDOWN:
-      return ENGINE.POST;
+      return ENGINE.LIST;
     default:
       return ENGINE.OTHER;
     }
   }
 
   _dir (dir) {
-    // if the file name matches the POSTMATCH pattern, then this needs to be /p/ file
-    const match = this.name.match(POSTMATCH);
-
-    if (match) {
-      return [ 'p', match[2] ];
-    }
-
-    dir = dir.replace(POSTMATCH, '$2').split('/');
-    dir = without(dir, 'posts', '_images');
-    dir.unshift('p');
+    dir = dir.split('/');
+    dir = without(dir, 'lists', '_images');
+    dir.unshift('l');
     return dir;
-  }
-
-  _out () {
-    var isIndexPage = (this.name === 'index' || this.name.match(POSTMATCH));
-    var isClean = isCleanUrl(this.ext);
-
-    if (isClean && isIndexPage) {
-      this.out     = path.join(this.base, this.slug || '', 'index.html');
-      this.json    = path.join(this.base, 'index.json');
-      this.url     = path.join(this.dir, this.slug || '');
-    } else if (isClean) {
-      this.out     = path.join(this.base, this.name, 'index.html');
-      this.json    = path.join(this.base, this.name + '.json');
-      this.url     = path.join(this.dir, this.name);
-    } else if (isIndexPage) {
-      this.out     = path.join(this.base, 'index.html');
-      this.json    = path.join(this.base, this.name + '.json');
-      this.url     = this.dir;
-    } else {
-      this.out     = path.join(this.base, this.basename);
-      this.json    = path.join(this.base, this.basename + '.json');
-      this.url     = path.join(this.dir, this.basename);
-    }
-
-    this.subPage = !isIndexPage;
-
-    const url = new URL(pkg.siteInfo.siteUrl);
-    url.pathname = this.url;
-    this.fullurl = url.href;
   }
 
   _parse (FileTree) {
@@ -73,13 +65,8 @@ module.exports = exports = class Post extends Page {
     this.siblings = this.meta.siblings;
     this.images = omit(webready, [ 'titlecard', 'poster' ]);
     this.imageCount = Object.keys(this.images).length;
-    if (this.meta.tweet  && isString(this.meta.tweet))  this.meta.tweet  = this.meta.tweet.split(/\s/).filter(Boolean);
-    if (this.meta.tweets && isString(this.meta.tweets)) this.meta.tweets = this.meta.tweets.split(/\s/).filter(Boolean);
-    this.tweet  = (this.meta.tweet  || []).map(parseTweetId);
-    this.tweets = (this.meta.tweets || []).map(parseTweetId);
 
     this.id = this.meta.id;
-    this.slug = this.meta.slug || (this.meta.title && slugify(this.meta.title)) || false;
 
     var flags = new Set(this.meta.classes || []);
     flags.add('post');
@@ -130,22 +117,6 @@ module.exports = exports = class Post extends Page {
       }
     }
 
-    this.meta.tags = (this.meta.tags || []).reduce((result, tag) => {
-      result[slugify(tag)] = tag;
-      return result;
-    }, {});
-
-
-    if (Object.keys(this.meta.tags).length === 1 && this.meta.tags.ootd) {
-      flags.add('is-ootd-only');
-    } else {
-      flags.add('not-ootd-only');
-    }
-
-    if (this.meta.tweet) {
-      flags.add('has-tweet');
-    }
-
     if (this.images && Object.keys(this.images).length) {
       flags.add('has-images');
       if (this.meta['no-images']) {
@@ -194,21 +165,15 @@ module.exports = exports = class Post extends Page {
       flags.add('no-body');
     }
 
-    if (this.meta.tweets) {
-      flags.add('has-tweets');
-    } else {
-      flags.add('no-tweets');
-    }
-
     this.classes = Array.from(flags);
     this.flags = this.classes.reduce((res, item) => {
       var camelCased = item.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
       res[camelCased] = true;
       return res;
     }, {});
-
-    this._out();
   }
 
-};
-
+  importPosts (posts) {
+    this.posts = this.meta.posts.map((id) => posts[id]).filter(Boolean);
+  }
+}

@@ -121,6 +121,7 @@ exports.ENGINE = {
   HTML:    'ENGINE_HTML',
   PAGE:    'ENGINE_PAGE',
   POST:    'ENGINE_POST',
+  LIST:    'ENGINE_LIST',
   OTHER:   'ENGINE_OTHER',
 };
 

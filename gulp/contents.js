@@ -7,10 +7,7 @@ const log = require('fancy-log');
 const glob = require('./lib/glob');
 const getDimensions = require('./lib/dimensions');
 const memoize = require('memoizepromise');
-
-const slugs = require('slugify');
-const slugify = (s) => slugs(s, { remove: /[*+~.,()'"!?:@/\\]/g }).toLowerCase();
-
+const slugify = require('./lib/slugify');
 
 const { src, dest } = require('gulp');
 const frontmatter = require('gulp-front-matter');

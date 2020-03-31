@@ -145,6 +145,7 @@ if (hash) {
 }
 
 window.jQuery('.drawer-fullnav a').click(function (ev) {
+  if (!this.hash) return;
   ev.preventDefault();
   window.location.hash = this.hash;
 
