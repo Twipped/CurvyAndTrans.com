@@ -18,7 +18,7 @@ module.exports = exports = class Files {
       [KIND.ASSET]: assets,
     } = groupBy(this.files, 'kind');
 
-    this.pages  = (pages || []);
+    this.pages  = pages || [];
     this.assets = assets || [];
 
     this._getTitlecard = memoize(() =>
