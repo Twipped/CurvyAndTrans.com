@@ -50,7 +50,7 @@ const Tweet = ({ tweetid, tweets, rev }) => {
 
   return (
     <div className="tweet-item" data-id={tweet.id_str}>
-      <a className="tweet-link" href={`https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`} target="_blank" rel="noopener noreferrer"><Icons.Link /></a>
+      <a className="tweet-link" href={`https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`} target="_blank" rel="noopener noreferrer"><span class="svg-icon"><Icons.Link /></span></a>
       <a className="tweet-header" href={`https://twitter.com/${tweet.user.screen_name}`} target="_blank" rel="noopener noreferrer">
         <span className="tweet-avatar"><img src={rev(tweet.user.avatar.output)} alt="" /></span>
         <strong className="tweet-displayname">

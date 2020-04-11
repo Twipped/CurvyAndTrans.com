@@ -106,7 +106,7 @@ class App extends Component {
       <Fragment>
         <h3 class="tagged-header">
           {caption}
-          <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><Icons.Tags /><span>&nbsp;Filter By Tag</span></button>
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="drawer" href="#drawer"><span class="svg-icon"><Icons.Tags /></span><span>&nbsp;Filter By Tag</span></button>
         </h3>
         <div class="card-grid">
           {map(posts, (post, i) =>

@@ -11,13 +11,13 @@ import TwitterProtected from 'svg/twitter/protected.svg';
 import TwitterVerified from 'svg/twitter/verified.svg';
 
 export {
-  Sync,
-  Link,
-  Tags,
   // AngleLeft,
   // AngleRight,
   // AngleDoubleLeft,
   // AngleDoubleRight,
+  Sync,
+  Link,
+  Tags,
   TwitterLogo,
   TwitterProtected,
   TwitterVerified,
