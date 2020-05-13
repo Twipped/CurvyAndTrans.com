@@ -16,9 +16,9 @@ This was me being a mom before I was allowed to be a mom. I remember feeling sli
 
 {!{
 <div class="card borderless right span3">
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1164927956302434306'
-) tweets=meta.tweets className="" }}
+] tweets=meta.tweets className="" }}
 </div>
 }!}
 

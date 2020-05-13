@@ -1,6 +1,6 @@
 <div class="tweet{{#is ids.length 1}} single{{/is}} {{className}}" style="{{style}}">
   {{#each ids}}
-  <div class="tweet-item" data-id="{{this}}">{{#with (lookup ../tweets this)}}
+  <div class="tweet-item" data-id="{{this}}">{{#with tweets[this]}}
     <a class="tweet-link" href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}" target="_blank" rel="noopener noreferrer">{{icon 'link'}}</a>
     <a class="tweet-header" href="https://twitter.com/{{user.screen_name}}" target="_blank" rel="noopener noreferrer">
       <span class="tweet-avatar"><img src="{{rev user.avatar.output}}" alt=""></span>
@@ -12,13 +12,13 @@
       <span class="tweet-username">@{{user.screen_name}}</span>
       <i class="tweet-logo">&nbsp;</i>
     </a>
-    {{#if quoted_status_id_str}}{{#with (lookup ../../tweets quoted_status_id_str)}}
+    {{#if quoted_status_id_str}}{{#with tweets[quoted_status_id_str]}}
     <div class="tweet-quoted">
       <a href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}">
         <strong>{{{user.name_html}}}</strong>
         <span>@{{user.screen_name}}</span>
       </a>
-      {{#if quoted_status_id_str}}{{#with (lookup ../../../tweets quoted_status_id_str)}}
+      {{#if quoted_status_id_str}}{{#with tweets[quoted_status_id_str]}}
       <div class="tweet-quoted">
         <a href="https://twitter.com/{{user.screen_name}}/status/{{id_str}}">
           <strong>{{{user.name_html}}}</strong>

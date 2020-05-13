@@ -105,7 +105,7 @@ By this point all the big hitters have come and gone and life is pretty much set
 I remember years back how people said that even tho it isn’t always visible in timelines, there’s just as many changes in year two as there were in year one, and it is *so* true, but it was definitely helped along by the orchiectomy. The difference between May 2018 and July 2018 is *stark*, and not just because I colored my hair.
 
 {!{
-  {{import '~/img' images.[26-2]
+  {{import '~/img' images['26-2']
     className="card span2 center"
     caption="2009 to 2019"
   }}
@@ -118,7 +118,7 @@ While I still have retained all of the same interests I had pre-transition, many
 Fashion and cosmetics is definitely chief among these, and have given me *so many* new forms of expression and creativity. I used to wear the same boring clothes every single day, making slight changes for weather as the year moved through the seasons. Now… I rarely wear the exact same outfit twice, and even when I *try* to duplicate a makeup look, it comes out completely different because I approach it from a different way. I care so much more about my appearance now, and I’m *happy* that I care more. Going into my closet and saying “what the hell am I going to wear today” still makes an inner part of me leap for joy.
 
 {!{
-  {{import '~/img' images.[26-4]
+  {{import '~/img' images['26-4']
     className="card span2 center"
     caption="2009 to 2019"
   }}
@@ -133,7 +133,7 @@ My kinship with women feels so much stronger. The feeling of pride in other wome
 Meanwhile, with the severing of any kind of attachment to manhood, my misandry has flourished, and it feels so freeing. Where once I might have made a defense for bad male behavior, now I have no reason to make excuses. The bar for men is set *so* incredibly low, and yet so very few are able to meet it. Where once I might have tried to argue with men over their incredibly bad perceptions, now I just dust my hands of them, expecting nothing of their self awareness. Thank *god* I am a lesbian, because if I was straight I would never be able to find a partner that wasn’t some kind of huge settlement. Seriously, straight girls, I don’t know how you do that.
 
 {!{
-  {{import '~/img' images.[26-3]
+  {{import '~/img' images['26-3']
     className="card span2 center"
     caption="2009 to 2019"
   }}
@@ -148,7 +148,7 @@ This past year Katharine participated in an effort to get our daughter’s schoo
 Above all else, I feel so much more alive. Live is worth living now, and I’m soaking in it.
 
 {!{
-  {{import '~/img' images.[26-1]
+  {{import '~/img' images['26-1']
     className="card span2 center"
     caption="2009 to 2019"
   }}

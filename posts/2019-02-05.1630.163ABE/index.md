@@ -15,14 +15,14 @@ titlecard: middle
 {!{
 <div class="card right span3">
   <div class="tumblr">
-    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <img src="{{images.avatar.sizes[0].url}}" alt="" class="tumblr-avatar">
     <a href="https://real-pcys.tumblr.com/post/173946416783" class="tumblr-username">real-pcys</a>
     <div class="tumblr-body">
       <p>hot take: moms need to learn how to listen to and comfort their daughters without making everything about their own traumas</p>
     </div>
   </div>
   <div class="tumblr">
-    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <img src="{{images.avatar.sizes[0].url}}" alt="" class="tumblr-avatar">
     <a href="https://real-pcys.tumblr.com/post/173946416783" class="tumblr-username">real-pcys</a>
     <div class="tumblr-body">
       <p>a classic example</p>

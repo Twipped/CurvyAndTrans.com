@@ -88,9 +88,9 @@ Going to the bathroom was a challenge. I had left the hospital with the typical 
 
 Pain was surprisingly low. It was definitely present, but after a life of chronic testicle pain, this didn't seem all that worse. I felt no pain at all from the incision. The suture was small, about one inch long, starting at the base of my penis and down along the perineal raphe. A surgical glue was laid over top of the stitches, and a bandage over that. There was no blood at all, and the entire area was very clean. I also realized that my entire groin had been completely shaved. The pain I felt was much deeper, and the swelling was real.
 
-{!{ {{import '~/tweet' ids=(array
+{!{ {{import '~/tweet' ids=[
   '1011573433715458050'
-) tweets=meta.tweets className="" }} }!}
+] tweets=meta.tweets className="" }} }!}
 
 The tips of the spermatic cord swell up from blood pooling at the tips, forming balls almost as large as the testicles themselves. The inguinal canals also swell up, making things very puffy. Walking around was a slow processes for the first two days, just because everything was so sensitive and enlarged. My penis itself had completely contracted, to the point it was a solid centimeter below the surface. This made peeing difficult, as the urine just pooled in the cavity. Kat made the joke that it was in hiding after that nice couple across the street had been murdered in a brutal home invasion. This lasted for the rest of the week.
 
@@ -100,9 +100,9 @@ We had also been told in aftercare instructions that I shouldn't wear any tight 
 
 {!{
 <div class="card borderless left span3">
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1012019140175921154'
-) tweets=meta.tweets className="" }}
+] tweets=meta.tweets className="" }}
 </div>
 }!}
 
@@ -112,9 +112,9 @@ By the fourth day I was up and walking around fine, but still not allowed to dri
 
 {!{
 <div class="card borderless right span3">
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1011661491295027200'
-) tweets=meta.tweets className="" }}
+] tweets=meta.tweets className="" }}
 </div>
 }!}
 
@@ -122,17 +122,17 @@ Most of the sutures had dissolved by the second week, and all but a little of th
 
 ### Life after T
 
-{!{ {{import '~/tweet' ids=(array
+{!{ {{import '~/tweet' ids=[
   '1011632286079410176'
-) tweets=meta.tweets className="" }} }!}
+] tweets=meta.tweets className="" }} }!}
 
 The above tweet was on day 2. It wasn't placebo, my skin really had suddenly gotten a whole lot softer. Sensation had increased too, textures became more pronounced. I remember touching my wife's leg that evening and it felt buttery smooth in a way I'd never felt before. This was the first aspect of being completely, truly free of testosterone. Even tho my blood results showed that my T had been suppressed very well (last read pre-surgery was 10.5 ng/dL), it is pretty clear to me now that the numbers Spironolactone produces were not an accurate measure of the androgens in my body.
 
 {!{
 <div class="card borderless left span3">
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1011624013959979008'
-) tweets=meta.tweets className="" }}
+] tweets=meta.tweets className="" }}
 </div>
 }!}
 

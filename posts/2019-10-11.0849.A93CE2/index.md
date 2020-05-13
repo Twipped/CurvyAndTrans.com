@@ -9,7 +9,7 @@ no-images: true
 ---
 
 {!{
-{{import '~/img' images.[1]
+{{import '~/img' images['1']
   srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
   className="card right span3"
   caption="\"The Closet\" by Clay Bennet"

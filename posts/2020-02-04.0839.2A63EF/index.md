@@ -17,10 +17,10 @@ tweets:
 ---
 
 {!{
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1211065478925258752'
   '1211690452543582208'
-) tweets=meta.tweets className="left" }}
+] tweets=meta.tweets className="left" }}
 }!}
 
 Emmy Jewel has no idea what she's talking about, and it shows. That's not how this works. That's not how any of this works.

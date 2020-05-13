@@ -22,7 +22,7 @@ tags:
 
 
 {!{
-  {{import '~/img' images.[1] className="card right span4" }}
+  {{import '~/img' images['1'] className="card right span4" }}
 }!}
 
 This is a compilation of reported medical transition changes collected from testimonials of trans women from various discussion forums and chat rooms, backed up by my own experiences and medical research.

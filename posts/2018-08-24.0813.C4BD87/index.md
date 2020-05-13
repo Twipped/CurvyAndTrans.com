@@ -31,7 +31,7 @@ tweets:
 ---
 
 
-{!{ {{import '~/tweet' ids=(array
+{!{ {{import '~/tweet' ids=[
   '1016753976211996672'
   '1016832074961977345'
   '1016842932458905600'
@@ -48,10 +48,10 @@ tweets:
   '1017119272290537474'
   '1017161019733377024'
   '1017181216292786177'
-) tweets=meta.tweets className="oneblock card right span3" style="margin-top: 0" }} }!}
+] tweets=meta.tweets className="oneblock card right span3" style="margin-top: 0" }} }!}
 
 {!{
-{{#with images.[0]}}
+{{#with images['0']}}
 <a href="{{rev full}}" style="display: block; overflow: hidden;margin-bottom: 0.5rem;border-radius: 5px;">
   <img src="{{rev large}}" alt="I'll make my own menstrual cycle, with bloating, and depression. In fact, forget the menstruation!" >
 </a>

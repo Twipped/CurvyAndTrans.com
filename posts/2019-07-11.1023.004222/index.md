@@ -15,12 +15,12 @@ no-images: true
 
 {!{
 <div class="card right span3 flush">
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     alt=""
     srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
   }}
   <div class="tumblr">
-    <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+    <img src="{{images.avatar.sizes[0].url}}" alt="" class="tumblr-avatar">
     <a href="https://fade-steppin.tumblr.com/post/175441448289/throwback-to-the-time-my-classics-professor-asked" class="tumblr-username">fade-steppin</a>
     <div class="tumblr-body">
       <p>throwback to the time my classics professor asked “does anyone know who sappho is?” and i immediately replied “she’s the OG lesbian” and my professor yelled “EXACTLY” and wrote the OG lesbian on the whiteboard</p>

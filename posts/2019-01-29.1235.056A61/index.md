@@ -15,7 +15,7 @@ tweets:
 ---
 
 {!{
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     className="card span3 right"
   }}
 }!}
@@ -28,9 +28,9 @@ This post was inspired by another "body positive" poster on Instagram who went o
 
 Lets talk a bit about modesty.
 
-{!{ {{import '~/tweet' ids=(array
+{!{ {{import '~/tweet' ids=[
   '950190679094898688'
-) tweets=meta.tweets className="" }} }!}
+] tweets=meta.tweets className="" }} }!}
 
 Modesty is constantly in shift. What we consider modest today was scandalous 50 years ago and arrestable 100 years ago. There was a time when visible collar bones were considered a sign of being a harlot, but I digress. Telling women to cover themselves up is misogyny, full stop. It is patriarchal suppression designed to keep women from being confident in themselves, because women who lack confidence are easier to control. Shaming women by calling them "inappropriate" and "trashy" is a tool of that oppression. Making nasty remarks about armpit hair is pushing your own ideas of what makes for feminine beauty.
 

@@ -13,10 +13,10 @@ tweet:
 ---
 
 
-{!{ {{import '~/tweet' ids=(array
+{!{ {{import '~/tweet' ids=[
   '1077179357104353280'
   '1077179357746135046'
-) tweets=meta.tweets className="grid-row by-two" }} }!}
+] tweets=meta.tweets className="grid-row by-two" }} }!}
 
 If you’ve found yourself wondering why there is such an explosion in the trans population recently, this is it right here. The beginning of modern transgender care is rooted in the 1948 when Alfred Kinsey (yes, that Kinsey) asked a dutch endocrinologist, Dr. William Benjamin, to assist a child who “wished to be a girl.” The mother of the girl was adamant that she wanted to help her daughter be comfortable in her skin, NOT convince them otherwise. Benjamin created a treatment program of estrogen therapy to help the girl transition, and noted just how profound of an impact it had on her behavior and well being. He continued to refine his treatment and went on to help hundreds of trans people find peace with themselves, despite laws at the time that banned transsexual reassignment.
 

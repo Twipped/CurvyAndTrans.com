@@ -29,7 +29,7 @@ tweets:
 ---
 
 {!{
-  {{import '~/tweet' ids=(array
+  {{import '~/tweet' ids=[
     '1214429891656994816'
     '1214431863067963392'
     '1214432759415894018'
@@ -38,27 +38,27 @@ tweets:
     '1214437023341150208'
     '1214437546635100160'
     '1214438124236898305'
-) tweets=meta.tweets className="grid-row by-two collapse" }}
+] tweets=meta.tweets className="grid-row by-two collapse" }}
 }!}
 
 This thread was a journey. Initially I started capturing this on the base message, but then I saw the replies and it took a whole new depth.
 
 {!{
 <div class="grid-row">
-  {{import '~/tweet' ids=(array
+  {{import '~/tweet' ids=[
     '1214733921545531394'
     '1214734270708600833'
     '1214735379158511616'
-  ) tweets=meta.tweets className="" }}
-  {{import '~/tweet' ids=(array
+  ] tweets=meta.tweets className="" }}
+  {{import '~/tweet' ids=[
     '1214581990868959233'
     '1215005216053047296'
-  ) tweets=meta.tweets className="" }}
-  {{import '~/tweet' ids=(array
+  ] tweets=meta.tweets className="" }}
+  {{import '~/tweet' ids=[
     '1214670940430204928'
     '1214672082258161664'
     '1214672926307274752'
-  ) tweets=meta.tweets className="collapse" }}
+  ] tweets=meta.tweets className="collapse" }}
 </div>
 }!}
 

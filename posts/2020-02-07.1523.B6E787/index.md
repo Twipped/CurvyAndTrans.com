@@ -29,17 +29,17 @@ tweets:
 {!{
 <div class="grid-row">
   <div>
-    {{import '~/tweet' ids=(array
+    {{import '~/tweet' ids=[
       '1224356658580582400'
       '1224356659725656064'
       '1224356728931672065'
-    ) tweets=meta.tweets className="oneblock" }}
-    {{import '~/tweet' ids=(array
+    ] tweets=meta.tweets className="oneblock" }}
+    {{import '~/tweet' ids=[
       '1224437913988894721'
-    ) tweets=meta.tweets className="grid-row" }}
+    ] tweets=meta.tweets className="grid-row" }}
   </div>
 
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1224698929003950080'
   '1224701119709868033'
   '1224701709928124417'
@@ -49,7 +49,7 @@ tweets:
   '1224704190376595456'
   '1224704478592622594'
   '1224704804188016640'
-) tweets=meta.tweets className="" }}
+] tweets=meta.tweets className="" }}
 
 </div>
 }!}

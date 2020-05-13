@@ -19,16 +19,16 @@ tweets:
 
 
 {!{
-  {{import '~/tweet' ids=(array
+  {{import '~/tweet' ids=[
     '1178280345424121857'
     '1178280347525636097'
     '1178280348582633472'
     '1178280354374995968'
     '1178280359705886720'
     '1178280362243510272'
-  ) tweets=meta.tweets className="oneblock" }}
+  ] tweets=meta.tweets className="oneblock" }}
 
-{{import '~/img' images.[2]
+{{import '~/img' images['2']
   link="https://tapas.io/episode/1401198"
   srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
   className="card right span3"
@@ -50,9 +50,9 @@ Maybe you realize that the things you enjoyed before just don’t interest you a
 
 {!{
 <div class="card borderless right span3">
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1178342628829646850'
-) tweets=meta.tweets className="grid-row by-three" }}
+] tweets=meta.tweets className="grid-row by-three" }}
 </div>
 }!}
 

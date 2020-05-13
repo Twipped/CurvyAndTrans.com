@@ -18,10 +18,10 @@ tweets:
 instagram: https://www.instagram.com/p/BuH0UH0HcTO/
 ---
 
-{!{ {{import '~/tweet' ids=(array
+{!{ {{import '~/tweet' ids=[
   '1096816028200460290'
   '1097269840165904384'
-) tweets=meta.tweets className="grid-row by-two" }} }!}
+] tweets=meta.tweets className="grid-row by-two" }} }!}
 
 If your reaction to these tweets is “No they aren’t!” then check yourself, because thats transphobia talking. If your reaction is "That's not how biology works", please, stay a while and listen.
 
@@ -32,7 +32,7 @@ Let’s talk about biology, anatomy, and sex. I swear I had this essay already w
 Here is what we know today. If you’ve seen Jurassic Park then you may remember this scene:
 
 {!{
-{{import '~/img' images.[1] className="card center natural" alt="All vertebrate embryos are inherently female anyway. They just require an extra hormone given at the right developmental stage to make them male."}}
+{{import '~/img' images['1'] className="card center natural" alt="All vertebrate embryos are inherently female anyway. They just require an extra hormone given at the right developmental stage to make them male."}}
 }!}
 
 This isn't science fiction, tho it is very dumbed down. In human fetuses the gonads initially develop in a bipotential state, meaning they can become either ovaries or testes. The SRY gene on the Y chromosome releases a protein called [Testis Determining Factor](https://en.wikipedia.org/wiki/Testis-determining_factor) (TDF). This protein then starts a chain reaction which causes the gonadal cells to form into the Sertoli and Leydig cells that make up the testes. If TDF is never produced or is interfered with then the gonad cells form into the Theca cells and follicles which comprise the ovaries.
@@ -71,7 +71,7 @@ And even still, just because a person's brain manifests with these traits, that 
 ### Anatomy of a Shapeshifter
 
 {!{
-  {{import '~/img' images.[levels]
+  {{import '~/img' images['levels']
     className="card span3 right"
   }}
 }!}
@@ -80,9 +80,9 @@ Chart of my hormone levels over the last two years.</span></a>It has been 656 da
 
 {!{
 <div class="card borderless right span3" style="margin-top: 3em">
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1091940189851643904'
-) tweets=meta.tweets className="collapse hide-quoted" }}
+] tweets=meta.tweets className="collapse hide-quoted" }}
 </div>
 }!}
 

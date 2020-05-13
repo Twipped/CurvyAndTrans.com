@@ -30,9 +30,9 @@ If you wish to re-used this blogging engine, download this repository and run `n
 
 - `posts`: Every blog post goes into here, in its own folder. Each folder must contain an `index.md` file and at least a `1.jpeg` file to serve as the titlecard for the post. A `poster.jpeg` may also be provided to use on the site index and for oembed images. `titlecard.jpeg` may also be provided to override _just_ the oembed titlecard. Images or movies numbered in the pattern of `(N)N.(jpeg|jpg|gif|png)` will all automatically be scaled and inserted in the post. Numbered videos may also be provided in the format of `(N)N.m4v`, but must already be web-ready (no ffmpeg juju is performed). The `index.md` file is standard markdown, but supports inline HTML as well.
 
-- `templates` contains the handlebars templates used for the site chrome, individual post pages, and the post cells on the index and tags pages.
+- `templates` contains the handybars templates used for the site chrome, individual post pages, and the post cells on the index and tags pages.
 
-- `pages` contains the handlebars templates for root level pages such as `index.html` and the `sitemap.xml` file. Handlebars is extended with helpers from the [Helper Hoard](http://npm.im/helper-hoard) js library (one of my own). Content regions define segments for embedding into the site chrome template. The `{{rev}}` helper is also provided to replace any asset paths with their respective cache busted urls.
+- `pages` contains the handybars templates for root level pages such as `index.html` and the `sitemap.xml` file. Handybars is extended with helpers from the [Helper Hoard](http://npm.im/helper-hoard) js library (one of my own). Content regions define segments for embedding into the site chrome template. The `{{rev}}` helper is also provided to replace any asset paths with their respective cache busted urls.
 
 - `scss` contains the site SCSS templates. Files prefixed with underscores are skipped by the build process, as those are just for imports. The build process converts these into standard CSS, minified when in production mode.
 

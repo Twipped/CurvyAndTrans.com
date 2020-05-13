@@ -17,10 +17,10 @@ tweet:
 
 {!{
 <div class="card borderless right span3">
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1073193340647206915'
   '1073412031154479105'
-) tweets=meta.tweets className="" }}
+] tweets=meta.tweets className="" }}
 </div>
 }!}
 

@@ -16,12 +16,12 @@ tweets:
 ---
 
 {!{
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1202707676494319616'
   '1202707677459050496'
   '1202707678293680128'
   '1202510416368111616'
-) tweets=meta.tweets className="collapse left" }}
+] tweets=meta.tweets className="collapse left" }}
 }!}
 
 And if by some magic I manage to get myself productive during this dead time, I will then hyper-fixate and *forget about the appointment.*

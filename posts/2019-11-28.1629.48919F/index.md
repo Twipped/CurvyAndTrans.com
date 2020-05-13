@@ -10,7 +10,7 @@ no-images: true
 ---
 
 {!{
-{{import '~/img' images.[1]
+{{import '~/img' images['1']
   alt="Tumblr Post: out of everything that’s come out of the past year in animation, the greatest has got to be my new favorite archetype, the Science Lesbian."
   srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 534px"
   className="card center natural"

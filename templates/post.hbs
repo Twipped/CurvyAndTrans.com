@@ -40,12 +40,12 @@
       {{#each meta.images}}
         {{#compare type 'TYPE_VIDEO'}}
         <a class="{{#even @index}}even{{else}}odd{{/even}}">
-          <video {{#if ../meta.video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{sizes.[0].url}}" type="video/mp4"></video>
+          <video {{#if meta.video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{sizes[0].url}}" type="video/mp4"></video>
         </a>
         {{/compare}}
         {{#compare type 'TYPE_IMAGE'}}
         <a href="{{rev url}}" class="{{#even @index}}even{{else}}odd{{/even}} lb">
-          {{#if ../flags.isWide}}
+          {{#if flags.isWide}}
           <img
             src="{{rev sizes.0.url}}"
             alt="{{alt}}"
@@ -70,8 +70,8 @@
       {{#each meta.images}}
         {{#compare type 'TYPE_VIDEO'}}
         <a class="carousel-cell {{#even @index}}even{{else}}odd{{/even}}">
-          <video {{#if ../meta.video.controls}}controls{{else}}autoplay muted loop{{/if}} >
-            <source src="{{sizes.[0].url}}" type="video/mp4">
+          <video {{#if meta.video.controls}}controls{{else}}autoplay muted loop{{/if}} >
+            <source src="{{sizes[0].url}}" type="video/mp4">
           </video>
         </a>
         {{/compare}}

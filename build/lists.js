@@ -42,8 +42,8 @@ class List extends Page {
 
   _engine () {
     switch (this.type) {
-    case TYPE.HANDLEBARS:
-      return TYPE.HANDLEBARS;
+    case TYPE.HANDYBARS:
+      return TYPE.HANDYBARS;
     case TYPE.MARKDOWN:
       return ENGINE.LIST;
     default:

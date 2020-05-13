@@ -13,7 +13,7 @@ products:
   "Come as You Are, by Emily Nagoski": https://www.amazon.com/exec/obidos/ASIN/B00LD1ORBI/curvyandtrans-20
 ---
 {!{
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     className="card span3 right"
   }}
 }!}

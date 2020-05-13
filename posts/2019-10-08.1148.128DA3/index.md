@@ -12,7 +12,7 @@ orientation: square
 
 {!{
 <div class="card right span3"><div class="tumblr">
-  <img src="{{images.avatar.sizes.[0].url}}" alt="" class="tumblr-avatar">
+  <img src="{{images.avatar.sizes[0].url}}" alt="" class="tumblr-avatar">
   <a href="https://bigbardafree.tumblr.com/post/96054724187/the-thing-about-being-someone-whos-never" class="tumblr-username">bigbardafree</a>
   <div class="tumblr-body">
     <p>the thing about being someone who’s never catcalled is that you start to wonder why like is it because im ugly???</p>

@@ -12,7 +12,7 @@ no-images: true
 ---
 
 {!{
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     className="card span3 right"
     caption="The one time I ever appeared in a newspaper, and I'm stuffing my face with a burrito."
   }}

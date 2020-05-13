@@ -11,7 +11,7 @@ no-images: true
 instagram: https://www.instagram.com/p/Bx7zeRcHcLh/
 ---
 {!{
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     className="card span3 right"
   }}
 }!}

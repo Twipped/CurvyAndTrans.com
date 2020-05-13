@@ -22,14 +22,14 @@ tweets:
 ---
 
 {!{
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1141653591771320320'
   '1141653593310687233'
   '1141653594875105281'
   '1141653598058631169'
   '1141653599551807489'
   '1141653601292390400'
-) tweets=meta.tweets className="oneblock right" }}
+] tweets=meta.tweets className="oneblock right" }}
 }!}
 
 <!--[-->### [View Unrolled Thread Here](https://threadreaderapp.com/thread/1141653591771320320.html)<!--]-->

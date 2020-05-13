@@ -32,7 +32,7 @@ tweets:
 ---
 
 {!{
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1176557809795772417'
   '1176560687822323715'
   '1176570358469660675'
@@ -47,7 +47,7 @@ tweets:
   '1176599408265375746'
   '1176599409477525504'
   '1176599410832265218'
-) tweets=meta.tweets className="oneblock left" }}
+] tweets=meta.tweets className="oneblock left" }}
 }!}
 
 

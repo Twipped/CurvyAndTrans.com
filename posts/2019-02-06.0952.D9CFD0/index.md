@@ -15,7 +15,7 @@ captions:
 ---
 
 {!{
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     className="card span3 right"
   }}
 }!}

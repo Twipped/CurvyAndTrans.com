@@ -11,10 +11,10 @@ tweet:
 ---
 
 {!{
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1179343503345831938'
   '1179345945877721088'
-) tweets=meta.tweets className="grid-row" }}
+] tweets=meta.tweets className="grid-row" }}
 }!}
 
 The first woman I ever dated said to me on our first date, “You are unlike any man I have ever dated before.” She could see it. She didn’t know what it was, but she could see it.

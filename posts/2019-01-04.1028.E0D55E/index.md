@@ -12,7 +12,7 @@ tweets:
 ---
 
 {!{
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     className="card span3 right"
   }}
 }!}
@@ -55,9 +55,9 @@ By doing!
 
 
 {!{
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1078742286392012800'
-) tweets=meta.tweets className="collapse right span3 hide-media" }}
+] tweets=meta.tweets className="collapse right span3 hide-media" }}
 }!}
 
 Confidence comes from experience, it comes from doing something and receiving reinforcement that it was the right thing to do. Take note, _confidence comes after doing_, it will never come first. Confidence without precedence is [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect), and is an undesirable personality trait. The only way you can boost your confidence is by "doing it anyway", as Carrie Fisher put it. Confidence will follow through.

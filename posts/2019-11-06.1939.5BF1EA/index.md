@@ -16,11 +16,11 @@ tweet:
 
 {!{
 <div class="grid grid-row">
-  {{import '~/img' images.[1]
+  {{import '~/img' images['1']
     alt="What they tell you: Transfem HRT will lower your libido. What they don't tell you: Transfem HRT will help you develop confidence in yourself and will make your sex drive skyrocket because there's no greater aphrodisiac than finally loving yourself."
     srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
   }}
-  {{import '~/img' images.[2]
+  {{import '~/img' images['2']
     alt="TwippingVanilla: They also wont tell you that E sex drive feels so radically different from T sex drive that you may not even be aware that your libido is actually there in full force. I’ve literally had to tell girls “Honey, you’re horny” when they’ve come to me in a panic about symptoms.  AutumnCaraway: Could you expand on that? I'm curious how E horny differs from t horny."
     srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
   }}

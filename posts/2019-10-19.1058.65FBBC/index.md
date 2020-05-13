@@ -13,9 +13,9 @@ tweets:
 ---
 
 {!{
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1185225928118542337'
-) tweets=meta.tweets className="span2" }}
+] tweets=meta.tweets className="span2" }}
 }!}
 
 You go to get water and fifteen minutes later you close the now full dishwasher and you realize that you have completely failed at hydration.

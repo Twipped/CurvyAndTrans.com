@@ -28,21 +28,21 @@ This happens to me ALL. THE. TIME. Basically any time my wife and I get into a f
 {!{
 <div class="grid-row">
 
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1250125313616592896'
   '1250126524008804353'
   '1250126981099859968'
   '1250128178858917892'
   '1250128797309046787'
   '1250130491665235968'
-) tweets=meta.tweets className="oneblock" }}
+] tweets=meta.tweets className="oneblock" }}
 
-{{import '~/tweet' ids=(array
+{{import '~/tweet' ids=[
   '1250135437588430851'
   '1250136672014159876'
   '1250137186772692992'
   '1250137503631376384'
-) tweets=meta.tweets className="" }}
+] tweets=meta.tweets className="" }}
 
 </div>
 }!}

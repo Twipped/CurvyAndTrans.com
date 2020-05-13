@@ -14,7 +14,7 @@ tweets:
 
 {!{
 <div class="card borderless right span3">
-  {{#with images.[0]}}
+  {{#with images['0']}}
   <img
     src="{{rev large}}"
     alt="{{alt}}"
@@ -23,10 +23,10 @@ tweets:
     class="card-img-top"
   >
   {{/with}}
-  {{import '~/tweet' ids=(array
+  {{import '~/tweet' ids=[
     '1227301065160298497'
     '1227311646974054400'
-  ) tweets=meta.tweets className="oneblock" }}
+  ] tweets=meta.tweets className="oneblock" }}
 </div>
 }!}
 

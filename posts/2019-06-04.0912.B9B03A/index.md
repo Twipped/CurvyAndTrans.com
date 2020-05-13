@@ -9,7 +9,7 @@ instagram: https://www.instagram.com/p/BySx21Unbqe/
 no-images: true
 ---
 {!{
-{{import '~/img' images.[1]
+{{import '~/img' images['1']
   alt="Image of my hand holding seven pills of differing shapes."
   srcSizes="(max-width: 576px) 100vw, (max-width: 1020px) 50vw, 576px"
   className="card right span3"
