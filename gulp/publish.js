@@ -3,7 +3,6 @@ const awspublish  = require('gulp-awspublish');
 const awsrouter   = require('gulp-awspublish-router');
 const parallelize = require('concurrent-transform');
 // const cloudfront  = require('gulp-cloudfront-invalidate-aws-publish');
-const debug       = require('./lib/debug');
 
 // const path = require('path');
 // const ROOT = path.dirname(__dirname);
@@ -65,19 +64,4 @@ module.exports = exports = function s3deploy () {
     .pipe(awspublish.reporter({
       states: [ 'create', 'update', 'delete' ],
     }));
-};
-
-exports.dryrun = function s3DryRun () {
-  return src(`${DEST}/**/*`)
-    .pipe(awsrouter({
-      cache: {
-        gzip: true,
-        cacheTime: 1800, // 30 minutes on client
-        sharedCacheTime: 86400, // one day on server
-      },
-
-      routes,
-    }))
-    .pipe(debug('s3'))
-  ;
 };

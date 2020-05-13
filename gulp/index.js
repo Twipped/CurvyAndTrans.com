@@ -36,7 +36,6 @@ exports.publish = series(
   pushToProd,
   cloudfront.prod,
 );
-exports.testpush = pushToProd.dryrun;
 
 /** **************************************************************************************************************** **/
 
