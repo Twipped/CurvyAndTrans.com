@@ -146,6 +146,15 @@ module.exports = exports = class Asset extends File {
 
     if (this.isSerial) {
       this.carousel = {};
+      each(WIDTHS, (w) => {
+        if (w > width) return;
+        const name = `${this.name}.${w}w${this.ext}`;
+        this.carousel[w + 'w'] = {
+          url:    path.join(this.dir,  name),
+          width:  w,
+          height: Math.ceil((w / width) * height),
+        };
+      });
       each(CAROUSELS, (attributes, k) => {
         const name = `${this.name}.${k}${this.ext}`;
         this.carousel[k] = {

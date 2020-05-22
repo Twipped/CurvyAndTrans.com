@@ -50,10 +50,8 @@ function markdown (mode, input, data, hbs) {
 
   } else {
 
-    input = input.replace(/\{!\{([\s\S]*?)\}!\}/mg, (match, contents) => {
-      const result = hbs(contents, data);
-      return 'æææ' + result + 'æææ';
-    });
+    input = hbs(input, data);
+    input = input.replace(/\{!\{|\}!\}/mg, 'æææ');
 
     input = input.replace(/<!--[[\]]-->/g, '');
   }
