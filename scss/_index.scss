@@ -23,7 +23,7 @@
       display: flex;
       flex: 0;
       margin: 2px 0;
-      span, .svg-icon {
+      strong, .svg-icon {
         white-space: nowrap;
         // display: inline-block;
         font-size: 1em;
@@ -31,7 +31,7 @@
     }
 
     @media (max-width: 425px) {
-      .btn span {
+      .btn strong {
         display: none;
       }
     }
