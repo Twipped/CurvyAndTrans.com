@@ -1,0 +1,11 @@
+<a href="{{rev carousel.full.url}}" class="lb" target="_blank" {{#if style}}style="{{style}}"{{/if}}>
+  <img
+    alt="{{alt}}"
+    {{#not forced}}src="/images/filler.png"{{/not}}
+    {{#if size}}
+    {{#not forced}}data-{{/not}}src="{{rev carousel[size].url}}"
+    {{else}}
+    {{#not forced}}data-{{/not}}src="{{rev carousel.576w.url}}"
+    {{/if}}
+  >
+</a>
