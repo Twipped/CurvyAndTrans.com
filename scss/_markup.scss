@@ -99,3 +99,11 @@ a.instagram {
     margin-right: 5px;
   }
 }
+
+@include media-breakpoint-up(md) {
+  .tumblr-embed {
+    margin: 0 1em 0 0 !important;
+    float: left;
+    width: unset !important;
+  }
+}

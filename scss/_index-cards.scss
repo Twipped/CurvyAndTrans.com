@@ -101,6 +101,10 @@ a.grid-card, .grid-card a {
       margin-right: 4px;
     }
 
+    .grid-tag + .grid-tag {
+      display: none;
+    }
+
     // @include media-breakpoint-down(xs) {
     //   font-size: 10px;
     // }

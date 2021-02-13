@@ -84,9 +84,10 @@ function siblings (posts) {
 }
 
 function pageState (page, posts) {
+  const { date, ...meta } = page.meta; // eslint-disable-line no-unused-vars
   return {
     ...page,
-    meta: { ...page.meta, ...page },
+    meta: { ...meta, ...page },
     page: {
       domain: siteInfo.domain,
       title: page.meta.title

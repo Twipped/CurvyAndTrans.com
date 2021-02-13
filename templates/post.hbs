@@ -40,7 +40,9 @@
       {{#each meta.images}}
         {{#compare type 'TYPE_VIDEO'}}
         <a class="{{#even @index}}even{{else}}odd{{/even}}">
-          <video {{#if meta.video.controls}}controls{{else}}autoplay muted loop{{/if}}><source src="{{sizes[0].url}}" type="video/mp4"></video>
+          <video {{#if meta.video.controls}}controls{{else}}autoplay muted loop{{/if}}>
+            {{#each sizes}}<source src="{{url}}" type="video/mp4">{{/each}}
+          </video>
         </a>
         {{/compare}}
         {{#compare type 'TYPE_IMAGE'}}

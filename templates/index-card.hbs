@@ -1,7 +1,7 @@
 {{#unless flags.hasTweet}}
 <a href="{{this.url}}" class="grid-card {{#each classes}}{{this}} {{/each}}" data-id="{{id}}">
   <div class="grid-date">
-    <span class="grid-date-value">{{date this.date 'MMM do, yyyy'}}</span>
+    <span class="grid-date-value">{{@root.date this.date 'MMM do, yyyy'}}</span>
     <span class="emdash">&mdash;</span>
     {{#if tags}}{{#first tags}}<span class="grid-tag">{{this}}</span>{{/first}}{{/if}}
   </div>
@@ -51,7 +51,7 @@
 {{else}}
 <div class="grid-card {{#each classes}}{{this}} {{/each}}" data-id="{{id}}">
   <a href="{{this.url}}" class="grid-date">
-    <span>{{date this.date 'MMM do, yyyy'}}</span> <span class="emdash">&mdash;</span>
+    <span>{{@root.date this.date 'MMM do, yyyy'}}</span> <span class="emdash">&mdash;</span>
     {{#if tags}}{{#first tags}}<span>{{this}}</span>{{/first}}{{/if}}
   </a>
   {{import '~/tweet' ids=tweet tweets=tweets className="grid-tweet" }}

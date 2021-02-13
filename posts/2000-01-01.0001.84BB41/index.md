@@ -27,7 +27,12 @@ span: 12
 
 ### A New Home
 
-<a href="../1.jpeg" class="card right span4"><img src="../1.jpeg" alt="My mother and myself sitting with our two dogs in front of a brown wall, grass around our feet." class="card-img-top"><span class="card-body">Spring 1992</span></a>With assistance from my grandfather, the money she had in savings, and the meager income from working as a cashier, my mother started taking classes at Central Michigan University with the goal of getting the basic education she needed to find better work.
+
+{!{
+  {{import '~/img' images['1'] className="card right span4" alt="My mom and I sitting with our two dogs in front of a brown wall, grass around our feet." caption="Spring 1992"}}
+}!}
+
+With assistance from my grandfather, the money she had in savings, and the meager income from working as a cashier, my mother started taking classes at Central Michigan University with the goal of getting the basic education she needed to find better work.
 
 In the mean time, the two of us lived in a small house on the outskirts of town which we rented for a measly $100 per month. It was actually a pretty large home for the two of us, probably about 1500 square feet. Three bedrooms, huge livingroom, and a reasonably sized kitchen. It also had a pretty large yard, and the forest behind it backed up to the river. Unfortunately, the reason the house was so cheap was because it was a shithole. It was built on a flood plane, and despite sitting on a four elevated rise, it still had flooded several times since its construction. You could see on the walls where the water level had been.
 
@@ -46,6 +51,10 @@ At one point my mother got the idea that we should raise some chickens again, an
 Of course, now that my mom was working full time to support us while also going to school full time, that meant that I couldn't be home schooled any more, and that's when things really started to suck.
 
 ### The Feminine Boy
+
+{!{
+  {{import '~/img' images['2'] className="card right span4" alt="Me and a group of other girls around my age." caption="Wheatland Music Festival, 1991"}}
+}!}
 
 Growing up home-schooled in the JW faith meant spending a lot of time in the door-to-door field service work. The women of the faith, especially those who were home-makers (and really, back then that was most of them), were expected to be in the field service work for most of the week, and certainly on weekends. I, of course, went with her, and that meant that most of my time was spent around women. Because of this, I think my mother never really noticed how many feminine traits I was exhibiting as a child, or if she did she assumed I was just emulating the women around me. Unfortunately she refuses to acknowledge any of these traits, even the ones I remember, and claims that she doesn't "believe" in gendered behavior.
 
@@ -106,7 +115,9 @@ Eventually my mother put her foot down and took me off the medications, because 
 
 What did work for me was eating. I discovered I could eat my feelings away. Granted, we were poor, so there wasn't a lot of food _to_ eat, but I found my ways. Between the age of 9 and 11 I exploded into childhood obesity.
 
-<a href="../obesity.jpeg" class="card center"><img src="../obesity.jpg" alt="Photos, age 7 to 13"></a>
+{!{
+  {{import '~/img' images['4'] className="card center" alt="Photos, age 7 to 13" caption=""}}
+}!}
 
 After my parents separated I spent every weekend either at my Grandma's house, or at my Dad's. Part of this was out of tedium, because my mom's house was just so boring. Our house was too far out of town for me to walk to anything, and since it was right on a main highway into town and there were no sidewalks, it was far too dangerous for me to ride my bike. I hated that house, especially once the kids at school decided that we were living in a rotted shack. From the street you could only see a tiny portion of the house, which was old & water logged.
 
@@ -128,13 +139,13 @@ I regularly went to doctors visits, we had health insurance through my father, a
 
 It wasn't until I was 26 years old that I learned about a testicular torsion when one of my co-workers' son had to have his corrected. If you aren't familier with this condition, it occurs when a developmental abnormality causes the spermatic cord of a testical to become twisted. This cuts off blood flow to the testicle, severely damaging it. By the time I knew what was happening, the damage was far too gone. My left testicle was destroyed, mangled and beaten from years of being choked to death by its own arteries.
 
-### You... you can do that?
+### I don't have to be a boy?
 
-One boring weekend I was sitting at my dad's house watching Donahue – at least, I assume it was my dad's, because my grandmother had cable and there's no way I'd be watching daytime talk shows when I could be watching Nickelodeon or The Sci-Fi Channel. I'm pretty sure this had to have been in 1991 or 92, which would have made it a rerun, but it could have been when [the episode first aired in 1990](https://www.youtube.com/watch?v=CXvrtBsyCbc). Phil was interviewing an actress and fashion model named Caroline Cossey. Caroline was _gorgeous_ (and still is), just absolutely stunning. She had this incredible screen presence, a beautiful smile, amazing hair, and a fantastic body... and according to Phil, she had been born a boy.
+That fateful day, a boring weekend at my dad's house watching the only thing available to watch because he didn't have cable, I sat there watching Donahue and learned about Caroline Cossey, actress and super model, who had been born male. Caroline was (and still is) _gorgeous_, just absolutely stunning. She had this incredible screen presence that captivated you, a beautiful smile, amazing hair, and a fantastic body. [The episode is on youtube](https://www.youtube.com/watch?v=CXvrtBsyCbc) (uploaded by Caroline herself) and is remarkable respectful by 1990 standards. Phil did everything he could to treat her with dignity.
 
-This. rocked. my. world. Boys could become girls? What? How... how is that possible? Oh sure, I had seen the tabloids in the grocery store with ridiculous headlines about women who were men, but that was tabloid trash. It sat alongside batboy and alien abduction stories. But this... this was an actual woman who was here talking about growing up as a boy. I was astonished.
+This. rocked. my. world. Boys could become girls? What? How... how is that possible? Oh sure, I had seen the tabloids in the grocery store with ridiculous headlines about women who were men, but that was tabloid trash. It sat alongside batboy and alien abduction stories. But this... this was an actual woman who was here talking about growing up as a boy. I was astonished. Then my father walked in, saw what I was watching, proclaimed it to be disgusting, and turned the television off. This was my first real exposure to trans people, and I knew immediately that it was something detestable in my parents eyes.
 
-I don't remember much more about this revelation, unfortunately. I only remembered this moment after finding the episode on YouTube and suddenly realizing I had seen it before. But this was definitely it, this was the moment that my world moved beneath my feet. This was when I learned the term Transsexual. I started trying to learn more about this, with what little resources I had. This was 2 or more years before I would ever use the internet for the first time, so my options for research were extremely limited.
+It was at this moment that I began to actively want to change my gender identity. I started thinking a lot more about how badly I wanted to be a girl, started longing even stronger to be able to dress like a girl and be more involved in feminine things, but I still didn't think of myself as being a girl. There was no language to say that if you want this, that means you are actually female. Even the concept of "being transgender" was never presented to me, and you weren't a transsexual until you went through the process, until you had surgery. Trans wasn't something you were, it's something you did. At no point did anyone ever tell me that my wants meant I already was a girl, but the feeling began to express itself all the same.
 
 Policy in Mount Pleasant School District was to conduct scoliosis screenings on all children during the fifth grade. When this time came around, all of the children in my school's three fifth grade classes were told to line up in the hallway, boys on the left, girls on the right. Boys were sent to one classroom and girls were sent to another. I remember standing in the boys line and thinking to myself that I was in the wrong line. I knew that this was the line I was *supposed* to be standing in, but it wasn't the line I *belonged* in.
 

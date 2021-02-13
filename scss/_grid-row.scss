@@ -18,7 +18,19 @@
   }
 
   &.by-three {
-    grid-template-columns: repeat( auto-fit, minmax( 325px, 1fr ) );
+    grid-template-columns: repeat( auto-fit, minmax( 310px, 1fr ) );
+  }
+
+  &.by-four {
+    grid-template-columns: repeat( auto-fit, minmax( 230px, 1fr ) );
+  }
+
+  &.amazon-by-four-or-two {
+    grid-column-gap: 15px;
+    grid-template-columns: 120px 1fr 120px 1fr;
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 120px 1fr;
+    }
   }
 
   &.by-three-forced {

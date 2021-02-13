@@ -3,6 +3,7 @@ id: "528BAD"
 date: "2019-12-05T00:08:00.000Z"
 title: "Getting Handsy"
 description: "Hormone therapy changes you in unexpected ways"
+titlecard: center
 tags:
   - Transition Timeline
   - Transgender

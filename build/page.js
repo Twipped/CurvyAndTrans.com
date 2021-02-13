@@ -98,6 +98,7 @@ module.exports = exports = class Page extends File {
     this.source = body;
     this.meta = meta || {};
     this.dateCreated = meta.date && new Date(meta.date) || ctime;
+    // console.log(this.dateCreated, meta.date);
     this.dateModified = mtime;
 
     this._parse(PublicFiles);

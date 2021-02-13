@@ -37,9 +37,11 @@ This is a compilation of reported medical transition changes collected from test
 
 - Skin softens and becomes thinner.
   - Expect varicose veins.
+  - Tattoos from pre-transition may become bolder and more colorful.
 
 - Reduction in skin oils, causing face and scalp to become drier.
   - Significant reduction in acne.
+  - Reduction or even cessation of dandruff flaking
 
 - Thinner and softer finger and toe nails.
 
@@ -48,18 +50,23 @@ This is a compilation of reported medical transition changes collected from test
 
 - Emotional expansion
   - Less stoicism and disassociation, and you will regain the ability to cry
+  - Increased mirth in response to comedy and humor
   - You need Estradiol in order to push this to its fullest
 
 - Reduced muscle mass / harder to gain muscle
   - This contributes massively to feminine shoulder and neck line, as well as the waist line.
   - Strength diminishes significantly, become unable to open jars.
 
+- Increase flexibility
+  - Testosterone causes ligaments to retain water, reducing mobility.
+
 - Loss of random erections / morning wood
   - Failure to regularly give oneself erections can result in atrophy of the tissue, leading to shrinkage.
-  - Prolonged atrophy can cause painful erections.
+  - Prolonged atrophy will result in changes to musculature and erectile function. Pelvic floor response may shift to be centered more around the perineum than the based of the penis.
+  - This may result in some urination incontinence as the body becomes less accustomed to the length of the urethra.
 
 - Loss of sex drive, frequently a total loss of libido.
-  - This returns eventually once the body gets used to running on estrogen, especially with the addition of progesterone, but it will not feel anything like what you're used to.
+  - This returns eventually once the body gets used to running on estrogen, especially with the addition of progesterone, but it will not feel anything like what you're used to (see below).
 
 - Sterility + testicle atrophy
   - Testicles shrink in size.
@@ -97,6 +104,9 @@ This is a compilation of reported medical transition changes collected from test
   - This is extremely subtle and slow going and it's easy to think nothing is changing at all. Take selfies to compare.
   - Changes in tissue around the eye can alter the shape of the eyeball, changing focal depth and altering vision clarity
 
+- Freckles.
+  - Estradiol [alters behavior of melanocytes](https://journals.physiology.org/doi/full/10.1152/physrev.00044.2003), the cells in the skin that produce melanin in response to UV light. This change causes melanin to cluster in higher quantities, resulting in spots with extra pigmentation.
+
 - Slimmer hands, wrists and feet.
   - Ring size will drop as fat moves off the hands and the skin thins, making the fingers thinner
   - Finger length will drop as ligaments thin and shift
@@ -107,8 +117,6 @@ This is a compilation of reported medical transition changes collected from test
   - Potentially a loss of 1-3 inches in height.
   - Note: This is NOT the same as the [hip rotation](https://youtu.be/OROoZzoVwfk?t=12) that occurs in AFAB puberty.
     - However, that can still happen over very long stretches of time. An 80 year old trans woman reported on reddit last year that over the course of her 30 years on HRT, her doctor observed changes in her pelvis consistent with female hip rotation.
-
-- Improved flexibility due to ligaments stretching
 
 - Scalp hair becomes thicker and follicles grow stronger, allowing hair to grow to longer lengths.
   - Hair can also become curlier
@@ -148,7 +156,8 @@ This is a compilation of reported medical transition changes collected from test
 
 - Changes in taste perception
   - Many people report cilantro becoming more palatable.
-  - Chocolate addiction _(Only half kidding)_
+  - Wine becomes more flavorful.
+  - Chocolate addiction.
 
 
 
@@ -191,6 +200,17 @@ Some of these may simply be the brain getting what it finally wants.
 - Changes in ADHD symptoms and/or intensity
   - For some it improves, for others it gets much worse.
   - This is much more likely for users of Spironolactone
+
+- Changes in hair color or texture.
+  - Estradiol makes hair follicles stronger.
+  - Removing testosterone reduces DHT metabolism, increasing bloodflow to the scalp.
+
+- [New libido and sexual response.](/p/5BF1EA/libatious-libidos)
+  - Desire becomes more situational than visual (testosterone encourages response to visual stimuli).
+  - Desire becomes more controllable. When the drive hits, it is easier to just ignore it.
+  - Desire may be experienced more in the chest than in the groin.
+  - Desire felt in the groin may shift to be felt deeper, near the perineum rather than in the penis.
+  - Flexing of the pelvic floor becomes erogenous
 
 - Lactation
   - A few drops is to be expected, especially while nipples are being stimulated, and is merely a sign of milk ducts forming properly.
