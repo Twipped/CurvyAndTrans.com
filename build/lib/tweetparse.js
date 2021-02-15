@@ -23,6 +23,7 @@ const schema = {
     } ] },
   } ] },
   media: true,
+  in_reply_to_status_id_str: true,
 };
 
 var entityProcessors = {
