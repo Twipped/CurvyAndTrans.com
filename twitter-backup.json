@@ -49589,5 +49589,3973 @@
     "favorited": false,
     "retweeted": false,
     "lang": "en"
+  },
+  "1361696595826380804": {
+    "created_at": "Tue Feb 16 15:19:02 +0000 2021",
+    "id": 1361696595826380800,
+    "id_str": "1361696595826380804",
+    "full_text": "So to end, nothing fancy - word choice matters a lot, and can be pretty telling when unpacked and considered in relation to wider social contexts. Misinformation and fear are formidable weapons.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      194
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361694298740252700,
+    "in_reply_to_status_id_str": "1361694298740252672",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 16,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361694298740252672": {
+    "created_at": "Tue Feb 16 15:09:54 +0000 2021",
+    "id": 1361694298740252700,
+    "id_str": "1361694298740252672",
+    "full_text": "'I'm all for equal rights for you but don't be unreasonable' is the subtext, while *absolutely fictionalising* the form of  trans-inclusive changes, and the impact of those changes. Hm.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      185
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361693807507632000,
+    "in_reply_to_status_id_str": "1361693807507632131",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 18,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361693807507632131": {
+    "created_at": "Tue Feb 16 15:07:57 +0000 2021",
+    "id": 1361693807507632000,
+    "id_str": "1361693807507632131",
+    "full_text": "But she's \"all for transgender people getting equal treatment\". This acts both for deniability, and to bring in those who're otherwise socially Liberal but 'concerned'.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      168
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361692815600803800,
+    "in_reply_to_status_id_str": "1361692815600803843",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 18,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361692815600803843": {
+    "created_at": "Tue Feb 16 15:04:00 +0000 2021",
+    "id": 1361692815600803800,
+    "id_str": "1361692815600803843",
+    "full_text": "It's no mistake that the demand of sacrifice from an abstract monster who won't take no for an answer plays on a notion of denying consent, too. So much of this moral panic about trans inclusion attempts to frame it as motivated by sexual deviance.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      248
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361691764361465900,
+    "in_reply_to_status_id_str": "1361691764361465861",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 18,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361691764361465861": {
+    "created_at": "Tue Feb 16 14:59:50 +0000 2021",
+    "id": 1361691764361465900,
+    "id_str": "1361691764361465861",
+    "full_text": "Some may laugh at the ludicrous depths of the phrasing, the pearl-clutching, but if everyone just laughed at it we wouldn't have a problem, and it wouldn't keep getting printed. We do, and it does.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      197
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361691488795709400,
+    "in_reply_to_status_id_str": "1361691488795709444",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 23,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361691488795709444": {
+    "created_at": "Tue Feb 16 14:58:44 +0000 2021",
+    "id": 1361691488795709400,
+    "id_str": "1361691488795709444",
+    "full_text": "The point is - by constructing trans people as taking sacrifices - children, bodies - in a context where people are especially sacrifice-fatigued is of course going to cause any number of people to reactively go 'no! Enough is enough!'.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      236
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361690943821410300,
+    "in_reply_to_status_id_str": "1361690943821410308",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 20,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361690943821410308": {
+    "created_at": "Tue Feb 16 14:56:34 +0000 2021",
+    "id": 1361690943821410300,
+    "id_str": "1361690943821410308",
+    "full_text": "I'm reminded of @SaraNAhmed's metaphor 'an affinity of hammers' - \"a constant chipping away at trans existence\". (published in the Trans/Feminisms issues of Transgender Studies Quarterly).",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      188
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "SaraNAhmed",
+          "name": "feministkilljoy",
+          "id": 339791868,
+          "id_str": "339791868",
+          "indices": [
+            16,
+            27
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361690238771482600,
+    "in_reply_to_status_id_str": "1361690238771482626",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 21,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361690238771482626": {
+    "created_at": "Tue Feb 16 14:53:46 +0000 2021",
+    "id": 1361690238771482600,
+    "id_str": "1361690238771482626",
+    "full_text": "And surely, supposes your reader who has no stake or connection to any of this, there must be a grain of truth in it? Or how could they print it? Keep printing the stuff and one sees an iterative shift in what people think.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      223
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361689752932597800,
+    "in_reply_to_status_id_str": "1361689752932597773",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 16,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361689752932597773": {
+    "created_at": "Tue Feb 16 14:51:50 +0000 2021",
+    "id": 1361689752932597800,
+    "id_str": "1361689752932597773",
+    "full_text": "And of course, it doesn't matter that one can debunk the claims that 'you're not allowed to call them breasts anymore', just like it didn't matter that the EU wasn't banning bendy bananas or respiration or whatever else. Over and over again the bogus claims come.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      263
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361688993818161200,
+    "in_reply_to_status_id_str": "1361688993818161158",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 18,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361688993818161158": {
+    "created_at": "Tue Feb 16 14:48:49 +0000 2021",
+    "id": 1361688993818161200,
+    "id_str": "1361688993818161158",
+    "full_text": "Noone reads these and thinks of literal child sacrifice or forced mastectomy, but the urgent, inflammatory language is designed to indicate a grave threat, and to construct the trans population as both ludicrously unreasonable, and violent.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      240
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361688412152078300,
+    "in_reply_to_status_id_str": "1361688412152078338",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 20,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361688412152078338": {
+    "created_at": "Tue Feb 16 14:46:31 +0000 2021",
+    "id": 1361688412152078300,
+    "id_str": "1361688412152078338",
+    "full_text": "That's also why it's not the first time the word has been chosen in a (now quite infamous) headline. https://t.co/TAESXhzAHh",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      100
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 1361688409845227500,
+          "id_str": "1361688409845227521",
+          "indices": [
+            101,
+            124
+          ],
+          "media_url": "http://pbs.twimg.com/media/EuWwZOuXYAEmtNJ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/EuWwZOuXYAEmtNJ.jpg",
+          "url": "https://t.co/TAESXhzAHh",
+          "display_url": "pic.twitter.com/TAESXhzAHh",
+          "expanded_url": "https://twitter.com/GenderBen/status/1361688412152078338/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 655,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 720,
+              "h": 693,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 720,
+              "h": 693,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1361688409845227500,
+          "id_str": "1361688409845227521",
+          "indices": [
+            101,
+            124
+          ],
+          "media_url": "http://pbs.twimg.com/media/EuWwZOuXYAEmtNJ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/EuWwZOuXYAEmtNJ.jpg",
+          "url": "https://t.co/TAESXhzAHh",
+          "display_url": "pic.twitter.com/TAESXhzAHh",
+          "expanded_url": "https://twitter.com/GenderBen/status/1361688412152078338/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 655,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 720,
+              "h": 693,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 720,
+              "h": 693,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361688219667021800,
+    "in_reply_to_status_id_str": "1361688219667021826",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 23,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1361688219667021826": {
+    "created_at": "Tue Feb 16 14:45:45 +0000 2021",
+    "id": 1361688219667021800,
+    "id_str": "1361688219667021826",
+    "full_text": "It relies upon the idea that trans people are demanding to take something away from - especially - women. This is so profoundly untrue it's infuriating and exhausting to have to keep repeating it. Of course, that's also the idea.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      229
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361687530412900400,
+    "in_reply_to_status_id_str": "1361687530412900352",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 4,
+    "favorite_count": 33,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361687530412900352": {
+    "created_at": "Tue Feb 16 14:43:00 +0000 2021",
+    "id": 1361687530412900400,
+    "id_str": "1361687530412900352",
+    "full_text": "It's a starkly emotive choice of word for these reasons. In a cultural climate where a public is battered by personal and collective sacrifices, this deployment sends a message that yet more sacrifice is demanded - by trans people.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      231
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361686385980280800,
+    "in_reply_to_status_id_str": "1361686385980280835",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 18,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361686385980280835": {
+    "created_at": "Tue Feb 16 14:38:27 +0000 2021",
+    "id": 1361686385980280800,
+    "id_str": "1361686385980280835",
+    "full_text": "Alternatively we might think of noble sacrifices - an extremely topical discourse given the strains of COVID restrictions and key worker risk. Of course, we know that sacrifice means to give something up, something hard. Maybe unwillingly but faced with no choice.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      264
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361685613137830000,
+    "in_reply_to_status_id_str": "1361685613137829890",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 18,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1361685613137829890": {
+    "created_at": "Tue Feb 16 14:35:23 +0000 2021",
+    "id": 1361685613137830000,
+    "id_str": "1361685613137829890",
+    "full_text": "What image does the word conjure? One of the first things I think of human sacrifice, villainous Aztec tropes or Indianna Jones villains. https://t.co/R4CCKE9k1I",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      137
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 1361685610092724200,
+          "id_str": "1361685610092724226",
+          "indices": [
+            138,
+            161
+          ],
+          "media_url": "http://pbs.twimg.com/media/EuWt2Q1WgAIGRBk.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/EuWt2Q1WgAIGRBk.jpg",
+          "url": "https://t.co/R4CCKE9k1I",
+          "display_url": "pic.twitter.com/R4CCKE9k1I",
+          "expanded_url": "https://twitter.com/GenderBen/status/1361685613137829890/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 500,
+              "h": 213,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 500,
+              "h": 213,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 500,
+              "h": 213,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1361685610092724200,
+          "id_str": "1361685610092724226",
+          "indices": [
+            138,
+            161
+          ],
+          "media_url": "http://pbs.twimg.com/media/EuWt2Q1WgAIGRBk.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/EuWt2Q1WgAIGRBk.jpg",
+          "url": "https://t.co/R4CCKE9k1I",
+          "display_url": "pic.twitter.com/R4CCKE9k1I",
+          "expanded_url": "https://twitter.com/GenderBen/status/1361685613137829890/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 500,
+              "h": 213,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 500,
+              "h": 213,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 500,
+              "h": 213,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1361684982629032000,
+    "in_reply_to_status_id_str": "1361684982629031947",
+    "in_reply_to_user_id": 428649561,
+    "in_reply_to_user_id_str": "428649561",
+    "in_reply_to_screen_name": "GenderBen",
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 20,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1361684982629031947": {
+    "created_at": "Tue Feb 16 14:32:53 +0000 2021",
+    "id": 1361684982629032000,
+    "id_str": "1361684982629031947",
+    "full_text": "I don't need to point out how detached from reality this is, but I would like to reflect on a particular choice of word - 'sacrifice'. (thread) https://t.co/eMXtPn4J7o",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      143
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 1361684980313829400,
+          "id_str": "1361684980313829379",
+          "indices": [
+            144,
+            167
+          ],
+          "media_url": "http://pbs.twimg.com/media/EuWtRmuXMAMiKGO.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/EuWtRmuXMAMiKGO.jpg",
+          "url": "https://t.co/eMXtPn4J7o",
+          "display_url": "pic.twitter.com/eMXtPn4J7o",
+          "expanded_url": "https://twitter.com/GenderBen/status/1361684982629031947/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1123,
+              "h": 632,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1123,
+              "h": 632,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1361684980313829400,
+          "id_str": "1361684980313829379",
+          "indices": [
+            144,
+            167
+          ],
+          "media_url": "http://pbs.twimg.com/media/EuWtRmuXMAMiKGO.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/EuWtRmuXMAMiKGO.jpg",
+          "url": "https://t.co/eMXtPn4J7o",
+          "display_url": "pic.twitter.com/eMXtPn4J7o",
+          "expanded_url": "https://twitter.com/GenderBen/status/1361684982629031947/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1123,
+              "h": 632,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1123,
+              "h": 632,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 428649561,
+      "id_str": "428649561",
+      "name": "Dr Ben Vincent",
+      "screen_name": "GenderBen",
+      "location": "England",
+      "description": "Queer, non-binary academic. Author of 'Transgender Health' + 'Non-Binary Genders'. Co-Edited 'Non-Binary Lives' and 'TERF Wars'. Views mine. Pronouns: they/them",
+      "url": "https://t.co/gqxBGdTnFb",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gqxBGdTnFb",
+              "expanded_url": "http://genderben.com",
+              "display_url": "genderben.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 3647,
+      "friends_count": 576,
+      "listed_count": 29,
+      "created_at": "Mon Dec 05 01:04:17 +0000 2011",
+      "favourites_count": 4809,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 4461,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1316303392835284992/R06g1Sdq_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/428649561/1597324436",
+      "profile_link_color": "981CEB",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 26,
+    "favorite_count": 97,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1364502577753165831": {
+    "created_at": "Wed Feb 24 09:09:00 +0000 2021",
+    "id": 1364502577753165800,
+    "id_str": "1364502577753165831",
+    "full_text": "Do you look at your assigned gender at birth and say \"fuck that\". Then hey, you don't have to be cis. Doesn't matter how you dress, what pronouns you use, if you have body dysphoria or not, it's that you don't consent to your assigned gender at birth. Welcome to the club.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      272
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1364501660207173600,
+    "in_reply_to_status_id_str": "1364501660207173637",
+    "in_reply_to_user_id": 1025777589216927700,
+    "in_reply_to_user_id_str": "1025777589216927749",
+    "in_reply_to_screen_name": "DameKraft",
+    "user": {
+      "id": 1025777589216927700,
+      "id_str": "1025777589216927749",
+      "name": "Cherry Blossom",
+      "screen_name": "DameKraft",
+      "location": "CHOP",
+      "description": "i work in security building security programs at scale",
+      "url": "https://t.co/gCWPOEngei",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gCWPOEngei",
+              "expanded_url": "http://www.damekraft.com",
+              "display_url": "damekraft.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1221,
+      "friends_count": 1434,
+      "listed_count": 8,
+      "created_at": "Sat Aug 04 16:16:50 +0000 2018",
+      "favourites_count": 16443,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14898,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1025777589216927749/1566944752",
+      "profile_link_color": "BF1F4B",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 22,
+    "favorite_count": 176,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364501660207173637": {
+    "created_at": "Wed Feb 24 09:05:21 +0000 2021",
+    "id": 1364501660207173600,
+    "id_str": "1364501660207173637",
+    "full_text": "people want to draw borders and boundaries around the risks they face for how they appear, but that's attempting to build communities based on trauma bonding and is not sustainable.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      181
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1364501120970752000,
+    "in_reply_to_status_id_str": "1364501120970752000",
+    "in_reply_to_user_id": 1025777589216927700,
+    "in_reply_to_user_id_str": "1025777589216927749",
+    "in_reply_to_screen_name": "DameKraft",
+    "user": {
+      "id": 1025777589216927700,
+      "id_str": "1025777589216927749",
+      "name": "Cherry Blossom",
+      "screen_name": "DameKraft",
+      "location": "CHOP",
+      "description": "i work in security building security programs at scale",
+      "url": "https://t.co/gCWPOEngei",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gCWPOEngei",
+              "expanded_url": "http://www.damekraft.com",
+              "display_url": "damekraft.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1221,
+      "friends_count": 1434,
+      "listed_count": 8,
+      "created_at": "Sat Aug 04 16:16:50 +0000 2018",
+      "favourites_count": 16443,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14898,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1025777589216927749/1566944752",
+      "profile_link_color": "BF1F4B",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 4,
+    "favorite_count": 118,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364501120970752000": {
+    "created_at": "Wed Feb 24 09:03:13 +0000 2021",
+    "id": 1364501120970752000,
+    "id_str": "1364501120970752000",
+    "full_text": "no one consented to their assigned gender at birth, and certainly not everyone grows into that assignment and accepts it.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      121
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1364500928460595200,
+    "in_reply_to_status_id_str": "1364500928460595211",
+    "in_reply_to_user_id": 1025777589216927700,
+    "in_reply_to_user_id_str": "1025777589216927749",
+    "in_reply_to_screen_name": "DameKraft",
+    "user": {
+      "id": 1025777589216927700,
+      "id_str": "1025777589216927749",
+      "name": "Cherry Blossom",
+      "screen_name": "DameKraft",
+      "location": "CHOP",
+      "description": "i work in security building security programs at scale",
+      "url": "https://t.co/gCWPOEngei",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gCWPOEngei",
+              "expanded_url": "http://www.damekraft.com",
+              "display_url": "damekraft.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1221,
+      "friends_count": 1434,
+      "listed_count": 8,
+      "created_at": "Sat Aug 04 16:16:50 +0000 2018",
+      "favourites_count": 16443,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14898,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1025777589216927749/1566944752",
+      "profile_link_color": "BF1F4B",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 13,
+    "favorite_count": 137,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364500928460595211": {
+    "created_at": "Wed Feb 24 09:02:27 +0000 2021",
+    "id": 1364500928460595200,
+    "id_str": "1364500928460595211",
+    "full_text": "the only stable definition of being trans is \"not identifying with your assigned gender a birth\" and I think that definition includes a hell of a lot of people who currently call themselves cis and are worried about appropriating being trans.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      242
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 1025777589216927700,
+      "id_str": "1025777589216927749",
+      "name": "Cherry Blossom",
+      "screen_name": "DameKraft",
+      "location": "CHOP",
+      "description": "i work in security building security programs at scale",
+      "url": "https://t.co/gCWPOEngei",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gCWPOEngei",
+              "expanded_url": "http://www.damekraft.com",
+              "display_url": "damekraft.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1221,
+      "friends_count": 1434,
+      "listed_count": 8,
+      "created_at": "Sat Aug 04 16:16:50 +0000 2018",
+      "favourites_count": 16443,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14898,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1025777589216927749/1566944752",
+      "profile_link_color": "BF1F4B",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 207,
+    "favorite_count": 838,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364679061298057216": {
+    "created_at": "Wed Feb 24 20:50:17 +0000 2021",
+    "id": 1364679061298057200,
+    "id_str": "1364679061298057216",
+    "full_text": "@AnonymousAmbi @P2N2222A @memecannot yeah, maybe \"erasing\" would have been a better way to put it.",
+    "truncated": false,
+    "display_text_range": [
+      37,
+      98
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "AnonymousAmbi",
+          "name": "Gambito",
+          "id": 963027425167888400,
+          "id_str": "963027425167888385",
+          "indices": [
+            0,
+            14
+          ]
+        },
+        {
+          "screen_name": "P2N2222A",
+          "name": "Skye 🏳️‍⚧️ Commissions Open",
+          "id": 1252955374799462400,
+          "id_str": "1252955374799462402",
+          "indices": [
+            15,
+            24
+          ]
+        },
+        {
+          "screen_name": "memecannot",
+          "name": "Tzarina Boshell 🏳️‍🌈🏳️‍⚧️",
+          "id": 709184967461380100,
+          "id_str": "709184967461380096",
+          "indices": [
+            25,
+            36
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1364655122958139400,
+    "in_reply_to_status_id_str": "1364655122958139400",
+    "in_reply_to_user_id": 963027425167888400,
+    "in_reply_to_user_id_str": "963027425167888385",
+    "in_reply_to_screen_name": "AnonymousAmbi",
+    "user": {
+      "id": 1025777589216927700,
+      "id_str": "1025777589216927749",
+      "name": "Cherry Blossom",
+      "screen_name": "DameKraft",
+      "location": "CHOP",
+      "description": "i work in security building security programs at scale",
+      "url": "https://t.co/gCWPOEngei",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gCWPOEngei",
+              "expanded_url": "http://www.damekraft.com",
+              "display_url": "damekraft.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1221,
+      "friends_count": 1434,
+      "listed_count": 8,
+      "created_at": "Sat Aug 04 16:16:50 +0000 2018",
+      "favourites_count": 16444,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14899,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1025777589216927749/1566944752",
+      "profile_link_color": "BF1F4B",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 2,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364655122958139400": {
+    "created_at": "Wed Feb 24 19:15:10 +0000 2021",
+    "id": 1364655122958139400,
+    "id_str": "1364655122958139400",
+    "full_text": "@P2N2222A @DameKraft @memecannot \"Culture appropriation\" only relates to culture. You can't culturally appropriate being trans, because transness is not a culture",
+    "truncated": false,
+    "display_text_range": [
+      33,
+      162
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "P2N2222A",
+          "name": "Skye 🏳️‍⚧️ Commissions Open",
+          "id": 1252955374799462400,
+          "id_str": "1252955374799462402",
+          "indices": [
+            0,
+            9
+          ]
+        },
+        {
+          "screen_name": "DameKraft",
+          "name": "Cherry Blossom",
+          "id": 1025777589216927700,
+          "id_str": "1025777589216927749",
+          "indices": [
+            10,
+            20
+          ]
+        },
+        {
+          "screen_name": "memecannot",
+          "name": "Tzarina Boshell 🏳️‍🌈🏳️‍⚧️",
+          "id": 709184967461380100,
+          "id_str": "709184967461380096",
+          "indices": [
+            21,
+            32
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1364608644319502300,
+    "in_reply_to_status_id_str": "1364608644319502342",
+    "in_reply_to_user_id": 1252955374799462400,
+    "in_reply_to_user_id_str": "1252955374799462402",
+    "in_reply_to_screen_name": "P2N2222A",
+    "user": {
+      "id": 963027425167888400,
+      "id_str": "963027425167888385",
+      "name": "Gambito",
+      "screen_name": "AnonymousAmbi",
+      "location": "Brasil",
+      "description": "Noah ♊| 18 | (He/They) |  (O - Ele/Êlu/Ilo - o/e) | \"(...) and all I got was this ugly T-shirt\" seems to be the theme of my life",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 148,
+      "friends_count": 880,
+      "listed_count": 0,
+      "created_at": "Mon Feb 12 12:30:05 +0000 2018",
+      "favourites_count": 79190,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15556,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1346038778771763200/m6-OYQli_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1346038778771763200/m6-OYQli_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/963027425167888385/1585118161",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364608644319502342": {
+    "created_at": "Wed Feb 24 16:10:28 +0000 2021",
+    "id": 1364608644319502300,
+    "id_str": "1364608644319502342",
+    "full_text": "@DameKraft @memecannot I don't consider myself cis, but I'm still reluctant to call myself trans because I'm afraid of appropriating it.",
+    "truncated": false,
+    "display_text_range": [
+      23,
+      136
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "DameKraft",
+          "name": "Cherry Blossom",
+          "id": 1025777589216927700,
+          "id_str": "1025777589216927749",
+          "indices": [
+            0,
+            10
+          ]
+        },
+        {
+          "screen_name": "memecannot",
+          "name": "Tzarina Boshell 🏳️‍🌈🏳️‍⚧️",
+          "id": 709184967461380100,
+          "id_str": "709184967461380096",
+          "indices": [
+            11,
+            22
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1364500928460595200,
+    "in_reply_to_status_id_str": "1364500928460595211",
+    "in_reply_to_user_id": 1025777589216927700,
+    "in_reply_to_user_id_str": "1025777589216927749",
+    "in_reply_to_screen_name": "DameKraft",
+    "user": {
+      "id": 1252955374799462400,
+      "id_str": "1252955374799462402",
+      "name": "Skye 🏳️‍⚧️ Commissions Open",
+      "screen_name": "P2N2222A",
+      "location": "New York",
+      "description": "Digital Artist (commissions open), photographer, paleo enthusiast, cat person, electronics tinkerer. French New Yorker (EN: they/them FR: iel)",
+      "url": "https://t.co/LmNKpDudFF",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/LmNKpDudFF",
+              "expanded_url": "http://www.badelectronics.com/links",
+              "display_url": "badelectronics.com/links",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 388,
+      "friends_count": 317,
+      "listed_count": 7,
+      "created_at": "Wed Apr 22 13:40:27 +0000 2020",
+      "favourites_count": 55852,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 11952,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1364545749296496643/6_fR1qKk_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1364545749296496643/6_fR1qKk_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1252955374799462402/1609599438",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192841307301003264": {
+    "created_at": "Fri Nov 08 16:28:24 +0000 2019",
+    "id": 1192841307301003300,
+    "id_str": "1192841307301003264",
+    "full_text": "@GloriaSlap @TriumphantBass ...of this is through the lens of pronouns, which can be an accessible and wholly valid way of starting a gender journey without overcoming the massive inertia involved in other commonly recognized forms of transition.",
+    "truncated": false,
+    "display_text_range": [
+      28,
+      246
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "TriumphantBass",
+          "name": "Colin Lenzen",
+          "id": 162493907,
+          "id_str": "162493907",
+          "indices": [
+            12,
+            27
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192840967902126000,
+    "in_reply_to_status_id_str": "1192840967902126083",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 8,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192840967902126083": {
+    "created_at": "Fri Nov 08 16:27:03 +0000 2019",
+    "id": 1192840967902126000,
+    "id_str": "1192840967902126083",
+    "full_text": "@GloriaSlap @TriumphantBass I'm NOT saying that most people are GQ or GNC, I'm saying that most people only feel a weak or partial alignment with their assigned genders, which includes folks presently understood as cis, as well as folks who firmly understand themselves to be GQ or GNC. And all... 1/",
+    "truncated": false,
+    "display_text_range": [
+      28,
+      300
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "TriumphantBass",
+          "name": "Colin Lenzen",
+          "id": 162493907,
+          "id_str": "162493907",
+          "indices": [
+            12,
+            27
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192840417890504700,
+    "in_reply_to_status_id_str": "1192840417890504704",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 13,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192840417890504704": {
+    "created_at": "Fri Nov 08 16:24:52 +0000 2019",
+    "id": 1192840417890504700,
+    "id_str": "1192840417890504704",
+    "full_text": "@GloriaSlap @TriumphantBass 2/ ...can allow people to consider their own gender variance, without precluding it on the basis of not authentically wanting to reject their assigned genders entirely—and, given the response to this thread, I'd say demonstrates a groundswell of desire for that.",
+    "truncated": false,
+    "display_text_range": [
+      28,
+      290
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "TriumphantBass",
+          "name": "Colin Lenzen",
+          "id": 162493907,
+          "id_str": "162493907",
+          "indices": [
+            12,
+            27
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192839757484740600,
+    "in_reply_to_status_id_str": "1192839757484740610",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 11,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192839757484740610": {
+    "created_at": "Fri Nov 08 16:22:14 +0000 2019",
+    "id": 1192839757484740600,
+    "id_str": "1192839757484740610",
+    "full_text": "@GloriaSlap @TriumphantBass My thesis was (and is) that most people only identify solely with their binary gender out of a cis-normative default (or what Natalie Reed calls the null hypothe-cis). And opening space to consider gender as additive, and promoting language that makes room for that nuance... 1/",
+    "truncated": false,
+    "display_text_range": [
+      28,
+      306
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "TriumphantBass",
+          "name": "Colin Lenzen",
+          "id": 162493907,
+          "id_str": "162493907",
+          "indices": [
+            12,
+            27
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192839162359156700,
+    "in_reply_to_status_id_str": "1192839162359156738",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 21,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192839162359156738": {
+    "created_at": "Fri Nov 08 16:19:52 +0000 2019",
+    "id": 1192839162359156700,
+    "id_str": "1192839162359156738",
+    "full_text": "@GloriaSlap @TriumphantBass Thanks for your response! If it helps, these are the axis labels I mistakenly excluded when I exported that graph (plus a little extra clarification): https://t.co/sg7tdWj8b0",
+    "truncated": false,
+    "display_text_range": [
+      28,
+      178
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "TriumphantBass",
+          "name": "Colin Lenzen",
+          "id": 162493907,
+          "id_str": "162493907",
+          "indices": [
+            12,
+            27
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 1192839158320050200,
+          "id_str": "1192839158320050176",
+          "indices": [
+            179,
+            202
+          ],
+          "media_url": "http://pbs.twimg.com/media/EI3Q5QHXsAAcKOQ.png",
+          "media_url_https": "https://pbs.twimg.com/media/EI3Q5QHXsAAcKOQ.png",
+          "url": "https://t.co/sg7tdWj8b0",
+          "display_url": "pic.twitter.com/sg7tdWj8b0",
+          "expanded_url": "https://twitter.com/mspowahs/status/1192839162359156738/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1200,
+              "h": 978,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 554,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1798,
+              "h": 1466,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1192839158320050200,
+          "id_str": "1192839158320050176",
+          "indices": [
+            179,
+            202
+          ],
+          "media_url": "http://pbs.twimg.com/media/EI3Q5QHXsAAcKOQ.png",
+          "media_url_https": "https://pbs.twimg.com/media/EI3Q5QHXsAAcKOQ.png",
+          "url": "https://t.co/sg7tdWj8b0",
+          "display_url": "pic.twitter.com/sg7tdWj8b0",
+          "expanded_url": "https://twitter.com/mspowahs/status/1192839162359156738/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1200,
+              "h": 978,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 554,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1798,
+              "h": 1466,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192746535550935000,
+    "in_reply_to_status_id_str": "1192746535550935040",
+    "in_reply_to_user_id": 1168446173151203300,
+    "in_reply_to_user_id_str": "1168446173151203328",
+    "in_reply_to_screen_name": "GloriaSenby",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 3,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1192746535550935040": {
+    "created_at": "Fri Nov 08 10:11:48 +0000 2019",
+    "id": 1192746535550935000,
+    "id_str": "1192746535550935040",
+    "full_text": "@mspowahs @TriumphantBass Hi Ada, I've looked at and come back to this diagram a few times now, and I can't see how it asserts anything other than the fact that the majority of people are GNC / GQ / demi.\n\nIs that what you're actually trying to convey? And if not, what ARE you trying to convey?",
+    "truncated": false,
+    "display_text_range": [
+      26,
+      295
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "mspowahs",
+          "name": "Ada Powers",
+          "id": 6473302,
+          "id_str": "6473302",
+          "indices": [
+            0,
+            9
+          ]
+        },
+        {
+          "screen_name": "TriumphantBass",
+          "name": "Colin Lenzen",
+          "id": 162493907,
+          "id_str": "162493907",
+          "indices": [
+            10,
+            25
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192192276992274400,
+    "in_reply_to_status_id_str": "1192192276992274432",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 1168446173151203300,
+      "id_str": "1168446173151203328",
+      "name": "Gloria Cise O'Lation",
+      "screen_name": "GloriaSenby",
+      "location": "Please Remain Indoors, SW 🇬🇧",
+      "description": "Gen X #IAmNonbinary Male Phenotype Omnitrixic Closet Goth. \nCisn't, protofabulous, shier than you think.\nNBwiththeT 🏳️‍🌈🇪🇺💛🤍💜🖤\nThey/Them",
+      "url": "https://t.co/sGu4UgGNDt",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/sGu4UgGNDt",
+              "expanded_url": "https://www.facebook.com/thedailymash/videos/427830564750962/",
+              "display_url": "facebook.com/thedailymash/v…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1782,
+      "friends_count": 3833,
+      "listed_count": 1,
+      "created_at": "Mon Sep 02 08:51:02 +0000 2019",
+      "favourites_count": 20116,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 11057,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1168446397806518272/DY0_KRuD_normal.png",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1168446397806518272/DY0_KRuD_normal.png",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1168446173151203328/1597081152",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 2,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192192276992274432": {
+    "created_at": "Wed Nov 06 21:29:23 +0000 2019",
+    "id": 1192192276992274400,
+    "id_str": "1192192276992274432",
+    "full_text": "First, a bit about the binary. Big news I know, but... most people don't neatly fit inside of it. Society wants us to think about gender like a slope—with most people being cis, and a few of us being trans—but why shouldn't it be a bell curve, like basically everything else? https://t.co/XUxIs4o1ti",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      275
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 1192192272084983800,
+          "id_str": "1192192272084983810",
+          "indices": [
+            276,
+            299
+          ],
+          "media_url": "http://pbs.twimg.com/media/EIuEjhGXYAIGoxr.png",
+          "media_url_https": "https://pbs.twimg.com/media/EIuEjhGXYAIGoxr.png",
+          "url": "https://t.co/XUxIs4o1ti",
+          "display_url": "pic.twitter.com/XUxIs4o1ti",
+          "expanded_url": "https://twitter.com/mspowahs/status/1192192276992274432/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1200,
+              "h": 1117,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1366,
+              "h": 1272,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 633,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1192192272084983800,
+          "id_str": "1192192272084983810",
+          "indices": [
+            276,
+            299
+          ],
+          "media_url": "http://pbs.twimg.com/media/EIuEjhGXYAIGoxr.png",
+          "media_url_https": "https://pbs.twimg.com/media/EIuEjhGXYAIGoxr.png",
+          "url": "https://t.co/XUxIs4o1ti",
+          "display_url": "pic.twitter.com/XUxIs4o1ti",
+          "expanded_url": "https://twitter.com/mspowahs/status/1192192276992274432/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1200,
+              "h": 1117,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1366,
+              "h": 1272,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 633,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192192269501239300,
+    "in_reply_to_status_id_str": "1192192269501239296",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 101,
+    "favorite_count": 936,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1192192269501239296": {
+    "created_at": "Wed Nov 06 21:29:21 +0000 2019",
+    "id": 1192192269501239300,
+    "id_str": "1192192269501239296",
+    "full_text": "So when you hear a pronoun mix like he/they, that's usually shorthand for \"I use both he/him/his and they/them/theirs pronouns.\"\n\nBut what does that MEAN? What do you do with it?",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      178
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192192268385558500,
+    "in_reply_to_status_id_str": "1192192268385558529",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 24,
+    "favorite_count": 638,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192192268385558529": {
+    "created_at": "Wed Nov 06 21:29:21 +0000 2019",
+    "id": 1192192268385558500,
+    "id_str": "1192192268385558529",
+    "full_text": "Often, the most common conjugations get collapsed down for convenience and ease of use in speech. She/her unpacks to she/her/hers, ze/hir unpacks to ze/hir/hirs, and so on. \n\nA lot of us do this already, and it seems to be common usage in even moderately trans-aware spaces.",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      274
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192192267139895300,
+    "in_reply_to_status_id_str": "1192192267139895301",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 7,
+    "favorite_count": 479,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192192267139895301": {
+    "created_at": "Wed Nov 06 21:29:21 +0000 2019",
+    "id": 1192192267139895300,
+    "id_str": "1192192267139895301",
+    "full_text": "First, I acknowledge this can be confusing for folks who have only been exposed to the standard she/her/hers, they/them/theirs, etc. pronoun format. They/he?? They went to the store with he friends??",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      199
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1192192265898336300,
+    "in_reply_to_status_id_str": "1192192265898336257",
+    "in_reply_to_user_id": 6473302,
+    "in_reply_to_user_id_str": "6473302",
+    "in_reply_to_screen_name": "mspowahs",
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 7,
+    "favorite_count": 562,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1192192265898336257": {
+    "created_at": "Wed Nov 06 21:29:20 +0000 2019",
+    "id": 1192192265898336300,
+    "id_str": "1192192265898336257",
+    "full_text": "I've gotten a few questions about it, so I'd like to do a thread: what does it mean when someone describes themselves with a pronoun mix, like she/they?\n\n(Spoiler: this touches on a lot more than just pronouns!)",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      211
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 6473302,
+      "id_str": "6473302",
+      "name": "Ada Powers",
+      "screen_name": "mspowahs",
+      "location": "Atlanta by way of San Diego",
+      "description": "Writer, designer, epistemic justice warrior. Host @PostTechRadio. Admin @Ethical_Content. She/they. #blacklivesmatter",
+      "url": "https://t.co/R543IhBo9F",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/R543IhBo9F",
+              "expanded_url": "http://ko-fi.com/adapowers",
+              "display_url": "ko-fi.com/adapowers",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 22954,
+      "friends_count": 8973,
+      "listed_count": 189,
+      "created_at": "Thu May 31 14:25:29 +0000 2007",
+      "favourites_count": 91169,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 24386,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "AAB28B",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1339376983831142401/yz2DBMdZ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/6473302/1465556552",
+      "profile_link_color": "8855DD",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "D1C0A2",
+      "profile_text_color": "A1B5AC",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2098,
+    "favorite_count": 4390,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364630369958432769": {
+    "created_at": "Wed Feb 24 17:36:48 +0000 2021",
+    "id": 1364630369958432800,
+    "id_str": "1364630369958432769",
+    "full_text": "@DameKraft I find I worry most about this as a nonbinary person. Nonbinary by definition is a trans identity, but it doesn't feel that way because I passed as cisgender (and can still do so, as physical transition isn't a thing I consider strictly necessary for me rn) for so long.",
+    "truncated": false,
+    "display_text_range": [
+      11,
+      281
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "DameKraft",
+          "name": "Cherry Blossom",
+          "id": 1025777589216927700,
+          "id_str": "1025777589216927749",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1364500928460595200,
+    "in_reply_to_status_id_str": "1364500928460595211",
+    "in_reply_to_user_id": 1025777589216927700,
+    "in_reply_to_user_id_str": "1025777589216927749",
+    "in_reply_to_screen_name": "DameKraft",
+    "user": {
+      "id": 872458358292332500,
+      "id_str": "872458358292332545",
+      "name": "Dark Siren Sally",
+      "screen_name": "darksirensally",
+      "location": "The Tower Between Worlds",
+      "description": "Queer mythical monster (they/any) | #TTRPG #gamemaster & community organizer | #neuroatypical & #chronicallyill | https://t.co/obxpZUTbAo M-Th 4:30pm PST",
+      "url": "https://t.co/obxpZUTbAo",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/obxpZUTbAo",
+              "expanded_url": "http://twitch.tv/darksirensally",
+              "display_url": "twitch.tv/darksirensally",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/obxpZUTbAo",
+              "expanded_url": "http://twitch.tv/darksirensally",
+              "display_url": "twitch.tv/darksirensally",
+              "indices": [
+                114,
+                137
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 193,
+      "friends_count": 901,
+      "listed_count": 1,
+      "created_at": "Wed Jun 07 14:20:56 +0000 2017",
+      "favourites_count": 667,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 434,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1364367043105988609/Okmf8HRC_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1364367043105988609/Okmf8HRC_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/872458358292332545/1607408507",
+      "profile_link_color": "330066",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 10,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1364632788167630853": {
+    "created_at": "Wed Feb 24 17:46:25 +0000 2021",
+    "id": 1364632788167630800,
+    "id_str": "1364632788167630853",
+    "full_text": "@darksirensally \"passing\" to me is based on the patriarchy requiring gender to be guessed at a distance and I don't consent to that, which is difficult for me to live with so I just give the world what I call \"my apparition\" that \"passes\" as a woman but I certainly don't ID with it.",
+    "truncated": false,
+    "display_text_range": [
+      16,
+      283
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "darksirensally",
+          "name": "Dark Siren Sally",
+          "id": 872458358292332500,
+          "id_str": "872458358292332545",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1364630369958432800,
+    "in_reply_to_status_id_str": "1364630369958432769",
+    "in_reply_to_user_id": 872458358292332500,
+    "in_reply_to_user_id_str": "872458358292332545",
+    "in_reply_to_screen_name": "darksirensally",
+    "user": {
+      "id": 1025777589216927700,
+      "id_str": "1025777589216927749",
+      "name": "Cherry Blossom",
+      "screen_name": "DameKraft",
+      "location": "CHOP",
+      "description": "i work in security building security programs at scale",
+      "url": "https://t.co/gCWPOEngei",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/gCWPOEngei",
+              "expanded_url": "http://www.damekraft.com",
+              "display_url": "damekraft.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 1221,
+      "friends_count": 1434,
+      "listed_count": 8,
+      "created_at": "Sat Aug 04 16:16:50 +0000 2018",
+      "favourites_count": 16449,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 14904,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1154865254402121728/sLLnbH5a_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1025777589216927749/1566944752",
+      "profile_link_color": "BF1F4B",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 18,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
   }
 }

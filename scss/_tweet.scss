@@ -26,6 +26,7 @@
     &.center { margin-left: auto; margin-right: auto; }
 
     &.span1 { width: 100%; }
+    &.span34 { width: 75%; }
     &.span2 { width:  50%; }
     &.span3 { width:  33%; }
     &.span4 { width:  25%; }
@@ -195,6 +196,7 @@
   }
 
   .tweet-entities {
+    margin: 0 auto;
     margin-top: 10px;
 
     border-radius: 14px;
@@ -352,6 +354,8 @@
   &.hide-mentions .tweet-text a.mention { display: none; }
   &.hide-hashtags .tweet-text a.hashtag { display: none; }
   &.hide-quoted .tweet-quoted { display: none; }
+
+  &.essay .tweet-text { font-size: 16px; }
 
   &.collapse:not(.grid-row) {
     .tweet-item {
