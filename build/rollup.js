@@ -3,14 +3,17 @@ const { resolve } = require('./resolve');
 const { rollup } = require('rollup');
 const alias = require('@rollup/plugin-alias');
 const commonjs = require('@rollup/plugin-commonjs');
-const nodeResolve = require('@rollup/plugin-node-resolve');
+const nodeResolve = require('@rollup/plugin-node-resolve').default;
 const replace = require('@rollup/plugin-replace');
 const babel = require('rollup-plugin-babel');
 const svg = require('rollup-plugin-react-svg');
 const { terser } = require('rollup-plugin-terser');
 
 const plugins = [
-  replace({ 'process.env.NODE_ENV': '"production"' }),
+  replace({
+    preventAssignment: true,
+    values: { 'process.env.NODE_ENV': '"production"' },
+  }),
   alias({
     entries: [
       { find: 'react', replacement: 'preact/compat' },
