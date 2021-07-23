@@ -31,7 +31,10 @@ const actions = {
     output = resolve(output);
     await fs.ensureDir(path.dirname(output));
     await fs.writeFile(output, body);
-    if (duplicate) await fs.writeFile(duplicate, body);
+    if (duplicate) {
+      await fs.ensureDir(resolve(path.dirname(duplicate)));
+      await fs.writeFile(duplicate, body);
+    }
     return body;
   },
 
@@ -39,7 +42,10 @@ const actions = {
     output = resolve(output);
     await fs.ensureDir(path.dirname(output));
     await fs.writeFile(output, content);
-    if (duplicate) await fs.writeFile(duplicate, content);
+    if (duplicate) {
+      await fs.ensureDir(resolve(path.dirname(duplicate)));
+      await fs.writeFile(duplicate, content);
+    }
     return Buffer.from(content);
   },
 
@@ -157,7 +163,11 @@ const actions = {
     let result = await Promise.fromCallback((cb) => gmfile.toBuffer(cb));
     if (options.format === 'ico') result = await ico(result);
     await fs.writeFile(output, result);
-    if (options.duplicate) await fs.writeFile(options.duplicate, result);
+    if (options.duplicate) {
+      await fs.ensureDir(resolve(path.dirname(options.duplicate)));
+      await fs.writeFile(options.duplicate, result);
+    }
+
     return result;
   },
 };

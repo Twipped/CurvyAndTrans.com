@@ -94,7 +94,7 @@ module.exports = exports = class Manifest {
       acTime = await this.stat(altCachePath);
     }
 
-    let [ iTime, oTime, cTime, iRev ] = await Promise.all([
+    const [ iTime, oTime, cTime, iRev ] = await Promise.all([
       local && this.stat(input),
       this.stat(output),
       this.stat(cached),
@@ -160,6 +160,7 @@ module.exports = exports = class Manifest {
     } else {
       result.cache = await readFile(cached);
       if (altCachePath && !acTime) {
+        await fs.ensureDir(resolve(path.dirname(altCachePath)));
         await fs.writeFile(resolve(altCachePath), result.cache);
       }
     }
@@ -207,6 +208,10 @@ module.exports = exports = class Manifest {
     const local = !task.input.includes('://');
     const cached = path.join(CACHE, hash + ext);
     const oRev = revHash(result);
+
+    if (result && altCachePath) {
+      await fs.ensureDir(resolve(path.dirname(altCachePath)));
+    }
 
     const [ iTime, iRev ] = await Promise.all([
       local && this.stat(input),

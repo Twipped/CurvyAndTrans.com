@@ -1,5 +1,6 @@
 var twemoji = require('twemoji' );
 const { deepPick, has } = require('./util');
+const path = require('path');
 
 const schema = {
   id_str: true,
@@ -115,7 +116,22 @@ module.exports = exports = function (tweets) {
     }
 
     if (has(tweet, 'entities.media') && has(tweet, 'extended_entities.media')) {
-      tweet.entities.media = tweet.extended_entities.media;
+      tweet.entities.media = tweet.extended_entities.media.map((media) => {
+        media = { ...media };
+        if (media.media_url_https) {
+          const mediaItem = {
+            input: media.media_url_https,
+            output: `tweets/${tweet.id_str}/${path.basename(media.media_url_https)}`,
+            cache: `twitter-entities/${tweet.id_str}/${path.basename(media.media_url_https)}`,
+          };
+          if (media.type === 'photo') mediaItem.input += '?name=medium';
+          tweet.media.push(mediaItem);
+          media.media_url_https = '/' + mediaItem.output;
+        }
+
+        return media;
+      });
+
       delete tweet.extended_entities;
     }
 
