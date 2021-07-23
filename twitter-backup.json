@@ -70582,5 +70582,3222 @@
     "favorited": false,
     "retweeted": false,
     "lang": "en"
+  },
+  "1416452083725873154": {
+    "created_at": "Sat Jul 17 17:37:47 +0000 2021",
+    "id": 1416452083725873200,
+    "id_str": "1416452083725873154",
+    "full_text": "basically, this except for gender roles:\n\nhttps://t.co/gpAYSvVDxw https://t.co/FAXFuExz40",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      65
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/gpAYSvVDxw",
+          "expanded_url": "https://xkcd.com/988/",
+          "display_url": "xkcd.com/988/",
+          "indices": [
+            42,
+            65
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 1416452058287386600,
+          "id_str": "1416452058287386627",
+          "indices": [
+            66,
+            89
+          ],
+          "media_url": "http://pbs.twimg.com/media/E6g_pG-XMAMHZz3.png",
+          "media_url_https": "https://pbs.twimg.com/media/E6g_pG-XMAMHZz3.png",
+          "url": "https://t.co/FAXFuExz40",
+          "display_url": "pic.twitter.com/FAXFuExz40",
+          "expanded_url": "https://twitter.com/perdricof/status/1416452083725873154/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 740,
+              "h": 518,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 476,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 740,
+              "h": 518,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1416452058287386600,
+          "id_str": "1416452058287386627",
+          "indices": [
+            66,
+            89
+          ],
+          "media_url": "http://pbs.twimg.com/media/E6g_pG-XMAMHZz3.png",
+          "media_url_https": "https://pbs.twimg.com/media/E6g_pG-XMAMHZz3.png",
+          "url": "https://t.co/FAXFuExz40",
+          "display_url": "pic.twitter.com/FAXFuExz40",
+          "expanded_url": "https://twitter.com/perdricof/status/1416452083725873154/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 740,
+              "h": 518,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 476,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 740,
+              "h": 518,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416451363123441700,
+    "in_reply_to_status_id_str": "1416451363123441670",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 632,
+    "favorite_count": 7824,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1416451363123441670": {
+    "created_at": "Sat Jul 17 17:34:56 +0000 2021",
+    "id": 1416451363123441700,
+    "id_str": "1416451363123441670",
+    "full_text": "but then we get to the boomers\n\nthe boomers *grew up in the fantasy*\n\ndue to their demographic predominance their strangehold on politics has endured for so very long that all the rest of us are still forced to relive their childhood nostalgia for their parents trauma-fantasies",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      278
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416450979206140000,
+    "in_reply_to_status_id_str": "1416450979206139906",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 794,
+    "favorite_count": 9270,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416450979206139906": {
+    "created_at": "Sat Jul 17 17:33:24 +0000 2021",
+    "id": 1416450979206140000,
+    "id_str": "1416450979206139906",
+    "full_text": "this patriarchal fantasy was never a \"necessity,\" it was a *luxury*\n\nbut it was an essential part of the fantasy that it was necessary--natural--and so its partisans retrojected it uncaring onto all of human history",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      215
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416450977729810400,
+    "in_reply_to_status_id_str": "1416450977729810433",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 290,
+    "favorite_count": 6146,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416450977729810433": {
+    "created_at": "Sat Jul 17 17:33:24 +0000 2021",
+    "id": 1416450977729810400,
+    "id_str": "1416450977729810433",
+    "full_text": "and indeed more strongly the whole idea of a \"housewife who doesn't work\" is itself built on the extremely weird social-economic conditions (aka immense prosperity) prevailing after world war 2, aka the united states being the only industrialized nation not in complete ruins",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      275
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416450338060648400,
+    "in_reply_to_status_id_str": "1416450338060648452",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 404,
+    "favorite_count": 6960,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416450338060648452": {
+    "created_at": "Sat Jul 17 17:30:51 +0000 2021",
+    "id": 1416450338060648400,
+    "id_str": "1416450338060648452",
+    "full_text": "(also side note this story is absolutely inseparable from the integration of the military and the beginnings of the civil rights movement--the \"suburban wife\" lifestyle was a reaction against both an incipient feminism and an incipient civil rights movement)",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      258
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416450053066088400,
+    "in_reply_to_status_id_str": "1416450053066088448",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 321,
+    "favorite_count": 6535,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416450053066088448": {
+    "created_at": "Sat Jul 17 17:29:43 +0000 2021",
+    "id": 1416450053066088400,
+    "id_str": "1416450053066088448",
+    "full_text": "there was this immense reactionary backlash, women fired en masse \"to make room for the boys,\" forced into domestic lives, forced into forgetting what recent events had so very proved was possible\n\nto create out of whole cloth a reactionary dream-world in physical reality",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      272
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416449695883448300,
+    "in_reply_to_status_id_str": "1416449695883448321",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 403,
+    "favorite_count": 7821,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416449695883448321": {
+    "created_at": "Sat Jul 17 17:28:18 +0000 2021",
+    "id": 1416449695883448300,
+    "id_str": "1416449695883448321",
+    "full_text": "then it all ended and everyone came home and there was a *very* explicit nationwide push to make things \"\"normal\"\" again, \"\"safe\"\" again\n\nto take all the things--all the POSSIBILITIES--that had come roaring out during the war and stuff them as far back in the closet as possible",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      278
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416449357520547800,
+    "in_reply_to_status_id_str": "1416449357520547841",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 392,
+    "favorite_count": 8033,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416449357520547841": {
+    "created_at": "Sat Jul 17 17:26:57 +0000 2021",
+    "id": 1416449357520547800,
+    "id_str": "1416449357520547841",
+    "full_text": "because world war 2 was this social disruption beyond imagining--women in factories, women in the workforce, women in the army and the air force and the--\n\nthe entire nation mobilizing to reach out to the other side of the planet and and incinerate people, cities, nations--",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      274
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416449059951456300,
+    "in_reply_to_status_id_str": "1416449059951456257",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 294,
+    "favorite_count": 6974,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416449059951456257": {
+    "created_at": "Sat Jul 17 17:25:46 +0000 2021",
+    "id": 1416449059951456300,
+    "id_str": "1416449059951456257",
+    "full_text": "like we keep on pointing out \"these aren't actually traditional\" \"the world didn't work like this at any time in history\" \"what are you even talking about\"\n\nbut we're missing the idea that yes, actually, *all this shit* was invented at a specific point in time, aka 1946",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      270
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416449058764427300,
+    "in_reply_to_status_id_str": "1416449058764427269",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 395,
+    "favorite_count": 8284,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416449058764427269": {
+    "created_at": "Sat Jul 17 17:25:46 +0000 2021",
+    "id": 1416449058764427300,
+    "id_str": "1416449058764427269",
+    "full_text": "my crazy take is that you can't really understand american gender roles unless you understand that they're basically a reactionary backlash / trauma response to the events of world war 2",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      186
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 789536590565511200,
+      "id_str": "789536590565511168",
+      "name": "Dr. Samantha Hancox-Li",
+      "screen_name": "perdricof",
+      "location": "Long Beach, CA",
+      "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+      "url": "https://t.co/EpbxTs1woW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/EpbxTs1woW",
+              "expanded_url": "http://sjshancoxli.com",
+              "display_url": "sjshancoxli.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2949,
+      "friends_count": 135,
+      "listed_count": 22,
+      "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+      "favourites_count": 98314,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 45522,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 7477,
+    "favorite_count": 44591,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416512741913862154": {
+    "created_at": "Sat Jul 17 21:38:49 +0000 2021",
+    "id": 1416512741913862100,
+    "id_str": "1416512741913862154",
+    "full_text": "…It was more so about expanding a status typically reserved for wealthy white women to a larger population of middle &amp; working class white women as a marker of the nation’s prosperity. I’ve never known a generation of women in my family for instance who didn’t have to work. 2/2",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      282
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416512719113572400,
+    "in_reply_to_status_id_str": "1416512719113572356",
+    "in_reply_to_user_id": 110326494,
+    "in_reply_to_user_id_str": "110326494",
+    "in_reply_to_screen_name": "BreeNewsome",
+    "user": {
+      "id": 110326494,
+      "id_str": "110326494",
+      "name": "DEFUND & ABOLISH POLICE, REFUND OUR COMMUNITIES",
+      "screen_name": "BreeNewsome",
+      "location": "North Carolina, USA",
+      "description": "artist - grassroots organizer - free black woman - scaled 30ft flagpole & removed sc confederate flag in protest on june 27, 2015 - Psalm 27",
+      "url": "https://t.co/iTn8COoR5f",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/iTn8COoR5f",
+              "expanded_url": "http://breenewsome.com",
+              "display_url": "breenewsome.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 479802,
+      "friends_count": 2067,
+      "listed_count": 3458,
+      "created_at": "Mon Feb 01 04:33:43 +0000 2010",
+      "favourites_count": 33219,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 34455,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme6/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme6/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1329327311255187456/5YAf48Fx_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1329327311255187456/5YAf48Fx_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/110326494/1435808027",
+      "profile_link_color": "FF3300",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "A0C5C7",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 214,
+    "favorite_count": 3010,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416512719113572356": {
+    "created_at": "Sat Jul 17 21:38:44 +0000 2021",
+    "id": 1416512719113572400,
+    "id_str": "1416512719113572356",
+    "full_text": "That’s also specific to white women of a certain class. Poor &amp; nonwhite women were never in position to be stay at home wives &amp; that post-war ideal of white femininity relied heavily on poorer women acting as domestic laborers in other ppl’s homes… 1/ https://t.co/VJG6vXGXFg",
+    "truncated": false,
+    "display_text_range": [
+      0,
+      259
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/VJG6vXGXFg",
+          "expanded_url": "https://twitter.com/perdricof/status/1416450977729810433",
+          "display_url": "twitter.com/perdricof/stat…",
+          "indices": [
+            260,
+            283
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 110326494,
+      "id_str": "110326494",
+      "name": "DEFUND & ABOLISH POLICE, REFUND OUR COMMUNITIES",
+      "screen_name": "BreeNewsome",
+      "location": "North Carolina, USA",
+      "description": "artist - grassroots organizer - free black woman - scaled 30ft flagpole & removed sc confederate flag in protest on june 27, 2015 - Psalm 27",
+      "url": "https://t.co/iTn8COoR5f",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/iTn8COoR5f",
+              "expanded_url": "http://breenewsome.com",
+              "display_url": "breenewsome.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 479802,
+      "friends_count": 2067,
+      "listed_count": 3458,
+      "created_at": "Mon Feb 01 04:33:43 +0000 2010",
+      "favourites_count": 33219,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 34455,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme6/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme6/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1329327311255187456/5YAf48Fx_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1329327311255187456/5YAf48Fx_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/110326494/1435808027",
+      "profile_link_color": "FF3300",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "A0C5C7",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": true,
+    "quoted_status_id": 1416450977729810400,
+    "quoted_status_id_str": "1416450977729810433",
+    "quoted_status_permalink": {
+      "url": "https://t.co/VJG6vXGXFg",
+      "expanded": "https://twitter.com/perdricof/status/1416450977729810433",
+      "display": "twitter.com/perdricof/stat…"
+    },
+    "quoted_status": {
+      "created_at": "Sat Jul 17 17:33:24 +0000 2021",
+      "id": 1416450977729810400,
+      "id_str": "1416450977729810433",
+      "full_text": "and indeed more strongly the whole idea of a \"housewife who doesn't work\" is itself built on the extremely weird social-economic conditions (aka immense prosperity) prevailing after world war 2, aka the united states being the only industrialized nation not in complete ruins",
+      "truncated": false,
+      "display_text_range": [
+        0,
+        275
+      ],
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": []
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": 1416450338060648400,
+      "in_reply_to_status_id_str": "1416450338060648452",
+      "in_reply_to_user_id": 789536590565511200,
+      "in_reply_to_user_id_str": "789536590565511168",
+      "in_reply_to_screen_name": "perdricof",
+      "user": {
+        "id": 789536590565511200,
+        "id_str": "789536590565511168",
+        "name": "Dr. Samantha Hancox-Li",
+        "screen_name": "perdricof",
+        "location": "Long Beach, CA",
+        "description": "failed academic, bad writer, good cook.  warren democrat.  she/her.",
+        "url": "https://t.co/EpbxTs1woW",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/EpbxTs1woW",
+                "expanded_url": "http://sjshancoxli.com",
+                "display_url": "sjshancoxli.com",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 2949,
+        "friends_count": 135,
+        "listed_count": 22,
+        "created_at": "Fri Oct 21 18:39:26 +0000 2016",
+        "favourites_count": 98314,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 45522,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "F5F8FA",
+        "profile_background_image_url": null,
+        "profile_background_image_url_https": null,
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1022169185416142848/0BmipziI_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/789536590565511168/1529886177",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none",
+        "withheld_in_countries": []
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 404,
+      "favorite_count": 6960,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    "retweet_count": 1071,
+    "favorite_count": 5387,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1416497542280405013": {
+    "created_at": "Sat Jul 17 20:38:25 +0000 2021",
+    "id": 1416497542280405000,
+    "id_str": "1416497542280405013",
+    "full_text": "@perdricof what they did. It was almost a punishment. Women were expected to accept the role of subservience and be perfect, pretty and obedient when her husband got home from work.",
+    "truncated": false,
+    "display_text_range": [
+      11,
+      181
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416496678010593300,
+    "in_reply_to_status_id_str": "1416496678010593287",
+    "in_reply_to_user_id": 17839296,
+    "in_reply_to_user_id_str": "17839296",
+    "in_reply_to_screen_name": "dorotheascloset",
+    "user": {
+      "id": 17839296,
+      "id_str": "17839296",
+      "name": "angela petrollini",
+      "screen_name": "dorotheascloset",
+      "location": "Des Moines, Iowa",
+      "description": "She/her. Vintage fashion, politics and cats. https://t.co/nMg0Ii9YA7 *real vintage for real life*",
+      "url": "https://t.co/nMg0Ii9YA7",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/nMg0Ii9YA7",
+              "expanded_url": "https://dorotheas-closet-vintage.myshopify.com/",
+              "display_url": "dorotheas-closet-vintage.myshopify.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/nMg0Ii9YA7",
+              "expanded_url": "https://dorotheas-closet-vintage.myshopify.com/",
+              "display_url": "dorotheas-closet-vintage.myshopify.com",
+              "indices": [
+                45,
+                68
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 2436,
+      "friends_count": 4539,
+      "listed_count": 131,
+      "created_at": "Wed Dec 03 15:51:03 +0000 2008",
+      "favourites_count": 96781,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 77880,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416937094799400967/OLwEuRjf_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416937094799400967/OLwEuRjf_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/17839296/1624663664",
+      "profile_link_color": "F58EA8",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 26,
+    "favorite_count": 1382,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416496678010593287": {
+    "created_at": "Sat Jul 17 20:34:59 +0000 2021",
+    "id": 1416496678010593300,
+    "id_str": "1416496678010593287",
+    "full_text": "@perdricof The 50s ushered in a look that accentuated the \"ideal\" feminine form and used discomfort to create it. Women were forced into the kitchen in dresses and heels and makeup and coiffed hair, all to make returning men feel better about the fact that in their absence, women could /2",
+    "truncated": false,
+    "display_text_range": [
+      11,
+      289
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416496152531329000,
+    "in_reply_to_status_id_str": "1416496152531329026",
+    "in_reply_to_user_id": 17839296,
+    "in_reply_to_user_id_str": "17839296",
+    "in_reply_to_screen_name": "dorotheascloset",
+    "user": {
+      "id": 17839296,
+      "id_str": "17839296",
+      "name": "angela petrollini",
+      "screen_name": "dorotheascloset",
+      "location": "Des Moines, Iowa",
+      "description": "She/her. Vintage fashion, politics and cats. https://t.co/nMg0Ii9YA7 *real vintage for real life*",
+      "url": "https://t.co/nMg0Ii9YA7",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/nMg0Ii9YA7",
+              "expanded_url": "https://dorotheas-closet-vintage.myshopify.com/",
+              "display_url": "dorotheas-closet-vintage.myshopify.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/nMg0Ii9YA7",
+              "expanded_url": "https://dorotheas-closet-vintage.myshopify.com/",
+              "display_url": "dorotheas-closet-vintage.myshopify.com",
+              "indices": [
+                45,
+                68
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 2436,
+      "friends_count": 4539,
+      "listed_count": 131,
+      "created_at": "Wed Dec 03 15:51:03 +0000 2008",
+      "favourites_count": 96781,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 77880,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416937094799400967/OLwEuRjf_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416937094799400967/OLwEuRjf_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/17839296/1624663664",
+      "profile_link_color": "F58EA8",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 51,
+    "favorite_count": 2003,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416496152531329026": {
+    "created_at": "Sat Jul 17 20:32:54 +0000 2021",
+    "id": 1416496152531329000,
+    "id_str": "1416496152531329026",
+    "full_text": "@perdricof From a fashion standpoint, women in the 40s were wearing pants and sturdy shoes (even heels were chunky and often wedges), shoulder pads, etc. In 1947 Dior introduced the \"New Look\"- impossibly tiny waists, billowing full skirts and stiletto heels. /1",
+    "truncated": false,
+    "display_text_range": [
+      11,
+      262
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416449058764427300,
+    "in_reply_to_status_id_str": "1416449058764427269",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 17839296,
+      "id_str": "17839296",
+      "name": "angela petrollini",
+      "screen_name": "dorotheascloset",
+      "location": "Des Moines, Iowa",
+      "description": "She/her. Vintage fashion, politics and cats. https://t.co/nMg0Ii9YA7 *real vintage for real life*",
+      "url": "https://t.co/nMg0Ii9YA7",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/nMg0Ii9YA7",
+              "expanded_url": "https://dorotheas-closet-vintage.myshopify.com/",
+              "display_url": "dorotheas-closet-vintage.myshopify.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "https://t.co/nMg0Ii9YA7",
+              "expanded_url": "https://dorotheas-closet-vintage.myshopify.com/",
+              "display_url": "dorotheas-closet-vintage.myshopify.com",
+              "indices": [
+                45,
+                68
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 2436,
+      "friends_count": 4539,
+      "listed_count": 131,
+      "created_at": "Wed Dec 03 15:51:03 +0000 2008",
+      "favourites_count": 96781,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 77880,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416937094799400967/OLwEuRjf_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416937094799400967/OLwEuRjf_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/17839296/1624663664",
+      "profile_link_color": "F58EA8",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 75,
+    "favorite_count": 2259,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416748249751375874": {
+    "created_at": "Sun Jul 18 13:14:39 +0000 2021",
+    "id": 1416748249751376000,
+    "id_str": "1416748249751375874",
+    "full_text": "@NursedroidIG11 @txbaddie23 @lacunalingua_3 @dorotheascloset @perdricof \"Maybe if everyone who comes after me plays through the same sick fantasy as me, then maybe, just maybe, it'll mean I didn't waste my entire fucking life doing what \"society\" expected of me, rather than become the person I wanted to be.\"\n\nIt's really quite heartbreaking.",
+    "truncated": false,
+    "display_text_range": [
+      72,
+      343
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "NursedroidIG11",
+          "name": "kasden ahod",
+          "id": 1361860592672383000,
+          "id_str": "1361860592672382977",
+          "indices": [
+            0,
+            15
+          ]
+        },
+        {
+          "screen_name": "txbaddie23",
+          "name": "Trill",
+          "id": 1393640150354247700,
+          "id_str": "1393640150354247681",
+          "indices": [
+            16,
+            27
+          ]
+        },
+        {
+          "screen_name": "lacunalingua_3",
+          "name": "Misgivings #3",
+          "id": 1320741064412680200,
+          "id_str": "1320741064412680192",
+          "indices": [
+            28,
+            43
+          ]
+        },
+        {
+          "screen_name": "dorotheascloset",
+          "name": "angela petrollini",
+          "id": 17839296,
+          "id_str": "17839296",
+          "indices": [
+            44,
+            60
+          ]
+        },
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            61,
+            71
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1416743969095098400,
+    "in_reply_to_status_id_str": "1416743969095098377",
+    "in_reply_to_user_id": 1361860592672383000,
+    "in_reply_to_user_id_str": "1361860592672382977",
+    "in_reply_to_screen_name": "NursedroidIG11",
+    "user": {
+      "id": 3568631003,
+      "id_str": "3568631003",
+      "name": "Lukashenko delenda est ↙↙↙",
+      "screen_name": "Buckeroo303",
+      "location": "Glasgow, mostly",
+      "description": "Trans women are women - Crimea is Ukraine - BSc Microbiology @UofGlasgow - Жыве Беларусь - 🌊🌊🌊",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 617,
+      "friends_count": 943,
+      "listed_count": 1,
+      "created_at": "Sun Sep 06 18:07:14 +0000 2015",
+      "favourites_count": 59365,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 9984,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1238406519965790208/Z6b-F3jF_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1238406519965790208/Z6b-F3jF_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/3568631003/1597097004",
+      "profile_link_color": "1B95E0",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 25,
+    "favorite_count": 477,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416743969095098377": {
+    "created_at": "Sun Jul 18 12:57:38 +0000 2021",
+    "id": 1416743969095098400,
+    "id_str": "1416743969095098377",
+    "full_text": "@txbaddie23 @lacunalingua_3 @dorotheascloset @perdricof They used the valium to stuff it all down and be robots like they were told. So everyone after them has to fuck themselves in the same way (i paid my dues you do too kinda bullshit)",
+    "truncated": false,
+    "display_text_range": [
+      56,
+      237
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "txbaddie23",
+          "name": "Trill",
+          "id": 1393640150354247700,
+          "id_str": "1393640150354247681",
+          "indices": [
+            0,
+            11
+          ]
+        },
+        {
+          "screen_name": "lacunalingua_3",
+          "name": "Misgivings #3",
+          "id": 1320741064412680200,
+          "id_str": "1320741064412680192",
+          "indices": [
+            12,
+            27
+          ]
+        },
+        {
+          "screen_name": "dorotheascloset",
+          "name": "angela petrollini",
+          "id": 17839296,
+          "id_str": "17839296",
+          "indices": [
+            28,
+            44
+          ]
+        },
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            45,
+            55
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1416742200143143000,
+    "in_reply_to_status_id_str": "1416742200143142915",
+    "in_reply_to_user_id": 1393640150354247700,
+    "in_reply_to_user_id_str": "1393640150354247681",
+    "in_reply_to_screen_name": "txbaddie23",
+    "user": {
+      "id": 1361860592672383000,
+      "id_str": "1361860592672382977",
+      "name": "kasden ahod",
+      "screen_name": "NursedroidIG11",
+      "location": "",
+      "description": "you would think it matters. but it doesn’t.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 64,
+      "friends_count": 511,
+      "listed_count": 0,
+      "created_at": "Wed Feb 17 02:11:14 +0000 2021",
+      "favourites_count": 6550,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 870,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416238981646360577/m3tYzfhY_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416238981646360577/m3tYzfhY_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1361860592672382977/1620416381",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 226,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416742200143142915": {
+    "created_at": "Sun Jul 18 12:50:36 +0000 2021",
+    "id": 1416742200143143000,
+    "id_str": "1416742200143142915",
+    "full_text": "@NursedroidIG11 @lacunalingua_3 @dorotheascloset @perdricof Through so much pain and destruction for the same topics? We should all be working together. That should be simple to see",
+    "truncated": false,
+    "display_text_range": [
+      60,
+      181
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "NursedroidIG11",
+          "name": "kasden ahod",
+          "id": 1361860592672383000,
+          "id_str": "1361860592672382977",
+          "indices": [
+            0,
+            15
+          ]
+        },
+        {
+          "screen_name": "lacunalingua_3",
+          "name": "Misgivings #3",
+          "id": 1320741064412680200,
+          "id_str": "1320741064412680192",
+          "indices": [
+            16,
+            31
+          ]
+        },
+        {
+          "screen_name": "dorotheascloset",
+          "name": "angela petrollini",
+          "id": 17839296,
+          "id_str": "17839296",
+          "indices": [
+            32,
+            48
+          ]
+        },
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            49,
+            59
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1416741939173593000,
+    "in_reply_to_status_id_str": "1416741939173593094",
+    "in_reply_to_user_id": 1393640150354247700,
+    "in_reply_to_user_id_str": "1393640150354247681",
+    "in_reply_to_screen_name": "txbaddie23",
+    "user": {
+      "id": 1393640150354247700,
+      "id_str": "1393640150354247681",
+      "name": "Trill",
+      "screen_name": "txbaddie23",
+      "location": "",
+      "description": "♏️ she/her.    the illest.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 64,
+      "friends_count": 134,
+      "listed_count": 0,
+      "created_at": "Sat May 15 18:51:30 +0000 2021",
+      "favourites_count": 7937,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 1562,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416728768002072578/G2h0lQrm_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416728768002072578/G2h0lQrm_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1393640150354247681/1624320991",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 110,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416741939173593094": {
+    "created_at": "Sun Jul 18 12:49:34 +0000 2021",
+    "id": 1416741939173593000,
+    "id_str": "1416741939173593094",
+    "full_text": "@NursedroidIG11 @lacunalingua_3 @dorotheascloset @perdricof *had to look up the drug, I don’t take any medications or know about drugs* so they were numbing themselves to fit this narrative?! So why does the older generation hate the young generations for wanting to express themselves and be paid what they deserve if they went",
+    "truncated": false,
+    "display_text_range": [
+      60,
+      328
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "NursedroidIG11",
+          "name": "kasden ahod",
+          "id": 1361860592672383000,
+          "id_str": "1361860592672382977",
+          "indices": [
+            0,
+            15
+          ]
+        },
+        {
+          "screen_name": "lacunalingua_3",
+          "name": "Misgivings #3",
+          "id": 1320741064412680200,
+          "id_str": "1320741064412680192",
+          "indices": [
+            16,
+            31
+          ]
+        },
+        {
+          "screen_name": "dorotheascloset",
+          "name": "angela petrollini",
+          "id": 17839296,
+          "id_str": "17839296",
+          "indices": [
+            32,
+            48
+          ]
+        },
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            49,
+            59
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1416738891516817400,
+    "in_reply_to_status_id_str": "1416738891516817410",
+    "in_reply_to_user_id": 1361860592672383000,
+    "in_reply_to_user_id_str": "1361860592672382977",
+    "in_reply_to_screen_name": "NursedroidIG11",
+    "user": {
+      "id": 1393640150354247700,
+      "id_str": "1393640150354247681",
+      "name": "Trill",
+      "screen_name": "txbaddie23",
+      "location": "",
+      "description": "♏️ she/her.    the illest.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 64,
+      "friends_count": 134,
+      "listed_count": 0,
+      "created_at": "Sat May 15 18:51:30 +0000 2021",
+      "favourites_count": 7937,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 1562,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416728768002072578/G2h0lQrm_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416728768002072578/G2h0lQrm_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1393640150354247681/1624320991",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 232,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416738891516817410": {
+    "created_at": "Sun Jul 18 12:37:28 +0000 2021",
+    "id": 1416738891516817400,
+    "id_str": "1416738891516817410",
+    "full_text": "@txbaddie23 @lacunalingua_3 @dorotheascloset @perdricof Hence the need for mommy’s little helper, the little yellow pill",
+    "truncated": false,
+    "display_text_range": [
+      56,
+      120
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "txbaddie23",
+          "name": "Trill",
+          "id": 1393640150354247700,
+          "id_str": "1393640150354247681",
+          "indices": [
+            0,
+            11
+          ]
+        },
+        {
+          "screen_name": "lacunalingua_3",
+          "name": "Misgivings #3",
+          "id": 1320741064412680200,
+          "id_str": "1320741064412680192",
+          "indices": [
+            12,
+            27
+          ]
+        },
+        {
+          "screen_name": "dorotheascloset",
+          "name": "angela petrollini",
+          "id": 17839296,
+          "id_str": "17839296",
+          "indices": [
+            28,
+            44
+          ]
+        },
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            45,
+            55
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1416726212169379800,
+    "in_reply_to_status_id_str": "1416726212169379845",
+    "in_reply_to_user_id": 1393640150354247700,
+    "in_reply_to_user_id_str": "1393640150354247681",
+    "in_reply_to_screen_name": "txbaddie23",
+    "user": {
+      "id": 1361860592672383000,
+      "id_str": "1361860592672382977",
+      "name": "kasden ahod",
+      "screen_name": "NursedroidIG11",
+      "location": "",
+      "description": "you would think it matters. but it doesn’t.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 64,
+      "friends_count": 511,
+      "listed_count": 0,
+      "created_at": "Wed Feb 17 02:11:14 +0000 2021",
+      "favourites_count": 6550,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 870,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416238981646360577/m3tYzfhY_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416238981646360577/m3tYzfhY_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1361860592672382977/1620416381",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 179,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416726212169379845": {
+    "created_at": "Sun Jul 18 11:47:05 +0000 2021",
+    "id": 1416726212169379800,
+    "id_str": "1416726212169379845",
+    "full_text": "@lacunalingua_3 @dorotheascloset @perdricof It was like traumatic Cosplay or having a live sex doll. It’s disgusting.",
+    "truncated": false,
+    "display_text_range": [
+      44,
+      117
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "lacunalingua_3",
+          "name": "Misgivings #3",
+          "id": 1320741064412680200,
+          "id_str": "1320741064412680192",
+          "indices": [
+            0,
+            15
+          ]
+        },
+        {
+          "screen_name": "dorotheascloset",
+          "name": "angela petrollini",
+          "id": 17839296,
+          "id_str": "17839296",
+          "indices": [
+            16,
+            32
+          ]
+        },
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            33,
+            43
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1416591953744089000,
+    "in_reply_to_status_id_str": "1416591953744089095",
+    "in_reply_to_user_id": 1320741064412680200,
+    "in_reply_to_user_id_str": "1320741064412680192",
+    "in_reply_to_screen_name": "lacunalingua_3",
+    "user": {
+      "id": 1393640150354247700,
+      "id_str": "1393640150354247681",
+      "name": "Trill",
+      "screen_name": "txbaddie23",
+      "location": "",
+      "description": "♏️ she/her.    the illest.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 64,
+      "friends_count": 134,
+      "listed_count": 0,
+      "created_at": "Sat May 15 18:51:30 +0000 2021",
+      "favourites_count": 7937,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 1562,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1416728768002072578/G2h0lQrm_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1416728768002072578/G2h0lQrm_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1393640150354247681/1624320991",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 3,
+    "favorite_count": 282,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416591953744089095": {
+    "created_at": "Sun Jul 18 02:53:35 +0000 2021",
+    "id": 1416591953744089000,
+    "id_str": "1416591953744089095",
+    "full_text": "@dorotheascloset @perdricof It was like a caricature",
+    "truncated": false,
+    "display_text_range": [
+      28,
+      52
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "dorotheascloset",
+          "name": "angela petrollini",
+          "id": 17839296,
+          "id_str": "17839296",
+          "indices": [
+            0,
+            16
+          ]
+        },
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            17,
+            27
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "in_reply_to_status_id": 1416497542280405000,
+    "in_reply_to_status_id_str": "1416497542280405013",
+    "in_reply_to_user_id": 17839296,
+    "in_reply_to_user_id_str": "17839296",
+    "in_reply_to_screen_name": "dorotheascloset",
+    "user": {
+      "id": 1320741064412680200,
+      "id_str": "1320741064412680192",
+      "name": "Misgivings #3",
+      "screen_name": "lacunalingua_3",
+      "location": "",
+      "description": "There are 468 restrictions to control or regulate the reproductive rights of people with wombs. And ZERO restrictions to control the reproductive rights of men.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 320,
+      "friends_count": 670,
+      "listed_count": 2,
+      "created_at": "Mon Oct 26 14:56:51 +0000 2020",
+      "favourites_count": 45010,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 111917,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1321274869527568386/VzUg9QP__normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1321274869527568386/VzUg9QP__normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1320741064412680192/1618007775",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 314,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416781976338583556": {
+    "created_at": "Sun Jul 18 15:28:40 +0000 2021",
+    "id": 1416781976338583600,
+    "id_str": "1416781976338583556",
+    "full_text": "@perdricof @RomancingNope My maternal gmother was a post-war housewife, a role made possible by my gfather’s generous salary as a PE teacher &amp; the availability of extremely underpaid African-American women hired to be cleaners/child care, women whose sacrifices are unacknowledged in the 50’s nostalgia BS.",
+    "truncated": false,
+    "display_text_range": [
+      26,
+      310
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            0,
+            10
+          ]
+        },
+        {
+          "screen_name": "RomancingNope",
+          "name": "Cate Eland",
+          "id": 984250480569266200,
+          "id_str": "984250480569266177",
+          "indices": [
+            11,
+            25
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "in_reply_to_status_id": 1416449058764427300,
+    "in_reply_to_status_id_str": "1416449058764427269",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 4235965757,
+      "id_str": "4235965757",
+      "name": "Jeanne Merchant",
+      "screen_name": "jsoniatmerchant",
+      "location": "",
+      "description": "Recalcitrant Southerner. Pro: Bike paths, voting by mail, parks, choice, YIMBY, science, regulation, independent kids. Anti: Nazis, billionaires. She/her.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 455,
+      "friends_count": 531,
+      "listed_count": 1,
+      "created_at": "Fri Nov 20 17:07:30 +0000 2015",
+      "favourites_count": 244624,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 21975,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/897080967696986112/KNH6lh1y_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/897080967696986112/KNH6lh1y_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/4235965757/1460388497",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 75,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416564802755829767": {
+    "created_at": "Sun Jul 18 01:05:42 +0000 2021",
+    "id": 1416564802755829800,
+    "id_str": "1416564802755829767",
+    "full_text": "@BreeNewsome *nods* and then, of course, those poor and non-white women (and their families) were judged and found unworthy, because they didn’t match the models of supposed ‘good families’ that those privileged single-breadwinner households with SATM, and were penalised further for such.",
+    "truncated": false,
+    "display_text_range": [
+      13,
+      289
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "BreeNewsome",
+          "name": "DEFUND & ABOLISH POLICE, REFUND OUR COMMUNITIES",
+          "id": 110326494,
+          "id_str": "110326494",
+          "indices": [
+            0,
+            12
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "in_reply_to_status_id": 1416512741913862100,
+    "in_reply_to_status_id_str": "1416512741913862154",
+    "in_reply_to_user_id": 110326494,
+    "in_reply_to_user_id_str": "110326494",
+    "in_reply_to_screen_name": "BreeNewsome",
+    "user": {
+      "id": 97769756,
+      "id_str": "97769756",
+      "name": "Dr Sarah Hendrica Bickerton 🏳️‍🌈",
+      "screen_name": "sarahhbickerton",
+      "location": "Auckland, NZ 🇳🇿🇳🇱🇺🇸",
+      "description": "Public policy & politics lecturer, STS sociologist, feminist, geek, coffee-vampire, lesbian, urbanist, wannabe Carol Danvers/Clarke Griffin/Kate Kane. She/her.",
+      "url": "https://t.co/YAjn9BosaO",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/YAjn9BosaO",
+              "expanded_url": "https://about.me/sarahhendricabickerton",
+              "display_url": "about.me/sarahhendricab…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 4942,
+      "friends_count": 3726,
+      "listed_count": 110,
+      "created_at": "Fri Dec 18 23:16:57 +0000 2009",
+      "favourites_count": 171152,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 167828,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1357172468633329664/NVoA7x8d_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1357172468633329664/NVoA7x8d_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/97769756/1605816818",
+      "profile_link_color": "ABB8C2",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 2,
+    "favorite_count": 7,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416565245905051652": {
+    "created_at": "Sun Jul 18 01:07:27 +0000 2021",
+    "id": 1416565245905051600,
+    "id_str": "1416565245905051652",
+    "full_text": "@BreeNewsome The application of a supposed ‘standard’ for a ‘good’ and ‘right’ family modelling that was predicated on privilege, which thus of course (and one could argue by design) reified itself by denying others access to that standard.",
+    "truncated": false,
+    "display_text_range": [
+      13,
+      240
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "BreeNewsome",
+          "name": "DEFUND & ABOLISH POLICE, REFUND OUR COMMUNITIES",
+          "id": 110326494,
+          "id_str": "110326494",
+          "indices": [
+            0,
+            12
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "in_reply_to_status_id": 1416564802755829800,
+    "in_reply_to_status_id_str": "1416564802755829767",
+    "in_reply_to_user_id": 97769756,
+    "in_reply_to_user_id_str": "97769756",
+    "in_reply_to_screen_name": "sarahhbickerton",
+    "user": {
+      "id": 97769756,
+      "id_str": "97769756",
+      "name": "Dr Sarah Hendrica Bickerton 🏳️‍🌈",
+      "screen_name": "sarahhbickerton",
+      "location": "Auckland, NZ 🇳🇿🇳🇱🇺🇸",
+      "description": "Public policy & politics lecturer, STS sociologist, feminist, geek, coffee-vampire, lesbian, urbanist, wannabe Carol Danvers/Clarke Griffin/Kate Kane. She/her.",
+      "url": "https://t.co/YAjn9BosaO",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/YAjn9BosaO",
+              "expanded_url": "https://about.me/sarahhendricabickerton",
+              "display_url": "about.me/sarahhendricab…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 4942,
+      "friends_count": 3726,
+      "listed_count": 110,
+      "created_at": "Fri Dec 18 23:16:57 +0000 2009",
+      "favourites_count": 171152,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 167828,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1357172468633329664/NVoA7x8d_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1357172468633329664/NVoA7x8d_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/97769756/1605816818",
+      "profile_link_color": "ABB8C2",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 3,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416629099297083397": {
+    "created_at": "Sun Jul 18 05:21:11 +0000 2021",
+    "id": 1416629099297083400,
+    "id_str": "1416629099297083397",
+    "full_text": "@perdricof Here’s the backlash as illustrated in an October 1942 advertisement from Electrical Merchandising magazine. It’s pretty evident that many men spent the WWII years fantasizing about pushing women back into the kitchen. https://t.co/qYOYKxgWc9",
+    "truncated": false,
+    "display_text_range": [
+      11,
+      228
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 1416629095656398800,
+          "id_str": "1416629095656398848",
+          "indices": [
+            229,
+            252
+          ],
+          "media_url": "http://pbs.twimg.com/media/E6jgqCkVIAARKce.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/E6jgqCkVIAARKce.jpg",
+          "url": "https://t.co/qYOYKxgWc9",
+          "display_url": "pic.twitter.com/qYOYKxgWc9",
+          "expanded_url": "https://twitter.com/gillian_brunet/status/1416629099297083397/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 754,
+              "h": 2048,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 442,
+              "h": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 250,
+              "h": 680,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 1416629095656398800,
+          "id_str": "1416629095656398848",
+          "indices": [
+            229,
+            252
+          ],
+          "media_url": "http://pbs.twimg.com/media/E6jgqCkVIAARKce.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/E6jgqCkVIAARKce.jpg",
+          "url": "https://t.co/qYOYKxgWc9",
+          "display_url": "pic.twitter.com/qYOYKxgWc9",
+          "expanded_url": "https://twitter.com/gillian_brunet/status/1416629099297083397/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 754,
+              "h": 2048,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 442,
+              "h": 1200,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 250,
+              "h": 680,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+    "in_reply_to_status_id": 1416450053066088400,
+    "in_reply_to_status_id_str": "1416450053066088448",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 3381181336,
+      "id_str": "3381181336",
+      "name": "Gillian Brunet",
+      "screen_name": "gillian_brunet",
+      "location": "",
+      "description": "Macroeconomic historian specializing in 1940s US, assistant prof @Wesleyan_U. Bubble tea enthusiast. Graduate of @smithcollege and @berkeleyecon. She/her.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 945,
+      "friends_count": 315,
+      "listed_count": 23,
+      "created_at": "Sat Jul 18 01:29:55 +0000 2015",
+      "favourites_count": 10614,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 1199,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1269068303772913664/kj4trPc0_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1269068303772913664/kj4trPc0_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/3381181336/1585948432",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 19,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  "1416802318478053384": {
+    "created_at": "Sun Jul 18 16:49:30 +0000 2021",
+    "id": 1416802318478053400,
+    "id_str": "1416802318478053384",
+    "full_text": "@perdricof Also, how the medical establishment reinforced this by heavily medicating women to make sure that they were passively going back to the household to be at the beck and call of the man who owned their house. \n\n\"Mommy's Little Helper\" was a travesty.",
+    "truncated": false,
+    "display_text_range": [
+      11,
+      259
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 1416450053066088400,
+    "in_reply_to_status_id_str": "1416450053066088448",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 465382698,
+      "id_str": "465382698",
+      "name": "Fully Vaccinated 5g Otterthing",
+      "screen_name": "LutrisOtter",
+      "location": "",
+      "description": "Queer dude (he/him or they/them) in SoCal. Black Lives Matter, end of discussion.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 109,
+      "friends_count": 448,
+      "listed_count": 2,
+      "created_at": "Mon Jan 16 08:49:53 +0000 2012",
+      "favourites_count": 2143,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 3910,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1282201209755951105/tEcYssCF_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1282201209755951105/tEcYssCF_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/465382698/1590824929",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  "1416948231917883393": {
+    "created_at": "Mon Jul 19 02:29:18 +0000 2021",
+    "id": 1416948231917883400,
+    "id_str": "1416948231917883393",
+    "full_text": "@perdricof This is also when PMS as we know it became a dominate social narrative. It is very effective to cast women as emotional, unpredictable, and irrational for 1-3 weeks a month when you're trying to kick them out of the workforce and leadership positions.",
+    "truncated": false,
+    "display_text_range": [
+      11,
+      262
+    ],
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "perdricof",
+          "name": "Dr. Samantha Hancox-Li",
+          "id": 789536590565511200,
+          "id_str": "789536590565511168",
+          "indices": [
+            0,
+            10
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+    "in_reply_to_status_id": 1416450053066088400,
+    "in_reply_to_status_id_str": "1416450053066088448",
+    "in_reply_to_user_id": 789536590565511200,
+    "in_reply_to_user_id_str": "789536590565511168",
+    "in_reply_to_screen_name": "perdricof",
+    "user": {
+      "id": 351364177,
+      "id_str": "351364177",
+      "name": "Christina Batstone",
+      "screen_name": "cbatstone",
+      "location": "Vancouver",
+      "description": "Articling in union-side labour/employment law. \nI like talking to law students & prospective law students - DM me! Leftie, cakemaker, photographer, mom. She/Her",
+      "url": "https://t.co/Jzm7eQeNtT",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/Jzm7eQeNtT",
+              "expanded_url": "https://fineartamerica.com/profiles/christina-batstone",
+              "display_url": "fineartamerica.com/profiles/chris…",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 402,
+      "friends_count": 2078,
+      "listed_count": 4,
+      "created_at": "Tue Aug 09 04:23:33 +0000 2011",
+      "favourites_count": 7657,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 310,
+      "lang": null,
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1388528694453444611/zxn4fmUJ_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1388528694453444611/zxn4fmUJ_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/351364177/1619886013",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none",
+      "withheld_in_countries": []
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 2,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
   }
 }
