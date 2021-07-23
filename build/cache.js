@@ -72,10 +72,10 @@ module.exports = exports = class Manifest {
 
   async get (task) {
     const hash = this.hash(task);
-    const { input, output } = task;
+    const { input, output, cache: altCachePath } = task;
     const ext = path.extname(task.output);
     const local = !task.input.includes('://');
-    const cached = path.join(CACHE, hash + ext);
+    var cached = path.join(CACHE, hash + ext);
     const result = {
       iTime: 0,
       iRev: null,
@@ -85,10 +85,16 @@ module.exports = exports = class Manifest {
       action: task.action.name,
       input,
       output,
+      duplicate: altCachePath,
       mode: 'new',
     };
 
-    const [ iTime, oTime, cTime, iRev ] = await Promise.all([
+    var acTime;
+    if (altCachePath) {
+      acTime = await this.stat(altCachePath);
+    }
+
+    let [ iTime, oTime, cTime, iRev ] = await Promise.all([
       local && this.stat(input),
       this.stat(output),
       this.stat(cached),
@@ -148,7 +154,16 @@ module.exports = exports = class Manifest {
     }
 
     result.mode = 'cached';
-    result.cache = await readFile(cached);
+
+    if (acTime && acTime > cTime) {
+      result.cache = await readFile(altCachePath);
+    } else {
+      result.cache = await readFile(cached);
+      if (altCachePath && !acTime) {
+        await fs.writeFile(resolve(altCachePath), result.cache);
+      }
+    }
+
     return result;
   }
 
@@ -157,7 +172,7 @@ module.exports = exports = class Manifest {
     if (task.nocache || !task.action.name) return null;
 
     const hash = this.hash(task);
-    const { input, output } = task;
+    const { input, output, cache: altCachePath } = task;
     const local = !task.input.includes('://');
 
     const [ iTime, iRev ] = await Promise.all([
@@ -175,6 +190,7 @@ module.exports = exports = class Manifest {
       output,
       oTime: Math.floor(lastSeen / 1000),
       lastSeen,
+      duplicate: altCachePath,
     };
 
     if (record.revPath) this.revManifest[output] = record.revPath;
@@ -185,7 +201,7 @@ module.exports = exports = class Manifest {
 
   async set (task, result, lastSeen = new Date()) {
     const hash = this.hash(task);
-    const { input, output } = task;
+    const { input, output, cache: altCachePath } = task;
     const nocache = task.nocache || task.action.name === 'copy';
     const ext = path.extname(task.output);
     const local = !task.input.includes('://');
@@ -196,6 +212,7 @@ module.exports = exports = class Manifest {
       local && this.stat(input),
       local && this.compareBy.inputRev && this.revFile(input),
       result && !nocache && fs.writeFile(resolve(cached), result),
+      result && altCachePath && fs.writeFile(resolve(altCachePath), result),
     ]);
 
     const record = {
@@ -208,6 +225,7 @@ module.exports = exports = class Manifest {
       oTime: Math.floor(lastSeen / 1000),
       oRev,
       lastSeen,
+      duplicate: altCachePath,
       revPath: revPath(output, oRev),
     };
 

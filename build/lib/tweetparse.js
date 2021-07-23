@@ -95,7 +95,8 @@ module.exports = exports = function (tweets) {
 
     tweet.user.avatar = {
       input: tweet.user.profile_image_url_https,
-      output: 'tweets/' + tweet.user.screen_name + '.jpg',
+      output: `tweets/${tweet.user.screen_name}.jpg`,
+      cache: `twitter-avatars/${tweet.user.screen_name}.jpg`,
     };
 
     tweet.media = [
