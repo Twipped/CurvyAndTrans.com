@@ -76,7 +76,7 @@
     "memoizepromise": "~2.0.0",
     "minimist": "~1.2.5",
     "morgan": "~1.10.0",
-    "node-sass": "~6.0.0",
+    "node-sass": "~7.0.0",
     "png-to-ico": "~2.1.2",
     "popper.js": "~1.16.1",
     "postcss": "~8.3.0",
