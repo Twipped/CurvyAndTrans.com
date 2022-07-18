@@ -12,4 +12,4 @@ Our local community had their second annual #pride festival today, so I broke ou
 
 It was a bit bigger this year, more booths, quite a bit more people, and best of all a lot more families. Last year we were the only people there with kids in tow. Not many other trans people my age, but quite a few teens and a lot of allies. Trans Family Support Services and the Poway library hosted the event.
 
-My son, Ben, kept stealing the show by wondering up to the podium and cheering really loud whenever people applauded 😂
+My son kept stealing the show by wondering up to the podium and cheering really loud whenever people applauded 😂

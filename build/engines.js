@@ -14,7 +14,7 @@ const { stripHtml } = require('string-strip-html');
 
 const markdownIt = require('markdown-it');
 
-
+const mAnchor = require('markdown-it-anchor');
 
 const markdownEngines = {
   full: markdownIt({
@@ -23,11 +23,19 @@ const markdownEngines = {
     typographer: true,
   })
     .enable('image')
-    .use(require('markdown-it-anchor'), {
-      permalink: true,
-      permalinkClass: 'header-link',
-      permalinkSymbol: '<img src="/images/svg/paragraph.svg">',
-      slugify,
+    .use(require('markdown-it-link-attributes'), {
+      pattern: /^https?:/,
+      attrs: {
+        target: '_blank',
+        rel: 'noopener',
+      },
+    })
+    .use(mAnchor, {
+      permalink: mAnchor.permalink.ariaHidden({
+        class: 'header-link',
+        symbol: '<img src="/images/svg/paragraph.svg">',
+        renderHref: slugify,
+      }),
     })
     .use(require('./lib/markdown-raw-html'), { debug: false }),
 

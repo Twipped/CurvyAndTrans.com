@@ -11,4 +11,4 @@ products:
 ---
 Basic Sunday look, quickly snapped on my way out for a grocery run.
 
-Kat is getting a much deserved night off to watch the Oscars with friends, so I’m solo parenting tonight. Got a pizza in the freezer and am gonna see how Sam reacts to Aladdin (don’t think she’s seen it yet).
+Kat is getting a much deserved night off to watch the Oscars with friends, so I’m solo parenting tonight. Got a pizza in the freezer and am gonna see how S reacts to Aladdin (don’t think she’s seen it yet).

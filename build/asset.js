@@ -104,7 +104,7 @@ module.exports = exports = class Asset extends File {
       height,
     } ];
 
-    if (this.preprocessed) {
+    if (this.preprocessed || this.ext === '.svg') {
       this._tasks = [ {
         output: this.out,
         input: this.input,

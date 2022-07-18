@@ -54,6 +54,10 @@ module.exports = exports = async function tweets (pages) {
       }
       const tweet = twitterBackup[id];
 
+      if (tweet.quoted_status_id_str && !twitterCache[tweet.quoted_status_id_str]) {
+        tweetsNeeded.push(tweet.quoted_status_id_str);
+      }
+
       if (tweet) {
         log('Pulled tweet from backup ' + id);
         twitterCache[id] = tweetparse(twitterBackup[id]);
@@ -109,7 +113,6 @@ function getTwitterClient (config) {
   const client = new Twitter(config);
   return (tweetids) => client
     .get('statuses/lookup', { id: tweetids.join(','), tweet_mode: 'extended' })
-    // .then((r) => { console.log({r}); return r; })
     .catch((e) => { log.error(e); return []; });
 }
 

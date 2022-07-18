@@ -12,7 +12,9 @@ const { terser } = require('rollup-plugin-terser');
 const plugins = [
   replace({
     preventAssignment: true,
-    values: { 'process.env.NODE_ENV': '"production"' },
+    values: {
+      'process.env.NODE_ENV': '"production"',
+    },
   }),
   alias({
     entries: [

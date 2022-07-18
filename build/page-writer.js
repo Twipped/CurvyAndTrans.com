@@ -143,7 +143,7 @@ function processPages (engines, pages, posts, prod) {
     }
 
     try {
-      html = shrink(html);
+      html = await shrink(html);
     } catch (e) {
       e.message = `Error while minifying page "${page.input}": ${e.message.slice(0, 50)}`;
       throw e;

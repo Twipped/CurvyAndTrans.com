@@ -13,7 +13,7 @@ classes:
 ---
 My name is Jocelyn, and I’m a Torrid addict. I saw this dress on a mannequin in the window and knew I had to try it on. I tried it on, saw how well it hung with the handkerchief hem line, saw it had pockets, and realized I wasn’t leaving the store without this dress.
 
-Last Saturday we had made plans to take the kids to the beach, but after we got up we realized that we had a surprise cold front and temperatures at the beach were actually pretty cool, cooler than we really wanted to deal with. So instead I ended up taking Sam to the mall for some mommy/daughter shopping time. She got to ride the train, we bought us both new dresses, we had lunch and Cinnabon, and then I let her buy a new Barbie that came with puppies which pee and poop (what’s with kids and bodily functions?). It was a great morning.
+Last Saturday we had made plans to take the kids to the beach, but after we got up we realized that we had a surprise cold front and temperatures at the beach were actually pretty cool, cooler than we really wanted to deal with. So instead I ended up taking S to the mall for some mommy/daughter shopping time. She got to ride the train, we bought us both new dresses, we had lunch and Cinnabon, and then I let her buy a new Barbie that came with puppies which pee and poop (what’s with kids and bodily functions?). It was a great morning.
 
 While I was checking out at Torrid they asked me if I wanted to get a second item to get the BOGO 50% deal, so I ran back to my dressing room and grabbed a dress I had been considering, but once she added it on I decided the discount didn’t make up for the added total and I couldn’t afford it.
 
