@@ -50,7 +50,7 @@
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-promise": "~6.0.0",
     "eslint-plugin-react": "~7.28.0",
-    "express": "~4.17.2",
+    "express": "~4.17.3",
     "fancy-log": "~2.0.0",
     "flickity": "~2.3.0",
     "forever": "~4.0.2",
