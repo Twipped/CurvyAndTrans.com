@@ -74,7 +74,7 @@
     "markdown-it-div": "~1.1.0",
     "markdown-it-include": "~2.0.0",
     "memoizepromise": "~2.0.0",
-    "minimist": "~1.2.5",
+    "minimist": "~1.2.6",
     "morgan": "~1.10.0",
     "node-sass": "~7.0.1",
     "png-to-ico": "~2.1.2",
