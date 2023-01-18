@@ -92,7 +92,7 @@
     "serve-index": "~1.9.1",
     "slugify": "~1.6.5",
     "string-strip-html": "~8.3.0",
-    "terser": "~5.10.0",
+    "terser": "~5.14.2",
     "through2": "~4.0.2",
     "twemoji": "~13.1.0",
     "twitter-lite": "~1.1.0",
