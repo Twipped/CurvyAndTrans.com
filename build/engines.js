@@ -31,10 +31,10 @@ const markdownEngines = {
       },
     })
     .use(mAnchor, {
+      slugify,
       permalink: mAnchor.permalink.ariaHidden({
         class: 'header-link',
         symbol: '<img src="/images/svg/paragraph.svg">',
-        renderHref: slugify,
       }),
     })
     .use(require('./lib/markdown-raw-html'), { debug: false }),
